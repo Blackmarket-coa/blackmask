@@ -140,12 +140,12 @@ describe("DefaultChangePasswordService", () => {
             "currentMasterPasswordAuthenticationHash" as MasterPasswordAuthenticationHash,
         };
 
-        request = PasswordRequest.newConstructor(
-          currentAuthenticationData.masterPasswordAuthenticationHash,
+        request = new PasswordRequest(
           newAuthenticationData,
           newUnlockData,
           passwordInputResult.newPasswordHint!,
         );
+        request.authenticateWith(currentAuthenticationData);
 
         masterPasswordService.makeMasterPasswordAuthenticationData
           .mockResolvedValueOnce(currentAuthenticationData) // first call: current auth data
