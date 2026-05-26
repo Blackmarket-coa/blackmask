@@ -191,7 +191,7 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
         (await this.pinService.getPinLockType(activeAccount.id)) == "EPHEMERAL",
       biometric: await this.vaultTimeoutSettingsService.isBiometricLockSet(activeAccount.id),
       enableAutoBiometricsPrompt: await firstValueFrom(
-        this.biometricStateService.promptAutomatically$,
+        this.biometricStateService.promptAutomatically$(activeAccount.id),
       ),
       enablePhishingDetection: await firstValueFrom(this.phishingDetectionSettingsService.enabled$),
     };
@@ -279,7 +279,7 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
     this.form.controls.enableAutoBiometricsPrompt.valueChanges
       .pipe(
         concatMap(async (enabled) => {
-          await this.biometricStateService.setPromptAutomatically(enabled);
+          await this.biometricStateService.setPromptAutomatically(enabled, activeAccount.id);
         }),
         takeUntil(this.destroy$),
       )
@@ -335,14 +335,14 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
   }
 
   async updateBiometric(enabled: boolean) {
+    const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
     if (enabled) {
       try {
-        const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
         await this.keyService.refreshAdditionalKeys(userId);
 
         const successful = await this.trySetupBiometrics();
         this.form.controls.biometric.setValue(successful);
-        await this.biometricStateService.setBiometricUnlockEnabled(successful);
+        await this.biometricStateService.setBiometricUnlockEnabled(successful, userId);
         if (!successful) {
           await this.biometricStateService.setFingerprintValidated(false);
           return;
@@ -357,7 +357,7 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
         this.validationService.showError(error);
       }
     } else {
-      await this.biometricStateService.setBiometricUnlockEnabled(false);
+      await this.biometricStateService.setBiometricUnlockEnabled(false, userId);
       await this.biometricStateService.setFingerprintValidated(false);
     }
   }
@@ -452,8 +452,10 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
   }
 
   async updateAutoBiometricsPrompt() {
+    const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
     await this.biometricStateService.setPromptAutomatically(
       this.form.value.enableAutoBiometricsPrompt,
+      userId,
     );
   }
 

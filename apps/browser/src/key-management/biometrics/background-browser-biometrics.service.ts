@@ -1,6 +1,8 @@
 import { combineLatest, timer } from "rxjs";
-import { filter, concatMap } from "rxjs/operators";
+import { filter, concatMap, switchMap } from "rxjs/operators";
 
+import { AccountService } from "@bitwarden/common/auth/abstractions/account.service";
+import { getUserId } from "@bitwarden/common/auth/services/account.service";
 import { PinServiceAbstraction } from "@bitwarden/common/key-management/pin/pin.service.abstraction";
 import { VaultTimeoutSettingsService } from "@bitwarden/common/key-management/vault-timeout";
 import { LogService } from "@bitwarden/common/platform/abstractions/log.service";
@@ -30,11 +32,15 @@ export class BackgroundBrowserBiometricsService extends BiometricsService {
     private messagingService: MessagingService,
     private vaultTimeoutSettingsService: VaultTimeoutSettingsService,
     private pinService: PinServiceAbstraction,
+    private accountService: AccountService,
   ) {
     super();
     // Always connect to the native messaging background if biometrics are enabled, not just when it is used
     // so that there is no wait when used.
-    const biometricsEnabled = this.biometricStateService.biometricUnlockEnabled$();
+    const biometricsEnabled = this.accountService.activeAccount$.pipe(
+      getUserId,
+      switchMap((userId) => this.biometricStateService.biometricUnlockEnabled$(userId)),
+    );
 
     combineLatest([timer(0, this.BACKGROUND_POLLING_INTERVAL), biometricsEnabled])
       .pipe(
@@ -96,7 +102,7 @@ export class BackgroundBrowserBiometricsService extends BiometricsService {
         const decodedUserkey = Utils.fromB64ToArray(response.userKeyB64);
         const userKey = new SymmetricCryptoKey(decodedUserkey) as UserKey;
         if (await this.keyService.validateUserKey(userKey, userId)) {
-          await this.biometricStateService.setBiometricUnlockEnabled(true);
+          await this.biometricStateService.setBiometricUnlockEnabled(true, userId);
           await this.keyService.setUserKey(userKey, userId);
           await this.pinService.userUnlocked(userId);
           // to update badge and other things

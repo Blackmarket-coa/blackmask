@@ -158,7 +158,7 @@ describe("AccountSecurityComponent", () => {
       }),
     );
     vaultNudgesService.showNudgeSpotlight$.mockReturnValue(of(false));
-    biometricStateService.promptAutomatically$ = of(false);
+    biometricStateService.promptAutomatically$.mockReturnValue(of(false));
     pinServiceAbstraction.isPinSet.mockResolvedValue(false);
     configService.getFeatureFlag$.mockReturnValue(of(false));
     billingService.hasPremiumPersonally$.mockReturnValue(of(true));
@@ -348,7 +348,10 @@ describe("AccountSecurityComponent", () => {
         await component.ngOnInit();
         await component.updateBiometric(false);
 
-        expect(biometricStateService.setBiometricUnlockEnabled).toHaveBeenCalledWith(false);
+        expect(biometricStateService.setBiometricUnlockEnabled).toHaveBeenCalledWith(
+          false,
+          mockUserId,
+        );
         expect(biometricStateService.setFingerprintValidated).toHaveBeenCalledWith(false);
       });
     });
@@ -370,6 +373,7 @@ describe("AccountSecurityComponent", () => {
         expect(keyService.refreshAdditionalKeys).toHaveBeenCalledWith(mockUserId);
         expect(biometricStateService.setBiometricUnlockEnabled).toHaveBeenCalledWith(
           setupBiometricsResult,
+          mockUserId,
         );
         expect(component.form.controls.biometric.value).toBe(setupBiometricsResult);
       });
@@ -383,6 +387,7 @@ describe("AccountSecurityComponent", () => {
 
         expect(biometricStateService.setBiometricUnlockEnabled).toHaveBeenCalledWith(
           setupBiometricsResult,
+          mockUserId,
         );
         expect(biometricStateService.setFingerprintValidated).toHaveBeenCalledWith(
           setupBiometricsResult,
