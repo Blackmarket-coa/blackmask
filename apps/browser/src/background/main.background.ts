@@ -278,7 +278,6 @@ import {
   ImportServiceAbstraction,
 } from "@bitwarden/importer-core";
 import {
-  BiometricsService,
   BiometricStateService,
   DefaultBiometricStateService,
   DefaultKdfConfigService,
@@ -500,7 +499,7 @@ export default class MainBackground {
   vaultSettingsService: VaultSettingsServiceAbstraction;
   pendingAuthRequestStateService: PendingAuthRequestsStateService;
   biometricStateService: BiometricStateService;
-  biometricsService: BiometricsService;
+  biometricsService: BackgroundBrowserBiometricsService;
   stateEventRunnerService: StateEventRunnerService;
   ssoLoginService: SsoLoginServiceAbstraction;
   billingAccountProfileStateService: BillingAccountProfileStateService;
@@ -967,7 +966,6 @@ export default class MainBackground {
       this.messagingService,
       this.vaultTimeoutSettingsService,
       this.pinService,
-      this.accountService,
     );
 
     this.passwordStrengthService = new PasswordStrengthService();
@@ -1751,6 +1749,8 @@ export default class MainBackground {
       if (authStatus === AuthenticationStatus.LoggedOut) {
         const nextUpAccount = await firstValueFrom(this.accountService.nextUpAccount$);
         await this.switchAccount(nextUpAccount?.id);
+      } else {
+        this.biometricsService.startPolling(active.id);
       }
     }
 
@@ -1842,12 +1842,14 @@ export default class MainBackground {
       await switchPromise;
 
       if (userId == null) {
+        this.biometricsService.stopPolling();
         await this.refreshMenu();
         await this.updateOverlayCiphers();
         this.messagingService.send("goHome");
         return;
       }
 
+      this.biometricsService.startPolling(userId);
       nextAccountStatus = await this.authService.getAuthStatus(userId);
 
       await this.systemService.clearPendingClipboard();

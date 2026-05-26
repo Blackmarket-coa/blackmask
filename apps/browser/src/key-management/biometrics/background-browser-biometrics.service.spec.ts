@@ -1,11 +1,10 @@
 import { mock } from "jest-mock-extended";
-import { of } from "rxjs";
+import { BehaviorSubject } from "rxjs";
 
 import { PinServiceAbstraction } from "@bitwarden/common/key-management/pin/pin.service.abstraction";
 import { VaultTimeoutSettingsService } from "@bitwarden/common/key-management/vault-timeout";
 import { LogService } from "@bitwarden/common/platform/abstractions/log.service";
 import { MessagingService } from "@bitwarden/common/platform/abstractions/messaging.service";
-import { FakeAccountService, mockAccountServiceWith } from "@bitwarden/common/spec";
 import { UserId } from "@bitwarden/common/types/guid";
 import { KeyService, BiometricStateService, BiometricsStatus } from "@bitwarden/key-management";
 
@@ -24,11 +23,10 @@ describe("background browser biometrics service tests", function () {
   const messagingService = mock<MessagingService>();
   const vaultTimeoutSettingsService = mock<VaultTimeoutSettingsService>();
   const pinService = mock<PinServiceAbstraction>();
-  const accountService: FakeAccountService = mockAccountServiceWith(userId);
 
   beforeEach(() => {
     jest.resetAllMocks();
-    biometricStateService.biometricUnlockEnabled$.mockReturnValue(of(false));
+    jest.useFakeTimers();
     service = new BackgroundBrowserBiometricsService(
       () => nativeMessagingBackground,
       logService,
@@ -37,8 +35,68 @@ describe("background browser biometrics service tests", function () {
       messagingService,
       vaultTimeoutSettingsService,
       pinService,
-      accountService,
     );
+  });
+
+  afterEach(() => {
+    service.stopPolling();
+    jest.useRealTimers();
+  });
+
+  describe("startPolling", () => {
+    it("connects to native messaging when biometrics are enabled", () => {
+      const biometricEnabled$ = new BehaviorSubject<boolean>(true);
+      biometricStateService.biometricUnlockEnabled$.mockReturnValue(biometricEnabled$);
+      nativeMessagingBackground.connected = false;
+      nativeMessagingBackground.connect.mockResolvedValue();
+
+      service.startPolling(userId);
+      jest.advanceTimersByTime(0);
+
+      expect(biometricStateService.biometricUnlockEnabled$).toHaveBeenCalledWith(userId);
+      expect(nativeMessagingBackground.connect).toHaveBeenCalled();
+    });
+
+    it("does not connect when biometrics are disabled", () => {
+      const biometricEnabled$ = new BehaviorSubject<boolean>(false);
+      biometricStateService.biometricUnlockEnabled$.mockReturnValue(biometricEnabled$);
+      nativeMessagingBackground.connected = false;
+
+      service.startPolling(userId);
+      jest.advanceTimersByTime(0);
+
+      expect(nativeMessagingBackground.connect).not.toHaveBeenCalled();
+    });
+
+    it("does not connect when already connected", () => {
+      const biometricEnabled$ = new BehaviorSubject<boolean>(true);
+      biometricStateService.biometricUnlockEnabled$.mockReturnValue(biometricEnabled$);
+      nativeMessagingBackground.connected = true;
+
+      service.startPolling(userId);
+      jest.advanceTimersByTime(0);
+
+      expect(nativeMessagingBackground.connect).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("stopPolling", () => {
+    it("stops connecting after stopPolling is called", () => {
+      const biometricEnabled$ = new BehaviorSubject<boolean>(true);
+      biometricStateService.biometricUnlockEnabled$.mockReturnValue(biometricEnabled$);
+      nativeMessagingBackground.connected = false;
+      nativeMessagingBackground.connect.mockResolvedValue();
+
+      service.startPolling(userId);
+      jest.advanceTimersByTime(0);
+      expect(nativeMessagingBackground.connect).toHaveBeenCalledTimes(1);
+
+      nativeMessagingBackground.connect.mockClear();
+      service.stopPolling();
+      jest.advanceTimersByTime(service.BACKGROUND_POLLING_INTERVAL);
+
+      expect(nativeMessagingBackground.connect).not.toHaveBeenCalled();
+    });
   });
 
   describe("canEnableBiometricUnlock", () => {
