@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, DestroyRef, inject, OnInit } from "@angular/core";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
 import { ActivatedRoute, Data, NavigationEnd, Router, RouterModule } from "@angular/router";
-import { Subject, filter, of, switchMap, tap } from "rxjs";
+import { filter, of, switchMap } from "rxjs";
 
 import { BitSvg } from "@bitwarden/assets/svg";
 import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.service";
@@ -78,15 +78,14 @@ export interface AnonLayoutWrapperData {
   imports: [AnonLayoutComponent, RouterModule],
 })
 export class AnonLayoutWrapperComponent implements OnInit {
-  private destroy$ = new Subject<void>();
-
   protected pageTitle?: string | null;
   protected pageSubtitle?: string | null;
   protected pageIcon: BitSvg | null = null;
-  protected showReadonlyHostname?: boolean | null;
-  protected maxWidth?: LandingContentMaxWidthType | null;
-  protected hideCardWrapper?: boolean | null;
-  protected hideBackgroundIllustration?: boolean | null;
+
+  protected showReadonlyHostname?: boolean;
+  protected maxWidth?: LandingContentMaxWidthType;
+  protected hideCardWrapper?: boolean;
+  protected hideBackgroundIllustration?: boolean;
   protected hidePageIcon?: boolean;
   protected contentTopPadding?: ContentTopPaddingType;
   protected heroTextAlignment?: HeroTextAlignmentType;
@@ -113,8 +112,6 @@ export class AnonLayoutWrapperComponent implements OnInit {
     this.router.events
       .pipe(
         filter((event) => event instanceof NavigationEnd),
-        // reset page data on page changes
-        tap(() => this.resetPageData()),
         switchMap(() => this.route.firstChild?.data || of(null)),
         takeUntilDestroyed(this.destroyRef),
       )
@@ -128,34 +125,26 @@ export class AnonLayoutWrapperComponent implements OnInit {
       return;
     }
 
-    if (firstChildRouteData["pageTitle"] !== undefined) {
-      this.pageTitle = this.handleStringOrTranslation(firstChildRouteData["pageTitle"]);
-    }
+    const routeData = firstChildRouteData as Partial<AnonLayoutWrapperData>;
 
-    if (firstChildRouteData["pageSubtitle"] !== undefined) {
-      this.pageSubtitle = this.handleStringOrTranslation(firstChildRouteData["pageSubtitle"]);
-    }
+    // When undefined on `routeData`, default to `null`
+    this.pageTitle = this.handleStringOrTranslation(routeData.pageTitle);
+    this.pageSubtitle = this.handleStringOrTranslation(routeData.pageSubtitle);
+    this.pageIcon = routeData.pageIcon ?? null;
 
-    if (firstChildRouteData["pageIcon"] !== undefined) {
-      this.pageIcon = firstChildRouteData["pageIcon"];
-    }
+    // When undefined on `routeData`, default to `false` via Boolean conversion
+    this.hidePageIcon = Boolean(routeData.hidePageIcon);
+    this.hideCardWrapper = Boolean(routeData.hideCardWrapper);
+    this.hideBackgroundIllustration = Boolean(routeData.hideBackgroundIllustration);
+    this.showReadonlyHostname = Boolean(routeData.showReadonlyHostname);
 
-    this.showReadonlyHostname = Boolean(firstChildRouteData["showReadonlyHostname"]);
-    this.maxWidth = firstChildRouteData["maxWidth"];
-    this.hideCardWrapper = Boolean(firstChildRouteData["hideCardWrapper"]);
-    this.hideBackgroundIllustration = Boolean(firstChildRouteData["hideBackgroundIllustration"]);
+    // When undefined on `routeData`, default to a specified value
+    this.maxWidth = routeData.maxWidth; // default is defined in AnonLayoutComponent
+    this.contentTopPadding = routeData.contentTopPadding ?? "default";
+    this.heroTextAlignment = routeData.heroTextAlignment ?? "center";
 
-    // When undefined, default to `false` via Boolean conversion
-    this.hidePageIcon = Boolean(firstChildRouteData["hidePageIcon"]);
-
-    // When undefined, default to a specified value
-    this.contentTopPadding = firstChildRouteData["contentTopPadding"] ?? "default";
-    this.heroTextAlignment = firstChildRouteData["heroTextAlignment"] ?? "center";
-
-    // Cache the route-data payload so resetToCachedRouteData() can later restore it.
-    this.anonLayoutWrapperDataService.cacheRouteData(
-      firstChildRouteData as Partial<AnonLayoutWrapperData>,
-    );
+    // Cache the routeData payload so resetToCachedRouteData() can later restore it.
+    this.anonLayoutWrapperDataService.cacheRouteData(routeData);
   }
 
   private listenForServiceDataChanges() {
@@ -167,42 +156,45 @@ export class AnonLayoutWrapperComponent implements OnInit {
       });
   }
 
+  /**
+   * Applies a service-driven partial update to the wrapper. Components push updates
+   * through `AnonLayoutWrapperDataService.setAnonLayoutWrapperData()` to temporarily
+   * override route-level layout.
+   *
+   * `Partial<>` semantics allows the AnonLayoutWrapperService to pass in ONLY the properties it
+   * wishes to change, while leaving the rest unchanged.
+   * - omitted (undefined) keys on incoming `data` leave the existing component state unchanged
+   * - present keys on incoming `data` update the component state.
+   */
   private setAnonLayoutWrapperDataFromService(data: Partial<AnonLayoutWrapperData>) {
     if (!data) {
       return;
     }
 
-    // Null emissions are used to reset the page data as all fields are optional.
-
+    // For `pageTitle`, `pageSubtitle`, and `pageIcon`, an explicit `null` on the incoming `data`
+    // clears the field (as opposed to `undefined` which leaves the component state unchanged).
     if (data.pageTitle !== undefined) {
-      this.pageTitle =
-        data.pageTitle !== null ? this.handleStringOrTranslation(data.pageTitle) : null;
+      this.pageTitle = this.handleStringOrTranslation(data.pageTitle);
     }
-
     if (data.pageSubtitle !== undefined) {
-      this.pageSubtitle =
-        data.pageSubtitle !== null ? this.handleStringOrTranslation(data.pageSubtitle) : null;
+      this.pageSubtitle = this.handleStringOrTranslation(data.pageSubtitle);
     }
-
     if (data.pageIcon !== undefined) {
-      this.pageIcon = data.pageIcon !== null ? data.pageIcon : null;
+      this.pageIcon = data.pageIcon;
     }
 
     if (data.showReadonlyHostname !== undefined) {
       this.showReadonlyHostname = data.showReadonlyHostname;
     }
-
     if (data.hideCardWrapper !== undefined) {
       this.hideCardWrapper = data.hideCardWrapper;
     }
-
     if (data.hideBackgroundIllustration !== undefined) {
       this.hideBackgroundIllustration = data.hideBackgroundIllustration;
     }
     if (data.maxWidth !== undefined) {
       this.maxWidth = data.maxWidth;
     }
-
     if (data.hidePageIcon !== undefined) {
       this.hidePageIcon = data.hidePageIcon;
     }
@@ -218,7 +210,11 @@ export class AnonLayoutWrapperComponent implements OnInit {
     this.changeDetectorRef.detectChanges();
   }
 
-  private handleStringOrTranslation(value: string | Translation): string {
+  private handleStringOrTranslation(value: string | Translation | null | undefined): string | null {
+    if (value == null) {
+      return null;
+    }
+
     if (typeof value === "string") {
       // If it's a string, return it as is
       return value;
@@ -226,18 +222,5 @@ export class AnonLayoutWrapperComponent implements OnInit {
 
     // If it's a Translation object, translate it
     return this.i18nService.t(value.key, ...(value.placeholders ?? []));
-  }
-
-  private resetPageData() {
-    this.pageTitle = null;
-    this.pageSubtitle = null;
-    this.pageIcon = null;
-    this.showReadonlyHostname = null;
-    this.maxWidth = null;
-    this.hideCardWrapper = null;
-    this.hideBackgroundIllustration = null;
-    this.hidePageIcon = undefined;
-    this.contentTopPadding = undefined;
-    this.heroTextAlignment = undefined;
   }
 }
