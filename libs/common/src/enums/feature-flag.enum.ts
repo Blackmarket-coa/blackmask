@@ -64,6 +64,9 @@ export enum FeatureFlag {
   SendControls = "pm-31885-send-controls",
   SendEventLogging = "pm-36560-send-event-logging",
 
+  /* Secrets Manager */
+  SmGenerateSecret = "sm-1955-add-value-generator-to-secret-dialog",
+
   /* DIRT */
   EventManagementForBlumira = "event-management-for-blumira",
   EventManagementForDataDogAndCrowdStrike = "event-management-for-datadog-and-crowdstrike",
@@ -143,6 +146,9 @@ export const DefaultFeatureFlagValue = {
   /* Tools */
   [FeatureFlag.SendControls]: FALSE,
   [FeatureFlag.SendEventLogging]: FALSE,
+
+  /* Secrets Manager */
+  [FeatureFlag.SmGenerateSecret]: true,
 
   /* DIRT */
   [FeatureFlag.EventManagementForBlumira]: FALSE,

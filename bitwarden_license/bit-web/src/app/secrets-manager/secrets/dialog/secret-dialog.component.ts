@@ -10,6 +10,8 @@ import {
 } from "@bitwarden/common/admin-console/abstractions/organization/organization.service.abstraction";
 import { AccountService } from "@bitwarden/common/auth/abstractions/account.service";
 import { getUserId } from "@bitwarden/common/auth/services/account.service";
+import { FeatureFlag } from "@bitwarden/common/enums/feature-flag.enum";
+import { ConfigService } from "@bitwarden/common/platform/abstractions/config/config.service";
 import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.service";
 import { PlatformUtilsService } from "@bitwarden/common/platform/abstractions/platform-utils.service";
 import { Utils } from "@bitwarden/common/platform/misc/utils";
@@ -102,6 +104,8 @@ export class SecretDialogComponent implements OnInit, OnDestroy {
   protected peopleAccessPolicyItems: ApItemViewType[];
   protected serviceAccountAccessPolicyItems: ApItemViewType[];
 
+  protected showGenerator$ = this.configService.getFeatureFlag$(FeatureFlag.SmGenerateSecret);
+
   private destroy$ = new Subject<void>();
   private currentPeopleAccessPolicies: ApItemViewType[];
 
@@ -119,6 +123,7 @@ export class SecretDialogComponent implements OnInit, OnDestroy {
     private accessPolicyService: AccessPolicyService,
     private accessPolicySelectorService: AccessPolicySelectorService,
     private toastService: ToastService,
+    private configService: ConfigService,
   ) {}
 
   get title() {
@@ -234,6 +239,12 @@ export class SecretDialogComponent implements OnInit, OnDestroy {
       (closeData) => closeData !== undefined && this.dialogRef.close(),
     );
   };
+
+  onValueGenerated(value: string) {
+    const valueControl = this.formGroup.get("value");
+    valueControl.setValue(value);
+    valueControl.markAsDirty();
+  }
 
   private async loadEditDialog() {
     const secret = await this.secretService.getBySecretId(this.data.secretId);

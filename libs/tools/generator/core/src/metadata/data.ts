@@ -32,6 +32,16 @@ export const Profile = Object.freeze({
    */
   account: "account",
 
+  /** generator options for Secrets Manager secret values.
+   *  @remarks kept separate from {@link account} so Secrets Manager settings
+   *   do not affect the account-level (Password Manager) generator and vice versa.
+   *  @remarks only the `password` algorithm registers metadata for this profile.
+   *   `settings()`/`generate$()`/`policy$()` `log.panic` when an algorithm has no
+   *   metadata for the requested profile, so only request this profile for the
+   *   `password` algorithm until other algorithms opt in.
+   */
+  secretsManager: "secretsManager",
+
   // FIXME: consider adding a profile for bitwarden's master password
 });
 
