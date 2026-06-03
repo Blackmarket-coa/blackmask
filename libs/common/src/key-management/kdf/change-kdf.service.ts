@@ -5,7 +5,7 @@ import { UserId } from "@bitwarden/common/types/guid";
 // eslint-disable-next-line no-restricted-imports
 import { KdfConfig, KdfConfigService, KeyService } from "@bitwarden/key-management";
 
-import { KdfRequest } from "../../models/request/kdf.request";
+import { ChangeKdfRequest } from "../../models/request/change-kdf.request";
 import { SdkService } from "../../platform/abstractions/sdk/sdk.service";
 import { EncString } from "../crypto/models/enc-string";
 import { InternalMasterPasswordServiceAbstraction } from "../master-password/abstractions/master-password.service.abstraction";
@@ -58,7 +58,7 @@ export class DefaultChangeKdfService implements ChangeKdfService {
       updateKdfResult.oldMasterPasswordAuthenticationData,
     );
 
-    const request = new KdfRequest(
+    const request = new ChangeKdfRequest(
       oldAuthenticationData.masterPasswordAuthenticationHash,
       authenticationData,
       unlockData,
