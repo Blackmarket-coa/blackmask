@@ -3,7 +3,6 @@ import { ApiService } from "@bitwarden/common/abstractions/api.service";
 import { ChangeKdfApiService } from "./change-kdf-api.service.abstraction";
 import { ChangeKdfRequest } from "./models/change-kdf.request";
 
-
 /**
  * @internal
  */
