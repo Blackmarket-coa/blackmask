@@ -6,6 +6,13 @@ import { LogService } from "@bitwarden/common/platform/abstractions/log.service"
 // eslint-disable-next-line no-restricted-imports
 import { PBKDF2KdfConfig } from "@bitwarden/key-management";
 
+import {
+  MasterKeyWrappedUserKey,
+  MasterPasswordAuthenticationData,
+  MasterPasswordAuthenticationHash,
+  MasterPasswordSalt,
+  MasterPasswordUnlockData,
+} from "../../../key-management/master-password/types/master-password.types";
 import { PasswordRequest } from "../../models/request/password.request";
 import { SetPasswordRequest } from "../../models/request/set-password.request";
 import { UpdateTdeOffboardingPasswordRequest } from "../../models/request/update-tde-offboarding-password.request";
@@ -62,12 +69,25 @@ describe("MasterPasswordApiService", () => {
   describe("postPassword", () => {
     it("should call apiService.send with the correct parameters", async () => {
       // Arrange
-      const request = {
-        newMasterPasswordHash: "newMasterPasswordHash",
-        masterPasswordHint: "masterPasswordHint",
-        key: "key",
-        masterPasswordHash: "masterPasswordHash",
-      } as PasswordRequest;
+      const salt = "salt" as MasterPasswordSalt;
+      const kdf = new PBKDF2KdfConfig(600_000);
+      const authenticationData: MasterPasswordAuthenticationData = {
+        salt,
+        kdf,
+        masterPasswordAuthenticationHash:
+          "newMasterPasswordAuthenticationHash" as MasterPasswordAuthenticationHash,
+      };
+      const unlockData = new MasterPasswordUnlockData(
+        salt,
+        kdf,
+        "masterKeyWrappedUserKey" as unknown as MasterKeyWrappedUserKey,
+      );
+      const request = new PasswordRequest(
+        "currentMasterPasswordAuthenticationHash" as MasterPasswordAuthenticationHash,
+        authenticationData,
+        unlockData,
+        "masterPasswordHint",
+      );
 
       // Act
       await sut.postPassword(request);
