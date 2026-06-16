@@ -1,0 +1,74 @@
+name: Appium smoke (iOS, physical device)
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Per-branch group: a new push to a branch coalesces that branch's own pending
+# run after CI succeeds (latest commit wins), but different branches use
+# different groups so none are dropped. workflow_dispatch runs get a unique
+# group (run_id) so they always run. Cross-PR / cross-workflow device exclusion
+# is provided by the single self-hosted ios-physical runner (one job at a time),
+# not by this group.
+concurrency:
+  group: appium-smoke-${{ github.event.workflow_run.head_branch || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: [self-hosted, macOS, ARM64, ios-physical]
+    timeout-minutes: 30
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.event == 'pull_request' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    env:
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF-8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Bootstrap Flutter common lib
+        # Builds the add-to-app xcframeworks the host project embeds.
+        run: make -C common build-ios
+
+      - name: Unlock login keychain for codesign
+        env:
+          KEYCHAIN_PASSWORD: ${{ secrets.MAC_KEYCHAIN_PASSWORD }}
+        run: security unlock-keychain -p "$KEYCHAIN_PASSWORD" ~/Library/Keychains/login.keychain-db
+
+      - name: "Run appium smoke (flavor: six)"
+        env:
+          IOS_AUTO_SELECT_FIRST: "1"
+          SHOW_XCODE_LOG: "0"
+        run: make appium-test
+
+      - name: Upload appium screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: appium-screenshots-${{ github.run_id }}
+          path: automation/appium/output/*.png
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload appium smoke artifacts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: appium-smoke-${{ github.run_id }}
+          path: |
+            automation/appium/output/*.xml
+            automation/appium/output/*.log
+            automation/appium/output/*.png
+          if-no-files-found: warn
+          retention-days: 14

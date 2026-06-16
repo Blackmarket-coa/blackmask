@@ -1,0 +1,63 @@
+name: Angular
+
+on:
+  push:
+    paths:
+      - 'desktop/angular/**'
+    branches:
+      - main
+      - development
+      - v1-legacy
+      - v1-legacy-develop
+
+  pull_request:
+    paths:
+      - 'desktop/angular/**'
+    branches:
+      - main
+      - development
+      - v1-legacy
+      - v1-legacy-develop
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: desktop/angular
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+    - uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3
+      with:
+        node-version: 18
+
+    - run: npm install
+
+    - uses: sibiraj-s/action-eslint@bcf41bb9abce43cdbad51ab9b3da2eddaa17eab3 # v3
+      with:
+        annotations: true
+        extensions: 'ts,html'
+        working-directory: desktop/angular
+
+  test:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: earthly/actions-setup@43211c7a0eae5344d6d79fb4aaf209c8f8866203 # v1
+      with:
+        version: v0.8.0
+    - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+    - name: Log in to the Container registry
+      uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build angular projects
+      run: earthly --ci --remote-cache=ghcr.io/safing/build-cache --push +angular-ci

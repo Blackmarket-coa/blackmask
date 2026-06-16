@@ -1,0 +1,149 @@
+# Workflow to generate an Android app repository on F-Droid from the apps listing. 
+# This workflow is triggered by a schedule or manually via workflow_dispatch.
+
+name: Generate F-Droid app repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Skips pushing changes when enabled. Optional. Defaults to false."
+        type: boolean
+        default: false
+        required: false
+
+  schedule:
+    - cron: "45 2 * * *"
+
+jobs:
+  apps:
+    name: "Generate repo from apps listing"
+    runs-on: ubuntu-24.04
+    env:
+      _COMMIT_MSG_FILE: "${{ github.workspace }}/commit_message.tmp"
+    permissions:
+      id-token: write
+    steps:
+      - name: Log in to Azure
+        uses: bitwarden/gh-actions/azure-login@main
+        with:
+          subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          tenant_id: ${{ secrets.AZURE_TENANT_ID }}
+          client_id: ${{ secrets.AZURE_CLIENT_ID }}
+
+      - name: Get Azure Key Vault secrets - GH Org
+        id: get-kv-secrets
+        uses: bitwarden/gh-actions/get-keyvault-secrets@main
+        with:
+          keyvault: gh-org-bitwarden
+          secrets: "BW-GHAPP-ID,BW-GHAPP-KEY"
+
+      - name: Get Azure Key Vault secrets - f-droid
+        id: get-kv-fdroid
+        uses: bitwarden/gh-actions/get-keyvault-secrets@main
+        with:
+          keyvault: gh-f-droid
+          secrets: "FDROID-STORE-KEYSTORE-PASSWORD"
+
+      - name: Generate GH App token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          app-id: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-ID }}
+          private-key: ${{ steps.get-kv-secrets.outputs.BW-GHAPP-KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      # NOTE: intentionally checking out before downloading secrets, otherwise the downloaded files are removed.
+      # This may be later solved by: https://github.com/actions/checkout/pull/2286
+      - name: Checkout repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: true
+
+      - name: Download secrets
+        env:
+          ACCOUNT_NAME: bitwardenci
+          CONTAINER_NAME: mobile
+        run: |
+          mkdir -p fdroid/repo
+          az storage blob download --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" \
+          --name store_fdroid-keystore.jks --file fdroid/keystore.p12 --output none
+
+      - name: Log out from Azure
+        uses: bitwarden/gh-actions/azure-logout@main
+
+      - name: Set up Git
+        run: |
+          git config --local user.email "178206702+bw-ghapp[bot]@users.noreply.github.com"
+          git config --local user.name "bw-ghapp[bot]"
+
+      - name: Configure F-Droid server
+        env:
+          FDROID_STORE_KEYSTORE_PASSWORD: ${{ steps.get-kv-fdroid.outputs.FDROID-STORE-KEYSTORE-PASSWORD }}
+        run: |
+          if [ -f "fdroid/keystore.p12" ]; then
+            echo "keystore found"
+          else
+            echo "keystore not found!"
+            exit 1
+          fi
+
+          cp base_fdroid_config.yml fdroid/config.yml
+          chmod 0600 fdroid/config.yml
+          echo "keypass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
+          echo "keystorepass: '$FDROID_STORE_KEYSTORE_PASSWORD'" >> fdroid/config.yml
+
+      - name: Install F-Droid server software
+        run: |
+         sudo add-apt-repository ppa:fdroid/fdroidserver
+         sudo apt-get update
+         sudo apt-get install fdroidserver
+
+      - name: Ignore F-Droid ResParseError
+        run: |
+          sudo sed -i 's|raise ResParserError("res0 must be zero!")|log.warning("res0 must be zero!")|g' /usr/lib/python3/dist-packages/androguard/core/bytecodes/axml/__init__.py
+          sudo sed -i 's|raise ResParserError("res1 must be zero!")|log.warning("res1 must be zero!")|g' /usr/lib/python3/dist-packages/androguard/core/bytecodes/axml/__init__.py
+
+      - name: Set up Go
+        uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # v6.4.0
+        with:
+          go-version-file: metascoop/go.mod
+          cache-dependency-path: metascoop/go.sum
+
+      - name: Run metascoop
+        id: run-metascoop
+        env:
+          GH_ACCESS_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          bash run_metascoop.sh "${_COMMIT_MSG_FILE}"
+          if [ $? -eq 0 ]; then
+            echo "Changes detected"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          elif [ $? -eq 2 ]; then
+            echo "No changes detected"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Unexpected exit code: $?"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+        continue-on-error: true
+
+      - name: Delete F-Droid server config
+        run: |
+          rm -f fdroid/config.yml
+
+      - name: Update repo
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          _DRY_RUN: ${{ inputs.dry-run }}
+          _METASCOOP_HAS_CHANGES: ${{ steps.run-metascoop.outputs.has_changes }}
+        run: |
+          if [ "$_DRY_RUN" = "true" ]; then
+            echo "Dry run. Changes are not being saved."
+          elif [ "$_METASCOOP_HAS_CHANGES" != "true" ]; then
+            echo "No changes to save."
+          else
+            bash update_repo.sh "${_COMMIT_MSG_FILE}"
+          fi

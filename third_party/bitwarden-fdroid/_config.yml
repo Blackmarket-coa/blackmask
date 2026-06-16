@@ -1,0 +1,20 @@
+# jekyll config file for GH Page
+title: Bitwarden F-Droid Repository
+logo: fdroid/repo/com.x8bit.bitwarden/en-US/icon.png
+markdown: GFM
+theme: minima
+minima:
+  skin: auto
+# When GH Pages updates Jekyll from 3.x to 4.x, replace the exclude list with "*" and add an "include:" list with the required files.
+exclude:
+  - fdroid/archive/
+  - metascoop/
+  - CONTRIBUTING.md
+  - LICENSE.txt
+  - SECURITY.md
+  - base_fdroid_config.yml
+  - repos.yaml
+  - update_repo.sh
+  - run_metascoop.sh
+  - Gemfile
+  - Gemfile.lock

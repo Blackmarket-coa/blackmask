@@ -1,0 +1,69 @@
+part of '../core.dart';
+
+final defaultLoggerPrinter = PrefixPrinter(PrettyPrinter(
+  //colors: PlatformInfo().getCurrentPlatformType() != PlatformType.iOS,
+  colors: false,
+  printEmojis: false,
+  stackTraceBeginIndex: 0,
+  methodCount: kReleaseMode ? 2 : 6,
+  errorMethodCount: 16,
+  dateTimeFormat: _dateAndTimeAndSinceStart,
+  excludePaths: [
+    "package:common/src/core/logger",
+    "<asynchronous suspension>",
+  ],
+));
+
+String _dateAndTimeAndSinceStart(DateTime t) {
+  String isoDate = t.toIso8601String().replaceFirst("T", " ");
+  var timeSinceStart = t.difference(PrettyPrinter.startTime!).toString();
+  return "$isoDate (+$timeSinceStart) ${t.timeZoneName}";
+}
+
+mixin LoggerChannel {
+  Future<void> doUseFilename(String filename);
+  Future<void> doSaveBatch(String batch);
+  Future<void> doShareFile();
+}
+
+class FileLoggerOutput extends LogOutput {
+  late final _channel = Core.get<LoggerChannel>();
+  bool _initialized = false;
+
+  FileLoggerOutput();
+
+  void ensureInitialized() {
+    if (_initialized) return;
+    _initialized = true;
+    _channel.doUseFilename(getLogFilename());
+  }
+
+  String getLogFilename() {
+    final type = PlatformInfo().getCurrentPlatformType();
+    final platform = type == PlatformType.iOS
+        ? "i"
+        : (type == PlatformType.android ? "a" : "z");
+    final flavor = Core.act.isFamily ? "F" : "6";
+    final build = Core.act.isRelease ? "R" : "D";
+
+    return "blokada-$platform${flavor}x$build.log";
+  }
+
+  @override
+  void output(OutputEvent event) {
+    emitLines(event);
+    persistBatch(event);
+  }
+
+  void emitLines(OutputEvent event) {
+    for (var line in event.lines) {
+      print(line);
+    }
+  }
+
+  void persistBatch(OutputEvent event) {
+    ensureInitialized();
+    if (event.level == Level.trace && Core.act.isRelease) return;
+    _channel.doSaveBatch("${event.lines.join("\n")}\n");
+  }
+}

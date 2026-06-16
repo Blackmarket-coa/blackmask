@@ -1,0 +1,44 @@
+[package]
+name = "bitwarden-policies"
+description = """
+Internal crate for the bitwarden crate. Do not use.
+"""
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license-file.workspace = true
+readme.workspace = true
+keywords.workspace = true
+
+[features]
+uniffi = [
+    "bitwarden-core/uniffi",
+    "bitwarden-organizations/uniffi",
+    "dep:uniffi",
+] # Uniffi bindings
+wasm = [
+    "bitwarden-core/wasm",
+    "bitwarden-organizations/wasm",
+    "dep:tsify",
+    "dep:wasm-bindgen",
+    "dep:wasm-bindgen-futures",
+] # WASM support
+
+[dependencies]
+bitwarden-api-api = { workspace = true }
+bitwarden-core = { workspace = true }
+bitwarden-organizations = { workspace = true }
+chrono = { workspace = true }
+serde = { workspace = true }
+serde_repr = { workspace = true }
+tsify = { workspace = true, optional = true }
+uniffi = { workspace = true, optional = true }
+uuid = { workspace = true }
+wasm-bindgen = { workspace = true, optional = true }
+wasm-bindgen-futures = { workspace = true, optional = true }
+
+[lints]
+workspace = true
