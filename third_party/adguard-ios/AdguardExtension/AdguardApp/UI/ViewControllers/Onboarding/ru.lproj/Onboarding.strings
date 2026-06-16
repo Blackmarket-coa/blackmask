@@ -1,0 +1,35 @@
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "3ju-B8-UIZ"; */
+"3ju-B8-UIZ.normalTitle" = "Видеоинструкция";
+
+/* Class = "UILabel"; text = "Terms and Conditions"; ObjectID = "E6C-TE-ZI6"; */
+"E6C-TE-ZI6.text" = "Условия и положения";
+
+/* Class = "UILabel"; text = "Enable AdGuard for Safari"; ObjectID = "F7O-MB-LHu"; */
+"F7O-MB-LHu.text" = "Включите AdGuard для Safari";
+
+/* Class = "UILabel"; text = "Block Trackers"; ObjectID = "FDG-As-HDY"; */
+"FDG-As-HDY.text" = "Блокируйте трекинг";
+
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "GOu-4j-RcN"; */
+"GOu-4j-RcN.normalTitle" = "Видеоинструкция";
+
+/* Class = "UILabel"; text = "Stop thousands of corporations from tracking your every move. Regain control of your online privacy."; ObjectID = "Mzf-WJ-CpC"; Note = "String must be less or equal 4 lines"; */
+"Mzf-WJ-CpC.text" = "Не дайте тысячам корпораций отслеживать каждый ваш клик. Защитите свои личные данные.";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "cMV-qC-ZdE"; */
+"cMV-qC-ZdE.normalTitle" = "Продолжить";
+
+/* Class = "UILabel"; text = "Block Ads"; ObjectID = "hXU-wD-fbI"; */
+"hXU-wD-fbI.text" = "Блокируйте рекламу";
+
+/* Class = "UILabel"; text = "Block Annoyances"; ObjectID = "hf9-6r-TUk"; */
+"hf9-6r-TUk.text" = "Блокируйте раздражители";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "q8l-xM-B5q"; */
+"q8l-xM-B5q.normalTitle" = "Продолжить";
+
+/* Class = "UILabel"; text = "AdGuard blocks ads in Safari on most websites. Enjoy faster web surfing without ads!"; ObjectID = "r3n-Il-Qe8"; Note = "String must be less or equal 4 lines"; */
+"r3n-Il-Qe8.text" = "AdGuard блокирует рекламу на большинстве сайтов в Safari. Наслаждайтесь интернетом без рекламы!";
+
+/* Class = "UILabel"; text = "Use our collection of flexible filters to remove any type of content. Tune the filtering to your liking and surf the web your way."; ObjectID = "thP-lV-BhN"; Note = "String must be less or equal 4 lines"; */
+"thP-lV-BhN.text" = "AdGuard умеет фильтровать любой вид контента, и вы можете настроить фильтрацию полностью под ваши нужды.";

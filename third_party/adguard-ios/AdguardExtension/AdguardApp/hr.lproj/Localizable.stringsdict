@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>trial_description_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Započnite s jednodnevnim probnim periodom</string>
+        <key>few</key>
+        <string>Započnite s probnim periodom u trajanju od %d dana</string>
+        <key>other</key>
+        <string>Započnite s probnim periodom u trajanju od %d dana</string>
+      </dict>
+    </dict>
+    <key>trial_description_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Započnite s jednotjednim probnim periodom</string>
+        <key>few</key>
+        <string>Započnite s probnim periodom u trajanju od %d tjedna</string>
+        <key>other</key>
+        <string>Započnite s probnim periodom u trajanju od %d tjedana</string>
+      </dict>
+    </dict>
+    <key>trial_description_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Započnite s jednomjesečnim probnim periodom </string>
+        <key>few</key>
+        <string>Započnite s probnim periodom u trajanju od %d mjeseca </string>
+        <key>other</key>
+        <string>Započnite s probnim periodom u trajanju od %d mjeseci </string>
+      </dict>
+    </dict>
+    <key>trial_description_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Započnite s jednogodišnjim probnim periodom </string>
+        <key>few</key>
+        <string>Započnite s probnim periodom u trajanju od %d godine </string>
+        <key>other</key>
+        <string>Započnite s probnim periodom u trajanju od %d godina </string>
+      </dict>
+    </dict>
+    <key>user_rules_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@rules@</string>
+      <key>rules</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 pravilo omogućeno</string>
+        <key>few</key>
+        <string>%d pravila omogućena</string>
+        <key>other</key>
+        <string>%d pravila omogućeno</string>
+      </dict>
+    </dict>
+    <key>safari_filters_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@filters@</string>
+      <key>filters</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 filtar omogućen</string>
+        <key>few</key>
+        <string>%d filtra omogućena</string>
+        <key>other</key>
+        <string>%d filtara omogućeno</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Potpuni, besplatni pristup na jedan dan</string>
+        <key>few</key>
+        <string>Potpuni, besplatni pristup na %d dana</string>
+        <key>other</key>
+        <string>Potpuni, besplatni pristup na %d dana</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Potpuni, besplatni pristup na jedan tjedan</string>
+        <key>few</key>
+        <string>Potpuni, besplatni pristup na %d tjedna</string>
+        <key>other</key>
+        <string>Potpuni, besplatni pristup na %d tjedana</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Potpuni, besplatni pristup na jedan mjesec</string>
+        <key>few</key>
+        <string>Potpuni, besplatni pristup na %d mjeseca</string>
+        <key>other</key>
+        <string>Potpuni, besplatni pristup na %d mjeseci</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Potpuni, besplatni pristup na jednu godinu</string>
+        <key>few</key>
+        <string>Potpuni, besplatni pristup na %d godine</string>
+        <key>other</key>
+        <string>Potpuni, besplatni pristup na %d godina</string>
+      </dict>
+    </dict>
+  </dict>
+</plist>

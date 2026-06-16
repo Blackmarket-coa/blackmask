@@ -1,0 +1,32 @@
+/* Class = "UILabel"; text = "Code from the authentication app:"; ObjectID = "53G-qY-SZ5"; */
+"53G-qY-SZ5.text" = "Kode dari aplikasi autentikasi:";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "J8s-sG-FKu"; */
+"J8s-sG-FKu.text" = "Masuk";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "LJj-cc-Ko5"; */
+"LJj-cc-Ko5.text" = "E-mail:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "P6N-OK-fHG"; */
+"P6N-OK-fHG.text" = "Kata sandi:";
+
+/* Class = "UILabel"; text = "Log in with your AdGuard account or use social login"; ObjectID = "ZuM-Nn-uXv"; */
+"ZuM-Nn-uXv.text" = "Masuk dengan akun AdGuard anda atau gunakan media sosial";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "bUa-fF-AXO"; */
+"bUa-fF-AXO.normalTitle" = "Masuk";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "fxK-6y-LB6"; */
+"fxK-6y-LB6.text" = "Masuk";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "rrj-Gm-LCJ"; */
+"rrj-Gm-LCJ.normalTitle" = "Konfirmasi";
+
+/* Class = "UILabel"; text = "Delete account"; ObjectID = "sJT-OU-IOd"; */
+"sJT-OU-IOd.text" = "Hapus akun";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "xFB-lA-lsv"; */
+"xFB-lA-lsv.normalTitle" = "Batal";
+
+/* Class = "UIButton"; normalTitle = "Delete account"; ObjectID = "yIo-kb-pVa"; */
+"yIo-kb-pVa.normalTitle" = "Hapus akun";

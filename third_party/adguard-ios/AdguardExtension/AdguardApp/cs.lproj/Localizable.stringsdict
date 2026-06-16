@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>trial_description_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Přihlaste se k odběru a získejte jeden den zkušební verze zdarma</string>
+        <key>few</key>
+        <string>Přihlaste se k odběru a získejte %d dny zkušební verze zdarma</string>
+        <key>many</key>
+        <string>Přihlaste se k odběru a získejte %d dnů zkušební verze zdarma</string>
+        <key>other</key>
+        <string>Přihlaste se k odběru a získejte %d dnů zkušební verze zdarma</string>
+      </dict>
+    </dict>
+    <key>trial_description_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Přihlaste se k odběru a získejte jeden týden zkušební verze zdarma</string>
+        <key>few</key>
+        <string>Přihlaste se k odběru a získejte %d týdny zkušební verze zdarma</string>
+        <key>many</key>
+        <string>Přihlaste se k odběru a získejte %d týdnů zkušební verze zdarma</string>
+        <key>other</key>
+        <string>Přihlaste se k odběru a získejte %d týdnů zkušební verze zdarma</string>
+      </dict>
+    </dict>
+    <key>trial_description_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Přihlaste se k odběru a získejte jeden měsíc zkušební verze zdarma</string>
+        <key>few</key>
+        <string>Přihlaste se k odběru a získejte %d měsíce zkušební verze zdarma</string>
+        <key>many</key>
+        <string>Přihlaste se k odběru a získejte %d měsíců zkušební verze zdarma</string>
+        <key>other</key>
+        <string>Přihlaste se k odběru a získejte %d měsíců zkušební verze zdarma</string>
+      </dict>
+    </dict>
+    <key>trial_description_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Přihlaste se k odběru a získejte jeden rok zkušební verze zdarma</string>
+        <key>few</key>
+        <string>Přihlaste se k odběru a získejte %d roky zkušební verze zdarma</string>
+        <key>many</key>
+        <string>Přihlaste se k odběru a získejte %d let zkušební verze zdarma</string>
+        <key>other</key>
+        <string>Přihlaste se k odběru a získejte %d let zkušební verze zdarma</string>
+      </dict>
+    </dict>
+    <key>user_rules_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@rules@</string>
+      <key>rules</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 pravidlo povoleno</string>
+        <key>few</key>
+        <string>%d pravidla povolena</string>
+        <key>many</key>
+        <string>%d pravidel povoleno</string>
+        <key>other</key>
+        <string>%d pravidel povoleno</string>
+      </dict>
+    </dict>
+    <key>safari_filters_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@filters@</string>
+      <key>filters</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 filtr povolen</string>
+        <key>few</key>
+        <string>%d filtry povoleny</string>
+        <key>many</key>
+        <string>%d filtrů povoleno</string>
+        <key>other</key>
+        <string>%d filtrů povoleno</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 den úplného přístupu zdarma</string>
+        <key>few</key>
+        <string>%d dny úplného přístupu zdarma</string>
+        <key>many</key>
+        <string>%d dnů úplného přístupu zdarma</string>
+        <key>other</key>
+        <string>%d dnů úplného přístupu zdarma</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 týden úplného přístupu zdarma</string>
+        <key>few</key>
+        <string>%d týdny úplného přístupu zdarma</string>
+        <key>many</key>
+        <string>%d týdnů úplného přístupu zdarma</string>
+        <key>other</key>
+        <string>%d týdnů úplného přístupu zdarma</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 měsíc úplného přístupu zdarma</string>
+        <key>few</key>
+        <string>%d měsíce úplného přístupu zdarma</string>
+        <key>many</key>
+        <string>%d měsíců úplného přístupu zdarma</string>
+        <key>other</key>
+        <string>%d měsíců úplného přístupu zdarma</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 rok úplného přístupu zdarma</string>
+        <key>few</key>
+        <string>%d roky úplného přístupu zdarma</string>
+        <key>many</key>
+        <string>%d let úplného přístupu zdarma</string>
+        <key>other</key>
+        <string>%d let úplného přístupu zdarma</string>
+      </dict>
+    </dict>
+  </dict>
+</plist>

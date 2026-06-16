@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+MS_EDGE="${1:-microsoft-edge}"
+
+edge_version_major=$("$MS_EDGE" --product-version | cut -d . -f 1)
+edgedriver_version_url="https://msedgedriver.microsoft.com/LATEST_RELEASE_${edge_version_major}_LINUX"
+edgedriver_version=$(curl -s "$edgedriver_version_url" | tr -d "\0\r\n" | cut -c 3-)
+if [ -z "$edgedriver_version" ]; then
+  echo "Failed to retrieve Edge WebDriver version!"
+  exit 1
+fi
+
+echo "Installing Edge WebDriver version $edgedriver_version ..."
+wget "https://msedgedriver.microsoft.com/${edgedriver_version}/edgedriver_linux64.zip"
+unzip edgedriver_linux64.zip
+sudo mv msedgedriver /usr/local/bin/
+sudo chmod a+x /usr/local/bin/msedgedriver
+
+# check that Edge WebDriver is now present
+type msedgedriver >/dev/null 2>&1 || {
+  echo "Failed to install Edge WebDriver"
+  exit 1
+}

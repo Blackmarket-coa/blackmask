@@ -1,0 +1,99 @@
+
+#iframe, #svg {
+	position: fixed;
+	top: -2000%;
+}
+#noIframe {
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+}
+#noIframe, #iframeBody {
+	margin: 0px;
+	padding: 8px;
+}
+.template {
+	display: none;
+}
+.test {
+	display: inline-block;
+	margin: 1em;
+}
+.test .data table {
+	border-collapse: collapse;
+}
+.test .data th {
+	padding: 0.4em;
+}
+.test .data td{
+	border: 1px solid #c7c7c7;
+	padding: 0.4em;
+}
+.test .data td.value {
+	text-align: right;
+}
+.small {
+	font-size: 0.8em;
+	color: gray;
+}
+.rectHash {
+	font-size: 4px;
+}
+.rectHash:hover {
+	font-size: 100%;
+}
+
+/*measured elements*/
+
+#inside {
+	white-space: nowrap;
+
+	color:#5B5B5B;
+	position: absolute;
+	padding: 1.3333px;
+	left: 10.5555px;
+	top: 28.4444px;
+	font-size: 24.5555px;
+
+	-ms-transform: scale(1.31123) matrix3d(0.373513, -0.0440105, 0, -0.000202461, -0.0851682, 0.616234, 0, -0.00123197, 2.17, 0.21, 1, 0.02, 13.81, 2.11, 0, 0.98);
+	-moz-transform: scale(1.31123) matrix3d(0.373513, -0.0440105, 0, -0.000202461, -0.0851682, 0.616234, 0, -0.00123197, 2.17, 0.21, 1, 0.02, 13.81, 2.11, 0, 0.98);
+	-webkit-transform: scale(1.31123) matrix3d(0.373513, -0.0440105, 0, -0.000202461, -0.0851682, 0.616234, 0, -0.00123197, 2.17, 0.21, 1, 0.02, 13.81, 2.11, 0, 0.98);
+	transform: scale(1.31123) matrix3d(0.373513, -0.0440105, 0, -0.000202461, -0.0851682, 0.616234, 0, -0.00123197, 2.17, 0.21, 1, 0.02, 13.81, 2.11, 0, 0.98);
+
+	-ms-transform-origin: 0.1111px 0.2222px 0.3333px;
+	-moz-transform-origin: 0.1111px 0.2222px 0.3333px;
+	-webkit-transform-origin: 0.1111px 0.2222px 0.3333px;
+	transform-origin: 0.1111px 0.2222px 0.3333px;
+}
+
+#select {
+	transform: rotate(1.23deg);
+}
+
+#progress {
+	transform: scale(3.14);
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+#button {
+	padding: 4.937px;
+	margin: 9.876px;
+}
+
+.testRect {
+	outline: 2px dotted lightblue;
+}
+
+.content-hidable.content-hidden .content, .content-hidable .anti-content {
+	display: none;
+}
+.content-hidable .content, .content-hidable.content-hidden .anti-content {
+	display: initial;
+}
+.content-hidable .toggle {
+	cursor: pointer;
+}

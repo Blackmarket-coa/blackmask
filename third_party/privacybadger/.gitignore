@@ -1,0 +1,45 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+__pycache__
+
+# Dynamic libraries
+*.dylib
+
+# JSHydra
+buildtools/jshydra/mozilla/js
+
+# Vim swap files
+*.sw?
+
+# macOS cruft
+.DS_Store
+
+node_modules
+
+tests/.cache
+tests/.pytest_cache
+.pytest_cache
+
+.idea
+
+#Eclipse project stuff
+.settings/
+.project
+
+pkg
+release-utils/config.sh

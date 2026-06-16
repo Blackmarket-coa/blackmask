@@ -1,0 +1,17 @@
+[package]
+name = "credential-exchange-protocol"
+description = "Credential Exchange Protocol (CXP) rust types"
+
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords.workspace = true
+
+[dependencies]
+credential-exchange-format = { path = "../credential-exchange-format", version = "0.4 " }
+jose-jwk = { version = "0.1", default-features = false }
+serde = { version = "1", features = ["derive"] }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detection test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
+	<style>
+		.notRun {
+			color: lightgray;
+		}
+		.loud .status{
+			color: red;
+		}
+		.stealthy .status{
+			color: darkgreen;
+		}
+		.failed {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<h1>Detection test</h1>
+Checks if the addon can be detected by websites. To check if CanvasBlocker was really detected you should run this test with the following configurations (the difference between 2. and 3. tells the detection of CanvasBlocker):
+<ol>
+	<li>all addons enabled</li>
+	<li>all addons disabled</li>
+	<li>CanvasBlocker enabled but all other addons disabled</li>
+	<li>CanvasBlocker disabled</li>
+</ol>
+<h2>Tests</h2>
+<ul id="tests"></ul>
+<script src="detectionTest.js"></script>
+</body>
+</html>

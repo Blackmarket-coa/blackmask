@@ -1,0 +1,35 @@
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "3ju-B8-UIZ"; */
+"3ju-B8-UIZ.normalTitle" = "Guida video";
+
+/* Class = "UILabel"; text = "Terms and Conditions"; ObjectID = "E6C-TE-ZI6"; */
+"E6C-TE-ZI6.text" = "Termini e Condizioni";
+
+/* Class = "UILabel"; text = "Enable AdGuard for Safari"; ObjectID = "F7O-MB-LHu"; */
+"F7O-MB-LHu.text" = "Attiva AdGuard per Safari";
+
+/* Class = "UILabel"; text = "Block Trackers"; ObjectID = "FDG-As-HDY"; */
+"FDG-As-HDY.text" = "Blocco Tracciatori";
+
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "GOu-4j-RcN"; */
+"GOu-4j-RcN.normalTitle" = "Video guida";
+
+/* Class = "UILabel"; text = "Stop thousands of corporations from tracking your every move. Regain control of your online privacy."; ObjectID = "Mzf-WJ-CpC"; Note = "String must be less or equal 4 lines"; */
+"Mzf-WJ-CpC.text" = "Impedisci a migliaia di aziende di monitorare ogni tua mossa. Riprendi il controllo della tua privacy online.";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "cMV-qC-ZdE"; */
+"cMV-qC-ZdE.normalTitle" = "Continua";
+
+/* Class = "UILabel"; text = "Block Ads"; ObjectID = "hXU-wD-fbI"; */
+"hXU-wD-fbI.text" = "Blocca-Annunci";
+
+/* Class = "UILabel"; text = "Block Annoyances"; ObjectID = "hf9-6r-TUk"; */
+"hf9-6r-TUk.text" = "Blocco Anti-Fastidio";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "q8l-xM-B5q"; */
+"q8l-xM-B5q.normalTitle" = "Continua";
+
+/* Class = "UILabel"; text = "AdGuard blocks ads in Safari on most websites. Enjoy faster web surfing without ads!"; ObjectID = "r3n-Il-Qe8"; Note = "String must be less or equal 4 lines"; */
+"r3n-Il-Qe8.text" = "AdGuard blocca gli annunci in Safari sulla maggioranza dei siti web. Goditi una navigazione web più veloce e priva di pubblicità!";
+
+/* Class = "UILabel"; text = "Use our collection of flexible filters to remove any type of content. Tune the filtering to your liking and surf the web your way."; ObjectID = "thP-lV-BhN"; Note = "String must be less or equal 4 lines"; */
+"thP-lV-BhN.text" = "Utilizza la nostra raccolta di filtri flessibili per rimuovere qualsiasi tipo di contenuto. Regola il filtro a tuo piacimento e naviga sul web nel modo che preferisci.";

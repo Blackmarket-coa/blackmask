@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>trial_description_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>مشترک شوید و آزمایشی رایگان یک روزه دریافت کنید</string>
+        <key>other</key>
+        <string>مشترک شوید و آزمایشی رایگان %d روزه دریافت کنید</string>
+      </dict>
+    </dict>
+    <key>trial_description_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>مشترک شوید و آزمایشی رایگان یک هفته‌ای دریافت کنید</string>
+        <key>other</key>
+        <string>مشترک شوید و آزمایشی رایگان %d هفته‌ای دریافت کنید</string>
+      </dict>
+    </dict>
+    <key>trial_description_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>مشترک شوید و آزمایشی رایگان یک ماهه دریافت کنید</string>
+        <key>other</key>
+        <string>مشترک شوید و آزمایشی رایگان %d ماهه دریافت کنید</string>
+      </dict>
+    </dict>
+    <key>trial_description_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>مشترک شوید و آزمایشی رایگان یک ساله دریافت کنید</string>
+        <key>other</key>
+        <string>مشترک شوید و آزمایشی رایگان %d ساله دریافت کنید</string>
+      </dict>
+    </dict>
+    <key>user_rules_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@rules@</string>
+      <key>rules</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>۱ رویه فعال شد</string>
+        <key>other</key>
+        <string>%d رویه فعال شد</string>
+      </dict>
+    </dict>
+    <key>safari_filters_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@filters@</string>
+      <key>filters</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>۱ پالایه فعال شد</string>
+        <key>other</key>
+        <string>%d پالایه فعال شد</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>دسترسی کامل رایگان یک روزه</string>
+        <key>other</key>
+        <string>دسترسی کامل رایگان %d روزه</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>دسترسی کامل رایگان یک هفته‌ای</string>
+        <key>other</key>
+        <string>دسترسی کامل رایگان %d هفته‌ای</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>دسترسی کامل رایگان یک ماهه</string>
+        <key>other</key>
+        <string>دسترسی کامل رایگان %d ماهه</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>دسترسی کامل رایگان یک ساله</string>
+        <key>other</key>
+        <string>دسترسی کامل رایگان %d ساله</string>
+      </dict>
+    </dict>
+  </dict>
+</plist>

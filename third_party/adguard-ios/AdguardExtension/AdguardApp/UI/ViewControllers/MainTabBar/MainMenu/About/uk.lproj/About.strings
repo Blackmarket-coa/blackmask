@@ -1,0 +1,17 @@
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "Jbp-5W-y9v"; */
+"Jbp-5W-y9v.normalTitle" = "Політика конфіденційності";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "hE0-Ag-02J"; */
+"hE0-Ag-02J.text" = "Про програму";
+
+/* Class = "UIButton"; normalTitle = "Acknowledgments"; ObjectID = "htU-yE-FEi"; */
+"htU-yE-FEi.normalTitle" = "Подяки";
+
+/* Class = "UIBarButtonItem"; title = "Log in"; ObjectID = "jMW-e4-GbU"; */
+"jMW-e4-GbU.title" = "Увійти";
+
+/* Class = "UIButton"; normalTitle = "More info"; ObjectID = "oMX-oj-ZeJ"; */
+"oMX-oj-ZeJ.normalTitle" = "Докладніше";
+
+/* Class = "UIButton"; normalTitle = "EULA"; ObjectID = "uyB-mD-gtt"; */
+"uyB-mD-gtt.normalTitle" = "Ліцензійна угода";

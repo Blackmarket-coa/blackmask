@@ -1,0 +1,15 @@
+{
+    "3rdparty": {
+        "extensions": {
+            "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
+                "showIntroPage": false,
+                "disabledSites": [
+                    "example.com"
+                ],
+                "trackingDomains": [
+                    { "action": "block", "domain": "youtube.com" }
+                ]
+            }
+        }
+    }
+}

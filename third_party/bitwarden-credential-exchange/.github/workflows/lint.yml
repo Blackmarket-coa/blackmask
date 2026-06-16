@@ -1,0 +1,62 @@
+name: Lint
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  style:
+    name: Check Style
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Install rust
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
+        with:
+          toolchain: stable
+
+      - name: Install rust nightly
+        run: |
+          rustup toolchain install nightly
+          rustup component add rustfmt --toolchain nightly-x86_64-unknown-linux-gnu
+
+      - name: Cache cargo registry
+        uses: Swatinem/rust-cache@98c8021b550208e191a6a3145459bfc9fb29c4c0 # v2.8.0
+
+      - name: Cargo fmt
+        run: cargo +nightly fmt --check
+
+      - name: Install clippy-sarif and sarif-fmt
+        run: cargo install clippy-sarif sarif-fmt --locked --git https://github.com/psastras/sarif-rs.git --rev 11c33a53f6ffeaed736856b86fb6b7b09fabdfd8
+
+      - name: Cargo clippy
+        run: cargo clippy --all-features --tests --message-format=json |
+          clippy-sarif | tee clippy_result.sarif | sarif-fmt
+        env:
+          RUSTFLAGS: "-D warnings"
+
+      - name: Upload Clippy results to GitHub
+        uses: github/codeql-action/upload-sarif@16140ae1a102900babc80a33c44059580f687047 # v4.30.9
+        with:
+          sarif_file: clippy_result.sarif
+          sha: ${{ contains(github.event_name, 'pull_request') && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ contains(github.event_name, 'pull_request') && format('refs/pull/{0}/head', github.event.pull_request.number) || github.ref }}
+
+      - name: Verify rust documentation links
+        run: cargo doc --no-deps
+        env:
+          RUSTDOCFLAGS: "-D warnings"

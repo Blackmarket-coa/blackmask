@@ -1,0 +1,70 @@
+# https://developer.chrome.com/docs/extensions/how-to/distribute/host-on-linux
+crx:
+	$(eval TMPFILE := $(shell mktemp))
+	cp src/manifest.json $(TMPFILE)
+	./scripts/patch_manifest.py src/manifest.json set update_url http://localhost:9999/updates.xml
+	google-chrome --pack-extension=./src --pack-extension-key=./release-utils/dummy-chromium.pem
+	mv src.crx release-utils/privacy-badger.crx
+	mv $(TMPFILE) src/manifest.json
+
+lint:
+	./node_modules/.bin/eslint .
+
+minimages:
+	npx @j9t/imagemin-guard@4.2.0
+
+updatepsl:
+	scripts/updatepsl.sh
+
+updateseed:
+	scripts/updateseeddata.sh
+
+apply_effdntlist:
+	scripts/apply_effdntlist.py src/data/seed.json
+
+updategoogle:
+	scripts/updategoogle.sh
+
+updatecnames:
+	scripts/updatecnames.sh
+
+upload:
+	# pbconfig
+	cp src/data/pbconfig.json ../privacybadger_assets/files/pbconfig.json
+	# DNT policy hashes (legacy)
+	$(eval HASHES_TMP := $(shell mktemp))
+	python -c 'import json,sys; print(json.dumps(json.load(sys.stdin)["dnt_policy_hashes"]))' < src/data/pbconfig.json > $(HASHES_TMP)
+	cp $(HASHES_TMP) ../privacybadger_assets/files/dnt-policies.json
+	rm $(HASHES_TMP)
+	# yellowlist (legacy)
+	$(eval YLIST_TMP := $(shell mktemp))
+	python -c 'import json,sys; print("\n".join(json.load(sys.stdin)["yellowlist"]))' < src/data/pbconfig.json > $(YLIST_TMP)
+	cp $(YLIST_TMP) ../privacybadger_assets/files/cookieblocklist_new.txt
+	# yellowlist (very legacy)
+	$(eval OLD_YLIST_TMP := $(shell mktemp))
+	scripts/generate-legacy-yellowlist.sh $(YLIST_TMP) > $(OLD_YLIST_TMP)
+	cp $(OLD_YLIST_TMP) ../privacybadger_assets/files/cookieblocklist.txt
+	rm $(OLD_YLIST_TMP)
+	rm $(YLIST_TMP)
+
+# get the Transifex CLI client from https://github.com/transifex/cli/releases/latest
+tx:
+	tx pull -f
+	scripts/fix_placeholders.py
+
+runch:
+	./node_modules/.bin/web-ext run --target chromium --arg="--disable-component-update" --arg="--disable-blink-features=AutomationControlled" --arg="--enable-features=AllowLegacyMV2Extensions" --start-url "chrome://extensions" -s src/
+
+runfa:
+	./node_modules/.bin/web-ext run -s src/ --target firefox-android --adb-bin $$ADB_BIN --android-device $$ANDROID_DEVICE_ID --firefox-apk org.mozilla.firefox --verbose
+
+runff:
+	./node_modules/.bin/web-ext run --start-url "about:debugging#/runtime/this-firefox" -s src/
+
+runfn:
+	./node_modules/.bin/web-ext run --start-url "about:debugging#/runtime/this-firefox" -s src/ -f nightly
+
+test:
+	BROWSER=chrome ENABLE_XVFB=1 pytest -s tests/
+
+.PHONY: crx lint minimages updatepsl updateseed apply_effdntlist updategoogle updatecnames tx runch runfa runff runfn test

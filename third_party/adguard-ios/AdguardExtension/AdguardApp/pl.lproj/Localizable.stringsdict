@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>trial_description_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Zasubskrybuj i uzyskaj jednodniowy bezpłatny okres próbny</string>
+        <key>few</key>
+        <string>Zasubskrybuj i uzyskaj %d-dniowy bezpłatny okres próbny</string>
+        <key>many</key>
+        <string>Zasubskrybuj i uzyskaj %d-dniowy bezpłatny okres próbny</string>
+        <key>other</key>
+        <string>Zasubskrybuj i uzyskaj %d-dniowy bezpłatny okres próbny</string>
+      </dict>
+    </dict>
+    <key>trial_description_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Zasubskrybuj i uzyskaj tygodniowy bezpłatny okres próbny</string>
+        <key>few</key>
+        <string>Zasubskrybuj i otrzymaj %d-tygodniowy bezpłatny okres próbny</string>
+        <key>many</key>
+        <string>Zasubskrybuj i otrzymaj %d-tygodniowy bezpłatny okres próbny</string>
+        <key>other</key>
+        <string>Zasubskrybuj i otrzymaj %d-tygodniowy bezpłatny okres próbny</string>
+      </dict>
+    </dict>
+    <key>trial_description_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Zasubskrybuj i uzyskaj miesięczny darmowy okres próbny</string>
+        <key>few</key>
+        <string>Zasubskrybuj i otrzymaj %d-miesięczny bezpłatny okres próbny</string>
+        <key>many</key>
+        <string>Zasubskrybuj i otrzymaj %d-miesięczny bezpłatny okres próbny</string>
+        <key>other</key>
+        <string>Zasubskrybuj i otrzymaj %d-miesięczny bezpłatny okres próbny</string>
+      </dict>
+    </dict>
+    <key>trial_description_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Zasubskrybuj i uzyskaj roczny bezpłatny okres próbny</string>
+        <key>few</key>
+        <string>Zasubskrybuj i uzyskaj %d-letni bezpłatny okres próbny</string>
+        <key>many</key>
+        <string>Zasubskrybuj i uzyskaj %d-letni bezpłatny okres próbny</string>
+        <key>other</key>
+        <string>Zasubskrybuj i uzyskaj %d-letni bezpłatny okres próbny</string>
+      </dict>
+    </dict>
+    <key>user_rules_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@rules@</string>
+      <key>rules</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 reguła włączona</string>
+        <key>few</key>
+        <string>%d reguł włączonych</string>
+        <key>many</key>
+        <string>%d reguł włączonych</string>
+        <key>other</key>
+        <string>%d reguł włączonych</string>
+      </dict>
+    </dict>
+    <key>safari_filters_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@filters@</string>
+      <key>filters</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 filtr włączony</string>
+        <key>few</key>
+        <string>%d filtrów włączonych</string>
+        <key>many</key>
+        <string>%d filtrów włączonych</string>
+        <key>other</key>
+        <string>%d filtrów włączonych</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Jeden dzień bezpłatnego pełnego dostępu</string>
+        <key>few</key>
+        <string>%d-dni pełnego bezpłatnego dostępu</string>
+        <key>many</key>
+        <string>%d-dni pełnego bezpłatnego dostępu</string>
+        <key>other</key>
+        <string>%d-dni pełnego bezpłatnego dostępu</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Tydzień bezpłatnego pełnego dostępu</string>
+        <key>few</key>
+        <string>%d-tygodni pełnego bezpłatnego dostępu</string>
+        <key>many</key>
+        <string>%d-tygodni pełnego bezpłatnego dostępu</string>
+        <key>other</key>
+        <string>%d-tygodni pełnego bezpłatnego dostępu</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Miesiąc pełnego bezpłatnego dostępu</string>
+        <key>few</key>
+        <string>%d-miesięcy pełnego bezpłatnego dostępu</string>
+        <key>many</key>
+        <string>%d-miesięcy pełnego bezpłatnego dostępu</string>
+        <key>other</key>
+        <string>%d-miesięcy pełnego bezpłatnego dostępu</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Rok pełnego bezpłatnego dostępu</string>
+        <key>few</key>
+        <string>%d-lat pełnego bezpłatnego dostępu</string>
+        <key>many</key>
+        <string>%d-lat pełnego bezpłatnego dostępu</string>
+        <key>other</key>
+        <string>%d-lat pełnego bezpłatnego dostępu</string>
+      </dict>
+    </dict>
+  </dict>
+</plist>

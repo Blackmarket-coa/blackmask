@@ -1,0 +1,204 @@
+name: Version Bump
+run-name: Version Bump - ${{ inputs.project }} - v${{ inputs.version_number }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Project"
+        required: true
+        type: choice
+        options:
+          - credential-exchange-format
+          - credential-exchange-protocol
+          - credential-exchange
+      version_number:
+        description: "New version (example: '2024.1.0')"
+        required: true
+      cut_rc_branch:
+        description: "Cut RC branch?"
+        default: false
+        type: boolean
+
+jobs:
+  bump_version:
+    name: "Bump ${{ inputs.project }} Version to v${{ inputs.version_number }}"
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+
+    steps:
+      - name: Install rust
+        uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
+        with:
+          toolchain: stable
+
+      - name: Cache cargo registry
+        uses: Swatinem/rust-cache@98c8021b550208e191a6a3145459bfc9fb29c4c0 # v2.8.0
+
+      - name: Install cargo-release
+        run: cargo install cargo-edit --locked
+
+      - name: Log in to Azure
+        uses: bitwarden/gh-actions/azure-login@main
+        with:
+          subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          tenant_id: ${{ secrets.AZURE_TENANT_ID }}
+          client_id: ${{ secrets.AZURE_CLIENT_ID }}
+
+      - name: Retrieve secrets
+        id: retrieve-secret
+        uses: bitwarden/gh-actions/get-keyvault-secrets@main
+        with:
+          keyvault: gh-org-bitwarden
+          secrets: "BW-GHAPP-ID,BW-GHAPP-KEY"
+
+      - name: Log out from Azure
+        uses: bitwarden/gh-actions/azure-logout@main
+
+      - name: Generate GH App token
+        uses: actions/create-github-app-token@f8d387b68d61c58ab83c6c016672934102569859 # v3.0.0
+        id: app-token
+        with:
+          app-id: ${{ steps.retrieve-secret.outputs.BW-GHAPP-ID }}
+          private-key: ${{ steps.retrieve-secret.outputs.BW-GHAPP-KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Checkout Branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: main
+          repository: bitwarden/sdk
+          persist-credentials: true
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Create Version Branch
+        id: create-branch
+        env:
+          _REF_NAME: ${{ github.ref_name }}
+          _VERSION: ${{ inputs.version_number }}
+          _PROJECT: ${{ inputs.project }}
+        run: |
+          NAME="version_bump_${_REF_NAME}_${_PROJECT}_${_VERSION}"
+          git switch -c "$NAME"
+          echo "name=$NAME" >> "$GITHUB_OUTPUT"
+
+      ########################
+      # VERSION BUMP SECTION #
+      ########################
+
+      - name: Bump ${{ inputs.project }} crate Version
+        env:
+          _VERSION: ${{ inputs.version_number }}
+          _PROJECT: ${{ inputs.project }}
+        run: cargo set-version -p "${_PROJECT}" "${_VERSION}"
+
+      ############################
+      # VERSION BUMP SECTION END #
+      ############################
+
+      - name: Setup git
+        env:
+          _BOT_EMAIL: "github-actions[bot]@users.noreply.github.com"
+          _BOT_NAME: "github-actions[bot]"
+        run: |
+          git config --local user.email "${_BOT_EMAIL}"
+          git config --local user.name "${_BOT_NAME}"
+
+      - name: Check if version changed
+        id: version-changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes_to_commit=TRUE" >> "$GITHUB_OUTPUT"
+          else
+            echo "changes_to_commit=FALSE" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit!";
+          fi
+
+      - name: Run prettier
+        if: ${{ steps.version-changed.outputs.changes_to_commit == 'TRUE' }}
+        run: |
+          npm ci
+          npm run prettier
+
+      - name: Commit files
+        if: ${{ steps.version-changed.outputs.changes_to_commit == 'TRUE' }}
+        env:
+          VERSION: ${{ inputs.version_number }}
+          PROJECT: ${{ inputs.project }}
+        run: git commit -m "Bumped sdk-${PROJECT} version to ${VERSION}" -a
+
+      - name: Push changes
+        if: ${{ steps.version-changed.outputs.changes_to_commit == 'TRUE' }}
+        env:
+          PR_BRANCH: ${{ steps.create-branch.outputs.name }}
+        run: git push -u origin "$PR_BRANCH"
+
+      - name: Create Version PR
+        if: ${{ steps.version-changed.outputs.changes_to_commit == 'TRUE' }}
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_BRANCH: ${{ steps.create-branch.outputs.name }}
+          TITLE: "Bump ${{ inputs.project }} version to ${{ inputs.version_number }}"
+          _PROJECT: ${{ inputs.project }}
+          _VERSION: ${{ inputs.version_number }}
+        run: |
+          PR_URL=$(gh pr create --title "$TITLE" \
+            --base "main" \
+            --head "$PR_BRANCH" \
+            --label "version update" \
+            --label "automated pr" \
+            --body "
+              ## Type of change
+              - [ ] Bug fix
+              - [ ] New feature development
+              - [ ] Tech debt (refactoring, code cleanup, dependency upgrades, etc)
+              - [ ] Build/deploy pipeline (DevOps)
+              - [X] Other
+
+              ## Objective
+              Automated ${_PROJECT} version bump to ${_VERSION}")
+          echo "pr_number=${PR_URL##*/}" >> "$GITHUB_OUTPUT"
+
+      - name: Approve PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.create-pr.outputs.pr_number }}
+        run: gh pr review "$PR_NUMBER" --approve
+
+      - name: Merge PR
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ steps.create-pr.outputs.pr_number }}
+        run: gh pr merge "$PR_NUMBER" --squash --auto --delete-branch
+
+  cut_rc:
+    name: Cut RC branch
+    needs: bump_version
+    permissions:
+      contents: write
+    if: ${{ inputs.cut_rc_branch == true }}
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Check if RC branch exists
+        run: |
+          remote_rc_branch_check=$(git ls-remote --heads origin rc | wc -l)
+          if [[ "${remote_rc_branch_check}" -gt 0 ]]; then
+            echo "Remote RC branch exists."
+            echo "Please delete current RC branch before running again."
+            exit 1
+          fi
+
+      - name: Cut RC branch
+        run: |
+          git switch --quiet --create rc
+          git push --quiet --set-upstream origin rc
