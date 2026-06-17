@@ -112,6 +112,9 @@ export enum FeatureFlag {
 
   /* Desktop */
   DesktopSettingsDialog = "desktop-ui-settings-dialog",
+
+  /* Black Mask */
+  BlackMaskPrivacyDashboard = "black-mask-privacy-dashboard",
 }
 
 export type AllowedFeatureFlagTypes = boolean | number | string;
@@ -227,6 +230,9 @@ export const DefaultFeatureFlagValue = {
 
   /* Desktop */
   [FeatureFlag.DesktopSettingsDialog]: FALSE,
+
+  /* Black Mask */
+  [FeatureFlag.BlackMaskPrivacyDashboard]: FALSE,
 } satisfies Record<FeatureFlag, AllowedFeatureFlagTypes>;
 
 export type DefaultFeatureFlagValueType = typeof DefaultFeatureFlagValue;
