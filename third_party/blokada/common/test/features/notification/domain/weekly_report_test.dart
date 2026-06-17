@@ -1,0 +1,177 @@
+import 'package:common/src/features/notification/domain/notification.dart';
+import 'package:common/src/platform/stats/api.dart' as platform_stats;
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  group('splitWeeklyTotalsFromStats', () {
+    test('splits totals into previous and current weeks', () {
+      final timestamps = _generateTimestamps();
+      final allowed = <int, int>{};
+      final blocked = <int, int>{};
+      for (var i = 0; i < timestamps.length; i++) {
+        allowed[timestamps[i]] = i + 1;
+        blocked[timestamps[i]] = (i + 1) * 2;
+      }
+
+      final stats = _buildStats({
+        'allowed': allowed,
+        'blocked': blocked,
+      });
+
+      final result = splitWeeklyTotalsFromStats(stats);
+
+      expect(result.previous.allowed, equals(28)); // 1+..+7
+      expect(result.current.allowed, equals(77)); // 8+..+14
+      expect(result.previous.blocked, equals(56)); // 2*(1+..+7)
+      expect(result.current.blocked, equals(154)); // 2*(8+..+14)
+      expect(result.hasComparison, isTrue);
+      expect(
+        result.anchor,
+        DateTime.fromMillisecondsSinceEpoch(timestamps[7] * 1000, isUtc: true),
+      );
+    });
+
+    test('treats missing daily buckets as zeroes', () {
+      final timestamps = _generateTimestamps();
+      final allowed = <int, int>{};
+      final blocked = <int, int>{};
+      for (var i = 0; i < timestamps.length; i++) {
+        blocked[timestamps[i]] = 10;
+        if (i != 9) {
+          allowed[timestamps[i]] = 5;
+        }
+      }
+
+      final stats = _buildStats({
+        'allowed': allowed,
+        'blocked': blocked,
+      });
+
+      final result = splitWeeklyTotalsFromStats(stats);
+
+      expect(result.previous.allowed, equals(35));
+      expect(result.current.allowed, equals(30)); // missing day counts as zero
+      expect(result.current.blocked, equals(70));
+      expect(result.previous.blocked, equals(70));
+      expect(result.hasComparison, isTrue);
+    });
+
+    test('marks incomplete data as no weekly comparison', () {
+      final timestamps = _generateTimestamps(days: 8);
+      final allowed = <int, int>{};
+      final blocked = <int, int>{};
+      for (var i = 0; i < timestamps.length; i++) {
+        allowed[timestamps[i]] = 5;
+        blocked[timestamps[i]] = 10;
+      }
+
+      final stats = _buildStats({
+        'allowed': allowed,
+        'blocked': blocked,
+      });
+
+      final result = splitWeeklyTotalsFromStats(stats);
+
+      expect(result.hasComparison, isFalse);
+    });
+  });
+
+  group('WeeklyReportEvent.isPostable', () {
+    WeeklyReportEvent base({
+      String body = 'body',
+      WeeklyReportEventType type = WeeklyReportEventType.toplistChange,
+      WeeklyReportToplistHighlight? toplistHighlight,
+      double? deltaPercent,
+      bool? deltaIncreased,
+      String? deltaLabel,
+    }) {
+      return WeeklyReportEvent(
+        id: 'test',
+        title: 'title',
+        body: body,
+        type: type,
+        icon: WeeklyReportIcon.shield,
+        score: 10,
+        generatedAt: DateTime.utc(2026, 5, 15),
+        toplistHighlight: toplistHighlight,
+        deltaPercent: deltaPercent,
+        deltaIncreased: deltaIncreased,
+        deltaLabel: deltaLabel,
+      );
+    }
+
+    test('toplist event without highlight is not postable', () {
+      expect(base().isPostable, isFalse);
+    });
+
+    test('toplist event with highlight is postable', () {
+      final event = base(
+        toplistHighlight: const WeeklyReportToplistHighlight(
+          name: 'tracker.example',
+          blocked: true,
+          newRank: 1,
+        ),
+      );
+      expect(event.isPostable, isTrue);
+    });
+
+    test('totals event with deltaPercent is postable', () {
+      final event = base(
+        type: WeeklyReportEventType.totalsDelta,
+        deltaPercent: 4.2,
+        deltaIncreased: true,
+        deltaLabel: 'blocked',
+      );
+      expect(event.isPostable, isTrue);
+    });
+
+    test('empty body is not postable even with a highlight', () {
+      final event = base(
+        body: '',
+        toplistHighlight: const WeeklyReportToplistHighlight(
+          name: 'x',
+          blocked: true,
+          newRank: 1,
+        ),
+      );
+      expect(event.isPostable, isFalse);
+    });
+
+    test('whitespace-only body is not postable', () {
+      final event = base(
+        body: '   ',
+        deltaPercent: 5.0,
+      );
+      expect(event.isPostable, isFalse);
+    });
+  });
+}
+
+platform_stats.JsonStatsEndpoint _buildStats(Map<String, Map<int, int>> buckets) {
+  final metrics = <platform_stats.JsonMetrics>[];
+  buckets.forEach((action, values) {
+    metrics.add(platform_stats.JsonMetrics(
+      tags: platform_stats.JsonTags(action: action),
+      dps: values.entries
+          .map((entry) =>
+              platform_stats.JsonDps(timestamp: entry.key, value: entry.value.toDouble()))
+          .toList(),
+    ));
+  });
+
+  return platform_stats.JsonStatsEndpoint(
+    totalAllowed: '0',
+    totalBlocked: '0',
+    stats: platform_stats.JsonStats(metrics: metrics),
+  );
+}
+
+List<int> _generateTimestamps({int days = 14}) {
+  const secondsPerDay = 24 * 60 * 60;
+  final latest = DateTime.utc(2025, 1, 20).millisecondsSinceEpoch ~/ 1000;
+  final timestamps = <int>[];
+  for (var i = days - 1; i >= 0; i--) {
+    timestamps.add(latest - i * secondsPerDay);
+  }
+  return timestamps;
+}

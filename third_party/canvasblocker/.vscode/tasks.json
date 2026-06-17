@@ -1,0 +1,241 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "eslint",
+			"type": "shell",
+			"windows": {
+				"command": "eslint"
+			},
+			"linux": {
+				"command": "eslint"
+			},
+			"osx": {
+				"command": "eslint"
+			},
+			"args": [
+				"./",
+				"--ext",
+				".js,.html,.php"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": "$eslint-stylish"
+		},
+		{
+			"label": "run",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"-f",
+				"nightly",
+				"--url",
+				"http://canvasblocker.localhost/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "run current",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"--url",
+				"http://canvasblocker.localhost/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "run esr",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"-f",
+				"firefox-esr",
+				"--url",
+				"http://canvasblocker.localhost/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "run beta",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"run",
+				"-f",
+				"firefox-beta",
+				"--url",
+				"http://canvasblocker.localhost/test/"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "build",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"build",
+				"--overwrite-dest",
+				"--ignore-files",
+				"test",
+				"--ignore-files",
+				"versions",
+				"--ignore-files",
+				"crowdin.yml",
+				"--ignore-files",
+				"package*"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "build alpha",
+			"type": "shell",
+			"windows": {
+				"command": "node"
+			},
+			"linux": {
+				"command": "node"
+			},
+			"osx": {
+				"command": "node"
+			},
+			"args": [
+				".tools/build.js",
+				"--type",
+				"alpha"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "web-ext lint",
+			"type": "shell",
+			"windows": {
+				"command": "web-ext"
+			},
+			"linux": {
+				"command": "web-ext"
+			},
+			"osx": {
+				"command": "web-ext"
+			},
+			"args": [
+				"lint",
+				"--ignore-files",
+				"test"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "open git UI",
+			"type": "shell",
+			"windows": {
+				"command": "git-cola"
+			},
+			"linux": {
+				"command": "git-cola"
+			},
+			"osx": {
+				"command": "git-cola"
+			},
+			"args": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		}
+	]
+}

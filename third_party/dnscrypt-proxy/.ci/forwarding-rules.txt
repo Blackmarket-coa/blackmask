@@ -1,0 +1,2 @@
+darpa.mil 4.2.2.2
+download.windowsupdate.com $BOOTSTRAP

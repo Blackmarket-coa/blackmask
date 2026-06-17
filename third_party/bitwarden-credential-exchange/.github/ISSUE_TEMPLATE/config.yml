@@ -1,0 +1,4 @@
+contact_links:
+  - name: Security Issues
+    url: https://hackerone.com/bitwarden
+    about: We use HackerOne to manage security disclosures.

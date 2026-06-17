@@ -711,6 +711,8 @@ export default tseslint.config(
   // Keep ignores at the end
   {
     ignores: [
+      // Vendored upstream OSS sources (Black Mask build map) — not part of this monorepo's build.
+      "third_party/",
       "**/build/",
       "**/dist/",
       "**/coverage/",

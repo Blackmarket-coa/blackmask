@@ -1,0 +1,35 @@
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "3ju-B8-UIZ"; */
+"3ju-B8-UIZ.normalTitle" = "Video vodič";
+
+/* Class = "UILabel"; text = "Terms and Conditions"; ObjectID = "E6C-TE-ZI6"; */
+"E6C-TE-ZI6.text" = "Določila in pogoji";
+
+/* Class = "UILabel"; text = "Enable AdGuard for Safari"; ObjectID = "F7O-MB-LHu"; */
+"F7O-MB-LHu.text" = "Omogoči AdGuard za Safari";
+
+/* Class = "UILabel"; text = "Block Trackers"; ObjectID = "FDG-As-HDY"; */
+"FDG-As-HDY.text" = "Onemogoči sledilce";
+
+/* Class = "UIButton"; normalTitle = "Video guide"; ObjectID = "GOu-4j-RcN"; */
+"GOu-4j-RcN.normalTitle" = "Video vodič";
+
+/* Class = "UILabel"; text = "Stop thousands of corporations from tracking your every move. Regain control of your online privacy."; ObjectID = "Mzf-WJ-CpC"; Note = "String must be less or equal 4 lines"; */
+"Mzf-WJ-CpC.text" = "Na tisoče korporacijampreprečite, da bi spremljali vsak vaš korak. Znova pridobite nadzor nad vašo spletno zasebnostjo.";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "cMV-qC-ZdE"; */
+"cMV-qC-ZdE.normalTitle" = "Naprej";
+
+/* Class = "UILabel"; text = "Block Ads"; ObjectID = "hXU-wD-fbI"; */
+"hXU-wD-fbI.text" = "Zaviranje oglasov";
+
+/* Class = "UILabel"; text = "Block Annoyances"; ObjectID = "hf9-6r-TUk"; */
+"hf9-6r-TUk.text" = "Zaviranje nadležnosti";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "q8l-xM-B5q"; */
+"q8l-xM-B5q.normalTitle" = "Nadaljuj";
+
+/* Class = "UILabel"; text = "AdGuard blocks ads in Safari on most websites. Enjoy faster web surfing without ads!"; ObjectID = "r3n-Il-Qe8"; Note = "String must be less or equal 4 lines"; */
+"r3n-Il-Qe8.text" = "AdGuard zavira oglase v Safariju na večini spletnih straneh. Uživajte v hitrejšem brskanju po spletu, brez oglasov!";
+
+/* Class = "UILabel"; text = "Use our collection of flexible filters to remove any type of content. Tune the filtering to your liking and surf the web your way."; ObjectID = "thP-lV-BhN"; Note = "String must be less or equal 4 lines"; */
+"thP-lV-BhN.text" = "Uporabite našo zbirko prilagodljivih filtrov za odstranitev katere koli vrste vsebine. Nastavite filtriranje po svojih željah in brskajte po spletu na svoj način.";

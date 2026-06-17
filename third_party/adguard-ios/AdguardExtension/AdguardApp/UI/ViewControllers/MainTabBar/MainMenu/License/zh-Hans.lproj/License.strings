@@ -1,0 +1,32 @@
+/* Class = "UILabel"; text = "Code from the authentication app:"; ObjectID = "53G-qY-SZ5"; */
+"53G-qY-SZ5.text" = "来自认证应用的代码：";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "J8s-sG-FKu"; */
+"J8s-sG-FKu.text" = "登录";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "LJj-cc-Ko5"; */
+"LJj-cc-Ko5.text" = "输入您的电子邮件地址";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "P6N-OK-fHG"; */
+"P6N-OK-fHG.text" = "密码：";
+
+/* Class = "UILabel"; text = "Log in with your AdGuard account or use social login"; ObjectID = "ZuM-Nn-uXv"; */
+"ZuM-Nn-uXv.text" = "使用您的 AdGuard 账号或社交媒体登录";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "bUa-fF-AXO"; */
+"bUa-fF-AXO.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "fxK-6y-LB6"; */
+"fxK-6y-LB6.text" = "登录";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "rrj-Gm-LCJ"; */
+"rrj-Gm-LCJ.normalTitle" = "确认";
+
+/* Class = "UILabel"; text = "Delete account"; ObjectID = "sJT-OU-IOd"; */
+"sJT-OU-IOd.text" = "删除账号";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "xFB-lA-lsv"; */
+"xFB-lA-lsv.normalTitle" = "取消";
+
+/* Class = "UIButton"; normalTitle = "Delete account"; ObjectID = "yIo-kb-pVa"; */
+"yIo-kb-pVa.normalTitle" = "删除账号";

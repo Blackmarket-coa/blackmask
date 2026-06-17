@@ -1,0 +1,727 @@
+/* refers to number of connections blocked today, as in '34 Blocked Today' */
+" Blocked Today" = " 今日ブロックしました";
+
+/* No comment provided by engineer. */
+" is not a valid entry. Please only enter the host of the domain you want to add to a whitelist. For example, \"google.com\" without \"https://\"" = " 無効なエントリです。 ホワイトリストに追加するドメインのホストのみを入力してください。 たとえば、google.comから「https：//」を削除します。";
+
+/* No comment provided by engineer. */
+" is not a valid entry. Please only enter the host of the domain you want to block. For example, \"google.com\" without \"https://\"" = " 無効なエントリです。　ブロックするドメインのホストのみを入力してください。 たとえば、google.comから「https：//」を削除します。";
+
+/* No comment provided by engineer. */
+" Off" = "オフ";
+
+/* No comment provided by engineer. */
+" On" = "オン";
+
+/* No comment provided by engineer. */
+"1 Week Free" = "1週間無料です。";
+
+/* No comment provided by engineer. */
+"\"Block List\" lets you choose what you want to block (e.g, Facebook, clickbait, etc). You can also set custom domains to block." = "\"ブロックリスト\" ブロックするもの（Facebook、clickbait、など）を選択できます。 カスタムドメインをブロックするように設定することもできます。";
+
+/* No comment provided by engineer. */
+"\"iOS Annual\" is your current plan" = "\"ios毎年の計画\" お客様の現在の計画";
+
+/* No comment provided by engineer. */
+"\"iOS Monthly\" is your current plan" = "\"iOS毎月の計画\" お客様の現在の計画";
+
+/* No comment provided by engineer. */
+"\"Pro Annual\" is your current plan" = "\"Pro毎年の計画\" お客様の現在の計画";
+
+/* No comment provided by engineer. */
+"\"Pro Monthly\" is your current plan" = "\"Pro毎月の計画\" お客様の現在の計画";
+
+/* No comment provided by engineer. */
+"\"View Log\" shows exactly what connections were blocked in the past day. This log is cleared at midnight and stays on-device, so it's only visible to you." = "\"ログを表示します\" 過去の日ブロックされた整合を見に表示します。 このログは真夜中にクリアされ、デバイス上のままであるため、あなただけに表示されます。";
+
+/* No comment provided by engineer. */
+"\n\n If this error persists, please contact team@lockdownprivacy.com." = "\n\n このエラーが続く場合は、team@lockdownprivacy.comにお問い合わせください。";
+
+/* No comment provided by engineer. */
+"\n\n If this persists, please contact team@lockdownprivacy.com." = "\n\n これが続く場合は、team@lockdownprivacy.comにお問い合わせください。";
+
+/* No comment provided by engineer. */
+"About Lockdown VPN" = "Lockdown VPNについて";
+
+/* No comment provided by engineer. */
+"Activate Firewall with this button." = "このボタンでファイアウォールをアクティブ化にします。";
+
+/* No comment provided by engineer. */
+"Activating" = "アクティブ中です";
+
+/* No comment provided by engineer. */
+"Anonymize IP against trackers" = "トラッカーに対してIPを匿名化します。";
+
+/* No comment provided by engineer. */
+"Apple Outage" = "Appleの停止";
+
+/* No comment provided by engineer. */
+"Audit Reports" = "監査レポート";
+
+/* No comment provided by engineer. */
+"Australia" = "オーストラリア";
+
+/* No comment provided by engineer. */
+"Blocked" = "ブロック";
+
+/* No comment provided by engineer. */
+"Blocked Domains" = "ブロックしたドメイン";
+
+/* No comment provided by engineer. */
+"Blocked Today" = "今日はブロックしました";
+
+/* No comment provided by engineer. */
+"Brazil" = "ブラジル";
+
+/* No comment provided by engineer. */
+"Canada" = "カナダ";
+
+/* No comment provided by engineer. */
+"Cancel" = "キャンセル";
+
+/* No comment provided by engineer. */
+"Confirm Email" = "電子メールの確認";
+
+/* No comment provided by engineer. */
+"Confirmed Site" = "確認済みサイト";
+
+/* No comment provided by engineer. */
+"Couldn't Find Your Email Client" = "電子メールクライアントが見つかりません";
+
+/* No comment provided by engineer. */
+"Custom Settings (Advanced)" = "カスタム設定(詳細)";
+
+/* No comment provided by engineer. */
+"Deactivating" = "非アクティブ化中";
+
+/* No comment provided by engineer. */
+"Done" = "完了";
+
+/* No comment provided by engineer. */
+"Email Support" = "メールサポート";
+
+/* No comment provided by engineer. */
+"Enable" = "有効";
+
+/* No comment provided by engineer. */
+"Enable notifications to get a once-a-week summary and the latest block list updates. You can disable this anytime." = "通知を有効にして、1週間に1回の要約と最新のブロックリストの更新情報を取得することができます。 いつでも無効にできます。";
+
+/* No comment provided by engineer. */
+"Encrypted, private connections" = "暗号化されたプライベート接続です";
+
+/* No comment provided by engineer. */
+"Error Code " = "エラーコード ";
+
+/* No comment provided by engineer. */
+"Error Creating Email Account" = "電子メールアカウントの作成エラー";
+
+/* No comment provided by engineer. */
+"Error Re-sending Email Confirmation" = "電子メール確認の再送信エラー";
+
+/* No comment provided by engineer. */
+"Error Restoring Subscription" = "サブスクリプションの復元エラーです";
+
+/* No comment provided by engineer. */
+"Error Signing In To Verify Subscription" = "サブスクリプションを確認するためのサインインエラーです";
+
+/* No comment provided by engineer. */
+"Error Making Purchase" = "購入エラー";
+
+/* No comment provided by engineer. */
+"Error while trying to confirm your account: \(errorMessage). If this persists, please contact team@lockdownprivacy.com." = "アカウントの確認中にエラーが発生しました: \(errorMessage). このエラーが続く場合はteam@lockdownprivacy.comにお問い合わせください。";
+
+/* No comment provided by engineer. */
+"Firewall" = "ファイアウォール";
+
+/* No comment provided by engineer. */
+"Firewall Active" = "ファイアウォールがアクティブ";
+
+/* No comment provided by engineer. */
+"Firewall Not Active" = "ファイアウォールが非アクティブ";
+
+/* No comment provided by engineer. */
+"FIREWALL OFF" = "ファイアウォールオフ";
+
+/* No comment provided by engineer. */
+"FIREWALL ON" = "ファイアウォールオン";
+
+/* No comment provided by engineer. */
+"For maximum privacy, activate Secure Tunnel, which uses bank-level encryption to protect connections, anonymize your browsing, and hide your location and IP." = "最大限のプライバシーのために、セキュアトンネルをアクティブにし、これは、銀行レベルの暗号化を使用して、接続を保護し、ブラウジングを匿名化し、場所とIPを非表示にします。";
+
+/* No comment provided by engineer. */
+"France" = "フランス";
+
+/* No comment provided by engineer. */
+"Germany" = "ドイツ";
+
+/* No comment provided by engineer. */
+"Hey Lockdown Team, \nI have a question, issue, or suggestion - " = "Lockdownチームに \n質問、問題、または提案があります。 - ";
+
+/* No comment provided by engineer. */
+"I blocked \(thousandsFormatter.string(for: getTotalMetrics())!) trackers, ads, and badware with Lockdown, the firewall that blocks unwanted connections in all your apps. Get it free at lockdownprivacy.com." = "Lockdownで \(thousandsFormatter.string(for: getTotalMetrics())!) トラッカー、アド、アドウェアをブロックをします。 すべてのアプリで不要な接続をブロックするファイアウォールです。. lockdownprivacy.comで無料で入手してください。";
+
+/* No comment provided by engineer. */
+"India" = "インド";
+
+/* No comment provided by engineer. */
+"Invalid domain" = "無効なドメイン";
+
+/* No comment provided by engineer. */
+"IP: 18.132.2.87" = "IP: 18.132.2.87";
+
+/* No comment provided by engineer. */
+"IP: [Anonymized]" = "IP: [匿名]";
+
+/* No comment provided by engineer. */
+"Ireland" = "アイルランド";
+
+/* No comment provided by engineer. */
+"Japan" = "日本";
+
+/* No comment provided by engineer. */
+"Location changed and hidden" = "場所が変更と非表示";
+
+/* No comment provided by engineer. */
+"Location: 🇯🇵" = "ロケーション: 🇯🇵";
+
+/* No comment provided by engineer. */
+"Location: 🇺🇸" = "ロケーション: 🇺🇸";
+
+/* No comment provided by engineer. */
+"Lockdown Firewall blocks bad and untrusted connections in all your apps - not just Safari." = "Lockdownファイアウォールは、Safariだけでなく、すべてのアプリケーションの悪質で信頼されていない接続をブロックします。";
+
+/* No comment provided by engineer. */
+"Lockdown is open source and fully transparent, which means anyone can see exactly what it's doing. Also, Lockdown Firewall has a simple, strict Privacy Policy, while Lockdown VPN is fully audited by security experts." = "ロックダウンはオープンソースで完全に透明なので、誰もがそれが何をしているのかを正確に見ることができます。 また、Lockdownファイアウォールにはシンプルで厳格なプライバシーポリシーがあり、Lockdown　VPNはセキュリティの専門家によって完全に監査されています。";
+
+/* No comment provided by engineer. */
+"Lockdown VPN is powered by Confirmed VPN, the open source, no-logs, and fully audited VPN." = "Lockdown VPNはConfirmed VPNによって供給されています。、 オープンソース、 ログなし、 完全に監査されたVPN";
+
+/* No comment provided by engineer. */
+"Network Error" = "ネットワークエラー";
+
+/* No comment provided by engineer. */
+"Next" = "次";
+
+/* No comment provided by engineer. */
+"Nice" = "ニース";
+
+/* No comment provided by engineer. */
+"No" = "いいえ";
+
+/* No comment provided by engineer. */
+"No Active Subscription" = "アクティブなサブスクリプションはありません。";
+
+/* No comment provided by engineer. */
+"No Internet Connection" = "インターネットに接続できません";
+
+/* No comment provided by engineer. */
+"No stored API credentials found. Please contact team@lockdownprivacy.com about this error." = "保存されたAPI資格情報が見つかりませんでした。 このエラーについては、team@lockdownprivacy.comにお問い合わせください。";
+
+/* No comment provided by engineer. */
+"Not Blocked" = "ブロックされていません";
+
+/* No comment provided by engineer. */
+"Not Now" = "今はまだです";
+
+/* No comment provided by engineer. */
+"Not Whitelisted" = "ホワイトリストに登録されていません";
+
+/* No comment provided by engineer. */
+"OK" = "オーケー";
+
+/* No comment provided by engineer. */
+"Okay" = "オーケー";
+
+/* No comment provided by engineer. */
+"Please check your internet connection. If this persists, please contact team@lockdownprivacy.com.\n\nError Description\n" = "インターネットの接続状況をご確認ください。 このエラーが続く場合はteam@lockdownprivacy.comにお問い合わせください。\n\nエラーの説明\n";
+
+/* No comment provided by engineer. */
+"Please contact team@lockdownprivacy.com.\n\nError details:\n" = "team@lockdownprivacy.comまでご連絡ください。\n\nエラーの説明:\n";
+
+/* No comment provided by engineer. */
+"Please email team@lockdownprivacy.com with the following Error Code " = "以下のエラーコードを明記の上、team@lockdownprivacy.com までご連絡ください。 ";
+
+/* No comment provided by engineer. */
+"Please first go to your iOS Settings > Notifications > Lockdown to enable notifications" = "まず、iOS設定>通知>Lockdownで通知を有効にします。";
+
+/* No comment provided by engineer. */
+"Please make sure you have added an e-mail account to your iOS device and try again." = "iOSデバイスにメールアカウントが追加されていることを確認してから、再度お試しください。";
+
+/* No comment provided by engineer. */
+"Please make sure your Internet connection is active and that you have an active subscription. Otherwise, please start your free trial or e-mail team@lockdownprivacy.com" = "インターネット接続が有効になっているか、購読が有効になっているかを確認してください。 それ以外の場合は、無料トライアルを開始するか、team@lockdownprivacy.comまでメールでお問い合わせください。";
+
+/* No comment provided by engineer. */
+"Please make sure your Internet connection is active. If this error persists, email team@lockdownprivacy.com with the following error message: " = "インターネット接続が有効になっていることを確認してください。 このエラーが続く場合は、team@lockdownprivacy.comに次のエラーメッセージをメールで送信してください。: ";
+
+/* No comment provided by engineer. */
+"Please renew your subscription to activate the Secure Tunnel." = "セキュアトンネルを有効にするには、サブスクリプションを更新してください。";
+
+/* No comment provided by engineer. */
+"Please renew your subscription to re-activate the VPN." = "VPNを再度アクティブにするには、サブスクリプションを更新してください。";
+
+/* No comment provided by engineer. */
+"Pre-configured Block Lists" = "事前に設定されたブロックリスト";
+
+/* No comment provided by engineer. */
+"Pre-configured Suggestions" = "事前に設定されたサジェスチョン";
+
+/* No comment provided by engineer. */
+"Precise location exposed" = "正確な位置が公開されています";
+
+/* No comment provided by engineer. */
+"Press & Media" = "プレス＆メディア";
+
+/* No comment provided by engineer. */
+"Privacy Policy" = "個人情報保護方針";
+
+/* No comment provided by engineer. */
+"Re-send" = "再送信";
+
+/* No comment provided by engineer. */
+"Readable browsing and data" = "読み取り可能なブラウジングとデータ";
+
+/* No comment provided by engineer. */
+"Secure Tunnel VPN" = "セキュアトンネルVPN";
+
+/* No comment provided by engineer. */
+"See live metrics for how many bad connections Firewall has blocked." = "ファイアウォールがブロックした不良接続の数をライブメトリクスで確認できます。";
+
+/* No comment provided by engineer. */
+"Share your anonymized metrics and show other people how to block invasive tracking." = "匿名化された指標を共有し、侵襲的な追跡をブロックする方法を他の人に示します。";
+
+/* No comment provided by engineer. */
+"Share Your Stats" = "統計を共有。";
+
+/* No comment provided by engineer. */
+"SHOW" = "示す";
+
+/* No comment provided by engineer. */
+"Show how invasive today's apps are, and help other people block trackers and badware, too.\n\nYour block log is not included - only the image above. Choose where to share in the next step." = "今日のアプリがいかに侵略的であるかを示し、他の人がトラッカーやバッドウェアをブロックするのにも役立ちます。\n\nブロックログは含まれていません-上の画像のみです。 次のステップで共有する場所を選択します。";
+
+/* No comment provided by engineer. */
+"Sign Out" = "サインアウト";
+
+/* No comment provided by engineer. */
+"Sign Up  |  Sign In" = "サインアップ  |  サインイン";
+
+/* No comment provided by engineer. */
+"Singapore" = "Singapore";
+
+/* No comment provided by engineer. */
+"Skip Trial" = "トライアルをスキップ";
+
+/* No comment provided by engineer. */
+"South Korea" = "韓国";
+
+/* No comment provided by engineer. */
+"Stay Protected" = "保護されたままで";
+
+/* No comment provided by engineer. */
+"Subscription Expired" = "サブスクリプションの有効期限が切れました";
+
+/* No comment provided by engineer. */
+"Success!" = "サクセス";
+
+/* No comment provided by engineer. */
+"Tap to see a demo of how Secure Tunnel protects and anonymizes you." = "タップして、Secure Tunnel がどのようにお客様を保護し、匿名化するかのデモを表示します。.";
+
+/* No comment provided by engineer. */
+"Tap to see the blocked tracking attempts." = "タップして、ブロックされたトラッキングの試みを確認します。";
+
+/* No comment provided by engineer. */
+"Terms" = "条件";
+
+/* No comment provided by engineer. */
+"Thanks for helping to increase privacy and tracking awareness." = "プライバシーの向上と意識の追跡にご協力いただきありがとうございます。";
+
+/* No comment provided by engineer. */
+"To finish signup, click the confirmation link in the email we just sent. If you don't see it, check if it's stuck in your spam folder." = "サインアップを完了するには、送信したメールの確認リンクをクリックしてください。 表示されない場合は、迷惑メールフォルダに引っかかっていないか確認してみてください。";
+
+/* No comment provided by engineer. */
+"To see this tutorial again, open the Account tab." = "このチュートリアルをもう一度見るには、[アカウント]タブを開きます。";
+
+/* No comment provided by engineer. */
+"To: joe@email.com\nRe: Q4 2019 Finance Review" = "宛先: joe@email.com\nRe: Q4 2019 財務レビュー";
+
+/* No comment provided by engineer. */
+"Trackers, ads, and other malicious scripts are now blocked in all your apps, even outside of Safari.\n\nGet maximum privacy with a Secure Tunnel that protects connections, anonymizes your browsing, and hides your location." = "トラッカー、　アド、　その他の悪意のあるスクリプトがすべてのアプリでブロックされるようになりました、 Safariの外でも。\n\n接続を保護し、ブラウジングを匿名化し、位置情報を非表示にするセキュアなトンネルで、最大限のプライバシーを確保します。";
+
+/* No comment provided by engineer. */
+"Tunnel" = "トンネル";
+
+/* No comment provided by engineer. */
+"Tunnel Off" = "トンネルオフ";
+
+/* No comment provided by engineer. */
+"Tunnel On" = "Tトンネルオナン";
+
+/* No comment provided by engineer. */
+"Tutorial" = "チュートリアル";
+
+/* No comment provided by engineer. */
+"Unique IP address broadcasted" = "ブロードキャストされたユニークIPアドレス";
+
+/* No comment provided by engineer. */
+"United Kingdom" = "イギリス";
+
+/* No comment provided by engineer. */
+"United States - East" = "アメリカ東部";
+
+/* No comment provided by engineer. */
+"United States - West" = "アメリカ西部";
+
+/* No comment provided by engineer. */
+"Update Success" = "更新の成功";
+
+/* No comment provided by engineer. */
+"Updating Block Lists" = "ブロックリストの更新";
+
+/* No comment provided by engineer. */
+"USA East" = "アメリカ東部";
+
+/* No comment provided by engineer. */
+"USA West" = "アメリカ西部";
+
+/* No comment provided by engineer. */
+"VPN Active" = "VPNアクティブ";
+
+/* No comment provided by engineer. */
+"VPN Not Active" = "VPN非選択";
+
+/* No comment provided by engineer. */
+"VPN Subscription Expired" = "VPNサブスクリプションの有効期限が切れました";
+
+/* No comment provided by engineer. */
+"Website" = "ウェブサイト";
+
+/* No comment provided by engineer. */
+"Welcome to the Lockdown Tutorial.\n\nTap anywhere to continue." = "Lockdownチュートリアルへようこそ。\n\nどこかをタップして続行します。";
+
+/* No comment provided by engineer. */
+"What is VPN?" = "VPNとは何ですか？";
+
+/* No comment provided by engineer. */
+"Whitelisted" = "ホワイトリストに登録";
+
+/* No comment provided by engineer. */
+"Why Trust Lockdown" = "Lockdownを信頼する理由";
+
+/* No comment provided by engineer. */
+"Why Trust Lockdown?" = "なぜロックダウンを信頼するのですか？";
+
+/* No comment provided by engineer. */
+"Why Use VPN?" = "なぜVPNを使うのか？";
+
+/* No comment provided by engineer. */
+"You can tap this later if you feel like sharing.\n(Tap anywhere to dismiss)" = "共有したいと思ったら、後でタップしてください。.\n(どこでもタップして却下します)";
+
+/* No comment provided by engineer. */
+"Your account has been confirmed and you're now signed in. You'll get the latest block lists, access to Lockdown Mac, and get critical announcements." = "アカウントが確認され、サインインしました。 Y最新のブロックリスト、Lockdown Macへのアクセス、重要なお知らせを入手できます。";
+
+/* No comment provided by engineer. */
+"Your Settings" = "お客様の設定";
+
+/* No comment provided by engineer. */
+"🔥🧱 Firewall Activated 🎊🎉" = "🔥🧱 ファイアウォールがアクティブ化されました 🎊🎉";
+
+/* Used in: tracker1.com 'and' tracker2.com 'and' tracker3.com */
+" and " = " と ";
+
+/* Used in the sentence: I blocked 500 trackers, ads, and badware with Lockdown, the firewall that blocks unwanted connections in all your apps. Get it free at lockdownprivacy.com. */
+" trackers, ads, and badware with Lockdown, the firewall that blocks unwanted connections in all your apps. Get it free at lockdownprivacy.com." = "すべてのアプリで不要な接続をブロックするファイアウォールであるLockdownを備えたトラッカー、広告、およびバッドウェア。 lockdownprivacy.comで無料で入手してください。";
+
+/* No comment provided by engineer. */
+"at least 8 characters" = "8文字以上";
+
+/* No comment provided by engineer. */
+"Be sure to check your spam folder in case it got stuck there.\n\nYou can also request a re-send of the confirmation." = "スパムフォルダが詰まった場合に備えて、必ず確認してください。\n\n確認の再送信をリクエストすることもできます。";
+
+/* Used in the sentence: 'tracker.com' is a part of 'Marketing Trackers' block list */
+"block list" = "ブロックリスト";
+
+/* No comment provided by engineer. */
+"Blocked Trackers Summary" = "ブロックされたトラッカーの概要";
+
+/* No comment provided by engineer. */
+"Check Your Inbox" = "受信箱をチェックする";
+
+/* No comment provided by engineer. */
+"Clear Block Log" = "ブロックログをクリアする";
+
+/* The title of a list of trackers */
+"Clickbait" = "クリックベイト";
+
+/* The title of a list of trackers */
+"Crypto Mining" = "クリプトマイニング";
+
+/* The title of a list of trackers */
+"Data Trackers" = "データトラッカー";
+
+/* No comment provided by engineer. */
+"Disable" = "無効にする";
+
+/* No comment provided by engineer. */
+"Disable Block Log" = "ブロックログを無効にする";
+
+/* No comment provided by engineer. */
+"Disable Block Log?" = "ブロックログを無効にしますか？";
+
+/* The title of a list of trackers */
+"Email Trackers" = "メールトラッカー";
+
+/* No comment provided by engineer. */
+"Email Us" = "メールでのお問い合わせ";
+
+/* No comment provided by engineer. */
+"Enable Block Log" = "ブロックログを有効にする";
+
+/* No comment provided by engineer. */
+"Error Loading Plan: Retry" = "計画の読み込みエラー：再試行";
+
+/* No comment provided by engineer. */
+"Error while trying to confirm your account:" = "アカウントの確認中にエラーが発生しました：";
+
+/* The title of a list of trackers */
+"Facebook & WhatsApp" = "FacebookとWhatsApp";
+
+/* The title of a list of trackers */
+"Facebook Trackers" = "Facebookトラッカー";
+
+/* No comment provided by engineer. */
+"Failed to re-send email confirmation." = "確認メールの再送信に失敗しました。";
+
+/* No comment provided by engineer. */
+"FAQs" = "よくある質問";
+
+/* The title of a list of trackers */
+"Game Marketing" = "ゲームマーケティング";
+
+/* The title of a list of trackers */
+"General Marketing" = "一般的なマーケティング";
+
+/* The title of a list of trackers */
+"Google Shopping" = "Googleショッピング";
+
+/* No comment provided by engineer. */
+"Hi, my question or feedback for Lockdown is: " = "こんにちは、Lockdownに関する質問や感想です。 ";
+
+/* Used in the sentence: I blocked 500 trackers with Lockdown. */
+"I blocked" = "ブロックしました";
+
+/* No comment provided by engineer. */
+"If this persists, please contact team@lockdownprivacy.com." = "これが続く場合は、team @ lockdownprivacy.comに連絡してください。";
+
+/* Used in: You blocked tracker.com in your custom blocked domains. */
+"in your custom blocked domains." = "";
+
+/* Used in the sentence: 'tracker.com' is a part of 'Marketing Trackers' block list */
+"is a part of" = "";
+
+/* Shows when loading the details of a subscription plan */
+"Loading Plan" = "ローディングプラン中";
+
+/* The title of a list of trackers */
+"Marketing Trackers" = "マーケティングトラッカー";
+
+/* The title of a list of trackers */
+"Marketing Trackers II" = "マーケティングトラッカーII";
+
+/* No comment provided by engineer. */
+"No additional information on this blocked domain found." = "このブロックされたドメインに関する追加情報は見つかりませんでした。";
+
+/* No comment provided by engineer. */
+"No Block Lists Enabled" = "ブロックリストが有効になっていません";
+
+/* No comment provided by engineer. */
+"No Info Found" = "情報が見つかりませんでした。";
+
+/* No comment provided by engineer. */
+"Notifications: Off" = "通知：オフ";
+
+/* No comment provided by engineer. */
+"Notifications: On" = "通知：オン";
+
+/* No comment provided by engineer. */
+"one lowercase letter" = "小文字";
+
+/* No comment provided by engineer. */
+"one number" = "数字";
+
+/* No comment provided by engineer. */
+"one symbol" = "記号を";
+
+/* No comment provided by engineer. */
+"one uppercase letter" = "大文字";
+
+/* No comment provided by engineer. */
+"Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one number, and one symbol." = "パスワードは8文字以上で、大文字、小文字、数字、記号を1つ以上含む必要があります。";
+
+/* No comment provided by engineer. */
+"Plan: Annual Pro" = "プラン：年間プロ";
+
+/* No comment provided by engineer. */
+"Please tap Block List and enable at least one block list to activate Firewall." = "[ブロックリスト]をタップし、少なくとも1つのブロックリストを有効にしてファイアウォールをアクティブにしてください。";
+
+/* The title of a list of trackers */
+"Ransomware" = "ランサムウェア";
+
+/* No comment provided by engineer. */
+"Remember to check our FAQs first, for answers to the most frequently asked questions.\n\nIf it's not answered there, we're happy to provide support and take feedback by email." = "よくある質問への回答については、最初によくある質問を確認してください。\n\n回答がない場合は、サポートを提供し、メールでフィードバックをお届けします。";
+
+/* The title of a list of trackers */
+"Reporting" = "報告";
+
+/* No comment provided by engineer. */
+"Settings" = "設定";
+
+/* No comment provided by engineer. */
+"Sign Out?" = "サインアウト？";
+
+/* No comment provided by engineer. */
+"Sign up below to unlock benefits of a Lockdown account." = "Lockdownアカウントの特典のロックを解除するには、以下からサインアップしてください。";
+
+/* No comment provided by engineer. */
+"Signed In" = "サインイン";
+
+/* No comment provided by engineer. */
+"Signed out successfully." = "正常にサインアウトしました。";
+
+/* The title of a list of trackers */
+"Snapchat Trackers" = "Snapchatトラッカー";
+
+/* No comment provided by engineer. */
+"Success" = "サクセス";
+
+/* No comment provided by engineer. */
+"Successfully re-sent your email confirmation to " = "サクセス";
+
+/* No comment provided by engineer. */
+"Support | Feedback" = "サポート| フィードバック";
+
+/* No comment provided by engineer. */
+"Tap to activate Lockdown Firewall and update to the newest block lists." = "タップしてLockdownファイアウォールをアクティブにし、最新のブロックリストに更新します。";
+
+/* Used in the paragraph: You've just blocked 100 tracking attempts! Tap to see what they are. */
+"Tap to see what they are." = "タップして何かを確認してください。";
+
+/* No comment provided by engineer. */
+"The block log can be manually cleared or disabled. Disabling the Block Log only disables the log of connections - the number of tracking attempts will still be displayed." = "ブロックログは手動でクリアまたは無効にすることができます。ブロックログを無効にすると、接続のログが無効になるだけで、トラッキングの試行回数は表示されます。";
+
+/* Used in To complete your signup, click the confirmation link we sent to you@gmail.com */
+"To complete your signup, click the confirmation link we sent to" = "サインアップを完了するには、に送信した確認リンクをクリックしてください。";
+
+/* Used in the sentence: You blocked 500 tracking attempts this week. Tap to update to the newsst block lists. */
+"tracking attempts this week. Tap to update to the newest block lists." = "件のトラッキングをブロックしました。タップすると最新のブロックリストに更新されます。";
+
+/* No comment provided by engineer. */
+"View FAQs" = "よくある質問を見る";
+
+/* No comment provided by engineer. */
+"View or Upgrade Plan" = "表示またはアップグレードプラン";
+
+/* No comment provided by engineer. */
+"View Upgrade Options" = "アップグレードオプションを見る";
+
+/* Used in the sentence: You blocked 500 tracking attempts this week.
+   Used in: You blocked tracker.com in your custom blocked domains. */
+"You blocked" = "をブロックしました";
+
+/* No comment provided by engineer. */
+"You blocked this domain in your custom blocked domains." = "カスタムブロックドメインでこのドメインをブロックしました。";
+
+/* No comment provided by engineer. */
+"You'll be signed out from this account." = "このアカウントからサインアウトされます.";
+
+/* No comment provided by engineer. */
+"You'll have to reenable it later here to start seeing blocked entries again." = "ブロックされたエントリの表示を再開するには、後でここで再度有効にする必要があります。";
+
+/* No comment provided by engineer. */
+"You've just blocked 100 tracking attempts!" = "100回の追跡試行をブロックしました!";
+
+/* No comment provided by engineer. */
+"⚠️ Not Signed In" = "⚠️ サインインしていません";
+
+/* No comment provided by engineer. */
+"Add a domain to block" = "ブロックするドメインを追加する";
+
+/* No comment provided by engineer. */
+"Block all your apps from connecting to the domains and sites below. For your convenience, Lockdown also has pre-configured suggestions." = "以下のドメインとサイトへの接続からすべてのアプリをブロックします。便利なように、Lockdownには事前に設定された提案もあります。";
+
+/* No comment provided by engineer. */
+"Curated" = "されたブロックリスト";
+
+/* No comment provided by engineer. */
+"Configure Blocking" = "ブロッキングを設定する";
+
+/* No comment provided by engineer. */
+"Custom" = "カスタマイズ";
+
+/* No comment provided by engineer. */
+"SAVE" = "セーブ";
+
+/* No comment provided by engineer. */
+"CLOSE" = "CLOSE";
+
+/* No comment provided by engineer. */
+"Access to cloud service information is not allowed" = "Access to cloud service information is not allowed";
+
+/* No comment provided by engineer. */
+"Could not connect to the network" = "Could not connect to the network";
+
+/* No comment provided by engineer. */
+"Not allowed to make the payment" = "Not allowed to make the payment";
+
+/* No comment provided by engineer. */
+"Payment was cancelled" = "Payment was cancelled";
+
+/* No comment provided by engineer. */
+"The device is not allowed to make the payment" = "The device is not allowed to make the payment";
+
+/* No comment provided by engineer. */
+"The product is not available in the current storefront" = "The product is not available in the current storefront";
+
+/* No comment provided by engineer. */
+"The purchase identifier was invalid" = "The purchase identifier was invalid";
+
+/* No comment provided by engineer. */
+"Unknown error. Please contact support at team@lockdownprivacy.com." = "Unknown error. Please contact support at team@lockdownprivacy.com.";
+
+/* No comment provided by engineer. */
+"User has revoked permission to use this cloud service" = "User has revoked permission to use this cloud service";
+
+/* No comment provided by engineer. */
+"Please that you have an active subscription. If you're attempting to share a subscription from the same account, you'll need to sign in with the same email address. Otherwise, please start your free trial or e-mail team@lockdownprivacy.com" = "Please that you have an active subscription. If you're attempting to share a subscription from the same account, you'll need to sign in with the same email address. Otherwise, please start your free trial or e-mail team@lockdownprivacy.com";
+
+/* No comment provided by engineer. */
+"In-App Purchases have been disabled. Please allow them in Settings App -> Screen Time -> Restrictions -> App Store -> In-app Purchases. Then try again." = "In-App Purchases have been disabled. Please allow them in Settings App -> Screen Time -> Restrictions -> App Store -> In-app Purchases. Then try again.";
+
+/* No comment provided by engineer. */
+"Payment not allowed.\nEither this device is not allowed to make purchases, or In-App Purchases have been disabled. Please allow them in Settings App -> Screen Time -> Restrictions -> App Store -> In-app Purchases. Then try again." = "Payment not allowed.\nEither this device is not allowed to make purchases, or In-App Purchases have been disabled. Please allow them in Settings App -> Screen Time -> Restrictions -> App Store -> In-app Purchases. Then try again.";
+
+/* No comment provided by engineer. */
+"Please ensure that you have an active subscription. If you're attempting to share a subscription from the same account, you'll need to sign in with the same email address. Otherwise, start your free trial or e-mail team@lockdownprivacy.com" = "Please ensure that you have an active subscription. If you're attempting to share a subscription from the same account, you'll need to sign in with the same email address. Otherwise, start your free trial or e-mail team@lockdownprivacy.com";
+
+/* No comment provided by engineer. */
+"Upgrade Plan" = "アップグレードプラン";
+
+/* The title of a list of trackers */
+"Amazon Trackers" = "Amazon Trackers";
+
+/* The title of a list of trackers */
+"Dummy Domains" = "Dummy Domains";
+
+// MARK: - Onboarding
+"Onboarding.Continue" = " 続ける ";
+"Onboarding.Step1.Title" = "安全で匿名のブラウジング";
+"Onboarding.Step1.Subtitle" = "暗号化されたブラウジングでオンラインのプライバシーを保護。IPが隠され、データが守られます";
+"Onboarding.Step1.Item1" = "ハッカーやトラッカーから大切な情報を守ります。";
+"Onboarding.Step1.Item2" = "世界中のウェブサイトへ自由にアクセス。";
+"Onboarding.Step1.Item3" = "公共Wi-Fiでも安全な接続を確保。";
+"Onboarding.Step2.Title" = "カスタムコントロール & ブロックリスト";
+"Onboarding.Step2.Subtitle" = "自分だけの保護設定を構築。不要なウェブサイトや広告をブロックし、セキュリティ設定をカスタマイズ";
+"Onboarding.Step2.Item1" = "簡単なツールでインターネット体験を自由に管理。";
+"Onboarding.Step2.Item2" = "ウェブサイトやアプリのルールを自由に設定。";
+"Onboarding.Step2.Item3" = "広告やトラッカーをブロックして、より速く快適なブラウジングを実現。";
+
+"multiple_subscriptions_title" = "複数のサブスクリプションが有効";
+"multiple_subscriptions_message" = "現在、2つの有効なサブスクリプションがあり、それぞれ別々に請求されます。必要に応じて、アカウント設定で最初のものをキャンセルできます。";

@@ -1,0 +1,95 @@
+/* Class = "UILabel"; text = "Network settings"; ObjectID = "0ZJ-BI-849"; */
+"0ZJ-BI-849.text" = "Cài đặt mạng";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "3BA-9g-I6J"; Note = "(Add Custom Filter) url hint"; */
+"3BA-9g-I6J.placeholder" = "Tên";
+
+/* Class = "UILabel"; text = "How to set it up?"; ObjectID = "7H8-Df-Igr"; */
+"7H8-Df-Igr.text" = "Cài đặt như nào?";
+
+/* Class = "UILabel"; text = "AdGuard won't block the domains from this list"; ObjectID = "84p-U2-sd8"; */
+"84p-U2-sd8.text" = "AdGuard sẽ không chặn những tên miền từ danh sách này";
+
+/* Class = "UILabel"; text = "AdGuard will block the domains from this list"; ObjectID = "AOm-kV-l4z"; */
+"AOm-kV-l4z.text" = "AdGuard sẽ chặn tên miền trong danh sách này";
+
+/* Class = "UILabel"; text = "Advanced network settings"; ObjectID = "FUx-XP-SzD"; */
+"FUx-XP-SzD.text" = "Cấu hình mạng nâng cao";
+
+/* Class = "UILabel"; text = "DNS server"; ObjectID = "LTC-71-V9S"; */
+"LTC-71-V9S.text" = "Máy chủ";
+
+/* Class = "UILabel"; text = "Provided by the OS itself. Inspecting DNS activity won't be possible in this mode.\n\n"; ObjectID = "Mxf-0w-5MP"; */
+"Mxf-0w-5MP.text" = "Cung cấp bởi chính hệ điều hành. Mọi hành vi điều tra DNS đều sẽ không thể thực hiện được trong chế độ này.\n\n";
+
+/* Class = "UILabel"; text = "Enhances your privacy by blocking in-app trackers and encrypting your DNS requests"; ObjectID = "PFY-Cq-NFN"; Note = "No more than 100 symbols"; */
+"PFY-Cq-NFN.text" = "Nâng cao quyền riêng tư của bạn bằng cách chặn trình theo dõi trong ứng dụng và mã hóa các yêu cầu DNS của bạn";
+
+/* Class = "UILabel"; text = "AdGuard"; ObjectID = "QD7-ng-Xb6"; */
+"QD7-ng-Xb6.text" = "AdGuard";
+
+/* Class = "UILabel"; text = "DNS protection"; ObjectID = "QYv-iX-uIo"; */
+"QYv-iX-uIo.text" = "Bảo vệ hệ thống";
+
+/* Class = "UIButton"; normalTitle = "Try for free"; ObjectID = "Uem-fP-tai"; */
+"Uem-fP-tai.normalTitle" = "Thử miễn phí";
+
+/* Class = "UILabel"; text = "Allowlist"; ObjectID = "Wml-J6-ced"; */
+"Wml-J6-ced.text" = "Danh sách bỏ qua";
+
+/* Class = "UILabel"; text = "DNS implementation"; ObjectID = "Xa6-wl-aOE"; */
+"Xa6-wl-aOE.text" = "DNS thêm vào";
+
+/* Class = "UITextField"; placeholder = "IP, sdns://, https:// or tls://"; ObjectID = "ZgC-4d-Peb"; Note = "(Add Custom Filter) url hint"; */
+"ZgC-4d-Peb.placeholder" = "IP, sdns://, https:// hoặc tls://";
+
+/* Class = "UILabel"; text = "DNS server address"; ObjectID = "dW3-zk-BPr"; */
+"dW3-zk-BPr.text" = "Địa chỉ máy chủ DNS";
+
+/* Class = "UILabel"; text = "Network settings"; ObjectID = "iPl-vI-lX5"; */
+"iPl-vI-lX5.text" = "Cài đặt mạng";
+
+/* Class = "UILabel"; text = "Blocklist"; ObjectID = "ihd-7R-RfE"; */
+"ihd-7R-RfE.text" = "Danh sách đen";
+
+/* Class = "UILabel"; text = "Works as a local \"pseudo\" VPN. Supports any DNS protocol, allows you to inspect your device DNS activity."; ObjectID = "lEg-oH-oxd"; */
+"lEg-oH-oxd.text" = "Hoạt động như một VPN nội bộ không chính thức. Hỗ trợ mọi giao thức DNS, cho phép bạn theo dõi mọi hoạt động của DNS trên thiết bị của bạn.";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "o1z-O6-Bk9"; */
+"o1z-O6-Bk9.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "DNS filtering"; ObjectID = "pC4-RU-DaD"; */
+"pC4-RU-DaD.text" = "Chặn tên miền";
+
+/* Class = "UILabel"; text = "Security filters, DNS privacy, custom filters, etc."; ObjectID = "pY3-X6-fFy"; */
+"pY3-X6-fFy.text" = "Bộ lọc bảo vệ, DNS riêng tư, bộ lọc tùy chỉnh, khác.";
+
+/* Class = "UILabel"; text = "DNS filters"; ObjectID = "plc-eu-aXh"; */
+"plc-eu-aXh.text" = "Các bộ lọc";
+
+/* Class = "UILabel"; text = "Server name"; ObjectID = "pzP-ns-QSS"; */
+"pzP-ns-QSS.text" = "Tên máy chủ";
+
+/* Class = "UILabel"; text = "Customize your DNS traffic by applying your own rules."; ObjectID = "qjN-LB-N3T"; */
+"qjN-LB-N3T.text" = "Mô đun này có thể chặn các tên miền có khả năng theo dõi hoạt động của bạn và mã hóa lưu lượng DNS của bạn";
+
+/* Class = "UILabel"; text = "Native"; ObjectID = "sQQ-5p-EfW"; */
+"sQQ-5p-EfW.text" = "Nguyên bản";
+
+/* Class = "UIBarButtonItem"; title = "Select"; ObjectID = "uCw-Mi-HiJ"; */
+"uCw-Mi-HiJ.title" = "Chọn";
+
+/* Class = "UILabel"; text = "DNS filtering"; ObjectID = "vDF-5j-uJn"; */
+"vDF-5j-uJn.text" = "Chặn tùy chỉnh";
+
+/* Class = "UILabel"; text = "Protocol"; ObjectID = "vJt-Jd-BI2"; */
+"vJt-Jd-BI2.text" = "Giao thức";
+
+/* Class = "UILabel"; text = "Implementation"; ObjectID = "xgN-x2-EfQ"; */
+"xgN-x2-EfQ.text" = "Thêm vào";
+
+/* Class = "UILabel"; text = "Filters and exceptions"; ObjectID = "xiD-h8-XrC"; */
+"xiD-h8-XrC.text" = "Bộ lọc và ngoại lệ";
+
+/* Class = "UILabel"; text = "About iOS settings"; ObjectID = "xyt-oO-rhI"; */
+"xyt-oO-rhI.text" = "Về các tinh chỉnh trên iOS";

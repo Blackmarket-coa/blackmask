@@ -28,3 +28,6 @@ libs/.github
 
 # Forked library files
 libs/common/src/types/deep-jsonify.ts
+
+# Vendored upstream OSS sources (Black Mask build map)
+third_party

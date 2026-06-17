@@ -1,0 +1,65 @@
+//
+//  This file is part of Blokada.
+//
+//  This Source Code Form is subject to the terms of the Mozilla Public
+//  License, v. 2.0. If a copy of the MPL was not distributed with this
+//  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+//
+//  Copyright © 2020 Blocka AB. All rights reserved.
+//
+//  @author Karol Gusak
+//
+// One of the tags used for searching blocklists
+
+"recommended" = "موصى به";
+// One of the tags used for searching blocklists
+"official" = "رسمي";
+// One of the tags used for searching blocklists
+"adblocking" = "حظر الإعلانات";
+// One of the tags used for searching blocklists
+"tracking" = "تتبُّع";
+// One of the tags used for searching blocklists
+"privacy" = "الخصوصية";
+// One of the tags used for searching blocklists
+"adult" = "للبالغين";
+// One of the tags used for searching blocklists
+"porn" = "إباحي";
+// One of the tags used for searching blocklists
+"social" = "اجتماعي";
+// One of the tags used for searching blocklists
+"regional" = "إقليمي";
+// One of the tags used for searching blocklists
+"fake news" = "أخبار زائفة";
+// One of the tags used for searching blocklists
+"gambling" = "مقامرة";
+// One of the tags used for searching blocklists
+"youtube" = "يوتيوب";
+// One of the tags used for searching blocklists
+"phishing" = "تصيد احتيالي";
+// One of the tags used for searching blocklists
+"security" = "أمني";
+// Family tags below
+// One of the tags used for searching blocklists
+"malware" = "برمجيات خبيثة";
+// One of the tags used for searching blocklists
+"spam" = "بريد عشوائي";
+// One of the tags used for searching blocklists
+"dating" = "مواعدة";
+// One of the tags used for searching blocklists
+"piracy" = "قرصنة";
+// One of the tags used for searching blocklists
+"torrent" = "تورنت";
+// One of the tags used for searching blocklists
+"streaming" = "بث مباشر";
+// One of the tags used for searching blocklists
+"apps" = "تطبيقات";
+// One of the tags used for searching blocklists
+"chat" = "دردشة";
+// One of the tags used for searching blocklists
+"gaming" = "ألعاب إلكترونية";
+// One of the tags used for searching blocklists
+"games" = "ألعاب";
+// One of the tags used for searching blocklists
+"e-commerce" = "تجارة إلكترونية";
+// One of the tags used for searching blocklists
+"other" = "غير ذلك";

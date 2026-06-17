@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <Group
+      location = "container:SupportingScripts"
+      name = "SupportingScripts">
+      <FileRef
+         location = "group:get_providers.sh">
+      </FileRef>
+      <FileRef
+         location = "group:localization.py">
+      </FileRef>
+      <FileRef
+         location = "group:readme.md">
+      </FileRef>
+      <FileRef
+         location = "group:runBuilder.sh">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:AdGuardSDK/AdGuardSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Builder/Builder.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:AdguardExtension/Adguard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:classStyleTemplate.txt">
+   </FileRef>
+</Workspace>

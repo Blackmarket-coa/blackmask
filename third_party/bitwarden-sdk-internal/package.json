@@ -1,0 +1,34 @@
+{
+  "name": "@bitwarden/sdk-internal",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/bitwarden/sdk-internal#readme",
+  "bugs": {
+    "url": "https://github.com/bitwarden/sdk-internal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitwarden/sdk-internal.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Bitwarden Inc. <hello@bitwarden.com> (https://bitwarden.com)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "bash scripts/lint.sh",
+    "lint:fix": "bash scripts/lint.sh --fix",
+    "lint:prettier": "prettier --check .",
+    "lint:dep-ownership": "tsx scripts/dep-ownership.ts",
+    "prettier": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "2.31.0",
+    "@types/node": "25.9.1",
+    "husky": "9.1.7",
+    "json5": "2.2.3",
+    "lint-staged": "16.4.0",
+    "prettier": "3.7.4",
+    "tsx": "4.21.0"
+  }
+}

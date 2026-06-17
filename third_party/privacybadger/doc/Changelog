@@ -1,0 +1,834 @@
+Privacy Badger changelog
+========================
+
+2026.6.16
+* Updated the new user welcome page to better explain how to disable
+Privacy Badger on a site. Redesigned pinning instructions in Chrome
+to become a part of learning about the "Disable for this site" button.
+* Added a new way to support Privacy Badger (with a sweatshirt!) to the popup,
+shown sometimes instead of existing "donate" and "leave a review" links.
+Also added a link to subscribe to privacy news ("EFFector").
+* Fixed hang on the Tracking Domains tab for screen reader users.
+This also improves options page performance for all users.
+* Improved keyboard navigation of tracking domains on the options page
+* Fixed various site breakages
+* Improved Arabic, Simplified Chinese, Finnish, Swedish and Ukrainian
+translations. Removed Czech and Korean translations due to lack of updates.
+
+2026.2.20
+* Improved blocking trackers in Chrome and Chromium-based browsers.
+Previously, due to now addressed limitations in Manifest V3 Chromium,
+Privacy Badger sometimes failed to block domains that should have been
+blocked, and blocked domains that should have been ignored.
+* Fixed various site breakages
+* Improved Traditional Chinese, German, Italian and Japanese translations
+
+2025.12.9
+* Fixed various screen reader and keyboard navigation bugs.
+If you have feedback on how to make Privacy Badger more accessible,
+please let us know!
+* Fixed enforcement for "CNAME cloaked" trackers in Chrome and Chromium-based
+browsers. Prominent trackers like Adobe sometimes hide their tracking domains
+behind CNAME alias domains that belong to the website being visited.
+Privacy Badger should once again properly block known aliases in Chrome.
+* Fixed various site breakages
+* Improved Arabic, Traditional Chinese, German, Japanese, Brazilian Portuguese
+and European Portuguese translations
+
+2025.9.5
+Bug fix update to fix "cookieblocking" (domain toggle set to yellow)
+not working in Chrome, Edge and Opera
+
+2025.9.2
+* Privacy Badger is now available on Microsoft Edge for Android
+* Fixed the popup showing "Nothing to do on this page"
+instead of what actually happened in Chrome sometimes
+* Fixed various site breakages. Notably, we can now relax blocking for
+specific tracking domains on specific sites, instead of only globally.
+This lets us fix more broken sites than ever before, since we can now
+work around breakages involving highly prominent tracking domains that
+we wouldn't be OK partially unblocking globally.
+* Improved Danish, Finnish, Greek, Hebrew, Italian, Polish,
+Portuguese, Russian and Swedish translations
+
+2025.5.30
+* Fixed the popup failing to open in Chrome sometimes
+* Fixed various site breakages
+* Improved Swedish and Ukrainian translations
+
+2025.5.14
+* Fixed various display bugs on Android
+* Fixed even more "Privacy Badger failed to initialize" errors in Firefox
+* Fixed various site breakages
+* Improved Esperanto, Polish, Portuguese and Russian translations
+
+2025.3.27
+* Added an "Enjoying Privacy Badger? Leave a review!" link
+to the popup, shown sometimes instead of the "Donate to EFF" link
+* Switched the default options page tab to Disabled Sites
+* Added a "how to disable Privacy Badger without
+leaving the site you are on" tip to Disabled Sites
+* Improved the "pin Privacy Badger to the browser toolbar"
+instructions on the new user welcome page in Chrome
+* Fixed canvas fingerprinting detection in Firefox
+* Fixed various site breakages
+* Improved Russian and Swedish translations
+
+2025.3.3
+* Added tracking domain settings to admin policies. To learn more, visit
+https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
+* Fixed failing to allow all requests on disabled sites in Chrome
+* Fixed another set of "Privacy Badger failed to initialize" errors in Firefox
+* Fixed various site breakages
+* Improved German and Hebrew translations
+
+2025.1.29
+Bug fix update to fix fetching the latest fixes from EFF's CDN
+
+2025.1.17
+* Added widget replacement for Bluesky, Instagram and Threads embeds.
+Privacy Badger replaces potentially useful widgets with placeholders.
+These replacements protect privacy while letting you restore the original
+widget whenever you want it or need it for the page to function.
+* Fixed various site breakages
+* Restored Arabic translations
+* Improved Danish, Dutch, Esperanto, French, German, Greek,
+Brazilian Portuguese, Russian, Spanish and Swedish translations
+* Removed Catalan translations due to lack of updates
+
+2024.7.17
+* Disabled Google's "Privacy Sandbox" ad tracking by default.
+We previously disabled Google's Topics API; we now also disable
+"site-suggested ads" (ad targeting) and "ad measurement"
+(ad attribution reporting) APIs. To learn more, visit
+https://www.eff.org/deeplinks/2024/07/why-privacy-badger-opts-you-out-googles-privacy-sandbox
+* Improved widget replacement for Spotify, SoundCloud, Twitch and YouTube
+embeds. To try out our widget replacement for YouTube embeds,
+move the toggle for youtube.com to red (full blocking).
+* Updated the new user welcome page to ask Chrome users to pin
+Privacy Badger to the browser toolbar
+* Fixed various site breakages
+* Improved Esperanto, Greek, Polish, Russian and Swedish translations.
+Removed Arabic and Bulgarian translations due to lack of updates.
+
+2024.6.14
+* Added a note to Privacy Badger's popup on YouTube.
+YouTube not loading? Ads not blocked? Visit the FAQ at
+https://privacybadger.org/#Is-Privacy-Badger-breaking-YouTube
+* Drastically improved Privacy Badger's loading on Chrome startup
+when Chrome is set to reopen previously opened tabs
+* Fixed Privacy Badger forgetting your settings on startup (by retrying
+reading from extension storage when reading fails for whatever reason)
+* Fixed various site breakages
+* Improved translations (Traditional Chinese, Esperanto, Polish)
+
+2024.6.3
+Bug fix update to hide the "Privacy Badger failed to initialize"
+error when it no longer applies
+
+2024.5.31
+Bug fix update to work around Privacy Badger failing to read
+from extension storage on startup for whatever reason
+
+2024.5.27
+Bug fix update to restore access to Cloudflare-protected sites
+for users who enabled local tracker learning
+
+2024.5.17
+* Updated "share" buttons on the new user welcome page:
+Added button for Mastodon; fixed Facebook and X (Twitter) buttons
+* Unbroke X.com and a few other sites
+* Improved translations (Greek, Hebrew)
+
+2024.2.6
+* Fixed timing issue that could lead to incomplete or empty
+tracker data on installation in Firefox
+* Fixed various UI display issues
+* Fixed various site breakages
+* Improved translations (Hebrew, Brazilian Portuguese, Swedish, Ukrainian)
+
+2023.12.1
+* Improved widget replacement for embedded tweets
+* Fixed blocking WebSocket connections to blocked domains
+* Fixed various site breakages
+* Added Galician translations in Firefox
+* Improved translations (Traditional Chinese, Greek, Japanese)
+
+2023.10.31
+* Added widget replacement for embedded tweets.
+Privacy Badger replaces potentially useful widgets with placeholders.
+These replacements protect privacy while letting you restore the original
+widget whenever you want it or need it for the page to function.
+* Fixed various site breakages
+* Improved Brazilian Portuguese and Swedish translations
+
+2023.9.12
+* Improved link tracking protection ("link unwrapping") on Google sites.
+With this update Privacy Badger removes tracking from links in Google Docs,
+Gmail, Google Maps, and Google Images results. Privacy Badger now also removes
+tracking from links added after scrolling through Google Search results.
+To learn more, visit https://eff.org/badger-link-tracking-protection-update
+* Fixed various site breakages
+* Added Malay and restored Serbian translations
+* Improved Traditional Chinese translations
+
+2023.6.23
+Bug fix release addressing various site breakages
+
+2023.6.14
+* Privacy Badger now comes with the largest blocklist yet, thanks to improved
+tracking detection and continually expanding pre-training. In addition
+to learning from tracking techniques like cookies and canvas fingerprinting,
+Privacy Badger now also learns from the Beacon API. To learn more, visit
+www.eff.org/badger-pretraining and
+https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API.
+* Fixed blocking trackers from just-closed tabs or from pages you recently
+navigated away from
+* Improved display of tracking domains on the options page on larger screens
+* Fixed various site breakages
+* Improved Italian translations
+
+2023.5.10
+* Expanded protection for "cookieblocked" (slider set to yellow) domains.
+These domains are allowed to load without access to cookies, as a compromise
+to avoid breaking websites. However, sometimes the same domain is used to
+serve both unobjectionable content as well as obnoxious fingerprinters
+that do not need cookies to track your browsing. Privacy Badger will now
+fully block these fingerprinters.
+* Disabled Google's Topics API by default. The Topics API replaces
+Federated Learning of Cohorts (FLoC).
+* You can now see where Privacy Badger observed tracking by a given domain
+by clicking on the domain name in the list of tracking domains
+on the options page
+* Fixed various site breakages
+* Added Vietnamese translations
+* Improved translations (Finnish, French, Hebrew, Persian,
+European Portuguese, Russian, Spanish)
+
+2023.1.31
+* Added a note to the popup to explain that if you would like to log into
+websites with your Google account, you need to fully allow accounts.google.com
+* Added dark theme support to widget replacement placeholders
+* Fixed blocking service worker-initiated requests in Chrome
+* Fixed various site breakages
+* Added Hindi translations
+* Improved Traditional Chinese translations
+
+2022.9.27
+* Improved widget replacement system to better handle embedded YouTube videos
+* Delayed opening the new user welcome page for a few seconds
+to work around a Chromium bug with administrator settings (managed storage)
+* Removed obsolete "Prevent WebRTC from leaking local IP address" setting
+* Fixed various site breakages
+* Added Japanese translations
+* Improved translations (Dutch, Finnish, French, Brazilian Portuguese,
+Russian, Spanish, Swedish, Turkish, Ukrainian)
+
+2021.11.23.1
+* Improved widget replacement system to better handle Google reCAPTCHA.
+Privacy Badger replaces potentially useful widgets with placeholders.
+These replacements protect privacy while letting you restore the original
+widget whenever you want it or need it for the page to function.
+* Improved tracking script surrogation system to work across more websites.
+Script surrogates protect privacy while avoiding site breakages.
+* Fixed display of non-tracking domains
+* Added more widget replacement placeholders and fixed various site breakages
+* Improved translations (Dutch, Finnish, Greek, Persian, Brazilian Portuguese,
+European Portuguese, Swedish)
+
+2021.8.17
+Bug fix release to fix link clicking on various websites:
+https://github.com/EFForg/privacybadger/commit/e1f32a343ec8b9647e361cfff1ea0b82e169fa19
+
+2021.8.11
+* Improved buttons in the popup: Disable and Report are larger and use less
+text, Donate is now a link
+* Removed "Prevent WebRTC from leaking local IP address" from the options
+page. If you previously enabled this setting, it remains available for now.
+However, the setting is now deprecated and will be removed in a future update.
+To learn more, visit https://github.com/EFForg/privacybadger/issues/2782
+* Improved dark theme in Chrome
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Esperanto, French, German, Greek,
+Hebrew, Italian, Polish, Spanish, Swedish, Ukrainian)
+
+2021.6.8
+* Disabled Google's Federated Learning of Cohorts (FLoC). To learn more, visit
+https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea
+* Improved tracker detection and blocking by looking up known CNAME tracker
+aliases. Thanks to AdGuard for providing the CNAME DNS data behind this
+feature.
+* You can now see in the popup when first-party protections
+such as link unwrapping are active on the site you are on
+* Fixed various site breakages
+* Added Greek and Hungarian translations
+* Improved translations (Simplified Chinese, Esperanto, Hebrew, Korean,
+European Portuguese, Turkish, Swedish)
+
+2021.2.2
+* Added a dark theme. To see it, enable dark mode in operating system
+or device preferences.
+* Added a section to the Widget Replacement tab on the options page to manage
+the list of widgets that were set to be always allowed on certain sites
+* Disabled network prefetching/preloading to improve privacy
+* Added replacements for Dailymotion and OK.ru video player widgets
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Czech, French, Hebrew)
+
+2020.12.10
+* Added a direct link to widget content to replacements for widgets like
+YouTube, Vimeo, SoundCloud and Spotify. You can click this link to watch
+a video (for example) without sharing the page you are on with the video
+provider.
+* Fixed "fbclid" tracking parameter removal on Facebook
+* Enabled Google Search link unwrapping on Firefox for Android
+* Fixed various site breakages
+* Improved translations (Dutch, Esperanto, French, German, Hebrew, Polish,
+Russian, Swedish, Turkish, Ukrainian)
+
+2020.10.7
+* Disabled learning (by default) to address privacy concerns.
+Visit https://www.eff.org/badger-evolution to learn more.
+* Added support for Global Privacy Control, a new specification that
+lets you tell companies you'd like to opt out of data sharing and selling.
+Visit https://globalprivacycontrol.org/ to learn more.
+* Added a section to the options page to display the browser settings
+that Privacy Badger overrides for privacy reasons
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Dutch, Finnish, Hebrew, Italian,
+Russian, Spanish, Ukrainian)
+
+2020.8.25
+* Added a button to widget replacements to always allow a widget on a site
+* Improved scrolling of tracking domains on the options page
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Traditional Chinese, Esperanto,
+Finnish, French, Polish, Brazilian Portuguese, Russian, Spanish, Swedish)
+
+2020.7.21
+* Improved broken site reporting screen in the popup
+* Refreshed the look of options page tabs
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Danish, European Portuguese,
+Spanish, Turkish)
+
+2020.6.29
+* Added replacement placeholder for Disqus comments widgets
+* Fixed domain sliders on the options page not saving in some cases
+* Fixed slider changes on the options page resetting the list of domains,
+causing you to lose your place if you were scrolled down
+* Fixed domain slider tooltip display
+* Re-enabled custom tooltips in Firefox
+* Fixed various site breakages
+* Improved translations (Esperanto, Hebrew, Ukrainian)
+
+2020.6.2
+* Added replacement placeholders for Facebook Comments/Video and Twitch Player
+* Removed Twitter link unwrapping. We are unable to unwrap t.co links
+on Twitter at this time, as the original URL is no longer present
+in the Twitter website's document structure.
+* Fixed various site breakages
+* Improved translations (Hebrew, Polish, Swedish)
+
+2020.5.12
+* Made buttons in the popup easier to see and click (or tap, on Firefox for
+Android)
+* Added a replacement placeholder widget for Google reCAPTCHA
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Dutch, Finnish, French, German,
+Hebrew, Italian, Brazilian Portuguese, Spanish, Swedish, Turkish)
+
+2020.2.19
+* Added website breakage warnings, shown in the popup when you block a domain
+known to break websites
+* Removed pixel cookie sharing detection pending security fixes
+* Fixed various site breakages
+* Improved translations (Catalan, Simplified Chinese, Danish, Dutch, German,
+Russian)
+
+2020.1.13
+* Fixed bug that sometimes loses pre-trained data for new users
+* Fixed various site breakages
+
+2020.1.7.1
+* Added helpful text to popup on disabled sites
+* Fixed display issues in popup on smaller displays
+* Fixed Facebook link unwrapping on messenger.com
+* Fixed some cookies getting incorrectly flagged as high entropy
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Traditional Chinese, French,
+Hebrew, Italian, Korean, Russian, Spanish, Swedish, Ukrainian)
+
+2019.11.18
+* Improved display of domains Privacy Badger hasn't yet learned to block
+* Fixed export/import of the WebRTC protection setting
+* Fixed certain YouTube ("video unavailable"), Vimeo ("Because of its privacy
+settings, this video cannot be played here"), and other video players
+by revising referrer protection for "cookieblocked" domains
+* Fixed various other site breakages
+* Added Korean translations
+* Improved translations (Finnish, French, Hebrew, Swedish)
+
+2019.10.28
+* Refreshed the popup with a higher-contrast look
+* Widget placeholders will no longer be applied for domains on the yellowlist.
+The value of widget placeholders is full blocking (best privacy) combined with
+a clear way to restore potentially useful blocked content (convenience).
+Mixing cookie blocking and placeholders doesn't actually improve privacy or
+convenience but does introduce various bugs.
+* Added a replacement placeholder for YouTube (disabled by default as youtube.com
+is still on the yellowlist for now)
+* Added the Widget Replacement tab to the options page to manage widgets that
+do get blocked and replaced with Privacy Badger placeholders. Visit Widget
+Replacement to selectively disable placeholders. For example, you want social
+buttons out of your life completely.
+* Fixed various site breakages
+* Added Hebrew translations
+* Improved translations (Italian, Russian, Ukrainian)
+
+2019.10.8
+* Fixed image/video thumbnails in Google search results
+* Fixed various other site breakages
+* Removed the green "0" tracker count badge.
+No need to draw attention when there is nothing to show.
+* Improved translations (Simplified Chinese, Ukrainian)
+
+2019.9.23
+* Added helpful text to popup on special browser pages like the New Tab page
+* Fixed pixel cookie sharing detection being broken by First-Party Isolation
+in Firefox
+* Fixed major issues with Service Workers-powered sites like Gmail and Twitter
+* Fixed various other site breakages
+* Improved translations (Simplified Chinese, French, Spanish, Swedish,
+Turkish, Ukrainian)
+
+2019.7.1
+* Added pixel cookie sharing detection. Privacy Badger now records
+tracking by images with querystrings that contain first-party cookie data.
+This catches Google Analytics.
+* Removed display of non-tracking domains from the popup by default.
+Hiding domains that Privacy Badger does not consider to be tracking
+should reduce self-inflicted Web breakage.
+* Enabled Facebook link unwrapping on messenger.com
+* Fixed various site breakages
+* Added Catalan translations
+* Improved translations (Bulgarian, Traditional Chinese, Persian,
+Brazilian Portuguese, European Portuguese, Swedish, Ukrainian)
+
+2019.2.19
+* Improved replacement widgets:
+
+    - Replaced the "play" icon with an "allow once" button to improve
+    accessibility and to make it more clear our widgets are interactive
+    - Made activation also activate any other widgets of the same type
+    - Updated the replacement for Vimeo to ignore background videos
+    - Set minimum dimensions to avoid becoming too small or hidden
+
+* Fixed various site breakages
+
+2019.1.30
+* Added replacement widgets for embedded Spotify, Streamable and Vimeo
+players. Privacy Badger can replace potentially useful third-party widgets
+with placeholders. This avoids on-by-default tracking while providing a clear
+way to restore the original widget on demand.
+* Fixed various site breakages
+* Added Arabic and European Portuguese translations
+* Improved translations (Traditional Chinese, Czech, German, Persian, Swedish,
+Turkish)
+
+2018.12.17
+* Fixed major Privacy Badger breakages in Chrome 72+
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Spanish, Turkish)
+
+2018.12.5
+* Added a Share button to the popup. This lets you easily copy and paste
+Badger's findings on any page.
+* Updated link protection to work on all Google Search country domains
+* Updated link protection on Facebook to remove the new "fbclid" tracking
+parameter
+* Added support for enterprise/admin/group policy settings overrides. This
+lets administrators preconfigure Privacy Badger installations. For more
+information, please visit
+https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
+* Fixed various bugs with local storage protection for "cookieblocked" (slider
+set to "yellow") domains
+* Made the options page work better on small and on large displays
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Dutch, Esperanto, Finnish,
+German, Italian, Persian, Polish, Spanish, Swedish)
+
+2018.10.3.1
+* Fixed style problems with Google Search results
+* Fixed the setting to open results in new browser windows on Google Search
+
+2018.10.3
+* Added protection against outgoing link click tracking on Google Search,
+Google Docs and Google Hangouts
+* Fixed various site breakages
+* Added Finnish translations
+* Improved translations (Simplified Chinese)
+
+2018.9.20
+* Added buttons to back up and restore the disabled sites list using
+Firefox/Google Sync. The new buttons live under the Manage Data tab
+on the options page.
+* Added saving of in-progress error reports so that you no longer lose
+your typing when you close the popup for whatever reason
+* Fixed popup layout problems when opened in the overflow menu in Firefox
+* Updated popup and options to use a higher resolution Badger logo on higher
+pixel density displays
+* Fixed problems with broken fonts and images on Google Docs
+* Improved translations (Traditional Chinese, French, German,
+Brazilian Portuguese, Russian, Spanish, Swedish, Turkish)
+
+2018.8.22
+* Added pre-trained tracker data for new Privacy Badger installations.
+Visit www.eff.org/badger-pretraining to learn more.
+* Added reset/clear tracker data buttons to the Manage Data options page tab
+* Fixed various site breakages
+* Added Persian and Brazilian Portuguese translations
+* Improved translations (Simplified Chinese, Danish, Esperanto, French,
+German, Italian, Norwegian Bokmål, Spanish, Swedish)
+
+2018.8.1
+* Fixed security issues with HTML5 local storage tracking detection as well as
+SoundCloud widget replacement. Thanks again to Cure53 for discovering and
+reporting these vulnerabilities.
+* Improved Facebook link unwrapping; now enabled on the Facebook Onion domain
+* Improved translations (Italian, Norwegian Bokmål, Swedish, Ukrainian)
+
+2018.7.18.1
+* Added setting to disable sending Do Not Track to websites
+* Fixed security issue with link unwrapping on Facebook. Thanks to Cure53 for
+discovering and reporting this vulnerability.
+* Improved ordering of domain names in the popup and on the options page
+* Improved handling of disabled sites with wildcards
+* Added t.co link replacement to user profiles on Twitter
+* Linked to EFF software privacy policy from the new user welcome page
+* Updated to latest dummy Google Publisher Tag script from uBlock Origin
+to avoid "failed to redirect a network request" warnings in Chrome
+* Fixed various site breakages
+* Improved translations (Simplified Chinese, Dutch, Esperanto, German,
+Russian, Swedish, Turkish)
+
+2018.5.10
+* Added protection against outgoing link click tracking on Facebook
+* Updated WebRTC protection to revert to browser default (off) when disabled
+* Fixed popup in the Italian locale in Chrome
+* Updated to latest dummy Google Analytics script from uBlock Origin
+to avoid "failed to redirect a network request" warnings in Chrome
+* Fixed various site breakages
+* Improved translations (Traditional Chinese, Danish, Dutch, Esperanto,
+French, German, Italian, Polish, Russian, Swedish, Ukrainian)
+
+2018.4.23
+* Fixed changes not being persisted for domains that appear after scrolling
+the tracking domains list on the options page
+* Improved tracking domains search on the options page
+* Fixed "can't access dead object" errors in Firefox
+* Fixed XML document rendering in Firefox
+* Updated WebRTC protection checkbox to become disabled when the setting is
+controlled by other extensions
+* Fixed various site breakages
+* Improved translations (Traditional Chinese, Czech, Danish, Esperanto,
+French, German, Italian, Polish, Russian, Swedish, Turkish, Ukrainian)
+
+2018.4.10
+* Updated the new user welcome page. The redesigned page is mobile-friendly,
+accessible and already translated into several languages.
+* Fixed Do Not Track being checked sometimes in Private Browsing/Incognito
+windows. By default, Privacy Badger should not record anything in Incognito.
+* Added setting to allow learning in Private Browsing/Incognito windows
+* Fixed unwanted scrolling when switching tabs on the options page
+* Updated replacement icon for Google+
+* Fixed various site breakages
+* Improved translations (Bulgarian, Simplified Chinese, Traditional Chinese,
+Danish, Esperanto, French, German, Italian, Polish, Russian, Spanish,
+Ukrainian)
+
+2018.3.21
+* Fixed Do Not Track not being recognized by sites that test for it by
+checking navigator.doNotTrack with JavaScript
+* Stopped signaling DNT on sites where Privacy Badger is disabled
+* Fixed popup in Private Browsing windows in Firefox
+* Fixed certain kinds of site breakages (such as visual issues with charts)
+not going away even after disabling Privacy Badger on the site
+* Updated to latest dummy Google Publisher Tag script from uBlock Origin
+to avoid "failed to redirect a network request" warnings in Chrome
+* Fixed various site breakages
+* Improved translations (Bulgarian, Traditional Chinese, German, Italian,
+Swedish)
+
+2018.2.5
+* Added type/status filters to the tracking domains list on the options page
+* Reworked social widget replacement to avoid WebExtensions fingerprintability
+issue in Firefox
+* New translations (Turkish)
+* Improved translations (Danish, Esperanto, French, German, Polish, Swedish,
+Ukrainian)
+
+2018.1.30
+* Removed the "unlimitedStorage" permission from the manifest
+* Changed the tracker count badge color from red to "Privacy Badger orange"
+
+2018.1.25
+* Added workaround to avoid Privacy Badger getting disabled as "Not from
+Chrome Web Store" in Chrome
+
+2018.1.22
+* Reduced amount of data stored as part of normal operation. Privacy Badger
+will no longer record (or check Do Not Track policies for) non-tracking
+domains. This should enable us to remove the "unlimitedStorage" permission
+with the next Badger update.
+* Improved tracker detection status summaries in popup and options
+* Added explanatory acknowledgement to Tracking Domains options page tab
+* Fixed file download dialog not showing when exporting user data in Firefox
+* Removed tutorial reminder link from popup when already on tutorial page
+* Removed "Requests to the server have been blocked by an extension" messages
+in Chrome and Opera
+* Fixed style issue with replacement social widgets
+* Fixed error reporting on pages where Privacy Badger has been disabled
+* Fixed various site breakages
+* Improved translations (Bulgarian, Danish, Esperanto, French, German,
+Italian, Polish, Russian, Spanish, Swedish, Ukrainian)
+
+2017.11.20
+* Disabled custom tooltips in Firefox to work around browser freezing issues
+* Added validation to the disabled sites form
+* Improved translations (Dutch, Esperanto and German)
+* Added Bulgarian and Polish translations
+
+2017.11.9
+* Fixed various site breakages
+* Improved translations (French, Serbian and Ukrainian)
+* Added Esperanto translation
+
+2017.10.25.1
+* Reverted manifest file change preventing upload to Chrome Web Store
+
+2017.10.25
+* Added Beta support for Firefox for Android
+* Updated popup to close after doing anything that reloads the page
+* Improved handling of long domain names
+* Improved tooltips
+* Restored canvas fingerprinting detection to Firefox
+* Fixed yellowlist updates not getting applied when importing Badger data
+* Updated to latest dummy Google Analytics script from uBlock Origin
+to avoid "failed to redirect a network request" warnings in Chrome
+* Fixed various site breakages
+* Improved translations (Danish, French, German, Italian, Swedish)
+
+2017.9.12.1
+* Fixed build script issue that reintroduced major site breakages on Firefox
+
+2017.9.12
+* Fixed DNT policy checking for blocked domains
+* Fixed exporting large Badger datasets
+* Made progress on Firefox for Android compatibility
+* Fixed various site breakages
+* Improved badge updating performance
+* Improved translations (Czech, Italian, Swedish, Ukrainian)
+* Added Danish translation
+
+2017.7.24
+* Added validation to yellowlist (f.k.a. "cookieblock list") updating
+* Removed faulty yellowlist domain removal logic, which, together with missing
+validation and eff.org serving a maintenance page instead of the actual
+yellowlist, resulted in major breakages all across the Web, something this
+update should prevent from happening ever again
+* Fixed various site breakages
+* Improved translations (Swedish)
+
+2017.6.13.1
+* Added workaround for validation issue preventing upload to Chrome Web Store
+* Fixed chrome.privacy-related exceptions in Firefox 54
+
+2017.6.13
+* Added automatic replacement of t.co shortened tracking URLs with original
+unobfuscated URLs on twitter.com
+* Added option to disable Do Not Track policy checking
+* Restricted DNT policy checking from sending cookies
+* Fixed tooltips for DNT-compliant domains in popup
+* Fixed local storage tracking sometimes being attributed to unrelated domains
+* Improved translations (Swedish, Ukrainian)
+
+2017.5.9
+* Improved popup rendering
+* Added version number to popup
+* Restricted Do Not Track policy checking from being able to set cookies
+* Fixed several cookie parsing issues
+* Added workaround for Cloudflare security cookies
+* Improved translations (Simplified Chinese, Swedish, Ukrainian)
+
+2017.4.19.1
+* Rework DNT policy rechecking to only happen during browsing. Eliminates
+needless rechecking of unlikely-to-be-visited-again domains. Should further
+mitigate CPU issues.
+* Fix DNT policies to only apply to specific domains they are posted on
+* New translations (Ukrainian)
+* Improved translations (Simplified Chinese, Italian)
+* Fix "trackers" link on popup and options pages
+* Fix broken site (sharepoint.com)
+
+2017.3.28
+* Fix bug in DNT policy re-checking code
+* Rate limit DNT checking to one request per second
+* Fix issue with multiple DNT checks at once for a single domain
+* Fix cookieblock updating issue
+* Fix popup width issue
+* Fix DNT hash updating issue
+* Fix toggle switch issue
+* New translation: Czech
+* Translation updates
+* Other minor bugfixes and broken site fixes
+* Automated tests now also run on Firefox
+
+2017.3.22
+Firefox only release
+* Fix cookie tracking detection in Firefox
+
+2017.1.26.1
+Firefox only release
+* Fix an error in the build scripts
+that reintroduced a Firefox bug for AMO users
+
+2017.1.26
+* Huge speed improvements for settings import and on startup
+* Fix no content blocking bug (Firefox)
+* Several fixes for broken websites
+* Translations fixes
+* New translation: Nordic
+* New translation: Traditional Chinese (Taiwan)
+* New translation: Serbian
+* Fix crash on browsers without WebRTC
+* Fix narrow popup if icon is in the menu (Firefox)
+* Import/Export now uses utf-8 and can handle non English character sets
+* Enhancement: Convert icons to SVG
+* Enhancement: Script surrogate for Google Analytics, Gigya, and more...
+
+2016.12.15.1 (2.0.2)
+* Chrome browsers no longer display Privacy Badger as corrupted
+* Fix lockup issue on some versions of Firefox
+* Fix issue where Privacy Badger panel gets cut off
+* Fix a non implemented API in Firefox which caused numerous sites to break
+* KNOWN ISSUE: Chrome will now display a message "Not downloaded from Chrome
+store". This is a known side effect of a workaround for a different bug.
+
+2016.12.8.1 (2.0.1)
+* BUGFIX: Sanitize origin and action in popup
+
+2016.12.8 (2.0)
+* BUGFIX: Fix uBlock Origin warnings
+* BUGFIX: Remove need for download permission
+
+2016.12.7.2 (2.0RC1)
+* Huge speed improvements
+* Multiprocess Compatible (E10S) for Firefox
+* Breaks far fewer websites
+* Many small bugfixes
+* Import and Export your data
+* Block WebRTC from leaking your IP address
+* Forget data in incognito mode
+* Block HTML5 "ping" tracking
+* Translation fixes
+* (Developers) Firefox and Chrome versions now share one code base!
+
+2016.9.7 (1.13)
+* Add exceptions for multi domain first parties
+* Fix Google Drive download issue
+* Fix Wikipedia login issue
+* Fix YouTube comments and notifications issues
+* Several other broken site fixes
+* Hopefully a fix for the "corrupted extension" issue
+
+2016.8.29 (1.12)
+* UI Tweaks
+* Remove last Adblock Plus code
+* Feature: remove domains from list
+* Refactor incognito mode handling
+* Compatible with Firefox WebExtensions
+
+2016.5.24 (1.11)
+* Fix build error
+
+2016.5.23 (1.10)
+* Fix cookie block list adding bug
+* New migration to fix bug retroactively
+
+2016.5.16 (1.9)
+* Remove Adblock Plus Engine
+* Switch to using storage.js and extensions storage API
+* Massive refactoring of code
+* Huge speed improvements
+* Fix bug where Privacy Badger "forgets" settings
+* Fix first run tab opening on every startup
+* Fix waiting for Privacy Badger bug
+* Fix high CPU usage bug
+* Use separate data store for incognito mode
+* Add Selenium test to run pbtest.org suite
+* Fix weird subdomain handling edge case
+* Fix bug where pages stop loading sometimes
+
+2015.4.6 (1.8)
+* Fix "waiting for Privacy Badger bug"
+* Huge speed improvement
+
+2015.4.6 (1.7)
+* Fix crash when closing options page
+* Add EFF Donate button
+* New popup to nag user to go through tutorial
+
+2015.3.2 (1.0.6)
+* Add searching to list of tracking domains on the options page
+* Replace SoundCloud widget with a click to play button
+* Misc. bug fixes and translation improvements
+
+2015.12.3 (1.0.4)
+* Lots of site bug fixes
+* Chinese translation
+* Spanish translation
+* Italian translation
+* UI Overhaul
+* Update Swedish locale
+* Typo fixes
+* Numerous bug fixes
+* Add support for disabled sites with wildcards
+* Red badge now reflects the number of domains blocked or cookieblocked
+instead of all third parties.
+* Tooltips show full domain name
+
+2015.8.14 (1.0.1)
+* Fix a bug where slider settings for a base domain wouldn't take effect
+* Fix "This extension is slowing down Chrome" errors
+
+2015.8.5 (1.0)
+* 1.0 release
+* Bugfixes from 2015.7.24 (0.99)
+* Detect canvas fingerprinting
+* Detect HTML5 local storage supercookies
+* Improved UI
+* Options page for overriding Privacy Badger settings
+* Report Broken Site button
+* Many other misc. bugfixes
+* Translations into Swedish, French and German
+
+2015.7.24 (0.99)
+* Release candidate for version 1.0!
+
+2015.4.1
+* Miscellanious bugfixes
+* Improvements to heuristic
+
+2014.9.16
+* Add lots of tests including Selenium tests
+* Add lots of domains to the cookie block list
+* Fix bug with downloading cookie block list
+* Fix other minor stylistic bugs
+
+2014.7.17
+* Created dialog to allow users to unblock certain third parties on certain
+sites for added functionality. E.g. Disqus comments, Facebook comments, etc.
+* Added lots of domains to cookie block list.
+* Do not show domains that do not appear to be trackers in the popup
+* Added missing Google+ button override

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>trial_description_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Падпішыцеся і атрымайце аднадзённую бясплатную пробную версію</string>
+        <key>few</key>
+        <string>Падпішыцеся і атрымайце %d-дзённую бясплатную пробную версію</string>
+        <key>many</key>
+        <string>Падпішыцеся і атрымайце %d-дзённую бясплатную пробную версію</string>
+        <key>other</key>
+        <string>Падпішыцеся і атрымайце %d-дзённую бясплатную пробную версію</string>
+      </dict>
+    </dict>
+    <key>trial_description_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Падпішыцеся і атрымайце адзін тыдзень бясплатнай пробнай версіі</string>
+        <key>few</key>
+        <string>Падпішыцеся і атрымайце %d-тыднёвую бясплатную пробную версію</string>
+        <key>many</key>
+        <string>Падпішыцеся і атрымайце %d-тыднёвую бясплатную пробную версію</string>
+        <key>other</key>
+        <string>Падпішыцеся і атрымайце %d-тыднёвую бясплатную пробную версію</string>
+      </dict>
+    </dict>
+    <key>trial_description_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Падпішыцеся і атрымайце бясплатную пробную версію на адзін месяц</string>
+        <key>few</key>
+        <string>Падпішыцеся і атрымайце %d месяцаў бясплатнай пробнай версіі</string>
+        <key>many</key>
+        <string>Падпішыцеся і атрымайце %d месяцаў бясплатнай пробнай версіі</string>
+        <key>other</key>
+        <string>Падпішыцеся і атрымайце адзін месяц бясплатнай пробнай версіі</string>
+      </dict>
+    </dict>
+    <key>trial_description_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Падпішыцеся і атрымайце гадавую бясплатную пробную версію</string>
+        <key>few</key>
+        <string>Падпішыцеся і атрымайце %d-гадовую бясплатную пробную версію</string>
+        <key>many</key>
+        <string>Падпішыцеся і атрымайце %d-гадовую бясплатную пробную версію</string>
+        <key>other</key>
+        <string>Падпішыцеся і атрымайце %d-гадовую бясплатную пробную версію</string>
+      </dict>
+    </dict>
+    <key>user_rules_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@rules@</string>
+      <key>rules</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 правіла ўлучана</string>
+        <key>few</key>
+        <string>Уключаны %d правілы</string>
+        <key>many</key>
+        <string>Уключаны %d правіл</string>
+        <key>other</key>
+        <string>Уключаны %d правіл</string>
+      </dict>
+    </dict>
+    <key>safari_filters_format</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@filters@</string>
+      <key>filters</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>1 фільтр уключаны</string>
+        <key>few</key>
+        <string>%d фільтры ўключаны</string>
+        <key>many</key>
+        <string>%d фільтраў уключана</string>
+        <key>other</key>
+        <string>%d фільтраў уключана</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_days</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@days@</string>
+      <key>days</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Бясплатны доступ на %d дзень да ўсіх функцый праграмы</string>
+        <key>few</key>
+        <string>Бясплатны доступ на %d дні да ўсіх функцый праграмы</string>
+        <key>many</key>
+        <string>Бясплатны доступ на %d дзён да ўсіх функцый праграмы</string>
+        <key>other</key>
+        <string>Бясплатны доступ на %d дзён да ўсіх функцый праграмы</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_weeks</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@weeks@</string>
+      <key>weeks</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Бясплатны доступ на %d дзень да ўсіх функцый праграмы</string>
+        <key>few</key>
+        <string>Бясплатны доступ на %d дзень да ўсіх функцый праграмы</string>
+        <key>many</key>
+        <string>Бясплатны доступ на %d дзён да ўсіх функцый праграмы</string>
+        <key>other</key>
+        <string>Бясплатны доступ на %d дзён да ўсіх функцый праграмы</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_months</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@months@</string>
+      <key>months</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Бясплатны доступ на %d месяц да ўсіх функцый праграмы</string>
+        <key>few</key>
+        <string>Бясплатны доступ на %d месяцы да ўсіх функцый праграмы</string>
+        <key>many</key>
+        <string>Бясплатны доступ на %d месяцаў да ўсіх функцый праграмы</string>
+        <key>other</key>
+        <string>Бясплатны доступ на %d месяц да ўсіх функцый праграмы</string>
+      </dict>
+    </dict>
+    <key>getPro_full_access_years</key>
+    <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@years@</string>
+      <key>years</key>
+      <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>Бясплатны доступ на %d год да ўсіх функцый праграмы</string>
+        <key>few</key>
+        <string>Бясплатны доступ на %d гады да ўсіх функцый праграмы</string>
+        <key>many</key>
+        <string>Бясплатны доступ на %d гадоў да ўсіх функцый праграмы</string>
+        <key>other</key>
+        <string>Бясплатны доступ на %d гадоў да ўсіх функцый праграмы</string>
+      </dict>
+    </dict>
+  </dict>
+</plist>

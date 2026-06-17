@@ -1,0 +1,32 @@
+/* Class = "UILabel"; text = "Code from the authentication app:"; ObjectID = "53G-qY-SZ5"; */
+"53G-qY-SZ5.text" = "Kód z ověřovací aplikace:";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "J8s-sG-FKu"; */
+"J8s-sG-FKu.text" = "Přihlásit se";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "LJj-cc-Ko5"; */
+"LJj-cc-Ko5.text" = "E-mail:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "P6N-OK-fHG"; */
+"P6N-OK-fHG.text" = "Heslo:";
+
+/* Class = "UILabel"; text = "Log in with your AdGuard account or use social login"; ObjectID = "ZuM-Nn-uXv"; */
+"ZuM-Nn-uXv.text" = "Přihlaste se pomocí svého AdGuard účtu nebo sociálních sítí";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "bUa-fF-AXO"; */
+"bUa-fF-AXO.normalTitle" = "Přihlásit se";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "fxK-6y-LB6"; */
+"fxK-6y-LB6.text" = "Přihlásit se";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "rrj-Gm-LCJ"; */
+"rrj-Gm-LCJ.normalTitle" = "Potvrdit";
+
+/* Class = "UILabel"; text = "Delete account"; ObjectID = "sJT-OU-IOd"; */
+"sJT-OU-IOd.text" = "Smazat účet";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "xFB-lA-lsv"; */
+"xFB-lA-lsv.normalTitle" = "Zrušit";
+
+/* Class = "UIButton"; normalTitle = "Delete account"; ObjectID = "yIo-kb-pVa"; */
+"yIo-kb-pVa.normalTitle" = "Smazat účet";
