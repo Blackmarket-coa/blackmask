@@ -86,6 +86,16 @@
       </a>
     </bit-item>
 
+    @if (showPrivacyDashboard$ | async) {
+      <bit-item>
+        <a bit-item-content routerLink="/privacy-dashboard" [truncate]="false">
+          <i slot="start" class="bwi bwi-shield" aria-hidden="true"></i>
+          {{ "blackMaskPrivacyDashboard" | i18n }}
+          <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+        </a>
+      </bit-item>
+    }
+
     @if (showAdminSettingsLink$ | async) {
       <bit-item>
         <a bit-item-content routerLink="/admin" [truncate]="false">
