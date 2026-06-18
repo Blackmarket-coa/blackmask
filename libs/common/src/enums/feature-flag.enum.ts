@@ -115,6 +115,7 @@ export enum FeatureFlag {
 
   /* Black Mask */
   BlackMaskPrivacyDashboard = "black-mask-privacy-dashboard",
+  BlackMaskPersonaVault = "black-mask-persona-vault",
 }
 
 export type AllowedFeatureFlagTypes = boolean | number | string;
@@ -233,6 +234,7 @@ export const DefaultFeatureFlagValue = {
 
   /* Black Mask */
   [FeatureFlag.BlackMaskPrivacyDashboard]: FALSE,
+  [FeatureFlag.BlackMaskPersonaVault]: FALSE,
 } satisfies Record<FeatureFlag, AllowedFeatureFlagTypes>;
 
 export type DefaultFeatureFlagValueType = typeof DefaultFeatureFlagValue;

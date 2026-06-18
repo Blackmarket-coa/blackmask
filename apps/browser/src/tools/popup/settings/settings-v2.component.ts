@@ -108,6 +108,10 @@ export class SettingsV2Component {
     FeatureFlag.BlackMaskPrivacyDashboard,
   );
 
+  readonly showPersonaVault$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskPersonaVault,
+  );
+
   constructor(
     private readonly nudgesService: NudgesService,
     private readonly accountService: AccountService,

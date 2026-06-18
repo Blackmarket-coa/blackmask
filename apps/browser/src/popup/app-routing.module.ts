@@ -72,6 +72,7 @@ import { ProtectedByComponent } from "../dirt/phishing-detection/popup/protected
 import BrowserPopupUtils from "../platform/browser/browser-popup-utils";
 import { popupRouterCacheGuard } from "../platform/popup/view-cache/popup-router-cache.service";
 import { RouteCacheOptions } from "../platform/services/popup-view-cache-background.service";
+import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
 import { CredentialGeneratorHistoryComponent } from "../tools/popup/generator/credential-generator-history.component";
 import { CredentialGeneratorComponent } from "../tools/popup/generator/credential-generator.component";
@@ -367,6 +368,12 @@ const routes: Routes = [
     component: PrivacyDashboardComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPrivacyDashboard)],
     data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "create-persona",
+    component: CreatePersonaComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaVault)],
+    data: { elevation: 2 } satisfies RouteDataProperties,
   },
   {
     path: "admin",

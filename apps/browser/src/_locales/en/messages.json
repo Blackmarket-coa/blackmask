@@ -6716,5 +6716,35 @@
   },
   "blackMaskPrivacyDashboardComingSoon": {
     "message": "Black Mask privacy tools will appear here."
+  },
+  "blackMaskCreatePersona": {
+    "message": "Create persona"
+  },
+  "blackMaskPersonaLayer": {
+    "message": "Identity layer"
+  },
+  "blackMaskLayerReal": {
+    "message": "Real"
+  },
+  "blackMaskLayerBusiness": {
+    "message": "Business"
+  },
+  "blackMaskLayerCreator": {
+    "message": "Creator"
+  },
+  "blackMaskLayerAnonymous": {
+    "message": "Anonymous"
+  },
+  "blackMaskGenerateAlias": {
+    "message": "Generate alias"
+  },
+  "blackMaskAliasGenerated": {
+    "message": "Alias generated"
+  },
+  "blackMaskAliasError": {
+    "message": "Couldn't generate an alias. Configure an email forwarder (e.g. SimpleLogin) in the generator settings first."
+  },
+  "blackMaskPersonaCreated": {
+    "message": "Persona created"
   }
 }
