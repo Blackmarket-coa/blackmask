@@ -1,0 +1,44 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskPersonas' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <a
+    bitButton
+    buttonType="primary"
+    [block]="true"
+    routerLink="/create-persona"
+    id="personas_button_new"
+  >
+    {{ "blackMaskCreatePersona" | i18n }}
+  </a>
+
+  @if (groups().length === 0) {
+    <p class="tw-mt-4 tw-text-center tw-text-muted">{{ "blackMaskNoPersonas" | i18n }}</p>
+  }
+
+  @for (group of groups(); track group.layer) {
+    <h2 class="tw-mb-2 tw-mt-4 tw-text-sm tw-font-bold tw-text-muted">{{ group.label }}</h2>
+    <bit-item-group>
+      @for (persona of group.items; track persona.id) {
+        <bit-item>
+          <a
+            bit-item-content
+            routerLink="/view-cipher"
+            [queryParams]="{ cipherId: persona.id }"
+            [truncate]="false"
+          >
+            <i slot="start" class="bwi bwi-id-card" aria-hidden="true"></i>
+            {{ persona.name }}
+            @if (persona.email) {
+              <span slot="secondary">{{ persona.email }}</span>
+            }
+            <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+          </a>
+        </bit-item>
+      }
+    </bit-item-group>
+  }
+</popup-page>

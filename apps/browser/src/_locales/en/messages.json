@@ -6710,5 +6710,99 @@
   },
   "cannotSaveItemNoConfirmedOrgs": {
     "message": "Unable to save item. You must be confirmed to the organization to save items."
+  },
+  "blackMaskPrivacyDashboard": {
+    "message": "Privacy dashboard"
+  },
+  "blackMaskPrivacyDashboardComingSoon": {
+    "message": "Black Mask privacy tools will appear here."
+  },
+  "blackMaskCreatePersona": {
+    "message": "Create persona"
+  },
+  "blackMaskPersonaLayer": {
+    "message": "Identity layer"
+  },
+  "blackMaskLayerReal": {
+    "message": "Real"
+  },
+  "blackMaskLayerBusiness": {
+    "message": "Business"
+  },
+  "blackMaskLayerCreator": {
+    "message": "Creator"
+  },
+  "blackMaskLayerAnonymous": {
+    "message": "Anonymous"
+  },
+  "blackMaskGenerateAlias": {
+    "message": "Generate alias"
+  },
+  "blackMaskAliasGenerated": {
+    "message": "Alias generated"
+  },
+  "blackMaskAliasError": {
+    "message": "Couldn't generate an alias. Configure an email forwarder (e.g. SimpleLogin) in the generator settings first."
+  },
+  "blackMaskPersonaCreated": {
+    "message": "Persona created"
+  },
+  "blackMaskPersonas": {
+    "message": "Personas"
+  },
+  "blackMaskNoPersonas": {
+    "message": "No personas yet. Create one to get started."
+  },
+  "blackMaskTrackerProtection": {
+    "message": "Tracker protection"
+  },
+  "blackMaskTrackerProtectionOn": {
+    "message": "On — known trackers are blocked"
+  },
+  "blackMaskTrackerProtectionOff": {
+    "message": "Off"
+  },
+  "blackMaskKnownTrackers": {
+    "message": "$COUNT$ known trackers in the blocklist",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
+  },
+  "blackMaskPrivacyScore": {
+    "message": "Privacy score"
+  },
+  "blackMaskScoreOutOf": {
+    "message": "$SCORE$ of $MAX$ points",
+    "placeholders": {
+      "score": {
+        "content": "$1",
+        "example": "50"
+      },
+      "max": {
+        "content": "$2",
+        "example": "100"
+      }
+    }
+  },
+  "blackMaskScoreFactors": {
+    "message": "What's helping"
+  },
+  "blackMaskScoreTrackerProtection": {
+    "message": "Tracker blocking enabled"
+  },
+  "blackMaskScorePersonas": {
+    "message": "Using personas"
+  },
+  "blackMaskTrackersThisTab": {
+    "message": "$COUNT$ trackers seen on this page",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

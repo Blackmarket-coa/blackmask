@@ -194,6 +194,10 @@ module.exports.buildConfig = function buildConfig(params) {
         { from: path.resolve(__dirname, "src/images"), to: "images" },
         { from: path.resolve(__dirname, "src/popup/images"), to: "popup/images" },
         { from: path.resolve(__dirname, "src/autofill/content/autofill.css"), to: "content" },
+        {
+          from: path.resolve(__dirname, "src/privacy/trackers/trackers.dnr.json"),
+          to: "privacy/trackers.dnr.json",
+        },
       ],
     }),
     new MiniCssExtractPlugin({

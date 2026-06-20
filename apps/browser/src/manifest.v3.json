@@ -47,6 +47,7 @@
     "default_popup": "popup/index.html"
   },
   "permissions": [
+    "declarativeNetRequest",
     "activeTab",
     "alarms",
     "clipboardRead",
@@ -66,6 +67,7 @@
     "notifications"
   ],
   "__firefox__permissions": [
+    "declarativeNetRequest",
     "activeTab",
     "alarms",
     "clipboardRead",
@@ -103,6 +105,15 @@
   "__firefox__optional_permissions": [],
   "__safari__optional_permissions": null,
   "host_permissions": ["https://*/*", "http://*/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "black-mask-trackers",
+        "enabled": false,
+        "path": "privacy/trackers.dnr.json"
+      }
+    ]
+  },
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'",
     "__chrome__sandbox": "sandbox allow-scripts; script-src 'self'"

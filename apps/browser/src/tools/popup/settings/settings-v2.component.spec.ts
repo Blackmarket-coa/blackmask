@@ -14,6 +14,8 @@ import { AuthService } from "@bitwarden/common/auth/abstractions/auth.service";
 import { AvatarService } from "@bitwarden/common/auth/abstractions/avatar.service";
 import { AutofillSettingsServiceAbstraction } from "@bitwarden/common/autofill/services/autofill-settings.service";
 import { BillingAccountProfileStateService } from "@bitwarden/common/billing/abstractions";
+import { FeatureFlag } from "@bitwarden/common/enums/feature-flag.enum";
+import { ConfigService } from "@bitwarden/common/platform/abstractions/config/config.service";
 import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.service";
 import { PlatformUtilsService } from "@bitwarden/common/platform/abstractions/platform-utils.service";
 import { DialogService } from "@bitwarden/components";
@@ -49,6 +51,7 @@ describe("SettingsV2Component", () => {
   };
   let mockAutofillSettingsService: Partial<AutofillSettingsServiceAbstraction>;
   let dialogService: MockProxy<DialogService>;
+  let mockConfigService: MockProxy<ConfigService>;
   let openSpy: jest.SpyInstance;
 
   beforeEach(waitForAsync(async () => {
@@ -80,6 +83,9 @@ describe("SettingsV2Component", () => {
       showClipboardSettingUpdateNotification$: of(false),
     };
 
+    mockConfigService = mock<ConfigService>();
+    mockConfigService.getFeatureFlag$.mockReturnValue(of(false));
+
     jest.spyOn(BrowserApi, "getBrowserClientVendor").mockReturnValue("Chrome");
 
     const cfg = TestBed.configureTestingModule({
@@ -93,6 +99,7 @@ describe("SettingsV2Component", () => {
         { provide: AutofillSettingsServiceAbstraction, useValue: mockAutofillSettingsService },
         { provide: DialogService, useValue: dialogService },
         { provide: I18nService, useValue: { t: jest.fn((key: string) => key) } },
+        { provide: ConfigService, useValue: mockConfigService },
         { provide: GlobalStateProvider, useValue: new FakeGlobalStateProvider() },
         { provide: PlatformUtilsService, useValue: mock<PlatformUtilsService>() },
         { provide: AvatarService, useValue: mock<AvatarService>() },
@@ -258,5 +265,28 @@ describe("SettingsV2Component", () => {
     const val = await firstValueFrom(component.showDownloadBitwardenNudge$);
     expect(val).toBe(true);
     expect(mockNudges.showNudgeBadge$).toHaveBeenCalledWith(NudgeType.DownloadBitwarden, acct.id);
+  });
+
+  it("emits showPrivacyDashboard$ = true and queries the Black Mask flag when enabled", async () => {
+    mockConfigService.getFeatureFlag$.mockReturnValue(of(true));
+    pushActiveAccount();
+
+    const fixture = TestBed.createComponent(SettingsV2Component);
+    const component = fixture.componentInstance;
+
+    expect(await firstValueFrom(component.showPrivacyDashboard$)).toBe(true);
+    expect(mockConfigService.getFeatureFlag$).toHaveBeenCalledWith(
+      FeatureFlag.BlackMaskPrivacyDashboard,
+    );
+  });
+
+  it("emits showPrivacyDashboard$ = false when the flag is disabled", async () => {
+    mockConfigService.getFeatureFlag$.mockReturnValue(of(false));
+    pushActiveAccount();
+
+    const fixture = TestBed.createComponent(SettingsV2Component);
+    const component = fixture.componentInstance;
+
+    expect(await firstValueFrom(component.showPrivacyDashboard$)).toBe(false);
   });
 });
