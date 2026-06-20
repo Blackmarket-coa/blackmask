@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "requestDomains": [
+        "google-analytics.com",
+        "googletagmanager.com",
+        "googlesyndication.com",
+        "doubleclick.net",
+        "adservice.google.com",
+        "connect.facebook.net",
+        "graph.facebook.com",
+        "analytics.tiktok.com",
+        "ads.linkedin.com",
+        "bat.bing.com",
+        "scorecardresearch.com",
+        "quantserve.com",
+        "hotjar.com",
+        "mixpanel.com",
+        "segment.io",
+        "amplitude.com",
+        "fullstory.com",
+        "mc.yandex.ru",
+        "stats.wp.com",
+        "branch.io"
+      ]
+    }
+  }
+]

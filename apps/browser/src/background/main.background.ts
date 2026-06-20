@@ -1762,6 +1762,25 @@ export default class MainBackground {
     this.initNotificationSubscriptions();
   }
 
+  // Black Mask: reconcile the tracker-blocking declarativeNetRequest ruleset with the
+  // black-mask-tracker-detection feature flag. No-op where declarativeNetRequest is unavailable
+  // (e.g. Firefox/Safari builds without the permission).
+  // NEEDS BROWSER VALIDATION: declarativeNetRequest cannot be exercised by unit tests.
+  private async syncTrackerProtection() {
+    const declarativeNetRequest =
+      typeof chrome !== "undefined" ? chrome.declarativeNetRequest : undefined;
+    if (declarativeNetRequest?.updateEnabledRulesets == null) {
+      return;
+    }
+
+    const enabled = await this.configService.getFeatureFlag(FeatureFlag.BlackMaskTrackerDetection);
+    await declarativeNetRequest.updateEnabledRulesets(
+      enabled
+        ? { enableRulesetIds: ["black-mask-trackers"] }
+        : { disableRulesetIds: ["black-mask-trackers"] },
+    );
+  }
+
   async bootstrap() {
     this.containerService.attachToGlobal(self);
 
@@ -1832,6 +1851,8 @@ export default class MainBackground {
       await this.sharedUnlockFollowerService.start();
     }
     this.badgeService.startListening();
+
+    await this.syncTrackerProtection();
 
     return new Promise<void>((resolve) => {
       setTimeout(async () => {
