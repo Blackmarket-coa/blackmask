@@ -75,6 +75,7 @@ import { RouteCacheOptions } from "../platform/services/popup-view-cache-backgro
 import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
 import { PersonasComponent } from "../privacy/popup/personas.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
+import { TrackersComponent } from "../privacy/popup/trackers.component";
 import { CredentialGeneratorHistoryComponent } from "../tools/popup/generator/credential-generator-history.component";
 import { CredentialGeneratorComponent } from "../tools/popup/generator/credential-generator.component";
 import { filePickerPopoutGuard } from "../tools/popup/guards/file-picker-popout.guard";
@@ -374,6 +375,12 @@ const routes: Routes = [
     path: "personas",
     component: PersonasComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaVault)],
+    data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "trackers",
+    component: TrackersComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskTrackerDetection)],
     data: { elevation: 1 } satisfies RouteDataProperties,
   },
   {

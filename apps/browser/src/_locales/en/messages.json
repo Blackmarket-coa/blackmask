@@ -6807,5 +6807,11 @@
   },
   "blackMaskScoreAccountSecurity": {
     "message": "No reused passwords"
+  },
+  "blackMaskTrackers": {
+    "message": "Trackers"
+  },
+  "blackMaskBlockedDomains": {
+    "message": "Blocked tracker domains"
   }
 }

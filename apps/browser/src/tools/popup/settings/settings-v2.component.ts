@@ -112,6 +112,10 @@ export class SettingsV2Component {
     FeatureFlag.BlackMaskPersonaVault,
   );
 
+  readonly showTrackerDetection$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskTrackerDetection,
+  );
+
   constructor(
     private readonly nudgesService: NudgesService,
     private readonly accountService: AccountService,
