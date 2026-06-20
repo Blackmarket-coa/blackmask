@@ -1,0 +1,33 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskPersonas' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <a
+    bitButton
+    buttonType="primary"
+    [block]="true"
+    routerLink="/create-persona"
+    id="personas_button_new"
+  >
+    {{ "blackMaskCreatePersona" | i18n }}
+  </a>
+
+  @if (groups().length === 0) {
+    <p class="tw-mt-4 tw-text-center tw-text-muted">{{ "blackMaskNoPersonas" | i18n }}</p>
+  }
+
+  @for (group of groups(); track group.layer) {
+    <h2 class="tw-mb-2 tw-mt-4 tw-text-sm tw-font-bold tw-text-muted">{{ group.label }}</h2>
+    @for (persona of group.items; track persona.id) {
+      <bit-card>
+        <p class="tw-mb-0 tw-font-bold">{{ persona.name }}</p>
+        @if (persona.email) {
+          <p class="tw-mb-0 tw-text-sm tw-text-muted">{{ persona.email }}</p>
+        }
+      </bit-card>
+    }
+  }
+</popup-page>

@@ -6746,5 +6746,11 @@
   },
   "blackMaskPersonaCreated": {
     "message": "Persona created"
+  },
+  "blackMaskPersonas": {
+    "message": "Personas"
+  },
+  "blackMaskNoPersonas": {
+    "message": "No personas yet. Create one to get started."
   }
 }

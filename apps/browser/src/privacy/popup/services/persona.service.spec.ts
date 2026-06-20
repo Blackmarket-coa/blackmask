@@ -1,12 +1,14 @@
 import { TestBed } from "@angular/core/testing";
 import { mock, MockProxy } from "jest-mock-extended";
-import { of } from "rxjs";
+import { firstValueFrom, of } from "rxjs";
 
 import { Account, AccountService } from "@bitwarden/common/auth/abstractions/account.service";
 import { UserId } from "@bitwarden/common/types/guid";
 import { CipherService } from "@bitwarden/common/vault/abstractions/cipher.service";
-import { CipherType } from "@bitwarden/common/vault/enums";
+import { CipherType, FieldType } from "@bitwarden/common/vault/enums";
 import { CipherView } from "@bitwarden/common/vault/models/view/cipher.view";
+import { FieldView } from "@bitwarden/common/vault/models/view/field.view";
+import { IdentityView } from "@bitwarden/common/vault/models/view/identity.view";
 import { CredentialGeneratorService, GeneratedCredential, Type } from "@bitwarden/generator-core";
 
 import { PERSONA_LAYER_FIELD_NAME, PersonaLayer, PersonaService } from "./persona.service";
@@ -81,6 +83,48 @@ describe("PersonaService", () => {
 
       expect(alias).toBe("alias@simplelogin.io");
       expect(generatorService.generate$).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe("personas$", () => {
+    function identityCipher(id: string, name: string, layer?: string, email?: string): CipherView {
+      const cipher = new CipherView();
+      cipher.id = id;
+      cipher.type = CipherType.Identity;
+      cipher.name = name;
+      cipher.identity = new IdentityView();
+      if (email) {
+        cipher.identity.email = email;
+      }
+      if (layer) {
+        const field = new FieldView();
+        field.name = PERSONA_LAYER_FIELD_NAME;
+        field.value = layer;
+        field.type = FieldType.Text;
+        cipher.fields = [field];
+      }
+      return cipher;
+    }
+
+    it("returns only Identity ciphers tagged with a known layer", async () => {
+      const login = new CipherView();
+      login.id = "login-1";
+      login.type = CipherType.Login;
+      login.name = "A login";
+
+      cipherService.cipherViews$.mockReturnValue(
+        of([
+          identityCipher("p1", "Jane", PersonaLayer.Anonymous, "jane@example.com"),
+          identityCipher("p2", "Plain identity"),
+          login,
+        ]),
+      );
+
+      const personas = await firstValueFrom(service.personas$());
+
+      expect(personas).toEqual([
+        { id: "p1", name: "Jane", layer: PersonaLayer.Anonymous, email: "jane@example.com" },
+      ]);
     });
   });
 });

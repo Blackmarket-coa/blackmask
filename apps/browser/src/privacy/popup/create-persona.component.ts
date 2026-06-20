@@ -112,7 +112,7 @@ export class CreatePersonaComponent {
         title: "",
         message: this.i18nService.t("blackMaskPersonaCreated"),
       });
-      await this.router.navigate(["/tabs/vault"]);
+      await this.router.navigate(["/personas"]);
     } catch (e) {
       this.logService.error(e);
       this.toastService.showToast({

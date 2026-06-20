@@ -1,5 +1,5 @@
 import { Injectable, inject } from "@angular/core";
-import { filter, firstValueFrom, of } from "rxjs";
+import { Observable, filter, firstValueFrom, map, of, switchMap } from "rxjs";
 
 import { Account, AccountService } from "@bitwarden/common/auth/abstractions/account.service";
 import { getUserId } from "@bitwarden/common/auth/services/account.service";
@@ -30,6 +30,19 @@ export interface CreatePersonaRequest {
   layer: PersonaLayer;
   email?: string;
   notes?: string;
+}
+
+/** A persona surfaced from the vault: an Identity cipher tagged with a layer. */
+export interface Persona {
+  id: string;
+  name: string;
+  layer: PersonaLayer;
+  email?: string;
+}
+
+/** Type guard for the known persona layers. */
+export function isPersonaLayer(value: string | undefined): value is PersonaLayer {
+  return value != null && (Object.values(PersonaLayer) as string[]).includes(value);
 }
 
 /**
@@ -92,5 +105,34 @@ export class PersonaService {
     cipher.fields = [layerField];
 
     return this.cipherService.createWithServer(cipher, userId);
+  }
+
+  /** Streams the user's personas (Identity ciphers tagged with a layer), excluding deleted items. */
+  personas$(): Observable<Persona[]> {
+    return this.accountService.activeAccount$.pipe(
+      getUserId,
+      switchMap((userId) => this.cipherService.cipherViews$(userId)),
+      map((ciphers) =>
+        ciphers
+          .map((cipher) => this.toPersona(cipher))
+          .filter((persona): persona is Persona => persona != null),
+      ),
+    );
+  }
+
+  private toPersona(cipher: CipherView): Persona | undefined {
+    if (cipher.type !== CipherType.Identity || cipher.deletedDate != null) {
+      return undefined;
+    }
+    const layer = cipher.fields?.find((field) => field.name === PERSONA_LAYER_FIELD_NAME)?.value;
+    if (!isPersonaLayer(layer)) {
+      return undefined;
+    }
+    return {
+      id: cipher.id,
+      name: cipher.name,
+      layer,
+      email: cipher.identity?.email ?? undefined,
+    };
   }
 }

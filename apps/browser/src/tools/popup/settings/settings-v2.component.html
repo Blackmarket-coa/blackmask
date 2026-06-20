@@ -98,9 +98,9 @@
 
     @if (showPersonaVault$ | async) {
       <bit-item>
-        <a bit-item-content routerLink="/create-persona" [truncate]="false">
+        <a bit-item-content routerLink="/personas" [truncate]="false">
           <i slot="start" class="bwi bwi-id-card" aria-hidden="true"></i>
-          {{ "blackMaskCreatePersona" | i18n }}
+          {{ "blackMaskPersonas" | i18n }}
           <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
         </a>
       </bit-item>
