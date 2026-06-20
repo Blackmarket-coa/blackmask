@@ -6,6 +6,32 @@
   </popup-header>
 
   <bit-card>
+    <p class="tw-mb-1 tw-font-bold">{{ "blackMaskPrivacyScore" | i18n }}</p>
+    <p class="tw-mb-1 tw-text-lg tw-font-bold">{{ privacyScore().percent }}%</p>
+    <p class="tw-mb-0 tw-text-sm tw-text-muted">
+      {{
+        "blackMaskScoreOutOf"
+          | i18n: privacyScore().score.toString() : privacyScore().max.toString()
+      }}
+    </p>
+  </bit-card>
+
+  <bit-card>
+    <p class="tw-mb-2 tw-font-bold">{{ "blackMaskScoreFactors" | i18n }}</p>
+    @for (factor of privacyScore().factors; track factor.id) {
+      <div class="tw-flex tw-items-center tw-justify-between tw-py-1">
+        <span [class.tw-text-muted]="!factor.met">
+          @if (factor.met) {
+            <i class="bwi bwi-check-circle" aria-hidden="true"></i>
+          }
+          {{ factor.labelKey | i18n }}
+        </span>
+        <span class="tw-text-sm tw-text-muted">{{ factor.earned }}/{{ factor.max }}</span>
+      </div>
+    }
+  </bit-card>
+
+  <bit-card>
     <p class="tw-mb-1 tw-font-bold">{{ "blackMaskTrackerProtection" | i18n }}</p>
     <p class="tw-mb-1 tw-text-muted">
       {{

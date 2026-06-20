@@ -6770,5 +6770,30 @@
         "example": "20"
       }
     }
+  },
+  "blackMaskPrivacyScore": {
+    "message": "Privacy score"
+  },
+  "blackMaskScoreOutOf": {
+    "message": "$SCORE$ of $MAX$ points",
+    "placeholders": {
+      "score": {
+        "content": "$1",
+        "example": "50"
+      },
+      "max": {
+        "content": "$2",
+        "example": "100"
+      }
+    }
+  },
+  "blackMaskScoreFactors": {
+    "message": "What's helping"
+  },
+  "blackMaskScoreTrackerProtection": {
+    "message": "Tracker blocking enabled"
+  },
+  "blackMaskScorePersonas": {
+    "message": "Using personas"
   }
 }
