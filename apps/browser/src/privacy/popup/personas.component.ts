@@ -4,7 +4,7 @@ import { RouterModule } from "@angular/router";
 
 import { JslibModule } from "@bitwarden/angular/jslib.module";
 import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.service";
-import { ButtonModule, CardComponent } from "@bitwarden/components";
+import { ButtonModule, ItemModule } from "@bitwarden/components";
 
 import { PopOutComponent } from "../../platform/popup/components/pop-out.component";
 import { PopupHeaderComponent } from "../../platform/popup/layout/popup-header.component";
@@ -32,8 +32,8 @@ interface PersonaGroup {
     PopupPageComponent,
     PopupHeaderComponent,
     PopOutComponent,
-    CardComponent,
     ButtonModule,
+    ItemModule,
   ],
 })
 export class PersonasComponent {
