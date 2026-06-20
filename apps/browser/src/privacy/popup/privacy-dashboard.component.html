@@ -41,8 +41,11 @@
         ) | i18n
       }}
     </p>
-    <p class="tw-mb-0 tw-text-sm tw-text-muted">
+    <p class="tw-mb-1 tw-text-sm tw-text-muted">
       {{ "blackMaskKnownTrackers" | i18n: knownTrackerCount }}
+    </p>
+    <p class="tw-mb-0 tw-text-sm tw-text-muted">
+      {{ "blackMaskTrackersThisTab" | i18n: activeTabTrackerCount().toString() }}
     </p>
   </bit-card>
 </popup-page>

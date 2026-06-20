@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
-import { map } from "rxjs";
+import { from, map } from "rxjs";
 
 import { JslibModule } from "@bitwarden/angular/jslib.module";
 import { FeatureFlag } from "@bitwarden/common/enums/feature-flag.enum";
@@ -14,6 +14,7 @@ import { computePrivacyScore } from "../privacy-score";
 import { TRACKER_BLOCKLIST } from "../trackers/tracker-blocklist";
 
 import { PersonaService } from "./services/persona.service";
+import { TrackerCountService } from "./services/tracker-count.service";
 
 /**
  * Black Mask privacy dashboard. Aggregates local privacy signals into a privacy score and shows
@@ -27,6 +28,12 @@ import { PersonaService } from "./services/persona.service";
 export class PrivacyDashboardComponent {
   private readonly configService = inject(ConfigService);
   private readonly personaService = inject(PersonaService);
+  private readonly trackerCountService = inject(TrackerCountService);
+
+  protected readonly activeTabTrackerCount = toSignal(
+    from(this.trackerCountService.activeTabCount()),
+    { initialValue: 0 },
+  );
 
   protected readonly trackerProtectionEnabled = toSignal(
     this.configService.getFeatureFlag$(FeatureFlag.BlackMaskTrackerDetection),

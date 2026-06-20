@@ -6795,5 +6795,14 @@
   },
   "blackMaskScorePersonas": {
     "message": "Using personas"
+  },
+  "blackMaskTrackersThisTab": {
+    "message": "$COUNT$ trackers seen on this page",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
   }
 }

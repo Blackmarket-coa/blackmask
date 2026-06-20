@@ -403,6 +403,7 @@ import {
   isNotificationsSupported,
 } from "../platform/system-notifications/browser-system-notification.service";
 import { fromChromeRuntimeMessaging } from "../platform/utils/from-chrome-runtime-messaging";
+import { initTrackerCounting } from "../privacy/background/tracker-count.background";
 import { AtRiskCipherBadgeUpdaterService } from "../vault/services/at-risk-cipher-badge-updater.service";
 
 import CommandsBackground from "./commands.background";
@@ -1853,6 +1854,7 @@ export default class MainBackground {
     this.badgeService.startListening();
 
     await this.syncTrackerProtection();
+    await initTrackerCounting(this.configService);
 
     return new Promise<void>((resolve) => {
       setTimeout(async () => {
