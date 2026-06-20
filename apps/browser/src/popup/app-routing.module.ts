@@ -73,6 +73,7 @@ import BrowserPopupUtils from "../platform/browser/browser-popup-utils";
 import { popupRouterCacheGuard } from "../platform/popup/view-cache/popup-router-cache.service";
 import { RouteCacheOptions } from "../platform/services/popup-view-cache-background.service";
 import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
+import { FingerprintComponent } from "../privacy/popup/fingerprint.component";
 import { PersonasComponent } from "../privacy/popup/personas.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
 import { TrackersComponent } from "../privacy/popup/trackers.component";
@@ -381,6 +382,12 @@ const routes: Routes = [
     path: "trackers",
     component: TrackersComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskTrackerDetection)],
+    data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "fingerprint",
+    component: FingerprintComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskFingerprintTest)],
     data: { elevation: 1 } satisfies RouteDataProperties,
   },
   {

@@ -1,0 +1,57 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskFingerprint' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  @if (exposure(); as result) {
+    <bit-card>
+      <p class="tw-mb-1 tw-font-bold">{{ "blackMaskFpExposure" | i18n }}</p>
+      <p class="tw-mb-1 tw-text-lg tw-font-bold">
+        @switch (result.level) {
+          @case (FingerprintExposureLevel.High) {
+            {{ "blackMaskFpLevelHigh" | i18n }}
+          }
+          @case (FingerprintExposureLevel.Medium) {
+            {{ "blackMaskFpLevelMedium" | i18n }}
+          }
+          @default {
+            {{ "blackMaskFpLevelLow" | i18n }}
+          }
+        }
+      </p>
+      <p class="tw-mb-0 tw-text-sm tw-text-muted">
+        {{ "blackMaskFpTotalBits" | i18n: result.bits.toString() }}
+      </p>
+    </bit-card>
+
+    <bit-card>
+      <p class="tw-mb-2 tw-font-bold">{{ "blackMaskFpSignals" | i18n }}</p>
+      @for (signal of result.signals; track signal.id) {
+        <div class="tw-flex tw-items-center tw-justify-between tw-py-1">
+          <span [class.tw-text-muted]="!signal.revealed">
+            @if (signal.revealed) {
+              <i class="bwi bwi-eye" aria-hidden="true"></i>
+            }
+            {{ signal.labelKey | i18n }}
+            @if (signal.detail) {
+              <span class="tw-text-sm tw-text-muted">({{ signal.detail }})</span>
+            }
+          </span>
+          <span class="tw-text-sm tw-text-muted">
+            {{
+              signal.revealed
+                ? ("blackMaskFpBits" | i18n: signal.bits.toString())
+                : ("blackMaskFpHidden" | i18n)
+            }}
+          </span>
+        </div>
+      }
+    </bit-card>
+
+    <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ "blackMaskFpDisclaimer" | i18n }}</p>
+  } @else {
+    <p class="tw-text-muted">{{ "blackMaskFpRunning" | i18n }}</p>
+  }
+</popup-page>
