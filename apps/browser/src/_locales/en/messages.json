@@ -6752,5 +6752,23 @@
   },
   "blackMaskNoPersonas": {
     "message": "No personas yet. Create one to get started."
+  },
+  "blackMaskTrackerProtection": {
+    "message": "Tracker protection"
+  },
+  "blackMaskTrackerProtectionOn": {
+    "message": "On — known trackers are blocked"
+  },
+  "blackMaskTrackerProtectionOff": {
+    "message": "Off"
+  },
+  "blackMaskKnownTrackers": {
+    "message": "$COUNT$ known trackers in the blocklist",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "20"
+      }
+    }
   }
 }

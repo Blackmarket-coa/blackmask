@@ -6,6 +6,17 @@
   </popup-header>
 
   <bit-card>
-    <p class="tw-text-muted">{{ "blackMaskPrivacyDashboardComingSoon" | i18n }}</p>
+    <p class="tw-mb-1 tw-font-bold">{{ "blackMaskTrackerProtection" | i18n }}</p>
+    <p class="tw-mb-1 tw-text-muted">
+      {{
+        (trackerProtectionEnabled()
+          ? "blackMaskTrackerProtectionOn"
+          : "blackMaskTrackerProtectionOff"
+        ) | i18n
+      }}
+    </p>
+    <p class="tw-mb-0 tw-text-sm tw-text-muted">
+      {{ "blackMaskKnownTrackers" | i18n: knownTrackerCount }}
+    </p>
   </bit-card>
 </popup-page>
