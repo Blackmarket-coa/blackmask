@@ -4,6 +4,8 @@ export interface PrivacyScoreSignals {
   trackerProtectionEnabled: boolean;
   /** Number of personas the user has created. */
   personaCount: number;
+  /** Number of login items whose password is reused on another item. */
+  reusedPasswordCount: number;
 }
 
 /** A single scored contribution to the privacy score. */
@@ -27,6 +29,7 @@ export interface PrivacyScore {
 const TRACKER_POINTS = 50;
 const PERSONA_POINTS_EACH = 10;
 const PERSONA_MAX = 50;
+const ACCOUNT_POINTS = 50;
 
 /**
  * Computes a Black Mask privacy score from locally-available signals. Pure and deterministic; the
@@ -53,6 +56,13 @@ export function computePrivacyScore(signals: PrivacyScoreSignals): PrivacyScore 
       earned: personaEarned,
       max: PERSONA_MAX,
       met: signals.personaCount > 0,
+    },
+    {
+      id: "account-security",
+      labelKey: "blackMaskScoreAccountSecurity",
+      earned: signals.reusedPasswordCount === 0 ? ACCOUNT_POINTS : 0,
+      max: ACCOUNT_POINTS,
+      met: signals.reusedPasswordCount === 0,
     },
   ];
 

@@ -13,6 +13,7 @@ import { PopupPageComponent } from "../../platform/popup/layout/popup-page.compo
 import { computePrivacyScore } from "../privacy-score";
 import { TRACKER_BLOCKLIST } from "../trackers/tracker-blocklist";
 
+import { AccountAuditService } from "./services/account-audit.service";
 import { PersonaService } from "./services/persona.service";
 import { TrackerCountService } from "./services/tracker-count.service";
 
@@ -29,6 +30,12 @@ export class PrivacyDashboardComponent {
   private readonly configService = inject(ConfigService);
   private readonly personaService = inject(PersonaService);
   private readonly trackerCountService = inject(TrackerCountService);
+  private readonly accountAuditService = inject(AccountAuditService);
+
+  protected readonly reusedPasswordCount = toSignal(
+    this.accountAuditService.reusedPasswordCount$(),
+    { initialValue: 0 },
+  );
 
   protected readonly activeTabTrackerCount = toSignal(
     from(this.trackerCountService.activeTabCount()),
@@ -51,6 +58,7 @@ export class PrivacyDashboardComponent {
     computePrivacyScore({
       trackerProtectionEnabled: this.trackerProtectionEnabled(),
       personaCount: this.personaCount(),
+      reusedPasswordCount: this.reusedPasswordCount(),
     }),
   );
 }

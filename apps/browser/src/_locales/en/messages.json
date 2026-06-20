@@ -6804,5 +6804,8 @@
         "example": "3"
       }
     }
+  },
+  "blackMaskScoreAccountSecurity": {
+    "message": "No reused passwords"
   }
 }
