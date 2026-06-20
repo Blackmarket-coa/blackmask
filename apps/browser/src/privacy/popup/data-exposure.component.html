@@ -1,0 +1,69 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskDataExposure' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <bit-card>
+    <p class="tw-mb-1 tw-font-bold">{{ "blackMaskExposureCheckTitle" | i18n }}</p>
+    <p class="tw-mb-2 tw-text-sm tw-text-muted">{{ "blackMaskExposureCheckDesc" | i18n }}</p>
+    <button
+      bitButton
+      type="button"
+      buttonType="primary"
+      [block]="true"
+      [loading]="status() === 'loading'"
+      [disabled]="email() === '' || status() === 'loading'"
+      (click)="check()"
+      id="data-exposure_button_check"
+    >
+      {{ "blackMaskExposureCheckButton" | i18n }}
+    </button>
+  </bit-card>
+
+  @if (status() === "error") {
+    <bit-card>
+      <p class="tw-mb-0 tw-text-danger">{{ "blackMaskExposureError" | i18n }}</p>
+    </bit-card>
+  }
+
+  @if (result(); as summary) {
+    @if (summary.breachCount === 0) {
+      <bit-card>
+        <p class="tw-mb-0">{{ "blackMaskExposureNone" | i18n }}</p>
+      </bit-card>
+    } @else {
+      <bit-card>
+        <p class="tw-mb-1 tw-font-bold">
+          {{ "blackMaskExposureSummary" | i18n: summary.breachCount.toString() }}
+        </p>
+        @if (summary.dataClasses.length > 0) {
+          <p class="tw-mb-0 tw-text-sm tw-text-muted">
+            {{ "blackMaskExposureDataClasses" | i18n: summary.dataClasses.join(", ") }}
+          </p>
+        }
+      </bit-card>
+
+      <bit-card>
+        <p class="tw-mb-2 tw-font-bold">{{ "blackMaskExposureBreaches" | i18n }}</p>
+        @for (breach of summary.items; track breach.name) {
+          <div class="tw-py-1">
+            <p class="tw-mb-0 tw-font-bold">{{ breach.title || breach.name }}</p>
+            <p class="tw-mb-0 tw-text-sm tw-text-muted">
+              {{ breach.domain }}
+              @if (breach.breachDate) {
+                · {{ breach.breachDate }}
+              }
+            </p>
+            @if (breach.dataClasses.length > 0) {
+              <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ breach.dataClasses.join(", ") }}</p>
+            }
+          </div>
+        }
+      </bit-card>
+    }
+  }
+
+  <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ "blackMaskExposureDisclaimer" | i18n }}</p>
+</popup-page>
