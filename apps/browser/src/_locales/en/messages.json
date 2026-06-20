@@ -6808,6 +6808,12 @@
   "blackMaskScoreAccountSecurity": {
     "message": "No reused passwords"
   },
+  "blackMaskScoreStrongPasswords": {
+    "message": "No weak passwords"
+  },
+  "blackMaskScoreTwoFactor": {
+    "message": "Two-step login where supported"
+  },
   "blackMaskTrackers": {
     "message": "Trackers"
   },

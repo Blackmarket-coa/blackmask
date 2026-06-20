@@ -6,6 +6,10 @@ export interface PrivacyScoreSignals {
   personaCount: number;
   /** Number of login items whose password is reused on another item. */
   reusedPasswordCount: number;
+  /** Number of login items with a weak password. */
+  weakPasswordCount: number;
+  /** Number of login items on a 2FA-capable site that have no two-step login configured. */
+  twoFactorGapCount: number;
 }
 
 /** A single scored contribution to the privacy score. */
@@ -29,7 +33,9 @@ export interface PrivacyScore {
 const TRACKER_POINTS = 50;
 const PERSONA_POINTS_EACH = 10;
 const PERSONA_MAX = 50;
-const ACCOUNT_POINTS = 50;
+const REUSED_PASSWORD_POINTS = 50;
+const WEAK_PASSWORD_POINTS = 50;
+const TWO_FACTOR_POINTS = 50;
 
 /**
  * Computes a Black Mask privacy score from locally-available signals. Pure and deterministic; the
@@ -58,11 +64,25 @@ export function computePrivacyScore(signals: PrivacyScoreSignals): PrivacyScore 
       met: signals.personaCount > 0,
     },
     {
-      id: "account-security",
+      id: "reused-passwords",
       labelKey: "blackMaskScoreAccountSecurity",
-      earned: signals.reusedPasswordCount === 0 ? ACCOUNT_POINTS : 0,
-      max: ACCOUNT_POINTS,
+      earned: signals.reusedPasswordCount === 0 ? REUSED_PASSWORD_POINTS : 0,
+      max: REUSED_PASSWORD_POINTS,
       met: signals.reusedPasswordCount === 0,
+    },
+    {
+      id: "weak-passwords",
+      labelKey: "blackMaskScoreStrongPasswords",
+      earned: signals.weakPasswordCount === 0 ? WEAK_PASSWORD_POINTS : 0,
+      max: WEAK_PASSWORD_POINTS,
+      met: signals.weakPasswordCount === 0,
+    },
+    {
+      id: "two-factor",
+      labelKey: "blackMaskScoreTwoFactor",
+      earned: signals.twoFactorGapCount === 0 ? TWO_FACTOR_POINTS : 0,
+      max: TWO_FACTOR_POINTS,
+      met: signals.twoFactorGapCount === 0,
     },
   ];
 

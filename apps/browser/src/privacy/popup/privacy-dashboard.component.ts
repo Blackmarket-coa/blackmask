@@ -32,10 +32,9 @@ export class PrivacyDashboardComponent {
   private readonly trackerCountService = inject(TrackerCountService);
   private readonly accountAuditService = inject(AccountAuditService);
 
-  protected readonly reusedPasswordCount = toSignal(
-    this.accountAuditService.reusedPasswordCount$(),
-    { initialValue: 0 },
-  );
+  protected readonly accountAudit = toSignal(this.accountAuditService.accountAudit$(), {
+    initialValue: { reusedPasswordCount: 0, weakPasswordCount: 0, twoFactorGapCount: 0 },
+  });
 
   protected readonly activeTabTrackerCount = toSignal(
     from(this.trackerCountService.activeTabCount()),
@@ -54,11 +53,14 @@ export class PrivacyDashboardComponent {
 
   protected readonly knownTrackerCount = String(TRACKER_BLOCKLIST.length);
 
-  protected readonly privacyScore = computed(() =>
-    computePrivacyScore({
+  protected readonly privacyScore = computed(() => {
+    const audit = this.accountAudit();
+    return computePrivacyScore({
       trackerProtectionEnabled: this.trackerProtectionEnabled(),
       personaCount: this.personaCount(),
-      reusedPasswordCount: this.reusedPasswordCount(),
-    }),
-  );
+      reusedPasswordCount: audit.reusedPasswordCount,
+      weakPasswordCount: audit.weakPasswordCount,
+      twoFactorGapCount: audit.twoFactorGapCount,
+    });
+  });
 }
