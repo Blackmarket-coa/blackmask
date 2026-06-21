@@ -73,6 +73,8 @@
     "clipboardRead",
     "clipboardWrite",
     "contextMenus",
+    "contextualIdentities",
+    "cookies",
     "idle",
     "nativeMessaging",
     "scripting",
