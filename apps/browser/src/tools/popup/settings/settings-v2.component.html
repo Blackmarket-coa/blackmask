@@ -106,6 +106,16 @@
       </bit-item>
     }
 
+    @if (showPhishingProtection$ | async) {
+      <bit-item>
+        <a bit-item-content routerLink="/phishing-protection" [truncate]="false">
+          <i slot="start" class="bwi bwi-exclamation-triangle" aria-hidden="true"></i>
+          {{ "blackMaskPhishing" | i18n }}
+          <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+        </a>
+      </bit-item>
+    }
+
     @if (showAdminSettingsLink$ | async) {
       <bit-item>
         <a bit-item-content routerLink="/admin" [truncate]="false">

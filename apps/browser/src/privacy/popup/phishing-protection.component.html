@@ -1,0 +1,46 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskPhishing' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <bit-card>
+    <p class="tw-mb-1 tw-text-lg tw-font-bold">
+      @switch (status()) {
+        @case (PhishingProtectionStatus.Active) {
+          {{ "blackMaskPhishingActive" | i18n }}
+        }
+        @case (PhishingProtectionStatus.Off) {
+          {{ "blackMaskPhishingOff" | i18n }}
+        }
+        @default {
+          {{ "blackMaskPhishingUnavailable" | i18n }}
+        }
+      }
+    </p>
+
+    @if (status() === PhishingProtectionStatus.Unavailable) {
+      <p class="tw-mb-0 tw-text-sm tw-text-muted">
+        {{ "blackMaskPhishingUnavailableDesc" | i18n }}
+      </p>
+    } @else {
+      <button
+        bitButton
+        type="button"
+        buttonType="secondary"
+        [loading]="saving()"
+        (click)="toggle()"
+        id="phishing-protection_button_toggle"
+      >
+        {{ (enabled() ? "blackMaskPhishingTurnOff" : "blackMaskPhishingTurnOn") | i18n }}
+      </button>
+    }
+  </bit-card>
+
+  <bit-card>
+    <p class="tw-mb-0 tw-text-sm tw-text-muted">{{ "blackMaskPhishingExplanation" | i18n }}</p>
+  </bit-card>
+
+  <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ "blackMaskPhishingDisclaimer" | i18n }}</p>
+</popup-page>

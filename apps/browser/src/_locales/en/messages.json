@@ -6804,5 +6804,32 @@
         "example": "3"
       }
     }
+  },
+  "blackMaskPhishing": {
+    "message": "Phishing protection"
+  },
+  "blackMaskPhishingActive": {
+    "message": "Active"
+  },
+  "blackMaskPhishingOff": {
+    "message": "Off"
+  },
+  "blackMaskPhishingUnavailable": {
+    "message": "Unavailable"
+  },
+  "blackMaskPhishingUnavailableDesc": {
+    "message": "Phishing protection isn't available on your account or browser yet."
+  },
+  "blackMaskPhishingTurnOn": {
+    "message": "Turn on"
+  },
+  "blackMaskPhishingTurnOff": {
+    "message": "Turn off"
+  },
+  "blackMaskPhishingExplanation": {
+    "message": "Warns you before a known phishing site loads, using a continuously-updated blocklist."
+  },
+  "blackMaskPhishingDisclaimer": {
+    "message": "Detection runs on-device against a downloaded blocklist — the sites you visit aren't sent anywhere."
   }
 }
