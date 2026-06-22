@@ -77,6 +77,7 @@ import { DataExposureComponent } from "../privacy/popup/data-exposure.component"
 import { FingerprintComponent } from "../privacy/popup/fingerprint.component";
 import { PersonaContainersComponent } from "../privacy/popup/persona-containers.component";
 import { PersonasComponent } from "../privacy/popup/personas.component";
+import { PhishingProtectionComponent } from "../privacy/popup/phishing-protection.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
 import { TrackersComponent } from "../privacy/popup/trackers.component";
 import { CredentialGeneratorHistoryComponent } from "../tools/popup/generator/credential-generator-history.component";
@@ -408,6 +409,12 @@ const routes: Routes = [
     path: "persona-containers",
     component: PersonaContainersComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaContainers)],
+    data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "phishing-protection",
+    component: PhishingProtectionComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPhishingProtection)],
     data: { elevation: 1 } satisfies RouteDataProperties,
   },
   {
