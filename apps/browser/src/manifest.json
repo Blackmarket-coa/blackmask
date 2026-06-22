@@ -137,7 +137,8 @@
     "overlay/menu-button.html",
     "overlay/menu-list.html",
     "overlay/menu.html",
-    "popup/fonts/*"
+    "popup/fonts/*",
+    "ort/*"
   ],
   "__firefox__browser_specific_settings": {
     "gecko": {

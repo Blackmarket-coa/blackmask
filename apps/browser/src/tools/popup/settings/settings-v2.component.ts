@@ -132,6 +132,10 @@ export class SettingsV2Component {
     FeatureFlag.BlackMaskPhishingProtection,
   );
 
+  readonly showAiMediaDetector$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskAiMediaDetector,
+  );
+
   constructor(
     private readonly nudgesService: NudgesService,
     private readonly accountService: AccountService,

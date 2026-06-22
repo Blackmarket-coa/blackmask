@@ -179,6 +179,7 @@
     "@bitwarden/sdk-internal": "0.2.0-main.843",
     "@electron/fuses": "2.1.1",
     "@emotion/css": "11.13.5",
+    "@huggingface/transformers": "3.8.1",
     "@koa/multer": "4.0.0",
     "@koa/router": "15.5.0",
     "@microsoft/signalr": "10.0.0",

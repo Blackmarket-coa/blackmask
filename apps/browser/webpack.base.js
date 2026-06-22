@@ -198,6 +198,24 @@ module.exports.buildConfig = function buildConfig(params) {
           from: path.resolve(__dirname, "src/privacy/trackers/trackers.dnr.json"),
           to: "privacy/trackers.dnr.json",
         },
+        // ONNX Runtime Web wasm for the Black Mask AI-media detector. Bundled locally (served from
+        // the extension) so the runtime never has to be fetched from a CDN; the model weights are
+        // still lazy-fetched from Hugging Face on first use. Pointed at by env.backends.onnx.wasm
+        // .wasmPaths in ai-media-detector.service.ts.
+        {
+          from: path.resolve(
+            __dirname,
+            "../../node_modules/@huggingface/transformers/dist/ort-wasm-simd-threaded.jsep.wasm",
+          ),
+          to: "ort/[name][ext]",
+        },
+        {
+          from: path.resolve(
+            __dirname,
+            "../../node_modules/@huggingface/transformers/dist/ort-wasm-simd-threaded.jsep.mjs",
+          ),
+          to: "ort/[name][ext]",
+        },
       ],
     }),
     new MiniCssExtractPlugin({

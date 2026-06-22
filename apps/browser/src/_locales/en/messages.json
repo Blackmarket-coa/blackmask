@@ -6964,6 +6964,101 @@
   "blackMaskFpDisclaimer": {
     "message": "This is a local estimate. Nothing about your browser is sent anywhere."
   },
+  "blackMaskAiMedia": {
+    "message": "AI media detector"
+  },
+  "blackMaskAiMediaDescription": {
+    "message": "Check whether an image or video is likely AI-generated. Runs entirely on your device."
+  },
+  "blackMaskAiMediaDropPrompt": {
+    "message": "Drop an image or video here, or browse"
+  },
+  "blackMaskAiMediaBrowse": {
+    "message": "Choose file"
+  },
+  "blackMaskAiMediaRun": {
+    "message": "Analyze"
+  },
+  "blackMaskAiMediaReset": {
+    "message": "Clear"
+  },
+  "blackMaskAiMediaDownloading": {
+    "message": "Downloading detection model… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "blackMaskAiMediaAnalyzing": {
+    "message": "Analyzing…"
+  },
+  "blackMaskAiMediaAnalyzingFrame": {
+    "message": "Analyzing frame $CURRENT$ of $TOTAL$",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "3"
+      },
+      "total": {
+        "content": "$2",
+        "example": "16"
+      }
+    }
+  },
+  "blackMaskAiMediaVerdict": {
+    "message": "Result"
+  },
+  "blackMaskAiMediaLevelLikelyAi": {
+    "message": "Likely AI-generated"
+  },
+  "blackMaskAiMediaLevelUncertain": {
+    "message": "Uncertain"
+  },
+  "blackMaskAiMediaLevelAuthentic": {
+    "message": "Likely authentic"
+  },
+  "blackMaskAiMediaProbability": {
+    "message": "AI-generated likelihood: $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "87"
+      }
+    }
+  },
+  "blackMaskAiMediaFrames": {
+    "message": "Frame breakdown"
+  },
+  "blackMaskAiMediaFlaggedFrames": {
+    "message": "$FLAGGED$ of $TOTAL$ frames flagged",
+    "placeholders": {
+      "flagged": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "16"
+      }
+    }
+  },
+  "blackMaskAiMediaDisclaimer": {
+    "message": "Your media is analyzed on-device and never uploaded. Only the detection model is downloaded once, then cached."
+  },
+  "blackMaskAiMediaAccuracyCaveat": {
+    "message": "Detection is not definitive — treat the result as guidance, not proof."
+  },
+  "blackMaskAiMediaErrorUnsupported": {
+    "message": "Unsupported file. Choose an image or video."
+  },
+  "blackMaskAiMediaErrorOffline": {
+    "message": "The detection model isn't downloaded yet and you appear to be offline. Reconnect and try again."
+  },
+  "blackMaskAiMediaErrorDecode": {
+    "message": "That file couldn't be read. Try a different image or video."
+  },
   "blackMaskFpUserAgent": {
     "message": "Browser & OS (user agent)"
   },
