@@ -594,6 +594,50 @@ export class BrowserApi {
   }
 
   /**
+   * Whether this browser supports Firefox-style contextual identities (containers). Chromium has no
+   * native containers, so this is effectively Firefox-only.
+   */
+  static supportsContainers(): boolean {
+    return (
+      BrowserApi.isWebExtensionsApi &&
+      typeof browser !== "undefined" &&
+      browser.contextualIdentities != null
+    );
+  }
+
+  /**
+   * Returns the cookieStoreId of the contextual identity with the given name, creating it if it does
+   * not yet exist. Firefox only; returns undefined where containers are unsupported.
+   */
+  static async getOrCreateContainer(
+    name: string,
+    color: string,
+    icon: string,
+  ): Promise<string | undefined> {
+    if (!BrowserApi.supportsContainers()) {
+      return undefined;
+    }
+    const existing = await browser.contextualIdentities.query({ name });
+    if (existing != null && existing.length > 0) {
+      return existing[0].cookieStoreId;
+    }
+    const created = await browser.contextualIdentities.create({ name, color, icon });
+    return created?.cookieStoreId;
+  }
+
+  /**
+   * Opens a new tab in the given container (cookieStoreId). Falls back to a normal tab where
+   * containers are unsupported.
+   */
+  static async createNewContainerTab(cookieStoreId: string, url?: string): Promise<void> {
+    if (!BrowserApi.isWebExtensionsApi) {
+      await BrowserApi.createNewTab(url ?? "");
+      return;
+    }
+    await browser.tabs.create({ cookieStoreId, url, active: true });
+  }
+
+  /**
    * Gathers the details for a specified sub-frame of a tab.
    *
    * @param details - The details of the frame to get.

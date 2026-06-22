@@ -6805,6 +6805,36 @@
       }
     }
   },
+  "blackMaskContainers": {
+    "message": "Containers"
+  },
+  "blackMaskContainersTitle": {
+    "message": "Browsing containers"
+  },
+  "blackMaskContainersDesc": {
+    "message": "Open a separate, isolated browsing container for each identity layer so sites can't link your personas across them."
+  },
+  "blackMaskContainersUnsupported": {
+    "message": "Containers require Firefox. On this browser your personas aren't isolated into separate containers yet."
+  },
+  "blackMaskContainerPersonaCount": {
+    "message": "$COUNT$ personas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "blackMaskContainerOpen": {
+    "message": "Open container"
+  },
+  "blackMaskContainerError": {
+    "message": "Couldn't open the container. Try again."
+  },
+  "blackMaskContainersDisclaimer": {
+    "message": "Containers keep cookies and logins separate per identity layer, powered by Firefox container tabs."
+  },
   "blackMaskDataExposure": {
     "message": "Data exposure"
   },

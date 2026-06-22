@@ -75,6 +75,7 @@ import { RouteCacheOptions } from "../platform/services/popup-view-cache-backgro
 import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
 import { DataExposureComponent } from "../privacy/popup/data-exposure.component";
 import { FingerprintComponent } from "../privacy/popup/fingerprint.component";
+import { PersonaContainersComponent } from "../privacy/popup/persona-containers.component";
 import { PersonasComponent } from "../privacy/popup/personas.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
 import { TrackersComponent } from "../privacy/popup/trackers.component";
@@ -401,6 +402,12 @@ const routes: Routes = [
     path: "data-exposure",
     component: DataExposureComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskDataExposure)],
+    data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "persona-containers",
+    component: PersonaContainersComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaContainers)],
     data: { elevation: 1 } satisfies RouteDataProperties,
   },
   {

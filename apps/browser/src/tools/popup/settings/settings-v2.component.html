@@ -136,6 +136,16 @@
       </bit-item>
     }
 
+    @if (showPersonaContainers$ | async) {
+      <bit-item>
+        <a bit-item-content routerLink="/persona-containers" [truncate]="false">
+          <i slot="start" class="bwi bwi-filter" aria-hidden="true"></i>
+          {{ "blackMaskContainers" | i18n }}
+          <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+        </a>
+      </bit-item>
+    }
+
     @if (showAdminSettingsLink$ | async) {
       <bit-item>
         <a bit-item-content routerLink="/admin" [truncate]="false">
