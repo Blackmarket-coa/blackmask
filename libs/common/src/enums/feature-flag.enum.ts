@@ -117,6 +117,7 @@ export enum FeatureFlag {
   BlackMaskPrivacyDashboard = "black-mask-privacy-dashboard",
   BlackMaskPersonaVault = "black-mask-persona-vault",
   BlackMaskTrackerDetection = "black-mask-tracker-detection",
+  BlackMaskFingerprintTest = "black-mask-fingerprint-test",
   BlackMaskPersonaContainers = "black-mask-persona-containers",
 }
 
@@ -238,6 +239,7 @@ export const DefaultFeatureFlagValue = {
   [FeatureFlag.BlackMaskPrivacyDashboard]: FALSE,
   [FeatureFlag.BlackMaskPersonaVault]: FALSE,
   [FeatureFlag.BlackMaskTrackerDetection]: FALSE,
+  [FeatureFlag.BlackMaskFingerprintTest]: FALSE,
   [FeatureFlag.BlackMaskPersonaContainers]: FALSE,
 } satisfies Record<FeatureFlag, AllowedFeatureFlagTypes>;
 

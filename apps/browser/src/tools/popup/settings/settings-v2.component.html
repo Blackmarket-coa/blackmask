@@ -106,6 +106,26 @@
       </bit-item>
     }
 
+    @if (showTrackerDetection$ | async) {
+      <bit-item>
+        <a bit-item-content routerLink="/trackers" [truncate]="false">
+          <i slot="start" class="bwi bwi-eye" aria-hidden="true"></i>
+          {{ "blackMaskTrackers" | i18n }}
+          <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+        </a>
+      </bit-item>
+    }
+
+    @if (showFingerprintTest$ | async) {
+      <bit-item>
+        <a bit-item-content routerLink="/fingerprint" [truncate]="false">
+          <i slot="start" class="bwi bwi-user-monitor" aria-hidden="true"></i>
+          {{ "blackMaskFingerprint" | i18n }}
+          <i slot="end" class="bwi bwi-angle-right" aria-hidden="true"></i>
+        </a>
+      </bit-item>
+    }
+
     @if (showPersonaContainers$ | async) {
       <bit-item>
         <a bit-item-content routerLink="/persona-containers" [truncate]="false">
