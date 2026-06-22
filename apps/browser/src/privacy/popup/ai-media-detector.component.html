@@ -1,0 +1,139 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskAiMedia' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <bit-card>
+    <p class="tw-mb-2 tw-text-sm tw-text-muted">{{ "blackMaskAiMediaDescription" | i18n }}</p>
+
+    <div
+      class="tw-flex tw-flex-col tw-items-center tw-gap-2 tw-rounded tw-border tw-border-dashed tw-border-secondary-300 tw-p-4 tw-text-center"
+      (drop)="onDrop($event)"
+      (dragover)="onDragOver($event)"
+    >
+      <i class="bwi bwi-image tw-text-2xl tw-text-muted" aria-hidden="true"></i>
+      @if (selectedFile(); as file) {
+        <p class="tw-mb-0 tw-break-all tw-font-bold">{{ file.name }}</p>
+      } @else {
+        <p class="tw-mb-0 tw-text-muted">{{ "blackMaskAiMediaDropPrompt" | i18n }}</p>
+      }
+
+      <button
+        id="ai-media_button_browse"
+        type="button"
+        bitButton
+        buttonType="secondary"
+        (click)="fileInput.click()"
+      >
+        {{ "blackMaskAiMediaBrowse" | i18n }}
+      </button>
+      <input
+        #fileInput
+        id="ai-media_input_file"
+        class="tw-hidden"
+        type="file"
+        accept="image/*,video/*"
+        (change)="onFileSelected($event)"
+      />
+    </div>
+
+    <div class="tw-mt-3 tw-flex tw-gap-2">
+      <button
+        id="ai-media_button_run"
+        type="button"
+        bitButton
+        buttonType="primary"
+        [disabled]="selectedFile() == null || busy()"
+        (click)="run()"
+      >
+        {{ "blackMaskAiMediaRun" | i18n }}
+      </button>
+      <button
+        id="ai-media_button_reset"
+        type="button"
+        bitButton
+        buttonType="secondary"
+        [disabled]="busy()"
+        (click)="reset()"
+      >
+        {{ "blackMaskAiMediaReset" | i18n }}
+      </button>
+    </div>
+  </bit-card>
+
+  @switch (status()) {
+    @case (Status.Downloading) {
+      <p class="tw-text-muted">
+        {{ "blackMaskAiMediaDownloading" | i18n: downloadPercent().toString() }}
+      </p>
+    }
+    @case (Status.Analyzing) {
+      <p class="tw-text-muted">
+        @if (frameProgress(); as progress) {
+          {{
+            "blackMaskAiMediaAnalyzingFrame"
+              | i18n: progress.completed.toString() : progress.total.toString()
+          }}
+        } @else {
+          {{ "blackMaskAiMediaAnalyzing" | i18n }}
+        }
+      </p>
+    }
+    @case (Status.Error) {
+      <bit-card>
+        <p class="tw-mb-0 tw-text-danger">{{ errorKey() | i18n }}</p>
+      </bit-card>
+    }
+  }
+
+  @if (verdict(); as result) {
+    <bit-card>
+      <p class="tw-mb-1 tw-font-bold">{{ "blackMaskAiMediaVerdict" | i18n }}</p>
+      <p class="tw-mb-1 tw-text-lg tw-font-bold">
+        @switch (result.level) {
+          @case (AiMediaVerdictLevel.LikelyAi) {
+            {{ "blackMaskAiMediaLevelLikelyAi" | i18n }}
+          }
+          @case (AiMediaVerdictLevel.Uncertain) {
+            {{ "blackMaskAiMediaLevelUncertain" | i18n }}
+          }
+          @default {
+            {{ "blackMaskAiMediaLevelAuthentic" | i18n }}
+          }
+        }
+      </p>
+      <p class="tw-mb-0 tw-text-sm tw-text-muted">
+        {{ "blackMaskAiMediaProbability" | i18n: percent(result.deepfakeProbability).toString() }}
+      </p>
+      @if (result.totalFrameCount > 1) {
+        <p class="tw-mb-0 tw-text-sm tw-text-muted">
+          {{
+            "blackMaskAiMediaFlaggedFrames"
+              | i18n: result.flaggedFrameCount.toString() : result.totalFrameCount.toString()
+          }}
+        </p>
+      }
+    </bit-card>
+
+    @if (result.totalFrameCount > 1) {
+      <bit-card>
+        <p class="tw-mb-2 tw-font-bold">{{ "blackMaskAiMediaFrames" | i18n }}</p>
+        @for (frame of result.frames; track frame.index) {
+          <div class="tw-flex tw-items-center tw-justify-between tw-py-1">
+            <span class="tw-text-sm tw-text-muted">
+              {{ ((frame.timestampMs ?? 0) / 1000).toFixed(1) }}s
+            </span>
+            <span class="tw-text-sm" [class.tw-text-danger]="frame.deepfakeProbability >= 0.5">
+              {{ percent(frame.deepfakeProbability) }}%
+            </span>
+          </div>
+        }
+      </bit-card>
+    }
+  }
+
+  <p class="tw-mb-1 tw-text-xs tw-text-muted">{{ "blackMaskAiMediaDisclaimer" | i18n }}</p>
+  <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ "blackMaskAiMediaAccuracyCaveat" | i18n }}</p>
+</popup-page>

@@ -181,7 +181,8 @@
         "overlay/menu-button.html",
         "overlay/menu-list.html",
         "overlay/menu.html",
-        "popup/fonts/*"
+        "popup/fonts/*",
+        "ort/*"
       ],
       "matches": ["<all_urls>"],
       "use_dynamic_url": true

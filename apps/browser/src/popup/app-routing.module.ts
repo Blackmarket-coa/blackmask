@@ -72,6 +72,7 @@ import { ProtectedByComponent } from "../dirt/phishing-detection/popup/protected
 import BrowserPopupUtils from "../platform/browser/browser-popup-utils";
 import { popupRouterCacheGuard } from "../platform/popup/view-cache/popup-router-cache.service";
 import { RouteCacheOptions } from "../platform/services/popup-view-cache-background.service";
+import { AiMediaDetectorComponent } from "../privacy/popup/ai-media-detector.component";
 import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
 import { DataExposureComponent } from "../privacy/popup/data-exposure.component";
 import { FingerprintComponent } from "../privacy/popup/fingerprint.component";
@@ -415,6 +416,12 @@ const routes: Routes = [
     path: "phishing-protection",
     component: PhishingProtectionComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPhishingProtection)],
+    data: { elevation: 1 } satisfies RouteDataProperties,
+  },
+  {
+    path: "ai-media-detector",
+    component: AiMediaDetectorComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskAiMediaDetector)],
     data: { elevation: 1 } satisfies RouteDataProperties,
   },
   {

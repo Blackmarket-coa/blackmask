@@ -48,4 +48,22 @@
       {{ "blackMaskTrackersThisTab" | i18n: activeTabTrackerCount().toString() }}
     </p>
   </bit-card>
+
+  @if (aiMediaDetectorEnabled()) {
+    <bit-card>
+      <a
+        class="tw-flex tw-items-center tw-justify-between tw-text-main tw-no-underline"
+        routerLink="/ai-media-detector"
+      >
+        <span class="tw-font-bold">
+          <i class="bwi bwi-image" aria-hidden="true"></i>
+          {{ "blackMaskAiMedia" | i18n }}
+        </span>
+        <i class="bwi bwi-angle-right" aria-hidden="true"></i>
+      </a>
+      <p class="tw-mb-0 tw-mt-1 tw-text-sm tw-text-muted">
+        {{ "blackMaskAiMediaDescription" | i18n }}
+      </p>
+    </bit-card>
+  }
 </popup-page>

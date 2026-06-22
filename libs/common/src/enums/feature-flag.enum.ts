@@ -121,6 +121,7 @@ export enum FeatureFlag {
   BlackMaskDataExposure = "black-mask-data-exposure",
   BlackMaskPersonaContainers = "black-mask-persona-containers",
   BlackMaskPhishingProtection = "black-mask-phishing-protection",
+  BlackMaskAiMediaDetector = "black-mask-ai-media-detector",
 }
 
 export type AllowedFeatureFlagTypes = boolean | number | string;
@@ -245,6 +246,7 @@ export const DefaultFeatureFlagValue = {
   [FeatureFlag.BlackMaskDataExposure]: FALSE,
   [FeatureFlag.BlackMaskPersonaContainers]: FALSE,
   [FeatureFlag.BlackMaskPhishingProtection]: FALSE,
+  [FeatureFlag.BlackMaskAiMediaDetector]: FALSE,
 } satisfies Record<FeatureFlag, AllowedFeatureFlagTypes>;
 
 export type DefaultFeatureFlagValueType = typeof DefaultFeatureFlagValue;

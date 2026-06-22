@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
+import { RouterModule } from "@angular/router";
 import { from, map } from "rxjs";
 
 import { JslibModule } from "@bitwarden/angular/jslib.module";
@@ -24,7 +25,14 @@ import { TrackerCountService } from "./services/tracker-count.service";
 @Component({
   templateUrl: "./privacy-dashboard.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [JslibModule, PopupPageComponent, PopupHeaderComponent, PopOutComponent, CardComponent],
+  imports: [
+    JslibModule,
+    RouterModule,
+    PopupPageComponent,
+    PopupHeaderComponent,
+    PopOutComponent,
+    CardComponent,
+  ],
 })
 export class PrivacyDashboardComponent {
   private readonly configService = inject(ConfigService);
@@ -43,6 +51,11 @@ export class PrivacyDashboardComponent {
 
   protected readonly trackerProtectionEnabled = toSignal(
     this.configService.getFeatureFlag$(FeatureFlag.BlackMaskTrackerDetection),
+    { initialValue: false },
+  );
+
+  protected readonly aiMediaDetectorEnabled = toSignal(
+    this.configService.getFeatureFlag$(FeatureFlag.BlackMaskAiMediaDetector),
     { initialValue: false },
   );
 
