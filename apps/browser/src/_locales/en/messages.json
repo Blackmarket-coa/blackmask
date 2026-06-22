@@ -6804,5 +6804,107 @@
         "example": "3"
       }
     }
+  },
+  "blackMaskScoreAccountSecurity": {
+    "message": "No reused passwords"
+  },
+  "blackMaskScoreStrongPasswords": {
+    "message": "No weak passwords"
+  },
+  "blackMaskScoreTwoFactor": {
+    "message": "Two-step login where supported"
+  },
+  "blackMaskTrackers": {
+    "message": "Trackers"
+  },
+  "blackMaskBlockedDomains": {
+    "message": "Blocked tracker domains"
+  },
+  "blackMaskFingerprint": {
+    "message": "Fingerprint exposure"
+  },
+  "blackMaskFpExposure": {
+    "message": "Browser fingerprint"
+  },
+  "blackMaskFpLevelLow": {
+    "message": "Low exposure"
+  },
+  "blackMaskFpLevelMedium": {
+    "message": "Moderate exposure"
+  },
+  "blackMaskFpLevelHigh": {
+    "message": "High exposure"
+  },
+  "blackMaskFpTotalBits": {
+    "message": "≈ $BITS$ bits of identifying information",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "blackMaskFpBits": {
+    "message": "$BITS$ bits",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "blackMaskFpHidden": {
+    "message": "Not exposed"
+  },
+  "blackMaskFpSignals": {
+    "message": "What sites can read"
+  },
+  "blackMaskFpRunning": {
+    "message": "Running fingerprint test…"
+  },
+  "blackMaskFpDisclaimer": {
+    "message": "This is a local estimate. Nothing about your browser is sent anywhere."
+  },
+  "blackMaskFpUserAgent": {
+    "message": "Browser & OS (user agent)"
+  },
+  "blackMaskFpCanvas": {
+    "message": "Canvas rendering"
+  },
+  "blackMaskFpFonts": {
+    "message": "Installed fonts"
+  },
+  "blackMaskFpWebgl": {
+    "message": "Graphics card (WebGL)"
+  },
+  "blackMaskFpScreen": {
+    "message": "Screen resolution"
+  },
+  "blackMaskFpTimezone": {
+    "message": "Time zone"
+  },
+  "blackMaskFpAudio": {
+    "message": "Audio stack"
+  },
+  "blackMaskFpHardwareConcurrency": {
+    "message": "CPU cores"
+  },
+  "blackMaskFpPlatform": {
+    "message": "Platform"
+  },
+  "blackMaskFpLanguages": {
+    "message": "Languages"
+  },
+  "blackMaskFpDeviceMemory": {
+    "message": "Device memory"
+  },
+  "blackMaskFpPixelRatio": {
+    "message": "Pixel ratio"
+  },
+  "blackMaskFpColorDepth": {
+    "message": "Color depth"
+  },
+  "blackMaskFpTouch": {
+    "message": "Touch points"
   }
 }
