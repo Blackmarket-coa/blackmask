@@ -124,6 +124,10 @@ export class SettingsV2Component {
     FeatureFlag.BlackMaskDataExposure,
   );
 
+  readonly showPersonaContainers$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskPersonaContainers,
+  );
+
   readonly showPhishingProtection$: Observable<boolean> = this.configService.getFeatureFlag$(
     FeatureFlag.BlackMaskPhishingProtection,
   );

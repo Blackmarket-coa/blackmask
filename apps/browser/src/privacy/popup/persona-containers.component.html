@@ -1,0 +1,47 @@
+<popup-page>
+  <popup-header slot="header" [pageTitle]="'blackMaskContainers' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  <bit-card>
+    <p class="tw-mb-1 tw-font-bold">{{ "blackMaskContainersTitle" | i18n }}</p>
+    <p class="tw-mb-0 tw-text-sm tw-text-muted">{{ "blackMaskContainersDesc" | i18n }}</p>
+  </bit-card>
+
+  @if (!supported) {
+    <bit-card>
+      <p class="tw-mb-0 tw-text-sm tw-text-muted">
+        <i class="bwi bwi-exclamation-triangle" aria-hidden="true"></i>
+        {{ "blackMaskContainersUnsupported" | i18n }}
+      </p>
+    </bit-card>
+  }
+
+  @for (row of rows(); track row.layer) {
+    <bit-card>
+      <div class="tw-flex tw-items-center tw-justify-between tw-gap-2">
+        <div>
+          <p class="tw-mb-0 tw-font-bold">{{ row.label }}</p>
+          <p class="tw-mb-0 tw-text-sm tw-text-muted">
+            {{ "blackMaskContainerPersonaCount" | i18n: row.personaCount.toString() }}
+          </p>
+        </div>
+        @if (supported) {
+          <button
+            bitButton
+            type="button"
+            buttonType="secondary"
+            (click)="open(row.layer)"
+            [attr.id]="'persona-containers_button_open-' + row.layer"
+          >
+            {{ "blackMaskContainerOpen" | i18n }}
+          </button>
+        }
+      </div>
+    </bit-card>
+  }
+
+  <p class="tw-mb-0 tw-text-xs tw-text-muted">{{ "blackMaskContainersDisclaimer" | i18n }}</p>
+</popup-page>
