@@ -112,6 +112,14 @@ export class SettingsV2Component {
     FeatureFlag.BlackMaskPersonaVault,
   );
 
+  readonly showTrackerDetection$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskTrackerDetection,
+  );
+
+  readonly showFingerprintTest$: Observable<boolean> = this.configService.getFeatureFlag$(
+    FeatureFlag.BlackMaskFingerprintTest,
+  );
+
   readonly showDataExposure$: Observable<boolean> = this.configService.getFeatureFlag$(
     FeatureFlag.BlackMaskDataExposure,
   );
