@@ -6835,6 +6835,48 @@
   "blackMaskContainersDisclaimer": {
     "message": "Containers keep cookies and logins separate per identity layer, powered by Firefox container tabs."
   },
+  "blackMaskDataExposure": {
+    "message": "Data exposure"
+  },
+  "blackMaskExposureCheckTitle": {
+    "message": "Check for breaches"
+  },
+  "blackMaskExposureCheckDesc": {
+    "message": "Look up whether your account email appears in known data breaches. Your email is checked against the breach database through your own server — never a third party."
+  },
+  "blackMaskExposureCheckButton": {
+    "message": "Check now"
+  },
+  "blackMaskExposureError": {
+    "message": "Couldn't check for breaches right now. Try again later."
+  },
+  "blackMaskExposureNone": {
+    "message": "No known breaches for your email. 🎉"
+  },
+  "blackMaskExposureSummary": {
+    "message": "Found in $COUNT$ known breaches",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "blackMaskExposureDataClasses": {
+    "message": "Exposed data: $CLASSES$",
+    "placeholders": {
+      "classes": {
+        "content": "$1",
+        "example": "Emails, Passwords, Names"
+      }
+    }
+  },
+  "blackMaskExposureBreaches": {
+    "message": "Breaches"
+  },
+  "blackMaskExposureDisclaimer": {
+    "message": "Breach data comes from Have I Been Pwned via your server. Nothing is shared with third parties."
+  },
   "blackMaskScoreAccountSecurity": {
     "message": "No reused passwords"
   },
