@@ -12,28 +12,22 @@ in _this codebase_.
 
 | Doc                                                                | What it is                                                                                                                                          |
 | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`features.md`](./features.md)                                     | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests.                       |
 | [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
+| [`branding.md`](./branding.md)                                     | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets.                                                |
 
 ## Current status
 
-The v1 browser extension surface (`apps/browser/src/privacy/`) has working implementations of:
+The v1 milestones (M0–M4) from the execution plan are **feature-complete** in the browser
+extension: privacy dashboard & score, persona vault, tracker detection, fingerprint exposure test,
+data exposure dashboard, per-persona containers, phishing protection, and — beyond the original
+plan — an on-device AI-generated media detector. All are gated behind `black-mask-*` feature flags
+that **default to off**. See [`features.md`](./features.md) for what each feature does, where its
+code lives, and how to enable it.
 
-- **Tracker detection** — background blocklist matching + per-tab tracker counts (`trackers/`,
-  `background/tracker-count.background.ts`).
-- **Fingerprint exposure test** — content-script entropy probes (`fingerprint.component.ts`).
-- **Account security audit** — reused vault-health/breach signals (`account-audit.service.ts`).
-- **Data exposure dashboard** (`data-exposure.component.ts`).
-- **Phishing & scam inspector** (`phishing-protection.component.ts`).
-- **Persona generator + per-persona browsing containers** — built on the `Identity` cipher (see §4 of
-  the execution plan) (`create-persona.component.ts`, `personas.component.ts`,
-  `persona-containers.component.ts`).
-- **Privacy score dashboard** aggregating the above (`privacy-dashboard.component.ts`).
-- **On-device AI-generated media detector** — a beyond-v1-plan addition; classifies images/video
-  frames locally via a cached ONNX model, no upload of user media (`ai-media-detector.component.ts`).
-
-Everything else in the feature → subsystem map below (§3) — the Android app, VPN/network layer,
-backend inference/IOC/SAR services, and coalition features — remains sibling-repo or later-phase work
-and is not part of what ships from this repository today.
+Everything else in the feature → subsystem map (§3 of the execution plan) — the Android app,
+VPN/network layer, backend inference/IOC/SAR services, and coalition features — remains
+sibling-repo or later-phase work and is not part of what ships from this repository today.
 
 ## v1 scope (locked)
 
@@ -58,7 +52,9 @@ network agent, and iOS/macOS Network Extensions are out of scope for v1.
 
 ## How to read this
 
-Start with the execution plan's **Architecture & repo boundary** and **Feature → subsystem map**
-sections — they orient you to what's reused versus net-new. The two load-bearing reuse decisions are
-that the **persona vault reuses the existing `Identity` cipher type** and that **email aliasing is
-already built** (the SimpleLogin forwarder); both are explained in depth there.
+To learn **what exists and how to use or extend it**, read [`features.md`](./features.md). To
+understand **why it's built this way**, read the execution plan — start with its **Architecture &
+repo boundary** and **Feature → subsystem map** sections, which orient you to what's reused versus
+net-new. The two load-bearing reuse decisions are that the **persona vault reuses the existing
+`Identity` cipher type** and that **email aliasing is already built** (the SimpleLogin forwarder);
+both are explained in depth there.

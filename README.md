@@ -24,10 +24,11 @@ storage from scratch. **No new encryption logic is added here** — see
 
 This repo houses the client applications — everything except the mobile apps:
 
-- **`apps/browser`** — the v1 Black Mask surface. Tracker/fingerprint defense, per-persona browsing
-  containers, phishing protection, a data-exposure dashboard, an on-device AI-generated media
-  detector, and a privacy-score dashboard, alongside the inherited Bitwarden vault/autofill/sync
-  functionality.
+- **`apps/browser`** — the v1 Black Mask surface. Tracker/fingerprint defense, a persona vault with
+  per-persona browsing containers, phishing protection, a data-exposure dashboard, an on-device
+  AI-generated media detector, and a privacy-score dashboard, alongside the inherited Bitwarden
+  vault/autofill/sync functionality. Each feature is documented in the
+  [feature reference](docs/black-mask/features.md).
 - **`apps/desktop`**, **`apps/web`**, **`apps/cli`** — inherited from the Bitwarden fork; not v1
   priorities for Black Mask, but they pick up shared-library changes.
 - **`libs/*`** — shared code across the apps (vault, auth, sync, generators, UI, etc.).
