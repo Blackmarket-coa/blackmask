@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwarden paroļu pārvaldnieks</value>
+    <value>Black Mask paroļu pārvaldnieks</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Bitwarden viegli aizsargā visas paroles, paroļu atslēgas un jutīgu informāciju mājās, darbā vai ceļā.</value>
+    <value>Black Mask viegli aizsargā visas paroles, paroļu atslēgas un jutīgu informāciju mājās, darbā vai ceļā.</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>PCMag, WIRED, The Verge, CNET, G2 un vēl ir atzinuši Bitwarden kā labāko paroļu pārvaldnieku.
+    <value>PCMag, WIRED, The Verge, CNET, G2 un vēl ir atzinuši Black Mask kā labāko paroļu pārvaldnieku.
 
 AIZSARGĀ SAVU DIGITĀLO DZĪVI
 Aizsargā savu digitālo dzīvi un nodrošinies pret datu noplūdēm ar vienreizēju, spēcīgu paruļu izveidošanu un saglabāšanu katram kontam! Glabā visu pilnīgi šifrētā paroļu glabātavā, kurai vari piekļūt vienīgi Tu!
@@ -133,7 +133,7 @@ PIEKĻŪSTI SAVIEM DATIEM JEBKUR, JEBKAD UN JEBKURĀ IERĪCĒ
 Viegla paroļu pārvaldīšana, glabāšana, nodrošināšana un kopīgošana bez ierobežojumiem dažādās ierīcēs.
 
 IKVIENAM VAJADZĒTU IZMANTOT RĪKUS, LAI TIEŠSAISTĒ BŪTU DROŠI
-Bitwarden ir izmantojams bez maksas, reklāmām un datu pārdošanas. Bitwarden tic, ka ikvienam vajadzētu būt iespējai būt drošam tiešsaistē. Premium plāni sniedz piekļuvi papildu iespējām.
+Black Mask ir izmantojams bez maksas, reklāmām un datu pārdošanas. Black Mask tic, ka ikvienam vajadzētu būt iespējai būt drošam tiešsaistē. Premium plāni sniedz piekļuvi papildu iespējām.
 
 SPĒCINI SAVAS KOMANDAS AR BITWARDEN
 Komandu un uzņēmumu plāni satur profesionālas uzņēmējdarbības iespējas. Piemēram, SSO iekļaušana, pašmitināšana, direktorijas iekļaušana un SCIM apgāde, visaptveroši nosacījumi, API piekļuve, notikumu žurnāli un vēl.
@@ -141,35 +141,35 @@ Komandu un uzņēmumu plāni satur profesionālas uzņēmējdarbības iespējas.
 Izmanto bitwarden, lai drošinātu savu darbaspēku un kopīgotu jutīgu informāciju ar darbabiedriem!
 
 
-Vairāk iemelsu, lai izvēlētos Bitwarden:
+Vairāk iemelsu, lai izvēlētos Black Mask:
 
 Pasaules klases šifrēšana
 Paroles ir aizsargātas ar sarežģītu pilnīgu šifrēšanu (AES-256 bitu, sālīts jaucējkods un PBKDF2 SHA-256), līdz ar to Tavi dati ir droši un privāti.
 
 Trešo pušu pārbaudes
-Bitwarden pastāvīgi veic aptverošas trešo pušu drošības pārbaudes ar atzīstamiem drošības uzņēmumiem. Šīs ikgadējās pārbaudes iekļauj pirmkoda izvērtēšanu un ielaušanās pārbaudes dažādās Bitwarden IP adresēs, serveros un tīmekļa lietotnēs.
+Black Mask pastāvīgi veic aptverošas trešo pušu drošības pārbaudes ar atzīstamiem drošības uzņēmumiem. Šīs ikgadējās pārbaudes iekļauj pirmkoda izvērtēšanu un ielaušanās pārbaudes dažādās Black Mask IP adresēs, serveros un tīmekļa lietotnēs.
 
 Papildu 2FA
 Aizsargā savu pieteikšanos ar trešo pušu autentificētāju, e-pastā nosūtītiem kodiem vai tādiem FIDO2 WebAuthn pieteikšanās datiem kā aparatūras drošības atslēgu vai piekļuves atslēgu!
 
-Bitwarden Send
+Black Mask Send
 Datu pārsūtīšana citiem, saglabājot pilnīgu šifrēšanas drošību un ierobežojot atklāšanu.
 
 Iebūvēts veidotājs
 Izveido garas, sarežģītas un atšķirīgas paroles un vienreizējus lietotājvārdus katrai apmeklētajai vietnei! Papildu privātumam var apvienot ar e-pasta aizstājvārdu nodrošinātājiem.
 
 Vispasaules tulkojumi
-Bitwarden ir tulkots vairāk nekā 60 valodās ar vispasaules kopienas palīdzību tulkošanas rīkā Crowdin.
+Black Mask ir tulkots vairāk nekā 60 valodās ar vispasaules kopienas palīdzību tulkošanas rīkā Crowdin.
 
 Starpplatformu lietotnes
-Aizsargā un kopīgo jutīgus datus savā Bitwarden glabātavā jebkurā pārlūkā, mobilajā ierīcē vai darbvirsmas operētājsistēmā un vēl!
+Aizsargā un kopīgo jutīgus datus savā Black Mask glabātavā jebkurā pārlūkā, mobilajā ierīcē vai darbvirsmas operētājsistēmā un vēl!
 
-Bitwarden aizsargā vairāk nekā tikai paroles
-Pilnīgas šifrēšanas pieteikšanās datu pārvaldības risinājumi no Bitwarden sniedz iespēju apvienībām aizsargāt visu, tajā skaitā izstrādātāju noslēpumus un piekļuves atslēgu pieredzes. Bitwarden.com ir ampeklējams, lai uzzinātu vairāk par Bitwarden noslēpumu pārvaldnieku un Bitwarden Passwordless.dev.
+Black Mask aizsargā vairāk nekā tikai paroles
+Pilnīgas šifrēšanas pieteikšanās datu pārvaldības risinājumi no Black Mask sniedz iespēju apvienībām aizsargāt visu, tajā skaitā izstrādātāju noslēpumus un piekļuves atslēgu pieredzes. Black Mask.com ir ampeklējams, lai uzzinātu vairāk par Black Mask noslēpumu pārvaldnieku un Black Mask Passwordless.dev.
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>Bitwarden viegli aizsargā visas paroles, paroļu atslēgas un jutīgu informāciju mājās, darbā vai ceļā.</value>
+    <value>Black Mask viegli aizsargā visas paroles, paroļu atslēgas un jutīgu informāciju mājās, darbā vai ceļā.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Sinhronizē un piekļūsti savai glabātavai no vairākām ierīcēm</value>

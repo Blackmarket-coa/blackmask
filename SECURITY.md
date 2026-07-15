@@ -1,21 +1,32 @@
-Bitwarden believes that working with security researchers across the globe is crucial to keeping our users safe. If you believe you've found a security issue in our product or service, we encourage you to please submit a report through our [HackerOne Program](https://hackerone.com/bitwarden/). We welcome working with you to resolve the issue promptly. Thanks in advance!
+# Security Policy
+
+Black Mask is a privacy and counter-surveillance tool, so the integrity of this codebase matters a
+lot to the people who rely on it. If you believe you've found a security issue, please report it
+privately rather than opening a public issue — use GitHub's
+[private vulnerability reporting](https://github.com/Blackmarket-coa/blackmask/security/advisories/new)
+for this repository. We'll work with you to confirm, fix, and disclose responsibly.
 
 # Disclosure Policy
 
-- Let us know as soon as possible upon discovery of a potential security issue, and we'll make every effort to quickly resolve the issue.
-- Provide us a reasonable amount of time to resolve the issue before any disclosure to the public or a third-party. We may publicly disclose the issue before resolving it, if appropriate.
-- Make a good faith effort to avoid privacy violations, destruction of data, and interruption or degradation of our service. Only interact with accounts you own or with explicit permission of the account holder.
-- If you would like to encrypt your report, please use the PGP key with long ID `0xDE6887086F892325FEC04CC0D847525B6931381F` (available in the public keyserver pool).
+- Let us know as soon as possible upon discovery of a potential security issue, and we'll make every
+  effort to resolve it quickly.
+- Give us a reasonable amount of time to resolve the issue before any public disclosure.
+- Make a good-faith effort to avoid privacy violations, data destruction, and interruption or
+  degradation of the service. Only interact with accounts you own or have explicit permission to
+  test.
 
-While researching, we'd like to ask you to refrain from:
+While researching, please refrain from:
 
 - Denial of service
 - Spamming
-- Social engineering (including phishing) of Bitwarden staff or contractors
-- Any physical attempts against Bitwarden property or data centers
+- Social engineering (including phishing) of maintainers or contributors
+- Any physical attempts against project infrastructure
 
-# We want to help you!
+# Upstream (inherited) code
 
-If you have something that you feel is close to exploitation, or if you'd like some information regarding the internal API, or generally have any questions regarding the app that would help in your efforts, please email us at https://bitwarden.com/contact and ask for that information. As stated above, Bitwarden wants to help you find issues, and is more than willing to help.
+This repository is a fork of [bitwarden/clients](https://github.com/bitwarden/clients). If you find
+an issue that also affects unmodified upstream code, please additionally report it through
+Bitwarden's own [HackerOne program](https://hackerone.com/bitwarden/) so the fix can land upstream
+too.
 
-Thank you for helping keep Bitwarden and our users safe!
+Thank you for helping keep Black Mask and its users safe.

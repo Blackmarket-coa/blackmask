@@ -144,7 +144,7 @@ const decorators = (options: {
               back: "Back",
               activeAccount: "Active account",
               appLogoLabel: "app logo label",
-              bitwardenAccount: "Bitwarden Account",
+              bitwardenAccount: "Black Mask Account",
             });
           },
         },

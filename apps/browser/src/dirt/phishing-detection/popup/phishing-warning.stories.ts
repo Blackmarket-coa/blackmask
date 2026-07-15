@@ -64,7 +64,7 @@ export default {
           useFactory: () =>
             new I18nMockService({
               accessing: "Accessing",
-              appLogoLabel: "Bitwarden logo",
+              appLogoLabel: "Black Mask logo",
               phishingPageTitleV2: "Phishing attempt detected",
               phishingPageCloseTabV2: "Close this tab",
               phishingPageSummary:

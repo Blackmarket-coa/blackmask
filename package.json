@@ -1,17 +1,17 @@
 {
-  "name": "@bitwarden/clients",
+  "name": "@blackmask/clients",
   "version": "0.0.0",
-  "description": "Bitwarden Client Applications",
+  "description": "Black Mask client applications (privacy & counter-surveillance, built on a fork of the Bitwarden clients)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitwarden/clients.git"
+    "url": "git+https://github.com/Blackmarket-coa/blackmask.git"
   },
-  "author": "Bitwarden Inc. <hello@bitwarden.com> (https://bitwarden.com)",
+  "author": "Blackmarket-coa",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/bitwarden/clients/issues"
+    "url": "https://github.com/Blackmarket-coa/blackmask/issues"
   },
-  "homepage": "https://bitwarden.com",
+  "homepage": "https://github.com/Blackmarket-coa/blackmask#readme",
   "scripts": {
     "prepare": "husky",
     "lint": "eslint . --cache --cache-strategy content && prettier --check .",
