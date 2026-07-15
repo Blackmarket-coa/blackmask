@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwardeni Paroolihaldur</value>
+    <value>Black Maski Paroolihaldur</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Kodus, tööl ja teel - Bitwarden hoiustab imelihtsalt kõik su paroolid, pääsuvõtmed ja tundliku info.</value>
+    <value>Kodus, tööl ja teel - Black Mask hoiustab imelihtsalt kõik su paroolid, pääsuvõtmed ja tundliku info.</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Tunnustatud firmade PCMag, WIRED, The Verge, CNET, G2 ja teiste poolt kui parim paroolihaldur!
@@ -133,43 +133,43 @@ PÄÄSE OMA ANDMETELE LIGI IGALT POOLT, IGAL AJAL, IGAST SEADMEST
 Halda, hoiusta, kaitse ja jaga lõpmatult palju paroole mööda lõpmatult paljusid seadmeid ilma piiranguteta.
 
 KÕIGIL PEAKSID OLEMA TÖÖRIISTAD OHUTULT INTERNETIS SEIKLEMISEKS
-Kasuta Bitwardenit tasuta ilma reklaamide või andmete müümisega. Bitwarden usub, et kõigil peaks olema võimalus surfata ohutult internetis. Preemium plaanid pakuvad juurdepääsu veel rohkematele funktsioonidele.
+Kasuta Black Maskit tasuta ilma reklaamide või andmete müümisega. Black Mask usub, et kõigil peaks olema võimalus surfata ohutult internetis. Preemium plaanid pakuvad juurdepääsu veel rohkematele funktsioonidele.
 
 VÕIMENDA OMA TIIME BITWARDENIGA
 Tiimide ja ettevõtete plaanid tulevad koos professionaalsete ärifunktsioonidega. Mõned näited on SSO liides, ise majutamine, arvutikataloogide ühendamine ja SCIM kasutamine, globaalsed seaded, API, sündmuste logid ja veel rohkemgi.
 
-Kasuta Bitwardenit oma töötajate turvamiseks ja tundliku informatsiooni jagamiseks kolleegidega.
+Kasuta Black Maskit oma töötajate turvamiseks ja tundliku informatsiooni jagamiseks kolleegidega.
 
 
-Veel Põhjusi Miks Valida Bitwarden:
+Veel Põhjusi Miks Valida Black Mask:
 
 Maailmatasemel Krüpteering
 Paroolid on kaitstud tipptehnoloogilise täieliku krüpteerimisega (AES-256 bit, salted hashing ja PBKDF2 SHA-256), nii et sinu andmed püsivad privaatsete ja turvalistena.
 
 Põhjalikud turvatestid kolmandate firmade poolt
-Bitwarden korraldab regulaarselt põhjalike turvateste tuntud kolmandate firmade poolt. Need igaaastased kontrolltestid sisaldavad kogu koodibaasi ülevaatust ja test-küberrünnakuid Bitwardeni IP-de, serverite ja veebirakenduste vastu.
+Black Mask korraldab regulaarselt põhjalike turvateste tuntud kolmandate firmade poolt. Need igaaastased kontrolltestid sisaldavad kogu koodibaasi ülevaatust ja test-küberrünnakuid Black Maski IP-de, serverite ja veebirakenduste vastu.
 
 Kõrgetasemeline 2-astmeline autentiteerimine (2FA)
 Kaitse oma andmeid kolmanda poole autentitaatoriga, emailile saadetud koodide või FIDO2 WebAuthn süsteemidega, nagu näiteks füüsiline turvavõti või pääsuvõti.
 
-Bitwarden Send
+Black Mask Send
 Jaga andmeid otse teistega kasutades täieliku krüpteerimist ja vähenda lekke tõenäosust.
 
 Sisse ehitatud Generaator
 Loo igale oma saidile pikkasid, keerulisi ning täiesti kordumatuid paroole ja ainulaadseid kasutajanimesid. Veel paremaks privaatsuseks saad end ühendada ka variemaili (email alias) pakkujatega.
 
 Paljudes Keeltes
-Bitwardenit on tõlgitud juba 60 erinevasse keelde ja see arv kasvab, tänu meie globaalsele kogukonnale Crowdin platvormil.
+Black Maskit on tõlgitud juba 60 erinevasse keelde ja see arv kasvab, tänu meie globaalsele kogukonnale Crowdin platvormil.
 
 Kõigis Sinu Seadmetes
-Kaitse ja jaga oma tundliku informatsiooni Bitwardeni Hoidlas nii brauserist, telefonist, arvutist kui ka mujaltki.
+Kaitse ja jaga oma tundliku informatsiooni Black Maski Hoidlas nii brauserist, telefonist, arvutist kui ka mujaltki.
 
-Bitwarden hoiustab peale paroolide veel muudki
-Täielikult krüpteeritud andmehalduse lahendused Bitwardenilt võimendavad organisatsioone ja hoiustavad kõike, kaasa arvatud arendajate saladusi ja pääsuvõtmeid. Külasta veebilehte bitwarden.com, et uurida lähemalt Bitwarden Secrets Manageri kohta ja vaata lähemalt passwordless.dev!
+Black Mask hoiustab peale paroolide veel muudki
+Täielikult krüpteeritud andmehalduse lahendused Black Maskilt võimendavad organisatsioone ja hoiustavad kõike, kaasa arvatud arendajate saladusi ja pääsuvõtmeid. Külasta veebilehte bitwarden.com, et uurida lähemalt Bitwarden Secrets Manageri kohta ja vaata lähemalt passwordless.dev!
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>Kodus, tööl ja teel - Bitwarden hoiustab imelihtsalt kõik su paroolid, pääsuvõtmed ja tundliku info.</value>
+    <value>Kodus, tööl ja teel - Black Mask hoiustab imelihtsalt kõik su paroolid, pääsuvõtmed ja tundliku info.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Sünkroniseeri ja halda oma kontot erinevates seadmetes</value>

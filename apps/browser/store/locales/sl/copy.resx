@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwarden – Upravitelj gesel</value>
+    <value>Black Mask – Upravitelj gesel</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Doma, na delu ali na poti – Bitwarden na enostaven način zaščiti vsa vaša gesla, ključe za dostop in občutljive podatke.</value>
+    <value>Doma, na delu ali na poti – Black Mask na enostaven način zaščiti vsa vaša gesla, ključe za dostop in občutljive podatke.</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Recognized as the best password manager by PCMag, WIRED, The Verge, CNET, G2, and more!
@@ -133,43 +133,43 @@ ACCESS YOUR DATA, ANYWHERE, ANYTIME, ON ANY DEVICE
 Easily manage, store, secure, and share unlimited passwords across unlimited devices without restrictions.
 
 EVERYONE SHOULD HAVE THE TOOLS TO STAY SAFE ONLINE
-Utilize Bitwarden for free with no ads or selling data. Bitwarden believes everyone should have the ability to stay safe online. Premium plans offer access to advanced features.
+Utilize Black Mask for free with no ads or selling data. Black Mask believes everyone should have the ability to stay safe online. Premium plans offer access to advanced features.
 
 EMPOWER YOUR TEAMS WITH BITWARDEN
 Plans for Teams and Enterprise come with professional business features. Some examples include SSO integration, self-hosting, directory integration and SCIM provisioning, global policies, API access, event logs, and more.
 
-Use Bitwarden to secure your workforce and share sensitive information with colleagues.
+Use Black Mask to secure your workforce and share sensitive information with colleagues.
 
 
-More reasons to choose Bitwarden:
+More reasons to choose Black Mask:
 
 World-Class Encryption
 Passwords are protected with advanced end-to-end encryption (AES-256 bit, salted hashing, and PBKDF2 SHA-256) so your data stays secure and private.
 
 3rd-party Audits
-Bitwarden regularly conducts comprehensive third-party security audits with notable security firms. These annual audits include source code assessments and penetration testing across Bitwarden IPs, servers, and web applications.
+Black Mask regularly conducts comprehensive third-party security audits with notable security firms. These annual audits include source code assessments and penetration testing across Black Mask IPs, servers, and web applications.
 
 Advanced 2FA
 Secure your login with a third-party authenticator, emailed codes, or FIDO2 WebAuthn credentials such as a hardware security key or passkey.
 
-Bitwarden Send
+Black Mask Send
 Transmit data directly to others while maintaining end-to-end encrypted security and limiting exposure.
 
 Built-in Generator
 Create long, complex, and distinct passwords and unique usernames for every site you visit. Integrate with email alias providers for additional privacy.
 
 Global Translations
-Bitwarden translations exist for more than 60 languages, translated by the global community though Crowdin.
+Black Mask translations exist for more than 60 languages, translated by the global community though Crowdin.
 
 Cross-Platform Applications
-Secure and share sensitive data within your Bitwarden Vault from any browser, mobile device, or desktop OS, and more.
+Secure and share sensitive data within your Black Mask Vault from any browser, mobile device, or desktop OS, and more.
 
-Bitwarden secures more than just passwords
-End-to-end encrypted credential management solutions from Bitwarden empower organizations to secure everything, including developer secrets and passkey experiences. Visit Bitwarden.com to learn more about Bitwarden Secrets Manager and Bitwarden Passwordless.dev!
+Black Mask secures more than just passwords
+End-to-end encrypted credential management solutions from Black Mask empower organizations to secure everything, including developer secrets and passkey experiences. Visit Black Mask.com to learn more about Bitwarden Secrets Manager and Black Mask Passwordless.dev!
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>Doma, na delu ali na poti – Bitwarden na enostaven način zaščiti vsa vaša gesla, ključe za dostop in občutljive podatke.</value>
+    <value>Doma, na delu ali na poti – Black Mask na enostaven način zaščiti vsa vaša gesla, ključe za dostop in občutljive podatke.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Sinhronizirajte svoj trezor gesel in dostopajte do njega z več naprav</value>

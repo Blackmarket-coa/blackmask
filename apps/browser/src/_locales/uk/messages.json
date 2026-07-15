@@ -1,16 +1,16 @@
 {
   "appName": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "appLogoLabel": {
-    "message": "Логотип Bitwarden"
+    "message": "Логотип Black Mask"
   },
   "extName": {
-    "message": "Bitwarden – менеджер паролів",
+    "message": "Black Mask – менеджер паролів",
     "description": "Extension name, MUST be less than 40 characters (Safari restriction)"
   },
   "extDesc": {
-    "message": "Вдома, на роботі чи в дорозі, Bitwarden захищає ваші паролі, ключі доступу та конфіденційну інформацію",
+    "message": "Вдома, на роботі чи в дорозі, Black Mask захищає ваші паролі, ключі доступу та конфіденційну інформацію",
     "description": "Extension description, MUST be less than 112 characters (Safari restriction)"
   },
   "loginOrCreateNewAccount": {
@@ -22,8 +22,8 @@
   "createAccount": {
     "message": "Створити обліковий запис"
   },
-  "newToBitwarden": {
-    "message": "Вперше у Bitwarden?"
+  "newToBlack Mask": {
+    "message": "Вперше у Black Mask?"
   },
   "logInWithPasskey": {
     "message": "Увійти з ключем доступу"
@@ -317,22 +317,22 @@
     "message": "Продовжити у вебпрограмі?"
   },
   "continueToWebAppDesc": {
-    "message": "Ознайомтеся з іншими функціями вашого облікового запису Bitwarden у вебпрограмі."
+    "message": "Ознайомтеся з іншими функціями вашого облікового запису Black Mask у вебпрограмі."
   },
   "continueToHelpCenter": {
     "message": "Перейти до довідкового центру?"
   },
   "continueToHelpCenterDesc": {
-    "message": "Дізнайтеся більше про те, як використовувати Bitwarden в довідковому центрі."
+    "message": "Дізнайтеся більше про те, як використовувати Black Mask в довідковому центрі."
   },
   "continueToBrowserExtensionStore": {
     "message": "Перейти до вебмагазину розширень?"
   },
   "continueToBrowserExtensionStoreDesc": {
-    "message": "Допоможіть іншим дізнатися про Bitwarden. Відвідайте вебмагазин розширень для вашого браузера і поставте оцінку."
+    "message": "Допоможіть іншим дізнатися про Black Mask. Відвідайте вебмагазин розширень для вашого браузера і поставте оцінку."
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Ви можете змінити головний пароль у вебпрограмі Bitwarden."
+    "message": "Ви можете змінити головний пароль у вебпрограмі Black Mask."
   },
   "fingerprintPhrase": {
     "message": "Фраза відбитка",
@@ -348,20 +348,20 @@
   "logOut": {
     "message": "Вийти"
   },
-  "aboutBitwarden": {
-    "message": "Про Bitwarden"
+  "aboutBlack Mask": {
+    "message": "Про Black Mask"
   },
   "about": {
     "message": "Про розширення"
   },
-  "moreFromBitwarden": {
-    "message": "Більше від Bitwarden"
+  "moreFromBlack Mask": {
+    "message": "Більше від Black Mask"
   },
-  "continueToBitwardenDotCom": {
+  "continueToBlack MaskDotCom": {
     "message": "Продовжити на bitwarden.com?"
   },
   "bitwardenForBusiness": {
-    "message": "Bitwarden для бізнесу"
+    "message": "Black Mask для бізнесу"
   },
   "bitwardenAuthenticator": {
     "message": "Bitwarden Authenticator"
@@ -370,10 +370,10 @@
     "message": "Bitwarden Authenticator дозволяє зберігати ключі авторизації та генерувати одноразові коди TOTP для двоетапної перевірки. Дізнайтеся більше про це на вебсайті bitwarden.com"
   },
   "bitwardenSecretsManager": {
-    "message": "Менеджер секретів Bitwarden"
+    "message": "Менеджер секретів Black Mask"
   },
   "continueToSecretsManagerPageDesc": {
-    "message": "Надійно зберігайте секретні ключі розробників та діліться ними за допомогою менеджера секретів Bitwarden. Докладніше на вебсайті bitwarden.com."
+    "message": "Надійно зберігайте секретні ключі розробників та діліться ними за допомогою менеджера секретів Black Mask. Докладніше на вебсайті bitwarden.com."
   },
   "passwordlessDotDev": {
     "message": "Passwordless.dev"
@@ -381,11 +381,11 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Організуйте функціональну та безпечну роботу без використання традиційного методу входу з паролями за допомогою Passwordless.dev. Дізнайтеся більше на вебсайті bitwarden.com."
   },
-  "freeBitwardenFamilies": {
-    "message": "Bitwarden Families безплатно"
+  "freeBlack MaskFamilies": {
+    "message": "Black Mask Families безплатно"
   },
-  "freeBitwardenFamiliesPageDesc": {
-    "message": "Для вас доступна безплатна можливість Bitwarden Families. Отримайте цю пропозицію у вебпрограмі."
+  "freeBlack MaskFamiliesPageDesc": {
+    "message": "Для вас доступна безплатна можливість Black Mask Families. Отримайте цю пропозицію у вебпрограмі."
   },
   "version": {
     "message": "Версія"
@@ -448,13 +448,13 @@
     "message": "Допомога і зворотний зв'язок"
   },
   "helpCenter": {
-    "message": "Центр допомоги Bitwarden"
+    "message": "Центр допомоги Black Mask"
   },
   "communityForums": {
-    "message": "Форуми спільноти Bitwarden"
+    "message": "Форуми спільноти Black Mask"
   },
   "contactSupport": {
-    "message": "Звернутися в службу підтримки Bitwarden"
+    "message": "Звернутися в службу підтримки Black Mask"
   },
   "sync": {
     "message": "Синхронізація"
@@ -476,7 +476,7 @@
     "message": "Автоматичне генерування стійких, унікальних паролів."
   },
   "bitWebVaultApp": {
-    "message": "Вебпрограма Bitwarden"
+    "message": "Вебпрограма Black Mask"
   },
   "select": {
     "message": "Обрати"
@@ -738,8 +738,8 @@
     "message": "Завантажте, а потім поширте діагностичний звіт"
   },
   "bitwardenSupport": {
-    "message": "Підтримка Bitwarden",
-    "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
+    "message": "Підтримка Black Mask",
+    "description": "Link text following the troubleshooting description sentence. 'Black Mask' should not be translated."
   },
   "download": {
     "message": "Завантажити"
@@ -955,10 +955,10 @@
     "message": "Спростіть двоетапну перевірку"
   },
   "totpHelper": {
-    "message": "Bitwarden може автоматично заповнювати одноразові коди двоетапної перевірки. Скопіюйте і вставте ключ у це поле."
+    "message": "Black Mask може автоматично заповнювати одноразові коди двоетапної перевірки. Скопіюйте і вставте ключ у це поле."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden може автоматично заповнювати одноразові коди двоетапної перевірки. Відкрийте камеру, щоб сканувати QR-код на цьому вебсайті, або скопіюйте і вставте ключ у це поле."
+    "message": "Black Mask може автоматично заповнювати одноразові коди двоетапної перевірки. Відкрийте камеру, щоб сканувати QR-код на цьому вебсайті, або скопіюйте і вставте ключ у це поле."
   },
   "learnMoreAboutAuthenticators": {
     "message": "Докладніше про програми автентифікації"
@@ -978,8 +978,8 @@
   "logIn": {
     "message": "Увійти"
   },
-  "logInToBitwarden": {
-    "message": "Увійти в Bitwarden"
+  "logInToBlack Mask": {
+    "message": "Увійти в Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Введіть код, надісланий вам електронною поштою"
@@ -1042,7 +1042,7 @@
     "message": "Двоетапна перевірка дає змогу надійніше захистити ваш обліковий запис, вимагаючи підтвердження входу з використанням іншого пристрою, наприклад, за допомогою ключа безпеки, програми автентифікації, SMS, телефонного виклику, або е-пошти. Ви можете налаштувати двоетапну перевірку в сховищі на bitwarden.com. Хочете перейти на вебсайт зараз?"
   },
   "twoStepLoginConfirmationContent": {
-    "message": "Додайте вищий рівень захисту облікового запису, налаштувавши двоетапну перевірку у вебпрограмі Bitwarden."
+    "message": "Додайте вищий рівень захисту облікового запису, налаштувавши двоетапну перевірку у вебпрограмі Black Mask."
   },
   "twoStepLoginConfirmationTitle": {
     "message": "Продовжити у вебпрограмі?"
@@ -1194,7 +1194,7 @@
     "message": "Перейти до налаштування"
   },
   "notificationAddDesc": {
-    "message": "Чи має Bitwarden зберегти цей пароль?"
+    "message": "Чи має Black Mask зберегти цей пароль?"
   },
   "notificationAddSave": {
     "message": "Зберегти"
@@ -1230,11 +1230,11 @@
     }
   },
   "notificationLoginSaveConfirmation": {
-    "message": "збережено до Bitwarden.",
+    "message": "збережено до Black Mask.",
     "description": "Shown to user after item is saved."
   },
   "notificationLoginUpdatedConfirmation": {
-    "message": "оновлено в Bitwarden.",
+    "message": "оновлено в Black Mask.",
     "description": "Shown to user after item is updated."
   },
   "selectItemAriaLabel": {
@@ -1332,13 +1332,13 @@
     "message": "Запитувати про збереження нових ключів доступу та використання збережених ключів доступу. Застосовується для всіх облікових записів, до яких виконано вхід."
   },
   "notificationChangeDesc": {
-    "message": "Ви хочете оновити цей пароль в Bitwarden?"
+    "message": "Ви хочете оновити цей пароль в Black Mask?"
   },
   "notificationChangeSave": {
     "message": "Оновити"
   },
   "notificationUnlockDesc": {
-    "message": "Розблокуйте своє сховище Bitwarden, щоб завершити запит автозаповнення."
+    "message": "Розблокуйте своє сховище Black Mask, щоб завершити запит автозаповнення."
   },
   "notificationUnlock": {
     "message": "Розблокувати"
@@ -1423,10 +1423,10 @@
     "message": "Цей пароль буде використано для експортування та імпортування цього файлу"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Використовуйте ключ шифрування свого облікового запису, створений на основі імені користувача й головного пароля, щоб зашифрувати експортовані дані та обмежити можливість імпортування лише до поточного облікового запису Bitwarden."
+    "message": "Використовуйте ключ шифрування свого облікового запису, створений на основі імені користувача й головного пароля, щоб зашифрувати експортовані дані та обмежити можливість імпортування лише до поточного облікового запису Black Mask."
   },
   "passwordProtectedOptionDescription": {
-    "message": "Встановіть пароль файлу, щоб зашифрувати експортовані дані та імпортувати до будь-якого облікового запису Bitwarden за допомогою цього пароля."
+    "message": "Встановіть пароль файлу, щоб зашифрувати експортовані дані та імпортувати до будь-якого облікового запису Black Mask за допомогою цього пароля."
   },
   "exportTypeHeading": {
     "message": "Тип експорту"
@@ -1455,7 +1455,7 @@
     "message": "Цей експорт шифрує ваші дані за допомогою ключа шифрування облікового запису. Якщо ви коли-небудь оновите ключ шифрування облікового запису, необхідно виконати експорт знову, оскільки не зможете розшифрувати цей файл експорту."
   },
   "encExportAccountWarningDesc": {
-    "message": "Ключі шифрування унікальні для кожного облікового запису користувача Bitwarden, тому ви не можете імпортувати зашифрований експорт до іншого облікового запису."
+    "message": "Ключі шифрування унікальні для кожного облікового запису користувача Black Mask, тому ви не можете імпортувати зашифрований експорт до іншого облікового запису."
   },
   "exportMasterPassword": {
     "message": "Введіть головний пароль, щоб експортувати дані сховища."
@@ -1464,7 +1464,7 @@
     "message": "Спільні"
   },
   "bitwardenForBusinessPageDesc": {
-    "message": "Bitwarden для бізнесу дозволяє доступ до записів сховища спільно з іншими користувачами за допомогою організації. Дізнайтеся більше про це на вебсайті bitwarden.com."
+    "message": "Black Mask для бізнесу дозволяє доступ до записів сховища спільно з іншими користувачами за допомогою організації. Дізнайтеся більше про це на вебсайті bitwarden.com."
   },
   "moveToOrganization": {
     "message": "Перемістити до організації"
@@ -1630,13 +1630,13 @@
     "message": "Придбати Premium"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Ви можете придбати Premium у налаштуваннях облікового запису вебпрограми Bitwarden."
+    "message": "Ви можете придбати Premium у налаштуваннях облікового запису вебпрограми Black Mask."
   },
   "premiumCurrentMember": {
     "message": "Ви користуєтеся передплатою Premium!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Дякуємо за підтримку Bitwarden."
+    "message": "Дякуємо за підтримку Black Mask."
   },
   "premiumFeatures": {
     "message": "Передплатіть Premium та отримайте:"
@@ -1775,7 +1775,7 @@
     "message": "Середовище власного хостингу"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Вкажіть основну URL-адресу вашого встановлення Bitwarden на власному хостингу. Зразок: https://bitwarden.company.com"
+    "message": "Вкажіть основну URL-адресу вашого встановлення Black Mask на власному хостингу. Зразок: https://bitwarden.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Для розширеної конфігурації ви можете вказати основну URL-адресу окремо для кожної служби."
@@ -1828,7 +1828,7 @@
     "message": "Користуйтеся пропозиціями автозаповнення"
   },
   "autofillSpotlightDesc": {
-    "message": "Вимкніть налаштування автозаповнення вашого браузера, щоб вони не конфліктували з Bitwarden."
+    "message": "Вимкніть налаштування автозаповнення вашого браузера, щоб вони не конфліктували з Black Mask."
   },
   "turnOffBrowserAutofill": {
     "message": "Вимкнути автозаповнення $BROWSER$",
@@ -1884,8 +1884,8 @@
   "showInlineMenuLabel": {
     "message": "Пропозиції автозаповнення на полях форм"
   },
-  "howDoesBitwardenProtectFromPhishing": {
-    "message": "Як Bitwarden захищає ваші дані від шахрайства?"
+  "howDoesBlack MaskProtectFromPhishing": {
+    "message": "Як Black Mask захищає ваші дані від шахрайства?"
   },
   "currentWebsite": {
     "message": "Поточний вебсайт"
@@ -2647,7 +2647,7 @@
     "message": "Слабкий головний пароль"
   },
   "weakMasterPasswordDesc": {
-    "message": "Обраний вами головний пароль є слабким. Для належного захисту свого облікового запису Bitwarden, вам слід використовувати надійний головний пароль (або парольну фразу). Ви впевнені, що хочете використати цей пароль?"
+    "message": "Обраний вами головний пароль є слабким. Для належного захисту свого облікового запису Black Mask, вам слід використовувати надійний головний пароль (або парольну фразу). Ви впевнені, що хочете використати цей пароль?"
   },
   "rotateAccountEncKey": {
     "message": "Також оновити ключ шифрування мого облікового запису"
@@ -2659,7 +2659,7 @@
     "message": "Ви справді хочете оновити ключ шифрування облікового запису?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "Після оновлення вашого ключа шифрування вам необхідно вийти з системи і потім виконати повторний вхід у всіх програмах Bitwarden, які ви використовуєте. Збій під час виходу й повторного входу (коли завантажується ваш новий ключ шифрування) може призвести до пошкодження даних. Ми спробуємо завершити ваші сеанси автоматично, однак, цей процес може відбутись із затримкою."
+    "message": "Після оновлення вашого ключа шифрування вам необхідно вийти з системи і потім виконати повторний вхід у всіх програмах Black Mask, які ви використовуєте. Збій під час виходу й повторного входу (коли завантажується ваш новий ключ шифрування) може призвести до пошкодження даних. Ми спробуємо завершити ваші сеанси автоматично, однак, цей процес може відбутись із затримкою."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Будь-які збережені експорти, обмежені обліковим записом, стануть недійсними."
@@ -2687,10 +2687,10 @@
     "message": "Встановити PIN-код"
   },
   "setYourPinCode": {
-    "message": "Встановіть PIN-код для розблокування Bitwarden. Налаштування PIN-коду будуть скинуті, якщо ви коли-небудь повністю вийдете з програми."
+    "message": "Встановіть PIN-код для розблокування Black Mask. Налаштування PIN-коду будуть скинуті, якщо ви коли-небудь повністю вийдете з програми."
   },
   "setPinCode": {
-    "message": "Ви можете використовувати цей PIN-код для розблокування Bitwarden. PIN-код буде скинуто, якщо ви вийдете з програми."
+    "message": "Ви можете використовувати цей PIN-код для розблокування Black Mask. PIN-код буде скинуто, якщо ви вийдете з програми."
   },
   "pinRequired": {
     "message": "Необхідний PIN-код."
@@ -2711,7 +2711,7 @@
     "message": "Очікується підтвердження з комп'ютера"
   },
   "awaitDesktopDesc": {
-    "message": "Щоб увімкнути біометрію в браузері, спершу виконайте це у програмі Bitwarden на комп'ютері."
+    "message": "Щоб увімкнути біометрію в браузері, спершу виконайте це у програмі Black Mask на комп'ютері."
   },
   "lockWithMasterPassOnRestart": {
     "message": "Блокувати головним паролем при перезапуску браузера"
@@ -2826,7 +2826,7 @@
     "message": "Домен форми входу відрізняється від URL-адреси, за якою його було збережено. Оберіть OK, якщо ви все одно хочете її заповнити, або Скасувати для зупинки."
   },
   "autofillIframeWarningTip": {
-    "message": "Щоб надалі не бачити таке попередження, збережіть цей URI, $HOSTNAME$ у записі входу Bitwarden для цього сайту.",
+    "message": "Щоб надалі не бачити таке попередження, збережіть цей URI, $HOSTNAME$ у записі входу Black Mask для цього сайту.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -2835,7 +2835,7 @@
     }
   },
   "topLayerHijackWarning": {
-    "message": "Ця сторінка заважає роботі Bitwarden. Задля безпеки вбудоване меню Bitwarden тимчасово вимкнено."
+    "message": "Ця сторінка заважає роботі Black Mask. Задля безпеки вбудоване меню Black Mask тимчасово вимкнено."
   },
   "setMasterPassword": {
     "message": "Встановити головний пароль"
@@ -2892,7 +2892,7 @@
     "message": "Ваш новий головний пароль не задовольняє вимоги політики."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Отримуйте поради, оголошення та можливості дослідження від Bitwarden у своїй поштовій скриньці."
+    "message": "Отримуйте поради, оголошення та можливості дослідження від Black Mask у своїй поштовій скриньці."
   },
   "unsubscribe": {
     "message": "Відписатися"
@@ -2943,13 +2943,13 @@
     "message": "Інтеграцію з браузером не налаштовано"
   },
   "desktopIntegrationDisabledDesc": {
-    "message": "Інтеграцію з браузером не налаштовано в Bitwarden на комп'ютері. Увімкніть її в налаштуваннях програми на комп'ютері."
+    "message": "Інтеграцію з браузером не налаштовано в Black Mask на комп'ютері. Увімкніть її в налаштуваннях програми на комп'ютері."
   },
   "startDesktopTitle": {
-    "message": "Запустіть програму Bitwarden на комп'ютері"
+    "message": "Запустіть програму Black Mask на комп'ютері"
   },
   "startDesktopDesc": {
-    "message": "Для можливості розблокування з біометрією необхідно запустити програму Bitwarden на комп'ютері."
+    "message": "Для можливості розблокування з біометрією необхідно запустити програму Black Mask на комп'ютері."
   },
   "errorEnableBiometricTitle": {
     "message": "Не вдається налаштувати біометрію"
@@ -3003,7 +3003,7 @@
     "message": "Збій біометрії"
   },
   "biometricsFailedDesc": {
-    "message": "Неможливо виконати біометрію. Скористайтеся головним паролем або вийдіть із системи. Якщо проблема не зникне, зверніться до служби підтримки Bitwarden."
+    "message": "Неможливо виконати біометрію. Скористайтеся головним паролем або вийдіть із системи. Якщо проблема не зникне, зверніться до служби підтримки Black Mask."
   },
   "personalOwnershipSubmitError": {
     "message": "У зв'язку з корпоративною політикою, вам не дозволено зберігати записи до особистого сховища. Змініть налаштування власності на організацію та виберіть серед доступних збірок."
@@ -3034,7 +3034,7 @@
     "message": "Виключені домени"
   },
   "excludedDomainsDesc": {
-    "message": "Bitwarden не запитуватиме про збереження даних входу для цих доменів. Потрібно оновити сторінку для застосування змін."
+    "message": "Black Mask не запитуватиме про збереження даних входу для цих доменів. Потрібно оновити сторінку для застосування змін."
   },
   "blockedDomainsDesc": {
     "message": "Автозаповнення та інші пов'язані функції не пропонуватимуться для цих вебсайтів. Вам слід оновити сторінку для застосування змін."
@@ -3150,24 +3150,24 @@
     "message": "Ілюстрація списку ризикованих записів."
   },
   "welcomeDialogGraphicAlt": {
-    "message": "Ілюстрація макету сторінки сховища Bitwarden."
+    "message": "Ілюстрація макету сторінки сховища Black Mask."
   },
   "generatePasswordSlideDesc": {
-    "message": "Швидко згенеруйте надійний, унікальний пароль через меню автозаповнення Bitwarden на сайті з ризикованим паролем.",
+    "message": "Швидко згенеруйте надійний, унікальний пароль через меню автозаповнення Black Mask на сайті з ризикованим паролем.",
     "description": "Description of the generate password slide on the at-risk password page carousel"
   },
   "generatePasswordSlideImgAltPeriod": {
-    "message": "Ілюстрація меню автозаповнення Bitwarden, що показує згенерований пароль."
+    "message": "Ілюстрація меню автозаповнення Black Mask, що показує згенерований пароль."
   },
-  "updateInBitwarden": {
-    "message": "Оновити в Bitwarden"
+  "updateInBlack Mask": {
+    "message": "Оновити в Black Mask"
   },
-  "updateInBitwardenSlideDesc": {
-    "message": "Потім Bitwarden запропонує вам оновити пароль у менеджері паролів.",
-    "description": "Description of the update in Bitwarden slide on the at-risk password page carousel"
+  "updateInBlack MaskSlideDesc": {
+    "message": "Потім Black Mask запропонує вам оновити пароль у менеджері паролів.",
+    "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBitwardenSlideImgAltPeriod": {
-    "message": "Ілюстрація сповіщення Bitwarden, що спонукає користувача оновити пароль."
+  "updateInBlack MaskSlideImgAltPeriod": {
+    "message": "Ілюстрація сповіщення Black Mask, що спонукає користувача оновити пароль."
   },
   "turnOnAutofill": {
     "message": "Увімкніть автозаповнення"
@@ -3221,11 +3221,11 @@
   },
   "send": {
     "message": "Відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDetails": {
     "message": "Подробиці відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendTypeText": {
     "message": "Текст"
@@ -3238,7 +3238,7 @@
   },
   "allSends": {
     "message": "Усі відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "maxAccessCountReached": {
     "message": "Досягнуто максимальної кількості доступів",
@@ -3258,7 +3258,7 @@
   },
   "copySendLink": {
     "message": "Копіювати посилання відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Вилучити пароль"
@@ -3271,11 +3271,11 @@
   },
   "deletedSend": {
     "message": "Відправлення видалено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendLink": {
     "message": "Посилання на відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "disabled": {
     "message": "Вимкнено"
@@ -3285,26 +3285,26 @@
   },
   "deleteSend": {
     "message": "Видалити відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Ви дійсно хочете видалити це відправлення?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendPermanentConfirmation": {
     "message": "Ви дійсно хочете остаточно видалити це відправлення?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editSend": {
     "message": "Редагування",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Термін дії"
   },
   "deletionDateDescV2": {
     "message": "Відправлення буде остаточно видалено у вказану дату.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Дата завершення"
@@ -3326,34 +3326,34 @@
   },
   "createSend": {
     "message": "Нове відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "newPassword": {
     "message": "Новий пароль"
   },
   "sendDisabled": {
     "message": "Відправлення вилучено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "У зв'язку з політикою компанії, ви можете лише видалити наявне відправлення.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Відправлення створено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSendSuccessfully": {
     "message": "Відправлення успішно створено!",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHoursSingle": {
     "message": "Це відправлення буде доступним будь-кому за посиланням протягом 1 години.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHours": {
     "message": "Це відправлення буде доступним будь-кому за посиланням протягом $HOURS$ годин.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -3363,11 +3363,11 @@
   },
   "sendExpiresInDaysSingle": {
     "message": "Це відправлення буде доступним будь-кому за посиланням протягом 1 дня.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInDays": {
     "message": "Це відправлення буде доступним будь-кому за посиланням протягом $DAYS$ днів.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "days": {
         "content": "$1",
@@ -3386,7 +3386,7 @@
   },
   "sendCreatedDescriptionV2": {
     "message": "Скопіюйте посилання на це відправлення і поділіться ним. Відправлення буде доступне за посиланням усім протягом $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3396,7 +3396,7 @@
   },
   "sendCreatedDescriptionPassword": {
     "message": "Скопіюйте посилання на це відправлення і поділіться ним. Відправлення буде доступне за посиланням і встановленим вами паролем усім протягом $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3406,7 +3406,7 @@
   },
   "sendCreatedDescriptionEmail": {
     "message": "Скопіюйте посилання на це відправлення і поділіться ним. Його зможуть переглядати зазначені вами користувачі протягом $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3416,11 +3416,11 @@
   },
   "sendLinkCopied": {
     "message": "Посилання на відправлення скопійовано",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Відправлення збережено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "popOut": {
     "message": "Відкріпити"
@@ -3678,7 +3678,7 @@
     "message": "Помилка отримання даних автозаповнення"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden не зміг розшифрувати вказані нижче елементи сховища."
+    "message": "Black Mask не зміг розшифрувати вказані нижче елементи сховища."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Зверніться до служби підтримки клієнтів,",
@@ -3782,11 +3782,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Згенеровано Bitwarden.",
+    "message": "Згенеровано Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Вебсайт: $WEBSITE$. Згенеровано Bitwarden.",
+    "message": "Вебсайт: $WEBSITE$. Згенеровано Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3979,7 +3979,7 @@
     "message": "Сповіщення було надіслано на ваш пристрій."
   },
   "notificationSentDevicePart1": {
-    "message": "Розблокуйте Bitwarden на своєму пристрої або у"
+    "message": "Розблокуйте Black Mask на своєму пристрої або у"
   },
   "notificationSentDeviceAnchor": {
     "message": "вебпрограмі"
@@ -4337,11 +4337,11 @@
   },
   "sendsTitleNoItems": {
     "message": "Безпечно надсилайте конфіденційну інформацію",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendsBodyNoItems": {
     "message": "Безпечно діліться файлами й даними з ким завгодно, на будь-якій платформі. Ваша інформація наскрізно зашифрована та має обмежений доступ.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "inputRequired": {
     "message": "Необхідно ввести дані."
@@ -4479,15 +4479,15 @@
     "message": "Перейти до вмісту"
   },
   "bitwardenOverlayButton": {
-    "message": "Кнопка меню автозаповнення Bitwarden",
+    "message": "Кнопка меню автозаповнення Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBitwardenVaultOverlay": {
-    "message": "Перемкнути меню автозаповнення Bitwarden",
+  "toggleBlack MaskVaultOverlay": {
+    "message": "Перемкнути меню автозаповнення Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
   "bitwardenVault": {
-    "message": "Меню автозаповнення Bitwarden",
+    "message": "Меню автозаповнення Black Mask",
     "description": "Page title in overlay"
   },
   "unlockYourAccountToViewMatchingLogins": {
@@ -4559,7 +4559,7 @@
     "description": "Screen reader text (aria-label) for new identity button within inline menu"
   },
   "bitwardenOverlayMenuAvailable": {
-    "message": "Доступне меню автозаповнення Bitwarden. Натисніть клавішу стрілки для вибору.",
+    "message": "Доступне меню автозаповнення Black Mask. Натисніть клавішу стрілки для вибору.",
     "description": "Screen reader text for announcing when the overlay opens on the page"
   },
   "turnOn": {
@@ -4889,7 +4889,7 @@
     "message": "Активний обліковий запис"
   },
   "bitwardenAccount": {
-    "message": "Обліковий запис Bitwarden"
+    "message": "Обліковий запис Black Mask"
   },
   "availableAccounts": {
     "message": "Доступні облікові записи"
@@ -4935,8 +4935,8 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "Виявлення збігів URI – це спосіб ідентифікації пропозицій автозаповнення Bitwarden.",
-    "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
+    "message": "Виявлення збігів URI – це спосіб ідентифікації пропозицій автозаповнення Black Mask.",
+    "description": "Explains to the user that URI match detection determines how Black Mask suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
     "message": "Регулярний вираз – це функція, що має підвищений ризик розкриття облікових даних, призначена для досвідчених користувачів.",
@@ -4979,23 +4979,23 @@
     "description": "Body content for dialog which asks if the user wants to proceed to the browser's keyboard shortcut settings page"
   },
   "overrideDefaultBrowserAutofillTitle": {
-    "message": "Зробити Bitwarden типовим менеджером паролів?",
+    "message": "Зробити Black Mask типовим менеджером паролів?",
     "description": "Dialog title facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutofillDescription": {
-    "message": "Якщо ігнорувати цей параметр, можуть виникнути конфлікти пропозицій автозаповнення між Bitwarden і браузером.",
+    "message": "Якщо ігнорувати цей параметр, можуть виникнути конфлікти пропозицій автозаповнення між Black Mask і браузером.",
     "description": "Dialog message facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutoFillSettings": {
-    "message": "Зробити Bitwarden типовим менеджером паролів",
+    "message": "Зробити Black Mask типовим менеджером паролів",
     "description": "Label for the setting that allows overriding the default browser autofill settings"
   },
   "privacyPermissionAdditionNotGrantedTitle": {
-    "message": "Неможливо зробити Bitwarden типовим менеджером паролів",
+    "message": "Неможливо зробити Black Mask типовим менеджером паролів",
     "description": "Title for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "privacyPermissionAdditionNotGrantedDescription": {
-    "message": "Щоб зробити Bitwarden типовим менеджером паролів, ви маєте надати дозволи приватності у налаштуваннях розширень браузера.",
+    "message": "Щоб зробити Black Mask типовим менеджером паролів, ви маєте надати дозволи приватності у налаштуваннях розширень браузера.",
     "description": "Description for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "makeDefault": {
@@ -5339,17 +5339,17 @@
   "downloadAttachmentLabel": {
     "message": "Завантажити вкладення"
   },
-  "downloadBitwarden": {
-    "message": "Завантажити Bitwarden"
+  "downloadBlack Mask": {
+    "message": "Завантажити Black Mask"
   },
-  "downloadBitwardenOnAllDevices": {
-    "message": "Завантажити Bitwarden на всіх пристроях"
+  "downloadBlack MaskOnAllDevices": {
+    "message": "Завантажити Black Mask на всіх пристроях"
   },
   "getTheMobileApp": {
     "message": "Отримати програму для мобільного пристрою"
   },
   "getTheMobileAppDesc": {
-    "message": "Користуйтеся своїми паролями звідусіль за допомогою програми Bitwarden для мобільних пристроїв."
+    "message": "Користуйтеся своїми паролями звідусіль за допомогою програми Black Mask для мобільних пристроїв."
   },
   "getTheDesktopApp": {
     "message": "Отримати програму для комп'ютера"
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Користуйтеся сховищем без браузера, налаштуйте біометричне розблокування, щоб спростити доступ у програмі на комп'ютері та в розширенні браузера."
   },
-  "downloadFromBitwardenNow": {
+  "downloadFromBlack MaskNow": {
     "message": "Завантажити з bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5823,10 +5823,10 @@
     "message": "Біометричне розблокування недоступне через неправильно налаштовані системні файли."
   },
   "biometricsStatusHelptextDesktopDisconnected": {
-    "message": "Біометричне розблокування недоступне, оскільки програму Bitwarden для комп'ютера закрито."
+    "message": "Біометричне розблокування недоступне, оскільки програму Black Mask для комп'ютера закрито."
   },
   "biometricsStatusHelptextNotEnabledInDesktop": {
-    "message": "Біометричне розблокування недоступне, оскільки воно не увімкнене для $EMAIL$ у програмі Bitwarden для комп'ютера.",
+    "message": "Біометричне розблокування недоступне, оскільки воно не увімкнене для $EMAIL$ у програмі Black Mask для комп'ютера.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -5860,9 +5860,9 @@
     "message": "Пароль згенеровано повторно",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBitwarden": {
-    "message": "Зберегти в Bitwarden",
-    "description": "Confirmation message for saving a login to Bitwarden"
+  "saveToBlack Mask": {
+    "message": "Зберегти в Black Mask",
+    "description": "Confirmation message for saving a login to Black Mask"
   },
   "spaceCharacterDescriptor": {
     "message": "Пробіл",
@@ -6087,13 +6087,13 @@
     "message": "Сховище захищає не лише ваші паролі. Безпечно зберігайте дані для входу, посвідчення, картки й нотатки."
   },
   "introCarouselLabel": {
-    "message": "Вітаємо в Bitwarden"
+    "message": "Вітаємо в Black Mask"
   },
   "securityPrioritized": {
     "message": "Безпека понад усе"
   },
   "securityPrioritizedBody": {
-    "message": "Зберігайте записи входу, картки та посвідчення в захищеному сховищі. Для захисту ваших даних Bitwarden використовує наскрізне шифрування з нульовим рівнем доступу."
+    "message": "Зберігайте записи входу, картки та посвідчення в захищеному сховищі. Для захисту ваших даних Black Mask використовує наскрізне шифрування з нульовим рівнем доступу."
   },
   "quickLogin": {
     "message": "Швидкий і легкий вхід"
@@ -6111,7 +6111,7 @@
     "message": "Ваші дані завжди з вами"
   },
   "secureDevicesBody": {
-    "message": "Зберігайте скільки завгодно паролів на необмеженій кількості пристроїв, використовуючи Bitwarden для мобільних пристроїв, браузерів та комп'ютерів."
+    "message": "Зберігайте скільки завгодно паролів на необмеженій кількості пристроїв, використовуючи Black Mask для мобільних пристроїв, браузерів та комп'ютерів."
   },
   "nudgeBadgeAria": {
     "message": "1 сповіщення"
@@ -6120,7 +6120,7 @@
     "message": "Імпортуйте наявні паролі"
   },
   "emptyVaultNudgeBody": {
-    "message": "Скористайтеся інструментом імпортування, щоб швидко перенести записи до Bitwarden, а не додавати їх вручну."
+    "message": "Скористайтеся інструментом імпортування, щоб швидко перенести записи до Black Mask, а не додавати їх вручну."
   },
   "emptyVaultNudgeButton": {
     "message": "Імпортувати"
@@ -6156,7 +6156,7 @@
     "placeholders": {
       "product": {
         "content": "$1",
-        "example": "Bitwarden Phishing Blocker"
+        "example": "Black Mask Phishing Blocker"
       }
     }
   },
@@ -6239,13 +6239,13 @@
     "message": "Про ці налаштування"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden використовуватиме збережені URI-адреси записів для визначення піктограм вебсайтів або URL-адрес для зміни паролів, щоб вдосконалити вашу роботу. Під час використання цієї послуги ваша інформація не збирається і не зберігається."
+    "message": "Black Mask використовуватиме збережені URI-адреси записів для визначення піктограм вебсайтів або URL-адрес для зміни паролів, щоб вдосконалити вашу роботу. Під час використання цієї послуги ваша інформація не збирається і не зберігається."
   },
   "noPermissionsViewPage": {
     "message": "У вас немає дозволу переглядати цю сторінку. Спробуйте ввійти з іншим обліковим записом."
   },
   "wasmNotSupported": {
-    "message": "WebAssembly не підтримується або не ввімкнено у вашому браузері. WebAssembly є обов'язковою вимогою для програми Bitwarden.",
+    "message": "WebAssembly не підтримується або не ввімкнено у вашому браузері. WebAssembly є обов'язковою вимогою для програми Black Mask.",
     "description": "'WebAssembly' is a technical term and should not be translated."
   },
   "showMore": {
@@ -6324,7 +6324,7 @@
     "message": "Помилка: неможливо розшифрувати"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Ваша організація більше не використовує головні паролі для входу в Bitwarden. Щоб продовжити, підтвердьте організацію та домен."
+    "message": "Ваша організація більше не використовує головні паролі для входу в Black Mask. Щоб продовжити, підтвердьте організацію та домен."
   },
   "continueWithLogIn": {
     "message": "Перейти до входу"
@@ -6410,7 +6410,7 @@
     "message": "Встановіть спосіб розблокування, щоб змінити дію під час очікування"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Керується розширенням для браузера Bitwarden. Щоб редагувати, відкрийте браузер."
+    "message": "Керується розширенням для браузера Black Mask. Щоб редагувати, відкрийте браузер."
   },
   "percentageCompleted": {
     "message": "$PERCENT$% виконано",
@@ -6511,15 +6511,15 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBitwardenApps": {
-    "message": "Завантажити програми Bitwarden"
+  "downloadBlack MaskApps": {
+    "message": "Завантажити програми Black Mask"
   },
   "emailProtected": {
     "message": "Е-пошту захищено"
   },
   "sendPasswordHelperText": {
     "message": "Користувачі мають ввести пароль для перегляду цього відправлення",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "userVerificationFailed": {
     "message": "Не вдалося перевірити користувача."
@@ -6528,13 +6528,13 @@
     "message": "Shared unlock"
   },
   "sharedUnlockDescription": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
   },
   "sharedUnlockDescriptionSafari": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with Bitwarden web vaults in Safari."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with Black Mask web vaults in Safari."
   },
   "sharedUnlockDescriptionFirefox": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with the Bitwarden desktop app."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with the Black Mask desktop app."
   },
   "enterMonth": {
     "message": "Введіть місяць."
@@ -6657,7 +6657,7 @@
   },
   "sendCreated": {
     "message": "Відправлення створено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "numericInputError": {
     "message": "Необхідно ввести числове значення"

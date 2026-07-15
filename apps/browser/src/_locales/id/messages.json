@@ -1,16 +1,16 @@
 {
   "appName": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "appLogoLabel": {
-    "message": "Logo Bitwarden"
+    "message": "Logo Black Mask"
   },
   "extName": {
-    "message": "Pengelola Sandi Bitwarden",
+    "message": "Pengelola Sandi Black Mask",
     "description": "Extension name, MUST be less than 40 characters (Safari restriction)"
   },
   "extDesc": {
-    "message": "Bitwarden memudahkan Anda menyimpan kata sandi, kata kunci, dan informasi sensitif dimanapun Anda berada",
+    "message": "Black Mask memudahkan Anda menyimpan kata sandi, kata kunci, dan informasi sensitif dimanapun Anda berada",
     "description": "Extension description, MUST be less than 112 characters (Safari restriction)"
   },
   "loginOrCreateNewAccount": {
@@ -22,8 +22,8 @@
   "createAccount": {
     "message": "Buat akun"
   },
-  "newToBitwarden": {
-    "message": "Baru menggunakan Bitwarden?"
+  "newToBlack Mask": {
+    "message": "Baru menggunakan Black Mask?"
   },
   "logInWithPasskey": {
     "message": "Masuk dengan kunci sandi"
@@ -317,22 +317,22 @@
     "message": "Lanjut ke aplikasi web?"
   },
   "continueToWebAppDesc": {
-    "message": "Temukan fitur Bitwarden lebih melalui aplikasi web."
+    "message": "Temukan fitur Black Mask lebih melalui aplikasi web."
   },
   "continueToHelpCenter": {
     "message": "Lanjutkan ke Pusat Bantuan?"
   },
   "continueToHelpCenterDesc": {
-    "message": "Pelajari lebih lanjut penggunaan Bitwarden di Pusat Bantuan."
+    "message": "Pelajari lebih lanjut penggunaan Black Mask di Pusat Bantuan."
   },
   "continueToBrowserExtensionStore": {
     "message": "Lanjut ke pasar ekstensi peramban?"
   },
   "continueToBrowserExtensionStoreDesc": {
-    "message": "Bantu orang lain menemukan apakah Bitwarden sesuai untuk mereka. Kunjungi toko ekstensi peramban Anda dan tinggalkan sebuah ulasan sekarang."
+    "message": "Bantu orang lain menemukan apakah Black Mask sesuai untuk mereka. Kunjungi toko ekstensi peramban Anda dan tinggalkan sebuah ulasan sekarang."
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Anda dapat merubah sandi utama di aplikasi Bitwarden web."
+    "message": "Anda dapat merubah sandi utama di aplikasi Black Mask web."
   },
   "fingerprintPhrase": {
     "message": "Frasa Sidik Jari",
@@ -348,32 +348,32 @@
   "logOut": {
     "message": "Keluar"
   },
-  "aboutBitwarden": {
-    "message": "Tentang Bitwarden"
+  "aboutBlack Mask": {
+    "message": "Tentang Black Mask"
   },
   "about": {
     "message": "Tentang"
   },
-  "moreFromBitwarden": {
-    "message": "Selebihnya dari Bitwarden"
+  "moreFromBlack Mask": {
+    "message": "Selebihnya dari Black Mask"
   },
-  "continueToBitwardenDotCom": {
+  "continueToBlack MaskDotCom": {
     "message": "Lanjutkan ke bitwarden.com?"
   },
   "bitwardenForBusiness": {
-    "message": "Bitwarden untuk Bisnis"
+    "message": "Black Mask untuk Bisnis"
   },
   "bitwardenAuthenticator": {
-    "message": "Pengotentikasi Bitwarden"
+    "message": "Pengotentikasi Black Mask"
   },
   "continueToAuthenticatorPageDesc": {
-    "message": "Pengotentikasi Bitwarden membolehkan Anda untuk menyimpan kunci pengotentikasi dan menghasilkan kode TOTP untuk alur verifikasi dua-langkah. Pelajari lebih lanjut di situs web bitwarden.com"
+    "message": "Pengotentikasi Black Mask membolehkan Anda untuk menyimpan kunci pengotentikasi dan menghasilkan kode TOTP untuk alur verifikasi dua-langkah. Pelajari lebih lanjut di situs web bitwarden.com"
   },
   "bitwardenSecretsManager": {
-    "message": "Pengelola Rahasia Bitwarden"
+    "message": "Pengelola Rahasia Black Mask"
   },
   "continueToSecretsManagerPageDesc": {
-    "message": "Simpan, kelola, dan bagikan secara aman rahasia pengembang dengan Pengelola Rahasia Bitwarden. Pelajari lebih lanjut di situs web bitwarden.com."
+    "message": "Simpan, kelola, dan bagikan secara aman rahasia pengembang dengan Pengelola Rahasia Black Mask. Pelajari lebih lanjut di situs web bitwarden.com."
   },
   "passwordlessDotDev": {
     "message": "Passwordless.dev"
@@ -381,11 +381,11 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Buat pengalaman masuk yang lancar dan aman dari kata sandi tradisional dengan Passwordless.dev. Pelajari lebih lanjut di situs web bitwarden.com."
   },
-  "freeBitwardenFamilies": {
-    "message": "Bitwarden Keluarga Gratis"
+  "freeBlack MaskFamilies": {
+    "message": "Black Mask Keluarga Gratis"
   },
-  "freeBitwardenFamiliesPageDesc": {
-    "message": "Anda berhak untuk Bitwarden Keluarga Gratis. Tukarkan penawaran ini hari ini di aplikasi web."
+  "freeBlack MaskFamiliesPageDesc": {
+    "message": "Anda berhak untuk Black Mask Keluarga Gratis. Tukarkan penawaran ini hari ini di aplikasi web."
   },
   "version": {
     "message": "Versi"
@@ -448,13 +448,13 @@
     "message": "Bantuan & Umpan Balik"
   },
   "helpCenter": {
-    "message": "Pusat Bantuan Bitwarden"
+    "message": "Pusat Bantuan Black Mask"
   },
   "communityForums": {
-    "message": "Telusuri forum Bitwarden"
+    "message": "Telusuri forum Black Mask"
   },
   "contactSupport": {
-    "message": "Kontak dukungan Bitwarden"
+    "message": "Kontak dukungan Black Mask"
   },
   "sync": {
     "message": "Sinkronisasi"
@@ -476,7 +476,7 @@
     "message": "Secara otomatis membuat sandi yang kuat dan unik untuk info masuk Anda."
   },
   "bitWebVaultApp": {
-    "message": "Aplikasi web Bitwarden"
+    "message": "Aplikasi web Black Mask"
   },
   "select": {
     "message": "Pilih"
@@ -738,8 +738,8 @@
     "message": "Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
-    "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
+    "message": "Black Mask support",
+    "description": "Link text following the troubleshooting description sentence. 'Black Mask' should not be translated."
   },
   "download": {
     "message": "Download"
@@ -955,10 +955,10 @@
     "message": "Buat verifikasi dua-langkah lancar"
   },
   "totpHelper": {
-    "message": "Bitwarden dapat menyimpan dan mengisikan kode verifikasi dua-langkah. Salin dan tempel kunci ke kolom ini."
+    "message": "Black Mask dapat menyimpan dan mengisikan kode verifikasi dua-langkah. Salin dan tempel kunci ke kolom ini."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden dapat menyimpan dan mengisikan kode verifikasi dua-langkah. Pilih ikon kamera untuk mengambil tangkapan layar dari kode QR otentikasi dari situs web ini, atau salin dan tempel kunci ke kolom ini."
+    "message": "Black Mask dapat menyimpan dan mengisikan kode verifikasi dua-langkah. Pilih ikon kamera untuk mengambil tangkapan layar dari kode QR otentikasi dari situs web ini, atau salin dan tempel kunci ke kolom ini."
   },
   "learnMoreAboutAuthenticators": {
     "message": "Pelajari lebih lanjut tentang pengotentikasi"
@@ -978,8 +978,8 @@
   "logIn": {
     "message": "Masuk"
   },
-  "logInToBitwarden": {
-    "message": "Masuk ke Bitwarden"
+  "logInToBlack Mask": {
+    "message": "Masuk ke Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Masukkan kode yang dikirim ke surel Anda"
@@ -1042,7 +1042,7 @@
     "message": "Info masuk dua langkah membuat akun Anda lebih aman dengan mengharuskan Anda memverifikasi info masuk Anda dengan peranti lain seperti kode keamanan, aplikasi autentikasi, SMK, panggilan telepon, atau email. Info masuk dua langkah dapat diaktifkan di brankas web bitwarden.com. Anda ingin mengunjungi situs web sekarang?"
   },
   "twoStepLoginConfirmationContent": {
-    "message": "Buat akun Anda lebih aman dengan mengatur masuk dua-langkah pada aplikasi web Bitwarden."
+    "message": "Buat akun Anda lebih aman dengan mengatur masuk dua-langkah pada aplikasi web Black Mask."
   },
   "twoStepLoginConfirmationTitle": {
     "message": "Lanjutkan ke aplikasi web?"
@@ -1194,7 +1194,7 @@
     "message": "Jump to setting"
   },
   "notificationAddDesc": {
-    "message": "Haruskah Bitwarden mengingat sandi ini untuk Anda?"
+    "message": "Haruskah Black Mask mengingat sandi ini untuk Anda?"
   },
   "notificationAddSave": {
     "message": "Iya, Simpan Sekarang"
@@ -1230,11 +1230,11 @@
     }
   },
   "notificationLoginSaveConfirmation": {
-    "message": "telah disimpan ke Bitwarden.",
+    "message": "telah disimpan ke Black Mask.",
     "description": "Shown to user after item is saved."
   },
   "notificationLoginUpdatedConfirmation": {
-    "message": "telah diperbarui di Bitwarden.",
+    "message": "telah diperbarui di Black Mask.",
     "description": "Shown to user after item is updated."
   },
   "selectItemAriaLabel": {
@@ -1332,13 +1332,13 @@
     "message": "Tanyakan untuk menyimpan kunci sandi baru atau masuk dengan kunci sandi yang tersimpan di brankas Anda. Diterapkan ke semua akun yang telah masuk."
   },
   "notificationChangeDesc": {
-    "message": "Apakah Anda ingin memperbarui kata sandi ini di Bitwarden?"
+    "message": "Apakah Anda ingin memperbarui kata sandi ini di Black Mask?"
   },
   "notificationChangeSave": {
     "message": "Iya, Perbarui Sekarang"
   },
   "notificationUnlockDesc": {
-    "message": "Buka brankan Bitwarden Anda untuk melengkapi permintaan isi otomatis."
+    "message": "Buka brankan Black Mask Anda untuk melengkapi permintaan isi otomatis."
   },
   "notificationUnlock": {
     "message": "Buka"
@@ -1423,10 +1423,10 @@
     "message": "Kata sandi ini akan digunakan untuk mengekspor dan mengimpor berkas ini"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Gunakan kunci enkripsi akun Anda, diturunkan dari nama pengguna akun Anda dan kata sandi utama, untuk mengenkripsi ekspor dan membatasi impor menjadi hanya akun Bitwarden saat ini."
+    "message": "Gunakan kunci enkripsi akun Anda, diturunkan dari nama pengguna akun Anda dan kata sandi utama, untuk mengenkripsi ekspor dan membatasi impor menjadi hanya akun Black Mask saat ini."
   },
   "passwordProtectedOptionDescription": {
-    "message": "Atur kata sandi berkas untuk mengenkripsi ekspor dan mengimpornya ke sebarang akun Bitwarden menggunakan kata sandi untuk dekripsi."
+    "message": "Atur kata sandi berkas untuk mengenkripsi ekspor dan mengimpornya ke sebarang akun Black Mask menggunakan kata sandi untuk dekripsi."
   },
   "exportTypeHeading": {
     "message": "Jenis ekspor"
@@ -1455,7 +1455,7 @@
     "message": "Ekspor ini mengenkripsi data Anda menggunakan kunci enkripsi akun Anda. Jika Anda pernah merotasi kunci enkripsi akun Anda, Anda harus mengekspor lagi karena Anda tidak akan dapat mendekripsi file ekspor ini."
   },
   "encExportAccountWarningDesc": {
-    "message": "Kunci enkripsi akun unik untuk setiap akun pengguna Bitwarden, jadi Anda tidak dapat mengimpor ekspor terenkripsi ke akun lain."
+    "message": "Kunci enkripsi akun unik untuk setiap akun pengguna Black Mask, jadi Anda tidak dapat mengimpor ekspor terenkripsi ke akun lain."
   },
   "exportMasterPassword": {
     "message": "Masukkan sandi utama Anda untuk mengekspor data brankas Anda."
@@ -1464,7 +1464,7 @@
     "message": "Dibagikan"
   },
   "bitwardenForBusinessPageDesc": {
-    "message": "Bitwarden untuk Bisnis membolehkan Anda untuk membagikan benda-benda di brankas Anda dengan orang lain dengan menggunakan sebuah organisasi. Pelajari lebih lanjut pada situs web bitwarden.com."
+    "message": "Black Mask untuk Bisnis membolehkan Anda untuk membagikan benda-benda di brankas Anda dengan orang lain dengan menggunakan sebuah organisasi. Pelajari lebih lanjut pada situs web bitwarden.com."
   },
   "moveToOrganization": {
     "message": "Pindah ke Organisasi"
@@ -1630,13 +1630,13 @@
     "message": "Beli Keanggotaan Premium"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Anda dapat membeli Premium dari pilihan akun Anda pada aplikasi web Bitwarden."
+    "message": "Anda dapat membeli Premium dari pilihan akun Anda pada aplikasi web Black Mask."
   },
   "premiumCurrentMember": {
     "message": "Anda adalah anggota premium!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Terima kasih telah mendukung Bitwarden."
+    "message": "Terima kasih telah mendukung Black Mask."
   },
   "premiumFeatures": {
     "message": "Tingkatkan ke Premium dan dapatkan:"
@@ -1742,7 +1742,7 @@
     "message": "Aplikasi Otentikasi"
   },
   "authenticatorAppDescV2": {
-    "message": "Masukkan kode yang dihasilkan dari aplikasi pengotentikasi seperti Pengotentikasi Bitwarden.",
+    "message": "Masukkan kode yang dihasilkan dari aplikasi pengotentikasi seperti Pengotentikasi Black Mask.",
     "description": "'Bitwarden Authenticator' is a product name and should not be translated."
   },
   "yubiKeyTitleV2": {
@@ -1775,7 +1775,7 @@
     "message": "Lingkungan Penyedia Personal"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Tentukan URL dasar dari pemasangan Bitwarden di server Anda. Contoh: https://bitwarden.company.com"
+    "message": "Tentukan URL dasar dari pemasangan Black Mask di server Anda. Contoh: https://bitwarden.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Untuk pengaturan tingkat lanjut, Anda dapat menentukan URL dasar dari setiap layanan secara terpisah."
@@ -1828,7 +1828,7 @@
     "message": "Temukan saran isi otomatis dengan mudah"
   },
   "autofillSpotlightDesc": {
-    "message": "Matikan pengaturan isi otomatis peramban Anda, sehingga tidak bertentangan dengan Bitwarden."
+    "message": "Matikan pengaturan isi otomatis peramban Anda, sehingga tidak bertentangan dengan Black Mask."
   },
   "turnOffBrowserAutofill": {
     "message": "Matikan isi otomatis $BROWSER$",
@@ -1884,8 +1884,8 @@
   "showInlineMenuLabel": {
     "message": "Tampilkan saran isi otomatis pada kolom formulir"
   },
-  "howDoesBitwardenProtectFromPhishing": {
-    "message": "How does Bitwarden protect your data from phishing?"
+  "howDoesBlack MaskProtectFromPhishing": {
+    "message": "How does Black Mask protect your data from phishing?"
   },
   "currentWebsite": {
     "message": "Current website"
@@ -2647,7 +2647,7 @@
     "message": "Kata Sandi Utama Lemah"
   },
   "weakMasterPasswordDesc": {
-    "message": "Kata sandi utama yang Anda pilih itu lemah. Anda harus menggunakan kata sandi yang kuat (atau frasa sandi) untuk melindungi akun Bitwarden Anda. Apakah Anda yakin ingin menggunakan kata sandi ini?"
+    "message": "Kata sandi utama yang Anda pilih itu lemah. Anda harus menggunakan kata sandi yang kuat (atau frasa sandi) untuk melindungi akun Black Mask Anda. Apakah Anda yakin ingin menggunakan kata sandi ini?"
   },
   "rotateAccountEncKey": {
     "message": "Also rotate my account's encryption key"
@@ -2659,7 +2659,7 @@
     "message": "Are you sure you want to rotate your account's encryption key?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "After updating your encryption key, you are required to log out and back in to all Bitwarden applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
+    "message": "After updating your encryption key, you are required to log out and back in to all Black Mask applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Any account restricted exports you have saved will become invalid."
@@ -2687,10 +2687,10 @@
     "message": "Atur PIN"
   },
   "setYourPinCode": {
-    "message": "Setel kode PIN Anda untuk membuka kunci Bitwarden. Pengaturan PIN Anda akan diatur ulang jika Anda pernah keluar sepenuhnya dari aplikasi."
+    "message": "Setel kode PIN Anda untuk membuka kunci Black Mask. Pengaturan PIN Anda akan diatur ulang jika Anda pernah keluar sepenuhnya dari aplikasi."
   },
   "setPinCode": {
-    "message": "Anda dapat menggunakan PIN ini untuk membuka Bitwarden. PIN Anda akan diatur ulang jika Anda keluar dari semua sesi aplikasi."
+    "message": "Anda dapat menggunakan PIN ini untuk membuka Black Mask. PIN Anda akan diatur ulang jika Anda keluar dari semua sesi aplikasi."
   },
   "pinRequired": {
     "message": "Membutuhkan kode PIN."
@@ -2711,7 +2711,7 @@
     "message": "Menunggu konfirmasi dari desktop"
   },
   "awaitDesktopDesc": {
-    "message": "Silakan konfirmasi menggunakan biometrik di aplikasi Bitwarden Desktop untuk mengaktifkan biometrik untuk peramban."
+    "message": "Silakan konfirmasi menggunakan biometrik di aplikasi Black Mask Desktop untuk mengaktifkan biometrik untuk peramban."
   },
   "lockWithMasterPassOnRestart": {
     "message": "Kunci dengan kata sandi utama saat peramban dimulai ulang"
@@ -2826,7 +2826,7 @@
     "message": "Formulir dihosting oleh domain yang berbeda dari URI login yang telah Anda simpan. Pilih OK untuk tetap mengisi otomatis, atau Batalkan untuk menghentikan."
   },
   "autofillIframeWarningTip": {
-    "message": "Untuk mencegah peringatan ini di masa depan, simpan URI ini, $HOSTNAME$, ke benda login Bitwarden untuk situs ini.",
+    "message": "Untuk mencegah peringatan ini di masa depan, simpan URI ini, $HOSTNAME$, ke benda login Black Mask untuk situs ini.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -2835,7 +2835,7 @@
     }
   },
   "topLayerHijackWarning": {
-    "message": "This page is interfering with the Bitwarden experience. The Bitwarden inline menu has been temporarily disabled as a safety measure."
+    "message": "This page is interfering with the Black Mask experience. The Black Mask inline menu has been temporarily disabled as a safety measure."
   },
   "setMasterPassword": {
     "message": "Atur Kata Sandi Utama"
@@ -2892,7 +2892,7 @@
     "message": "Kata sandi utama Anda yang baru tidak memenuhi persyaratan kebijakan."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Dapatkan saran, pengumuman, dan kesempatan penelitian dari Bitwarden di kotak masuk Anda."
+    "message": "Dapatkan saran, pengumuman, dan kesempatan penelitian dari Black Mask di kotak masuk Anda."
   },
   "unsubscribe": {
     "message": "Berhenti berlangganan"
@@ -2943,13 +2943,13 @@
     "message": "Integrasi peramban tidak diaktifkan"
   },
   "desktopIntegrationDisabledDesc": {
-    "message": "Integrasi peramban tidak diaktifkan di aplikasi Desktop Bitwarden. Silakan aktifkan di pengaturan di dalam aplikasi desktop."
+    "message": "Integrasi peramban tidak diaktifkan di aplikasi Desktop Black Mask. Silakan aktifkan di pengaturan di dalam aplikasi desktop."
   },
   "startDesktopTitle": {
-    "message": "Jalankan aplikasi Desktop Bitwarden"
+    "message": "Jalankan aplikasi Desktop Black Mask"
   },
   "startDesktopDesc": {
-    "message": "Aplikasi Desktop Bitwarden harus dijalankan sebelum fungsi ini bisa digunakan."
+    "message": "Aplikasi Desktop Black Mask harus dijalankan sebelum fungsi ini bisa digunakan."
   },
   "errorEnableBiometricTitle": {
     "message": "Tidak bisa mengaktifkan biometrik"
@@ -3003,7 +3003,7 @@
     "message": "Biometrik gagal"
   },
   "biometricsFailedDesc": {
-    "message": "Biometrik tidak dapat diselesaikan, pertimbangkan untuk menggunakan sebuah kata sandi utama atau keluar. Jika hal ini tetap berlangsung, mohon hubungi dukungan Bitwarden."
+    "message": "Biometrik tidak dapat diselesaikan, pertimbangkan untuk menggunakan sebuah kata sandi utama atau keluar. Jika hal ini tetap berlangsung, mohon hubungi dukungan Black Mask."
   },
   "personalOwnershipSubmitError": {
     "message": "Karena Kebijakan Perusahaan, Anda dilarang menyimpan item ke brankas personal Anda. Ubah opsi Kepemilikan ke organisasi dan pilih dari Koleksi yang tersedia."
@@ -3034,7 +3034,7 @@
     "message": "Domain yang Dikecualikan"
   },
   "excludedDomainsDesc": {
-    "message": "Bitwarden tidak akan meminta untuk menyimpan detail login untuk domain ini. Anda harus menyegarkan halaman agar perubahan diterapkan."
+    "message": "Black Mask tidak akan meminta untuk menyimpan detail login untuk domain ini. Anda harus menyegarkan halaman agar perubahan diterapkan."
   },
   "blockedDomainsDesc": {
     "message": "Isi otomatis dan fitur terkait lain tidak akan ditawarkan bagi situs-situs web ini. Anda mesti menyegarkan halaman agar perubahan berdampak."
@@ -3150,24 +3150,24 @@
     "message": "Gambaran daftar info masuk yang berpotensi bahaya."
   },
   "welcomeDialogGraphicAlt": {
-    "message": "Illustration of the layout of the Bitwarden vault page."
+    "message": "Illustration of the layout of the Black Mask vault page."
   },
   "generatePasswordSlideDesc": {
-    "message": "Hasilkan kata sandi yang kuat dan unik dengan cepat dengan menu isi otomatis Bitwarden pada situs yang berpotensi bahaya.",
+    "message": "Hasilkan kata sandi yang kuat dan unik dengan cepat dengan menu isi otomatis Black Mask pada situs yang berpotensi bahaya.",
     "description": "Description of the generate password slide on the at-risk password page carousel"
   },
   "generatePasswordSlideImgAltPeriod": {
-    "message": "Gambaran dari menu isi otomatis Bitwarden yang menampilkan kata sandi yang dihasilkan."
+    "message": "Gambaran dari menu isi otomatis Black Mask yang menampilkan kata sandi yang dihasilkan."
   },
-  "updateInBitwarden": {
-    "message": "Perbarui di Bitwarden"
+  "updateInBlack Mask": {
+    "message": "Perbarui di Black Mask"
   },
-  "updateInBitwardenSlideDesc": {
-    "message": "Bitwarden akan meminta Anda untuk memperbarui kata sandi di pengelola sandi.",
-    "description": "Description of the update in Bitwarden slide on the at-risk password page carousel"
+  "updateInBlack MaskSlideDesc": {
+    "message": "Black Mask akan meminta Anda untuk memperbarui kata sandi di pengelola sandi.",
+    "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBitwardenSlideImgAltPeriod": {
-    "message": "Gambaran dari pemberitahuan Bitwarden yang meminta pengguna untuk memperbarui info masuk."
+  "updateInBlack MaskSlideImgAltPeriod": {
+    "message": "Gambaran dari pemberitahuan Black Mask yang meminta pengguna untuk memperbarui info masuk."
   },
   "turnOnAutofill": {
     "message": "Nyalakan isi otomatis"
@@ -3221,11 +3221,11 @@
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDetails": {
     "message": "Rincian Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendTypeText": {
     "message": "Teks"
@@ -3238,7 +3238,7 @@
   },
   "allSends": {
     "message": "Semua Sends",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "maxAccessCountReached": {
     "message": "Jumlah akses maksimum tercapai",
@@ -3258,7 +3258,7 @@
   },
   "copySendLink": {
     "message": "Salin tautan Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Hapus Kata Sandi"
@@ -3271,11 +3271,11 @@
   },
   "deletedSend": {
     "message": "Send Dihapus",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendLink": {
     "message": "Tautan Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "disabled": {
     "message": "Dinonaktifkan"
@@ -3285,26 +3285,26 @@
   },
   "deleteSend": {
     "message": "Hapus Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Anda yakin ingin menghapus Send ini?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendPermanentConfirmation": {
     "message": "Apakah Anda yakin ingin menghapus Send ini selamanya?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editSend": {
     "message": "Edit Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Tanggal Penghapusan"
   },
   "deletionDateDescV2": {
     "message": "Send akan dihapus selamanya pada tanggal ini.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Tanggal habis tempo"
@@ -3326,34 +3326,34 @@
   },
   "createSend": {
     "message": "Buat Send Baru",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "newPassword": {
     "message": "Kata Sandi baru"
   },
   "sendDisabled": {
     "message": "Send Dinonaktifkan",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Karena kebijakan perusahaan, Anda hanya dapat menghapus Send yang sudah ada.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send Dibuat ",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSendSuccessfully": {
     "message": "Send berhasil dibuat!",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHoursSingle": {
     "message": "Send akan tersedia ke setiap orang yang memiliki tautan untuk 1 jam ke depan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHours": {
     "message": "Send akan tersedia ke setiap orang yang memiliki tautan untuk $HOURS$ jam ke depan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -3363,11 +3363,11 @@
   },
   "sendExpiresInDaysSingle": {
     "message": "Send akan tersedia ke setiap orang yang memiliki tautan untuk 1 hari ke depan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInDays": {
     "message": "Send akan tersedia ke setiap orang yang memiliki tautan untuk $DAYS$ hari ke depan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "days": {
         "content": "$1",
@@ -3386,7 +3386,7 @@
   },
   "sendCreatedDescriptionV2": {
     "message": "Copy and share this Send link. The Send will be available to anyone with the link for the next $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3396,7 +3396,7 @@
   },
   "sendCreatedDescriptionPassword": {
     "message": "Copy and share this Send link. The Send will be available to anyone with the link and password you set for the next $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3406,7 +3406,7 @@
   },
   "sendCreatedDescriptionEmail": {
     "message": "Copy and share this Send link. It can be viewed by the people you specified for the next $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3416,11 +3416,11 @@
   },
   "sendLinkCopied": {
     "message": "Tautan Send disalin",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send diedit",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "popOut": {
     "message": "Sembulkan"
@@ -3678,7 +3678,7 @@
     "message": "Error getting autofill data"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden tidak bisa mendekripsi butir brankas yang tercantum di bawah."
+    "message": "Black Mask tidak bisa mendekripsi butir brankas yang tercantum di bawah."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Hubungi layanan pelanggan",
@@ -3782,11 +3782,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Dibuat oleh Bitwarden.",
+    "message": "Dibuat oleh Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Situs web: $WEBSITE$. Dibuat oleh Bitwarden.",
+    "message": "Situs web: $WEBSITE$. Dibuat oleh Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3979,7 +3979,7 @@
     "message": "Sebuah pemberitahuan dikirim ke perangkat Anda."
   },
   "notificationSentDevicePart1": {
-    "message": "Buka kunci Bitwarden pada perangkat Anda atau pada"
+    "message": "Buka kunci Black Mask pada perangkat Anda atau pada"
   },
   "notificationSentDeviceAnchor": {
     "message": "aplikasi web"
@@ -4337,11 +4337,11 @@
   },
   "sendsTitleNoItems": {
     "message": "Kirim informasi sensitif dengan aman",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendsBodyNoItems": {
     "message": "Bagikan berkas-berkas dan data secara aman dengan siapa saja, pada platform apa pun. Informasi Anda akan tetap terenkripsi dari ujung ke ujung sembari membatasi paparan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "inputRequired": {
     "message": "Masukan ini harus diisi."
@@ -4479,15 +4479,15 @@
     "message": "Loncat ke konten"
   },
   "bitwardenOverlayButton": {
-    "message": "Tombol menu isi otomatis Bitwarden",
+    "message": "Tombol menu isi otomatis Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBitwardenVaultOverlay": {
-    "message": "Saklar menu isi otomatis Bitwarden",
+  "toggleBlack MaskVaultOverlay": {
+    "message": "Saklar menu isi otomatis Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
   "bitwardenVault": {
-    "message": "Menu isi otomatis Bitwarden",
+    "message": "Menu isi otomatis Black Mask",
     "description": "Page title in overlay"
   },
   "unlockYourAccountToViewMatchingLogins": {
@@ -4559,7 +4559,7 @@
     "description": "Screen reader text (aria-label) for new identity button within inline menu"
   },
   "bitwardenOverlayMenuAvailable": {
-    "message": "Menu isi otomatis Bitwarden tersedia. Tekan tombol panah ke bawah untuk memilih.",
+    "message": "Menu isi otomatis Black Mask tersedia. Tekan tombol panah ke bawah untuk memilih.",
     "description": "Screen reader text for announcing when the overlay opens on the page"
   },
   "turnOn": {
@@ -4889,7 +4889,7 @@
     "message": "Akun aktif"
   },
   "bitwardenAccount": {
-    "message": "Akun Bitwarden"
+    "message": "Akun Black Mask"
   },
   "availableAccounts": {
     "message": "Akun yang tersedia"
@@ -4935,8 +4935,8 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "Bitwarden mengenali saran isi otomatis menggunakan deteksi kecocokan URI.",
-    "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
+    "message": "Black Mask mengenali saran isi otomatis menggunakan deteksi kecocokan URI.",
+    "description": "Explains to the user that URI match detection determines how Black Mask suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
     "message": "\"Ekspresi regular\" adalah opsi lanjutan dengan risiko lebih besar untuk menyingkapkan identitas anda.",
@@ -4979,23 +4979,23 @@
     "description": "Body content for dialog which asks if the user wants to proceed to the browser's keyboard shortcut settings page"
   },
   "overrideDefaultBrowserAutofillTitle": {
-    "message": "Jadikan Bitwarden sebagai pengelola kata sandi bawaan Anda?",
+    "message": "Jadikan Black Mask sebagai pengelola kata sandi bawaan Anda?",
     "description": "Dialog title facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutofillDescription": {
-    "message": "Mengabaikan pilihan ini dapat mengakibatkan perseteruan antara saran isi otomatis Bitwarden dengan peramban Anda.",
+    "message": "Mengabaikan pilihan ini dapat mengakibatkan perseteruan antara saran isi otomatis Black Mask dengan peramban Anda.",
     "description": "Dialog message facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutoFillSettings": {
-    "message": "Jadikan Bitwarden sebagai pengelola kata sandi bawaan Anda",
+    "message": "Jadikan Black Mask sebagai pengelola kata sandi bawaan Anda",
     "description": "Label for the setting that allows overriding the default browser autofill settings"
   },
   "privacyPermissionAdditionNotGrantedTitle": {
-    "message": "Tidak dapat mengatur Bitwarden sebagai pengelola kata sandi bawaan",
+    "message": "Tidak dapat mengatur Black Mask sebagai pengelola kata sandi bawaan",
     "description": "Title for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "privacyPermissionAdditionNotGrantedDescription": {
-    "message": "Anda harus mengizinkan perizinan privasi peramban kepada Bitwarden untuk mengaturnya sebagai pengelola kata sandi bawaan.",
+    "message": "Anda harus mengizinkan perizinan privasi peramban kepada Black Mask untuk mengaturnya sebagai pengelola kata sandi bawaan.",
     "description": "Description for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "makeDefault": {
@@ -5339,17 +5339,17 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBitwarden": {
-    "message": "Unduh Bitwarden"
+  "downloadBlack Mask": {
+    "message": "Unduh Black Mask"
   },
-  "downloadBitwardenOnAllDevices": {
-    "message": "Unduh Bitwarden"
+  "downloadBlack MaskOnAllDevices": {
+    "message": "Unduh Black Mask"
   },
   "getTheMobileApp": {
     "message": "Dapatkan aplikasi ponsel"
   },
   "getTheMobileAppDesc": {
-    "message": "Akses kata sandi Anda di perjalanan dengan aplikasi ponsel Bitwarden."
+    "message": "Akses kata sandi Anda di perjalanan dengan aplikasi ponsel Black Mask."
   },
   "getTheDesktopApp": {
     "message": "Dapatkan aplikasi desktop"
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Akses brankas Anda tanpa sebuah peramban, kemudian atur buka dengan biometrik untuk mempercepat membuka di aplikasi desktop dan ekstensi peramban."
   },
-  "downloadFromBitwardenNow": {
+  "downloadFromBlack MaskNow": {
     "message": "Unduh dari bitwarden.com sekarang"
   },
   "getItOnGooglePlay": {
@@ -5823,10 +5823,10 @@
     "message": "Buka dengan biometrik tidak tersedia karena pengaturan berkas-berkas sistem yang tidak sesuai."
   },
   "biometricsStatusHelptextDesktopDisconnected": {
-    "message": "Buka dengan biometrik tidak tersedia karena aplikasi destop Bitwarden tertutup."
+    "message": "Buka dengan biometrik tidak tersedia karena aplikasi destop Black Mask tertutup."
   },
   "biometricsStatusHelptextNotEnabledInDesktop": {
-    "message": "Buka dengan biometrik tidak tersedia karena tidak dinyalakan untuk $EMAIL$ pada aplikasi destop Bitwarden.",
+    "message": "Buka dengan biometrik tidak tersedia karena tidak dinyalakan untuk $EMAIL$ pada aplikasi destop Black Mask.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -5860,9 +5860,9 @@
     "message": "Kata sandi dibuat ulang",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBitwarden": {
-    "message": "Simpan ke Bitwarden",
-    "description": "Confirmation message for saving a login to Bitwarden"
+  "saveToBlack Mask": {
+    "message": "Simpan ke Black Mask",
+    "description": "Confirmation message for saving a login to Black Mask"
   },
   "spaceCharacterDescriptor": {
     "message": "Spasi",
@@ -6087,13 +6087,13 @@
     "message": "Brankas melindungi lebih dari kata sandi Anda. Simpan login aman, pengenal, kartu dan catatan secara aman di sini."
   },
   "introCarouselLabel": {
-    "message": "Selamat datang ke Bitwarden"
+    "message": "Selamat datang ke Black Mask"
   },
   "securityPrioritized": {
     "message": "Keamanan, diutamakan"
   },
   "securityPrioritizedBody": {
-    "message": "Simpan login, kartu, dan pengenal ke brankas aman Anda. Bitwarden menggunakan ketidaktahuan, enkripsi dari ujung-ke-ujung untuk melindungi apa yang penting bagi Anda."
+    "message": "Simpan login, kartu, dan pengenal ke brankas aman Anda. Black Mask menggunakan ketidaktahuan, enkripsi dari ujung-ke-ujung untuk melindungi apa yang penting bagi Anda."
   },
   "quickLogin": {
     "message": "Masuk dengan cepat dan mudah"
@@ -6111,7 +6111,7 @@
     "message": "Data Anda, kapanpun dan dimanapun Anda membutuhkannya"
   },
   "secureDevicesBody": {
-    "message": "Simpan kata sandi tak terbatas lintas perangkat tak terbatas dengan Bitwarden untuk ponsel, peramban, dan aplikasi destop."
+    "message": "Simpan kata sandi tak terbatas lintas perangkat tak terbatas dengan Black Mask untuk ponsel, peramban, dan aplikasi destop."
   },
   "nudgeBadgeAria": {
     "message": "1 pemberitahuan"
@@ -6120,7 +6120,7 @@
     "message": "Impor kata sandi yang sudah ada"
   },
   "emptyVaultNudgeBody": {
-    "message": "Gunakan pengimpor untuk memindakan login dengan cepat ke Bitwarden tanpa menambahkannya secara manual."
+    "message": "Gunakan pengimpor untuk memindakan login dengan cepat ke Black Mask tanpa menambahkannya secara manual."
   },
   "emptyVaultNudgeButton": {
     "message": "Impor sekarang"
@@ -6156,7 +6156,7 @@
     "placeholders": {
       "product": {
         "content": "$1",
-        "example": "Bitwarden Phishing Blocker"
+        "example": "Black Mask Phishing Blocker"
       }
     }
   },
@@ -6239,13 +6239,13 @@
     "message": "About this setting"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
+    "message": "Black Mask will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
   },
   "noPermissionsViewPage": {
     "message": "Anda tidak memiliki izin untuk melihat halaman ini. Coba masuk dengan akun yang berbeda."
   },
   "wasmNotSupported": {
-    "message": "WebAssembly tidak didukung atau tidak dinyalakan oleh peramban Anda. Web Assembly diperlukan untuk menggunakan aplikasi Bitwarden.",
+    "message": "WebAssembly tidak didukung atau tidak dinyalakan oleh peramban Anda. Web Assembly diperlukan untuk menggunakan aplikasi Black Mask.",
     "description": "'WebAssembly' is a technical term and should not be translated."
   },
   "showMore": {
@@ -6324,7 +6324,7 @@
     "message": "Error: Cannot decrypt"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Your organization is no longer using master passwords to log into Bitwarden. To continue, verify the organization and domain."
+    "message": "Your organization is no longer using master passwords to log into Black Mask. To continue, verify the organization and domain."
   },
   "continueWithLogIn": {
     "message": "Continue with log in"
@@ -6410,7 +6410,7 @@
     "message": "Set an unlock method to change your timeout action"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Managed by the Bitwarden desktop app. Open the desktop app to edit."
+    "message": "Managed by the Black Mask desktop app. Open the desktop app to edit."
   },
   "percentageCompleted": {
     "message": "$PERCENT$% complete",
@@ -6511,15 +6511,15 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBitwardenApps": {
-    "message": "Download Bitwarden apps"
+  "downloadBlack MaskApps": {
+    "message": "Download Black Mask apps"
   },
   "emailProtected": {
     "message": "Email protected"
   },
   "sendPasswordHelperText": {
     "message": "Individuals will need to enter the password to view this Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "userVerificationFailed": {
     "message": "User verification failed."
@@ -6528,13 +6528,13 @@
     "message": "Shared unlock"
   },
   "sharedUnlockDescription": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
   },
   "sharedUnlockDescriptionSafari": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with Bitwarden web vaults in Safari."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with Black Mask web vaults in Safari."
   },
   "sharedUnlockDescriptionFirefox": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with the Bitwarden desktop app."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with the Black Mask desktop app."
   },
   "enterMonth": {
     "message": "Enter month."
@@ -6657,7 +6657,7 @@
   },
   "sendCreated": {
     "message": "Send created",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "numericInputError": {
     "message": "Input must be numeric"

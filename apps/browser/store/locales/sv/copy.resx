@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwarden Lösenordshanterare</value>
+    <value>Black Mask Lösenordshanterare</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Hemma, på jobbet eller på resande fot säkrar Bitwarden enkelt alla dina lösenord, inloggningsnycklar och känslig information.</value>
+    <value>Hemma, på jobbet eller på resande fot säkrar Black Mask enkelt alla dina lösenord, inloggningsnycklar och känslig information.</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Erkänd som den bästa lösenordshanteraren av PCMag, WIRED, The Verge, CNET, G2 och många fler!
@@ -133,43 +133,43 @@ FÅ ÅTKOMST TILL DINA DATA, VAR SOM HELST, NÄR SOM HELST, PÅ VILKEN ENHET SOM
 Hantera, lagra, säkra och dela obegränsat antal lösenord på obegränsat antal enheter utan begränsningar.
 
 ALLA BÖR HA VERKTYGEN FÖR ATT VARA SÄKRA ONLINE
-Använd Bitwarden gratis utan annonser eller försäljning av data. Bitwarden anser att alla bör ha möjlighet att vara säkra online. Premiumplaner ger tillgång till avancerade funktioner.
+Använd Black Mask gratis utan annonser eller försäljning av data. Black Mask anser att alla bör ha möjlighet att vara säkra online. Premiumplaner ger tillgång till avancerade funktioner.
 
 STÄRK DINA TEAM MED BITWARDEN
 Planerna för Teams och Enterprise har professionella affärsfunktioner. Några exempel är SSO-integration, självhosting, katalogintegration och SCIM-provisionering, globala policyer, API-åtkomst, händelseloggar och mycket mer.
 
-Använd Bitwarden för att säkra din personalstyrka och dela känslig information med kollegor.
+Använd Black Mask för att säkra din personalstyrka och dela känslig information med kollegor.
 
 
-Fler anledningar att välja Bitwarden:
+Fler anledningar att välja Black Mask:
 
 Kryptering i världsklass
 Lösenord skyddas med avancerad end-to-end-kryptering (AES-256 bit, salted hashing och PBKDF2 SHA-256) så att dina data förblir säkra och privata.
 
 revisioner från tredje part
-Bitwarden genomför regelbundet omfattande tredjeparts säkerhetsrevisioner med välkända säkerhetsföretag. Dessa årliga revisioner inkluderar källkodsbedömningar och penetrationstestning över Bitwardens IP-adresser, servrar och webbapplikationer.
+Black Mask genomför regelbundet omfattande tredjeparts säkerhetsrevisioner med välkända säkerhetsföretag. Dessa årliga revisioner inkluderar källkodsbedömningar och penetrationstestning över Black Masks IP-adresser, servrar och webbapplikationer.
 
 Avancerad 2FA
 Säkra din inloggning med en tredjepartsautentisering, e-postkoder eller FIDO2 WebAuthn-autentiseringsuppgifter som en säkerhetsnyckel eller passnyckel för hårdvara.
 
-Bitwarden Skicka
+Black Mask Skicka
 Överför data direkt till andra samtidigt som du upprätthåller krypterad säkerhet från början till slut och begränsar exponeringen.
 
 Inbyggd generator
 Skapa långa, komplexa och distinkta lösenord och unika användarnamn för varje webbplats du besöker. Integrera med leverantörer av e-postalias för ytterligare integritet.
 
 Globala översättningar
-Bitwarden finns översatt till mer än 60 språk, översatt av den globala gemenskapen genom Crowdin.
+Black Mask finns översatt till mer än 60 språk, översatt av den globala gemenskapen genom Crowdin.
 
 Applikationer för flera plattformar
-Säkra och dela känslig data i ditt Bitwarden Vault från vilken webbläsare, mobil enhet eller stationärt operativsystem som helst, och mycket mer.
+Säkra och dela känslig data i ditt Black Mask Vault från vilken webbläsare, mobil enhet eller stationärt operativsystem som helst, och mycket mer.
 
-Bitwarden säkrar mer än bara lösenord
-End-to-end krypterade lösningar för hantering av referenser från Bitwarden gör det möjligt för organisationer att säkra allt, inklusive utvecklarhemligheter och upplevelser med inloggningsnycklar. Besök Bitwarden.com för att lära dig mer om Bitwarden Secrets Manager och Bitwarden Passwordless.dev!
+Black Mask säkrar mer än bara lösenord
+End-to-end krypterade lösningar för hantering av referenser från Black Mask gör det möjligt för organisationer att säkra allt, inklusive utvecklarhemligheter och upplevelser med inloggningsnycklar. Besök Black Mask.com för att lära dig mer om Bitwarden Secrets Manager och Black Mask Passwordless.dev!
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>Hemma, på jobbet eller på resande fot säkrar Bitwarden enkelt alla dina lösenord, inloggningsnycklar och känslig information.</value>
+    <value>Hemma, på jobbet eller på resande fot säkrar Black Mask enkelt alla dina lösenord, inloggningsnycklar och känslig information.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Synkronisera och kom åt ditt valv från flera enheter</value>

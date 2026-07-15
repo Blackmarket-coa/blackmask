@@ -1,12 +1,12 @@
 {
   "appName": {
-    "message": "Битуорден (Bitwarden)"
+    "message": "Битуорден (Black Mask)"
   },
   "appLogoLabel": {
     "message": "Лого на Битуорден"
   },
   "extName": {
-    "message": "Bitwarden — управител на пароли",
+    "message": "Black Mask — управител на пароли",
     "description": "Extension name, MUST be less than 40 characters (Safari restriction)"
   },
   "extDesc": {
@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Създаване на акаунт"
   },
-  "newToBitwarden": {
+  "newToBlack Mask": {
     "message": "За пръв път ли ползвате Битуорден?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Отписване"
   },
-  "aboutBitwarden": {
+  "aboutBlack Mask": {
     "message": "Относно Битуорден"
   },
   "about": {
     "message": "Относно"
   },
-  "moreFromBitwarden": {
+  "moreFromBlack Mask": {
     "message": "Още от Битуорден"
   },
-  "continueToBitwardenDotCom": {
+  "continueToBlack MaskDotCom": {
     "message": "Продължаване към bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Създавайте лесни за ползване, но защитени процеси за вписване без нужда от традиционни пароли с помощта на Passwordless.dev. Научете повече в уеб сайта bitwarden.com."
   },
-  "freeBitwardenFamilies": {
+  "freeBlack MaskFamilies": {
     "message": "Безплатен Битуорден за семейства"
   },
-  "freeBitwardenFamiliesPageDesc": {
+  "freeBlack MaskFamiliesPageDesc": {
     "message": "Може да се активирате Битуорден за семейства безплатно. Възползвайте се от предложението в уеб приложението."
   },
   "version": {
@@ -739,7 +739,7 @@
   },
   "bitwardenSupport": {
     "message": "поддръжката на Битуорден",
-    "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
+    "description": "Link text following the troubleshooting description sentence. 'Black Mask' should not be translated."
   },
   "download": {
     "message": "Сваляне"
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Вписване"
   },
-  "logInToBitwarden": {
+  "logInToBlack Mask": {
     "message": "Впишете се в Битуорден"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1060,7 +1060,7 @@
     "message": "Въведение"
   },
   "gettingStartedTutorialVideo": {
-    "message": "Изгледайте въведението, за да извлечете максимална полза от разширението Bitwarden."
+    "message": "Изгледайте въведението, за да извлечете максимална полза от разширението Black Mask."
   },
   "syncingComplete": {
     "message": "Синхронизацията завърши"
@@ -1332,7 +1332,7 @@
     "message": "Питане за запазване на нови секретни ключове или за вписване чрез секретни ключове, пазени в трезора. Прилага се за всички регистрации, в които сте вписан(а)."
   },
   "notificationChangeDesc": {
-    "message": "Да се обнови ли паролата в Bitwarden?"
+    "message": "Да се обнови ли паролата в Black Mask?"
   },
   "notificationChangeSave": {
     "message": "Осъвременяване"
@@ -1636,7 +1636,7 @@
     "message": "Честито, ползвате платен абонамент!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Благодарим ви за подкрепата на Bitwarden."
+    "message": "Благодарим ви за подкрепата на Black Mask."
   },
   "premiumFeatures": {
     "message": "Преминете към платената версия и ще получите:"
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Показване на предложения за авт. попълване на полетата във формуляри"
   },
-  "howDoesBitwardenProtectFromPhishing": {
+  "howDoesBlack MaskProtectFromPhishing": {
     "message": "Как Битуорден защитава данните Ви от измами?"
   },
   "currentWebsite": {
@@ -2647,7 +2647,7 @@
     "message": "Слаба главна парола"
   },
   "weakMasterPasswordDesc": {
-    "message": "Зададената главна парола е твърде слаба. Главната парола трябва да е силна. Добре е да ползвате цяла фраза за парола, за да защитите данните в трезора в Bitwarden. Уверени ли сте, че искате да ползвате слаба парола?"
+    "message": "Зададената главна парола е твърде слаба. Главната парола трябва да е силна. Добре е да ползвате цяла фраза за парола, за да защитите данните в трезора в Black Mask. Уверени ли сте, че искате да ползвате слаба парола?"
   },
   "rotateAccountEncKey": {
     "message": "Ключът за шифриране на акаунта ми също да се смени"
@@ -2687,7 +2687,7 @@
     "message": "Задаване на ПИН"
   },
   "setYourPinCode": {
-    "message": "Задайте ПИН за отключване на Bitwarden. Настройките за ПИН се изчистват при всяко пълно излизане от програмата."
+    "message": "Задайте ПИН за отключване на Black Mask. Настройките за ПИН се изчистват при всяко пълно излизане от програмата."
   },
   "setPinCode": {
     "message": "Може да използвате този ПИН за отключване на Битуорден. Вашият ПИН ще се нулира ако в някакъв момент се отпишете напълно от приложението."
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Илюстрация на автоматичното попълване на Битуорден, показващо генерирана парола."
   },
-  "updateInBitwarden": {
+  "updateInBlack Mask": {
     "message": "Обновяване в Битуорден"
   },
-  "updateInBitwardenSlideDesc": {
+  "updateInBlack MaskSlideDesc": {
     "message": "След това Битуорден ще попита дали искате да обновите паролата в управителя на пароли.",
-    "description": "Description of the update in Bitwarden slide on the at-risk password page carousel"
+    "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBitwardenSlideImgAltPeriod": {
+  "updateInBlack MaskSlideImgAltPeriod": {
     "message": "Илюстрация на известието на Битуорден, чрез което пита потребителя дали да се обновят данните за вписване."
   },
   "turnOnAutofill": {
@@ -3221,11 +3221,11 @@
   },
   "send": {
     "message": "Изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDetails": {
     "message": "Подробности за Изпращането",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendTypeText": {
     "message": "Текст"
@@ -3238,7 +3238,7 @@
   },
   "allSends": {
     "message": "Всички изпращания",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "maxAccessCountReached": {
     "message": "Достигнат е максималният брой достъпвания",
@@ -3258,7 +3258,7 @@
   },
   "copySendLink": {
     "message": "Копиране на връзката към изпратеното",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Премахване на парола"
@@ -3271,11 +3271,11 @@
   },
   "deletedSend": {
     "message": "Изтрито изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendLink": {
     "message": "Изпращане на връзката",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "disabled": {
     "message": "Изключено"
@@ -3285,26 +3285,26 @@
   },
   "deleteSend": {
     "message": "Изтриване на изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Сигурни ли сте, че искате да изтриете това изпращане?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendPermanentConfirmation": {
     "message": "Наистина ли искате да изтриете завинаги това Изпращане?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editSend": {
     "message": "Редактиране на изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Дата на изтриване"
   },
   "deletionDateDescV2": {
     "message": "Изпращането ще бъде окончателно изтрито на тази дата.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Срок на валидност"
@@ -3326,34 +3326,34 @@
   },
   "createSend": {
     "message": "Създаване на изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "newPassword": {
     "message": "Нова парола"
   },
   "sendDisabled": {
     "message": "Изпращането е изключено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Поради политика на организация, може само да изтривате съществуващи изпращания.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Създадено изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSendSuccessfully": {
     "message": "Изпращането е създадено успешно!",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHoursSingle": {
     "message": "Изпращането ще бъде достъпно за всеки с връзката през следващия 1 час.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHours": {
     "message": "Изпращането ще бъде достъпно за всеки с връзката през следващите $HOURS$ часа.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -3363,11 +3363,11 @@
   },
   "sendExpiresInDaysSingle": {
     "message": "Изпращането ще бъде достъпно за всеки с връзката през следващия 1 ден.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInDays": {
     "message": "Изпращането ще бъде достъпно за всеки с връзката през следващите $DAYS$ дни.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "days": {
         "content": "$1",
@@ -3386,7 +3386,7 @@
   },
   "sendCreatedDescriptionV2": {
     "message": "Копирайте и споделете връзката към Изпращането. То ще бъде достъпно за всеки с връзката в рамките на следващите $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3396,7 +3396,7 @@
   },
   "sendCreatedDescriptionPassword": {
     "message": "Копирайте и споделете връзката към Изпращането. То ще бъде достъпно за всеки с връзката и паролата, която зададете, в рамките на следващите $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3406,7 +3406,7 @@
   },
   "sendCreatedDescriptionEmail": {
     "message": "Копирайте и споделете връзка към това Изпращане. То ще може да бъде видяно само от хората, които сте посочили, в рамките на следващите $TIME$.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3416,11 +3416,11 @@
   },
   "sendLinkCopied": {
     "message": "Връзката към Изпращането е копирана",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Редактирано изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "popOut": {
     "message": "Отваряне в прозорец"
@@ -4337,11 +4337,11 @@
   },
   "sendsTitleNoItems": {
     "message": "Изпращайте чувствителна информация сигурно",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendsBodyNoItems": {
     "message": "Споделяйте сигурно файлове и данни с всекиго, през всяка система. Информацията Ви ще бъде защитена с шифроване от край до край, а видимостта ѝ ще бъде ограничена.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "inputRequired": {
     "message": "Полето е задължително да бъде попълнено."
@@ -4482,7 +4482,7 @@
     "message": "Бутон на менюто за авт. попълване на Битуорден",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBitwardenVaultOverlay": {
+  "toggleBlack MaskVaultOverlay": {
     "message": "Превключване на менюто за авт. попълване на Битуорден",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -4936,7 +4936,7 @@
   },
   "uriMatchDefaultStrategyHint": {
     "message": "Разпознаването на съвпадения чрез адреса е начинът, по който Битуорден определя кои елементи да предложи за автоматично попълване.",
-    "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
+    "description": "Explains to the user that URI match detection determines how Black Mask suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
     "message": "„Регулярен израз“ е по-сложен метод, който е и по-рисков, тъй като може да застраши сигурността на данните за вписване.",
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Сваляне на прикачения файл"
   },
-  "downloadBitwarden": {
+  "downloadBlack Mask": {
     "message": "Сваляне на Битуорден"
   },
-  "downloadBitwardenOnAllDevices": {
+  "downloadBlack MaskOnAllDevices": {
     "message": "Сваляне на Битуорден на всички устройства"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Използвайте трезора си без браузър. Можете да настроите отключване с биометрични данни, за да ускорите отключването както в настолното приложение, така и в добавката за браузъра."
   },
-  "downloadFromBitwardenNow": {
+  "downloadFromBlack MaskNow": {
     "message": "Свалете от bitwarden.com сега"
   },
   "getItOnGooglePlay": {
@@ -5860,9 +5860,9 @@
     "message": "Паролата е прегенерирана",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBitwarden": {
+  "saveToBlack Mask": {
     "message": "Запазване в Битуорден",
-    "description": "Confirmation message for saving a login to Bitwarden"
+    "description": "Confirmation message for saving a login to Black Mask"
   },
   "spaceCharacterDescriptor": {
     "message": "Интервал",
@@ -6156,7 +6156,7 @@
     "placeholders": {
       "product": {
         "content": "$1",
-        "example": "Bitwarden Phishing Blocker"
+        "example": "Black Mask Phishing Blocker"
       }
     }
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "потребител@bitwarden.com, потребител@acme.com"
   },
-  "downloadBitwardenApps": {
+  "downloadBlack MaskApps": {
     "message": "Сваляне на приложенията на Битуорден"
   },
   "emailProtected": {
@@ -6519,7 +6519,7 @@
   },
   "sendPasswordHelperText": {
     "message": "Хората ще трябва да въведат паролата, за да видят това Изпращане",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "userVerificationFailed": {
     "message": "Проверката на потребителя беше неуспешна."
@@ -6657,7 +6657,7 @@
   },
   "sendCreated": {
     "message": "Изпращането е създадено",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "numericInputError": {
     "message": "Въведеното трябва да е число"

@@ -1,16 +1,16 @@
 {
   "appName": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "appLogoLabel": {
-    "message": "Bitwarden logosu"
+    "message": "Black Mask logosu"
   },
   "extName": {
-    "message": "Bitwarden Parola Yöneticisi",
+    "message": "Black Mask Parola Yöneticisi",
     "description": "Extension name, MUST be less than 40 characters (Safari restriction)"
   },
   "extDesc": {
-    "message": "Bitwarden tüm parolalarınızı, geçiş anahtarlarınızı ve hassas bilgilerinizi güvenle saklar",
+    "message": "Black Mask tüm parolalarınızı, geçiş anahtarlarınızı ve hassas bilgilerinizi güvenle saklar",
     "description": "Extension description, MUST be less than 112 characters (Safari restriction)"
   },
   "loginOrCreateNewAccount": {
@@ -22,8 +22,8 @@
   "createAccount": {
     "message": "Hesap oluştur"
   },
-  "newToBitwarden": {
-    "message": "Bitwarden'da yeni misiniz?"
+  "newToBlack Mask": {
+    "message": "Black Mask'da yeni misiniz?"
   },
   "logInWithPasskey": {
     "message": "Geçiş anahtarıyla giriş yap"
@@ -317,22 +317,22 @@
     "message": "Web uygulamasına devam edilsin mi?"
   },
   "continueToWebAppDesc": {
-    "message": "Web uygulamasında Bitwarden hesabınızın diğer özelliklerini keşfedin."
+    "message": "Web uygulamasında Black Mask hesabınızın diğer özelliklerini keşfedin."
   },
   "continueToHelpCenter": {
     "message": "Yardım merkezine gitmek ister misiniz?"
   },
   "continueToHelpCenterDesc": {
-    "message": "Yardım merkezinde Bitwarden kullanımı hakkında daha fazla bilgi alabilirsiniz."
+    "message": "Yardım merkezinde Black Mask kullanımı hakkında daha fazla bilgi alabilirsiniz."
   },
   "continueToBrowserExtensionStore": {
     "message": "Tarayıcınızın uzantı sitesine gitmek ister misiniz?"
   },
   "continueToBrowserExtensionStoreDesc": {
-    "message": "Bitwarden'ı başkalarına da tanımak ister misiniz? Tarayıcınızın uzantı mağazasını ziyaret edip Bitwarden'ı değerlendirin."
+    "message": "Black Mask'ı başkalarına da tanımak ister misiniz? Tarayıcınızın uzantı mağazasını ziyaret edip Black Mask'ı değerlendirin."
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Ana parolanızı Bitwarden web uygulamasında değiştirebilirsiniz."
+    "message": "Ana parolanızı Black Mask web uygulamasında değiştirebilirsiniz."
   },
   "fingerprintPhrase": {
     "message": "Parmak izi ifadesi",
@@ -348,20 +348,20 @@
   "logOut": {
     "message": "Çıkış yap"
   },
-  "aboutBitwarden": {
-    "message": "Bitwarden hakkında"
+  "aboutBlack Mask": {
+    "message": "Black Mask hakkında"
   },
   "about": {
     "message": "Hakkında"
   },
-  "moreFromBitwarden": {
-    "message": "Diğer Bitwarden ürünleri"
+  "moreFromBlack Mask": {
+    "message": "Diğer Black Mask ürünleri"
   },
-  "continueToBitwardenDotCom": {
+  "continueToBlack MaskDotCom": {
     "message": "bitwarden.com'a gitmek ister misiniz?"
   },
   "bitwardenForBusiness": {
-    "message": "İşletmeler için Bitwarden"
+    "message": "İşletmeler için Black Mask"
   },
   "bitwardenAuthenticator": {
     "message": "Bitwarden Authenticator"
@@ -381,11 +381,11 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Passwordless.dev ile geleneksel parolalara ihtiyaç duymadan sorunsuz ve güvenli oturum açma deneyimleri oluşturun. Daha fazla bilgi için bitwarden.com web sitesini ziyaret edin."
   },
-  "freeBitwardenFamilies": {
-    "message": "Ücretsiz Bitwarden Families"
+  "freeBlack MaskFamilies": {
+    "message": "Ücretsiz Black Mask Families"
   },
-  "freeBitwardenFamiliesPageDesc": {
-    "message": "Ücretsiz Bitwarden Families paketinden faydalanabilirsiniz. Bu teklifi hemen web uygulamasında kullanabilirsiniz."
+  "freeBlack MaskFamiliesPageDesc": {
+    "message": "Ücretsiz Black Mask Families paketinden faydalanabilirsiniz. Bu teklifi hemen web uygulamasında kullanabilirsiniz."
   },
   "version": {
     "message": "Sürüm"
@@ -448,13 +448,13 @@
     "message": "Yardım ve geribildirim"
   },
   "helpCenter": {
-    "message": "Bitwarden yardım merkezi"
+    "message": "Black Mask yardım merkezi"
   },
   "communityForums": {
-    "message": "Bitwarden forumlarını keşfedin"
+    "message": "Black Mask forumlarını keşfedin"
   },
   "contactSupport": {
-    "message": "Bitwarden destek ekibiyle iletişime geçin"
+    "message": "Black Mask destek ekibiyle iletişime geçin"
   },
   "sync": {
     "message": "Eşitle"
@@ -476,7 +476,7 @@
     "message": "Hesaplarınız için otomatik olarak güçlü, özgün parolalar oluşturun."
   },
   "bitWebVaultApp": {
-    "message": "Bitwarden web uygulaması"
+    "message": "Black Mask web uygulaması"
   },
   "select": {
     "message": "Seç"
@@ -738,8 +738,8 @@
     "message": "Tanılama raporunu indirip"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden destek ekibiyle paylaşın",
-    "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
+    "message": "Black Mask destek ekibiyle paylaşın",
+    "description": "Link text following the troubleshooting description sentence. 'Black Mask' should not be translated."
   },
   "download": {
     "message": "İndir"
@@ -955,10 +955,10 @@
     "message": "2 adımlı doğrulamayı sorunsuz hale getir"
   },
   "totpHelper": {
-    "message": "Bitwarden 2 adımlı doğrulama kodlarını saklayabilir ve doldurabilir. Anahtarı bu alana kopyala ve yapıştır."
+    "message": "Black Mask 2 adımlı doğrulama kodlarını saklayabilir ve doldurabilir. Anahtarı bu alana kopyala ve yapıştır."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden 2 adımlı doğrulama kodlarını saklayabilir ve doldurabilir. Bu web sitesinin kimlik doğrulayıcı QR kodunun ekran görüntüsünü almak için kamera simgesini seç veya anahtarı bu alana kopyala ve yapıştır."
+    "message": "Black Mask 2 adımlı doğrulama kodlarını saklayabilir ve doldurabilir. Bu web sitesinin kimlik doğrulayıcı QR kodunun ekran görüntüsünü almak için kamera simgesini seç veya anahtarı bu alana kopyala ve yapıştır."
   },
   "learnMoreAboutAuthenticators": {
     "message": "Kimlik doğrulayıcılar hakkında bilgi alın"
@@ -978,8 +978,8 @@
   "logIn": {
     "message": "Giriş yap"
   },
-  "logInToBitwarden": {
-    "message": "Bitwarden'a giriş yapın"
+  "logInToBlack Mask": {
+    "message": "Black Mask'a giriş yapın"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "E-posta adresinize gönderilen kodu girin"
@@ -1042,7 +1042,7 @@
     "message": "İki aşamalı giriş, hesabınıza girererken işlemi bir güvenlik anahtarı, şifrematik uygulaması, SMS, telefon araması veya e-posta gibi ek bir yöntemle doğrulamanızı isteyerek hesabınızın güvenliğini artırır. İki aşamalı giriş özelliğini bitwarden.com web kasası üzerinden etkinleştirebilirsiniz. Şimdi siteye gitmek ister misiniz?"
   },
   "twoStepLoginConfirmationContent": {
-    "message": "Bitwarden web uygulamasında iki aşamalı girişi ayarlayarak hesabınızın güvenliğini artırabilirsiniz."
+    "message": "Black Mask web uygulamasında iki aşamalı girişi ayarlayarak hesabınızın güvenliğini artırabilirsiniz."
   },
   "twoStepLoginConfirmationTitle": {
     "message": "Web uygulamasına devam edilsin mi?"
@@ -1194,7 +1194,7 @@
     "message": "Ayara git"
   },
   "notificationAddDesc": {
-    "message": "Bitwarden bu parolayı sizin için hatırlasın mı?"
+    "message": "Black Mask bu parolayı sizin için hatırlasın mı?"
   },
   "notificationAddSave": {
     "message": "Kaydet"
@@ -1230,11 +1230,11 @@
     }
   },
   "notificationLoginSaveConfirmation": {
-    "message": "Bitwarden’a kaydedildi.",
+    "message": "Black Mask’a kaydedildi.",
     "description": "Shown to user after item is saved."
   },
   "notificationLoginUpdatedConfirmation": {
-    "message": "Bitwarden’da güncellendi.",
+    "message": "Black Mask’da güncellendi.",
     "description": "Shown to user after item is updated."
   },
   "selectItemAriaLabel": {
@@ -1332,13 +1332,13 @@
     "message": "Yeni geçiş anahtarlarını kaydetmek ve kasanızda saklanan geçiş anahtarlarıyla giriş yapmak için sor. Giriş yapmış tüm hesaplar için geçerlidir."
   },
   "notificationChangeDesc": {
-    "message": "Bu parolayı Bitwarden'da güncellemek ister misiniz?"
+    "message": "Bu parolayı Black Mask'da güncellemek ister misiniz?"
   },
   "notificationChangeSave": {
     "message": "Güncelle"
   },
   "notificationUnlockDesc": {
-    "message": "Otomatik doldurma isteğini tamamlamak için Bitwarden kasanızın kilidini açın."
+    "message": "Otomatik doldurma isteğini tamamlamak için Black Mask kasanızın kilidini açın."
   },
   "notificationUnlock": {
     "message": "Kilidi aç"
@@ -1423,10 +1423,10 @@
     "message": "Bu parola, bu dosyayı dışa ve içe aktarmak için kullanılacaktır"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Dışa aktarmayı şifrelemek ve içe aktarmayı yalnızca mevcut Bitwarden hesabıyla kısıtlamak için, hesabınızın kullanıcı adı ve ana parolasından türetilen hesap şifreleme anahtarınızı kullanın."
+    "message": "Dışa aktarmayı şifrelemek ve içe aktarmayı yalnızca mevcut Black Mask hesabıyla kısıtlamak için, hesabınızın kullanıcı adı ve ana parolasından türetilen hesap şifreleme anahtarınızı kullanın."
   },
   "passwordProtectedOptionDescription": {
-    "message": "Dışa aktardığınız dosyayı şifrelemek ve bir Bitwarden hesabına içe aktarmak için kullanacağınız parolayı belirleyin."
+    "message": "Dışa aktardığınız dosyayı şifrelemek ve bir Black Mask hesabına içe aktarmak için kullanacağınız parolayı belirleyin."
   },
   "exportTypeHeading": {
     "message": "Dışa aktarma türü"
@@ -1455,7 +1455,7 @@
     "message": "Dışa aktardığınız bu dosyadaki verileriniz, hesabınızın şifreleme anahtarıyla şifrelenir. Hesabınızın şifreleme anahtarını değiştirirseniz bu dosyanın şifresi çözülemez hale gelir, dolayısıyla dosyayı yeniden dışa aktarmanız gerekir."
   },
   "encExportAccountWarningDesc": {
-    "message": "Her Bitwarden kullanıcı hesabının hesap şifreleme anahtarları farklıdır. Yani şifrelenmiş bir dışa aktarmayı farklı bir hesapta içe aktaramazsınız."
+    "message": "Her Black Mask kullanıcı hesabının hesap şifreleme anahtarları farklıdır. Yani şifrelenmiş bir dışa aktarmayı farklı bir hesapta içe aktaramazsınız."
   },
   "exportMasterPassword": {
     "message": "Kasadaki verilerinizi dışa aktarmak için ana parolanızı girin."
@@ -1464,7 +1464,7 @@
     "message": "Paylaşılan"
   },
   "bitwardenForBusinessPageDesc": {
-    "message": "İşletmeler için Bitwarden'ı kullanarak kasanızdaki kayıtları başkalarıyla paylaşabilirsiniz. Daha fazla bilgi için bitwarden.com sitesini ziyaret edin."
+    "message": "İşletmeler için Black Mask'ı kullanarak kasanızdaki kayıtları başkalarıyla paylaşabilirsiniz. Daha fazla bilgi için bitwarden.com sitesini ziyaret edin."
   },
   "moveToOrganization": {
     "message": "Kuruluşa taşı"
@@ -1630,13 +1630,13 @@
     "message": "Premium satın al"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Bitwarden web uygulamasındaki hesap ayarlarınızdan Premium abonelik satın alabilirsiniz."
+    "message": "Black Mask web uygulamasındaki hesap ayarlarınızdan Premium abonelik satın alabilirsiniz."
   },
   "premiumCurrentMember": {
     "message": "Premium üyesiniz!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Bitwarden'ı desteklediğiniz için teşekkür ederiz."
+    "message": "Black Mask'ı desteklediğiniz için teşekkür ederiz."
   },
   "premiumFeatures": {
     "message": "Premium'a geçmenin avantajları:"
@@ -1775,7 +1775,7 @@
     "message": "Şirket içinde barındırılan ortam"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Şirket içinde barındırılan Bitwarden kurulumunun temel URL’sini belirt. Örnek: https://bitwarden.company.com"
+    "message": "Şirket içinde barındırılan Black Mask kurulumunun temel URL’sini belirt. Örnek: https://bitwarden.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "İleri düzey yapılandırma için her hizmetin taban URL'sini bağımsız olarak belirleyebilirsiniz."
@@ -1828,7 +1828,7 @@
     "message": "Otomatik doldurma önerilerini kolayca bulun"
   },
   "autofillSpotlightDesc": {
-    "message": "Bitwarden ile çakışmaması için tarayıcınızın otomatik doldurma ayarını kapatın."
+    "message": "Black Mask ile çakışmaması için tarayıcınızın otomatik doldurma ayarını kapatın."
   },
   "turnOffBrowserAutofill": {
     "message": "$BROWSER$ ile otomatik doldurmayı kapat",
@@ -1884,8 +1884,8 @@
   "showInlineMenuLabel": {
     "message": "Form alanlarında otomatik doldurma önerilerini göster"
   },
-  "howDoesBitwardenProtectFromPhishing": {
-    "message": "Bitwarden verilerinizi kimlik avı saldırılarından nasıl koruyor?"
+  "howDoesBlack MaskProtectFromPhishing": {
+    "message": "Black Mask verilerinizi kimlik avı saldırılarından nasıl koruyor?"
   },
   "currentWebsite": {
     "message": "Geçerli web sitesi"
@@ -2647,7 +2647,7 @@
     "message": "Zayıf ana parola"
   },
   "weakMasterPasswordDesc": {
-    "message": "Seçtiğiniz ana parola zayıf. Bitwarden hesabınızı korumak için daha güçlü bir ana parola seçmenizi öneririz. Bu ana parolayı kullanmak istediğinizden emin misiniz?"
+    "message": "Seçtiğiniz ana parola zayıf. Black Mask hesabınızı korumak için daha güçlü bir ana parola seçmenizi öneririz. Bu ana parolayı kullanmak istediğinizden emin misiniz?"
   },
   "rotateAccountEncKey": {
     "message": "Hesabımın şifreleme anahtarını da yenile"
@@ -2659,7 +2659,7 @@
     "message": "Hesabınızın şifreleme anahtarını yenilemek istediğinizden emin misiniz?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "Şifreleme anahtarınızı güncelledikten sonra, şu anda kullanmakta olduğunuz tüm Bitwarden uygulamalarında (mobil uygulama veya tarayıcı uzantıları gibi) oturumunuzu kapatıp tekrar açmanız gerekir. Yeni şifreleme anahtarınızı indirme için oturumu kapatıp tekrar açmamamız verilerin bozulmasına neden olabilir. Oturumunuzu otomatik olarak kapatmaya çalışacağız, ancak bu gecikebilir."
+    "message": "Şifreleme anahtarınızı güncelledikten sonra, şu anda kullanmakta olduğunuz tüm Black Mask uygulamalarında (mobil uygulama veya tarayıcı uzantıları gibi) oturumunuzu kapatıp tekrar açmanız gerekir. Yeni şifreleme anahtarınızı indirme için oturumu kapatıp tekrar açmamamız verilerin bozulmasına neden olabilir. Oturumunuzu otomatik olarak kapatmaya çalışacağız, ancak bu gecikebilir."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Kaydettiğiniz tüm hesap kısıtlamalı dışa aktarmalar geçersiz hale gelecektir."
@@ -2687,10 +2687,10 @@
     "message": "PIN belirle"
   },
   "setYourPinCode": {
-    "message": "Bitwarden'ı açarken kullanacağınız PIN kodunu belirleyin. Uygulamadan tamamen çıkış yaparsanız PIN ayarlarınız sıfırlanacaktır."
+    "message": "Black Mask'ı açarken kullanacağınız PIN kodunu belirleyin. Uygulamadan tamamen çıkış yaparsanız PIN ayarlarınız sıfırlanacaktır."
   },
   "setPinCode": {
-    "message": "Bitwarden'ın kilidini açmak için bu PIN'i kullanabilirsiniz. Uygulamadan tamamen çıkış yaparsanız PIN'iniz sıfırlanacaktır."
+    "message": "Black Mask'ın kilidini açmak için bu PIN'i kullanabilirsiniz. Uygulamadan tamamen çıkış yaparsanız PIN'iniz sıfırlanacaktır."
   },
   "pinRequired": {
     "message": "PIN kodu gerekli."
@@ -2711,7 +2711,7 @@
     "message": "Masaüstünden onay bekleniyor"
   },
   "awaitDesktopDesc": {
-    "message": "Tarayıcıda biyometriyi etkinleştirmek için lütfen Bitwarden masaüstü uygulamasında biyometri kullanımını onaylayın."
+    "message": "Tarayıcıda biyometriyi etkinleştirmek için lütfen Black Mask masaüstü uygulamasında biyometri kullanımını onaylayın."
   },
   "lockWithMasterPassOnRestart": {
     "message": "Tarayıcı yeniden başlatıldığında ana parola ile kilitle"
@@ -2826,7 +2826,7 @@
     "message": "Bu form, kayıtlı hesabınızın URI'sinden farklı bir alan adında yer alıyor. Yine de otomatik doldurmak isterseniz \"Tamam\"ı, durdurmak için \"İptal\"i seçin."
   },
   "autofillIframeWarningTip": {
-    "message": "İleride bu uyarıyı görmek istemiyorsanız bu siteye ait Bitwarden hesap kaydınıza $HOSTNAME$ URI'sini ekleyin.",
+    "message": "İleride bu uyarıyı görmek istemiyorsanız bu siteye ait Black Mask hesap kaydınıza $HOSTNAME$ URI'sini ekleyin.",
     "placeholders": {
       "hostname": {
         "content": "$1",
@@ -2835,7 +2835,7 @@
     }
   },
   "topLayerHijackWarning": {
-    "message": "Bu sayfa Bitwarden deneyimiyle çakışıyor. Güvenlik önlemi olarak Bitwarden satır içi menüsü geçici olarak devre dışı bırakıldı."
+    "message": "Bu sayfa Black Mask deneyimiyle çakışıyor. Güvenlik önlemi olarak Black Mask satır içi menüsü geçici olarak devre dışı bırakıldı."
   },
   "setMasterPassword": {
     "message": "Ana parolayı belirle"
@@ -2892,7 +2892,7 @@
     "message": "Yeni ana parolanız ilke gereksinimlerini karşılamıyor."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Bitwarden'dan öneriler, duyurular ve araştırma fırsatları e-posta adresinize gelsin."
+    "message": "Black Mask'dan öneriler, duyurular ve araştırma fırsatları e-posta adresinize gelsin."
   },
   "unsubscribe": {
     "message": "İstediğiniz zaman"
@@ -2943,13 +2943,13 @@
     "message": "Tarayıcı entegrasyonu ayarlanmadı"
   },
   "desktopIntegrationDisabledDesc": {
-    "message": "Bitwarden masaüstü uygulamasında tarayıcı entegrasyonu ayarlanmamış. Lütfen masaüstü uygulamasının ayarlarından tarayıcı entegrasyonunu kurun."
+    "message": "Black Mask masaüstü uygulamasında tarayıcı entegrasyonu ayarlanmamış. Lütfen masaüstü uygulamasının ayarlarından tarayıcı entegrasyonunu kurun."
   },
   "startDesktopTitle": {
-    "message": "Bitwarden masaüstü uygulamasını başlat"
+    "message": "Black Mask masaüstü uygulamasını başlat"
   },
   "startDesktopDesc": {
-    "message": "Biyometri ile açma işlevini kullanmak için Bitwarden masaüstü uygulamasını çalıştırmanız gerekir."
+    "message": "Biyometri ile açma işlevini kullanmak için Black Mask masaüstü uygulamasını çalıştırmanız gerekir."
   },
   "errorEnableBiometricTitle": {
     "message": "Biyometri ayarlanamadı"
@@ -3003,7 +3003,7 @@
     "message": "Biyometri doğrulanamadı"
   },
   "biometricsFailedDesc": {
-    "message": "Biyometri doğrulaması tamamlanamadı. Ana parolanızı kullanabilir veya çıkış yapabilirsiniz. Sorun devam ederse Bitwarden destek ekibiyle iletişime geçin."
+    "message": "Biyometri doğrulaması tamamlanamadı. Ana parolanızı kullanabilir veya çıkış yapabilirsiniz. Sorun devam ederse Black Mask destek ekibiyle iletişime geçin."
   },
   "personalOwnershipSubmitError": {
     "message": "Bir kuruluş ilkesi nedeniyle kişisel kasanıza hesap kaydetmeniz kısıtlanmış. Sahip seçeneğini bir kuruluş olarak değiştirin ve mevcut koleksiyonlar arasından seçim yapın."
@@ -3034,7 +3034,7 @@
     "message": "Hariç tutulan alan adları"
   },
   "excludedDomainsDesc": {
-    "message": "Bitwarden bu alan adlarında hesaplarınızı kaydetmeyi sormayacaktır. Değişikliklerin etkili olması için sayfayı yenilemelisiniz."
+    "message": "Black Mask bu alan adlarında hesaplarınızı kaydetmeyi sormayacaktır. Değişikliklerin etkili olması için sayfayı yenilemelisiniz."
   },
   "blockedDomainsDesc": {
     "message": "Bu siteler için otomatik doldurma ve diğer ilgili özellikler önerilmeyecektir. Değişikliklerin devreye girmesi için sayfayı yenilemelisiniz."
@@ -3150,24 +3150,24 @@
     "message": "Risk altındaki hesap listesinin illüstrasyonu."
   },
   "welcomeDialogGraphicAlt": {
-    "message": "Bitwarden kasa sayfası düzeninin illüstrasyonu."
+    "message": "Black Mask kasa sayfası düzeninin illüstrasyonu."
   },
   "generatePasswordSlideDesc": {
-    "message": "Riskli sitede Bitwarden otomatik doldurma menüsünü kullanarak hızlıca güçlü ve benzersiz bir parola oluştur.",
+    "message": "Riskli sitede Black Mask otomatik doldurma menüsünü kullanarak hızlıca güçlü ve benzersiz bir parola oluştur.",
     "description": "Description of the generate password slide on the at-risk password page carousel"
   },
   "generatePasswordSlideImgAltPeriod": {
-    "message": "Oluşturulan parolayı gösteren Bitwarden otomatik doldurma menüsünün görseli."
+    "message": "Oluşturulan parolayı gösteren Black Mask otomatik doldurma menüsünün görseli."
   },
-  "updateInBitwarden": {
-    "message": "Bitwarden’da güncelleyin"
+  "updateInBlack Mask": {
+    "message": "Black Mask’da güncelleyin"
   },
-  "updateInBitwardenSlideDesc": {
-    "message": "Bitwarden, ardından parola yöneticisinde parolayı güncellemeniz için sizi yönlendirecektir.",
-    "description": "Description of the update in Bitwarden slide on the at-risk password page carousel"
+  "updateInBlack MaskSlideDesc": {
+    "message": "Black Mask, ardından parola yöneticisinde parolayı güncellemeniz için sizi yönlendirecektir.",
+    "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBitwardenSlideImgAltPeriod": {
-    "message": "Kullanıcıya giriş bilgilerini güncellemesi için bildirim gönderen Bitwarden’in görseli."
+  "updateInBlack MaskSlideImgAltPeriod": {
+    "message": "Kullanıcıya giriş bilgilerini güncellemesi için bildirim gönderen Black Mask’in görseli."
   },
   "turnOnAutofill": {
     "message": "Otomatik doldurmayı etkinleştir"
@@ -3221,11 +3221,11 @@
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDetails": {
     "message": "Send ayrıntıları",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendTypeText": {
     "message": "Metin"
@@ -3238,7 +3238,7 @@
   },
   "allSends": {
     "message": "Tüm Send'ler",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "maxAccessCountReached": {
     "message": "Maksimum erişim sayısına ulaşıldı",
@@ -3258,7 +3258,7 @@
   },
   "copySendLink": {
     "message": "Send bağlantısını kopyala",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Parolayı kaldır"
@@ -3271,11 +3271,11 @@
   },
   "deletedSend": {
     "message": "Send silindi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendLink": {
     "message": "Send bağlantısı",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "disabled": {
     "message": "Devre dışı"
@@ -3285,26 +3285,26 @@
   },
   "deleteSend": {
     "message": "Send'i sil",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Bu Send'i silmek istediğinizden emin misiniz?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deleteSendPermanentConfirmation": {
     "message": "Bu Send'i kalıcı olarak silmek istediğinizden emin misiniz?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editSend": {
     "message": "Send'i düzenle",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Silinme tarihi"
   },
   "deletionDateDescV2": {
     "message": "Bu Send belirtilen tarihte kalıcı olacak silinecek.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Son kullanma tarihi"
@@ -3326,34 +3326,34 @@
   },
   "createSend": {
     "message": "Yeni Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "newPassword": {
     "message": "Yeni parola"
   },
   "sendDisabled": {
     "message": "Send silindi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Bir kuruluş ilkesi nedeniyle yalnızca mevcut Send'leri silebilirsiniz.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send oluşturuldu",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "createdSendSuccessfully": {
     "message": "Send başarıyla oluşturuldu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHoursSingle": {
     "message": "Önümüzdeki 1 saat boyunca bu bağlantıya sahip olan herkes bu Send'e ulaşabilir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInHours": {
     "message": "Önümüzdeki $HOURS$ saat boyunca bu bağlantıya sahip olan herkes bu Send'e ulaşabilir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -3363,11 +3363,11 @@
   },
   "sendExpiresInDaysSingle": {
     "message": "Önümüzdeki 1 gün boyunca bu bağlantıya sahip olan herkes bu Send'e ulaşabilir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendExpiresInDays": {
     "message": "Önümüzdeki $DAYS$ gün boyunca bu bağlantıya sahip olan herkes bu Send'e ulaşabilir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "days": {
         "content": "$1",
@@ -3386,7 +3386,7 @@
   },
   "sendCreatedDescriptionV2": {
     "message": "Bu Send bağlantısını kopyalayıp paylaşın. Bu Send'e önümüzdeki $TIME$ boyunca bağlantıya sahip herkes ulaşabilecektir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3396,7 +3396,7 @@
   },
   "sendCreatedDescriptionPassword": {
     "message": "Bu Send bağlantısını kopyalayıp paylaşın. Bu Send'e önümüzdeki $TIME$ boyunca bağlantıya ve parolaya sahip herkes ulaşabilecektir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3406,7 +3406,7 @@
   },
   "sendCreatedDescriptionEmail": {
     "message": "Bu Send bağlantısını kopyalayıp paylaşın. Belirlediğiniz kişiler bağlantıyı önümüzdeki $TIME$ boyunca kullanabilir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.",
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated.",
     "placeholders": {
       "time": {
         "content": "$1",
@@ -3416,11 +3416,11 @@
   },
   "sendLinkCopied": {
     "message": "Send bağlantısı kopyalandı",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send kaydedildi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "popOut": {
     "message": "Dışarı al"
@@ -3678,7 +3678,7 @@
     "message": "Otomatik doldurma verileri alınırken hata oluştu"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden aşağıdaki kasa öğelerini deşifre edemedi."
+    "message": "Black Mask aşağıdaki kasa öğelerini deşifre edemedi."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Müşteri hizmetleriyle iletişime geçerek",
@@ -3782,11 +3782,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Bitwarden tarafından üretildi.",
+    "message": "Black Mask tarafından üretildi.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Web sitesi: $WEBSITE$. Bitwarden tarafından üretildi.",
+    "message": "Web sitesi: $WEBSITE$. Black Mask tarafından üretildi.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3979,7 +3979,7 @@
     "message": "Cihazınıza bir bildirim gönderildi."
   },
   "notificationSentDevicePart1": {
-    "message": "Bitwarden kilidini cihazınızdan veya"
+    "message": "Black Mask kilidini cihazınızdan veya"
   },
   "notificationSentDeviceAnchor": {
     "message": "web uygulamasından açın"
@@ -4337,11 +4337,11 @@
   },
   "sendsTitleNoItems": {
     "message": "Hassas bilgileri güvenle paylaşın",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "sendsBodyNoItems": {
     "message": "Dosyaları ve verileri istediğiniz kişilerle, istediğiniz platformda paylaşın. Bilgileriniz başkalarının eline geçmemesi için uçtan uca şifrelenecektir.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "inputRequired": {
     "message": "Girdi gerekli."
@@ -4479,15 +4479,15 @@
     "message": "İçeriğe geç"
   },
   "bitwardenOverlayButton": {
-    "message": "Bitwarden otomatik doldurma menüsü düğmesi",
+    "message": "Black Mask otomatik doldurma menüsü düğmesi",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBitwardenVaultOverlay": {
-    "message": "Bitwarden otomatik doldurma menüsünü aç/kapat",
+  "toggleBlack MaskVaultOverlay": {
+    "message": "Black Mask otomatik doldurma menüsünü aç/kapat",
     "description": "Screen reader and tool tip label for the overlay button"
   },
   "bitwardenVault": {
-    "message": "Bitwarden otomatik doldurma menüsü",
+    "message": "Black Mask otomatik doldurma menüsü",
     "description": "Page title in overlay"
   },
   "unlockYourAccountToViewMatchingLogins": {
@@ -4559,7 +4559,7 @@
     "description": "Screen reader text (aria-label) for new identity button within inline menu"
   },
   "bitwardenOverlayMenuAvailable": {
-    "message": "Bitwarden otomatik doldurma menüsü mevcut. Seçmek için aşağı ok tuşuna basın.",
+    "message": "Black Mask otomatik doldurma menüsü mevcut. Seçmek için aşağı ok tuşuna basın.",
     "description": "Screen reader text for announcing when the overlay opens on the page"
   },
   "turnOn": {
@@ -4889,7 +4889,7 @@
     "message": "Aktif hesap"
   },
   "bitwardenAccount": {
-    "message": "Bitwarden hesabı"
+    "message": "Black Mask hesabı"
   },
   "availableAccounts": {
     "message": "Mevcut hesaplar"
@@ -4935,8 +4935,8 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URl eşleştirme tespiti, Bitwarden'ın otomatik doldurma önerilerini tanımlama şeklidir.",
-    "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
+    "message": "URl eşleştirme tespiti, Black Mask'ın otomatik doldurma önerilerini tanımlama şeklidir.",
+    "description": "Explains to the user that URI match detection determines how Black Mask suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
     "message": "\"Düzenli ifadeler\" gelişmiş bir seçenektir ve kimlik bilgilerini açığa çıkarma riski taşır.",
@@ -4979,23 +4979,23 @@
     "description": "Body content for dialog which asks if the user wants to proceed to the browser's keyboard shortcut settings page"
   },
   "overrideDefaultBrowserAutofillTitle": {
-    "message": "Bitwarden varsayılan parola yöneticiniz yapılsın mı?",
+    "message": "Black Mask varsayılan parola yöneticiniz yapılsın mı?",
     "description": "Dialog title facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutofillDescription": {
-    "message": "Bu seçeneği göz ardı ederseniz Bitwarden otomatik doldurma menüsüyle tarayıcınızınki arasında çakışma yaşanabilir.",
+    "message": "Bu seçeneği göz ardı ederseniz Black Mask otomatik doldurma menüsüyle tarayıcınızınki arasında çakışma yaşanabilir.",
     "description": "Dialog message facilitating the ability to override a chrome browser's default autofill behavior"
   },
   "overrideDefaultBrowserAutoFillSettings": {
-    "message": "Bitwarden'ı varsayılan parola yöneticiniz yapın",
+    "message": "Black Mask'ı varsayılan parola yöneticiniz yapın",
     "description": "Label for the setting that allows overriding the default browser autofill settings"
   },
   "privacyPermissionAdditionNotGrantedTitle": {
-    "message": "Bitwarden varsayılan parola yöneticisi olarak ayarlanamadı",
+    "message": "Black Mask varsayılan parola yöneticisi olarak ayarlanamadı",
     "description": "Title for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "privacyPermissionAdditionNotGrantedDescription": {
-    "message": "Bitwarden'ı varsayılan parola yöneticisi olarak ayarlamak için tarayıcı gizlilik izinlerini vermeniz gerekir.",
+    "message": "Black Mask'ı varsayılan parola yöneticisi olarak ayarlamak için tarayıcı gizlilik izinlerini vermeniz gerekir.",
     "description": "Description for the dialog that appears when the user has not granted the extension permission to set privacy settings"
   },
   "makeDefault": {
@@ -5339,17 +5339,17 @@
   "downloadAttachmentLabel": {
     "message": "Ek dosyayı indir"
   },
-  "downloadBitwarden": {
-    "message": "Bitwarden’ı indirin"
+  "downloadBlack Mask": {
+    "message": "Black Mask’ı indirin"
   },
-  "downloadBitwardenOnAllDevices": {
-    "message": "Bitwarden’ı tüm cihazlarınıza indirin"
+  "downloadBlack MaskOnAllDevices": {
+    "message": "Black Mask’ı tüm cihazlarınıza indirin"
   },
   "getTheMobileApp": {
     "message": "Mobil uygulamayı indirin"
   },
   "getTheMobileAppDesc": {
-    "message": "Parolalarınıza Bitwarden mobil uygulaması sayesinde her yerden ulaşın."
+    "message": "Parolalarınıza Black Mask mobil uygulaması sayesinde her yerden ulaşın."
   },
   "getTheDesktopApp": {
     "message": "Masaüstü uygulamasını indirin"
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Kasanıza tarayıcıyı kullanmadan erişin, biyometri ile kilit açmayı etkinleştirerek hem masaüstü uygulamasından hem de tarayıcı uzantısından kilit açmayı geliştirin."
   },
-  "downloadFromBitwardenNow": {
+  "downloadFromBlack MaskNow": {
     "message": "Şimdi bitwarden.com’dan indirin"
   },
   "getItOnGooglePlay": {
@@ -5823,10 +5823,10 @@
     "message": "Biyometrik kilit açma, yanlış yapılandırılmış sistem dosyaları nedeniyle kullanılamıyor."
   },
   "biometricsStatusHelptextDesktopDisconnected": {
-    "message": "Bitwarden masaüstü uygulaması kapalı olduğu için biyometrik kilit açma kullanılamıyor."
+    "message": "Black Mask masaüstü uygulaması kapalı olduğu için biyometrik kilit açma kullanılamıyor."
   },
   "biometricsStatusHelptextNotEnabledInDesktop": {
-    "message": "Biyometrik kilit açma, Bitwarden masaüstü uygulamasında $EMAIL$ etkin olmadığı için kullanılamıyor.",
+    "message": "Biyometrik kilit açma, Black Mask masaüstü uygulamasında $EMAIL$ etkin olmadığı için kullanılamıyor.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -5860,9 +5860,9 @@
     "message": "Parola yeniden üretildi",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBitwarden": {
-    "message": "Bitwarden’a kaydet",
-    "description": "Confirmation message for saving a login to Bitwarden"
+  "saveToBlack Mask": {
+    "message": "Black Mask’a kaydet",
+    "description": "Confirmation message for saving a login to Black Mask"
   },
   "spaceCharacterDescriptor": {
     "message": "Boşluk",
@@ -6087,13 +6087,13 @@
     "message": "Kasanız sadece parolalarınız için değil. Hesaplarınızı, kimliklerinizi, kredi kartlarınızı ve notlarınızı da güvenle burada depolayabilirsiniz."
   },
   "introCarouselLabel": {
-    "message": "Bitwarden’a hoş geldiniz"
+    "message": "Black Mask’a hoş geldiniz"
   },
   "securityPrioritized": {
     "message": "Önce güvenlik"
   },
   "securityPrioritizedBody": {
-    "message": "Hesaplarınızı, kartlarınızı ve kimliklerinizi güvenli kasanıza kaydedin. Bitwarden'ın sıfır bilgi ispatlı uçtan uca şifrelemesi sizin için önemli olan her şeyi korur."
+    "message": "Hesaplarınızı, kartlarınızı ve kimliklerinizi güvenli kasanıza kaydedin. Black Mask'ın sıfır bilgi ispatlı uçtan uca şifrelemesi sizin için önemli olan her şeyi korur."
   },
   "quickLogin": {
     "message": "Hızlı ve kolay giriş"
@@ -6111,7 +6111,7 @@
     "message": "Verilerinize her zaman, her yerden ulaşın"
   },
   "secureDevicesBody": {
-    "message": "Bitwarden mobil, tarayıcı ve masaüstü uygulamalarıyla istediğiniz kadar cihaza istediğiniz kadar parola kaydedebilirsiniz."
+    "message": "Black Mask mobil, tarayıcı ve masaüstü uygulamalarıyla istediğiniz kadar cihaza istediğiniz kadar parola kaydedebilirsiniz."
   },
   "nudgeBadgeAria": {
     "message": "1 bildirim"
@@ -6120,7 +6120,7 @@
     "message": "Mevcut parolaları içe aktar"
   },
   "emptyVaultNudgeBody": {
-    "message": "Hesapları manuel olarak eklemeden Bitwarden'a hızlı bir şekilde aktarmak için içe aktarıcıyı kullanın."
+    "message": "Hesapları manuel olarak eklemeden Black Mask'a hızlı bir şekilde aktarmak için içe aktarıcıyı kullanın."
   },
   "emptyVaultNudgeButton": {
     "message": "Şimdi içe aktar"
@@ -6156,7 +6156,7 @@
     "placeholders": {
       "product": {
         "content": "$1",
-        "example": "Bitwarden Phishing Blocker"
+        "example": "Black Mask Phishing Blocker"
       }
     }
   },
@@ -6239,13 +6239,13 @@
     "message": "Bu ayar hakkında"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden, deneyimini iyileştirmek için hangi simgenin veya parola değiştirme URL’sinin kullanılacağını belirlemek amacıyla kaydedilmiş hesap URI’lerini kullanır. Bu hizmeti kullandığında hiçbir bilgi toplanmaz veya kaydedilmez."
+    "message": "Black Mask, deneyimini iyileştirmek için hangi simgenin veya parola değiştirme URL’sinin kullanılacağını belirlemek amacıyla kaydedilmiş hesap URI’lerini kullanır. Bu hizmeti kullandığında hiçbir bilgi toplanmaz veya kaydedilmez."
   },
   "noPermissionsViewPage": {
     "message": "Bu sayfayı görüntüleme izniniz yok. Farklı bir hesapla giriş yapmayı deneyin."
   },
   "wasmNotSupported": {
-    "message": "Tarayıcınızda WebAssembly desteklenmiyor veya etkinleştirilmemişt. Bitwarden uygulamasını kullanmak için WebAssembly gereklidir.",
+    "message": "Tarayıcınızda WebAssembly desteklenmiyor veya etkinleştirilmemişt. Black Mask uygulamasını kullanmak için WebAssembly gereklidir.",
     "description": "'WebAssembly' is a technical term and should not be translated."
   },
   "showMore": {
@@ -6324,7 +6324,7 @@
     "message": "Hata: Deşifre edilemiyor"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Kuruluşunuz artık Bitwarden'da oturum açmak için ana parolalar kullanmıyor. Devam etmek için kuruluşu ve etki alanını doğrulayın."
+    "message": "Kuruluşunuz artık Black Mask'da oturum açmak için ana parolalar kullanmıyor. Devam etmek için kuruluşu ve etki alanını doğrulayın."
   },
   "continueWithLogIn": {
     "message": "Giriş yapmaya devam et"
@@ -6410,7 +6410,7 @@
     "message": "Zaman aşımı eyleminizi değiştirmek için kilit açma yönteminizi ayarlayın"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Bitwarden masaüstü uygulaması tarafından yönetiliyor. Düzenlemek için masaüstü uygulamasını açın."
+    "message": "Black Mask masaüstü uygulaması tarafından yönetiliyor. Düzenlemek için masaüstü uygulamasını açın."
   },
   "percentageCompleted": {
     "message": "%$PERCENT$ tamamlandı",
@@ -6511,15 +6511,15 @@
   "emailPlaceholderMultiple": {
     "message": "kullanici@bitwarden.com, kullanici@acme.com"
   },
-  "downloadBitwardenApps": {
-    "message": "Bitwarden uygulamalarını indir"
+  "downloadBlack MaskApps": {
+    "message": "Black Mask uygulamalarını indir"
   },
   "emailProtected": {
     "message": "E-posta korumalı"
   },
   "sendPasswordHelperText": {
     "message": "Bu Send'i görmek isteyen kişilerin parola girmesi gerekecektir",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "userVerificationFailed": {
     "message": "Kullanıcı doğrulaması başarısız oldu."
@@ -6528,13 +6528,13 @@
     "message": "Shared unlock"
   },
   "sharedUnlockDescription": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared by all apps on this machine. The desktop app is required to synchronize between different browsers."
   },
   "sharedUnlockDescriptionSafari": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with Bitwarden web vaults in Safari."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with Black Mask web vaults in Safari."
   },
   "sharedUnlockDescriptionFirefox": {
-    "message": "Keep your Bitwarden apps in sync. When enabled, unlock state will be shared with the Bitwarden desktop app."
+    "message": "Keep your Black Mask apps in sync. When enabled, unlock state will be shared with the Black Mask desktop app."
   },
   "enterMonth": {
     "message": "Ay girin."
@@ -6657,7 +6657,7 @@
   },
   "sendCreated": {
     "message": "Send oluşturuldu",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Black Mask Send'. It should not be translated."
   },
   "numericInputError": {
     "message": "Girdi sayısal olmalıdır"

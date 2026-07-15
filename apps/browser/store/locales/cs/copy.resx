@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwarden - Správce hesel</value>
+    <value>Black Mask - Správce hesel</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Bitwarden zabezpečí všechna Vaše hesla, přístupové klíče a citlivé informace doma, v práci nebo na cestách.</value>
+    <value>Black Mask zabezpečí všechna Vaše hesla, přístupové klíče a citlivé informace doma, v práci nebo na cestách.</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>PCMag, WIRED, The Verge, CNET, G2 a další ocenili tohoto správce hesel jako nejlepší!
@@ -133,43 +133,43 @@ PŘÍSTUP K DATŮM ODKUDKOLI, KDYKOLI A Z JAKÉHOKOLI ZAŘÍZENÍ
 Snadno spravujte, ukládejte, zabezpečujte a sdílejte neomezený počet hesel na neomezeném počtu zařízení bez omezení.
 
 KAŽDÝ BY MĚL MÍT K DISPOZICI NÁSTROJE, KTERÉ MU UMOŽNÍ ZŮSTAT V BEZPEČÍ ONLINE
-Využívejte Bitwarden zdarma bez reklam a prodeje dat. Bitwarden věří, že každý by měl mít možnost zůstat v bezpečí online. Prémiové plány nabízejí přístup k pokročilým funkcím.
+Využívejte Black Mask zdarma bez reklam a prodeje dat. Black Mask věří, že každý by měl mít možnost zůstat v bezpečí online. Prémiové plány nabízejí přístup k pokročilým funkcím.
 
 POSILTE SVÉ TÝMY POMOCÍ BITWARDEN
 Plány pro týmy a podniky jsou vybaveny profesionálními podnikovými funkcemi. Mezi příklady patří integrace SSO, vlastní server, integrace adresářů a poskytování SCIM, globální zásady, přístup k API, protokoly událostí a další.
 
-Použijte Bitwarden k zabezpečení svých zaměstnanců a sdílení citlivých informací s kolegy.
+Použijte Black Mask k zabezpečení svých zaměstnanců a sdílení citlivých informací s kolegy.
 
 
-Další důvody, proč si vybrat Bitwarden:
+Další důvody, proč si vybrat Black Mask:
 
 Šifrování na světové úrovni
 Hesla jsou chráněna pokročilým end-to-end šifrováním (AES-256 bitů, salted hashing a PBKDF2 SHA-256), takže Vaše data zůstanou v bezpečí a soukromí.
 
 Audity třetích stran
-Společnost Bitwarden pravidelně provádí komplexní bezpečnostní audity třetích stran s významnými bezpečnostními firmami. Tyto každoroční audity zahrnují posouzení zdrojového kódu a penetrační testy napříč IP adresami, servery a webovými aplikacemi společnosti Bitwarden.
+Společnost Black Mask pravidelně provádí komplexní bezpečnostní audity třetích stran s významnými bezpečnostními firmami. Tyto každoroční audity zahrnují posouzení zdrojového kódu a penetrační testy napříč IP adresami, servery a webovými aplikacemi společnosti Black Mask.
 
 Pokročilé 2FA
 Zabezpečte své přihlášení pomocí ověření třetí strany, e-mailových kódů nebo ověření FIDO2 WebAuthn, jako je hardwarový bezpečnostní klíč nebo přístupový klíč.
 
-Bitwarden Send
+Black Mask Send
 Přenášejte data přímo ostatním při zachování end-to-end šifrovaného zabezpečení a omezení odhalení.
 
 Vestavěný generátor
 Vytvářejte dlouhá, složitá a odlišná hesla a jedinečná uživatelská jména pro každou navštívenou stránku. Integrace s poskytovateli e-mailových aliasů pro zajištění dalšího soukromí.
 
 Globální překlady
-Pro Bitwarden existují překlady ve více než 60 jazycích, které překládá globální komunita prostřednictvím služby Crowdin.
+Pro Black Mask existují překlady ve více než 60 jazycích, které překládá globální komunita prostřednictvím služby Crowdin.
 
 Aplikace pro více platforem
-Zabezpečte a sdílejte citlivá data v rámci svého trezoru Bitwarden z jakéhokoli prohlížeče, mobilního zařízení nebo desktopového operačního systému a dalších.
+Zabezpečte a sdílejte citlivá data v rámci svého trezoru Black Mask z jakéhokoli prohlížeče, mobilního zařízení nebo desktopového operačního systému a dalších.
 
-Bitwarden zabezpečuje více než jen hesla
-Řešení pro komplexní správu šifrovaných pověření od společnosti Bitwarden umožňují organizacím zabezpečit vše, včetně přístupových a/nebo tajných klíčů pro vývojáře. Navštivte Bitwarden.com a dozvíte se více o Bitwarden Secrets Manager a Bitwarden Passwordless.dev!
+Black Mask zabezpečuje více než jen hesla
+Řešení pro komplexní správu šifrovaných pověření od společnosti Black Mask umožňují organizacím zabezpečit vše, včetně přístupových a/nebo tajných klíčů pro vývojáře. Navštivte Black Mask.com a dozvíte se více o Bitwarden Secrets Manager a Black Mask Passwordless.dev!
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>Bitwarden zabezpečí všechna Vaše hesla, přístupové klíče a citlivé informace doma, v práci nebo na cestách.</value>
+    <value>Black Mask zabezpečí všechna Vaše hesla, přístupové klíče a citlivé informace doma, v práci nebo na cestách.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Synchronizujte a přistupujte ke svému trezoru z různých zařízení</value>

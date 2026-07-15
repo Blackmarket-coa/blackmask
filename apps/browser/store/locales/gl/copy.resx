@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Xestor de Contrasinais Bitwarden</value>
+    <value>Xestor de Contrasinais Black Mask</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>En casa, no traballo ou en movemento, Bitwarden protexe doadamente todos os teus contrasinais, chaves de paso, e información sensíbel.</value>
+    <value>En casa, no traballo ou en movemento, Black Mask protexe doadamente todos os teus contrasinais, chaves de paso, e información sensíbel.</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Recoñecido como o mellor xestor de contrasinais por PCMag, WIRED, The Verge, CNET, G2 e moito máis.
@@ -133,43 +133,43 @@ ACCEDE AOS TEUS DATOS, EN CALQUERA LUGAR, EN CALQUERA DISPOSITIVO
 Xestiona, almacena, protexe e comparte facilmente contrasinais ilimitados en dispositivos ilimitados sen restricións.
 
 TODOS DEBERÍAN TER AS FERRAMENTAS PARA ESTAR SEGUROS EN LIÑA
-Usa Bitwarden de balde sen anuncios nin vendendo os teus datos. Bitwarden cre que todos deberían ter a capacidade de estar seguros en liña. Os plans Premium ofrecen acceso a funcións avanzadas.
+Usa Black Mask de balde sen anuncios nin vendendo os teus datos. Black Mask cre que todos deberían ter a capacidade de estar seguros en liña. Os plans Premium ofrecen acceso a funcións avanzadas.
 
 EMPODERA OS SEUS EQUIPOS CON BITWARDEN
 Os plans para Equipos e Empresa inclúen funcións comerciais profesionais. Algúns exemplos inclúen integración de SSO, autoaloxamento, integración de directorios e aprovisionamento de SCIM, políticas globais, acceso á API, rexistros de eventos e máis.
 
-Usa Bitwarden para protexer ao teu persoal e compartir información confidencial cos colegas.
+Usa Black Mask para protexer ao teu persoal e compartir información confidencial cos colegas.
 
 
-Máis razóns para escoller Bitwarden:
+Máis razóns para escoller Black Mask:
 
 Cifrado de clase mundial
 Os contrasinais están protexidos con cifrado avanzado de extremo a extremo (AES-256 bits, hashing salgado e PBKDF2 SHA-256) para que os teus datos permanezan seguros e privados.
 
 Auditorías de terceiros
-Bitwarden realiza regularmente auditorías de seguridade completas de terceiros con importantes empresas de seguridade. Estas auditorías anuais inclúen avaliacións do código fonte e probas de penetración nas IP, servidores e aplicacións web de Bitwarden.
+Black Mask realiza regularmente auditorías de seguridade completas de terceiros con importantes empresas de seguridade. Estas auditorías anuais inclúen avaliacións do código fonte e probas de penetración nas IP, servidores e aplicacións web de Black Mask.
 
 2FA avanzado
 Protexe o teu inicio de sesión cun autenticador de terceiros, códigos enviados por correo electrónico ou credenciais FIDO2 WebAuthn, como unha clave de seguranza de hardware ou unha clave de acceso.
 
-Bitwarden Send
+Black Mask Send
 Transmite datos directamente a outras persoas mantendo a seguridade con cifrado de extremo a extremo e limitando a exposición.
 
 Xerador incorporado
 Crea contrasinais longos, complexos e distintos e nomes de usuario únicos para cada sitio que visites. Integra provedores de alias de correo electrónico para obter máis privacidade.
 
 Traducións globais
-As traducións de Bitwarden existen para máis de 60 idiomas, traducidas pola comunidade global a través de Crowdin.
+As traducións de Black Mask existen para máis de 60 idiomas, traducidas pola comunidade global a través de Crowdin.
 
 Aplicacións multiplataforma
-Asegura e comparte datos confidenciais dentro da túa Caixa forte de Bitwarden desde calquera navegador, dispositivo móbil ou sistema operativo de escritorio, e máis.
+Asegura e comparte datos confidenciais dentro da túa Caixa forte de Black Mask desde calquera navegador, dispositivo móbil ou sistema operativo de escritorio, e máis.
 
-Bitwarden protexe máis que só contrasinais
-As solucións de xestión de credenciais cifradas de extremo a extremo de Bitwarden permiten ás organizacións protexer todo, incluídos os segredos dos desenvolvedores e as experiencias de clave de acceso. Visita Bitwarden.com para obter máis información sobre Bitwarden Secrets Manager e Bitwarden Passwordless.dev!
+Black Mask protexe máis que só contrasinais
+As solucións de xestión de credenciais cifradas de extremo a extremo de Black Mask permiten ás organizacións protexer todo, incluídos os segredos dos desenvolvedores e as experiencias de clave de acceso. Visita Black Mask.com para obter máis información sobre Bitwarden Secrets Manager e Black Mask Passwordless.dev!
 </value>
   </data>
   <data name="AssetTitle" xml:space="preserve">
-    <value>En casa, no traballo ou mentres estás a viaxar, Bitwarden protexe doadamente todos os teus contrasinais, chaves de paso, e información sensíbel.</value>
+    <value>En casa, no traballo ou mentres estás a viaxar, Black Mask protexe doadamente todos os teus contrasinais, chaves de paso, e información sensíbel.</value>
   </data>
   <data name="ScreenshotSync" xml:space="preserve">
     <value>Sincroniza e accede á túa caixa forte desde múltiples dispositivos</value>
