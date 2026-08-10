@@ -128,6 +128,7 @@ export type AllowedFeatureFlagTypes = boolean | number | string;
 
 // Helper to ensure the value is treated as a boolean.
 const FALSE = false as boolean;
+const TRUE = true as boolean;
 
 /**
  * Default value for feature flags.
@@ -170,7 +171,10 @@ export const DefaultFeatureFlagValue = {
   [FeatureFlag.EventManagementForDataDogAndCrowdStrike]: FALSE,
   [FeatureFlag.EventManagementForHuntress]: FALSE,
   [FeatureFlag.EventManagementForSplunk]: FALSE,
-  [FeatureFlag.PhishingDetection]: FALSE,
+  // Enabled for Black Mask: the phishing protection surface
+  // (apps/browser/src/privacy/popup/phishing-protection.component.ts) reports "Unavailable" unless
+  // the upstream detection engine this flag gates is also on.
+  [FeatureFlag.PhishingDetection]: TRUE,
   [FeatureFlag.Milestone11AppPageImprovements]: FALSE,
   [FeatureFlag.AccessIntelligenceTrendChart]: FALSE,
   [FeatureFlag.AccessIntelligenceNewArchitecture]: FALSE,
@@ -239,14 +243,18 @@ export const DefaultFeatureFlagValue = {
   [FeatureFlag.DesktopSettingsDialog]: FALSE,
 
   /* Black Mask */
-  [FeatureFlag.BlackMaskPrivacyDashboard]: FALSE,
-  [FeatureFlag.BlackMaskPersonaVault]: FALSE,
-  [FeatureFlag.BlackMaskTrackerDetection]: FALSE,
-  [FeatureFlag.BlackMaskFingerprintTest]: FALSE,
-  [FeatureFlag.BlackMaskDataExposure]: FALSE,
-  [FeatureFlag.BlackMaskPersonaContainers]: FALSE,
-  [FeatureFlag.BlackMaskPhishingProtection]: FALSE,
-  [FeatureFlag.BlackMaskAiMediaDetector]: FALSE,
+  // These default to on: Black Mask ships against a self-hosted Vaultwarden backend, which does
+  // not serve `featureStates` from /config. Without an on-by-default value the client would fall
+  // back to `false` and every Black Mask feature would be invisible in production. A backend that
+  // does serve /config can still override any of these.
+  [FeatureFlag.BlackMaskPrivacyDashboard]: TRUE,
+  [FeatureFlag.BlackMaskPersonaVault]: TRUE,
+  [FeatureFlag.BlackMaskTrackerDetection]: TRUE,
+  [FeatureFlag.BlackMaskFingerprintTest]: TRUE,
+  [FeatureFlag.BlackMaskDataExposure]: TRUE,
+  [FeatureFlag.BlackMaskPersonaContainers]: TRUE,
+  [FeatureFlag.BlackMaskPhishingProtection]: TRUE,
+  [FeatureFlag.BlackMaskAiMediaDetector]: TRUE,
 } satisfies Record<FeatureFlag, AllowedFeatureFlagTypes>;
 
 export type DefaultFeatureFlagValueType = typeof DefaultFeatureFlagValue;

@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Vytvořit účet"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Jste noví na Black Masku?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Odhlásit se"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "O Black Masku"
   },
   "about": {
     "message": "O rozšíření"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Více od Black Masku"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Pokračovat na bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "S heslem Passwordless.dev vytvořte hladký a bezpečný přístup bez tradičních hesel. Další informace naleznete na stránkách bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask pro rodinu zdarma"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Máte nárok na Black Mask pro rodinu zdarma. Uplatněte tuto nabídku ještě dnes ve webové aplikaci."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Přihlásit se"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Přihlásit se do Black Masku"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Zobrazit návrhy automatického vyplňování v polích formuláře"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Jak Black Mask chrání Vaše data před phishingem?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Ilustrace nabídky automatického vyplňování Black Mask zobrazující vygenerované heslo."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Aktualizovat v Black Masku"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask Vás poté požádá o aktualizaci hesla ve správci hesel.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Ilustrace oznámení v Black Masku, která uživatele vyzývá k aktualizaci přihlášení."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Tlačítko nabídky automatického vyplňování Black Masku",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Přepnout nabídku automatického vyplňování Black Masku",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Stáhnout přílohu"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Stáhnout Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Stáhnout Black Mask na všech zařízeních"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Přistupujte k trezoru bez prohlížeče. Pak nastavte odemykání pomocí biometriky pro urychlení odemykání v desktopové aplikaci i rozšíření prohlížeče."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Stáhnout z bitwarden.com nyní"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Heslo bylo znovu vygenerováno",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Uložit do Black Masku",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Stáhnout aplikace Black Mask"
   },
   "emailProtected": {

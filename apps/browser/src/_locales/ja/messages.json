@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "アカウントの作成"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Black Mask は初めてですか？"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "ログアウト"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Black Mask について"
   },
   "about": {
     "message": "アプリについて"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Black Mask の詳細"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "bitwarden.com に進みますか？"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Passwordless.dev でスムーズで安全なログイン体験を無料で提供します。bitwarden.com のウェブサイトで詳細をご覧ください。"
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "無料 Black Mask ファミリー"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "無料 Black Mask ファミリー特典を受け取る資格があります。ウェブアプリで受け取りできます。"
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "ログイン"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Black Mask にログイン"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "フォームフィールドに自動入力の候補を表示する"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Black Mask はどのようにフィッシングからデータを保護しますか？"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Black Mask の自動入力メニューで、生成されたパスワードが表示されている例"
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Black Mask 上のデータを更新"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "続いて、 Black Mask がパスワードマネージャーに保存されたパスワードを更新するよう促します。",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "ユーザーにログイン情報を更新するよう促す Black Mask の通知例"
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask 自動入力メニューボタン",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Black Mask 自動入力メニューの切り替え",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "添付ファイルをダウンロード"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Black Mask をダウンロード"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "すべてのデバイスに Black Mask をダウンロード"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "ブラウザーを使わずに保管庫にアクセスし、デスクトップアプリとブラウザー拡張機能の両方でロック解除をすばやく行えるように、生体認証によるロック解除を設定します。"
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "bitwarden.com から今すぐダウンロード"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "パスワードを再生成しました",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Black Mask へ保存",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Black Mask アプリをダウンロード"
   },
   "emailProtected": {

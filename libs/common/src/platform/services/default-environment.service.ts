@@ -79,6 +79,12 @@ export const USER_CLOUD_REGION_KEY = new UserKeyDefinition<CloudRegion>(
 );
 
 /**
+ * The origin the hosted Black Mask backend is served from. Vaultwarden serves the API, identity,
+ * icons, notifications and events endpoints from this single origin.
+ */
+export const BLACK_MASK_BASE_URL = "https://vault.blackmask.app";
+
+/**
  * The production regions available for selection.
  *
  * In the future we desire to load these urls from the config endpoint.
@@ -86,32 +92,15 @@ export const USER_CLOUD_REGION_KEY = new UserKeyDefinition<CloudRegion>(
 export const PRODUCTION_REGIONS: RegionConfig[] = [
   {
     key: Region.US,
-    domain: "bitwarden.com",
+    domain: "blackmask.app",
+    // Black Mask runs on Vaultwarden, which serves every service from a single origin under
+    // path prefixes (/api, /identity, /icons, ...) rather than Bitwarden's per-service
+    // subdomains. Setting only `base` lets Environment.getUrl() derive the rest; `webVault`
+    // must stay explicit because WebEnvironmentService reads `new URL(r.urls.webVault)`
+    // directly when matching the current hostname to a region.
     urls: {
-      base: null,
-      api: "https://api.bitwarden.com",
-      identity: "https://identity.bitwarden.com",
-      icons: "https://icons.bitwarden.net",
-      webVault: "https://vault.bitwarden.com",
-      notifications: "https://notifications.bitwarden.com",
-      events: "https://events.bitwarden.com",
-      scim: "https://scim.bitwarden.com",
-      send: "https://send.bitwarden.com",
-    },
-  },
-  {
-    key: Region.EU,
-    domain: "bitwarden.eu",
-    urls: {
-      base: null,
-      api: "https://api.bitwarden.eu",
-      identity: "https://identity.bitwarden.eu",
-      icons: "https://icons.bitwarden.eu",
-      webVault: "https://vault.bitwarden.eu",
-      notifications: "https://notifications.bitwarden.eu",
-      events: "https://events.bitwarden.eu",
-      scim: "https://scim.bitwarden.eu",
-      send: "https://send.bitwarden.eu",
+      base: BLACK_MASK_BASE_URL,
+      webVault: BLACK_MASK_BASE_URL,
     },
   },
 ];

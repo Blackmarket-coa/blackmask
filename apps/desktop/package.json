@@ -1,18 +1,20 @@
 {
   "name": "@bitwarden/desktop",
-  "description": "A secure and free password manager for all of your devices.",
+  "description": "Privacy and counter-surveillance tools with a secure vault for all of your devices.",
   "version": "2026.6.0",
   "keywords": [
-    "bitwarden",
+    "black mask",
+    "blackmask",
+    "privacy",
     "password",
     "vault",
     "password manager"
   ],
-  "author": "Bitwarden Inc. <hello@bitwarden.com> (https://bitwarden.com)",
-  "homepage": "https://bitwarden.com",
+  "author": "Blackmarket-coa",
+  "homepage": "https://github.com/Blackmarket-coa/blackmask#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitwarden/clients.git"
+    "url": "git+https://github.com/Blackmarket-coa/blackmask.git"
   },
   "license": "GPL-3.0",
   "dependencies": {
@@ -39,12 +41,12 @@
     "build:renderer:watch": "cross-env NODE_ENV=development webpack --config webpack.config.js --config-name renderer --watch",
     "electron": "node ./scripts/start.js",
     "electron:ignore": "node ./scripts/start.js --ignore-certificate-errors",
-    "flatpak:dev": "npm run clean:dist && electron-builder --dir -p never && flatpak-builder --force-clean --install --user ../../.flatpak/ ./resources/com.bitwarden.desktop.devel.yaml && flatpak run com.bitwarden.desktop",
+    "flatpak:dev": "npm run clean:dist && electron-builder --dir -p never && flatpak-builder --force-clean --install --user ../../.flatpak/ ./resources/app.blackmask.desktop.devel.yaml && flatpak run app.blackmask.desktop",
     "clean:dist": "rimraf ./dist",
     "pack:dir": "npm run clean:dist && electron-builder --dir -p never",
-    "pack:lin:flatpak": "flatpak-builder --repo=../../.flatpak-repo ../../.flatpak  ./resources/com.bitwarden.desktop.devel.yaml --install-deps-from=flathub --force-clean &&  flatpak build-bundle ../../.flatpak-repo/ ./dist/com.bitwarden.desktop.flatpak com.bitwarden.desktop",
-    "pack:lin": "npm run clean:dist && electron-builder --linux --x64 -p never && export SNAP_FILE=$(realpath ./dist/bitwarden_*.snap) && unsquashfs -d ./dist/tmp-snap/ $SNAP_FILE && mkdir -p ./dist/tmp-snap/meta/polkit/ && cp ./resources/com.bitwarden.desktop.policy  ./dist/tmp-snap/meta/polkit/polkit.com.bitwarden.desktop.policy && rm $SNAP_FILE && snap pack --compression=lzo ./dist/tmp-snap/ && mv ./*.snap ./dist/ && rm -rf ./dist/tmp-snap/ && cp ./resources/com.bitwarden.desktop.desktop ./dist/linux-unpacked/resources && cp -r ./resources/icons ./dist/linux-unpacked/resources && tar -czvf ./dist/bitwarden_desktop_x64.tar.gz -C ./dist/linux-unpacked/ .",
-    "pack:lin:arm64": "npm run clean:dist && electron-builder --linux --arm64 -p never && export SNAP_FILE=$(realpath ./dist/bitwarden_*.snap) && unsquashfs -d ./dist/tmp-snap/ $SNAP_FILE && mkdir -p ./dist/tmp-snap/meta/polkit/ && cp ./resources/com.bitwarden.desktop.policy  ./dist/tmp-snap/meta/polkit/polkit.com.bitwarden.desktop.policy && rm $SNAP_FILE && snap pack --compression=lzo ./dist/tmp-snap/ && mv ./*.snap ./dist/ && rm -rf ./dist/tmp-snap/ && cp ./resources/com.bitwarden.desktop.desktop ./dist/linux-arm64-unpacked/resources && cp -r ./resources/icons ./dist/linux-arm64-unpacked/resources && tar -czvf ./dist/bitwarden_desktop_arm64.tar.gz -C ./dist/linux-arm64-unpacked/ .",
+    "pack:lin:flatpak": "flatpak-builder --repo=../../.flatpak-repo ../../.flatpak  ./resources/app.blackmask.desktop.devel.yaml --install-deps-from=flathub --force-clean &&  flatpak build-bundle ../../.flatpak-repo/ ./dist/app.blackmask.desktop.flatpak app.blackmask.desktop",
+    "pack:lin": "npm run clean:dist && electron-builder --linux --x64 -p never && export SNAP_FILE=$(realpath ./dist/blackmask_*.snap) && unsquashfs -d ./dist/tmp-snap/ $SNAP_FILE && mkdir -p ./dist/tmp-snap/meta/polkit/ && cp ./resources/app.blackmask.desktop.policy  ./dist/tmp-snap/meta/polkit/polkit.app.blackmask.desktop.policy && rm $SNAP_FILE && snap pack --compression=lzo ./dist/tmp-snap/ && mv ./*.snap ./dist/ && rm -rf ./dist/tmp-snap/ && cp ./resources/app.blackmask.desktop.desktop ./dist/linux-unpacked/resources && cp -r ./resources/icons ./dist/linux-unpacked/resources && tar -czvf ./dist/blackmask_desktop_x64.tar.gz -C ./dist/linux-unpacked/ .",
+    "pack:lin:arm64": "npm run clean:dist && electron-builder --linux --arm64 -p never && export SNAP_FILE=$(realpath ./dist/blackmask_*.snap) && unsquashfs -d ./dist/tmp-snap/ $SNAP_FILE && mkdir -p ./dist/tmp-snap/meta/polkit/ && cp ./resources/app.blackmask.desktop.policy  ./dist/tmp-snap/meta/polkit/polkit.app.blackmask.desktop.policy && rm $SNAP_FILE && snap pack --compression=lzo ./dist/tmp-snap/ && mv ./*.snap ./dist/ && rm -rf ./dist/tmp-snap/ && cp ./resources/app.blackmask.desktop.desktop ./dist/linux-arm64-unpacked/resources && cp -r ./resources/icons ./dist/linux-arm64-unpacked/resources && tar -czvf ./dist/blackmask_desktop_arm64.tar.gz -C ./dist/linux-arm64-unpacked/ .",
     "pack:mac": "npm run clean:dist && electron-builder --mac --universal -p never",
     "pack:mac:with-extension": "npm run clean:dist && npm run build:macos-extension:mac && electron-builder --mac --universal -p never",
     "pack:mac:arm64": "npm run clean:dist && electron-builder --mac --arm64 -p never",

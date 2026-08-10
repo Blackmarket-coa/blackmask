@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Criar conta"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Novo no Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Terminar sessão"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Acerca do Black Mask"
   },
   "about": {
     "message": "Acerca de"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Mais do Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Continuar para bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Crie experiências de início de sessão suaves e seguras, livre de palavras-passe tradicionais, com o Passwordless.dev. Saiba mais no site bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Plano Familiar gratuito Black Mask"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "É elegível para o Plano Familiar gratuito Black Mask. Resgate esta oferta hoje na aplicação web."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Iniciar sessão"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Iniciar sessão no Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Mostrar sugestões de preenchimento automático nos campos do formulário"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Como o Black Mask protege os seus dados contra phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Ilustração do menu de preenchimento automático do Black Mask com uma palavra-passe gerada."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Atualização no Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "O Black Mask pedir-lhe-á então para atualizar a palavra-passe no gestor de palavras-passe.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Ilustração de uma notificação do Black Mask a pedir ao utilizador que atualize a credencial."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Botão de menu de preenchimento automático do Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Alternar o menu de preenchimento automático do Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Transferir anexo"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Descarregar o Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Descarregue o Black Mask em todos os dispositivos"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Aceda ao seu cofre sem um navegador e, em seguida, configure o desbloqueio com biometria para acelerar o desbloqueio na app para computador e na extensão do navegador."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Descarregue já a partir de bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Palavra-passe gerada novamente",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Guardar no Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "utilizador@bitwarden.com, utilizador@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Descarregar as apps Black Mask"
   },
   "emailProtected": {

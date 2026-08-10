@@ -21,7 +21,7 @@
     "message": "All critical apps"
   },
   "appLogoLabel": {
-    "message": "Bitwarden logo"
+    "message": "Black Mask logo"
   },
   "criticalApplications": {
     "message": "Kritiske apps"
@@ -233,7 +233,7 @@
     "message": "Track improvements across your team"
   },
   "membersAreAutomaticallyNotified": {
-    "message": "Members are automatically notified of at-risk passwords in their Bitwarden extension. No chasing required."
+    "message": "Members are automatically notified of at-risk passwords in their Black Mask extension. No chasing required."
   },
   "importYourOrgDataToGetStarted": {
     "message": "Import your org data to get started"
@@ -396,7 +396,7 @@
     }
   },
   "membersWillReceiveSecurityTask": {
-    "message": "Members of your organization will be assigned a task to change vulnerable passwords. They’ll receive a notification within their Bitwarden browser extension."
+    "message": "Members of your organization will be assigned a task to change vulnerable passwords. They’ll receive a notification within their Black Mask browser extension."
   },
   "membersAtRiskCount": {
     "message": "$COUNT$ members at-risk",
@@ -825,10 +825,10 @@
     "message": "Gør 2-trinsbekræftelse problemfri"
   },
   "totpHelper": {
-    "message": "Bitwarden kan gemme og udfylde 2-trinsbekræftelseskoder. Kopiér og indsæt nøglen i dette felt."
+    "message": "Black Mask kan gemme og udfylde 2-trinsbekræftelseskoder. Kopiér og indsæt nøglen i dette felt."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden kan gemme og udfylde 2-trinsbekræftelseskoder. Vælg kameraikonet for at tage et skærmfoto af dette websteds godkendelses-QR-kode, eller kopiér og indsæt nøglen i dette felt."
+    "message": "Black Mask kan gemme og udfylde 2-trinsbekræftelseskoder. Vælg kameraikonet for at tage et skærmfoto af dette websteds godkendelses-QR-kode, eller kopiér og indsæt nøglen i dette felt."
   },
   "totpCapture": {
     "message": "Scan authenticator QR code from current webpage"
@@ -1734,7 +1734,7 @@
     "message": "Log ind med enhed"
   },
   "loginWithDeviceEnabledNote": {
-    "message": "Log ind med enhed skal være opsat i indstillingerne i Bitwarden-appen. Brug for en anden mulighed?"
+    "message": "Log ind med enhed skal være opsat i indstillingerne i Black Mask-appen. Brug for en anden mulighed?"
   },
   "needAnotherOptionV1": {
     "message": "Behov for en anden mulighed?"
@@ -1848,7 +1848,7 @@
     "message": "Opret konto"
   },
   "newToBitwarden": {
-    "message": "Ny på Bitwarden?"
+    "message": "Ny på Black Mask?"
   },
   "setAStrongPassword": {
     "message": "Indstil en stærk adgangskode"
@@ -1866,7 +1866,7 @@
     "message": "Log ind"
   },
   "logInToBitwarden": {
-    "message": "Log ind på Bitwarden"
+    "message": "Log ind på Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Enter the code sent to your email"
@@ -1896,7 +1896,7 @@
     "message": "Hvad er en enhed?"
   },
   "aDeviceIs": {
-    "message": "En enhed er en unik installation af Bitwarden-appen, hvor man har logget ind. Geninstallation, rydning af app-data eller rydning af cookies kan medføre, at en enhed vises op flere gange."
+    "message": "En enhed er en unik installation af Black Mask-appen, hvor man har logget ind. Geninstallation, rydning af app-data eller rydning af cookies kan medføre, at en enhed vises op flere gange."
   },
   "logInInitiated": {
     "message": "Indlogning påbegyndt"
@@ -2124,7 +2124,7 @@
     "message": "En notifikation er sendt til din enhed."
   },
   "notificationSentDevicePart1": {
-    "message": "Unlock Bitwarden on your device or on the "
+    "message": "Unlock Black Mask on your device or on the "
   },
   "accessAttemptBy": {
     "message": "Access attempt by $EMAIL$",
@@ -2148,7 +2148,7 @@
     "message": "Make sure the Fingerprint phrase matches the one below before approving."
   },
   "notificationSentDeviceComplete": {
-    "message": "Unlock Bitwarden on your device. Make sure the Fingerprint phrase matches the one below before approving."
+    "message": "Unlock Black Mask on your device. Make sure the Fingerprint phrase matches the one below before approving."
   },
   "aNotificationWasSentToYourDevice": {
     "message": "En notifikation er sendt til enheden"
@@ -2329,7 +2329,7 @@
     "message": "Denne eksport krypterer dataene vha. din kontokrypteringsnøgle. Roteres denne kontokrypteringsnøgle på et tidspunkt, skal der eksporteres igen, da du ikke vil kunne dekryptere denne eksportfil."
   },
   "encExportAccountWarningDesc": {
-    "message": "Kontokrypteringsnøgler er unikke for hver Bitwarden-brugerkonto, så man kan ikke importere en krypteret eksport til en anden konto."
+    "message": "Kontokrypteringsnøgler er unikke for hver Black Mask-brugerkonto, så man kan ikke importere en krypteret eksport til en anden konto."
   },
   "exportNoun": {
     "message": "Export",
@@ -2361,10 +2361,10 @@
     "message": "Bekræft filadgangskode"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Brug kontokrypteringsnøglen, dannet af dit kontobrugernavn samt hovedadgangskode, for at kryptere eksporten og hindre import til andre end den aktuelle Bitwarden-konto."
+    "message": "Brug kontokrypteringsnøglen, dannet af dit kontobrugernavn samt hovedadgangskode, for at kryptere eksporten og hindre import til andre end den aktuelle Black Mask-konto."
   },
   "passwordProtectedOptionDescription": {
-    "message": "Opsæt en adgangskode til både at kryptere eksporten samt dekryptere denne ved import til enhver Bitwarden-konto."
+    "message": "Opsæt en adgangskode til både at kryptere eksporten samt dekryptere denne ved import til enhver Black Mask-konto."
   },
   "exportTypeHeading": {
     "message": "Eksporttype"
@@ -2532,7 +2532,7 @@
     "message": "Anmodning afventer"
   },
   "logBackInOthersToo": {
-    "message": "Log ind igen. Bruger du andre Bitwarden-applikationer, så log også ud og ind igen på disse."
+    "message": "Log ind igen. Bruger du andre Black Mask-applikationer, så log også ud og ind igen på disse."
   },
   "changeMasterPassword": {
     "message": "Skift hovedadgangskode"
@@ -2565,7 +2565,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Sættes KDF-iterationer for højt, kan det resultere i dårlig ydeevne under indlogning på (og oplåsning af) Bitwarden på langsomme eller ældre enheder. En værdiforøgelse i trin á $INCREMENT$ anbefales med efterfølgende test på alle dine enheder.",
+    "message": "Sættes KDF-iterationer for højt, kan det resultere i dårlig ydeevne under indlogning på (og oplåsning af) Black Mask på langsomme eller ældre enheder. En værdiforøgelse i trin á $INCREMENT$ anbefales med efterfølgende test på alle dine enheder.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -2578,7 +2578,7 @@
     "description": "Memory refers to computer memory (RAM). MB is short for megabytes."
   },
   "argon2Warning": {
-    "message": "Indstilles KDF-iterationer, hukommelse og parallelitet for højt, kan det resultere i dårlig ydeevne, når der logges ind på (og oplåser) Bitwarden på enheder med langsomme CPU'er. Vi anbefaler at ændre disse enkeltvis i små intervaller og derefter teste alle relevante enheder."
+    "message": "Indstilles KDF-iterationer, hukommelse og parallelitet for højt, kan det resultere i dårlig ydeevne, når der logges ind på (og oplåser) Black Mask på enheder med langsomme CPU'er. Vi anbefaler at ændre disse enkeltvis i små intervaller og derefter teste alle relevante enheder."
   },
   "kdfParallelism": {
     "message": "KDF-parallelitet"
@@ -2611,10 +2611,10 @@
     "message": "Slå nyt enheds-login beskyttelse til"
   },
   "turnOffNewDeviceLoginProtectionModalDesc": {
-    "message": "Fortsæt nedenfor for at deaktivere Bitwarden-bekræftelsesmails ved indlogning fra en ny enhed."
+    "message": "Fortsæt nedenfor for at deaktivere Black Mask-bekræftelsesmails ved indlogning fra en ny enhed."
   },
   "turnOnNewDeviceLoginProtectionModalDesc": {
-    "message": "Fortsæt nedenfor for at få tilsendt Bitwarden-bekræftelsesmails ved indlogning fra en ny enhed."
+    "message": "Fortsæt nedenfor for at få tilsendt Black Mask-bekræftelsesmails ved indlogning fra en ny enhed."
   },
   "turnOffNewDeviceLoginProtectionWarning": {
     "message": "Med den nye enheds-login beskyttelse slået fra kan alle med hovedadgangskoden tilgå brugerkontoen fra enhver enhed. For at beskytte brugerkontoen uden bekræftelsesmails, opsæt totrins-login."
@@ -2818,7 +2818,7 @@
     "message": "Domæneregler"
   },
   "domainRulesDesc": {
-    "message": "Har man samme login på tværs af flere forskellige website-domæner, kan webstedet markeres som \"ækvivalent\". \"Globale\" domæner er dem, som allerede er oprettet til dig af Bitwarden."
+    "message": "Har man samme login på tværs af flere forskellige website-domæner, kan webstedet markeres som \"ækvivalent\". \"Globale\" domæner er dem, som allerede er oprettet til dig af Black Mask."
   },
   "globalEqDomains": {
     "message": "Globale ækvivalente domæner"
@@ -2866,7 +2866,7 @@
     "message": "Aktivér totrins-login for organisationen."
   },
   "twoStepLoginEnterpriseDescStart": {
-    "message": "Håndhæv Bitwarden totrins-login indstillinger for medlemmer vha. ",
+    "message": "Håndhæv Black Mask totrins-login indstillinger for medlemmer vha. ",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enforce Bitwarden Two-step Login options for members by using the Two-step Login Policy.'"
   },
   "twoStepLoginPolicy": {
@@ -2879,7 +2879,7 @@
     "message": "Er SSO opsat, eller planlægges opsat, håndhæves totrins-login muligvis allerede gennem identitetsudbyderen."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Opsætning af totrins-login kan permanent låse en bruger ude af sin Bitwarden-konto. En gendannelseskode muliggør kontoadgang, såfremt den normale totrins-loginudbyder ikke længere kan bruges (f.eks. ved tab af en enhed). Bitwarden-supporten kan ikke hjælpe ved mistet kontoadgang. Det anbefales at nedskrive/udskrive gendannelseskoden samt gemme denne et sikkert sted."
+    "message": "Opsætning af totrins-login kan permanent låse en bruger ude af sin Black Mask-konto. En gendannelseskode muliggør kontoadgang, såfremt den normale totrins-loginudbyder ikke længere kan bruges (f.eks. ved tab af en enhed). Black Mask-supporten kan ikke hjælpe ved mistet kontoadgang. Det anbefales at nedskrive/udskrive gendannelseskoden samt gemme denne et sikkert sted."
   },
   "restrictedItemTypePolicy": {
     "message": "Remove card item type"
@@ -2894,7 +2894,7 @@
     "message": "A policy set by 1 or more organizations prevents you from importing cards to your vaults."
   },
   "yourSingleUseRecoveryCode": {
-    "message": "Your single-use recovery code can be used to turn off two-step login in the event that you lose access to your two-step login provider. Bitwarden recommends you write down the recovery code and keep it in a safe place."
+    "message": "Your single-use recovery code can be used to turn off two-step login in the event that you lose access to your two-step login provider. Black Mask recommends you write down the recovery code and keep it in a safe place."
   },
   "viewRecoveryCode": {
     "message": "Vis gendannelseskode"
@@ -2992,7 +2992,7 @@
     }
   },
   "continueToExternalUrlDesc": {
-    "message": "Bitwarden forlades nu og et eksternt websted åbnes i et nyt vindue."
+    "message": "Black Mask forlades nu og et eksternt websted åbnes i et nyt vindue."
   },
   "twoStepContinueToBitwardenUrlTitle": {
     "message": "Fortsæt til bitwarden.com?"
@@ -3040,7 +3040,7 @@
     "message": "Gem formularen."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Grundet platformsbegrænsninger kan YubiKeys ikke bruges i alle Bitwarden-applikationer. Man bør opsætter en anden totrins-loginudbyder, så man kan tilgå sin konto, når YubiKeys ikke kan benyttes. Understøttede platforme:"
+    "message": "Grundet platformsbegrænsninger kan YubiKeys ikke bruges i alle Black Mask-applikationer. Man bør opsætter en anden totrins-loginudbyder, så man kan tilgå sin konto, når YubiKeys ikke kan benyttes. Understøttede platforme:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Web-boks, computerapplikation, CLI og alle browserudvidelser på en enhed med en USB-port, der accepterer din YubiKey."
@@ -3091,7 +3091,7 @@
     "message": "Deaktivér alle nøgler"
   },
   "twoFactorDuoDesc": {
-    "message": "Angiv Bitwarden-applikationsoplysningerne fra Duo Admin-panelet."
+    "message": "Angiv Black Mask-applikationsoplysningerne fra Duo Admin-panelet."
   },
   "twoFactorDuoClientId": {
     "message": "Klient-ID"
@@ -3142,7 +3142,7 @@
     "message": "Gem formularen."
   },
   "twoFactorU2fWarning": {
-    "message": "Grundet platformsbegrænsninger kan FIDO U2F ikke bruges i alle Bitwarden-applikationer. Man bør opsætte en anden totrins-loginudbyder, så man kan tilgå sin konto, når FIDO U2F ikke kan benyttes. Understøttede platforme:"
+    "message": "Grundet platformsbegrænsninger kan FIDO U2F ikke bruges i alle Black Mask-applikationer. Man bør opsætte en anden totrins-loginudbyder, så man kan tilgå sin konto, når FIDO U2F ikke kan benyttes. Understøttede platforme:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Web-boks og browserudvidelser på en stationær/bærbar computer med en U2F-aktiveret browser (Chrome, Opera, Vivaldi eller Firefox med FIDO U2F aktiveret)."
@@ -3157,7 +3157,7 @@
     "message": "Problem med at læse sikkerhedsnøglen. Forsøg igen."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Gendannelseskoden til Bitwarden totrins-login"
+    "message": "Gendannelseskoden til Black Mask totrins-login"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Der er ikke opsat nogle totrins-loginudbydere endnu. Efter at have opsat én, kan du se din gendannelseskode her."
@@ -3494,7 +3494,7 @@
     }
   },
   "bitwardenFamiliesPlan": {
-    "message": "Bitwarden Families-abonnement."
+    "message": "Black Mask Families-abonnement."
   },
   "addons": {
     "message": "Tilføjelser"
@@ -3679,7 +3679,7 @@
     }
   },
   "churnOfferDiscountBody": {
-    "message": "As a thank-you for being a long-time Bitwarden customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
+    "message": "As a thank-you for being a long-time Black Mask customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
     "description": "Body copy on the churn-mitigation offer card. DISCOUNT = discount amount; DURATION = service duration (e.g. 'year' or '6 months')",
     "placeholders": {
       "discount": {
@@ -3904,7 +3904,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "Black Mask_premium_license.json"
       }
     }
   },
@@ -4097,7 +4097,7 @@
     }
   },
   "trialThankYou": {
-    "message": "Tak for tilmeldingen til Bitwarden for $PLAN$!",
+    "message": "Tak for tilmeldingen til Black Mask for $PLAN$!",
     "placeholders": {
       "plan": {
         "content": "$1",
@@ -4242,7 +4242,7 @@
     "message": "SSO External ID"
   },
   "ssoExternalIdDesc": {
-    "message": "SSO External ID is an unencrypted reference between Bitwarden and your configured SSO provider."
+    "message": "SSO External ID is an unencrypted reference between Black Mask and your configured SSO provider."
   },
   "nestCollectionUnder": {
     "message": "Placér samling under"
@@ -4287,7 +4287,7 @@
     "message": "Invite"
   },
   "inviteUserDesc": {
-    "message": "Inviter en ny bruger til din organisation ved at indtaste e-mailadressen på deres Bitwarden-konto nedenfor. Hvis de ikke allerede har en Bitwarden-konto, bliver de bedt om at oprette en ny konto."
+    "message": "Inviter en ny bruger til din organisation ved at indtaste e-mailadressen på deres Black Mask-konto nedenfor. Hvis de ikke allerede har en Black Mask-konto, bliver de bedt om at oprette en ny konto."
   },
   "inviteUserDescription": {
     "message": "Invite new users to your organization by entering their email address below."
@@ -4411,7 +4411,7 @@
     "message": "CLI"
   },
   "bitWebVault": {
-    "message": "Bitwarden Web-boks"
+    "message": "Black Mask Web-boks"
   },
   "bitSecretsManager": {
     "message": "Bitwarden Secrets Manager"
@@ -5388,7 +5388,7 @@
     }
   },
   "joinOrganizationDesc": {
-    "message": "Du er blevet inviteret til at blive medlem af organisationen anført ovenfor. For at acceptere invitationen skal du logge ind eller oprette en ny Bitwarden-konto."
+    "message": "Du er blevet inviteret til at blive medlem af organisationen anført ovenfor. For at acceptere invitationen skal du logge ind eller oprette en ny Black Mask-konto."
   },
   "finishJoiningThisOrganizationBySettingAMasterPassword": {
     "message": "Færdiggør tilmeldingen til denne organisation ved at opsætte en hovedadgangskode."
@@ -5457,10 +5457,10 @@
     "message": "Hvis din konto findes, har vi sendt dig en e-mail med yderligere instruktioner."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Du har bedt om at få slettet din Bitwarden-konto. Klik på knappen nedenfor for at bekræfte."
+    "message": "Du har bedt om at få slettet din Black Mask-konto. Klik på knappen nedenfor for at bekræfte."
   },
   "deleteRecoverOrgConfirmDesc": {
-    "message": "Du har anmodet om sletning af din Bitwarden-organisation."
+    "message": "Du har anmodet om sletning af din Black Mask-organisation."
   },
   "myOrganization": {
     "message": "Min organisation"
@@ -5785,7 +5785,7 @@
     }
   },
   "updateEncryptionKeyWarning": {
-    "message": "Efter opdatering af din krypteringsnøgle skal du logge ud og ind igen i alle Bitwarden-programmer, du bruger i øjeblikket (f.eks. mobilapp eller browserudvidelser). Hvis du ikke logger ud og ind (som downloader din nye krypteringsnøgle), kan det resultere i data korruption. Vi vil forsøge at logge dig ud automatisk, men det kan blive forsinket."
+    "message": "Efter opdatering af din krypteringsnøgle skal du logge ud og ind igen i alle Black Mask-programmer, du bruger i øjeblikket (f.eks. mobilapp eller browserudvidelser). Hvis du ikke logger ud og ind (som downloader din nye krypteringsnøgle), kan det resultere i data korruption. Vi vil forsøge at logge dig ud automatisk, men det kan blive forsinket."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Any account restricted exports you have saved will become invalid."
@@ -5821,7 +5821,7 @@
     "message": "Du har ikke valgt noget."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Få råd, bekendtgørelser og forskningsmuligheder fra Bitwarden i indbakken."
+    "message": "Få råd, bekendtgørelser og forskningsmuligheder fra Black Mask i indbakken."
   },
   "subscribe": {
     "message": "Subscribe"
@@ -6081,7 +6081,7 @@
     "message": "API-nøgle"
   },
   "apiKeyDesc": {
-    "message": "Din API-nøgle kan bruges til godkendelse i det offentlige Bitwarden-API."
+    "message": "Din API-nøgle kan bruges til godkendelse i det offentlige Black Mask-API."
   },
   "apiKeyRotateDesc": {
     "message": "Rotation af API-nøglen ugyldiggør den foregående nøgle. API-nøglen kan roteres, såfremt brug af den aktuelle nøgle ikke længere anses for sikker."
@@ -6090,7 +6090,7 @@
     "message": "Din API-nøgle har fuld adgang til organisationen og skal holdes hemmelig."
   },
   "userApiKeyDesc": {
-    "message": "Din API-nøgle kan bruges til godkendelse i Bitwarden-CLI."
+    "message": "Din API-nøgle kan bruges til godkendelse i Black Mask-CLI."
   },
   "userApiKeyWarning": {
     "message": "Din API-nøgle er en alternativ godkendelsesmekanisme, der skal holdes hemmelig."
@@ -6396,7 +6396,7 @@
     "message": "Begræns medlemmers deltagelse i andre organisationer. Denne politik kræves for organisationer med aktiveret domænebekræftelse."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Den nuværende organisationspolitik tillader dig ikke at deltage i mere end én organisation. Kontakt organisationens admins eller benyt en anden Bitwarden-konto under tilmelding."
+    "message": "Den nuværende organisationspolitik tillader dig ikke at deltage i mere end én organisation. Kontakt organisationens admins eller benyt en anden Black Mask-konto under tilmelding."
   },
   "singleOrgPolicyMemberWarning": {
     "message": "Ikke-overholdende medlemmer placeres i privilegie-ophævet status, indtil de forlader alle øvrige organisationer. Administratorer er fritaget og kan gendanne medlemmer, når overholdelse er opfyldt."
@@ -6604,7 +6604,7 @@
     "message": "Experiencing an issue? Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
+    "message": "Black Mask support",
     "description": "Link text that follows the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -6661,7 +6661,7 @@
     "message": "Redigér nødkontakt"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Invitér en ny nødkontakt ved at angive e-mailadressen på vedkommendes Bitwarden-konto nedenfor. Har vedkommende endnu ikke en Bitwarden-konto, anmoders vedkommende om at oprette en."
+    "message": "Invitér en ny nødkontakt ved at angive e-mailadressen på vedkommendes Black Mask-konto nedenfor. Har vedkommende endnu ikke en Black Mask-konto, anmoders vedkommende om at oprette en."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Nødadgang igangsat"
@@ -6700,7 +6700,7 @@
     "message": "Inviteret bruger."
   },
   "acceptEmergencyAccess": {
-    "message": "Du er inviteret som nødadgangskontakt for ovenfor anførte bruger. For at acceptere invitationen, så log først ind eller opret en ny Bitwarden-konto."
+    "message": "Du er inviteret som nødadgangskontakt for ovenfor anførte bruger. For at acceptere invitationen, så log først ind eller opret en ny Black Mask-konto."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Kan ikke acceptere invitation. Bed brugeren sende en ny invitation."
@@ -6860,7 +6860,7 @@
     "message": "How to turn on automatic user confirmation"
   },
   "autoConfirmExtension1": {
-    "message": "Open your Bitwarden extension"
+    "message": "Open your Black Mask extension"
   },
   "autoConfirmExtension2": {
     "message": "Select",
@@ -6871,7 +6871,7 @@
     "description": "This is a fragment of a larger sencence. The whole sentence will read: 'Select Turn on'"
   },
   "autoConfirmExtensionOpened": {
-    "message": "Successfully opened the Bitwarden browser extension. You can now activate the automatic user confirmation setting."
+    "message": "Successfully opened the Black Mask browser extension. You can now activate the automatic user confirmation setting."
   },
   "autoConfirmPolicyEditDescription": {
     "message": "New users invited to the organization will be automatically confirmed when an admin’s device is unlocked. Before turning on this policy, please review and agree to the following: ",
@@ -7165,7 +7165,7 @@
     "message": "Bitwarden Secrets Manager"
   },
   "moreProductsFromBitwarden": {
-    "message": "Flere produkter fra Bitwarden"
+    "message": "Flere produkter fra Black Mask"
   },
   "requestAccessToSecretsManager": {
     "message": "Anmod om adgang til Secrets Manager"
@@ -7177,7 +7177,7 @@
     "message": "Adgangsanmodningsmail til Secrets Manager sendt til admins."
   },
   "requestAccessSMDefaultEmailContent": {
-    "message": "Hi,\n\nI am requesting a subscription to Bitwarden Secrets Manager for our team. Your support would mean a great deal!\n\nBitwarden Secrets Manager is an end-to-end encrypted secrets management solution for securely storing, sharing, and deploying machine credentials like API keys, database passwords, and authentication certificates.\n\nSecrets Manager will help us to:\n\n- Improve security\n- Streamline operations\n- Prevent costly secret leaks\n\nTo request a free trial for our team, please reach out to Bitwarden.\n\nThank you for your help!"
+    "message": "Hi,\n\nI am requesting a subscription to Bitwarden Secrets Manager for our team. Your support would mean a great deal!\n\nBitwarden Secrets Manager is an end-to-end encrypted secrets management solution for securely storing, sharing, and deploying machine credentials like API keys, database passwords, and authentication certificates.\n\nSecrets Manager will help us to:\n\n- Improve security\n- Streamline operations\n- Prevent costly secret leaks\n\nTo request a free trial for our team, please reach out to Black Mask.\n\nThank you for your help!"
   },
   "giveMembersAccess": {
     "message": "Giv medlemmer adgang:"
@@ -7211,7 +7211,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
   },
   "sendAccessCreatorIdentifier": {
-    "message": "Bitwarden-brugeren $USER_IDENTIFIER$ delte flg. med dig",
+    "message": "Black Mask-brugeren $USER_IDENTIFIER$ delte flg. med dig",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -7236,7 +7236,7 @@
     "description": "Toast message shown when a user clicks the resend code link on the Send access page. 'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Bitwarden-brugeren, der oprettede denne Send, har valgt at skjule sin e-mailadresse. Du bør sikre dig, at du stoler på kilden til dette link, inden dets indhold downloades/benyttes.",
+    "message": "Black Mask-brugeren, der oprettede denne Send, har valgt at skjule sin e-mailadresse. Du bør sikre dig, at du stoler på kilden til dette link, inden dets indhold downloades/benyttes.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
@@ -7595,7 +7595,7 @@
     "message": "Dekrypteringsfejl"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden kunne ikke dekryptere boks-emne(r) anført nedenfor."
+    "message": "Black Mask kunne ikke dekryptere boks-emne(r) anført nedenfor."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Kontakt kundeservice",
@@ -7612,7 +7612,7 @@
     "message": "Udbyderopsætning"
   },
   "setupProviderLoginDesc": {
-    "message": "Du er inviteret til at opsætte en ny udbyder. Log ind/opret en ny Bitwarden-konto for at fortsætte."
+    "message": "Du er inviteret til at opsætte en ny udbyder. Log ind/opret en ny Black Mask-konto for at fortsætte."
   },
   "setupProviderDesc": {
     "message": "Angiv nedenstående oplysninger for at fuldføre udbyderopsætningen. Kontakt kundesupporten ved evt. spørgsmål."
@@ -7643,13 +7643,13 @@
     "message": "Tjenestebrugere kan tilgå samt håndtere alle klientorganisationer."
   },
   "providerInviteUserDesc": {
-    "message": "Invitér en ny bruger til din udbyder ved at angive deres Bitwarden-konto e-mailadresse nedenfor. Har personen ikke allerede har en Bitwarden-konto, anmodes vedkommende om at oprette én."
+    "message": "Invitér en ny bruger til din udbyder ved at angive deres Black Mask-konto e-mailadresse nedenfor. Har personen ikke allerede har en Black Mask-konto, anmodes vedkommende om at oprette én."
   },
   "joinProvider": {
     "message": "Tilmeld dig udbyder"
   },
   "joinProviderDesc": {
-    "message": "Du er inviteret til at tilmelde dig udbyderen ovenfor. Log ind eller opret en ny Bitwarden-konto for at acceptere invitationen."
+    "message": "Du er inviteret til at tilmelde dig udbyderen ovenfor. Log ind eller opret en ny Black Mask-konto for at acceptere invitationen."
   },
   "providerInviteAcceptFailed": {
     "message": "Kan ikke acceptere invitationen. Bed en udbyder-admin sende en ny invitation."
@@ -7794,7 +7794,7 @@
     "message": "Session timeout action"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Managed by the Bitwarden browser extension app. Open the browser app to edit."
+    "message": "Managed by the Black Mask browser extension app. Open the browser app to edit."
   },
   "immediately": {
     "message": "Immediately"
@@ -8032,7 +8032,7 @@
     "message": "Single Sign-On opsætning gemt"
   },
   "sponsoredFamilies": {
-    "message": "Gratis Bitwarden Familier"
+    "message": "Gratis Black Mask Familier"
   },
   "sponsoredBitwardenFamilies": {
     "message": "Sponsored families"
@@ -8044,19 +8044,19 @@
     "message": "Sponsored non-member families plans will display here"
   },
   "sponsorshipFreeBitwardenFamilies": {
-    "message": "Members of your organization are eligible for Free Bitwarden Families. You can sponsor Free Bitwarden Families for employees who are not a member of your Bitwarden organization. Sponsoring a non-member requires an available seat within your organization."
+    "message": "Members of your organization are eligible for Free Black Mask Families. You can sponsor Free Black Mask Families for employees who are not a member of your Black Mask organization. Sponsoring a non-member requires an available seat within your organization."
   },
   "sponsoredFamiliesRemoveActiveSponsorship": {
     "message": "When you remove an active sponsorship, a seat within your organization will be available after the renewal date of the sponsored organization."
   },
   "sponsoredFamiliesEligible": {
-    "message": "Du og din familie er berettiget til gratis Bitwarden Familier. Indløs med din personlige e-mail for at holde dine data sikre, selv når du ikke er på arbejde."
+    "message": "Du og din familie er berettiget til gratis Black Mask Familier. Indløs med din personlige e-mail for at holde dine data sikre, selv når du ikke er på arbejde."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Indløs dit gratis Bitwarden til Familier-abonnement i dag for at sikre dine data, selv når du ikke er på arbejde."
+    "message": "Indløs dit gratis Black Mask til Familier-abonnement i dag for at sikre dine data, selv når du ikke er på arbejde."
   },
   "sponsoredFamiliesIncludeMessage": {
-    "message": "The Bitwarden for Families plan includes"
+    "message": "The Black Mask for Families plan includes"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Premium-adgang for op til 6 brugere"
@@ -8074,7 +8074,7 @@
     "message": "Members who have redeemed family plans will display here"
   },
   "membersWithSponsoredFamilies": {
-    "message": "Members of your organization are eligible for Free Bitwarden Families. Here you can see members who have sponsored a Families organization."
+    "message": "Members of your organization are eligible for Free Black Mask Families. Here you can see members who have sponsored a Families organization."
   },
   "organizationHasMemberMessage": {
     "message": "A sponsorship cannot be sent to $EMAIL$ because they are a member of your organization.",
@@ -8101,7 +8101,7 @@
     "message": "Hvilket gratis Familier-tilbud vil du gerne indløse?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Angiv personlig e-mail for at indløse Bitwarden Families"
+    "message": "Angiv personlig e-mail for at indløse Black Mask Families"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "Fjerner du et tilbud eller fjernes du fra sponsororganisationen, udløber dit Familier-abonnement ved næste fornyelsesdato."
@@ -8110,7 +8110,7 @@
     "message": "Acceptér tilbud for en eksisterende organisation, eller opret en ny Familier-organisation."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "Du er blevet tilbudt en gratis Bitwarden Familier-abonnementsorganisation. Log ind på den konto, der modtog tilbuddet, for at fortsætte."
+    "message": "Du er blevet tilbudt en gratis Black Mask Familier-abonnementsorganisation. Log ind på den konto, der modtog tilbuddet, for at fortsætte."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Tilbud kan ikke accepteres. Gensend tilbudsmailen fra din Virksomhedskonto, og forsøg igen."
@@ -8125,10 +8125,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Acceptér gratis Bitwarden Familier"
+    "message": "Acceptér gratis Black Mask Familier"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Gratis Bitwarden Familier-tilbud hermed indløst"
+    "message": "Gratis Black Mask Familier-tilbud hermed indløst"
   },
   "redeemed": {
     "message": "Indløst"
@@ -8259,7 +8259,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "memberDecryptionKeyConnectorDescEnd": {
-    "message": "kræves for at opsætte Key Connector-decryptering. Kontakt Bitwarden Support for hjælp til opsætning.",
+    "message": "kræves for at opsætte Key Connector-decryptering. Kontakt Black Mask Support for hjælp til opsætning.",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "keyConnectorPolicyRestriction": {
@@ -8359,7 +8359,7 @@
     "message": "Tilpasset miljø"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Angiv basis-URL'en for den lokalt-hosted Bitwarden-installation. Eks.: https://bitwarden.firma.dk"
+    "message": "Angiv basis-URL'en for den lokalt-hosted Black Mask-installation. Eks.: https://Black Mask.firma.dk"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Til avancerede brugere. Man kan angive basis-URL'en for hver tjeneste uafhængigt."
@@ -8407,7 +8407,7 @@
     "message": "Faktureringssynk-token"
   },
   "automaticBillingSyncDesc": {
-    "message": "Automatisk synk oplåser Familier-sponsorater og muliggør synk af licenser uden at uploade en fil. Når opdateringer på Bitwarden cloud-serveren er foretaget, vælg Synk licens for at anvende ændringer."
+    "message": "Automatisk synk oplåser Familier-sponsorater og muliggør synk af licenser uden at uploade en fil. Når opdateringer på Black Mask cloud-serveren er foretaget, vælg Synk licens for at anvende ændringer."
   },
   "active": {
     "message": "Aktiv"
@@ -8769,11 +8769,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Genereret af Bitwarden.",
+    "message": "Genereret af Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Websted: $WEBSITE$. Genereret af Bitwarden.",
+    "message": "Websted: $WEBSITE$. Genereret af Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -9838,7 +9838,7 @@
     "message": "More settings"
   },
   "moreFromBitwarden": {
-    "message": "Mere fra Bitwarden"
+    "message": "Mere fra Black Mask"
   },
   "switchProducts": {
     "message": "Skift produkter"
@@ -10674,7 +10674,7 @@
     "message": "Bruger opsatte en hovedadgangskode under TDE-offboarding."
   },
   "startYour7DayFreeTrialOfBitwardenFor": {
-    "message": "Start din 7-dages gratis prøveperiode af Bitwarden til $ORG$",
+    "message": "Start din 7-dages gratis prøveperiode af Black Mask til $ORG$",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10981,7 +10981,7 @@
     "message": "Get started with your vault"
   },
   "onboardingChecklistSubtitle": {
-    "message": "Complete these steps to secure your personal data and get the most out of Bitwarden"
+    "message": "Complete these steps to secure your personal data and get the most out of Black Mask"
   },
   "dismissThisChecklist": {
     "message": "Dismiss this checklist"
@@ -11054,7 +11054,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI match detection is how Bitwarden identifies autofill suggestions.",
+    "message": "URI match detection is how Black Mask identifies autofill suggestions.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -11104,7 +11104,7 @@
     "message": "Vi har sendt bekræftelsesmail til dig via "
   },
   "sorryToSeeYouGo": {
-    "message": "Vi er kede af, at du stopper! Hjælp os med at forbedre Bitwarden ved at dele årsagen til din opsigelse.",
+    "message": "Vi er kede af, at du stopper! Hjælp os med at forbedre Black Mask ved at dele årsagen til din opsigelse.",
     "description": "A message shown to users as part of an offboarding survey asking them to provide more information on their subscription cancelation."
   },
   "selectCancellationReason": {
@@ -11547,7 +11547,7 @@
     "message": "Udbyderen og alle tilknyttede data er hermed slettet."
   },
   "deleteProviderRecoverConfirmDesc": {
-    "message": "Der er anmodet sletning af din Bitwarden-konto. Klik på knappen nedenfor for at bekræfte."
+    "message": "Der er anmodet sletning af din Black Mask-konto. Klik på knappen nedenfor for at bekræfte."
   },
   "deleteProviderWarning": {
     "message": "Sletning af kontoen er permanent og irreversibel."
@@ -11579,7 +11579,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "ssoDescEnd": {
-    "message": "for Bitwarden vha. implementeringsvejledningen for den aktuelle Identitetsudbyder.",
+    "message": "for Black Mask vha. implementeringsvejledningen for den aktuelle Identitetsudbyder.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "userProvisioning": {
@@ -11593,7 +11593,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "scimIntegrationDescEnd": {
-    "message": "(System til håndtering af Kryds-domæneidentitet) for automatisk at tildele brugere og grupper til Bitwarden vha. implementeringsvejledningen for den aktuelle Identitetsudbyder.",
+    "message": "(System til håndtering af Kryds-domæneidentitet) for automatisk at tildele brugere og grupper til Black Mask vha. implementeringsvejledningen for den aktuelle Identitetsudbyder.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "bwdc": {
@@ -11606,13 +11606,13 @@
     "message": "Begivenhedshåndtering"
   },
   "eventManagementDesc": {
-    "message": "Integrér Bitwarden-begivenhedslogger med det aktuelle SIEM (systeminformation og begivenhedshåndtering) system vha. implementeringsvejledningen til den aktuelle platform."
+    "message": "Integrér Black Mask-begivenhedslogger med det aktuelle SIEM (systeminformation og begivenhedshåndtering) system vha. implementeringsvejledningen til den aktuelle platform."
   },
   "deviceManagement": {
     "message": "Enhedshåndtering"
   },
   "deviceManagementDesc": {
-    "message": "Opsæt enhedshåndtering for Bitwarden vha. implementeringsvejledningen for den aktuelle platform."
+    "message": "Opsæt enhedshåndtering for Black Mask vha. implementeringsvejledningen for den aktuelle platform."
   },
   "crowdstrikeEventIntegrationDesc": {
     "message": "Send event data to your Logscale instance"
@@ -11792,16 +11792,16 @@
     "message": "Håndter fakturering via udbyderportalen"
   },
   "continueSettingUp": {
-    "message": "Continue setting up Bitwarden"
+    "message": "Continue setting up Black Mask"
   },
   "continueSettingUpFreeTrial": {
-    "message": "Fortsæt opsætningen af den gratis Bitwarden-prøveperiode"
+    "message": "Fortsæt opsætningen af den gratis Black Mask-prøveperiode"
   },
   "continueSettingUpPasswordManager": {
-    "message": "Continue setting up Bitwarden Password Manager"
+    "message": "Continue setting up Black Mask Password Manager"
   },
   "continueSettingUpFreeTrialPasswordManager": {
-    "message": "Fortsæt opsætningen af den gratis Bitwarden Password Manager-prøveperiode"
+    "message": "Fortsæt opsætningen af den gratis Black Mask Password Manager-prøveperiode"
   },
   "continueSettingUpSecretsManager": {
     "message": "Continue setting up Bitwarden Secrets Manager"
@@ -12064,14 +12064,14 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'."
   },
   "contactBitwardenSupport": {
-    "message": "kontakt Bitwarden-supporten.",
+    "message": "kontakt Black Mask-supporten.",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'. 'Bitwarden' should not be translated"
   },
   "sponsored": {
     "message": "Sponseret"
   },
   "licenseAndBillingManagementDesc": {
-    "message": "Efter at have foretaget opdateringer på Bitwarden cloud-serveren, uploade licensfilen for at anvende de seneste ændringer."
+    "message": "Efter at have foretaget opdateringer på Black Mask cloud-serveren, uploade licensfilen for at anvende de seneste ændringer."
   },
   "addToFolder": {
     "message": "Føj til mappe"
@@ -12177,7 +12177,7 @@
     "message": "Hvad er et CVV-nummer?"
   },
   "learnMoreAboutApi": {
-    "message": "Læs mere om Bitwardens API"
+    "message": "Læs mere om Black Masks API"
   },
   "fileSends": {
     "message": "Fil-Sends"
@@ -12351,7 +12351,7 @@
     "message": "Secrets Manager-abonnementet opgraderes baseret på den valgte abonnementstype"
   },
   "bitwardenPasswordManager": {
-    "message": "Bitwarden Adgangskodehåndtering"
+    "message": "Black Mask Adgangskodehåndtering"
   },
   "secretsManagerComplimentaryPasswordManager": {
     "message": "Det gratis et-års abonnement på Password Manager opgraderes til den valgte abonnementstype. Betaling opkræves først efter endt gratis-periode."
@@ -12429,7 +12429,7 @@
     "description": "This represents the beginning of a sentence. The full sentence will be 'Manage subscription from the Provider Portal', but 'Provider Portal' will be a link and thus cannot be included in the translation file."
   },
   "toHostBitwardenOnYourOwnServer": {
-    "message": "For at hoste Bitwarden på egen server skal man uploade sin licensfil. Opsæt automatisk faktureringssynk for den selv-hostede organisation for at understøtte Free Families-abonnementstyper og avancerede faktureringsmuligheder for organisationen."
+    "message": "For at hoste Black Mask på egen server skal man uploade sin licensfil. Opsæt automatisk faktureringssynk for den selv-hostede organisation for at understøtte Free Families-abonnementstyper og avancerede faktureringsmuligheder for organisationen."
   },
   "selfHostingTitleProper": {
     "message": "Selv-hosting"
@@ -12531,7 +12531,7 @@
     "message": "Slettet"
   },
   "freeFamiliesSponsorship": {
-    "message": "Fjern Gratis Bitwarden Families-sponsorering"
+    "message": "Fjern Gratis Black Mask Families-sponsorering"
   },
   "freeFamiliesSponsorshipPolicyDesc": {
     "message": "Tillad ikke medlemmer at indløse en Families-abonnementstype via denne organisation."
@@ -12582,10 +12582,10 @@
     "message": "Automatisk Registrerede Domæner"
   },
   "automaticDomainClaimProcess": {
-    "message": "Bitwarden vil forsøge at registrere domænet 3 gange i løbet af de første 72 timer. Kan domænet ikke registreres, tjek DNS-posten på værten og registrér manuelt. Såfremt uregistreret efter 7 dage, fjernes domænet fra organisationen."
+    "message": "Black Mask vil forsøge at registrere domænet 3 gange i løbet af de første 72 timer. Kan domænet ikke registreres, tjek DNS-posten på værten og registrér manuelt. Såfremt uregistreret efter 7 dage, fjernes domænet fra organisationen."
   },
   "automaticDomainClaimProcess1": {
-    "message": "Bitwarden will attempt to claim the domain within 72 hours. If the domain can't be claimed, verify your DNS record and claim manually. Unclaimed domains are removed after 7 days."
+    "message": "Black Mask will attempt to claim the domain within 72 hours. If the domain can't be claimed, verify your DNS record and claim manually. Unclaimed domains are removed after 7 days."
   },
   "automaticDomainClaimProcess2": {
     "message": "Once claimed, existing members with claimed domains will be emailed about the "
@@ -12736,19 +12736,19 @@
     "message": "Copy private key"
   },
   "openingExtension": {
-    "message": "Opening the Bitwarden browser extension"
+    "message": "Opening the Black Mask browser extension"
   },
   "somethingWentWrong": {
     "message": "Something went wrong..."
   },
   "openingExtensionError": {
-    "message": "We had trouble opening the Bitwarden browser extension. Click the button to open it now."
+    "message": "We had trouble opening the Black Mask browser extension. Click the button to open it now."
   },
   "openExtension": {
     "message": "Open extension"
   },
   "doNotHaveExtension": {
-    "message": "Don't have the Bitwarden browser extension?"
+    "message": "Don't have the Black Mask browser extension?"
   },
   "installExtension": {
     "message": "Install extension"
@@ -12757,7 +12757,7 @@
     "message": "Opened the browser extension"
   },
   "openedExtensionViewAtRiskPasswords": {
-    "message": "Successfully opened the Bitwarden browser extension. You can now review your at-risk passwords."
+    "message": "Successfully opened the Black Mask browser extension. You can now review your at-risk passwords."
   },
   "resellerRenewalWarningMsg": {
     "message": "Abonnementet fornyes snart. For at sikre uafbrudt tjeneste, kontakt $RESELLER$ inden $RENEWAL_DATE$ for at bekræfte fornyelsen.",
@@ -12773,7 +12773,7 @@
     }
   },
   "resellerRenewalWarningMsgV2": {
-    "message": "Your subscription will renew soon. To ensure uninterrupted service, contact your Bitwarden provider to confirm your renewal before $RENEWAL_DATE$.",
+    "message": "Your subscription will renew soon. To ensure uninterrupted service, contact your Black Mask provider to confirm your renewal before $RENEWAL_DATE$.",
     "placeholders": {
       "renewal_date": {
         "content": "$1",
@@ -12812,7 +12812,7 @@
     }
   },
   "resellerPastDueWarningMsgV2": {
-    "message": "The invoice for your subscription has not been paid. To ensure uninterrupted service, contact your Bitwarden provider before $GRACE_PERIOD_END$.",
+    "message": "The invoice for your subscription has not been paid. To ensure uninterrupted service, contact your Black Mask provider before $GRACE_PERIOD_END$.",
     "placeholders": {
       "grace_period_end": {
         "content": "$1",
@@ -12970,7 +12970,7 @@
     "message": "Upgrade to see event logs from your organization."
   },
   "upgradeEventLogMessage": {
-    "message": "These events are examples only and do not reflect real events within your Bitwarden organization."
+    "message": "These events are examples only and do not reflect real events within your Black Mask organization."
   },
   "viewEvents": {
     "message": "View Events"
@@ -13120,7 +13120,7 @@
     "message": "Autofill your passwords securely with one click"
   },
   "setupExtensionPageDescription": {
-    "message": "Get the Bitwarden browser extension and start autofilling today"
+    "message": "Get the Black Mask browser extension and start autofilling today"
   },
   "getTheExtension": {
     "message": "Get the extension"
@@ -13138,19 +13138,19 @@
     "message": "Skip to web app"
   },
   "bitwardenExtensionInstalled": {
-    "message": "Bitwarden extension installed!"
+    "message": "Black Mask extension installed!"
   },
   "bitwardenExtensionIsInstalled": {
-    "message": "Bitwarden extension is installed!"
+    "message": "Black Mask extension is installed!"
   },
   "openExtensionToAutofill": {
     "message": "Open the extension to log in and start autofilling."
   },
   "openBitwardenExtension": {
-    "message": "Open Bitwarden extension"
+    "message": "Open Black Mask extension"
   },
   "gettingStartedWithBitwardenPart1": {
-    "message": "For tips on getting started with Bitwarden visit the",
+    "message": "For tips on getting started with Black Mask visit the",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "gettingStartedWithBitwardenPart2": {
@@ -13158,7 +13158,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "openExtensionFromToolbarPart1": {
-    "message": "If the extension didn't open, you may need to open Bitwarden from the icon ",
+    "message": "If the extension didn't open, you may need to open Black Mask from the icon ",
     "description": "This will be used as part of a larger sentence, broken up to include the Bitwarden icon. The full sentence will read 'If the extension didn't open, you may need to open Bitwarden from the icon [Bitwarden Icon] on the toolbar.'"
   },
   "openExtensionFromToolbarPart2": {
@@ -13170,7 +13170,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "setupExtensionContentAlt": {
-    "message": "With the Bitwarden browser extension you can easily create new logins, access your saved logins directly from your browser toolbar, and sign in to accounts quickly using Bitwarden autofill."
+    "message": "With the Black Mask browser extension you can easily create new logins, access your saved logins directly from your browser toolbar, and sign in to accounts quickly using Black Mask autofill."
   },
   "restart": {
     "message": "Restart"
@@ -13202,7 +13202,7 @@
     "message": "About this setting"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
+    "message": "Black Mask will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
   },
   "billingAddress": {
     "message": "Billing address"
@@ -13269,7 +13269,7 @@
     }
   },
   "restoreProviderPortalAccessViaCustomerSupport": {
-    "message": "To restore access to your provider portal, contact Bitwarden Customer Support to renew your subscription.",
+    "message": "To restore access to your provider portal, contact Black Mask Customer Support to renew your subscription.",
     "description": "A message shown in a non-dismissible dialog to any user of a suspended providers."
   },
   "restoreProviderPortalAccessViaPaymentMethod": {
@@ -13311,7 +13311,7 @@
     "message": "Subscription canceled"
   },
   "providersubCanceledmessage": {
-    "message": "To resubscribe, contact Bitwarden Customer Support."
+    "message": "To resubscribe, contact Black Mask Customer Support."
   },
   "showMore": {
     "message": "Show more"
@@ -13437,7 +13437,7 @@
     "message": "Custom plan"
   },
   "planDescCustom": {
-    "message": "Bitwarden scales with businesses of all sizes to secure passwords and sensitive information. If you're part of a large enterprise, contact sales to request a quote."
+    "message": "Black Mask scales with businesses of all sizes to secure passwords and sensitive information. If you're part of a large enterprise, contact sales to request a quote."
   },
   "builtInAuthenticator": {
     "message": "Built-in authenticator"
@@ -13542,7 +13542,7 @@
     "message": "There was an error calculating tax for your location. Please try again."
   },
   "individualUpgradeWelcomeMessage": {
-    "message": "Welcome to Bitwarden"
+    "message": "Welcome to Black Mask"
   },
   "individualUpgradeDescriptionMessage": {
     "message": "Unlock more security features with Premium, or start sharing items with Families"
@@ -13569,7 +13569,7 @@
     "message": "We encountered an error while processing your upgrade. Please try again."
   },
   "bitwardenFreeplanMessage": {
-    "message": "You have the Bitwarden Free plan"
+    "message": "You have the Black Mask Free plan"
   },
   "upgradeCompleteSecurity": {
     "message": "Upgrade for complete security"
@@ -13587,7 +13587,7 @@
     "message": "Algorithm"
   },
   "encryptionKeySettingsHowShouldWeEncryptYourData": {
-    "message": "Choose how Bitwarden should encrypt your vault data. All options are secure, but stronger methods offer better protection - especially against brute-force attacks. Bitwarden recommends the default setting for most users."
+    "message": "Choose how Black Mask should encrypt your vault data. All options are secure, but stronger methods offer better protection - especially against brute-force attacks. Black Mask recommends the default setting for most users."
   },
   "encryptionKeySettingsIncreaseImproveSecurity": {
     "message": "Increasing the values above the default will improve security, but your vault may take longer to unlock as a result."
@@ -13648,7 +13648,7 @@
     }
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Your organization is no longer using master passwords to log into Bitwarden. To continue, verify the organization and domain."
+    "message": "Your organization is no longer using master passwords to log into Black Mask. To continue, verify the organization and domain."
   },
   "continueWithLogIn": {
     "message": "Continue with log in"
@@ -13839,7 +13839,7 @@
     "message": "Decline and leave"
   },
   "youHaveBitwardenPremium": {
-    "message": "You have Bitwarden Premium"
+    "message": "You have Black Mask Premium"
   },
   "viewAndManagePremiumSubscription": {
     "message": "View and manage your Premium subscription"
@@ -13870,7 +13870,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_license.json"
+        "example": "Black Mask_license.json"
       }
     }
   },
@@ -13878,7 +13878,7 @@
     "message": "Already have a subscription?"
   },
   "alreadyHaveSubscriptionSelfHostedMessage": {
-    "message": "Open the subscription page on your Bitwarden cloud account and download your license file. Then return to this screen and upload it below."
+    "message": "Open the subscription page on your Black Mask cloud account and download your license file. Then return to this screen and upload it below."
   },
   "viewAllPlans": {
     "message": "View all plans"
@@ -13964,10 +13964,10 @@
     "message": "Get the extension for easy vault access"
   },
   "extensionPromptBody": {
-    "message": "With the browser extension installed, you'll take Bitwarden everywhere online. It'll fill in passwords, so you can log into your accounts with a single click."
+    "message": "With the browser extension installed, you'll take Black Mask everywhere online. It'll fill in passwords, so you can log into your accounts with a single click."
   },
   "extensionPromptImageAlt": {
-    "message": "A web browser showing the Bitwarden extension with autofill items for the current webpage."
+    "message": "A web browser showing the Black Mask extension with autofill items for the current webpage."
   },
   "skip": {
     "message": "Skip"
@@ -13988,10 +13988,10 @@
     "message": "Enter multiple emails by separating with a comma."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "whenYouRemoveStorage": {
     "message": "When you remove storage, you will receive a prorated account credit that will automatically go toward your next bill."
@@ -14015,10 +14015,10 @@
     "message": "Invalid Send password"
   },
   "vaultWelcomeDialogTitle": {
-    "message": "You're in! Welcome to Bitwarden"
+    "message": "You're in! Welcome to Black Mask"
   },
   "vaultWelcomeDialogDescription": {
-    "message": "Store all your passwords and personal info in your Bitwarden vault. We'll show you around."
+    "message": "Store all your passwords and personal info in your Black Mask vault. We'll show you around."
   },
   "vaultWelcomeDialogPrimaryCta": {
     "message": "Start tour"

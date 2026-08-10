@@ -32,7 +32,7 @@ describe("SendReceiveCommand", () => {
   const apiService = mock<ApiService>();
   const sendTokenService = mock<SendTokenService>();
 
-  const testUrl = "https://send.bitwarden.com/#/send/abc123/key456";
+  const testUrl = "https://vault.blackmask.app/#/send/abc123/key456";
   const testSendId = "abc123";
 
   beforeEach(() => {
@@ -40,8 +40,8 @@ describe("SendReceiveCommand", () => {
 
     environmentService.environment$ = of({
       getUrls: () => ({
-        api: "https://api.bitwarden.com",
-        webVault: "https://vault.bitwarden.com",
+        api: "https://vault.blackmask.app/api",
+        webVault: "https://vault.blackmask.app",
       }),
     } as any);
 
@@ -78,7 +78,7 @@ describe("SendReceiveCommand", () => {
       sendTokenService.tryGetSendAccessToken$.mockReturnValue(of(mockToken));
       jest.spyOn(command as any, "accessSendWithToken").mockResolvedValue(Response.success());
 
-      const response = await command.run("https://send.bitwarden.com/#/send/", {});
+      const response = await command.run("https://vault.blackmask.app/#/send/", {});
 
       expect(response.success).toBe(false);
       expect(response.message).toContain("not a valid Send url");
@@ -332,7 +332,7 @@ describe("SendReceiveCommand", () => {
         expect(sendApiService.getSendFileDownloadDataV2).toHaveBeenCalledWith(
           expect.any(Object),
           mockToken,
-          "https://api.bitwarden.com",
+          "https://vault.blackmask.app/api",
         );
       });
 
@@ -448,28 +448,18 @@ describe("SendReceiveCommand", () => {
   });
 
   describe("API URL Resolution", () => {
-    it("should resolve send.bitwarden.com to api.bitwarden.com", async () => {
+    // Black Mask serves sends from the same origin as the API (Vaultwarden is single-origin), so
+    // there is no separate send domain to map back to a region's api url.
+    it("should resolve a production send url to the same origin's api", async () => {
       const mockToken = new SendAccessToken("test-token", Date.now() + 3600000);
       sendTokenService.tryGetSendAccessToken$.mockReturnValue(of(mockToken));
       jest.spyOn(command as any, "accessSendWithToken").mockResolvedValue(Response.success());
 
-      const sendUrl = "https://send.bitwarden.com/#/send/abc123/key456";
+      const sendUrl = "https://vault.blackmask.app/#/send/abc123/key456";
       await command.run(sendUrl, {});
 
       const apiUrl = await (command as any).getApiUrl(new URL(sendUrl));
-      expect(apiUrl).toBe("https://api.bitwarden.com");
-    });
-
-    it("should resolve send.bitwarden.eu to api.bitwarden.eu", async () => {
-      const mockToken = new SendAccessToken("test-token", Date.now() + 3600000);
-      sendTokenService.tryGetSendAccessToken$.mockReturnValue(of(mockToken));
-      jest.spyOn(command as any, "accessSendWithToken").mockResolvedValue(Response.success());
-
-      const sendUrl = "https://send.bitwarden.eu/#/send/abc123/key456";
-      await command.run(sendUrl, {});
-
-      const apiUrl = await (command as any).getApiUrl(new URL(sendUrl));
-      expect(apiUrl).toBe("https://api.bitwarden.eu");
+      expect(apiUrl).toBe("https://vault.blackmask.app/api");
     });
 
     it("should handle custom domain URLs", async () => {

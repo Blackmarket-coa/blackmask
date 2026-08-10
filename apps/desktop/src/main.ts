@@ -306,7 +306,7 @@ export class Main {
     );
 
     this.desktopCredentialStorageListener = new DesktopCredentialStorageListener(
-      "Bitwarden",
+      "Black Mask",
       this.logService,
     );
     this.mainBiometricsIpcListener = new MainBiometricsIPCListener(
@@ -380,7 +380,7 @@ export class Main {
         // FIXME: Verify that this floating promise is intentional. If it is, add an explanatory comment and ensure there is proper error handling.
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         this.menuMain.init();
-        await this.trayMain.init("Bitwarden", [
+        await this.trayMain.init("Black Mask", [
           {
             label: this.i18nService.t("lockVault"),
             enabled: false,

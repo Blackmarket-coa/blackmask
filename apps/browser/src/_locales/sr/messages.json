@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Креирај налог"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Нови сте у Black Mask-у?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Одјави се"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "О Black Mask"
   },
   "about": {
     "message": "О апликацији"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Више од Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Наставити на bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Креирајте глатко и безбедно искуство пријављивања без традиционалних лозинки са Passwordless.dev. Сазнајте више на bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Бесплатно Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Имате право на Бесплатно Black Mask Families. Искористите ову понуду данас у веб апликацији."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Пријави се"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Пријавите се на Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Прикажи предлоге за ауто-попуњавање у пољима обрасца"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Како Black Mask штити ваше податке од фишинга?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Илустрација Black Mask-ског менија аутопуњења који приказују генерисану лозинку."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Ажурирања у Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask ће тада затражити да ажурирате лозинку у менаџеру лозинке.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Илустрација Black Mask-ског обавештења за ажирриање пријаве."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask мени дугмета ауто-попуњавања",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Пребаци мени ауто-попуњавања Black Mask-а",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Преузети Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Преузети Black Mask на све уређаје"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Приступите свом сефу без прегледача, а затим поставите откључавање са биометристима да бисте убрзали откључавање и у програму и у додатку."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Преузети сада са bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Лозинка поново генерисана",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Сачувај у Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

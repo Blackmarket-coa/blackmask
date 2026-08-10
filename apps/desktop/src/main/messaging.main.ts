@@ -123,15 +123,15 @@ export class MessagingMain {
   private addOpenAtLogin() {
     if (process.platform === "linux") {
       if (isFlatpak()) {
-        autostart.setAutostart(true, ["bitwarden.sh", AUTOSTART_FLAG, "%U"]).catch((e) => {});
+        autostart.setAutostart(true, ["blackmask.sh", AUTOSTART_FLAG, "%U"]).catch((e) => {});
       } else if (isSnapStore()) {
         this.updateSnapAutostartExec();
       } else {
         const data = `[Desktop Entry]
   Type=Application
   Version=${app.getVersion()}
-  Name=Bitwarden
-  Comment=Bitwarden startup script
+  Name=Black Mask
+  Comment=Black Mask startup script
   Exec=${app.getPath("exe")} ${AUTOSTART_FLAG}
   StartupNotify=false
   Terminal=false`;

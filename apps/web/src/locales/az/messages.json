@@ -21,7 +21,7 @@
     "message": "Bütün kritik tətbiqlər"
   },
   "appLogoLabel": {
-    "message": "Bitwarden loqosu"
+    "message": "Black Mask loqosu"
   },
   "criticalApplications": {
     "message": "Kritik tətbiqlər"
@@ -233,7 +233,7 @@
     "message": "Komandanızdakı irəliləyişləri izləyin"
   },
   "membersAreAutomaticallyNotified": {
-    "message": "Üzvlərə Bitwarden uzantılarındakı riskli parollar barədə bildirişlər avtomatik olaraq göndərilir. Təqib etməyə ehtiyac yoxdur."
+    "message": "Üzvlərə Black Mask uzantılarındakı riskli parollar barədə bildirişlər avtomatik olaraq göndərilir. Təqib etməyə ehtiyac yoxdur."
   },
   "importYourOrgDataToGetStarted": {
     "message": "Başlamaq üçün təşkilat verilərinizi daxilə köçürün"
@@ -396,7 +396,7 @@
     }
   },
   "membersWillReceiveSecurityTask": {
-    "message": "Təşkilatınızdakı üzvlərə, təhlükəsizlik boşluğu mövcud olan parolları dəyişdirməsi üçün bir tapşırıq təyin ediləcək. Üzvlər, Bitwarden brauzer uzantılarında bir bildiriş alacaq."
+    "message": "Təşkilatınızdakı üzvlərə, təhlükəsizlik boşluğu mövcud olan parolları dəyişdirməsi üçün bir tapşırıq təyin ediləcək. Üzvlər, Black Mask brauzer uzantılarında bir bildiriş alacaq."
   },
   "membersAtRiskCount": {
     "message": "$COUNT$ üzv risk altındadır",
@@ -825,10 +825,10 @@
     "message": "2 addımlı doğrulama problemsiz edin"
   },
   "totpHelper": {
-    "message": "Bitwarden, 2 addımlı doğrulama kodlarını saxlaya və doldura bilər. Açarı kopyalayıb bu xanaya yapışdırın."
+    "message": "Black Mask, 2 addımlı doğrulama kodlarını saxlaya və doldura bilər. Açarı kopyalayıb bu xanaya yapışdırın."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden, 2 addımlı doğrulama kodlarını saxlaya və doldura bilər. Bu veb sayt kimlik doğrulayıcı QR kodunun ekran şəklini çəkmək üçün kamera ikonunu seçin, ya da açarı kopyalayıb bu xanaya yapışdırın."
+    "message": "Black Mask, 2 addımlı doğrulama kodlarını saxlaya və doldura bilər. Bu veb sayt kimlik doğrulayıcı QR kodunun ekran şəklini çəkmək üçün kamera ikonunu seçin, ya da açarı kopyalayıb bu xanaya yapışdırın."
   },
   "totpCapture": {
     "message": "Hazırkı veb sahifədən kimlik doğrulayıcı QR kodunu skan et"
@@ -1734,7 +1734,7 @@
     "message": "Cihazla giriş et"
   },
   "loginWithDeviceEnabledNote": {
-    "message": "Cihazla giriş, Bitwarden tətbiqinin ayarlarında qurulmalıdır. Başqa bir seçimə ehtiyacınız var?"
+    "message": "Cihazla giriş, Black Mask tətbiqinin ayarlarında qurulmalıdır. Başqa bir seçimə ehtiyacınız var?"
   },
   "needAnotherOptionV1": {
     "message": "Başqa bir seçimə ehtiyacınız var?"
@@ -1848,7 +1848,7 @@
     "message": "Hesab yarat"
   },
   "newToBitwarden": {
-    "message": "Bitwarden-də yenisiniz?"
+    "message": "Black Mask-də yenisiniz?"
   },
   "setAStrongPassword": {
     "message": "Güclü bir parol təyin et"
@@ -1866,7 +1866,7 @@
     "message": "Giriş et"
   },
   "logInToBitwarden": {
-    "message": "Bitwarden-ə giriş edin"
+    "message": "Black Mask-ə giriş edin"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "E-poçtunuza göndərilən kodu daxil edin"
@@ -1896,7 +1896,7 @@
     "message": "Cihaz nədir?"
   },
   "aDeviceIs": {
-    "message": "Cihaz, giriş etdiyiniz Bitwarden tətbiqinin unikal quraşdırmasıdır. Yenidən quraşdırılması, tətbiq verilərinin təmizlənməsi və ya çərəzlərin təmizlənməsi, cihazın bir neçə dəfə görünməsinə səbəb ola bilər."
+    "message": "Cihaz, giriş etdiyiniz Black Mask tətbiqinin unikal quraşdırmasıdır. Yenidən quraşdırılması, tətbiq verilərinin təmizlənməsi və ya çərəzlərin təmizlənməsi, cihazın bir neçə dəfə görünməsinə səbəb ola bilər."
   },
   "logInInitiated": {
     "message": "Giriş etmə başladıldı"
@@ -2124,7 +2124,7 @@
     "message": "Cihazınıza bir bildiriş göndərildi."
   },
   "notificationSentDevicePart1": {
-    "message": "Cihazınızda Bitwarden kilidini açın, ya da "
+    "message": "Cihazınızda Black Mask kilidini açın, ya da "
   },
   "accessAttemptBy": {
     "message": "$EMAIL$ ilə erişim cəhdi",
@@ -2148,7 +2148,7 @@
     "message": "Təsdiqləməzdən əvvəl Barmaq izi ifadəsinin aşağıdakı ifadə ilə uyuşduğuna əmin olun."
   },
   "notificationSentDeviceComplete": {
-    "message": "Cihazınızda Bitwarden-in kilidini açın. Təsdiqləməzdən əvvəl Barmaq izi ifadəsinin aşağıdakı ifadə ilə uyuşduğuna əmin olun."
+    "message": "Cihazınızda Black Mask-in kilidini açın. Təsdiqləməzdən əvvəl Barmaq izi ifadəsinin aşağıdakı ifadə ilə uyuşduğuna əmin olun."
   },
   "aNotificationWasSentToYourDevice": {
     "message": "Cihazınıza bir bildiriş göndərildi"
@@ -2329,7 +2329,7 @@
     "message": "Bu xaricə köçürmə, verilərinizi hesabınızın şifrələmə açarını istifadə edərək şifrələyir. Hesabınızın şifrələmə açarını dəyişdirsəniz, bu faylın şifrəsini aça bilməyəcəksiniz və onu yenidən xaricə köçürməli olacaqsınız."
   },
   "encExportAccountWarningDesc": {
-    "message": "Hesab şifrələmə açarları, hər Bitwarden istifadəçi hesabı üçün unikaldır, buna görə də şifrələnmiş bir ixracı, fərqli bir hesaba idxal edə bilməzsiniz."
+    "message": "Hesab şifrələmə açarları, hər Black Mask istifadəçi hesabı üçün unikaldır, buna görə də şifrələnmiş bir ixracı, fərqli bir hesaba idxal edə bilməzsiniz."
   },
   "exportNoun": {
     "message": "Xaricə köçürmə",
@@ -2361,7 +2361,7 @@
     "message": "Fayl parolunu təsdiqlə"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Xaricə köçürməni şifrələmək və daxilə köçürməni yalnız mövcud Bitwarden hesabı ilə məhdudlaşdırmaq üçün hesabınızın istifadəçi adı və Ana Parolundan əldə edilən hesab şifrələmə açarınızı istifadə edin."
+    "message": "Xaricə köçürməni şifrələmək və daxilə köçürməni yalnız mövcud Black Mask hesabı ilə məhdudlaşdırmaq üçün hesabınızın istifadəçi adı və Ana Parolundan əldə edilən hesab şifrələmə açarınızı istifadə edin."
   },
   "passwordProtectedOptionDescription": {
     "message": "Xaricə köçürməni qorumaq üçün istifadəçi tərəfindən yaradılan bir parol yaradın. Digər hesablarda istifadə ediləcək bir xaricə köçürmə yaratmaq üçün bunu istifadə edin."
@@ -2532,7 +2532,7 @@
     "message": "Tələb gözlənir"
   },
   "logBackInOthersToo": {
-    "message": "Lütfən yenidən giriş edin. Digər Bitwarden tətbiqlərini istifadə edirsinizsə, onlardan da çıxış edib təkrar giriş etməlisiniz."
+    "message": "Lütfən yenidən giriş edin. Digər Black Mask tətbiqlərini istifadə edirsinizsə, onlardan da çıxış edib təkrar giriş etməlisiniz."
   },
   "changeMasterPassword": {
     "message": "Ana parolu dəyişdir"
@@ -2565,7 +2565,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "KDF iterasiyalarınızı çox yüksək ayarlamaq, yavaş və ya köhnə cihazlarda \"Bitwarden\"ə giriş edərkən (və ya kilidi açarkən) aşağı performansa səbəb ola bilər. Dəyəri $INCREMENT$ artımları ilə artırmağınızı və daha sonra bütün cihazlarınızda test etməyinizi məsləhət görürük.",
+    "message": "KDF iterasiyalarınızı çox yüksək ayarlamaq, yavaş və ya köhnə cihazlarda \"Black Mask\"ə giriş edərkən (və ya kilidi açarkən) aşağı performansa səbəb ola bilər. Dəyəri $INCREMENT$ artımları ilə artırmağınızı və daha sonra bütün cihazlarınızda test etməyinizi məsləhət görürük.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -2578,7 +2578,7 @@
     "description": "Memory refers to computer memory (RAM). MB is short for megabytes."
   },
   "argon2Warning": {
-    "message": "KDF iterasiyalarınızı, yaddaşınızı və paralelizminizi çox yüksək ayarlamaq, daha yavaş və ya daha köhnə cihazlarda \"Bitwarden\"ə giriş edərkən (və ya kilidi açarkən) aşağı performansa səbəb ola bilər. Biz bunları fərdi olaraq kiçik artımlarla dəyişməyi, sonra bütün cihazlarınızı sınaqdan keçirməyi tövsiyə edirik."
+    "message": "KDF iterasiyalarınızı, yaddaşınızı və paralelizminizi çox yüksək ayarlamaq, daha yavaş və ya daha köhnə cihazlarda \"Black Mask\"ə giriş edərkən (və ya kilidi açarkən) aşağı performansa səbəb ola bilər. Biz bunları fərdi olaraq kiçik artımlarla dəyişməyi, sonra bütün cihazlarınızı sınaqdan keçirməyi tövsiyə edirik."
   },
   "kdfParallelism": {
     "message": "KDF paralelizm"
@@ -2611,10 +2611,10 @@
     "message": "Yeni cihaz girişi qorumasını işə sal"
   },
   "turnOffNewDeviceLoginProtectionModalDesc": {
-    "message": "Yeni bir cihazdan giriş etdiyiniz zaman Bitwarden göndərən doğrulama e-poçtlarını dayandırmaq üçün aşağıdakı addımları izləyin."
+    "message": "Yeni bir cihazdan giriş etdiyiniz zaman Black Mask göndərən doğrulama e-poçtlarını dayandırmaq üçün aşağıdakı addımları izləyin."
   },
   "turnOnNewDeviceLoginProtectionModalDesc": {
-    "message": "Yeni bir cihazdan giriş etdiyiniz zaman Bitwarden-in sizə doğrulama e-poçtlarını göndərməsi üçün aşağıdakı addımları izləyin."
+    "message": "Yeni bir cihazdan giriş etdiyiniz zaman Black Mask-in sizə doğrulama e-poçtlarını göndərməsi üçün aşağıdakı addımları izləyin."
   },
   "turnOffNewDeviceLoginProtectionWarning": {
     "message": "Yeni cihaz girişi qorumasını söndürsəniz, ana parolunuzu bilən hər kəs, istənilən cihazdan hesabınıza erişə bilər. Hesabınızı doğrulama e-poçtları olmadan qorumaq üçün iki addımlı girişi qurun."
@@ -2818,7 +2818,7 @@
     "message": "Domen qaydaları"
   },
   "domainRulesDesc": {
-    "message": "Bir neçə fərqli veb sayt domenində eyni giriş məlumatınız varsa, veb saytı \"ekvivalent\" olaraq işarələyə bilərsiniz. \"Qlobal\" domenlər, Bitwarden tərəfindən sizin üçün əvvəlcədən yaradılmış domenlərdir."
+    "message": "Bir neçə fərqli veb sayt domenində eyni giriş məlumatınız varsa, veb saytı \"ekvivalent\" olaraq işarələyə bilərsiniz. \"Qlobal\" domenlər, Black Mask tərəfindən sizin üçün əvvəlcədən yaradılmış domenlərdir."
   },
   "globalEqDomains": {
     "message": "Qlobal ekvivalent domenlər"
@@ -2866,7 +2866,7 @@
     "message": "Təşkilatınız üçün iki addımlı girişi fəallaşdır."
   },
   "twoStepLoginEnterpriseDescStart": {
-    "message": "Bitwarden iki addımlı Giriş seçimlərini aşağıdakını istifadə edərək üzvlər üçün tətbiq et ",
+    "message": "Black Mask iki addımlı Giriş seçimlərini aşağıdakını istifadə edərək üzvlər üçün tətbiq et ",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enforce Bitwarden Two-step Login options for members by using the Two-step Login Policy.'"
   },
   "twoStepLoginPolicy": {
@@ -2879,7 +2879,7 @@
     "message": "SSO quraşdırması etmisinizsə və ya etmək planınız varsa, İki addımlı giriş, artıq Kimlik Provayderiniz vasitəsilə tətbiq edilmiş ola bilər."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "İki addımlı girişi qurmaq, Bitwarden hesabınızı birdəfəlik kilidləyə bilər. Geri qaytarma kodu, normal iki addımlı giriş provayderinizi artıq istifadə edə bilmədiyiniz hallarda (məs. cihazınızı itirəndə) hesabınıza erişməyinizə imkan verir. Hesabınıza erişimi itirsəniz, Bitwarden dəstəyi sizə kömək edə bilməyəcək. Geri qaytarma kodunuzu bir yerə yazmağınızı və ya çap etməyinizi və onu əmniyyətli bir yerdə saxlamağınızı məsləhət görürük."
+    "message": "İki addımlı girişi qurmaq, Black Mask hesabınızı birdəfəlik kilidləyə bilər. Geri qaytarma kodu, normal iki addımlı giriş provayderinizi artıq istifadə edə bilmədiyiniz hallarda (məs. cihazınızı itirəndə) hesabınıza erişməyinizə imkan verir. Hesabınıza erişimi itirsəniz, Black Mask dəstəyi sizə kömək edə bilməyəcək. Geri qaytarma kodunuzu bir yerə yazmağınızı və ya çap etməyinizi və onu əmniyyətli bir yerdə saxlamağınızı məsləhət görürük."
   },
   "restrictedItemTypePolicy": {
     "message": "Kart element növünü sil"
@@ -2894,7 +2894,7 @@
     "message": "1 və ya daha çox təşkilat tərəfindən təyin edilən bir siyasət, kartların seyfinizə köçürülməsini əngəlləyir."
   },
   "yourSingleUseRecoveryCode": {
-    "message": "İki addımlı giriş provayderinizə erişə bilmədiyiniz halda, iki addımlı girişi söndürmək üçün təkistifadəlik geri qaytarma kodunu istifadə edə bilərsiniz. Bitwarden tövsiyə edir ki, geri qaytarma kodunuzu bir yerə yazıb əmniyyətli bir yerdə saxlayın."
+    "message": "İki addımlı giriş provayderinizə erişə bilmədiyiniz halda, iki addımlı girişi söndürmək üçün təkistifadəlik geri qaytarma kodunu istifadə edə bilərsiniz. Black Mask tövsiyə edir ki, geri qaytarma kodunuzu bir yerə yazıb əmniyyətli bir yerdə saxlayın."
   },
   "viewRecoveryCode": {
     "message": "Geri qaytarma koduna bax"
@@ -2992,7 +2992,7 @@
     }
   },
   "continueToExternalUrlDesc": {
-    "message": "Bitwarden-i tərk edirsiniz və yeni bir pəncərədə xarici bir veb sayt açırsınız."
+    "message": "Black Mask-i tərk edirsiniz və yeni bir pəncərədə xarici bir veb sayt açırsınız."
   },
   "twoStepContinueToBitwardenUrlTitle": {
     "message": "bitwarden.com ilə davam edilsin?"
@@ -3040,7 +3040,7 @@
     "message": "Formu saxla."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Platforma məhdudiyyətlərinə görə, YubiKeys bütün Bitwarden tətbiqlərində istifadə edilə bilmir. YubiKeys istifadə edilə bilmədiyi zaman, hesabınıza erişə bilməyiniz üçün başqa bir iki addımlı giriş provayderini qurmalısınız. Dəstəklənən platformalar:"
+    "message": "Platforma məhdudiyyətlərinə görə, YubiKeys bütün Black Mask tətbiqlərində istifadə edilə bilmir. YubiKeys istifadə edilə bilmədiyi zaman, hesabınıza erişə bilməyiniz üçün başqa bir iki addımlı giriş provayderini qurmalısınız. Dəstəklənən platformalar:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "YubiKey-nizi qəbul edə biləcək bir USB portuna sahib cihazdakı veb seyf, masaüstü tətbiqi, CLI və bütün brauzer uzantıları."
@@ -3091,7 +3091,7 @@
     "message": "Bütün açarları sıradan çıxart"
   },
   "twoFactorDuoDesc": {
-    "message": "Duo Admin panelinizdən Bitwarden tətbiq məlumatlarını daxil edin."
+    "message": "Duo Admin panelinizdən Black Mask tətbiq məlumatlarını daxil edin."
   },
   "twoFactorDuoClientId": {
     "message": "Müştəri kimliyi"
@@ -3142,7 +3142,7 @@
     "message": "Formu saxla."
   },
   "twoFactorU2fWarning": {
-    "message": "Platforma məhdudiyyətlərinə görə, FIDO U2F bütün Bitwarden tətbiqlərində istifadə edilə bilmir. FIDO U2F istifadə edilə bilmədiyi zaman, hesabınıza erişə bilməyiniz üçün başqa bir iki addımlı giriş provayderini qurmalısınız. Dəstəklənən platformalar:"
+    "message": "Platforma məhdudiyyətlərinə görə, FIDO U2F bütün Black Mask tətbiqlərində istifadə edilə bilmir. FIDO U2F istifadə edilə bilmədiyi zaman, hesabınıza erişə bilməyiniz üçün başqa bir iki addımlı giriş provayderini qurmalısınız. Dəstəklənən platformalar:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "U2F dəstəkli brauzerə sahib masaüstü/dizüstü kompüterdə veb seyf və brauzer uzantıları (FIDO U2F açıq olan Chrome, Opera, Vivaldi və ya Firefox)."
@@ -3157,7 +3157,7 @@
     "message": "Güvənlik açarı oxunarkən problem yarandı. Yenidən sınayın."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Bitwarden iki addımlı giriş üçün geri qaytarma kodunuz"
+    "message": "Black Mask iki addımlı giriş üçün geri qaytarma kodunuz"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Hələ ki, iki addımlı griş provayderini qurmamısınız. İki addımlı giriş provayderini qurduqdan sonra, geri qaytarma kodunuz üçün buranı yoxlaya bilərsiniz."
@@ -3481,7 +3481,7 @@
     }
   },
   "premiumPriceWithFamilyPlan": {
-    "message": "Sadəcə $PRICE$ qiymətinə illik premium-a abunə olun və ya Bitwarden Ailələr planı ilə $FAMILYPLANUSERCOUNT$ istifadəçiləri üçün premium hesablar və ",
+    "message": "Sadəcə $PRICE$ qiymətinə illik premium-a abunə olun və ya Black Mask Ailələr planı ilə $FAMILYPLANUSERCOUNT$ istifadəçiləri üçün premium hesablar və ",
     "placeholders": {
       "price": {
         "content": "$1",
@@ -3679,7 +3679,7 @@
     }
   },
   "churnOfferDiscountBody": {
-    "message": "Uzun müddətdir ki Bitwarden müştərisi olduğunuz üçün sizə təşəkkür olaraq, növbəti $DURATION$ müddətdə sizə göstərilən xidmət üçün $DISCOUNT$ endirim təklif etmək istərdik.",
+    "message": "Uzun müddətdir ki Black Mask müştərisi olduğunuz üçün sizə təşəkkür olaraq, növbəti $DURATION$ müddətdə sizə göstərilən xidmət üçün $DISCOUNT$ endirim təklif etmək istərdik.",
     "description": "Body copy on the churn-mitigation offer card. DISCOUNT = discount amount; DURATION = service duration (e.g. 'year' or '6 months')",
     "placeholders": {
       "discount": {
@@ -3904,7 +3904,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "Black Mask_premium_license.json"
       }
     }
   },
@@ -4097,7 +4097,7 @@
     }
   },
   "trialThankYou": {
-    "message": "$PLAN$ qarşılığında Bitwarden-də qeydiyyatdan keçdiyiniz üçün təşəkkürlər!",
+    "message": "$PLAN$ qarşılığında Black Mask-də qeydiyyatdan keçdiyiniz üçün təşəkkürlər!",
     "placeholders": {
       "plan": {
         "content": "$1",
@@ -4106,7 +4106,7 @@
     }
   },
   "trialSecretsManagerThankYou": {
-    "message": "$PLAN$ qarşılığında Bitwarden Sirr Menecerində qeydiyyatdan keçdiyiniz üçün təşəkkürlər!",
+    "message": "$PLAN$ qarşılığında Black Mask Sirr Menecerində qeydiyyatdan keçdiyiniz üçün təşəkkürlər!",
     "placeholders": {
       "plan": {
         "content": "$1",
@@ -4242,7 +4242,7 @@
     "message": "SSO Xarici Kimlik"
   },
   "ssoExternalIdDesc": {
-    "message": "SSO Xarici Kimlik, Bitwarden və konfiqurasiya edilmiş SSO provayderiniz arasında şifrələnməmiş referansdır."
+    "message": "SSO Xarici Kimlik, Black Mask və konfiqurasiya edilmiş SSO provayderiniz arasında şifrələnməmiş referansdır."
   },
   "nestCollectionUnder": {
     "message": "Kolleksiyanı bunun altında yerləşdir"
@@ -4287,7 +4287,7 @@
     "message": "Dəvət et"
   },
   "inviteUserDesc": {
-    "message": "Aşağıda Bitwarden hesabının e-poçt ünvanını daxil edərək təşkilatınıza yeni bir istifadəçi dəvət edə bilərsiniz. Əgər Bitwarden hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
+    "message": "Aşağıda Black Mask hesabının e-poçt ünvanını daxil edərək təşkilatınıza yeni bir istifadəçi dəvət edə bilərsiniz. Əgər Black Mask hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
   },
   "inviteUserDescription": {
     "message": "Aşağıdakı e-poçt ünvanlarını daxil edərək yeni istifadəçiləri təşkilatınıza dəvət edin."
@@ -4411,10 +4411,10 @@
     "message": "CLI"
   },
   "bitWebVault": {
-    "message": "Bitwarden Web seyfi"
+    "message": "Black Mask Web seyfi"
   },
   "bitSecretsManager": {
-    "message": "Bitwarden Sirr Meneceri"
+    "message": "Black Mask Sirr Meneceri"
   },
   "loggedIn": {
     "message": "Giriş edildi."
@@ -5388,7 +5388,7 @@
     }
   },
   "joinOrganizationDesc": {
-    "message": "Yuxarıdakı təşkilata qoşulmaq üçün dəvət edildiniz. Dəvəti qəbul etmək üçün Bitwarden hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
+    "message": "Yuxarıdakı təşkilata qoşulmaq üçün dəvət edildiniz. Dəvəti qəbul etmək üçün Black Mask hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
   },
   "finishJoiningThisOrganizationBySettingAMasterPassword": {
     "message": "Bu ana parol təyin edərək bu təşkilata qoşulmağı tamamlayın."
@@ -5457,10 +5457,10 @@
     "message": "Əgər hesabınız mövcuddursa, daha çox təlimat ehtiva edən bir e-poçt göndərəcəyik."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Bitwarden hesabınızı silmək üçün tələb göndərdiniz. Təsdiqləmək üçün aşağıdakı düyməyə basın."
+    "message": "Black Mask hesabınızı silmək üçün tələb göndərdiniz. Təsdiqləmək üçün aşağıdakı düyməyə basın."
   },
   "deleteRecoverOrgConfirmDesc": {
-    "message": "Bitwarden təşkilatınızın silinməsini tələb etdiniz."
+    "message": "Black Mask təşkilatınızın silinməsini tələb etdiniz."
   },
   "myOrganization": {
     "message": "Təşkilatım"
@@ -5785,7 +5785,7 @@
     }
   },
   "updateEncryptionKeyWarning": {
-    "message": "Şifrələmə açarını güncəllədikdən sonra, hazırda istifadə etdiyiniz (mobil tətbiq və ya brauzer uzantıları kimi) bütün Bitwarden tətbiqlərində çıxış edib yenidən giriş etməlisiniz. Çıxış edib təkrar giriş etməmək (yeni şifrələmə açarının endirilməsi prosesi) verilərin zədələnməsi ilə nəticələnə bilər. Avtomatik olaraq çıxış etməyə çalışacağıq, bu gecikə bilər."
+    "message": "Şifrələmə açarını güncəllədikdən sonra, hazırda istifadə etdiyiniz (mobil tətbiq və ya brauzer uzantıları kimi) bütün Black Mask tətbiqlərində çıxış edib yenidən giriş etməlisiniz. Çıxış edib təkrar giriş etməmək (yeni şifrələmə açarının endirilməsi prosesi) verilərin zədələnməsi ilə nəticələnə bilər. Avtomatik olaraq çıxış etməyə çalışacağıq, bu gecikə bilər."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Məhdudiyyətli hesablara aid saxladığınız xaricə köçürmələr yararsız olacaq."
@@ -5821,7 +5821,7 @@
     "message": "Heç nə seçmədiniz."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Bitwarden-in tövsiyə, elan və araşdırma imkanlarını gələn qutunuzda əldə edin."
+    "message": "Black Mask-in tövsiyə, elan və araşdırma imkanlarını gələn qutunuzda əldə edin."
   },
   "subscribe": {
     "message": "Abunə ol"
@@ -6016,7 +6016,7 @@
     "message": "Zəif ana parol"
   },
   "weakMasterPasswordDesc": {
-    "message": "Seçdiyiniz ana parol zəifdir. Bitwarden hesabınızı daha yaxşı qorumaq üçün güclü bir ana parol (və ya uzun ifadə) istifadə etməlisiniz. Bu ana parol istifadə etmək istədiyinizə əminsiniz?"
+    "message": "Seçdiyiniz ana parol zəifdir. Black Mask hesabınızı daha yaxşı qorumaq üçün güclü bir ana parol (və ya uzun ifadə) istifadə etməlisiniz. Bu ana parol istifadə etmək istədiyinizə əminsiniz?"
   },
   "rotateAccountEncKey": {
     "message": "Həmçinin hesabımın şifrələmə açarını da döndər"
@@ -6081,7 +6081,7 @@
     "message": "API açar"
   },
   "apiKeyDesc": {
-    "message": "API açarınız Bitwarden hər kəsə açıq API-sində kimlik doğrulaması üçün istifadə edilə bilər."
+    "message": "API açarınız Black Mask hər kəsə açıq API-sində kimlik doğrulaması üçün istifadə edilə bilər."
   },
   "apiKeyRotateDesc": {
     "message": "API açarı döndərmək, əvvəlki açarı yararsız edəcək. Hazırkı açarın artıq təhlükəsiz olmadığına inanırsınızsa, API açarınızı döndərə bilərsiniz."
@@ -6090,7 +6090,7 @@
     "message": "API açarınızın təşkilata tam erişimi var. Gizli saxlanılmalıdır."
   },
   "userApiKeyDesc": {
-    "message": "API açarınız Bitwarden CLI-də kimlik doğrulaması üçün istifadə edilə bilər."
+    "message": "API açarınız Black Mask CLI-də kimlik doğrulaması üçün istifadə edilə bilər."
   },
   "userApiKeyWarning": {
     "message": "API açarınız, alternativ bir kimlik doğrulama mexanizmidir. Gizli saxlanılmalıdır."
@@ -6396,7 +6396,7 @@
     "message": "Üzvlərin digər təşkilatlara qoşulmasını məhdudlaşdır. Bu siyasət, domen doğrulamasını fəallaşdıran təşkilatlar üçün tələb olunur."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Hazırkı təşkilatınızın, bir neçə təşkilata qoşulmasına icazə verməyən bir siyasəti var. Lütfən təşkilat adminləri ilə əlaqə saxlayın və ya fərqli bir Bitwarden hesabı ilə qeydiyyatdan keçin."
+    "message": "Hazırkı təşkilatınızın, bir neçə təşkilata qoşulmasına icazə verməyən bir siyasəti var. Lütfən təşkilat adminləri ilə əlaqə saxlayın və ya fərqli bir Black Mask hesabı ilə qeydiyyatdan keçin."
   },
   "singleOrgPolicyMemberWarning": {
     "message": "Uyumlu olmayan üzvlər, digər bütün təşkilatları tərk edənə qədər rədd edilmiş statusa daxil ediləcək. Administratorlar azaddır və uyum təmin edildikdən sonra üzvləri bərpa edə bilər."
@@ -6604,7 +6604,7 @@
     "message": "Çətinliyiniz var? Diaqnostika hesabatını endirib paylaşın"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden dəstək",
+    "message": "Black Mask dəstək",
     "description": "Link text that follows the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -6661,7 +6661,7 @@
     "message": "Fövqəladə hal kontaktına düzəliş et"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Aşağıda Bitwarden hesabının e-poçt ünvanını daxil edərək yeni bir fövqəladə hal kontaktını dəvət edə bilərsiniz. Əgər Bitwarden hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
+    "message": "Aşağıda Black Mask hesabının e-poçt ünvanını daxil edərək yeni bir fövqəladə hal kontaktını dəvət edə bilərsiniz. Əgər Black Mask hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Fövqəladə hal erişimi başladıldı"
@@ -6700,7 +6700,7 @@
     "message": "Dəvət edilən istifadəçi."
   },
   "acceptEmergencyAccess": {
-    "message": "Yuxarıdakı istifadəçi üçün fövqəladə hal zamanı əlaqə qurulacaq şəxs olaraq dəvət edildiniz. Dəvəti qəbul etmək üçün Bitwarden hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
+    "message": "Yuxarıdakı istifadəçi üçün fövqəladə hal zamanı əlaqə qurulacaq şəxs olaraq dəvət edildiniz. Dəvəti qəbul etmək üçün Black Mask hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Dəvət qəbul edilə bilmədi. İstifadəçidən yeni bir dəvət göndərməsini xahiş edin."
@@ -6860,7 +6860,7 @@
     "message": "Avtomatik istifadəçi təsdiqi necə işə salınır"
   },
   "autoConfirmExtension1": {
-    "message": "Bitwarden uzantınızı açın"
+    "message": "Black Mask uzantınızı açın"
   },
   "autoConfirmExtension2": {
     "message": "Seç:",
@@ -6871,7 +6871,7 @@
     "description": "This is a fragment of a larger sencence. The whole sentence will read: 'Select Turn on'"
   },
   "autoConfirmExtensionOpened": {
-    "message": "Bitwarden brauzer uzantısı uğurla açıldı. Artıq avtomatik istifadəçi təsdiqi ayarını aktivləşdirə bilərsiniz."
+    "message": "Black Mask brauzer uzantısı uğurla açıldı. Artıq avtomatik istifadəçi təsdiqi ayarını aktivləşdirə bilərsiniz."
   },
   "autoConfirmPolicyEditDescription": {
     "message": "Təşkilata dəvət edilmiş yeni istifadəçilər, admin cihazının kilidi açıldığı zaman avtomatik olaraq təsdiqlənəcək. Bu siyasəti işə salmazdan əvvəl, lütfən aşağıdakıları incələyin və razılaşın: ",
@@ -7126,7 +7126,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, see how it works, **or** try it now.'"
   },
   "developmentDevOpsAndITTeamsChooseBWSecret": {
-    "message": "Development, DevOps və IT komandları, infrastrukturlarını və maşın sirlərini güvənli şəkildə idarə etmək və yerləşdirmək üçün Bitwarden Sirr Menecerini seçir."
+    "message": "Development, DevOps və IT komandları, infrastrukturlarını və maşın sirlərini güvənli şəkildə idarə etmək və yerləşdirmək üçün Black Mask Sirr Menecerini seçir."
   },
   "centralizeSecretsManagement": {
     "message": "Sirlərin idarə edilməsini mərkəzləşdirin."
@@ -7162,10 +7162,10 @@
     "message": "Not əlavə et"
   },
   "bitwardenSecretsManager": {
-    "message": "Bitwarden Sirr Meneceri"
+    "message": "Black Mask Sirr Meneceri"
   },
   "moreProductsFromBitwarden": {
-    "message": "Bitwarden-dən daha çox məhsul"
+    "message": "Black Mask-dən daha çox məhsul"
   },
   "requestAccessToSecretsManager": {
     "message": "\"Sirr Meneceri\"nə erişim tələb et"
@@ -7177,7 +7177,7 @@
     "message": "Sirr menecerinə erişim tələbi üçün e-poçt adminlərə göndərildi."
   },
   "requestAccessSMDefaultEmailContent": {
-    "message": "Salam,\n\nBu, komandamız üçün \"Bitwarden Sirr Meneceri\"nə abunə olmaq istəyidir. Dəstəyiniz, bizim üçün böyük məna kəsb edir!\n\nBitwarden Sirr Meneceri, API açarları, veri bazası parolları və autentifikasiya sertifikatları kimi maşın kimlik məlumatlarını güvənli şəkildə saxlamaq, paylaşmaq və yerləşdirmək üçün ucdan-uca şifrələnmiş sirlərin idarə edilməsi həllidir.\n\nSirr Meneceri, bizə belə kömək edəcək:\n\n- Güvənliyi artırmaq\n- Əməliyyatları asanlaşdırmaq\n- Dəyərli sirr sızıntılarını önləmək\n\nKomandamız üçün ödənişsiz sınağı tələb etmək üçün lütfən Bitwarden ilə əlaqə saxlayın.\n\nKöməyiniz üçün təşəkkürlər!"
+    "message": "Salam,\n\nBu, komandamız üçün \"Black Mask Sirr Meneceri\"nə abunə olmaq istəyidir. Dəstəyiniz, bizim üçün böyük məna kəsb edir!\n\nBlack Mask Sirr Meneceri, API açarları, veri bazası parolları və autentifikasiya sertifikatları kimi maşın kimlik məlumatlarını güvənli şəkildə saxlamaq, paylaşmaq və yerləşdirmək üçün ucdan-uca şifrələnmiş sirlərin idarə edilməsi həllidir.\n\nSirr Meneceri, bizə belə kömək edəcək:\n\n- Güvənliyi artırmaq\n- Əməliyyatları asanlaşdırmaq\n- Dəyərli sirr sızıntılarını önləmək\n\nKomandamız üçün ödənişsiz sınağı tələb etmək üçün lütfən Black Mask ilə əlaqə saxlayın.\n\nKöməyiniz üçün təşəkkürlər!"
   },
   "giveMembersAccess": {
     "message": "Üzvlərə erişim icazəsi ver:"
@@ -7211,7 +7211,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
   },
   "sendAccessCreatorIdentifier": {
-    "message": "$USER_IDENTIFIER$ Bitwarden üzvü aşağıdakıları sizinlə paylaşdı",
+    "message": "$USER_IDENTIFIER$ Black Mask üzvü aşağıdakıları sizinlə paylaşdı",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -7236,7 +7236,7 @@
     "description": "Toast message shown when a user clicks the resend code link on the Send access page. 'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Bu \"Send\"i yaradan Bitwarden istifadəçisi e-poçt ünvanını gizlətməyi seçib. İstifadə etməzdən və ya endirməzdən əvvəl bu keçidin mənbəyinin etibarlı olduğuna əmin olmalısınız.",
+    "message": "Bu \"Send\"i yaradan Black Mask istifadəçisi e-poçt ünvanını gizlətməyi seçib. İstifadə etməzdən və ya endirməzdən əvvəl bu keçidin mənbəyinin etibarlı olduğuna əmin olmalısınız.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
@@ -7595,7 +7595,7 @@
     "message": "Şifrə açma xətası"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden, aşağıda sadalanan seyf element(lər)inin şifrəsini aça bilmədi."
+    "message": "Black Mask, aşağıda sadalanan seyf element(lər)inin şifrəsini aça bilmədi."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Əlavə data itkisini önləmək üçün",
@@ -7612,7 +7612,7 @@
     "message": "Provayder quraşdırması"
   },
   "setupProviderLoginDesc": {
-    "message": "Yeni bir provayder quraşdırılması üçün dəvət edildiniz. Davam etmək üçün yeni bir Bitwarden hesabı açın və ya mövcud hesaba giriş edin."
+    "message": "Yeni bir provayder quraşdırılması üçün dəvət edildiniz. Davam etmək üçün yeni bir Black Mask hesabı açın və ya mövcud hesaba giriş edin."
   },
   "setupProviderDesc": {
     "message": "Provayderin quraşdırılmasını tamamlamaq üçün lütfən aşağıdakı məlumatları daxil edin. Sual yaranarsa, müştəri dəstəyi ilə əlaqə saxlayın."
@@ -7643,13 +7643,13 @@
     "message": "Xidmət istifadəçisi, bütün müştəri təşkilatlarına erişə və onları idarə edə bilər."
   },
   "providerInviteUserDesc": {
-    "message": "Aşağıda Bitwarden hesabının e-poçt ünvanını daxil edərək provayderinizə yeni bir istifadəçi dəvət edə bilərsiniz. Əgər Bitwarden hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
+    "message": "Aşağıda Black Mask hesabının e-poçt ünvanını daxil edərək provayderinizə yeni bir istifadəçi dəvət edə bilərsiniz. Əgər Black Mask hesabı yoxdursa, yeni bir hesab yaratmaları üçün istək göndəriləcək."
   },
   "joinProvider": {
     "message": "Provayderə qoşul"
   },
   "joinProviderDesc": {
-    "message": "Yuxarıdakı provayderə qoşulmaq üçün dəvət edildiniz. Dəvəti qəbul etmək üçün Bitwarden hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
+    "message": "Yuxarıdakı provayderə qoşulmaq üçün dəvət edildiniz. Dəvəti qəbul etmək üçün Black Mask hesabına giriş etməli və ya yeni bir hesab yaratmalısınız."
   },
   "providerInviteAcceptFailed": {
     "message": "Dəvət qəbul edilə bilmədi. Provayder adminindən yeni bir dəvət göndərməsini xahiş edin."
@@ -7794,7 +7794,7 @@
     "message": "Seans vaxt bitmə əməliyyatı"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Bitwarden brauzer uzantısı tətbiqi tərəfindən idarə olunur. Düzəliş etmək üçün brauzer tətbiqini açın."
+    "message": "Black Mask brauzer uzantısı tətbiqi tərəfindən idarə olunur. Düzəliş etmək üçün brauzer tətbiqini açın."
   },
   "immediately": {
     "message": "Dərhal"
@@ -8032,7 +8032,7 @@
     "message": "Vahid daxil olma konfiqurasiyası saxlanıldı"
   },
   "sponsoredFamilies": {
-    "message": "Ödənişsiz Bitwarden Ailələri"
+    "message": "Ödənişsiz Black Mask Ailələri"
   },
   "sponsoredBitwardenFamilies": {
     "message": "Sponsorlu ailələr"
@@ -8044,19 +8044,19 @@
     "message": "Sponsorlu üzv olmayan ailələr planı burada görünəcək"
   },
   "sponsorshipFreeBitwardenFamilies": {
-    "message": "Təşkilatınızın üzvləri Ödənişsiz Bitwarden Ailələr planından yararlana bilər. Bitwarden təşkilatınızın üzvü olmayan işçilər üçün \"Ödənişsiz Bitwarden Ailələr\"ə sponsor ola bilərsiniz. Üzv olmayan birinə sponsorluq etmək üçün təşkilatınızda mövcud yer olmalıdır."
+    "message": "Təşkilatınızın üzvləri Ödənişsiz Black Mask Ailələr planından yararlana bilər. Black Mask təşkilatınızın üzvü olmayan işçilər üçün \"Ödənişsiz Black Mask Ailələr\"ə sponsor ola bilərsiniz. Üzv olmayan birinə sponsorluq etmək üçün təşkilatınızda mövcud yer olmalıdır."
   },
   "sponsoredFamiliesRemoveActiveSponsorship": {
     "message": "Aktiv bir sponsorluğu ləğv etdiyiniz zaman, sponsorlu təşkilatınızın yenilənmə tarixindən sonra təşkilatınızda bir yer mövcud olacaq."
   },
   "sponsoredFamiliesEligible": {
-    "message": "Siz və ailəniz Ödənişsiz Bitwarden Ailələri üçün uyğunsunuz. İşdə olmadığınız vaxtlarda belə verilərinizi güvənli saxlamaq üçün fərdi e-poçtunuzu istifadə edin."
+    "message": "Siz və ailəniz Ödənişsiz Black Mask Ailələri üçün uyğunsunuz. İşdə olmadığınız vaxtlarda belə verilərinizi güvənli saxlamaq üçün fərdi e-poçtunuzu istifadə edin."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "İşdə olmadığınız vaxtlarda belə verilərinizi güvənli saxlamaq üçün Ailələr üçün nəzərdə tutulan Ödənişsiz Bitwarden planını bu gün istifadə edin."
+    "message": "İşdə olmadığınız vaxtlarda belə verilərinizi güvənli saxlamaq üçün Ailələr üçün nəzərdə tutulan Ödənişsiz Black Mask planını bu gün istifadə edin."
   },
   "sponsoredFamiliesIncludeMessage": {
-    "message": "Ailələr üçün Bitwarden planı bunları ehtiva edir"
+    "message": "Ailələr üçün Black Mask planı bunları ehtiva edir"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "6 istifadəçiyə qədər Premium erişim"
@@ -8074,7 +8074,7 @@
     "message": "Ailə planlarını götürən üzvlər burada görünəcək"
   },
   "membersWithSponsoredFamilies": {
-    "message": "Təşkilatınızın üzvləri Ödənişsiz Bitwarden Ailələr planından yararlana bilər. Burada Ailələr təşkilatına sponsorluq edən üzvləri görə bilərsiniz."
+    "message": "Təşkilatınızın üzvləri Ödənişsiz Black Mask Ailələr planından yararlana bilər. Burada Ailələr təşkilatına sponsorluq edən üzvləri görə bilərsiniz."
   },
   "organizationHasMemberMessage": {
     "message": "$EMAIL$ ünvanına sponsorluq göndərilə bilmir, çünki təşkilatınızın üzvü deyil.",
@@ -8101,7 +8101,7 @@
     "message": "Hansı Ödənişsiz Ailələr təklifindən faydalanmaq istəyirsiniz?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "\"Bitwarden Ailələri\"ni istifadə etmək üçün fərdi e-poçtunuzu daxil edin"
+    "message": "\"Black Mask Ailələri\"ni istifadə etmək üçün fərdi e-poçtunuzu daxil edin"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "Bu təşkilatı tərk etsəniz və ya bu təşkilatdan xaric edilsəniz, Ailələr planınızın istifadə müddəti faktura dövrünün sonunda başa çatacaq."
@@ -8110,7 +8110,7 @@
     "message": "Mövcud bir təşkilat üçün bir təklifi qəbul edin və ya yeni bir Ailələr təşkilatını yaradın."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "Sizə ödənişsiz bir Bitwarden Ailələr Planı Təşkilatı təklif edildi. Davam etmək üçün, təklifi alan hesaba giriş etməlisiniz."
+    "message": "Sizə ödənişsiz bir Black Mask Ailələr Planı Təşkilatı təklif edildi. Davam etmək üçün, təklifi alan hesaba giriş etməlisiniz."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Təklif qəbul edilə bilmir. Lütfən müəssisə hesabınızdan təklif e-poçtunu təkrar göndərib yenidən sınayın."
@@ -8125,10 +8125,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "\"Ödənişsiz Bitwarden Ailələri\"ni qəbul et"
+    "message": "\"Ödənişsiz Black Mask Ailələri\"ni qəbul et"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Ödənişsiz Bitwarden Ailələri təklifi uğurla istifadə edildi"
+    "message": "Ödənişsiz Black Mask Ailələri təklifi uğurla istifadə edildi"
   },
   "redeemed": {
     "message": "İstifadə edildi"
@@ -8259,7 +8259,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "memberDecryptionKeyConnectorDescEnd": {
-    "message": "Key Connector şifrə açmanı quraşdırmaq üçün tələb olunur. Quraşdırma üzrə kömək üçün Bitwarden Dəstək ilə əlaqə saxlayın.",
+    "message": "Key Connector şifrə açmanı quraşdırmaq üçün tələb olunur. Quraşdırma üzrə kömək üçün Black Mask Dəstək ilə əlaqə saxlayın.",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "keyConnectorPolicyRestriction": {
@@ -8359,7 +8359,7 @@
     "message": "Özəl mühit"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Şirkət daxili sahiblik edən Bitwarden quraşdırmasının təməl URL-sini qeyd edin. Nümunə: https://bitwarden.company.com"
+    "message": "Şirkət daxili sahiblik edən Black Mask quraşdırmasının təməl URL-sini qeyd edin. Nümunə: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Qabaqcıl konfiqurasiya üçün hər xidmətin təməl URL-sini müstəqil olaraq qeyd edə bilərsiniz."
@@ -8407,7 +8407,7 @@
     "message": "Faktura sinxr tokeni"
   },
   "automaticBillingSyncDesc": {
-    "message": "Avto-sinxronlaşdırma, Ailələr sponsorluğunun kilidini açır və bir fayl yükləmədən lisenziyanızı sinxronlaşdırmağınıza imkan verir. Bitwarden bulud serverində güncəlləmələri etdikdən sonra dəyişiklikləri tətbiq etmək üçün \"Lisenziyanı sinxronlaşdır\"ı seçin."
+    "message": "Avto-sinxronlaşdırma, Ailələr sponsorluğunun kilidini açır və bir fayl yükləmədən lisenziyanızı sinxronlaşdırmağınıza imkan verir. Black Mask bulud serverində güncəlləmələri etdikdən sonra dəyişiklikləri tətbiq etmək üçün \"Lisenziyanı sinxronlaşdır\"ı seçin."
   },
   "active": {
     "message": "Aktiv"
@@ -8769,11 +8769,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Bitwarden tərəfindən yaradılıb.",
+    "message": "Black Mask tərəfindən yaradılıb.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Veb sayt: $WEBSITE$. Bitwarden tərəfindən yaradılıb.",
+    "message": "Veb sayt: $WEBSITE$. Black Mask tərəfindən yaradılıb.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -9838,7 +9838,7 @@
     "message": "Daha çox ayar"
   },
   "moreFromBitwarden": {
-    "message": "\"Bitwarden\"dən daha çoxu"
+    "message": "\"Black Mask\"dən daha çoxu"
   },
   "switchProducts": {
     "message": "Məhsulları dəyişdir"
@@ -10674,7 +10674,7 @@
     "message": "İstifadəçi, TDE offboarding zamanı ana parolu təyin etdi."
   },
   "startYour7DayFreeTrialOfBitwardenFor": {
-    "message": "$ORG$ üçün Bitwarden 7 günlük ödənişsiz sınağı başladın",
+    "message": "$ORG$ üçün Black Mask 7 günlük ödənişsiz sınağı başladın",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10683,7 +10683,7 @@
     }
   },
   "startYour7DayFreeTrialOfBitwardenSecretsManagerFor": {
-    "message": "$ORG$ üçün Bitwarden Sirr Meneceri üzrə 7 günlük ödənişsiz sınağı başladın",
+    "message": "$ORG$ üçün Black Mask Sirr Meneceri üzrə 7 günlük ödənişsiz sınağı başladın",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10981,7 +10981,7 @@
     "message": "Seyfinizi istifadə etməyə başlayın"
   },
   "onboardingChecklistSubtitle": {
-    "message": "Fərdi verilərinizi qorumaq və Bitwarden-dən maksimum faydalanmaq üçün bu addımları tamamlayın"
+    "message": "Fərdi verilərinizi qorumaq və Black Mask-dən maksimum faydalanmaq üçün bu addımları tamamlayın"
   },
   "dismissThisChecklist": {
     "message": "Bu siyahını bağla"
@@ -11054,7 +11054,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI uyuşma aşkarlaması, Bitwarden-in avto-doldurma təkliflərini necə müəyyən etdiyini göstərir.",
+    "message": "URI uyuşma aşkarlaması, Black Mask-in avto-doldurma təkliflərini necə müəyyən etdiyini göstərir.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -11098,13 +11098,13 @@
     "message": "Təsdiq detalları"
   },
   "smFreeTrialThankYou": {
-    "message": "Bitwarden Sirr Menecerində qeydiyyatdan keçdiyiniz üçün təşəkkürlər!"
+    "message": "Black Mask Sirr Menecerində qeydiyyatdan keçdiyiniz üçün təşəkkürlər!"
   },
   "smFreeTrialConfirmationEmail": {
     "message": "E-poçtunuza bir təsdiq məktubu göndərdik "
   },
   "sorryToSeeYouGo": {
-    "message": "Getməyinizə məyus olduq! Nə üçün ləğv etdiyinizi paylaşmaqla Bitwarden-i təkmilləşdirməyə kömək edin.",
+    "message": "Getməyinizə məyus olduq! Nə üçün ləğv etdiyinizi paylaşmaqla Black Mask-i təkmilləşdirməyə kömək edin.",
     "description": "A message shown to users as part of an offboarding survey asking them to provide more information on their subscription cancelation."
   },
   "selectCancellationReason": {
@@ -11566,20 +11566,20 @@
     "message": "İnteqrasiyalar"
   },
   "integrationsDesc": {
-    "message": "\"Bitwarden Sirr Meneceri\"ndəki sirləri avtomatik olaraq üçüncü tərəf xidmətlə sinxronlaşdır."
+    "message": "\"Black Mask Sirr Meneceri\"ndəki sirləri avtomatik olaraq üçüncü tərəf xidmətlə sinxronlaşdır."
   },
   "sdks": {
     "message": "SDK-lar"
   },
   "sdksDesc": {
-    "message": "Öz tətbiqlərinizi qurmaq üçün \"Bitwarden Sirr Meneceri SDK\"sını aşağıdakı proqramlaşdırma dillərində istifadə edin."
+    "message": "Öz tətbiqlərinizi qurmaq üçün \"Black Mask Sirr Meneceri SDK\"sını aşağıdakı proqramlaşdırma dillərində istifadə edin."
   },
   "ssoDescStart": {
     "message": "Konfiqurasiya et",
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "ssoDescEnd": {
-    "message": "Kimlik Provayderiniz üçün icra bələdçisini istifadə edərək Bitwarden üçün",
+    "message": "Kimlik Provayderiniz üçün icra bələdçisini istifadə edərək Black Mask üçün",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "userProvisioning": {
@@ -11593,7 +11593,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "scimIntegrationDescEnd": {
-    "message": "Kimlik Provayderinizin icra bələdçisini istifadə edərək istifadəçiləri və qrupları Bitwarden-ə avtomatik olaraq təmin etmək üçün (System for Cross-domain Identity Management).",
+    "message": "Kimlik Provayderinizin icra bələdçisini istifadə edərək istifadəçiləri və qrupları Black Mask-ə avtomatik olaraq təmin etmək üçün (System for Cross-domain Identity Management).",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "bwdc": {
@@ -11606,13 +11606,13 @@
     "message": "Event idarəetməsi"
   },
   "eventManagementDesc": {
-    "message": "Platformanız üçün icra bələdçisini istifadə edərək Bitwarden event log-larını SIEM sisteminizə inteqrasiya edin."
+    "message": "Platformanız üçün icra bələdçisini istifadə edərək Black Mask event log-larını SIEM sisteminizə inteqrasiya edin."
   },
   "deviceManagement": {
     "message": "Cihaz idarəetməsi"
   },
   "deviceManagementDesc": {
-    "message": "Platformanız üçün icra bələdçisini istifadə edərək Bitwarden üçün cihaz idarəetməsini konfiqurasiya edin."
+    "message": "Platformanız üçün icra bələdçisini istifadə edərək Black Mask üçün cihaz idarəetməsini konfiqurasiya edin."
   },
   "crowdstrikeEventIntegrationDesc": {
     "message": "Event verilərini öz Logscale instance\"na göndər"
@@ -11792,22 +11792,22 @@
     "message": "Fakturanı \"Provayder Portalı\"ndan idarə et"
   },
   "continueSettingUp": {
-    "message": "Bitwarden-i qurmağa davam edin"
+    "message": "Black Mask-i qurmağa davam edin"
   },
   "continueSettingUpFreeTrial": {
-    "message": "Ödənişsiz Bitwarden sınağınızı qurmağa davam edin"
+    "message": "Ödənişsiz Black Mask sınağınızı qurmağa davam edin"
   },
   "continueSettingUpPasswordManager": {
-    "message": "\"Bitwarden Parol Meneceri\"ni qurmağa davam edin"
+    "message": "\"Black Mask Parol Meneceri\"ni qurmağa davam edin"
   },
   "continueSettingUpFreeTrialPasswordManager": {
-    "message": "Ödənişsiz Bitwarden Parol Meneceri sınağınızı qurmağa davam edin"
+    "message": "Ödənişsiz Black Mask Parol Meneceri sınağınızı qurmağa davam edin"
   },
   "continueSettingUpSecretsManager": {
-    "message": "\"Bitwarden Sirr Meneceri\"ni qurmağa davam edin"
+    "message": "\"Black Mask Sirr Meneceri\"ni qurmağa davam edin"
   },
   "continueSettingUpFreeTrialSecretsManager": {
-    "message": "Ödənişsiz Bitwarden Sirr Meneceri sınağınızı qurmağa davam edin"
+    "message": "Ödənişsiz Black Mask Sirr Meneceri sınağınızı qurmağa davam edin"
   },
   "enterTeamsOrgInfo": {
     "message": "Teams təşkilatınızın məlumatlarını daxil edin"
@@ -12064,14 +12064,14 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'."
   },
   "contactBitwardenSupport": {
-    "message": "Bitwarden dəstəyi ilə əlaqə saxlayın.",
+    "message": "Black Mask dəstəyi ilə əlaqə saxlayın.",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'. 'Bitwarden' should not be translated"
   },
   "sponsored": {
     "message": "Sponsorlu"
   },
   "licenseAndBillingManagementDesc": {
-    "message": "Bitwarden bulud serverində güncəlləmələr etdikdən sonra, ən son dəyişiklikləri tətbiq etmək üçün lisenziya faylınızı yükləyin."
+    "message": "Black Mask bulud serverində güncəlləmələr etdikdən sonra, ən son dəyişiklikləri tətbiq etmək üçün lisenziya faylınızı yükləyin."
   },
   "addToFolder": {
     "message": "Qovluğa əlavə et"
@@ -12177,7 +12177,7 @@
     "message": "CVV nömrəsi nədir?"
   },
   "learnMoreAboutApi": {
-    "message": "Bitwarden-nin API-si haqqında daha ətraflı"
+    "message": "Black Mask-nin API-si haqqında daha ətraflı"
   },
   "fileSends": {
     "message": "Fayl \"Send\"ləri"
@@ -12351,7 +12351,7 @@
     "message": "Sirr Meneceri abunəliyiniz seçilmiş plan əsasında yüksəldiləcək"
   },
   "bitwardenPasswordManager": {
-    "message": "Bitwarden Parol Meneceri"
+    "message": "Black Mask Parol Meneceri"
   },
   "secretsManagerComplimentaryPasswordManager": {
     "message": "Tamamlayıcı bir illik Parol Meneceri abunəliyiniz seçilmiş plana yüksəldiləcək. Ödənişsiz dövr bitənə qədər sizdən ödəniş alınmayacaq."
@@ -12429,7 +12429,7 @@
     "description": "This represents the beginning of a sentence. The full sentence will be 'Manage subscription from the Provider Portal', but 'Provider Portal' will be a link and thus cannot be included in the translation file."
   },
   "toHostBitwardenOnYourOwnServer": {
-    "message": "Bitwarden-i öz serverinizdə quraşdırmaq üçün lisenziya faylınızı yükləməlisiniz. Self-hosted təşkilatınız üçün Ödənişsiz Ailələr planlarını və qabaqcıl faktura imkanlarını dəstəkləmək üçün, self-hosted təşkilatınızda avto-sinxronlaşdırmanı qurmalısınız."
+    "message": "Black Mask-i öz serverinizdə quraşdırmaq üçün lisenziya faylınızı yükləməlisiniz. Self-hosted təşkilatınız üçün Ödənişsiz Ailələr planlarını və qabaqcıl faktura imkanlarını dəstəkləmək üçün, self-hosted təşkilatınızda avto-sinxronlaşdırmanı qurmalısınız."
   },
   "selfHostingTitleProper": {
     "message": "Self-Hosting"
@@ -12531,7 +12531,7 @@
     "message": "Uğurla silindi"
   },
   "freeFamiliesSponsorship": {
-    "message": "Ödənişsiz Bitwarden Families sponsorluğunu sil"
+    "message": "Ödənişsiz Black Mask Families sponsorluğunu sil"
   },
   "freeFamiliesSponsorshipPolicyDesc": {
     "message": "Üzvlərin bu təşkilat vasitəsilə Families planını istifadə etməsinə icazə verməyin."
@@ -12582,10 +12582,10 @@
     "message": "Avtomatik götürülən domenlər"
   },
   "automaticDomainClaimProcess": {
-    "message": "Bitwarden, ilk 72 saat ərzində domeni 3 dəfə götürməyə çalışacaq. Əgər domen götürülə bilməsə, \"host\"unuzdakı DNS qeydini yoxlayın və manual götürün. Domen götürülməsə, 7 gün ərzində təşkilatınızdan silinəcək."
+    "message": "Black Mask, ilk 72 saat ərzində domeni 3 dəfə götürməyə çalışacaq. Əgər domen götürülə bilməsə, \"host\"unuzdakı DNS qeydini yoxlayın və manual götürün. Domen götürülməsə, 7 gün ərzində təşkilatınızdan silinəcək."
   },
   "automaticDomainClaimProcess1": {
-    "message": "Bitwarden, domeni 72 saat ərzində götürməyə çalışacaq. Domen götürülə bilmirsə, DNS qeydinizi doğrulayın və manual götürün. Götürülməmiş domenlər 7 gün sonra xaric edilir."
+    "message": "Black Mask, domeni 72 saat ərzində götürməyə çalışacaq. Domen götürülə bilmirsə, DNS qeydinizi doğrulayın və manual götürün. Götürülməmiş domenlər 7 gün sonra xaric edilir."
   },
   "automaticDomainClaimProcess2": {
     "message": "Götürüldükdən sonra, domeni götürmüş mövcud üzvlərə e-poçtla məlumat veriləcək "
@@ -12736,19 +12736,19 @@
     "message": "Private açarı kopyala"
   },
   "openingExtension": {
-    "message": "Bitwarden brauzer uzantısı açılır"
+    "message": "Black Mask brauzer uzantısı açılır"
   },
   "somethingWentWrong": {
     "message": "Nəsə səhv getdi..."
   },
   "openingExtensionError": {
-    "message": "Bitwarden brauzer uzantısı açılarkən xəta ilə üzləşdik. İndi açmaq üçün düyməyə klikləyin."
+    "message": "Black Mask brauzer uzantısı açılarkən xəta ilə üzləşdik. İndi açmaq üçün düyməyə klikləyin."
   },
   "openExtension": {
     "message": "Uzantını aç"
   },
   "doNotHaveExtension": {
-    "message": "Bitwarden brauzer uzantısı yoxdur?"
+    "message": "Black Mask brauzer uzantısı yoxdur?"
   },
   "installExtension": {
     "message": "Uzantını quraşdır"
@@ -12757,7 +12757,7 @@
     "message": "Brauzer uzantısı açıldı"
   },
   "openedExtensionViewAtRiskPasswords": {
-    "message": "Bitwarden brauzer uzantısı uğurla açıldı. Riskli parollarınıza nəzər sala bilərsiniz."
+    "message": "Black Mask brauzer uzantısı uğurla açıldı. Riskli parollarınıza nəzər sala bilərsiniz."
   },
   "resellerRenewalWarningMsg": {
     "message": "Abunəliyiniz tezliklə yenilənəcək. Kəsintisiz xidməti təmin etmək və yeniləməni $RENEWAL_DATE$ tarixindən əvvəl təsdiqləmək üçün $RESELLER$ ilə əlaqə saxlayın.",
@@ -12773,7 +12773,7 @@
     }
   },
   "resellerRenewalWarningMsgV2": {
-    "message": "Abunəliyiniz tezliklə yenilənəcək. Kəsintisiz xidməti təmin etmək və yeniləməni $RENEWAL_DATE$ tarixindən əvvəl təsdiqləmək üçün Bitwarden ilə əlaqə saxlayın.",
+    "message": "Abunəliyiniz tezliklə yenilənəcək. Kəsintisiz xidməti təmin etmək və yeniləməni $RENEWAL_DATE$ tarixindən əvvəl təsdiqləmək üçün Black Mask ilə əlaqə saxlayın.",
     "placeholders": {
       "renewal_date": {
         "content": "$1",
@@ -12812,7 +12812,7 @@
     }
   },
   "resellerPastDueWarningMsgV2": {
-    "message": "Abunəliyinizə aid faktura üzrə ödəniş edilməyib. Kəsintisiz xidməti təmin etmək üçün $GRACE_PERIOD_END$ tarixindən əvvəl Bitwarden ilə əlaqə saxlayın.",
+    "message": "Abunəliyinizə aid faktura üzrə ödəniş edilməyib. Kəsintisiz xidməti təmin etmək üçün $GRACE_PERIOD_END$ tarixindən əvvəl Black Mask ilə əlaqə saxlayın.",
     "placeholders": {
       "grace_period_end": {
         "content": "$1",
@@ -12970,7 +12970,7 @@
     "message": "Təşkilatınızın event log-larını görmək üçün yüksəldin."
   },
   "upgradeEventLogMessage": {
-    "message": "Bu event-lər sadəcə nümunədir və Bitwarden təşkilatınızdakı real event-ləri əks etdirmir."
+    "message": "Bu event-lər sadəcə nümunədir və Black Mask təşkilatınızdakı real event-ləri əks etdirmir."
   },
   "viewEvents": {
     "message": "Tədbirlərə bax"
@@ -13120,7 +13120,7 @@
     "message": "Parollarınızı tək bir kliklə güvənli şəkildə avto-doldurun"
   },
   "setupExtensionPageDescription": {
-    "message": "Bitwarden brauzer uzantısını əldə edin və bugün avto-doldurmağa başlayın"
+    "message": "Black Mask brauzer uzantısını əldə edin və bugün avto-doldurmağa başlayın"
   },
   "getTheExtension": {
     "message": "Uzantını əldə et"
@@ -13138,19 +13138,19 @@
     "message": "Veb tətbiqinə keç"
   },
   "bitwardenExtensionInstalled": {
-    "message": "Bitwarden uzantısı quraşdırıldı!"
+    "message": "Black Mask uzantısı quraşdırıldı!"
   },
   "bitwardenExtensionIsInstalled": {
-    "message": "Bitwarden uzantısı quraşdırıldı!"
+    "message": "Black Mask uzantısı quraşdırıldı!"
   },
   "openExtensionToAutofill": {
     "message": "Giriş etmək üçün uzantını aç və avto-doldurmağa başla."
   },
   "openBitwardenExtension": {
-    "message": "Bitwarden uzantısını aç"
+    "message": "Black Mask uzantısını aç"
   },
   "gettingStartedWithBitwardenPart1": {
-    "message": "Bitwarden-i öyrənmək üçün ziyarət edin:",
+    "message": "Black Mask-i öyrənmək üçün ziyarət edin:",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "gettingStartedWithBitwardenPart2": {
@@ -13158,7 +13158,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "openExtensionFromToolbarPart1": {
-    "message": "Uzantı açılmasa, alət çubuğundakı ikondan Bitwarden-i açmağınız ",
+    "message": "Uzantı açılmasa, alət çubuğundakı ikondan Black Mask-i açmağınız ",
     "description": "This will be used as part of a larger sentence, broken up to include the Bitwarden icon. The full sentence will read 'If the extension didn't open, you may need to open Bitwarden from the icon [Bitwarden Icon] on the toolbar.'"
   },
   "openExtensionFromToolbarPart2": {
@@ -13170,7 +13170,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "setupExtensionContentAlt": {
-    "message": "Bitwarden brauzer uzantısı ilə, asanlıqla yeni giriş məlumatlarını yarada, saxlanılmış giriş məlumatlarınıza birbaşa brauzerin alət çubuğundan erişə və Bitwarden avto-doldurmanı istifadə edərək hesablarınıza cəld şəkildə daxil ola bilərsiniz."
+    "message": "Black Mask brauzer uzantısı ilə, asanlıqla yeni giriş məlumatlarını yarada, saxlanılmış giriş məlumatlarınıza birbaşa brauzerin alət çubuğundan erişə və Black Mask avto-doldurmanı istifadə edərək hesablarınıza cəld şəkildə daxil ola bilərsiniz."
   },
   "restart": {
     "message": "Yenidən başlat"
@@ -13202,7 +13202,7 @@
     "message": "Bu ayar barədə"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden, təcrübənizi təkmilləşdirmək üçün hansı ikonun və ya parol dəyişdirmə URL-sinin istifadə olunmalı olduğunu müəyyənləşdirmək məqsədilə saxlanılmış giriş URL-lərini istifadə edəcək. Bu xidməti istifadə etdiyiniz zaman heç bir məlumat yığılmır və ya saxlanılmır."
+    "message": "Black Mask, təcrübənizi təkmilləşdirmək üçün hansı ikonun və ya parol dəyişdirmə URL-sinin istifadə olunmalı olduğunu müəyyənləşdirmək məqsədilə saxlanılmış giriş URL-lərini istifadə edəcək. Bu xidməti istifadə etdiyiniz zaman heç bir məlumat yığılmır və ya saxlanılmır."
   },
   "billingAddress": {
     "message": "Faktura ünvanı"
@@ -13269,7 +13269,7 @@
     }
   },
   "restoreProviderPortalAccessViaCustomerSupport": {
-    "message": "Provayder portalınıza erişimi bərpa etmək məqsədilə abunəliyinizi yeniləmək üçün Bitwarden Müştəri Dəstəyi ilə əlaqə saxlayın.",
+    "message": "Provayder portalınıza erişimi bərpa etmək məqsədilə abunəliyinizi yeniləmək üçün Black Mask Müştəri Dəstəyi ilə əlaqə saxlayın.",
     "description": "A message shown in a non-dismissible dialog to any user of a suspended providers."
   },
   "restoreProviderPortalAccessViaPaymentMethod": {
@@ -13311,7 +13311,7 @@
     "message": "Abunəlik ləğv edildi"
   },
   "providersubCanceledmessage": {
-    "message": "Təkrar abunə olmaq üçün Bitwarden Müştəri Dəstəyi ilə əlaqə saxlayın."
+    "message": "Təkrar abunə olmaq üçün Black Mask Müştəri Dəstəyi ilə əlaqə saxlayın."
   },
   "showMore": {
     "message": "Daha çox göstər"
@@ -13437,7 +13437,7 @@
     "message": "Özəl plan"
   },
   "planDescCustom": {
-    "message": "Bitwarden, parolların və həssas məlumatların təhlükəsizliyini təmin etmək üçün istənilən miqyaslı şirkətə uyğunlaşır. Əgər böyük bir müəssisənin bir hissəsisinizsə, qiymət təklifi üçün satış şöbəsi ilə əlaqə saxlayın."
+    "message": "Black Mask, parolların və həssas məlumatların təhlükəsizliyini təmin etmək üçün istənilən miqyaslı şirkətə uyğunlaşır. Əgər böyük bir müəssisənin bir hissəsisinizsə, qiymət təklifi üçün satış şöbəsi ilə əlaqə saxlayın."
   },
   "builtInAuthenticator": {
     "message": "Daxili kimlik doğrulayıcı"
@@ -13542,7 +13542,7 @@
     "message": "Yerləşməniz üçün vergi hesablanması zamanı xəta baş verdi. Lütfən yenidən sınayın."
   },
   "individualUpgradeWelcomeMessage": {
-    "message": "Bitwarden-ə xoş gəlmisiniz"
+    "message": "Black Mask-ə xoş gəlmisiniz"
   },
   "individualUpgradeDescriptionMessage": {
     "message": "Premium ilə daha çox təhlükəsizlik özəlliklərinin kilidini açın və ya Ailələr ilə elementləri paylaşmağa başlayın"
@@ -13569,7 +13569,7 @@
     "message": "Yüksəltmə prosesiniz emal olunarkən xəta ilə üzləşdik. Lütfən yenidən sınayın."
   },
   "bitwardenFreeplanMessage": {
-    "message": "Bitwarden Ödənişsiz planını istifadə edirsiniz"
+    "message": "Black Mask Ödənişsiz planını istifadə edirsiniz"
   },
   "upgradeCompleteSecurity": {
     "message": "Tam təhlükəsizlik üçün yüksəldin"
@@ -13587,7 +13587,7 @@
     "message": "Alqoritm"
   },
   "encryptionKeySettingsHowShouldWeEncryptYourData": {
-    "message": "Bitwarden-in seyf verilərinizi necə şifrələyəcəyini seçin. Bütün seçimlər güvənlidir, ancaq daha güclü üsullar, xüsusən də brute-force hücumlarına qarşı daha yaxşı qoruma təklif edir. Bitwarden, əksər istifadəçilər üçün ilkin ayarı tövsiyə edir."
+    "message": "Black Mask-in seyf verilərinizi necə şifrələyəcəyini seçin. Bütün seçimlər güvənlidir, ancaq daha güclü üsullar, xüsusən də brute-force hücumlarına qarşı daha yaxşı qoruma təklif edir. Black Mask, əksər istifadəçilər üçün ilkin ayarı tövsiyə edir."
   },
   "encryptionKeySettingsIncreaseImproveSecurity": {
     "message": "İlkin dəyərdən yuxarı dəyərin təyin edilməsi, təhlükəsizliyi artırır, ancaq bu, seyfinizin kilidini açma prosesini uzada bilər."
@@ -13648,7 +13648,7 @@
     }
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Təşkilatınız, artıq Bitwarden-ə giriş etmək üçün ana parol istifadə etmir. Davam etmək üçün təşkilatı və domeni doğrulayın."
+    "message": "Təşkilatınız, artıq Black Mask-ə giriş etmək üçün ana parol istifadə etmir. Davam etmək üçün təşkilatı və domeni doğrulayın."
   },
   "continueWithLogIn": {
     "message": "Giriş etməyə davam"
@@ -13839,7 +13839,7 @@
     "message": "Rədd et və tərk et"
   },
   "youHaveBitwardenPremium": {
-    "message": "Sizdə Bitwarden Premium var"
+    "message": "Sizdə Black Mask Premium var"
   },
   "viewAndManagePremiumSubscription": {
     "message": "Premium abunəliyinizi görün və idarə edin"
@@ -13870,7 +13870,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_license.json"
+        "example": "Black Mask_license.json"
       }
     }
   },
@@ -13878,7 +13878,7 @@
     "message": "Artıq abunəliyiniz var?"
   },
   "alreadyHaveSubscriptionSelfHostedMessage": {
-    "message": "Bitwarden bulud hesabınızdakı abunəlik səhifəsini açın və lisenziya faylınızı endirin. Sonra bu ekrana qayıdın və aşağıda yükləyin."
+    "message": "Black Mask bulud hesabınızdakı abunəlik səhifəsini açın və lisenziya faylınızı endirin. Sonra bu ekrana qayıdın və aşağıda yükləyin."
   },
   "viewAllPlans": {
     "message": "Bütün planlara bax"
@@ -13964,10 +13964,10 @@
     "message": "Seyfə asan erişmək üçün uzantını əldə et"
   },
   "extensionPromptBody": {
-    "message": "Brauzer uzantısını quraşdırsanız, Bitwarden-i onlayn olaraq hər yerdə istifadə edə biləcəksiniz. Parollarınızı avtomatik dolduracaq, beləliklə tək bir kliklə hesablarınıza giriş edə biləcəksiniz."
+    "message": "Brauzer uzantısını quraşdırsanız, Black Mask-i onlayn olaraq hər yerdə istifadə edə biləcəksiniz. Parollarınızı avtomatik dolduracaq, beləliklə tək bir kliklə hesablarınıza giriş edə biləcəksiniz."
   },
   "extensionPromptImageAlt": {
-    "message": "Hazırkı veb səhifə üçün avto-doldurma elementlərini ehtiva edən Bitwarden uzantısını göstərən veb brauzer."
+    "message": "Hazırkı veb səhifə üçün avto-doldurma elementlərini ehtiva edən Black Mask uzantısını göstərən veb brauzer."
   },
   "skip": {
     "message": "Ötür"
@@ -13988,10 +13988,10 @@
     "message": "Birdən çox e-poçtu daxil edərkən vergül istifadə edin."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "whenYouRemoveStorage": {
     "message": "Anbar sahəsini xaric etdiyiniz zaman, növbəti hesabınıza avtomatik olaraq köçürüləcək mütənasib hesab krediti alacaqsınız."
@@ -14015,10 +14015,10 @@
     "message": "Yararsız Send parolu"
   },
   "vaultWelcomeDialogTitle": {
-    "message": "Buyurun! Bitwarden-ə xoş gəlmisiniz"
+    "message": "Buyurun! Black Mask-ə xoş gəlmisiniz"
   },
   "vaultWelcomeDialogDescription": {
-    "message": "Bütün parollarınızı və fərdi məlumatlarınızı Bitwarden seyfinizdə saxlaya bilərsiniz. Gəlin sizə ətrafı göstərək."
+    "message": "Bütün parollarınızı və fərdi məlumatlarınızı Black Mask seyfinizdə saxlaya bilərsiniz. Gəlin sizə ətrafı göstərək."
   },
   "vaultWelcomeDialogPrimaryCta": {
     "message": "Turu başlat"

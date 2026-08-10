@@ -23,15 +23,18 @@
   --color-shadow: 168 179 200;
 
   --color-background: 255 255 255;
-  --color-background-alt: 243 246 249;
-  --color-background-alt2: 23 92 219;
-  --color-background-alt3: 22 55 146;
-  --color-background-alt4: 2 15 102;
+  --color-background-alt: 242 248 245;
+  /* Dark organic surfaces (nav, banners) — deep forest rather than Bitwarden blue. */
+  --color-background-alt2: 20 58 45;
+  --color-background-alt3: 15 45 35;
+  --color-background-alt4: 9 29 23;
 
-  --color-primary-100: 219 229 246;
-  --color-primary-300: 121 161 233;
-  --color-primary-600: 23 93 220;
-  --color-primary-700: 26 65 172;
+  /* Black Mask brand ramp. Teal (#1ABC9C) only reaches 2.4:1 on white, so it is the light
+   * accent (300) and forest green (#16813D, 4.95:1) carries the interactive 600 step. */
+  --color-primary-100: 214 245 238;
+  --color-primary-300: 26 188 156;
+  --color-primary-600: 22 129 61;
+  --color-primary-700: 15 92 44;
 
   --color-secondary-100: 230 233 239;
   --color-secondary-300: 168 179 200;
@@ -416,16 +419,18 @@
   --color-transparent-hover: rgb(255 255 255 / 0.02);
   --color-shadow: 0 0 0;
 
-  --color-background: 32 39 51;
-  --color-background-alt: 18 26 39;
-  --color-background-alt2: 47 52 61;
-  --color-background-alt3: 48 57 70;
-  --color-background-alt4: 18 26 39;
+  /* Green-tinted charcoal rather than Bitwarden's neutral slate. */
+  --color-background: 24 32 29;
+  --color-background-alt: 15 21 19;
+  --color-background-alt2: 33 45 40;
+  --color-background-alt3: 38 52 46;
+  --color-background-alt4: 15 21 19;
 
-  --color-primary-100: 29 46 99;
-  --color-primary-300: 26 65 172;
-  --color-primary-600: 101 171 255;
-  --color-primary-700: 170 195 239;
+  /* Inverted ramp: on dark surfaces teal reaches 6.9:1, so it carries the 600 step here. */
+  --color-primary-100: 17 61 48;
+  --color-primary-300: 22 129 61;
+  --color-primary-600: 26 188 156;
+  --color-primary-700: 111 227 203;
 
   --color-secondary-100: 48 57 70;
   --color-secondary-300: 82 91 106;

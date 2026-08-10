@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "Szűrők"
@@ -491,10 +491,10 @@
     "message": "SSH ügynök engedélyezése"
   },
   "enableSshAgentDesc": {
-    "message": "Engedélyezzük az SSH ügynök számára az SSH kérelmek aláírását közvetlenül a Bitwarden széfből."
+    "message": "Engedélyezzük az SSH ügynök számára az SSH kérelmek aláírását közvetlenül a Black Mask széfből."
   },
   "enableSshAgentHelp": {
-    "message": "Az SSH ügynök egy fejlesztőknek szánt szolgáltatás, amely lehetővé teszi az SSH kérések közvetlenül a Bitwarden széfből történő aláírását."
+    "message": "Az SSH ügynök egy fejlesztőknek szánt szolgáltatás, amely lehetővé teszi az SSH kérések közvetlenül a Black Mask széfből történő aláírását."
   },
   "sshAgentPromptBehavior": {
     "message": "Hitelesíés kérés az SSH ügynök használatakor"
@@ -524,7 +524,7 @@
     "message": "Szinkronizálás böngészővel"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "$VAULTURL$ szolgáltatáshoz kapcsolódáshoz szinkronizálni kell alapértelmezett böngészőt a Bitwarden alkalmazással. A böngésző szinkronizálása után visszakerülünk ebbe az alkalmazásba.",
+    "message": "$VAULTURL$ szolgáltatáshoz kapcsolódáshoz szinkronizálni kell alapértelmezett böngészőt a Black Mask alkalmazással. A böngésző szinkronizálása után visszakerülünk ebbe az alkalmazásba.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "Visszafejtési hiba"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "A Bitwarden nem tudta visszafejteni az alább felsorolt ​​széf elemeket."
+    "message": "A Black Mask nem tudta visszafejteni az alább felsorolt ​​széf elemeket."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Ügyfélszolgálat elérés siker",
@@ -1044,7 +1044,7 @@
     "message": "Fiók létrehozása"
   },
   "newToBitwarden": {
-    "message": "Új vagyunk a Bitwardenben?"
+    "message": "Új vagyunk a Black Maskben?"
   },
   "setAStrongPassword": {
     "message": "Erős jelszó beállítása"
@@ -1056,7 +1056,7 @@
     "message": "Bejelentkezés"
   },
   "logInToBitwarden": {
-    "message": "Bejelentkezés a Bitwardenbe"
+    "message": "Bejelentkezés a Black Maskbe"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Adjuk meg az email címre elküldött kódot."
@@ -1217,7 +1217,7 @@
     "message": "Váratlan hiba"
   },
   "closeThisBitwardenWindow": {
-    "message": "Zárjuk be ezt a Bitwarden ablakot és próbáljuk újra."
+    "message": "Zárjuk be ezt a Black Mask ablakot és próbáljuk újra."
   },
   "itemInformation": {
     "message": "Elem információ"
@@ -1348,7 +1348,7 @@
     "message": "Saját üzemeltetésű környezet"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Adjuk meg a helyileg tárolt Bitwarden telepítés alap webcímét. Példa: https://bitwarden.company.com"
+    "message": "Adjuk meg a helyileg tárolt Black Mask telepítés alap webcímét. Példa: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Speciális konfigurációhoz külön-külön megadhatjuk az egyes szolgáltatások alap webcímét."
@@ -1439,7 +1439,7 @@
     "message": "Biztosan cserére kerüljön a fiók titkosító kulcsa?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "A titkosítási kulcs frissítése után ki kell jelentkezni és vissza kell jelentkezni az összes jelenleg használt Bitwarden alkalmazásba (például a mobilalkalmazás vagy a böngésző bővítmények). A kijelentkezés és a bejelentkezés elmulasztása (amely letölti az új titkosítási kulcsot) adatvesztést okozhat. Megkíséreljük az automatikusan kijelentkeztetést, azonban ez késhet."
+    "message": "A titkosítási kulcs frissítése után ki kell jelentkezni és vissza kell jelentkezni az összes jelenleg használt Black Mask alkalmazásba (például a mobilalkalmazás vagy a böngésző bővítmények). A kijelentkezés és a bejelentkezés elmulasztása (amely letölti az új titkosítási kulcsot) adatvesztést okozhat. Megkíséreljük az automatikusan kijelentkeztetést, azonban ez késhet."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "A fiókhoz korlátozottan mentett exportálások érvénytelenek lesznek."
@@ -1472,7 +1472,7 @@
     "message": "A hivatkozás lejárt."
   },
   "pleaseRestartRegistrationOrTryLoggingIn": {
-    "message": "A Bitwarden képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Válasszuk a kamera ikont, hogy képernyőképet készítsünk a webhely hitelesítő QR kódjáról vagy másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
+    "message": "A Black Mask képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Válasszuk a kamera ikont, hogy képernyőképet készítsünk a webhely hitelesítő QR kódjáról vagy másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
   },
   "youMayAlreadyHaveAnAccount": {
     "message": "Már rendelkezünkk fiókkal."
@@ -1535,7 +1535,7 @@
     "message": "Tovább a webes alkalmazáshoz?"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "A mesterjelszó a Bitwarden webalkalmazásban módosítható."
+    "message": "A mesterjelszó a Black Mask webalkalmazásban módosítható."
   },
   "fingerprintPhrase": {
     "message": "Azonosítókifejezés",
@@ -1714,13 +1714,13 @@
     "message": "Automatikus indítás bejelentkezéskor"
   },
   "openAtLoginDesc": {
-    "message": "A Bitwarden asztali alkalmazás automatikus indítása bejelentkezéskor."
+    "message": "A Black Mask asztali alkalmazás automatikus indítása bejelentkezéskor."
   },
   "alwaysShowDock": {
     "message": "Mindig megjelenik a dokk elemen"
   },
   "alwaysShowDockDesc": {
-    "message": "A Bitwarden ikon megjelenítése a dokk elemben még akkor is, ha a menüsorra van kicsinyítve."
+    "message": "A Black Mask ikon megjelenítése a dokk elemben még akkor is, ha a menüsorra van kicsinyítve."
   },
   "confirmTrayTitle": {
     "message": "Tálca letiltás megerősítése"
@@ -1888,13 +1888,13 @@
     "message": "Prémium verzió megvásárlása"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Prémium szolgáltatást vásárolhatunk a Bitwarden webalkalmazás fiókbeállításai között."
+    "message": "Prémium szolgáltatást vásárolhatunk a Black Mask webalkalmazás fiókbeállításai között."
   },
   "premiumCurrentMember": {
     "message": "Jelenleg a prémium tagság érvényben van."
   },
   "premiumCurrentMemberThanks": {
-    "message": "Köszönjük a Bitwarden támogatását."
+    "message": "Köszönjük a Black Mask támogatását."
   },
   "premiumPrice": {
     "message": "Mindez csak $PRICE$ /év.",
@@ -2023,13 +2023,13 @@
     "description": "Bring all windows to front (foreground)"
   },
   "aboutBitwarden": {
-    "message": "Bitwarden névjegy"
+    "message": "Black Mask névjegy"
   },
   "services": {
     "message": "Szolgáltatások"
   },
   "hideBitwarden": {
-    "message": "Bitwarden elrejtése"
+    "message": "Black Mask elrejtése"
   },
   "hideOthers": {
     "message": "Többi elrejtése"
@@ -2038,7 +2038,7 @@
     "message": "Összes megjelenítése"
   },
   "quitBitwarden": {
-    "message": "Kilépés a Bitwardenből"
+    "message": "Kilépés a Black Maskből"
   },
   "valueCopied": {
     "message": "$VALUE$ másolásra került.",
@@ -2184,13 +2184,13 @@
     "message": "Ezt a jelszó kerül használatba a fájl exportálására és importálására."
   },
   "accountRestrictedOptionDescription": {
-    "message": "Használjuk a fiók felhasználónevéből és mesterjelszavából származó fióktitkosítási kulcsot az exportálás titkosításához és az importálást csak az aktuális Bitwarden fiókra korlátozzuk."
+    "message": "Használjuk a fiók felhasználónevéből és mesterjelszavából származó fióktitkosítási kulcsot az exportálás titkosításához és az importálást csak az aktuális Black Mask fiókra korlátozzuk."
   },
   "passwordProtected": {
     "message": "Jelszóval védett"
   },
   "passwordProtectedOptionDescription": {
-    "message": "Állítsunk be egy fájl jelszót az exportálás titkosításához és importáljuk azt bármely Bitwarden fiókba a visszafejtéshez használt jelszó használatával."
+    "message": "Állítsunk be egy fájl jelszót az exportálás titkosításához és importáljuk azt bármely Black Mask fiókba a visszafejtéshez használt jelszó használatával."
   },
   "exportTypeHeading": {
     "message": "Exportálási típus"
@@ -2224,7 +2224,7 @@
     "message": "Ez az exportálás titkosítja az adatokat a fiók titkosítási kulcsával. Ha a fiók forgatási kulcsa más lesz, akkor újra exportálni kell, mert nem lehet visszafejteni ezt az exportálási fájlt."
   },
   "encExportAccountWarningDesc": {
-    "message": "A fiók titkosítási kulcsai minden Bitwarden felhasználói fiókhoz egyediek, ezért nem importálhatunk titkosított exportálást egy másik fiókba."
+    "message": "A fiók titkosítási kulcsai minden Black Mask felhasználói fiókhoz egyediek, ezért nem importálhatunk titkosított exportálást egy másik fiókba."
   },
   "noOrganizationsList": {
     "message": "Még nem tartozunk egyik szervezethez sem. A szervezetek lehetővé teszik az elemek megosztását más felhasználókkal."
@@ -2254,7 +2254,7 @@
     "message": "Gyenge mesterjelszó"
   },
   "weakMasterPasswordDesc": {
-    "message": "A választott mesterjelszó gyenge. Erős jelszót (vagy kifejezést) kell használni a Bitwarden fiók megfelelő védelme érdekében. Biztosan ezt a mesterjelszót szeretnénk használni?"
+    "message": "A választott mesterjelszó gyenge. Erős jelszót (vagy kifejezést) kell használni a Black Mask fiók megfelelő védelme érdekében. Biztosan ezt a mesterjelszót szeretnénk használni?"
   },
   "pin": {
     "message": "Pinkód",
@@ -2264,7 +2264,7 @@
     "message": "Felnyitás pinkóddal"
   },
   "setYourPinCode": {
-    "message": "A pinkód beállítása a Bitwarden feloldásához. A pinkód beállítások alaphelyzetbe kerülnek az alkalmazásból történő teljes kijelentkezés után."
+    "message": "A pinkód beállítása a Black Mask feloldásához. A pinkód beállítások alaphelyzetbe kerülnek az alkalmazásból történő teljes kijelentkezés után."
   },
   "pinRequired": {
     "message": "A pinkód szükséges."
@@ -2282,7 +2282,7 @@
     "message": "Feloldás rendszer hitelesítéssel"
   },
   "windowsHelloConsentMessage": {
-    "message": "Bitwarden ellenőrzés."
+    "message": "Black Mask ellenőrzés."
   },
   "unlockWithTouchId": {
     "message": "Feloldás Touch ID segítségével"
@@ -2291,7 +2291,7 @@
     "message": "Kiegészítő Touch ID beállítások"
   },
   "touchIdConsentMessage": {
-    "message": "Bitwarden feloldás"
+    "message": "Black Mask feloldás"
   },
   "autoPromptTouchId": {
     "message": "Érintés AZ kérése indításkor"
@@ -2497,10 +2497,10 @@
     "message": "Tegyük zökkenőmentessé a kétlépcsős azonosítást."
   },
   "totpHelper": {
-    "message": "A Bitwarden képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
+    "message": "A Black Mask képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
   },
   "totpHelperWithCapture": {
-    "message": "A Bitwarden képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Válasszuk a kamera ikont, hogy képernyőképet készítsünk a webhely hitelesítő QR kódjáról vagy másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
+    "message": "A Black Mask képes tárolni és kitölteni a kétlépcsős ellenőrző kódokat. Válasszuk a kamera ikont, hogy képernyőképet készítsünk a webhely hitelesítő QR kódjáról vagy másoljuk ki és illesszük be a kulcsot ebbe a mezőbe."
   },
   "premium": {
     "message": "Prémium",
@@ -2586,7 +2586,7 @@
     "message": "Egy vagy több szervezeti rendszabályhoz mesterjelszó szükséges a következő követelmények megfeleléséhez:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Tanácsokat, bejelentéseket és kutatási lehetőségeket kaphatunk a Bitwardentől a postaládába."
+    "message": "Tanácsokat, bejelentéseket és kutatási lehetőségeket kaphatunk a Black Masktől a postaládába."
   },
   "unsubscribe": {
     "message": "Leiratkozás"
@@ -2616,7 +2616,7 @@
     "message": "DuckDuckGo böngésző integráció engedélyezése"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "A Bitwarden széf használata DuckDuckGo böngésző használatakor."
+    "message": "A Black Mask széf használata DuckDuckGo böngésző használatakor."
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "A böngésző integráció nem támogatott."
@@ -2640,7 +2640,7 @@
     "message": "Jóváhagyás"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ szeretne csaklakozni a Bitwardenhez.",
+    "message": "$APPID$ szeretne csaklakozni a Black Maskhez.",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Generálta: Bitwarden.",
+    "message": "Generálta: Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Webhely: $WEBSITE$. Generálta: Bitwarden.",
+    "message": "Webhely: $WEBSITE$. Generálta: Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "Egy értesítés lett elküldve az eszközre."
   },
   "notificationSentDevicePart1": {
-    "message": "A Bitwarden zárolás feloldása az eszközön vagy: "
+    "message": "A Black Mask zárolás feloldása az eszközön vagy: "
   },
   "notificationSentDeviceAnchor": {
     "message": "webalkalmazás"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "A Bitwarden azt javasolja, hogy frissítsük a biometrikus beállításokat, hogy az első feloldáskor megköveteljük a mesterjelszót (vagy a PIN-kódot). Szeretnénk most frissíteni beállításokat?"
+    "message": "A Black Mask azt javasolja, hogy frissítsük a biometrikus beállításokat, hogy az első feloldáskor megköveteljük a mesterjelszót (vagy a PIN-kódot). Szeretnénk most frissíteni beállításokat?"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "Ajánlott beállítások frissítése"
@@ -3766,7 +3766,7 @@
     "message": "Mi az eszköz?"
   },
   "aDeviceIs": {
-    "message": "Az eszköz a Bitwarden alkalmazás egyedi telepítése, amelyre bejelentkeztünk. Az alkalmazás adatok újratelepítése, törlése vagy a sütik törlése azt eredményezheti, hogy egy eszköz többször is megjelenhet."
+    "message": "Az eszköz a Black Mask alkalmazás egyedi telepítése, amelyre bejelentkeztünk. Az alkalmazás adatok újratelepítése, törlése vagy a sütik törlése azt eredményezheti, hogy egy eszköz többször is megjelenhet."
   },
   "deviceListDescriptionTemp": {
     "message": "A fiók az alábbi eszközök mindegyikére bejelentkezett."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "Az URI egyezés észlelése az, ahogyan a Bitwarden azonosítja az automatikus kitöltési javaslatokat.",
+    "message": "Az URI egyezés észlelése az, ahogyan a Black Mask azonosítja az automatikus kitöltési javaslatokat.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Töltsük le, majd osszuk meg a diagnosztikai jelentést:"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden támogatás",
+    "message": "Black Mask támogatás",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "A biometrikus feloldás nem érhető el a rosszul konfigurált rendszerfájlok miatt."
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "A biometrikus feloldás nem érhető el, mert nincs engedélyezve $EMAIL$ számára a Bitwarden asztali alkalmazásban.",
+    "message": "A biometrikus feloldás nem érhető el, mert nincs engedélyezve $EMAIL$ számára a Black Mask asztali alkalmazásban.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Kétlépéses bejelentkezés beüzemelése"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "A Bitwarden 2025 februárjától kódot küld a fiókhoz tartozó email címre, amellyel ellenőrizhetők az új eszközökről történő bejelentkezések."
+    "message": "A Black Mask 2025 februárjától kódot küld a fiókhoz tartozó email címre, amellyel ellenőrizhetők az új eszközökről történő bejelentkezések."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "A fiók védelmének alternatív módjaként beállíthatunk kétlépéses bejelentkezést vagy módosíthatjuk az email címet egy elérhetőre."
@@ -4470,7 +4470,7 @@
     "message": "Képernyőrögzítés engedélyezése"
   },
   "allowScreenshotsDesc": {
-    "message": "Engedélyezi a Bitwarden asztali alkalmazásnak a képernyőképek rögzítését és távoli asztali munkamenetekben megtekintését. Ennek letiltása megakadályozza a hozzáférést bizonyos külső kijelzőkhöz."
+    "message": "Engedélyezi a Black Mask asztali alkalmazásnak a képernyőképek rögzítését és távoli asztali munkamenetekben megtekintését. Ennek letiltása megakadályozza a hozzáférést bizonyos külső kijelzőkhöz."
   },
   "confirmWindowStillVisibleTitle": {
     "message": "Erősítsük meg, hogy az ablak továbbra is látható."
@@ -4607,7 +4607,7 @@
     "message": "Információ erről a beállításról"
   },
   "permitCipherDetailsDescription": {
-    "message": "A Bitwarden mentett bejelentkezési webcímeket használ annak azonosítására, hogy melyik ikont vagy jelszó webcímet kell használni az élmény javítása érdekében. A szolgáltatás használatakor nincs információ gyűjtés vagy mentés."
+    "message": "A Black Mask mentett bejelentkezési webcímeket használ annak azonosítására, hogy melyik ikont vagy jelszó webcímet kell használni az élmény javítása érdekében. A szolgáltatás használatakor nincs információ gyűjtés vagy mentés."
   },
   "assignToCollections": {
     "message": "Hozzárendelés gyűjteményekhez"
@@ -4750,7 +4750,7 @@
     "message": "Kevesebb megjelenítése"
   },
   "enableAutotypeDescription": {
-    "message": "A Bitwarden nem érvényesíti a beviteli helyeket, győződjünk meg róla, hogy a megfelelő ablakban és mezőben vagyunk, mielőtt a parancsikont használnánk."
+    "message": "A Black Mask nem érvényesíti a beviteli helyeket, győződjünk meg róla, hogy a megfelelő ablakban és mezőben vagyunk, mielőtt a parancsikont használnánk."
   },
   "typeShortcut": {
     "message": "Type shortcut"
@@ -4868,7 +4868,7 @@
     "message": "Áttérés Prémium csomagra"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "A szervezet már nem használ mesterjelszavakat a Bitwardenbe bejelentkezéshez. A folytatáshoz ellenőrizzük a szervezetet és a tartományt."
+    "message": "A szervezet már nem használ mesterjelszavakat a Black Maskbe bejelentkezéshez. A folytatáshoz ellenőrizzük a szervezetet és a tartományt."
   },
   "continueWithLogIn": {
     "message": "Folytatás bejelentkezéssel"
@@ -5111,10 +5111,10 @@
     "message": "Írjunk be több email címet vesszővel elválasztva."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "reorderToggleButton": {
     "message": "$LABEL$ átrendezése. A nyílbillentyűkkel mozgassuk az elemet felfelé vagy lefelé.",

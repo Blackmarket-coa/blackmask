@@ -1,13 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-
   "extraMetadata": {
-    "name": "bitwarden"
+    "name": "blackmask"
   },
-  "productName": "Bitwarden",
-  "appId": "com.bitwarden.desktop",
+  "productName": "Black Mask",
+  "appId": "app.blackmask.desktop",
   "buildDependenciesFromSource": true,
-  "copyright": "Copyright © 2015-2026 Bitwarden Inc.",
+  "copyright": "Copyright \u00a9 2026 Blackmarket-coa",
   "directories": {
     "buildResources": "resources",
     "output": "dist",
@@ -26,8 +25,9 @@
   "electronVersion": "39.8.5",
   "generateUpdatesFilesForAllChannels": true,
   "publish": {
-    "provider": "generic",
-    "url": "https://artifacts.bitwarden.com/desktop"
+    "provider": "github",
+    "owner": "Blackmarket-coa",
+    "repo": "blackmask"
   },
   "mac": {
     "electronUpdaterCompatibility": ">=0.0.1",
@@ -112,7 +112,7 @@
   },
   "linux": {
     "category": "Utility",
-    "synopsis": "A secure and free password manager for all of your devices.",
+    "synopsis": "Privacy and counter-surveillance tools with a secure vault for all of your devices.",
     "extraFiles": [
       {
         "from": "desktop_native/dist/desktop_proxy.${platform}-${arch}",
@@ -126,7 +126,7 @@
     "target": ["deb", "rpm", "AppImage", "snap"],
     "desktop": {
       "entry": {
-        "Name": "Bitwarden",
+        "Name": "Black Mask",
         "Type": "Application",
         "GenericName": "Password Manager"
       }
@@ -262,8 +262,8 @@
     "fpm": ["--rpm-rpmbuild-define", "_build_id_links none"]
   },
   "snap": {
-    "summary": "Bitwarden is a secure and free password manager for all of your devices.",
-    "description": "Password Manager\n**Installation**\nBitwarden requires access to the `password-manager-service`. Please enable it through permissions or by running `sudo snap connect bitwarden:password-manager-service` after installation. See https://btwrdn.com/install-snap for details.",
+    "summary": "Black Mask is a privacy and counter-surveillance toolkit with a secure vault.",
+    "description": "Password Manager\n**Installation**\nBlack Mask requires access to the `password-manager-service`. Please enable it through permissions or by running `sudo snap connect blackmask:password-manager-service` after installation.",
     "autoStart": true,
     "base": "core22",
     "confinement": "strict",
@@ -273,7 +273,7 @@
       "password-manager-service",
       {
         "polkit": {
-          "action-prefix": "com.bitwarden.Bitwarden"
+          "action-prefix": "app.blackmask.BlackMask"
         }
       },
       {
@@ -294,7 +294,7 @@
   },
   "protocols": [
     {
-      "name": "Bitwarden",
+      "name": "Black Mask",
       "schemes": ["bitwarden"]
     }
   ]

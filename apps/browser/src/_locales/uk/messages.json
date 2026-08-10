@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Створити обліковий запис"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Вперше у Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Вийти"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Про Black Mask"
   },
   "about": {
     "message": "Про розширення"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Більше від Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Продовжити на bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Організуйте функціональну та безпечну роботу без використання традиційного методу входу з паролями за допомогою Passwordless.dev. Дізнайтеся більше на вебсайті bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask Families безплатно"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Для вас доступна безплатна можливість Black Mask Families. Отримайте цю пропозицію у вебпрограмі."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Увійти"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Увійти в Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Пропозиції автозаповнення на полях форм"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Як Black Mask захищає ваші дані від шахрайства?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Ілюстрація меню автозаповнення Black Mask, що показує згенерований пароль."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Оновити в Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Потім Black Mask запропонує вам оновити пароль у менеджері паролів.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Ілюстрація сповіщення Black Mask, що спонукає користувача оновити пароль."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Кнопка меню автозаповнення Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Перемкнути меню автозаповнення Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Завантажити вкладення"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Завантажити Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Завантажити Black Mask на всіх пристроях"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Користуйтеся сховищем без браузера, налаштуйте біометричне розблокування, щоб спростити доступ у програмі на комп'ютері та в розширенні браузера."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Завантажити з bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Пароль згенеровано повторно",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Зберегти в Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Завантажити програми Black Mask"
   },
   "emailProtected": {

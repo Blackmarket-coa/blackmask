@@ -21,7 +21,7 @@
     "message": "Všetky kritické aplikácie"
   },
   "appLogoLabel": {
-    "message": "Logo Bitwarden"
+    "message": "Logo Black Mask"
   },
   "criticalApplications": {
     "message": "Kritické aplikácie"
@@ -233,7 +233,7 @@
     "message": "Sledujte zlepšenie naprieč vaším tímom"
   },
   "membersAreAutomaticallyNotified": {
-    "message": "Členovia sú automaticky upozornení na ohrozene hesla prostredníctvom ich Bitwarden rozšírenia pre prehliadače. Nie je potrebné nič vyhľadávať."
+    "message": "Členovia sú automaticky upozornení na ohrozene hesla prostredníctvom ich Black Mask rozšírenia pre prehliadače. Nie je potrebné nič vyhľadávať."
   },
   "importYourOrgDataToGetStarted": {
     "message": "Začnite importom dát organizácie"
@@ -396,7 +396,7 @@
     }
   },
   "membersWillReceiveSecurityTask": {
-    "message": "Členom vašej organizácie budú pridelené úlohy na zmenu ohrozených hesiel. Upozornenie obdržia prostredníctvom rozšírenia Bitwarden pre prehliadače."
+    "message": "Členom vašej organizácie budú pridelené úlohy na zmenu ohrozených hesiel. Upozornenie obdržia prostredníctvom rozšírenia Black Mask pre prehliadače."
   },
   "membersAtRiskCount": {
     "message": "$COUNT$ ohrozených členov",
@@ -825,10 +825,10 @@
     "message": "Spravte dvojstupňové overenie bezproblémovým"
   },
   "totpHelper": {
-    "message": "Bitwarden umožňuje uložiť a vyplniť kódy dvojstupňového overenia. Skopírujte a vložte kľúč do tohto poľa."
+    "message": "Black Mask umožňuje uložiť a vyplniť kódy dvojstupňového overenia. Skopírujte a vložte kľúč do tohto poľa."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden umožňuje uložiť a vyplniť kódy dvojstupňového overenia. Vyberte ikonu fotoaparátu a zosnímajte obrazovku QR kódu overovacej aplikácie tejto webovej stránky alebo skopírujte a vložte kľúč do tohto poľa."
+    "message": "Black Mask umožňuje uložiť a vyplniť kódy dvojstupňového overenia. Vyberte ikonu fotoaparátu a zosnímajte obrazovku QR kódu overovacej aplikácie tejto webovej stránky alebo skopírujte a vložte kľúč do tohto poľa."
   },
   "totpCapture": {
     "message": "Naskenovať QR kód overovateľa z aktuálnej webovej stránky"
@@ -1734,7 +1734,7 @@
     "message": "Prihlásenie pomocou zariadenia"
   },
   "loginWithDeviceEnabledNote": {
-    "message": "Prihlásenie pomocou zariadenia musí byť nastavené v nastaveniach aplikácie Bitwarden. Potrebujete inú možnosť?"
+    "message": "Prihlásenie pomocou zariadenia musí byť nastavené v nastaveniach aplikácie Black Mask. Potrebujete inú možnosť?"
   },
   "needAnotherOptionV1": {
     "message": "Potrebujete inú možnosť?"
@@ -1848,7 +1848,7 @@
     "message": "Vytvoriť účet"
   },
   "newToBitwarden": {
-    "message": "Ste noví na Bitwardene?"
+    "message": "Ste noví na Black Maske?"
   },
   "setAStrongPassword": {
     "message": "Nastavte silné heslo"
@@ -1866,7 +1866,7 @@
     "message": "Prihlásiť sa"
   },
   "logInToBitwarden": {
-    "message": "Prihlásenie do Bitwardenu"
+    "message": "Prihlásenie do Black Masku"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Zadajte kód zaslaný na váš e-mail"
@@ -1896,7 +1896,7 @@
     "message": "Čo je zariadenie?"
   },
   "aDeviceIs": {
-    "message": "Zariadenie je jednotlivá inštalácia aplikácie Bitwarden, do ktorej ste sa prihlásili. Preinštalovanie, vymazanie údajov aplikácie alebo vymazanie súborov cookie môže mať za následok, že sa zariadenie objaví viackrát."
+    "message": "Zariadenie je jednotlivá inštalácia aplikácie Black Mask, do ktorej ste sa prihlásili. Preinštalovanie, vymazanie údajov aplikácie alebo vymazanie súborov cookie môže mať za následok, že sa zariadenie objaví viackrát."
   },
   "logInInitiated": {
     "message": "Iniciované prihlásenie"
@@ -2124,7 +2124,7 @@
     "message": "Do vášho zariadenia bolo odoslané upozornenie."
   },
   "notificationSentDevicePart1": {
-    "message": "Odomknúť Bitwarden vo svojom zariadení alebo vo "
+    "message": "Odomknúť Black Mask vo svojom zariadení alebo vo "
   },
   "accessAttemptBy": {
     "message": "Pokus o prístup z $EMAIL$",
@@ -2148,7 +2148,7 @@
     "message": "Pred schválením sa uistite, že sa odtlačok prístupovej frázy zhoduje s tou uvedenou nižšie."
   },
   "notificationSentDeviceComplete": {
-    "message": "Odomknite Bitwarden na vašom zariadení. Pred schválením sa uistite, že sa odtlačok prístupovej frázy zhoduje s tým uvedeným nižšie."
+    "message": "Odomknite Black Mask na vašom zariadení. Pred schválením sa uistite, že sa odtlačok prístupovej frázy zhoduje s tým uvedeným nižšie."
   },
   "aNotificationWasSentToYourDevice": {
     "message": "Do vášho zariadenia bolo odoslané upozornenie"
@@ -2329,7 +2329,7 @@
     "message": "Tento export zašifruje vaše údaje pomocou šifrovacieho kľúča vášho účtu. Ak niekedy budete rotovať šifrovací kľúč svojho účtu, mali by ste exportovať znova, pretože nebudete môcť dešifrovať tento exportovaný súbor."
   },
   "encExportAccountWarningDesc": {
-    "message": "Šifrovacie kľúče účtu sú jedinečné pre každý používateľský účet Bitwarden, takže nemôžete importovať šifrovaný export do iného účtu."
+    "message": "Šifrovacie kľúče účtu sú jedinečné pre každý používateľský účet Black Mask, takže nemôžete importovať šifrovaný export do iného účtu."
   },
   "exportNoun": {
     "message": "Export",
@@ -2361,7 +2361,7 @@
     "message": "Potvrdiť heslo súboru"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Na zašifrovanie exportu a obmedzenie importu len na aktuálny účet Bitwarden použite šifrovací kľúč účtu odvodený z používateľského mena a hlavného hesla účtu."
+    "message": "Na zašifrovanie exportu a obmedzenie importu len na aktuálny účet Black Mask použite šifrovací kľúč účtu odvodený z používateľského mena a hlavného hesla účtu."
   },
   "passwordProtectedOptionDescription": {
     "message": "Na ochranu exportu vytvorte heslo vygenerované používateľom. Použite ho na vytvorenie exportu, ktorý možno použiť v iných účtoch."
@@ -2532,7 +2532,7 @@
     "message": "Žiadosť čaká na spracovanie"
   },
   "logBackInOthersToo": {
-    "message": "Prosím odhláste sa. Ak používate iné Bitwarden aplikácie, odhláste sa a opäť sa prihláste aj v nich."
+    "message": "Prosím odhláste sa. Ak používate iné Black Mask aplikácie, odhláste sa a opäť sa prihláste aj v nich."
   },
   "changeMasterPassword": {
     "message": "Zmeniť hlavné heslo"
@@ -2565,7 +2565,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Ak nastavíte KDF iterácie príliš vysoko, môže to viesť k zníženému výkonu pri prihlasovaní do Bitwardenu (a pri jeho odomykaní) na zariadeniach s pomalšimi procesormi. Odporúčame navyšovať túto hodnotu po $INCREMENT$ inkrementoch a následne otestovať na všetkých vašich zariadeniach.",
+    "message": "Ak nastavíte KDF iterácie príliš vysoko, môže to viesť k zníženému výkonu pri prihlasovaní do Black Masku (a pri jeho odomykaní) na zariadeniach s pomalšimi procesormi. Odporúčame navyšovať túto hodnotu po $INCREMENT$ inkrementoch a následne otestovať na všetkých vašich zariadeniach.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -2578,7 +2578,7 @@
     "description": "Memory refers to computer memory (RAM). MB is short for megabytes."
   },
   "argon2Warning": {
-    "message": "Nastavenie počtu KDF iterácií, pamäti a paralelizmu príliš vysoko môže viesť k spomalení pri prihlasovaní sa do Bitwarden (a pri odomykaní) v starších a pomalších zariadeniach. Odporúčame meniť tieto hodnoty v malých prírastkoch a potom testovať na všetkých vašich zariadeniach."
+    "message": "Nastavenie počtu KDF iterácií, pamäti a paralelizmu príliš vysoko môže viesť k spomalení pri prihlasovaní sa do Black Mask (a pri odomykaní) v starších a pomalších zariadeniach. Odporúčame meniť tieto hodnoty v malých prírastkoch a potom testovať na všetkých vašich zariadeniach."
   },
   "kdfParallelism": {
     "message": "KDF paralelizmus"
@@ -2611,10 +2611,10 @@
     "message": "Zapnúť ochranu pri prihlásení z nového zariadenia"
   },
   "turnOffNewDeviceLoginProtectionModalDesc": {
-    "message": "Ak chcete vypnúť overovacie emaily, ktoré Bitwarden posiela keď sa prihlasujete z nového zariadenia, pokračujte nižšie."
+    "message": "Ak chcete vypnúť overovacie emaily, ktoré Black Mask posiela keď sa prihlasujete z nového zariadenia, pokračujte nižšie."
   },
   "turnOnNewDeviceLoginProtectionModalDesc": {
-    "message": "Ak chcete aby Bitwarden posielal overovacie emaily keď sa prihlasujete z nového zariadenia, pokračujte nižšie."
+    "message": "Ak chcete aby Black Mask posielal overovacie emaily keď sa prihlasujete z nového zariadenia, pokračujte nižšie."
   },
   "turnOffNewDeviceLoginProtectionWarning": {
     "message": "S vypnutou ochranou pri prihlásení z nového zariadenia môže ktokoľvek, kto pozná vaše hlavne heslo, pristupovať k vášmu účtu z ľubovoľného zariadenia. Ak chcete ochrániť váš účet bez overovacích emailov, nastavte si dvojstupňové overovanie pri prihlasovaní."
@@ -2818,7 +2818,7 @@
     "message": "Pravidlá pre domény"
   },
   "domainRulesDesc": {
-    "message": "Ak máte rovnaké prihlasovacie údaje naprieč rôznymi doménami, môžete stránky označiť ako \"ekvivalentné\". \"Globálne\" domény sú tie, ktoré pre vás vopred nastavil Bitwarden."
+    "message": "Ak máte rovnaké prihlasovacie údaje naprieč rôznymi doménami, môžete stránky označiť ako \"ekvivalentné\". \"Globálne\" domény sú tie, ktoré pre vás vopred nastavil Black Mask."
   },
   "globalEqDomains": {
     "message": "Globálne Ekvivalentné Domény"
@@ -2866,7 +2866,7 @@
     "message": "Povoľte dvojstupňové prihlásenie pre vašu organizáciu."
   },
   "twoStepLoginEnterpriseDescStart": {
-    "message": "Vynútiť Bitwarden dvojstupňové prihlásenie pre členov použitím ",
+    "message": "Vynútiť Black Mask dvojstupňové prihlásenie pre členov použitím ",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enforce Bitwarden Two-step Login options for members by using the Two-step Login Policy.'"
   },
   "twoStepLoginPolicy": {
@@ -2879,7 +2879,7 @@
     "message": "Ak už máte alebo plánujete nastaviť SSO, dvojstupňové prihlásenie môže už byť vynútené vaším poskytovateľom identity."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Zapnutie dvojstupňového prihlásenia vás môže natrvalo vymknúť z vášho Bitwarden účtu. Záchranný kód umožňuje prístup k vášmu kontu v prípade že už nemôžete použiť svoj normálny dvojstupňový spôsob overenia. (napríklad ak stratíte zariadenie) Zákaznícka podpora nebude schopná pomôcť vám ak stratíte prístup k účtu. Preto vám odporúčame zapísať si, alebo si vytlačiť záchranný kód a uložiť ho na bezpečnom mieste."
+    "message": "Zapnutie dvojstupňového prihlásenia vás môže natrvalo vymknúť z vášho Black Mask účtu. Záchranný kód umožňuje prístup k vášmu kontu v prípade že už nemôžete použiť svoj normálny dvojstupňový spôsob overenia. (napríklad ak stratíte zariadenie) Zákaznícka podpora nebude schopná pomôcť vám ak stratíte prístup k účtu. Preto vám odporúčame zapísať si, alebo si vytlačiť záchranný kód a uložiť ho na bezpečnom mieste."
   },
   "restrictedItemTypePolicy": {
     "message": "Odstrániť typ položky pre kartu"
@@ -2894,7 +2894,7 @@
     "message": "Politika nastavená 1 alebo viacerými organizáciami vám bráni v importovaní kariet do vašich trezorov."
   },
   "yourSingleUseRecoveryCode": {
-    "message": "Váš jednorázový záchranný kód sa dá použiť na vypnutie dvojstupňového prihlasovania ak ste stratili pristúp k jeho poskytovateľovi. Bitwarden odporúča, aby ste si záchranný kód zapísali a odložili na bezpečné miesto."
+    "message": "Váš jednorázový záchranný kód sa dá použiť na vypnutie dvojstupňového prihlasovania ak ste stratili pristúp k jeho poskytovateľovi. Black Mask odporúča, aby ste si záchranný kód zapísali a odložili na bezpečné miesto."
   },
   "viewRecoveryCode": {
     "message": "Zobraziť záchranný kód"
@@ -2992,7 +2992,7 @@
     }
   },
   "continueToExternalUrlDesc": {
-    "message": "Opúšťate Bitwarden a spúšťate externú web stránku v novom okne."
+    "message": "Opúšťate Black Mask a spúšťate externú web stránku v novom okne."
   },
   "twoStepContinueToBitwardenUrlTitle": {
     "message": "Pokračovať na bitwarden.com?"
@@ -3040,7 +3040,7 @@
     "message": "Ulož formulár."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Vzhľadom na obmedzenia platform, YubiKey nemôže byť použitý vo všetkých Bitwarden aplikáciách. Mali by ste povoliť inú formu dvojitého overenia, aby ste sa mohli prihlásiť k svojmu účtu ak nie je možné použiť YubiKey. Podporované platformy:"
+    "message": "Vzhľadom na obmedzenia platform, YubiKey nemôže byť použitý vo všetkých Black Mask aplikáciách. Mali by ste povoliť inú formu dvojitého overenia, aby ste sa mohli prihlásiť k svojmu účtu ak nie je možné použiť YubiKey. Podporované platformy:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Webový trezor, desktopová aplikácia, CLI aplikácia a všetky rozšírenia pre browser na zariadení s USB portom akceptujúcim váš YubiKey."
@@ -3091,7 +3091,7 @@
     "message": "Zakázať všetky hardvérové kľúče"
   },
   "twoFactorDuoDesc": {
-    "message": "Zadajte informácie pre Bitwarden z vášho DUO Admin panelu."
+    "message": "Zadajte informácie pre Black Mask z vášho DUO Admin panelu."
   },
   "twoFactorDuoClientId": {
     "message": "ID klienta"
@@ -3142,7 +3142,7 @@
     "message": "Ulož formulár."
   },
   "twoFactorU2fWarning": {
-    "message": "Vzhľadom na obmedzenia platform, FIDO U2F nemôže byť použitý vo všetkých Bitwarden aplikáciách. Mali by ste povoliť inú formu dvojitého overenia, aby ste sa mohli prihlásiť k svojmu účtu ak nie je možné použiť FIDO U2F. Podporované platformy:"
+    "message": "Vzhľadom na obmedzenia platform, FIDO U2F nemôže byť použitý vo všetkých Black Mask aplikáciách. Mali by ste povoliť inú formu dvojitého overenia, aby ste sa mohli prihlásiť k svojmu účtu ak nie je možné použiť FIDO U2F. Podporované platformy:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Webový trezor a rozšírenia prehliadača na pracovnej stanici s prehliadačom podporujúcim U2F (Chrome, Opera, Vivaldi, alebo Firefox so zapnutou podporou FIDO U2F)."
@@ -3157,7 +3157,7 @@
     "message": "Problém pri čítaní bezpečnostného kľúča. Skúste to znova."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Váš Bitwarden záchranný kód pre dvojstupňové overovanie"
+    "message": "Váš Black Mask záchranný kód pre dvojstupňové overovanie"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Zatiaľ ste nepovolili žiadneho poskytovateľa dvojstupňového overenia. Po tom, čo ste nejakého poskytovateľa povolili, môžete sa sem vrátiť pre získanie záchranného kódu."
@@ -3206,7 +3206,7 @@
     "message": "Neaktívne 2FA"
   },
   "inactive2faReportDesc": {
-    "message": "Two-step login adds a layer of protection to your accounts. Set up two-step login using Bitwarden authenticator for these accounts or use an alternative method."
+    "message": "Two-step login adds a layer of protection to your accounts. Set up two-step login using Black Mask authenticator for these accounts or use an alternative method."
   },
   "inactive2faFound": {
     "message": "Našli sa prihlásenia bez dvojstupňového overenia"
@@ -3494,7 +3494,7 @@
     }
   },
   "bitwardenFamiliesPlan": {
-    "message": "Bitwarden plán pre Rodiny."
+    "message": "Black Mask plán pre Rodiny."
   },
   "addons": {
     "message": "Doplnky"
@@ -3679,7 +3679,7 @@
     }
   },
   "churnOfferDiscountBody": {
-    "message": "As a thank-you for being a long-time Bitwarden customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
+    "message": "As a thank-you for being a long-time Black Mask customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
     "description": "Body copy on the churn-mitigation offer card. DISCOUNT = discount amount; DURATION = service duration (e.g. 'year' or '6 months')",
     "placeholders": {
       "discount": {
@@ -3904,7 +3904,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "Black Mask_premium_license.json"
       }
     }
   },
@@ -4242,7 +4242,7 @@
     "message": "Externé ID SSO"
   },
   "ssoExternalIdDesc": {
-    "message": "Externé ID SSO je nešifrovaný odkaz medzi Bitwardenom a nakonfigurovaným poskytovateľom SSO."
+    "message": "Externé ID SSO je nešifrovaný odkaz medzi Black Maskom a nakonfigurovaným poskytovateľom SSO."
   },
   "nestCollectionUnder": {
     "message": "Zaradiť zbierku pod"
@@ -4287,7 +4287,7 @@
     "message": "Pozvať"
   },
   "inviteUserDesc": {
-    "message": "Pozvite používateľov do vašej organizácie zadaním emailovej adresy ich Bitwarden účtu nižšie. Ak ešte nemajú Bitwarden účet, obdržia požiadavku na jeho vytvorenie."
+    "message": "Pozvite používateľov do vašej organizácie zadaním emailovej adresy ich Black Mask účtu nižšie. Ak ešte nemajú Black Mask účet, obdržia požiadavku na jeho vytvorenie."
   },
   "inviteUserDescription": {
     "message": "Pozvite nových používateľov do vašej organizácie zadaním ich emailovej adresy nižšie."
@@ -4411,7 +4411,7 @@
     "message": "CLI"
   },
   "bitWebVault": {
-    "message": "Webový trezor Bitwarden"
+    "message": "Webový trezor Black Mask"
   },
   "bitSecretsManager": {
     "message": "Bitwarden Secrets Manager"
@@ -5388,7 +5388,7 @@
     }
   },
   "joinOrganizationDesc": {
-    "message": "Obdržali ste pozvánku do vyššie menovanej Organizácie. Ak chcete pozvánku prijať, musíte sa prihlásiť alebo si vytvoriť nový Bitwarden účet."
+    "message": "Obdržali ste pozvánku do vyššie menovanej Organizácie. Ak chcete pozvánku prijať, musíte sa prihlásiť alebo si vytvoriť nový Black Mask účet."
   },
   "finishJoiningThisOrganizationBySettingAMasterPassword": {
     "message": "Dokončite pripojenie k tejto organizácii nastavením hlavného hesla."
@@ -5457,10 +5457,10 @@
     "message": "Ak váš účet existuje, zaslali sme vám email s ďalšími inštrukciami."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Požiadali ste o zrušenie vášho Bitwarden účtu. Pre potvrdenie operácie kliknite nižšie."
+    "message": "Požiadali ste o zrušenie vášho Black Mask účtu. Pre potvrdenie operácie kliknite nižšie."
   },
   "deleteRecoverOrgConfirmDesc": {
-    "message": "You have requested to delete your Bitwarden organization."
+    "message": "You have requested to delete your Black Mask organization."
   },
   "myOrganization": {
     "message": "Moja organizácia"
@@ -5785,7 +5785,7 @@
     }
   },
   "updateEncryptionKeyWarning": {
-    "message": "Po aktualizácii šifrovacieho kľúča budete požiadaní o opätovné prihlásenie do všetkých Bitwarden aplikácii ktoré momentálne používate (napríklad mobilné aplikácie, alebo rozšírenia v prehliadači). Ak sa opätovne neprihlásite (touto operáciou sa stiahnu nové šifrovacie kľúče), mohlo by to viesť k poškodeniu uložených dát. Pokúsime sa odhlásiť vás automaticky, ale môže to chvíľu trvať."
+    "message": "Po aktualizácii šifrovacieho kľúča budete požiadaní o opätovné prihlásenie do všetkých Black Mask aplikácii ktoré momentálne používate (napríklad mobilné aplikácie, alebo rozšírenia v prehliadači). Ak sa opätovne neprihlásite (touto operáciou sa stiahnu nové šifrovacie kľúče), mohlo by to viesť k poškodeniu uložených dát. Pokúsime sa odhlásiť vás automaticky, ale môže to chvíľu trvať."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Všetky exporty obmedzené účtom budú neplatné."
@@ -5821,7 +5821,7 @@
     "message": "Nič ste nevybrali."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Dostávajte do schránky rady, oznámenia a príležitosti na výskum od spoločnosti Bitwarden."
+    "message": "Dostávajte do schránky rady, oznámenia a príležitosti na výskum od spoločnosti Black Mask."
   },
   "subscribe": {
     "message": "Predplatiť si"
@@ -6016,7 +6016,7 @@
     "message": "Slabé hlavné heslo"
   },
   "weakMasterPasswordDesc": {
-    "message": "Hlavné heslo ktoré ste zadali je slabé. Mali by ste použiť silné heslo (alebo frázu) aby ste spoľahlivo ochránili váš Bitwarden účet. Naozaj chcete použiť toto heslo?"
+    "message": "Hlavné heslo ktoré ste zadali je slabé. Mali by ste použiť silné heslo (alebo frázu) aby ste spoľahlivo ochránili váš Black Mask účet. Naozaj chcete použiť toto heslo?"
   },
   "rotateAccountEncKey": {
     "message": "Obnoviť aj môj šifrovací kľúč k účtu"
@@ -6081,7 +6081,7 @@
     "message": "API kľúč"
   },
   "apiKeyDesc": {
-    "message": "Váš API kľúč je možné použiť na autentifikáciu do verejného API Bitwardenu."
+    "message": "Váš API kľúč je možné použiť na autentifikáciu do verejného API Black Masku."
   },
   "apiKeyRotateDesc": {
     "message": "Obnovením kľúča API zneplatníte predchádzajúci API kľúč. API kľúč môžete obnoviť ak si myslíte že súčasný kľúč už nie je bezpečný."
@@ -6090,7 +6090,7 @@
     "message": "API kľúč má plný prístup k organizácii. To by by ste ho udržať v bezpečí."
   },
   "userApiKeyDesc": {
-    "message": "Váš API kľúč je možné použiť na autentifikáciu v API Bitwardenu."
+    "message": "Váš API kľúč je možné použiť na autentifikáciu v API Black Masku."
   },
   "userApiKeyWarning": {
     "message": "Váš API kľúč je alternatívnym autentifikačným mechanizmom. Mali by ste si ho udržať v tajnosti."
@@ -6396,7 +6396,7 @@
     "message": "Zakázať používateľom stať sa členmi inej organizácie. Toto pravidlo sa vyžaduje od organizácií, ktoré povolili overovanie domény."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Vaša súčasná organizácia má pravidlo, ktoré vám nedovoľuje pripojiť sa k viac než jednej organizácii. Kontaktujte, prosím, administrátorov vašej organizácie alebo sa prihláste prostredníctvom iného Bitwarden účtu."
+    "message": "Vaša súčasná organizácia má pravidlo, ktoré vám nedovoľuje pripojiť sa k viac než jednej organizácii. Kontaktujte, prosím, administrátorov vašej organizácie alebo sa prihláste prostredníctvom iného Black Mask účtu."
   },
   "singleOrgPolicyMemberWarning": {
     "message": "Členovia, ktorí nedodržiavajú pravidlo, budú zaradení do zrušeného stavu, kým neopustia všetky ostatné organizácie. Správcovia majú výnimku a môžu obnoviť členov po splnení požiadaviek pravidiel organizácie."
@@ -6604,7 +6604,7 @@
     "message": "Zaznamenali ste problém? Stiahnite a zdieľajte diagnostický report s"
   },
   "bitwardenSupport": {
-    "message": "podporou Bitwardenu",
+    "message": "podporou Black Masku",
     "description": "Link text that follows the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -6661,7 +6661,7 @@
     "message": "Upraviť núdzový kontakt"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Pozvite nový núdzový kontakt zadaním jej e-mailovej adresy účtu Bitwarden nižšie. Ak už nemajú konto Bitwarden, zobrazí sa výzva na vytvorenie nového účtu."
+    "message": "Pozvite nový núdzový kontakt zadaním jej e-mailovej adresy účtu Black Mask nižšie. Ak už nemajú konto Black Mask, zobrazí sa výzva na vytvorenie nového účtu."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Núdzový prístup bol iniciovaný"
@@ -6700,7 +6700,7 @@
     "message": "Pozvaný používateľ."
   },
   "acceptEmergencyAccess": {
-    "message": "Boli ste pozvaný, aby ste sa stali núdzovým kontaktom pre používateľa uvedeného vyššie. Ak chcete prijať pozvanie, musíte sa prihlásiť alebo vytvoriť nový účet Bitwarden."
+    "message": "Boli ste pozvaný, aby ste sa stali núdzovým kontaktom pre používateľa uvedeného vyššie. Ak chcete prijať pozvanie, musíte sa prihlásiť alebo vytvoriť nový účet Black Mask."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Nepodarilo sa prijať pozvanie. Požiadajte používateľa o odoslanie novej pozvánky."
@@ -6860,7 +6860,7 @@
     "message": "Ako zapnúť automatické potvrdzovanie používateľov"
   },
   "autoConfirmExtension1": {
-    "message": "Otvoriť rozšírenie Bitwarden"
+    "message": "Otvoriť rozšírenie Black Mask"
   },
   "autoConfirmExtension2": {
     "message": "Vybrať",
@@ -6871,7 +6871,7 @@
     "description": "This is a fragment of a larger sencence. The whole sentence will read: 'Select Turn on'"
   },
   "autoConfirmExtensionOpened": {
-    "message": "Rozšírenie Bitwarden pre prehliadače úspešne otvorene. Teraz môžete v nastaveniach zapnúť automatické potvrdzovanie používateľov."
+    "message": "Rozšírenie Black Mask pre prehliadače úspešne otvorene. Teraz môžete v nastaveniach zapnúť automatické potvrdzovanie používateľov."
   },
   "autoConfirmPolicyEditDescription": {
     "message": "Noví používatelia pozvaní do organizácie budú automaticky potvrdení ak je zariadene správcu odomknuté. Pred zapnutím tohto pravidla skontrolujte a odsúhlaste následujúce: ",
@@ -7165,7 +7165,7 @@
     "message": "Bitwarden Secrets Manager"
   },
   "moreProductsFromBitwarden": {
-    "message": "Viac produktov od spoločnosti Bitwarden"
+    "message": "Viac produktov od spoločnosti Black Mask"
   },
   "requestAccessToSecretsManager": {
     "message": "Požiadať o prístup k Secrets Manager"
@@ -7177,7 +7177,7 @@
     "message": "Požiadavka na Secrets Manager odoslaná vaším správcom."
   },
   "requestAccessSMDefaultEmailContent": {
-    "message": "Ahoj,\n\nŽiadam o predplatné programu Bitwarden Secrets Manager pre náš tím. Veľmi by sme ocenili Vašu podporu.\n\nBitwarden Secrets Manager je komplexné šifrované riešenie na správu tajomstiev a na bezpečné ukladanie, zdieľanie a nasadzovanie strojových poverení, ako sú kľúče API, heslá do databáz a autentifikačné certifikáty.\n\nSecrets Manager nám pomôže:\n\n- Zlepšiť bezpečnosť\n- Zefektívniť prevádzku\n- Zabrániť nákladným únikom tajomstiev\n\nAk chcete požiadať o bezplatnú skúšobnú verziu pre náš tím, obráťte sa na spoločnosť Bitwarden.\n\nĎakujeme za vašu pomoc!"
+    "message": "Ahoj,\n\nŽiadam o predplatné programu Bitwarden Secrets Manager pre náš tím. Veľmi by sme ocenili Vašu podporu.\n\nBitwarden Secrets Manager je komplexné šifrované riešenie na správu tajomstiev a na bezpečné ukladanie, zdieľanie a nasadzovanie strojových poverení, ako sú kľúče API, heslá do databáz a autentifikačné certifikáty.\n\nSecrets Manager nám pomôže:\n\n- Zlepšiť bezpečnosť\n- Zefektívniť prevádzku\n- Zabrániť nákladným únikom tajomstiev\n\nAk chcete požiadať o bezplatnú skúšobnú verziu pre náš tím, obráťte sa na spoločnosť Black Mask.\n\nĎakujeme za vašu pomoc!"
   },
   "giveMembersAccess": {
     "message": "Poskytnúť členom prístup k:"
@@ -7211,7 +7211,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
   },
   "sendAccessCreatorIdentifier": {
-    "message": "Bitwarden člen $USER_IDENTIFIER$ zdieľal s vami nasledujúce",
+    "message": "Black Mask člen $USER_IDENTIFIER$ zdieľal s vami nasledujúce",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -7236,7 +7236,7 @@
     "description": "Toast message shown when a user clicks the resend code link on the Send access page. 'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Používateľ Bitwardenu, ktorý vytvoril tento Send, skryl e-mailové adresy pred príjemcami. Mali by ste zvážiť, či dôverujete zdrojovému odkazu pred jeho použitím alebo stiahnutím jeho obsahu.",
+    "message": "Používateľ Black Masku, ktorý vytvoril tento Send, skryl e-mailové adresy pred príjemcami. Mali by ste zvážiť, či dôverujete zdrojovému odkazu pred jeho použitím alebo stiahnutím jeho obsahu.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
@@ -7595,7 +7595,7 @@
     "message": "Chyba dešifrovania"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden nedokázal dešifrovať nižšie uvedené položky trezoru."
+    "message": "Black Mask nedokázal dešifrovať nižšie uvedené položky trezoru."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Kontaktujte zákaznícku podporu,",
@@ -7612,7 +7612,7 @@
     "message": "Nastavenie poskytovateľa"
   },
   "setupProviderLoginDesc": {
-    "message": "Boli ste pozvaný, aby ste nastavili nového poskytovateľa. Ak chcete pokračovať, musíte sa prihlásiť alebo si vytvoriť nový Bitwarden účet."
+    "message": "Boli ste pozvaný, aby ste nastavili nového poskytovateľa. Ak chcete pokračovať, musíte sa prihlásiť alebo si vytvoriť nový Black Mask účet."
   },
   "setupProviderDesc": {
     "message": "Na dokončenie nastavenia poskytovateľa zadajte nižšie uvedené údaje. V prípade akýchkoľvek otázok kontaktujte zákaznícku podporu."
@@ -7643,13 +7643,13 @@
     "message": "Používatelia služby môžu pristupovať a spravovať všetky klientske organizácie."
   },
   "providerInviteUserDesc": {
-    "message": "Pozvite používateľov k vášmu poskytovateľovi zadaním emailovej adresy ich Bitwarden účtu nižšie. Ak ešte nemajú Bitwarden účet, budú vyzvaní na jeho vytvorenie."
+    "message": "Pozvite používateľov k vášmu poskytovateľovi zadaním emailovej adresy ich Black Mask účtu nižšie. Ak ešte nemajú Black Mask účet, budú vyzvaní na jeho vytvorenie."
   },
   "joinProvider": {
     "message": "Pripojte sa k poskytovateľovi"
   },
   "joinProviderDesc": {
-    "message": "Boli ste pozvaný, aby ste sa pridali k poskytovateľovi uvedenému vyššie. Ak chcete pozvánku prijať, musíte sa prihlásiť alebo si vytvoriť nový Bitwarden účet."
+    "message": "Boli ste pozvaný, aby ste sa pridali k poskytovateľovi uvedenému vyššie. Ak chcete pozvánku prijať, musíte sa prihlásiť alebo si vytvoriť nový Black Mask účet."
   },
   "providerInviteAcceptFailed": {
     "message": "Nie je možné prijať pozvanie. Požiadajte správcu poskytovateľa o zaslanie novej pozvánky."
@@ -7794,7 +7794,7 @@
     "message": "Akcia po vypršaní relácie"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Spravované prostredníctvom rozšírenia Bitwarden pre prehliadače. Na úpravu otvorte prehliadač."
+    "message": "Spravované prostredníctvom rozšírenia Black Mask pre prehliadače. Na úpravu otvorte prehliadač."
   },
   "immediately": {
     "message": "Okamžite"
@@ -8032,7 +8032,7 @@
     "message": "Single sign-on configuration saved"
   },
   "sponsoredFamilies": {
-    "message": "Bitwarden pre Rodiny zadarmo"
+    "message": "Black Mask pre Rodiny zadarmo"
   },
   "sponsoredBitwardenFamilies": {
     "message": "Sponzorované rodiny"
@@ -8044,19 +8044,19 @@
     "message": "Tu sa zobrazia sponzorované plány pre Rodiny pre nečlenov"
   },
   "sponsorshipFreeBitwardenFamilies": {
-    "message": "Členovia vašej organizácie majú nárok na bezplatný plán pre Rodiny. Bezplatný plán pre Rodiny môžete sponzorovať aj pre zamestnancov ktorí nie sú členmi vašej Bitwarden organizácie. Spozorovanie nečlena vyžaduje voľné sedenie v organizácii."
+    "message": "Členovia vašej organizácie majú nárok na bezplatný plán pre Rodiny. Bezplatný plán pre Rodiny môžete sponzorovať aj pre zamestnancov ktorí nie sú členmi vašej Black Mask organizácie. Spozorovanie nečlena vyžaduje voľné sedenie v organizácii."
   },
   "sponsoredFamiliesRemoveActiveSponsorship": {
     "message": "Keď odoberiete aktívne sponzorstvo, sedenie vo vašej organizácii sa uvoľní po dátume obnovenia sponzorovanej organizácie."
   },
   "sponsoredFamiliesEligible": {
-    "message": "Vy a vaša rodina máte bezplatne k dispozícii Bitwarden pre Rodiny. Uplatnite si túto možnosť s vaším osobným emailom aby ste mali dáta v bezpečí aj keď nie ste v práci."
+    "message": "Vy a vaša rodina máte bezplatne k dispozícii Black Mask pre Rodiny. Uplatnite si túto možnosť s vaším osobným emailom aby ste mali dáta v bezpečí aj keď nie ste v práci."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Využite bezplatný plán Bitwarden pre Rodiny aby ste mali dáta v bezpečí aj keď nie ste v práci."
+    "message": "Využite bezplatný plán Black Mask pre Rodiny aby ste mali dáta v bezpečí aj keď nie ste v práci."
   },
   "sponsoredFamiliesIncludeMessage": {
-    "message": "Bitwarden plán pre Rodiny zahŕňa"
+    "message": "Black Mask plán pre Rodiny zahŕňa"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Prémiový prístup pre maximálne 6 používateľov"
@@ -8101,7 +8101,7 @@
     "message": "Which Free Families offer would you like to redeem?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Enter your personal email to redeem Bitwarden Families"
+    "message": "Enter your personal email to redeem Black Mask Families"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "If you remove an offer or are removed from the sponsoring organization, your Families sponsorship will expire at the next renewal date."
@@ -8110,7 +8110,7 @@
     "message": "Accept offer for an existing organization or create a new Families organization."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "You've been offered a free Bitwarden Families plan organization. To continue, you need to log in to the account that received the offer."
+    "message": "You've been offered a free Black Mask Families plan organization. To continue, you need to log in to the account that received the offer."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Unable to accept offer. Please resend the offer email from your Enterprise account and try again."
@@ -8125,10 +8125,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Accept Free Bitwarden Families"
+    "message": "Accept Free Black Mask Families"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Free Bitwarden Families offer successfully redeemed"
+    "message": "Free Black Mask Families offer successfully redeemed"
   },
   "redeemed": {
     "message": "Uplatnené"
@@ -8259,7 +8259,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "memberDecryptionKeyConnectorDescEnd": {
-    "message": "are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.",
+    "message": "are required to set up Key Connector decryption. Contact Black Mask Support for set up assistance.",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "keyConnectorPolicyRestriction": {
@@ -8359,7 +8359,7 @@
     "message": "Custom environment"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Specify the base URL of your on-premises hosted Bitwarden installation. Example: https://bitwarden.company.com"
+    "message": "Specify the base URL of your on-premises hosted Black Mask installation. Example: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "For advanced configuration, you can specify the base URL of each service independently."
@@ -8407,7 +8407,7 @@
     "message": "Billing sync token"
   },
   "automaticBillingSyncDesc": {
-    "message": "Automatic sync unlocks Families sponsorships and allows you to sync your license without uploading a file. After making updates in the Bitwarden cloud server, select Sync License to apply changes."
+    "message": "Automatic sync unlocks Families sponsorships and allows you to sync your license without uploading a file. After making updates in the Black Mask cloud server, select Sync License to apply changes."
   },
   "active": {
     "message": "Aktívny"
@@ -8769,11 +8769,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Generated by Bitwarden.",
+    "message": "Generated by Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Website: $WEBSITE$. Generated by Bitwarden.",
+    "message": "Website: $WEBSITE$. Generated by Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -9838,7 +9838,7 @@
     "message": "Ďalšie nastavenia"
   },
   "moreFromBitwarden": {
-    "message": "Viac od spoločnosti Bitwarden"
+    "message": "Viac od spoločnosti Black Mask"
   },
   "switchProducts": {
     "message": "Prepnúť produkty"
@@ -10674,7 +10674,7 @@
     "message": "Používateľ nastavil hlavné heslo počas odhlasovania z TDE."
   },
   "startYour7DayFreeTrialOfBitwardenFor": {
-    "message": "Začnite 7-dňovú skúšobnú dobu Bitwardenu zadarmo pre $ORG$",
+    "message": "Začnite 7-dňovú skúšobnú dobu Black Masku zadarmo pre $ORG$",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10981,7 +10981,7 @@
     "message": "Get started with your vault"
   },
   "onboardingChecklistSubtitle": {
-    "message": "Complete these steps to secure your personal data and get the most out of Bitwarden"
+    "message": "Complete these steps to secure your personal data and get the most out of Black Mask"
   },
   "dismissThisChecklist": {
     "message": "Dismiss this checklist"
@@ -11054,7 +11054,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "Zisťovanie zhody URI je spôsob, akým Bitwarden identifikuje návrhy na automatické vypĺňanie.",
+    "message": "Zisťovanie zhody URI je spôsob, akým Black Mask identifikuje návrhy na automatické vypĺňanie.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -11104,7 +11104,7 @@
     "message": "Poslali sme potvrdzujúci e-mail na adresu "
   },
   "sorryToSeeYouGo": {
-    "message": "Sorry to see you go! Help improve Bitwarden by sharing why you're canceling.",
+    "message": "Sorry to see you go! Help improve Black Mask by sharing why you're canceling.",
     "description": "A message shown to users as part of an offboarding survey asking them to provide more information on their subscription cancelation."
   },
   "selectCancellationReason": {
@@ -11579,7 +11579,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "ssoDescEnd": {
-    "message": "for Bitwarden using the implementation guide for your Identity Provider.",
+    "message": "for Black Mask using the implementation guide for your Identity Provider.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "userProvisioning": {
@@ -11593,7 +11593,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "scimIntegrationDescEnd": {
-    "message": "(System for Cross-domain Identity Management) pre automatické vytváranie používateľov a skupiny v Bitwardene pomocou implementačnej príručky pre vášho poskytovateľa identít.",
+    "message": "(System for Cross-domain Identity Management) pre automatické vytváranie používateľov a skupiny v Black Maske pomocou implementačnej príručky pre vášho poskytovateľa identít.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "bwdc": {
@@ -11606,13 +11606,13 @@
     "message": "Event management"
   },
   "eventManagementDesc": {
-    "message": "Integrate Bitwarden event logs with your SIEM (system information and event management) system by using the implementation guide for your platform."
+    "message": "Integrate Black Mask event logs with your SIEM (system information and event management) system by using the implementation guide for your platform."
   },
   "deviceManagement": {
     "message": "Device management"
   },
   "deviceManagementDesc": {
-    "message": "Configure device management for Bitwarden using the implementation guide for your platform."
+    "message": "Configure device management for Black Mask using the implementation guide for your platform."
   },
   "crowdstrikeEventIntegrationDesc": {
     "message": "Pošlite dáta z denníka udalostí do vašej inštancie Logscale"
@@ -11792,22 +11792,22 @@
     "message": "Spravujte fakturáciu cez portál poskytovateľa"
   },
   "continueSettingUp": {
-    "message": "Continue setting up Bitwarden"
+    "message": "Continue setting up Black Mask"
   },
   "continueSettingUpFreeTrial": {
-    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Bitwardenu"
+    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Black Masku"
   },
   "continueSettingUpPasswordManager": {
-    "message": "Continue setting up Bitwarden Password Manager"
+    "message": "Continue setting up Black Mask Password Manager"
   },
   "continueSettingUpFreeTrialPasswordManager": {
-    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Bitwarden Správcu Hesiel"
+    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Black Mask Správcu Hesiel"
   },
   "continueSettingUpSecretsManager": {
     "message": "Continue setting up Bitwarden Secrets Manager"
   },
   "continueSettingUpFreeTrialSecretsManager": {
-    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Bitwarden správcu tajomstiev"
+    "message": "Pokračujte v nastavovaní vašej bezplatnej skúšobnej doby Black Mask správcu tajomstiev"
   },
   "enterTeamsOrgInfo": {
     "message": "Enter your Teams organization information"
@@ -12064,14 +12064,14 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'."
   },
   "contactBitwardenSupport": {
-    "message": "kontaktujte podporu spoločnosti Bitwarden.",
+    "message": "kontaktujte podporu spoločnosti Black Mask.",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'. 'Bitwarden' should not be translated"
   },
   "sponsored": {
     "message": "Sponzorované"
   },
   "licenseAndBillingManagementDesc": {
-    "message": "Po vykonaní aktualizácií na cloudovom serveri Bitwarden nahrajte svoj licenčný súbor, aby ste aplikovali najnovšie zmeny."
+    "message": "Po vykonaní aktualizácií na cloudovom serveri Black Mask nahrajte svoj licenčný súbor, aby ste aplikovali najnovšie zmeny."
   },
   "addToFolder": {
     "message": "Pridať do priečinka"
@@ -12177,7 +12177,7 @@
     "message": "Čo je číslo CVV?"
   },
   "learnMoreAboutApi": {
-    "message": "Dozvedieť sa viac o Bitwarden API"
+    "message": "Dozvedieť sa viac o Black Mask API"
   },
   "fileSends": {
     "message": "Sendy so súborom"
@@ -12351,7 +12351,7 @@
     "message": "Vaše predplatné Secrets Manager sa obnoví na základe vybraného plánu"
   },
   "bitwardenPasswordManager": {
-    "message": "Bitwarden Správca Hesiel"
+    "message": "Black Mask Správca Hesiel"
   },
   "secretsManagerComplimentaryPasswordManager": {
     "message": "Vaše bezplatné ročné predplatné programu Password Manager sa zmení na vybraný plán. Poplatok vám bude účtovaný až po skončení bezplatného obdobia."
@@ -12429,7 +12429,7 @@
     "description": "This represents the beginning of a sentence. The full sentence will be 'Manage subscription from the Provider Portal', but 'Provider Portal' will be a link and thus cannot be included in the translation file."
   },
   "toHostBitwardenOnYourOwnServer": {
-    "message": "Ak chcete prevádzkovať Bitwarden na vlastnom serveri, musíte nahrať licenčný súbor. Pre podporu Free Families plánu a pokročilé možnosti fakturácie pre vašu organizáciu s vlastným hostingom, budete musieť nastaviť automatickú synchronizáciu v organizácii vo vlastnom hostingu."
+    "message": "Ak chcete prevádzkovať Black Mask na vlastnom serveri, musíte nahrať licenčný súbor. Pre podporu Free Families plánu a pokročilé možnosti fakturácie pre vašu organizáciu s vlastným hostingom, budete musieť nastaviť automatickú synchronizáciu v organizácii vo vlastnom hostingu."
   },
   "selfHostingTitleProper": {
     "message": "Vlastný hosting"
@@ -12531,7 +12531,7 @@
     "message": "Úspešne odstránené"
   },
   "freeFamiliesSponsorship": {
-    "message": "Odstrániť sponzorovaný bezplatný Bitwarden plán pre Rodiny"
+    "message": "Odstrániť sponzorovaný bezplatný Black Mask plán pre Rodiny"
   },
   "freeFamiliesSponsorshipPolicyDesc": {
     "message": "Neumožnite členom používať plán pre rodiny prostredníctvom tejto organizácie."
@@ -12582,10 +12582,10 @@
     "message": "Automaticky privlastnené domény"
   },
   "automaticDomainClaimProcess": {
-    "message": "Bitwarden sa pokúsi privlastniť doménu 3 krát počas prvých 72 hodín. Ak sa doménu nepodarilo privlastniť, skontrolujte DNS záznam u svojho hostiteľa a privlastnite manuálne. Doména bude z organizácie odstránená po 7 dňoch ak nie je privlastnená."
+    "message": "Black Mask sa pokúsi privlastniť doménu 3 krát počas prvých 72 hodín. Ak sa doménu nepodarilo privlastniť, skontrolujte DNS záznam u svojho hostiteľa a privlastnite manuálne. Doména bude z organizácie odstránená po 7 dňoch ak nie je privlastnená."
   },
   "automaticDomainClaimProcess1": {
-    "message": "Bitwarden sa pokúsi o privlastnenie domény najbližších 72 hodín. Ak sa doménu nepodarí privlastniť, overte záznamy DNS a manuálne privlastnite doménu. Neprivlastnené domény budú odstránené o 7 dní."
+    "message": "Black Mask sa pokúsi o privlastnenie domény najbližších 72 hodín. Ak sa doménu nepodarí privlastniť, overte záznamy DNS a manuálne privlastnite doménu. Neprivlastnené domény budú odstránené o 7 dní."
   },
   "automaticDomainClaimProcess2": {
     "message": "Existujúci členovia domén budu po privlastnení domény emailom informovaní o "
@@ -12736,19 +12736,19 @@
     "message": "Kopírovať súkromný kľúč"
   },
   "openingExtension": {
-    "message": "Otvára sa rozšírenie Bitwarden pre prehliadač"
+    "message": "Otvára sa rozšírenie Black Mask pre prehliadač"
   },
   "somethingWentWrong": {
     "message": "Niečo sa pokazilo..."
   },
   "openingExtensionError": {
-    "message": "Mali sme problém otvoriť Bitwarden rozšírenie pre prehliadač. Otvoríte ho kliknutím na tlačidlo."
+    "message": "Mali sme problém otvoriť Black Mask rozšírenie pre prehliadač. Otvoríte ho kliknutím na tlačidlo."
   },
   "openExtension": {
     "message": "Otvoriť rozšírenie"
   },
   "doNotHaveExtension": {
-    "message": "Nemáte Bitwarden rozšírenie pre prehliadač?"
+    "message": "Nemáte Black Mask rozšírenie pre prehliadač?"
   },
   "installExtension": {
     "message": "Inštalovať rozšírenie"
@@ -12757,7 +12757,7 @@
     "message": "Rozšírenie pre prehliadač otvorené"
   },
   "openedExtensionViewAtRiskPasswords": {
-    "message": "Rozšírenie pre prehliadač Bitwarden úspešne otvorené. Teraz môžete skontrolovať vaše ohrozene heslá."
+    "message": "Rozšírenie pre prehliadač Black Mask úspešne otvorené. Teraz môžete skontrolovať vaše ohrozene heslá."
   },
   "resellerRenewalWarningMsg": {
     "message": "Vaše predplatné sa čoskoro obnoví. Aby ste si zabezpečili nepretržitú prevádzku, kontaktujte $RESELLER$ a potvrďte obnovenie pred $RENEWAL_DATE$.",
@@ -12773,7 +12773,7 @@
     }
   },
   "resellerRenewalWarningMsgV2": {
-    "message": "Vaše predplatné sa čoskoro obnoví. Aby ste si zabezpečili nepretržitú prevádzku, kontaktujte vášho poskytovateľa Bitwarden a potvrďte obnovenie pred $RENEWAL_DATE$.",
+    "message": "Vaše predplatné sa čoskoro obnoví. Aby ste si zabezpečili nepretržitú prevádzku, kontaktujte vášho poskytovateľa Black Mask a potvrďte obnovenie pred $RENEWAL_DATE$.",
     "placeholders": {
       "renewal_date": {
         "content": "$1",
@@ -12812,7 +12812,7 @@
     }
   },
   "resellerPastDueWarningMsgV2": {
-    "message": "Faktúra za vaše predplatné nebola uhradená. Aby ste si zabezpečili nepretržitú prevádzku, kontaktujte vášho poskytovateľa Bitwarden pred $GRACE_PERIOD_END$.",
+    "message": "Faktúra za vaše predplatné nebola uhradená. Aby ste si zabezpečili nepretržitú prevádzku, kontaktujte vášho poskytovateľa Black Mask pred $GRACE_PERIOD_END$.",
     "placeholders": {
       "grace_period_end": {
         "content": "$1",
@@ -12970,7 +12970,7 @@
     "message": "Ak chcete vidieť denník udalostí vašej organizácie povýšte."
   },
   "upgradeEventLogMessage": {
-    "message": "These events are examples only and do not reflect real events within your Bitwarden organization."
+    "message": "These events are examples only and do not reflect real events within your Black Mask organization."
   },
   "viewEvents": {
     "message": "Zobraziť udalosti"
@@ -13120,7 +13120,7 @@
     "message": "Jedným klikom automaticky a bezpečne vyplňte vaše heslá"
   },
   "setupExtensionPageDescription": {
-    "message": "Získajte rozšírenie Bitwarden pre prehliadače a začnite automaticky vypĺňať heslá už dnes"
+    "message": "Získajte rozšírenie Black Mask pre prehliadače a začnite automaticky vypĺňať heslá už dnes"
   },
   "getTheExtension": {
     "message": "Získať rozšírenie"
@@ -13129,7 +13129,7 @@
     "message": "Pridať neskor"
   },
   "cannotAutofillPasswordsWithoutExtensionTitle": {
-    "message": "Bez rozšírenia Bitwarden pre prehliadače nie je možné automaticky vypĺňať heslá"
+    "message": "Bez rozšírenia Black Mask pre prehliadače nie je možné automaticky vypĺňať heslá"
   },
   "cannotAutofillPasswordsWithoutExtensionDesc": {
     "message": "Naozaj teraz nechcete pridať rozšírenie?"
@@ -13138,19 +13138,19 @@
     "message": "Preskočiť na webovú aplikáciu"
   },
   "bitwardenExtensionInstalled": {
-    "message": "Rozšírenie Bitwarden nainštalované!"
+    "message": "Rozšírenie Black Mask nainštalované!"
   },
   "bitwardenExtensionIsInstalled": {
-    "message": "Rozšírenie Bitwarden je nainštalované!"
+    "message": "Rozšírenie Black Mask je nainštalované!"
   },
   "openExtensionToAutofill": {
     "message": "Otvorte rozšírenie, prihláste sa a začnite automatické vypĺňanie."
   },
   "openBitwardenExtension": {
-    "message": "Otvoriť rozšírenie Bitwarden"
+    "message": "Otvoriť rozšírenie Black Mask"
   },
   "gettingStartedWithBitwardenPart1": {
-    "message": "Pre tipy ako začať s Bitwarden, navštívte",
+    "message": "Pre tipy ako začať s Black Mask, navštívte",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "gettingStartedWithBitwardenPart2": {
@@ -13158,7 +13158,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "openExtensionFromToolbarPart1": {
-    "message": "Ak sa rozšírenie neotvorilo, možno musíte otvoriť Bitwarden prostredníctvom ikony ",
+    "message": "Ak sa rozšírenie neotvorilo, možno musíte otvoriť Black Mask prostredníctvom ikony ",
     "description": "This will be used as part of a larger sentence, broken up to include the Bitwarden icon. The full sentence will read 'If the extension didn't open, you may need to open Bitwarden from the icon [Bitwarden Icon] on the toolbar.'"
   },
   "openExtensionFromToolbarPart2": {
@@ -13170,7 +13170,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "setupExtensionContentAlt": {
-    "message": "S rozšírením Bitwarden pre prehliadače ľahko vytvorite nove prihlasovacie údaje, pristúpite k vaším uloženým údajom priamo z prehliadača a rýchlo sa prihlásite pomocou Bitwarden automatického vypĺňania."
+    "message": "S rozšírením Black Mask pre prehliadače ľahko vytvorite nove prihlasovacie údaje, pristúpite k vaším uloženým údajom priamo z prehliadača a rýchlo sa prihlásite pomocou Black Mask automatického vypĺňania."
   },
   "restart": {
     "message": "Reštartovať"
@@ -13202,7 +13202,7 @@
     "message": "O tomto nastavení"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden použije uložené prihlasovacie URI na určenie ikony alebo adresy URL na zmenu hesla, ktoré by sa mali použiť na zlepšenie vášho zážitku. Pri používaní tejto služby sa nezbierajú ani neukladajú žiadne informácie."
+    "message": "Black Mask použije uložené prihlasovacie URI na určenie ikony alebo adresy URL na zmenu hesla, ktoré by sa mali použiť na zlepšenie vášho zážitku. Pri používaní tejto služby sa nezbierajú ani neukladajú žiadne informácie."
   },
   "billingAddress": {
     "message": "Fakturačná adresa"
@@ -13269,7 +13269,7 @@
     }
   },
   "restoreProviderPortalAccessViaCustomerSupport": {
-    "message": "Pre obnovu prístupu k portálu poskytovateľa, kontaktujte zákaznícku podporu Bitwarden a obnovte vaše predplatné.",
+    "message": "Pre obnovu prístupu k portálu poskytovateľa, kontaktujte zákaznícku podporu Black Mask a obnovte vaše predplatné.",
     "description": "A message shown in a non-dismissible dialog to any user of a suspended providers."
   },
   "restoreProviderPortalAccessViaPaymentMethod": {
@@ -13311,7 +13311,7 @@
     "message": "Predplatné bolo zrušené"
   },
   "providersubCanceledmessage": {
-    "message": "Ak chcete obnoviť predplatné, kontaktujte zákaznícku podporu Bitwarden."
+    "message": "Ak chcete obnoviť predplatné, kontaktujte zákaznícku podporu Black Mask."
   },
   "showMore": {
     "message": "Zobraziť viac"
@@ -13437,7 +13437,7 @@
     "message": "Custom plan"
   },
   "planDescCustom": {
-    "message": "Bitwarden scales with businesses of all sizes to secure passwords and sensitive information. If you're part of a large enterprise, contact sales to request a quote."
+    "message": "Black Mask scales with businesses of all sizes to secure passwords and sensitive information. If you're part of a large enterprise, contact sales to request a quote."
   },
   "builtInAuthenticator": {
     "message": "Built-in authenticator"
@@ -13542,7 +13542,7 @@
     "message": "Pri výpočte dane pre vašu lokalitu došlo k chybe. Prosím skúste to znova."
   },
   "individualUpgradeWelcomeMessage": {
-    "message": "Vítajte v Bitwardene"
+    "message": "Vítajte v Black Maske"
   },
   "individualUpgradeDescriptionMessage": {
     "message": "Odomknite ďalšie bezpečnostné funkcie s Prémium, alebo začnite zdieľať položky s predplatným Rodiny"
@@ -13569,7 +13569,7 @@
     "message": "Pri spracovaní povýšenia došlo k chybe. Prosím skúste to znova."
   },
   "bitwardenFreeplanMessage": {
-    "message": "Mate predplatné Bitwarden Zadarmo"
+    "message": "Mate predplatné Black Mask Zadarmo"
   },
   "upgradeCompleteSecurity": {
     "message": "Navýšte predplatné pre kompletnú bezpečnosť"
@@ -13587,7 +13587,7 @@
     "message": "Algorithm"
   },
   "encryptionKeySettingsHowShouldWeEncryptYourData": {
-    "message": "Choose how Bitwarden should encrypt your vault data. All options are secure, but stronger methods offer better protection - especially against brute-force attacks. Bitwarden recommends the default setting for most users."
+    "message": "Choose how Black Mask should encrypt your vault data. All options are secure, but stronger methods offer better protection - especially against brute-force attacks. Black Mask recommends the default setting for most users."
   },
   "encryptionKeySettingsIncreaseImproveSecurity": {
     "message": "Increasing the values above the default will improve security, but your vault may take longer to unlock as a result."
@@ -13648,7 +13648,7 @@
     }
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Vaša organizácia už nepoužíva hlavné heslá na prihlásenie do Bitwardenu. Ak chcete pokračovať, overte organizáciu a doménu."
+    "message": "Vaša organizácia už nepoužíva hlavné heslá na prihlásenie do Black Masku. Ak chcete pokračovať, overte organizáciu a doménu."
   },
   "continueWithLogIn": {
     "message": "Pokračujte prihlásením"
@@ -13839,7 +13839,7 @@
     "message": "Zamietnuť a odísť"
   },
   "youHaveBitwardenPremium": {
-    "message": "Máte Bitwarden Premium"
+    "message": "Máte Black Mask Premium"
   },
   "viewAndManagePremiumSubscription": {
     "message": "Zobraziť a spravovať vaše Premium predplatné"
@@ -13870,7 +13870,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_license.json"
+        "example": "Black Mask_license.json"
       }
     }
   },
@@ -13878,7 +13878,7 @@
     "message": "Už máte predplatné?"
   },
   "alreadyHaveSubscriptionSelfHostedMessage": {
-    "message": "Otvorte stránku predplatného vo vašom Bitwarden cloud konte a stiahnite váš licenčný súbor. Potom sa vráťte na tuto obrazovku a nahrajte ho nižšie."
+    "message": "Otvorte stránku predplatného vo vašom Black Mask cloud konte a stiahnite váš licenčný súbor. Potom sa vráťte na tuto obrazovku a nahrajte ho nižšie."
   },
   "viewAllPlans": {
     "message": "Zobraziť všetky druhy predplatného"
@@ -13964,10 +13964,10 @@
     "message": "Získajte rozšírenie pre ľahký prístup do trezora"
   },
   "extensionPromptBody": {
-    "message": "S nainštalovaným rozšírením pre prehliadače budete mat Bitwarden všade online. Vyplní hesla aby ste sa mohli prihlásiť jedným klikom."
+    "message": "S nainštalovaným rozšírením pre prehliadače budete mat Black Mask všade online. Vyplní hesla aby ste sa mohli prihlásiť jedným klikom."
   },
   "extensionPromptImageAlt": {
-    "message": "Prehliadač zobrazujúci rozšírenie Bitwarden s položkami pre automatické vyplnenie na aktuálnej web stránke."
+    "message": "Prehliadač zobrazujúci rozšírenie Black Mask s položkami pre automatické vyplnenie na aktuálnej web stránke."
   },
   "skip": {
     "message": "Preskočiť"
@@ -14015,10 +14015,10 @@
     "message": "Nesprávne heslo Sendu"
   },
   "vaultWelcomeDialogTitle": {
-    "message": "A je to! Vítajte v Bitwarden"
+    "message": "A je to! Vítajte v Black Mask"
   },
   "vaultWelcomeDialogDescription": {
-    "message": "Uložte všetky svoje hesla a osobne informácie v Bitwarden trezore. Ukážeme vám ako."
+    "message": "Uložte všetky svoje hesla a osobne informácie v Black Mask trezore. Ukážeme vám ako."
   },
   "vaultWelcomeDialogPrimaryCta": {
     "message": "Začať prehliadku"

@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Fiók létrehozása"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Új vagyunk a Black Maskben?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Kijelentkezés"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Black Mask névjegy"
   },
   "about": {
     "message": "Névjegy"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "További infó a Black Maskről"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Folytatás a bitwarden.com webhelyen?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Hozzunk létre zökkenőmentes és biztonságos bejelentkezési élményt hagyományos jelszavak nélkül a Passwordless.dev segítségével. Tudjunk meg többet a bitwarden.com webhelyen."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Ingyenes Black Mask Families csomag"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Jogosult vagyunk az ingyenes Black Mask Families csomagra. Váltsuk be ezt az ajánlatot még ma az internetes alkalmazásban."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Bejelentkezés"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Bejelentkezés a Black Maskbe"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Automatikus kitöltési javaslatok megjelenítése űrlapmezőknél"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Hogyan védi meg a Black Mask az adathalászattól az adatokat?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "A Black Mask automatikus kitöltési menüjének illusztrációja, amely egy generált jelszót jelenít meg."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Frissítés a Black Maskben"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "A Black Mask ezután felkér a jelszó frissítésére a jelszókezelőben.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Illusztráció a Black Mask értesítéséről, amely felszólítja a felhasználót a bejelentkezési adatok frissítésére."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask automatikus kitöltés menü gomb",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Black Mask automatikus kitöltés menü váltás",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Melléklet letöltése"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Black Mask letöltése"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Black Mask letöltése minden eszközön"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Hozzáférhetünk a széfhez böngésző nélkül, majd állítsuk be a feloldást biometrikus adatokkal, hogy felgyorsítsuk a feloldást mind az asztali alkalmazásban, mind a böngésző bővítményben."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Letöltés most a bitwarden.com webhelyről"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "A jelszó generálásra került.",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Mentés a Black Maskbe",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Black Mask alkalmazások letöltése"
   },
   "emailProtected": {

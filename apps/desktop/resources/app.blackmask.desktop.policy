@@ -4,9 +4,9 @@
  "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
 
 <policyconfig>
-    <action id="com.bitwarden.Bitwarden.unlock">
-      <description>Unlock Bitwarden</description>
-      <message>Authenticate to unlock Bitwarden</message>
+    <action id="app.blackmask.BlackMask.unlock">
+      <description>Unlock Black Mask</description>
+      <message>Authenticate to unlock Black Mask</message>
       <defaults>
         <allow_any>no</allow_any>
         <allow_inactive>no</allow_inactive>

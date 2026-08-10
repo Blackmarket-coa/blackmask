@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Create Account"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "बिटवार्डन का परिचय"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Log Out"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "बिटवार्डन का परिचय"
   },
   "about": {
     "message": "जानकारी"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "More from Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Continue to bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Create smooth and secure login experiences free from traditional passwords with Passwordless.dev. Learn more on the bitwarden.com website."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Free Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "आप फ्री बिटवर्डन फैमिलीज़ के लिए एलिजिबल हैं। इस ऑफर को आज ही वेब ऐप में रिडीम करें।"
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Log in"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Log in to Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Show autofill suggestions on form fields"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "How does Black Mask protect your data from phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "उत्पन्न पासवर्ड प्रदर्शित करने वाले बिटवर्डन स्वतः भरण मेनू का चित्रण।"
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Update in Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask will then prompt you to update the password in the password manager.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "उपयोगकर्ता को लॉगिन अपडेट करने के लिए प्रेरित करने वाली बिटवर्डन की अधिसूचना का चित्रण।"
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask autofill menu button",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Toggle Black Mask autofill menu",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "अटैचमेंट डाउनलोड करें"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Download Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Download Black Mask on all devices"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Access your vault without a browser, then set up unlock with biometrics to expedite unlocking in both the desktop app and browser extension."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Download from bitwarden.com now"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Password regenerated",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Save to Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

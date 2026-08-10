@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "கணக்கை உருவாக்கவும்"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Black Mask-க்கு புதியவரா?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "வெளியேறு"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Black Mask பற்றி"
   },
   "about": {
     "message": "பற்றி"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Black Mask-இலிருந்து மேலும்"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "bitwarden.com தளத்திற்கு செல்லவா?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Passwordless.dev-ஐப் பயன்படுத்தி பாரம்பரிய கடவுச்சொற்கள் இல்லாத, எளிதான மற்றும் பாதுகாப்பான உள்நுழைவு அனுபவங்களை உருவாக்குங்கள். bitwarden.com வலைத்தளத்தில் மேலும் அறிக."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "இலவச Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "நீங்கள் இலவச Black Mask Families-க்கு தகுதியுடையவர். இந்தச் சலுகையை இன்று வலை பயன்பாட்டில் மீட்டெடுக்கவும்."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "உள்நுழை"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Black Mask-இல் உள்நுழை"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "படிவப் புலங்களில் ஆட்டோஃபில் பரிந்துரைகளைக் காட்டு"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Black Mask உங்கள் தரவை ஃபிஷிங்கிலிருந்து எவ்வாறு பாதுகாக்கிறது?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "உருவாக்கப்பட்ட கடவுச்சொல்லைக் காட்டும் Black Mask தானாக நிரப்பு மெனுவின் விளக்கம்."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Black Mask இல் புதுப்பி"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask பின்னர் கடவுச்சொல் நிர்வாகியில் கடவுச்சொல்லைப் புதுப்பிக்க உங்களைத் தூண்டும்.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "பயனரை உள்நுழைவைப் புதுப்பிக்கும்படி தூண்டும் Black Mask இன் அறிவிப்பின் விளக்கம்."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask தானியங்கு நிரப்புதல் மெனு பொத்தான்",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Black Mask தானியங்கு நிரப்புதல் மெனுவைத் மாற்று",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Black Mask-ஐப் பதிவிறக்கு"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "அனைத்துச் சாதனங்களிலும் Black Mask-ஐப் பதிவிறக்கு"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "உலாவி இல்லாமலே உங்கள் வால்ட்டை அணுகவும், பின்னர் பயோமெட்ரிக்ஸுடன் திறப்பதைப் பதிவு செய்து, டெஸ்க்டாப் அப்ளிகேஷன் மற்றும் உலாவி நீட்டிப்பு இரண்டிலும் விரைவாகத் திறக்கலாம்."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "இப்போது bitwarden.com-லிருந்து பதிவிறக்கு"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "கடவுச்சொல் மீண்டும் உருவாக்கப்பட்டது",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Black Mask இல் சேமி",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

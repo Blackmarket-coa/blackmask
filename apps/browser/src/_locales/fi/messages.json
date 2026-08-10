@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Luo tili"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Oletko uusi Black Mask-käyttäjä?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Kirjaudu ulos"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Tietoja Black Maskista"
   },
   "about": {
     "message": "Tietoja"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Lisää Black Maskilta"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Avataanko bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Luo perinteisistä salasanoista vapaita sujuvia ja turvallisia kirjautumisratkaisuja Passwordless.dev-palvelussa. Tutustu palveluun bitwarden.com-sivustolla."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Ilmainen Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Olet oikeutettu ilmaiseen Black Mask Families -tilaukseen. Lunasta tarjous verkkosovelluksessa tänään."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Kirjaudu"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Kirjaudu Black Maskiin"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Näytä automaattitäytön ehdotukset lomakekentissä"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "How does Black Mask protect your data from phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Kuvitus Black Maskin automaattitäytön valikosta, luodulla salasanalla."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Päivitä Black Maskissa"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask pyytää sinua sitten päivittämään salasanan salasanahallinnassa.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Kuvitus ilmoituksesta, jossa Black Mask tarjoaa kirjautumistiedon päivitystä."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Maskin automaattitäytön painike",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Kytke Black Maskin automaattitäytön valikko",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Lataa liite"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Lataa Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Lataa Black Mask kaikille laitteille"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Käytä holviasi ilman selainta ja aseta sitten lukitus biometriikan avulla nopeuttaaksesi lukituksen avaamista sekä työpöytäsovelluksessa että selaimessa."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Lataa bitwarden.comista nyt"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Salasana luotiin uudelleen",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Tallenna Black Maskiin",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

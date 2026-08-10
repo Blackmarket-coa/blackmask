@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "建立帳戶"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "第一次使用 Black Mask？"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "登出"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "關於 Black Mask"
   },
   "about": {
     "message": "關於"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "來自 Black Mask 的更多產品"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "前往 bitwarden.com？"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "使用 Passwordless.dev 建立流暢且安全的登入體驗，無需使用傳統密碼。在 bitwarden 網站上了解更多。"
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "免費的 Black Mask 家庭方案"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "您符合免費 Black Mask 家庭方案的資格要求。在網頁應用程式中兌換您的優惠。"
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "登入"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "登入 Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "在表單欄位上顯示自動填入選單"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Black Mask 如何保護您的資料免於網路釣魚攻擊？"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Black Mask 自動填入選單顯示產生密碼的示意圖。"
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "在 Black Mask 中更新"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "之後 Black Mask 會提示你在密碼管理器中更新該密碼。",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Black Mask 通知使用者更新登入資訊的示意圖。"
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask 自動填入選單按鈕",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "切換 Black Mask 自動填入選單",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "下載附件"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "下載 Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "在所有裝置上下載 Black Mask"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "在不使用瀏覽器的情況下存取你的密碼庫，然後設定生物辨識解鎖，以加快在桌面應用程式和瀏覽器擴充功能中的解鎖速度。"
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "立即前往 bitwarden.com 下載"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "密碼已重新產生",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "已儲存至 Black Mask。",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "下載 Black Mask 應用程式"
   },
   "emailProtected": {

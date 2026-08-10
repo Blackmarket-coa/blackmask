@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Stvori račun"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Novi u Black Masku?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Odjava"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "O Black Masku"
   },
   "about": {
     "message": "O aplikaciji"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Više od Black Maska"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Nastavi na bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Stvori laka i sigurna iskustva prijave bez tradicionalnih lozinki uz Passwordless.dev. Saznaj više na web stranici bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Besplatni Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Ispunjavaš uvjete za besplatni Black Mask Families. Iskoristi ovu ponudu u web aplikaciji već danas."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Prijavi se"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Prijavi se u Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Prikaži prijedloge auto-ispune na poljima obrazaca"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Kako Black Mask štiti tvoje podatke od phishinga?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Ilustracija Black Mask dijaloga auto-ispune s prikazom generirane lozinke."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Ažuriraj u Black Masku"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask će te pitati treba li ažurirati lozinku u upravitelju lozinki.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Ilustracija Black Mask upita za ažuriranje prijave."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Tipka izbornika Black Mask auto-ispune",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "U/isključivanje izbornika Black Mask auto-ispune",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Preuzmi privitak"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Preuzmi Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Preuzmi Black Mask na svim uređajima"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Pristupi svojem trezoru bez preglednika, a zatim postavi otključavanje biometrijom za brže otključavanje aplikacije za stolna računala i prošitenja preglednika."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Odmah preusmi s bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Lozinka re-generirana",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Spremi u Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "korisnik@bitwarden.com, korisnik@primjer.hr"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Preuzmi Black Mask aplikaciju"
   },
   "emailProtected": {

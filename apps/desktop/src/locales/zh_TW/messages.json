@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "篩選器"
@@ -491,10 +491,10 @@
     "message": "啟用 SSH 代理程式"
   },
   "enableSshAgentDesc": {
-    "message": "啟用 SSH 代理以從 Bitwarden 密碼庫直接簽署 SSH 請求。"
+    "message": "啟用 SSH 代理以從 Black Mask 密碼庫直接簽署 SSH 請求。"
   },
   "enableSshAgentHelp": {
-    "message": "SSH 代理是一個針對開發者的服務，它能夠直接從 Bitwarden 密碼庫簽署 SSH 請求。"
+    "message": "SSH 代理是一個針對開發者的服務，它能夠直接從 Black Mask 密碼庫簽署 SSH 請求。"
   },
   "sshAgentPromptBehavior": {
     "message": "使用 SSH 代理程式時要求授權"
@@ -524,7 +524,7 @@
     "message": "與瀏覽器同步"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "若要連線至 $VAULTURL$，您需要將預設瀏覽器與 Bitwarden 應用程式同步。瀏覽器同步完成後，您將被重新導向回此應用程式。",
+    "message": "若要連線至 $VAULTURL$，您需要將預設瀏覽器與 Black Mask 應用程式同步。瀏覽器同步完成後，您將被重新導向回此應用程式。",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "解密發生錯誤"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden 無法解密您密碼庫中下面的項目。"
+    "message": "Black Mask 無法解密您密碼庫中下面的項目。"
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "聯絡客戶支援部門",
@@ -1044,7 +1044,7 @@
     "message": "建立帳戶"
   },
   "newToBitwarden": {
-    "message": "第一次使用 Bitwarden?"
+    "message": "第一次使用 Black Mask?"
   },
   "setAStrongPassword": {
     "message": "設定一個強密碼"
@@ -1056,7 +1056,7 @@
     "message": "登入"
   },
   "logInToBitwarden": {
-    "message": "登入 Bitwarden"
+    "message": "登入 Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "輸入傳送到您電子郵件信箱的驗證碼"
@@ -1217,7 +1217,7 @@
     "message": "未預期的錯誤"
   },
   "closeThisBitwardenWindow": {
-    "message": "關閉此 Bitwarden 視窗後再試一次。"
+    "message": "關閉此 Black Mask 視窗後再試一次。"
   },
   "itemInformation": {
     "message": "項目資訊"
@@ -1291,7 +1291,7 @@
     "message": "驗證器應用程式"
   },
   "authenticatorAppDescV2": {
-    "message": "輸入驗證器應用程式產生的驗證碼，例如 Bitwarden 驗證器。",
+    "message": "輸入驗證器應用程式產生的驗證碼，例如 Black Mask 驗證器。",
     "description": "'Bitwarden Authenticator' is a product name and should not be translated."
   },
   "yubiKeyTitleV2": {
@@ -1348,7 +1348,7 @@
     "message": "自行部署環境"
   },
   "selfHostedBaseUrlHint": {
-    "message": "指定您自架的 Bitwarden 伺服器的網域 URL。例如：https://bitwarden.company.com"
+    "message": "指定您自架的 Black Mask 伺服器的網域 URL。例如：https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "適用於進階設定。您可以單獨指定各個服務的網域 URL。"
@@ -1439,7 +1439,7 @@
     "message": "確定要輪換帳戶的加密金鑰嗎？"
   },
   "updateEncryptionKeyWarning": {
-    "message": "更新加密金鑰後，您需要登出並重新登入目前使用的所有 Bitwarden 應用程式（如行動應用程式或瀏覽器擴充套件）。登出和重新登入（這會下載新的加密金鑰）失敗可能會導致資料損毀。我們將嘗試自動登出，但可能會有所延遲。"
+    "message": "更新加密金鑰後，您需要登出並重新登入目前使用的所有 Black Mask 應用程式（如行動應用程式或瀏覽器擴充套件）。登出和重新登入（這會下載新的加密金鑰）失敗可能會導致資料損毀。我們將嘗試自動登出，但可能會有所延遲。"
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "您保存的任何受限制匯出帳號將失效。"
@@ -1535,7 +1535,7 @@
     "message": "前往網頁應用程式嗎？"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "您可以在 Bitwarden 網頁應用程式上變更主密碼。"
+    "message": "您可以在 Black Mask 網頁應用程式上變更主密碼。"
   },
   "fingerprintPhrase": {
     "message": "指紋短語",
@@ -1714,13 +1714,13 @@
     "message": "登入時自動啟動"
   },
   "openAtLoginDesc": {
-    "message": "登入後自動啟動 Bitwarden 桌面應用程式。"
+    "message": "登入後自動啟動 Black Mask 桌面應用程式。"
   },
   "alwaysShowDock": {
     "message": "總是在 Dock 中顯示"
   },
   "alwaysShowDockDesc": {
-    "message": "即使最小化到選單列，也在 Dock 中顯示 Bitwarden 圖示。"
+    "message": "即使最小化到選單列，也在 Dock 中顯示 Black Mask 圖示。"
   },
   "confirmTrayTitle": {
     "message": "確認隱藏系統匣"
@@ -1888,13 +1888,13 @@
     "message": "購買進階會員資格"
   },
   "premiumPurchaseAlertV2": {
-    "message": "您可以在 Bitwarden 網頁應用程式的帳號設定中購買進階版。"
+    "message": "您可以在 Black Mask 網頁應用程式的帳號設定中購買進階版。"
   },
   "premiumCurrentMember": {
     "message": "您目前是進階會員！"
   },
   "premiumCurrentMemberThanks": {
-    "message": "感謝您支持 Bitwarden 。"
+    "message": "感謝您支持 Black Mask 。"
   },
   "premiumPrice": {
     "message": "每年只需 $PRICE$！",
@@ -2023,13 +2023,13 @@
     "description": "Bring all windows to front (foreground)"
   },
   "aboutBitwarden": {
-    "message": "關於 Bitwarden"
+    "message": "關於 Black Mask"
   },
   "services": {
     "message": "服務"
   },
   "hideBitwarden": {
-    "message": "隱藏 Bitwarden"
+    "message": "隱藏 Black Mask"
   },
   "hideOthers": {
     "message": "隱藏其他"
@@ -2038,7 +2038,7 @@
     "message": "顯示全部"
   },
   "quitBitwarden": {
-    "message": "結束 Bitwarden"
+    "message": "結束 Black Mask"
   },
   "valueCopied": {
     "message": "$VALUE$ 已複製",
@@ -2184,13 +2184,13 @@
     "message": "此密碼將用於匯出和匯入此檔案"
   },
   "accountRestrictedOptionDescription": {
-    "message": "使用衍生自您帳戶的使用者名稱與主密碼的加密金鑰，加密此匯出檔案，並限制只能匯入到目前的 Bitwarden 帳戶。"
+    "message": "使用衍生自您帳戶的使用者名稱與主密碼的加密金鑰，加密此匯出檔案，並限制只能匯入到目前的 Black Mask 帳戶。"
   },
   "passwordProtected": {
     "message": "密碼保護"
   },
   "passwordProtectedOptionDescription": {
-    "message": "設定一組檔案密碼來加密匯出的資料，並使用此密碼解密以匯入至任意 Bitwarden 帳戶。"
+    "message": "設定一組檔案密碼來加密匯出的資料，並使用此密碼解密以匯入至任意 Black Mask 帳戶。"
   },
   "exportTypeHeading": {
     "message": "匯出類型"
@@ -2224,7 +2224,7 @@
     "message": "將使用您帳戶的加密金鑰來加密匯出資料，若您更新了帳戶的加密金鑰，請重新匯出，才有辦法解密匯出的檔案。"
   },
   "encExportAccountWarningDesc": {
-    "message": "每個 Bitwarden 使用者帳戶的帳戶加密金鑰都不相同，因此無法將已加密匯出的檔案匯入至不同帳戶中。"
+    "message": "每個 Black Mask 使用者帳戶的帳戶加密金鑰都不相同，因此無法將已加密匯出的檔案匯入至不同帳戶中。"
   },
   "noOrganizationsList": {
     "message": "您沒有加入任何組織。組織允許您與其他使用者安全地共用項目。"
@@ -2254,7 +2254,7 @@
     "message": "脆弱的主密碼"
   },
   "weakMasterPasswordDesc": {
-    "message": "您設定的主密碼很脆弱。您應該使用高強度的密碼（或密碼短語）來正確保護您的 bitwarden 帳戶。仍要使用這組主密碼嗎？"
+    "message": "您設定的主密碼很脆弱。您應該使用高強度的密碼（或密碼短語）來正確保護您的 Black Mask 帳戶。仍要使用這組主密碼嗎？"
   },
   "pin": {
     "message": "PIN 碼",
@@ -2264,7 +2264,7 @@
     "message": "使用 PIN 碼解鎖"
   },
   "setYourPinCode": {
-    "message": "設定您用來解鎖 Bitwarden 的 PIN 碼。您的 PIN 設定將在您完全結束本應用程式時被重設。"
+    "message": "設定您用來解鎖 Black Mask 的 PIN 碼。您的 PIN 設定將在您完全結束本應用程式時被重設。"
   },
   "pinRequired": {
     "message": "需要 PIN 碼。"
@@ -2282,7 +2282,7 @@
     "message": "使用系統驗證解鎖"
   },
   "windowsHelloConsentMessage": {
-    "message": "驗證 Bitwarden。"
+    "message": "驗證 Black Mask。"
   },
   "unlockWithTouchId": {
     "message": "使用 Touch ID 解鎖"
@@ -2497,10 +2497,10 @@
     "message": "無縫兩步驟驗證"
   },
   "totpHelper": {
-    "message": "Bitwarden 可以儲存並填入兩步驟驗證碼。複製金鑰並貼上到此欄位。"
+    "message": "Black Mask 可以儲存並填入兩步驟驗證碼。複製金鑰並貼上到此欄位。"
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden 可以儲存並填入兩步驟驗證碼。選擇相機圖示來截取此網站的驗證器QR code，或手動複製金鑰並貼上到此欄位。"
+    "message": "Black Mask 可以儲存並填入兩步驟驗證碼。選擇相機圖示來截取此網站的驗證器QR code，或手動複製金鑰並貼上到此欄位。"
   },
   "premium": {
     "message": "進階版",
@@ -2586,7 +2586,7 @@
     "message": "一個或多個組織原則要求主密碼須符合下列條件："
   },
   "receiveMarketingEmailsV2": {
-    "message": "獲得來自 Bitwarden 的公告、建議及研究資訊電子郵件。"
+    "message": "獲得來自 Black Mask 的公告、建議及研究資訊電子郵件。"
   },
   "unsubscribe": {
     "message": "取消訂閱"
@@ -2616,7 +2616,7 @@
     "message": "允許 DuckDuckGo 瀏覽器整合"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "當使用 DuckDuckGo 瀏覽時，使用您的 Bitwarden 密碼庫。"
+    "message": "當使用 DuckDuckGo 瀏覽時，使用您的 Black Mask 密碼庫。"
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "不支援瀏覽器整合"
@@ -2640,7 +2640,7 @@
     "message": "核准"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ 想要連線至 Bitwarden",
+    "message": "$APPID$ 想要連線至 Black Mask",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "由 Bitwarden 生成。",
+    "message": "由 Black Mask 生成。",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "網站：$WEBSITE$。透過 Bitwarden 產生。",
+    "message": "網站：$WEBSITE$。透過 Black Mask 產生。",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "已傳送通知至您的裝置"
   },
   "notificationSentDevicePart1": {
-    "message": "在你的裝置或其他裝置上解鎖 Bitwarden"
+    "message": "在你的裝置或其他裝置上解鎖 Black Mask"
   },
   "notificationSentDeviceAnchor": {
     "message": "網頁應用程式"
@@ -3501,7 +3501,7 @@
     "message": "一旦您的請求被通過，您會獲得通知。"
   },
   "needAnotherOption": {
-    "message": "必須先在 Bitwarden 應用程式設定中開啟，才可以使用裝置登入。要改用其他選項嗎？"
+    "message": "必須先在 Black Mask 應用程式設定中開啟，才可以使用裝置登入。要改用其他選項嗎？"
   },
   "viewAllLogInOptions": {
     "message": "檢視所有登入選項"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "Bitwarden 建議更新您的生物特徵辨識設定，以便在首次解鎖時要求您的主密碼（或 PIN 碼）。您想立即更新您的設定嗎？"
+    "message": "Black Mask 建議更新您的生物特徵辨識設定，以便在首次解鎖時要求您的主密碼（或 PIN 碼）。您想立即更新您的設定嗎？"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "建議設定更新"
@@ -3766,7 +3766,7 @@
     "message": "什麼是裝置？"
   },
   "aDeviceIs": {
-    "message": "裝置是您登入 Bitwarden 應用程式的唯一安裝環境。重新安裝、清除應用程式資料或清除 Cookie 可能導致裝置出現多次。"
+    "message": "裝置是您登入 Black Mask 應用程式的唯一安裝環境。重新安裝、清除應用程式資料或清除 Cookie 可能導致裝置出現多次。"
   },
   "deviceListDescriptionTemp": {
     "message": "你的帳號已在下列各裝置登入。"
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI 匹配偵測是 Bitwarden 用來識別自動填入建議的方式。",
+    "message": "URI 匹配偵測是 Black Mask 用來識別自動填入建議的方式。",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "下載後將診斷報告分享給"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden 支援團隊",
+    "message": "Black Mask 支援團隊",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "由於系統檔案不正確，生物辨識解鎖無法使用。"
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "由於未在 Bitwarden 桌面應用程式的 $EMAIL$ 帳號上啟動，生物辨識解鎖無法使用。",
+    "message": "由於未在 Black Mask 桌面應用程式的 $EMAIL$ 帳號上啟動，生物辨識解鎖無法使用。",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "啟動兩階段登入"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "從 2025 年 2 月開始，Bitwarden 會傳送代碼到您的帳號電子郵件中來驗證新裝置的登入。"
+    "message": "從 2025 年 2 月開始，Black Mask 會傳送代碼到您的帳號電子郵件中來驗證新裝置的登入。"
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "您可以啟動兩階段認證來保護您的帳號或更改您可以存取的電子郵件位址。"
@@ -4470,7 +4470,7 @@
     "message": "允許螢幕擷取"
   },
   "allowScreenshotsDesc": {
-    "message": "允許 Bitwarden 桌面應用程式可被截圖或在遠端桌面工作階段中顯示。停用此功能將會限制在部分外接螢幕上的存取。"
+    "message": "允許 Black Mask 桌面應用程式可被截圖或在遠端桌面工作階段中顯示。停用此功能將會限制在部分外接螢幕上的存取。"
   },
   "confirmWindowStillVisibleTitle": {
     "message": "確認視窗仍可見"
@@ -4607,7 +4607,7 @@
     "message": "關於此設定"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden 會使用已儲存的登入 URI 來判斷應顯示的圖示或變更密碼網址，以改善你的使用體驗。使用此服務時，不會收集或儲存任何資訊。"
+    "message": "Black Mask 會使用已儲存的登入 URI 來判斷應顯示的圖示或變更密碼網址，以改善你的使用體驗。使用此服務時，不會收集或儲存任何資訊。"
   },
   "assignToCollections": {
     "message": "指派至集合"
@@ -4750,7 +4750,7 @@
     "message": "顯示較少"
   },
   "enableAutotypeDescription": {
-    "message": "Bitwarden 不會驗證輸入位置，請在使用快捷鍵前確認你位於正確的視窗與欄位中。"
+    "message": "Black Mask 不會驗證輸入位置，請在使用快捷鍵前確認你位於正確的視窗與欄位中。"
   },
   "typeShortcut": {
     "message": "輸入快捷鍵"
@@ -4868,7 +4868,7 @@
     "message": "升級到 Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "您的組織已不再使用主密碼登入 Bitwarden。若要繼續，請驗證組織與網域。"
+    "message": "您的組織已不再使用主密碼登入 Black Mask。若要繼續，請驗證組織與網域。"
   },
   "continueWithLogIn": {
     "message": "繼續登入"
@@ -5111,10 +5111,10 @@
     "message": "請以逗號分隔輸入多個電子郵件地址。"
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "reorderToggleButton": {
     "message": "重新排序 $LABEL$。使用方向鍵來往上或下移動。",
