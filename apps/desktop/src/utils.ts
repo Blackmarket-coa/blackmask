@@ -93,10 +93,13 @@ export function cleanUserAgent(userAgent: string): string {
   };
   const systemInformation = "(Windows NT 10.0; Win64; x64)";
 
-  // Set system information, remove bitwarden, and electron information
+  // Set system information, remove the app name, and electron information.
+  // The product name contains a space, so the space-delimited helper above cannot match it —
+  // it would stop inside "Black Mask" and leave "Mask/<version>" behind, which would let
+  // external resources fingerprint our users. Match the whole `name/version` token instead.
   return userAgent
     .replace(userAgentItem("(", ")"), systemInformation)
-    .replace(userAgentItem("Bitwarden", " "), "")
+    .replace(/Black Mask\/\S*\s?/, "")
     .replace(userAgentItem("Electron", " "), "");
 }
 
