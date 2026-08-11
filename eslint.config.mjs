@@ -17,6 +17,31 @@ import componentPlugins from "./libs/eslint/components/index.mjs";
 
 export default tseslint.config(
   ...storybook.configs["flat/recommended"],
+
+  // `tailwindcss/no-custom-classname` globs CSS itself to collect known class names, and that
+  // glob does NOT respect ESLint's `ignores`. Left at its default it parses the vendored tree and
+  // dies on third_party/adguard-ios/AdguardExtension/ActionExtension/js/selector.css, which is
+  // not valid CSS ("Unknown word This" at 2:4) — the only unparseable CSS in the repository.
+  // This is the plugin's own default (lib/util/settings.js) plus a third_party exclusion.
+  //
+  // It has to live in a config object with no `files`, which is what makes settings apply to
+  // every file. Scoping it to "**/*.ts"/"**/*.js" does not reach the rule when it runs against
+  // .storybook/preview-head.html, which is exactly where the crash surfaces.
+  {
+    settings: {
+      tailwindcss: {
+        cssFiles: [
+          "**/*.css",
+          "!**/node_modules",
+          "!**/.*",
+          "!**/dist",
+          "!**/build",
+          "!third_party/**",
+        ],
+      },
+    },
+  },
+
   {
     // Everything in this config object targets our TypeScript files (Components, Directives, Pipes etc)
     files: ["**/*.ts", "**/*.js"],
@@ -53,22 +78,6 @@ export default tseslint.config(
         typescript: {
           alwaysTryTypes: true,
         },
-      },
-      tailwindcss: {
-        // `tailwindcss/no-custom-classname` globs CSS itself to collect known class names, and
-        // that glob does NOT respect ESLint's `ignores`. Left at its default it parses the
-        // vendored tree and dies on
-        // third_party/adguard-ios/AdguardExtension/ActionExtension/js/selector.css, which is not
-        // valid CSS ("Unknown word This" at 2:4) — the only unparseable CSS in the repository.
-        // This is the plugin default (lib/util/settings.js) plus the third_party exclusion.
-        cssFiles: [
-          "**/*.css",
-          "!**/node_modules",
-          "!**/.*",
-          "!**/dist",
-          "!**/build",
-          "!third_party/**",
-        ],
       },
     },
     processor: angular.processInlineTemplates,
