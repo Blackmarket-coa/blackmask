@@ -54,6 +54,22 @@ export default tseslint.config(
           alwaysTryTypes: true,
         },
       },
+      tailwindcss: {
+        // `tailwindcss/no-custom-classname` globs CSS itself to collect known class names, and
+        // that glob does NOT respect ESLint's `ignores`. Left at its default it parses the
+        // vendored tree and dies on
+        // third_party/adguard-ios/AdguardExtension/ActionExtension/js/selector.css, which is not
+        // valid CSS ("Unknown word This" at 2:4) — the only unparseable CSS in the repository.
+        // This is the plugin default (lib/util/settings.js) plus the third_party exclusion.
+        cssFiles: [
+          "**/*.css",
+          "!**/node_modules",
+          "!**/.*",
+          "!**/dist",
+          "!**/build",
+          "!third_party/**",
+        ],
+      },
     },
     processor: angular.processInlineTemplates,
     rules: {
