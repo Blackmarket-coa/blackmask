@@ -47,6 +47,7 @@ jobs:
             ! -path "*/.DS_Store" \
             ! -path "*/*locales/*" \
             ! -path "./.github/*" \
+            ! -path "./third_party/*" \
             ! -path "*/README.md" \
             ! -path "*/Cargo.toml" \
             ! -path "*/Cargo.lock" \

@@ -379,6 +379,17 @@
       commitMessagePrefix: "[deps] DIRT:",
       reviewers: ["team:team-data-insights-and-reporting-dev"],
     },
+    {
+      // Dependencies added by Black Mask. No `reviewers` — the upstream Bitwarden teams
+      // referenced above do not exist in this fork.
+      matchPackageNames: [
+        "@fontsource/archivo-black",
+        "@fontsource/ibm-plex-sans",
+        "@huggingface/transformers",
+      ],
+      description: "Black Mask owned dependencies",
+      commitMessagePrefix: "[deps] Black Mask:",
+    },
 
     // ==================== Grouping Rules ====================
     // These come after any specific team assignment rules to ensure
