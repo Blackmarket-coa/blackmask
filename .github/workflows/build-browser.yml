@@ -86,10 +86,16 @@ jobs:
         with:
           persist-credentials: false
 
+      # `git archive` reads the git index rather than walking the filesystem. `zip -r` cannot be
+      # used here: third_party/arti/maint/rust-maint-common contains self-referential symlinks
+      # (`common -> .`, `maint -> .`) that send it into infinite recursion.
+      #
+      # third_party/ is excluded: it is vendored reference material that nothing in the extension
+      # build references (the SDK packages resolve from npm), and including it takes the archive
+      # from 44 MB to 544 MB. What remains is the full source the build actually consumes —
+      # apps/, libs/, package.json and package-lock.json.
       - name: Create source archive
-        run: |
-          rm -rf .git
-          zip -r browser-source.zip . -x '*/node_modules/*'
+        run: git archive --format=zip -o browser-source.zip HEAD -- ':(exclude)third_party'
 
       - name: Upload source artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
