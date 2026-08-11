@@ -8,5 +8,10 @@
     "apps/browser/src/autofill/content/components/.lit-storybook/main.ts"
   ],
   "include": ["apps/**/*", "libs/**/*", "bitwarden_license/**/*", "scripts/**/*"],
-  "exclude": ["**/build", "**/dist"]
+  // `resolveJsonModule` makes the include globs above match .json too, which pulled all ~56 MB of
+  // translated locale files into the type-aware lint program and exhausted Node's heap. ESLint
+  // never lints JSON, so they only ever cost memory. `exclude` drops them as *root* files only —
+  // apps/web/src/app/core/tests/preloaded-english-i18n.module.ts imports en/messages.json, and
+  // TypeScript still resolves that through the import.
+  "exclude": ["**/build", "**/dist", "**/locales/**", "**/_locales/**"]
 }
