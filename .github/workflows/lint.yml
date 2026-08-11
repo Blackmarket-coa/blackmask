@@ -81,11 +81,8 @@ jobs:
         run: npm run lint:sdk-internal-versions
 
       - name: Run linter
-        # Type-aware ESLint over this monorepo peaks at ~10.4 GB RSS (measured), above Node's
-        # ~8.2 GB default heap on a 16 GB runner, so it aborts with "Ineffective mark-compacts
-        # near heap limit". 12 GB clears the measured peak with headroom to spare.
-        env:
-          NODE_OPTIONS: --max-old-space-size=12288
+        # The heap ceiling for this lives in .npmrc (`node-options`); setting NODE_OPTIONS here
+        # would have no effect, because npm overrides it for every script it runs.
         run: npm run lint
 
   rust:
