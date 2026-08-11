@@ -20,6 +20,25 @@ describe("PersonaService", () => {
   let generatorService: MockProxy<CredentialGeneratorService>;
   let service: PersonaService;
 
+  function personaCipher(id: string, name: string, layer?: string, email?: string): CipherView {
+    const cipher = new CipherView();
+    cipher.id = id;
+    cipher.type = CipherType.Identity;
+    cipher.name = name;
+    cipher.identity = new IdentityView();
+    if (email) {
+      cipher.identity.email = email;
+    }
+    if (layer) {
+      const field = new FieldView();
+      field.name = PERSONA_LAYER_FIELD_NAME;
+      field.value = layer;
+      field.type = FieldType.Text;
+      cipher.fields = [field];
+    }
+    return cipher;
+  }
+
   beforeEach(() => {
     accountService = mock<AccountService>();
     accountService.activeAccount$ = of({ id: userId } as Account);
@@ -73,6 +92,99 @@ describe("PersonaService", () => {
     });
   });
 
+  describe("getPersona", () => {
+    it("returns the persona including its notes", async () => {
+      const cipher = personaCipher("p1", "Jane", PersonaLayer.Creator, "jane@example.com");
+      cipher.notes = "a note";
+      cipherService.cipherViews$.mockReturnValue(of([cipher]));
+
+      await expect(service.getPersona("p1")).resolves.toEqual({
+        id: "p1",
+        name: "Jane",
+        layer: PersonaLayer.Creator,
+        email: "jane@example.com",
+        notes: "a note",
+      });
+    });
+
+    it("returns undefined for an id that is not a persona", async () => {
+      cipherService.cipherViews$.mockReturnValue(of([personaCipher("p1", "Jane")]));
+
+      await expect(service.getPersona("p1")).resolves.toBeUndefined();
+    });
+  });
+
+  describe("updatePersona", () => {
+    beforeEach(() => {
+      cipherService.updateWithServer.mockImplementation(async (cipher) => cipher as CipherView);
+      cipherService.getFullCipherView.mockImplementation(async (c) => c as CipherView);
+    });
+
+    it("preserves custom fields the user added alongside the layer tag", async () => {
+      const cipher = personaCipher("p1", "Jane", PersonaLayer.Anonymous);
+      const custom = new FieldView();
+      custom.name = "Recovery code";
+      custom.value = "abc123";
+      custom.type = FieldType.Hidden;
+      cipher.fields = [custom, ...(cipher.fields ?? [])];
+      cipherService.cipherViews$.mockReturnValue(of([cipher]));
+
+      await service.updatePersona({ id: "p1", name: "Jane", layer: PersonaLayer.Business });
+
+      const [saved] = cipherService.updateWithServer.mock.calls[0];
+      expect(saved.fields).toHaveLength(2);
+      const preserved = saved.fields.find((f) => f.name === "Recovery code");
+      expect(preserved?.value).toBe("abc123");
+      expect(preserved?.type).toBe(FieldType.Hidden);
+    });
+
+    it("moves the persona to the new layer without duplicating the tag", async () => {
+      cipherService.cipherViews$.mockReturnValue(
+        of([personaCipher("p1", "Jane", PersonaLayer.Anonymous)]),
+      );
+
+      await service.updatePersona({ id: "p1", name: "Jane", layer: PersonaLayer.Real });
+
+      const [saved] = cipherService.updateWithServer.mock.calls[0];
+      const layerFields = saved.fields.filter((f) => f.name === PERSONA_LAYER_FIELD_NAME);
+      expect(layerFields).toHaveLength(1);
+      expect(layerFields[0].value).toBe(PersonaLayer.Real);
+    });
+
+    it("clears email and notes when they are emptied", async () => {
+      const cipher = personaCipher("p1", "Jane", PersonaLayer.Real, "jane@example.com");
+      cipher.notes = "a note";
+      cipherService.cipherViews$.mockReturnValue(of([cipher]));
+
+      await service.updatePersona({ id: "p1", name: "Jane", layer: PersonaLayer.Real });
+
+      const [saved] = cipherService.updateWithServer.mock.calls[0];
+      expect(saved.identity.email).toBeUndefined();
+      expect(saved.notes).toBeUndefined();
+    });
+
+    it("re-splits the name across the identity fields", async () => {
+      cipherService.cipherViews$.mockReturnValue(
+        of([personaCipher("p1", "Jane", PersonaLayer.Real)]),
+      );
+
+      await service.updatePersona({ id: "p1", name: "Mary Jane Doe", layer: PersonaLayer.Real });
+
+      const [saved] = cipherService.updateWithServer.mock.calls[0];
+      expect(saved.identity.firstName).toBe("Mary");
+      expect(saved.identity.lastName).toBe("Jane Doe");
+    });
+
+    it("throws when the id is not a persona", async () => {
+      cipherService.cipherViews$.mockReturnValue(of([]));
+
+      await expect(
+        service.updatePersona({ id: "missing", name: "Jane", layer: PersonaLayer.Real }),
+      ).rejects.toThrow("Persona not found.");
+      expect(cipherService.updateWithServer).not.toHaveBeenCalled();
+    });
+  });
+
   describe("generateAlias", () => {
     it("returns the credential produced by the generator", async () => {
       generatorService.generate$.mockReturnValue(
@@ -87,25 +199,6 @@ describe("PersonaService", () => {
   });
 
   describe("personas$", () => {
-    function identityCipher(id: string, name: string, layer?: string, email?: string): CipherView {
-      const cipher = new CipherView();
-      cipher.id = id;
-      cipher.type = CipherType.Identity;
-      cipher.name = name;
-      cipher.identity = new IdentityView();
-      if (email) {
-        cipher.identity.email = email;
-      }
-      if (layer) {
-        const field = new FieldView();
-        field.name = PERSONA_LAYER_FIELD_NAME;
-        field.value = layer;
-        field.type = FieldType.Text;
-        cipher.fields = [field];
-      }
-      return cipher;
-    }
-
     it("returns only Identity ciphers tagged with a known layer", async () => {
       const login = new CipherView();
       login.id = "login-1";
@@ -114,8 +207,8 @@ describe("PersonaService", () => {
 
       cipherService.cipherViews$.mockReturnValue(
         of([
-          identityCipher("p1", "Jane", PersonaLayer.Anonymous, "jane@example.com"),
-          identityCipher("p2", "Plain identity"),
+          personaCipher("p1", "Jane", PersonaLayer.Anonymous, "jane@example.com"),
+          personaCipher("p2", "Plain identity"),
           login,
         ]),
       );

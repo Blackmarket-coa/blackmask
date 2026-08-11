@@ -1,0 +1,61 @@
+<popup-page [loading]="loading()">
+  <popup-header slot="header" [pageTitle]="'blackMaskEditPersona' | i18n" showBackButton>
+    <ng-container slot="end">
+      <app-pop-out></app-pop-out>
+    </ng-container>
+  </popup-header>
+
+  @if (notFound()) {
+    <p class="tw-mt-4 tw-text-center tw-text-muted">{{ "blackMaskPersonaNotFound" | i18n }}</p>
+  } @else if (!loading()) {
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <bit-card>
+        <bit-form-field>
+          <bit-label>{{ "blackMaskPersonaLayer" | i18n }}</bit-label>
+          <bit-select formControlName="layer">
+            @for (option of layerOptions; track option.value) {
+              <bit-option [value]="option.value" [label]="option.label"></bit-option>
+            }
+          </bit-select>
+        </bit-form-field>
+
+        <bit-form-field>
+          <bit-label>{{ "name" | i18n }}</bit-label>
+          <input bitInput formControlName="name" id="edit-persona_input_name" />
+        </bit-form-field>
+
+        <bit-form-field>
+          <bit-label>{{ "email" | i18n }}</bit-label>
+          <input bitInput type="email" formControlName="email" id="edit-persona_input_email" />
+        </bit-form-field>
+
+        <button
+          type="button"
+          bitButton
+          buttonType="secondary"
+          [loading]="generatingAlias()"
+          (click)="generateAlias()"
+          id="edit-persona_button_generate-alias"
+        >
+          {{ "blackMaskGenerateAlias" | i18n }}
+        </button>
+
+        <bit-form-field>
+          <bit-label>{{ "notes" | i18n }}</bit-label>
+          <textarea bitInput formControlName="notes" id="edit-persona_input_notes"></textarea>
+        </bit-form-field>
+      </bit-card>
+
+      <button
+        type="submit"
+        bitButton
+        buttonType="primary"
+        [block]="true"
+        [loading]="saving()"
+        id="edit-persona_button_save"
+      >
+        {{ "save" | i18n }}
+      </button>
+    </form>
+  }
+</popup-page>

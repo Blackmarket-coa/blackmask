@@ -6747,6 +6747,15 @@
   "blackMaskPersonaCreated": {
     "message": "Persona created"
   },
+  "blackMaskEditPersona": {
+    "message": "Edit persona"
+  },
+  "blackMaskPersonaUpdated": {
+    "message": "Persona updated"
+  },
+  "blackMaskPersonaNotFound": {
+    "message": "This persona is no longer in your vault."
+  },
   "blackMaskPersonas": {
     "message": "Personas"
   },

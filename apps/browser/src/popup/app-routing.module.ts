@@ -75,6 +75,7 @@ import { RouteCacheOptions } from "../platform/services/popup-view-cache-backgro
 import { AiMediaDetectorComponent } from "../privacy/popup/ai-media-detector.component";
 import { CreatePersonaComponent } from "../privacy/popup/create-persona.component";
 import { DataExposureComponent } from "../privacy/popup/data-exposure.component";
+import { EditPersonaComponent } from "../privacy/popup/edit-persona.component";
 import { FingerprintComponent } from "../privacy/popup/fingerprint.component";
 import { PersonaContainersComponent } from "../privacy/popup/persona-containers.component";
 import { PersonasComponent } from "../privacy/popup/personas.component";
@@ -397,6 +398,12 @@ const routes: Routes = [
   {
     path: "create-persona",
     component: CreatePersonaComponent,
+    canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaVault)],
+    data: { elevation: 2 } satisfies RouteDataProperties,
+  },
+  {
+    path: "edit-persona",
+    component: EditPersonaComponent,
     canActivate: [authGuard, canAccessFeature(FeatureFlag.BlackMaskPersonaVault)],
     data: { elevation: 2 } satisfies RouteDataProperties,
   },

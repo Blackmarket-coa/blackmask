@@ -32,12 +32,22 @@ export interface CreatePersonaRequest {
   notes?: string;
 }
 
+export interface UpdatePersonaRequest extends CreatePersonaRequest {
+  /** Id of the Identity cipher backing the persona. */
+  id: string;
+}
+
 /** A persona surfaced from the vault: an Identity cipher tagged with a layer. */
 export interface Persona {
   id: string;
   name: string;
   layer: PersonaLayer;
   email?: string;
+}
+
+/** A persona plus the fields only needed when editing one. */
+export interface PersonaDetail extends Persona {
+  notes?: string;
 }
 
 /** Type guard for the known persona layers. */
@@ -80,31 +90,74 @@ export class PersonaService {
 
     const cipher = new CipherView();
     cipher.type = CipherType.Identity;
-    cipher.name = request.name;
-    if (request.notes) {
-      cipher.notes = request.notes;
-    }
-
-    const identity = new IdentityView();
-    const [firstName, ...rest] = request.name.trim().split(/\s+/);
-    if (firstName) {
-      identity.firstName = firstName;
-    }
-    if (rest.length > 0) {
-      identity.lastName = rest.join(" ");
-    }
-    if (request.email) {
-      identity.email = request.email;
-    }
-    cipher.identity = identity;
-
-    const layerField = new FieldView();
-    layerField.name = PERSONA_LAYER_FIELD_NAME;
-    layerField.value = request.layer;
-    layerField.type = FieldType.Text;
-    cipher.fields = [layerField];
+    this.applyRequest(cipher, request);
 
     return this.cipherService.createWithServer(cipher, userId);
+  }
+
+  /** Reads a single persona, or `undefined` when the id is not a persona the user owns. */
+  async getPersona(id: string): Promise<PersonaDetail | undefined> {
+    const cipher = await this.findPersonaCipher(id);
+    if (cipher == null) {
+      return undefined;
+    }
+    const persona = this.toPersona(cipher);
+    return persona && { ...persona, notes: cipher.notes };
+  }
+
+  /**
+   * Updates an existing persona in place.
+   * @throws when the id does not resolve to a persona.
+   */
+  async updatePersona(request: UpdatePersonaRequest): Promise<CipherView> {
+    const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
+
+    const existing = await this.findPersonaCipher(request.id);
+    if (existing == null) {
+      throw new Error("Persona not found.");
+    }
+
+    const cipher = await this.cipherService.getFullCipherView(existing);
+    this.applyRequest(cipher, request);
+
+    return this.cipherService.updateWithServer(cipher, userId);
+  }
+
+  /** Writes a create/update request onto a cipher, shared so create and edit cannot drift apart. */
+  private applyRequest(cipher: CipherView, request: CreatePersonaRequest): void {
+    cipher.name = request.name;
+    // Assign rather than guard on truthiness: clearing the field in the editor has to clear it
+    // on the cipher too.
+    cipher.notes = request.notes;
+
+    const identity = cipher.identity ?? new IdentityView();
+    const [firstName, ...rest] = request.name.trim().split(/\s+/);
+    identity.firstName = firstName || undefined;
+    identity.lastName = rest.length > 0 ? rest.join(" ") : undefined;
+    identity.email = request.email;
+    cipher.identity = identity;
+
+    cipher.fields = this.withLayerField(cipher.fields, request.layer);
+  }
+
+  /**
+   * Returns the cipher's fields with the layer tag set, preserving every other custom field.
+   * Replacing the whole array here would silently discard custom fields the user added by hand.
+   */
+  private withLayerField(fields: FieldView[] | undefined, layer: PersonaLayer): FieldView[] {
+    const layerField = new FieldView();
+    layerField.name = PERSONA_LAYER_FIELD_NAME;
+    layerField.value = layer;
+    layerField.type = FieldType.Text;
+
+    const others = (fields ?? []).filter((field) => field.name !== PERSONA_LAYER_FIELD_NAME);
+    return [...others, layerField];
+  }
+
+  private async findPersonaCipher(id: string): Promise<CipherView | undefined> {
+    const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
+    const ciphers = await firstValueFrom(this.cipherService.cipherViews$(userId));
+    return ciphers.find((cipher) => cipher.id === id && this.toPersona(cipher) != null);
   }
 
   /** Streams the user's personas (Identity ciphers tagged with a layer), excluding deleted items. */
