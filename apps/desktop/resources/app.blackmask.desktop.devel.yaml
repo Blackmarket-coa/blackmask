@@ -1,10 +1,10 @@
-app-id: com.bitwarden.desktop
+app-id: app.blackmask.desktop
 runtime: org.freedesktop.Platform
 runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: "24.08"
-command: bitwarden.sh
+command: blackmask.sh
 finish-args:
   - --share=ipc
   - --share=network
@@ -45,17 +45,17 @@ finish-args:
   # Firefox does not create NMHS directory by default
   - --filesystem=~/.var/app/org.mozilla.firefox/.mozilla/
 modules:
-  - name: bitwarden-desktop
+  - name: blackmask-desktop
     buildsystem: simple
     build-commands:
       - mkdir -p /app/bin
-      - mkdir -p /app/bin/Bitwarden/
+      - mkdir -p /app/bin/BlackMask/
       - cp -r ./* /app/bin/
       - mkdir -p ${FLATPAK_DEST}/share/applications/
-      - cp com.bitwarden.desktop.desktop ${FLATPAK_DEST}/share/applications/
-      - install bitwarden.sh /app/bin/bitwarden.sh
-      - desktop-file-edit --set-key=Exec --set-value="bitwarden.sh %U" ${FLATPAK_DEST}/share/applications/com.bitwarden.desktop.desktop
-      - for s in 16 32 64 128 256 512; do install -Dm644 icons/${s}x${s}.png ${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/com.bitwarden.desktop.png; done
+      - cp app.blackmask.desktop.desktop ${FLATPAK_DEST}/share/applications/
+      - install blackmask.sh /app/bin/blackmask.sh
+      - desktop-file-edit --set-key=Exec --set-value="blackmask.sh %U" ${FLATPAK_DEST}/share/applications/app.blackmask.desktop.desktop
+      - for s in 16 32 64 128 256 512; do install -Dm644 icons/${s}x${s}.png ${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/app.blackmask.desktop.png; done
     sources:
       - type: dir
         only-arches: [x86_64]
@@ -64,12 +64,12 @@ modules:
         only-arches: [aarch64]
         path: ../dist/linux-arm64-unpacked
       - type: file
-        path: ./com.bitwarden.desktop.desktop
+        path: ./app.blackmask.desktop.desktop
       - type: dir
         path: ./icons
         dest: icons
       - type: script
-        dest-filename: bitwarden.sh
+        dest-filename: blackmask.sh
         commands:
           - ulimit -c 0
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
@@ -79,4 +79,4 @@ modules:
           - if [ "$USE_X11" != "false" ]; then
           - PARAMS="--ozone-platform=x11"
           - fi
-          - exec zypak-wrapper /app/bin/bitwarden-app "$@" "$PARAMS"
+          - exec zypak-wrapper /app/bin/blackmask-app "$@" "$PARAMS"

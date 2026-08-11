@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Создать аккаунт"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Впервые на Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Выход"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "О Black Mask"
   },
   "about": {
     "message": "О Black Mask"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Больше от Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Продолжить на bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Создавайте удобную и безопасную авторизацию без традиционных паролей с помощью Passwordless.dev. Узнайте больше на bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Бесплатный план Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Вам доступно бесплатное предложение Black Mask Families. Воспользуйтесь этим предложением сегодня в веб-приложении."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Войти"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Войти в Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Показывать предположения автозаполнения в полях формы"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Как Black Mask защищает ваши данные от фишинга?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Иллюстрация меню автозаполнения Black Mask, отображающего сгенерированный пароль."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Обновить в Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "После этого Black Mask предложит вам обновить пароль в менеджере паролей.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Иллюстрация уведомления Black Mask, предлагающего пользователю обновить логин."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Кнопка меню автозаполнения Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Вкл/выкл меню автозаполнения Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Скачать вложение"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Скачать Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Скачать Black Mask на все устройства"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Получите доступ к хранилищу без браузера, затем настройте разблокировку с помощью биометрии для ускорения разблокировки в приложении для компьютера и расширении браузера."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Скачать с bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Пароль сгенерирован",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Сохранить в Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Скачать приложения Black Mask"
   },
   "emailProtected": {

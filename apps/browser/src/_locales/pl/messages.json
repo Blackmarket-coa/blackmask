@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Utwórz konto"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Nowy w Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Wyloguj się"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "O Black Mask"
   },
   "about": {
     "message": "O aplikacji"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Więcej od Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Kontynuować przejście do bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Loguj się szybko i bezpiecznie bez tradycyjnych haseł za pomocą usługi Passwordless.dev. Dowiedz się więcej na stronie bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Darmowy plan rodzinny"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Kwalifikujesz się do bezpłatnego planu rodzinnego. Skorzystaj z oferty już dziś w aplikacji internetowej."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Zaloguj się"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Zaloguj się do Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Pokaż sugestie autouzupełniania na polach formularza"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Jak Black Mask chroni Twoje dane przed phishingiem?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Ilustracja menu autouzupełniania Black Mask pokazująca wygenerowane hasło."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Zaktualizuj w Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask zaproponuje aktualizację hasła w menedżerze haseł.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Ilustracja powiadomienia Black Mask, zachęcająca użytkownika do zaktualizowania danych logowania."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Przycisk menu autouzupełniania Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Przełącz menu autouzupełniania Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Pobierz załącznik"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Pobierz Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Black Mask na inne urządzenia"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Uzyskaj dostęp do sejfu bez przeglądarki. Skonfiguruj biometrię, aby przyśpieszyć odblokowywanie aplikacji."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Pobierz z bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Hasło zostało ponownie wygenerowane",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Zapisz w Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Pobierz aplikacje Black Mask"
   },
   "emailProtected": {

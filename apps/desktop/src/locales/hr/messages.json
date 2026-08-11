@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "Filtri"
@@ -491,10 +491,10 @@
     "message": "Uključi SSH agent"
   },
   "enableSshAgentDesc": {
-    "message": "Uključi SSH agent za potpis SSH zahtjeva direktno iz tvog Bitwarden trezora."
+    "message": "Uključi SSH agent za potpis SSH zahtjeva direktno iz tvog Black Mask trezora."
   },
   "enableSshAgentHelp": {
-    "message": "SSH agent je servis namijenjen developerima koji omogućuje potpisivanje SSH zahtjeva izravno iz tvojeg Bitwarden trezora."
+    "message": "SSH agent je servis namijenjen developerima koji omogućuje potpisivanje SSH zahtjeva izravno iz tvojeg Black Mask trezora."
   },
   "sshAgentPromptBehavior": {
     "message": "Traži autorizaciju pri korištenju SSH agenta"
@@ -524,7 +524,7 @@
     "message": "Sinkrozniziraj s preglednikom"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "Za povezivanje s $VAULTURL$, moraš sinkronizirati svoj zadani preglednik s aplikacijom Bitwarden. Bit ćeš preusmjeren/a natrag na ovu aplikaciju nakon što se tvoj preglednik sinkronizira.",
+    "message": "Za povezivanje s $VAULTURL$, moraš sinkronizirati svoj zadani preglednik s aplikacijom Black Mask. Bit ćeš preusmjeren/a natrag na ovu aplikaciju nakon što se tvoj preglednik sinkronizira.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "Pogreška pri dešifriranju"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden nije mogao dešifrirati sljedeće stavke trezora."
+    "message": "Black Mask nije mogao dešifrirati sljedeće stavke trezora."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Kontaktiraj službu za korisnike",
@@ -1044,7 +1044,7 @@
     "message": "Stvori račun"
   },
   "newToBitwarden": {
-    "message": "Novi u Bitwardenu?"
+    "message": "Novi u Black Masku?"
   },
   "setAStrongPassword": {
     "message": "Postavi jaku lozinku"
@@ -1056,7 +1056,7 @@
     "message": "Prijavi se"
   },
   "logInToBitwarden": {
-    "message": "Prijavi se u Bitwarden"
+    "message": "Prijavi se u Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Unesi kôd poslan e-poštom"
@@ -1217,7 +1217,7 @@
     "message": "Neočekivana greška"
   },
   "closeThisBitwardenWindow": {
-    "message": "Zatvori Bitwarden prozor i pokušaj ponovno."
+    "message": "Zatvori Black Mask prozor i pokušaj ponovno."
   },
   "itemInformation": {
     "message": "Informacije o stavci"
@@ -1348,7 +1348,7 @@
     "message": "Vlastito hosting okruženje"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Navedi osnovni URL svoje lokalne Bitwarden instalacije, npr.: https://bitwarden.tvrtka.hr"
+    "message": "Navedi osnovni URL svoje lokalne Black Mask instalacije, npr.: https://Black Mask.tvrtka.hr"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Kao naprednu postavku, možeš odrediti osnovni URL svake usluge zasebno."
@@ -1439,7 +1439,7 @@
     "message": "Sigurno želiš rotirati ključ za šifriranje svojeg računa?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "Nakon ažuriranja svojeg ključa za šifriranje, obavezno se trebaš odjaviti i ponovno prijaviti u sve Bitwarden aplikacije koje trenutno koristiš (npr. mobilna aplikacija, proširenje preglednika, ...). Ako se ne odjaviš i ponovno prijaviš (čime se preuzima tvoj novi ključ za šifriranje) može doći do oštećenja spremljenih podataka. Pokušati ćemo te automatski odjaviti, no, to bi možda moglo potrajati."
+    "message": "Nakon ažuriranja svojeg ključa za šifriranje, obavezno se trebaš odjaviti i ponovno prijaviti u sve Black Mask aplikacije koje trenutno koristiš (npr. mobilna aplikacija, proširenje preglednika, ...). Ako se ne odjaviš i ponovno prijaviš (čime se preuzima tvoj novi ključ za šifriranje) može doći do oštećenja spremljenih podataka. Pokušati ćemo te automatski odjaviti, no, to bi možda moglo potrajati."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Svi prethodni izvozi ograničeni ovim računom postati će nevažeći."
@@ -1535,7 +1535,7 @@
     "message": "Nastavi na web aplikaciju?"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Svoju lozinku možeš promijeniti u Bitwarden web aplikaciji."
+    "message": "Svoju lozinku možeš promijeniti u Black Mask web aplikaciji."
   },
   "fingerprintPhrase": {
     "message": "Jedinstvena fraza",
@@ -1714,7 +1714,7 @@
     "message": "Automatsko pokretanje kod prijave"
   },
   "openAtLoginDesc": {
-    "message": "Automatski pokreni Bitwarden desktop aplikaciju kod prijave."
+    "message": "Automatski pokreni Black Mask desktop aplikaciju kod prijave."
   },
   "alwaysShowDock": {
     "message": "Uvijek prikaži u Docku"
@@ -1768,7 +1768,7 @@
     "message": "Ponovo pokreni za ažuriranje"
   },
   "restartToUpdateDesc": {
-    "message": "Verzija $VERSION_NUM$ je spremna za instalaciju. Moraš ponovno pokrenuti Bitwarden za dovršetak instalacije. Želiš li ponovo pokrenuti i ažurirati?",
+    "message": "Verzija $VERSION_NUM$ je spremna za instalaciju. Moraš ponovno pokrenuti Black Mask za dovršetak instalacije. Želiš li ponovo pokrenuti i ažurirati?",
     "placeholders": {
       "version_num": {
         "content": "$1",
@@ -1888,13 +1888,13 @@
     "message": "Kupi premium članstvo"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Premium možeš kupiti u postavkama računa na Bitwarden web aplikaciji."
+    "message": "Premium možeš kupiti u postavkama računa na Black Mask web aplikaciji."
   },
   "premiumCurrentMember": {
     "message": "Ti si premium član!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Hvala ti što podupireš Bitwarden."
+    "message": "Hvala ti što podupireš Black Mask."
   },
   "premiumPrice": {
     "message": "Sve za samo $PRICE$ /godišnje!",
@@ -2023,13 +2023,13 @@
     "description": "Bring all windows to front (foreground)"
   },
   "aboutBitwarden": {
-    "message": "O aplikaciji Bitwarden"
+    "message": "O aplikaciji Black Mask"
   },
   "services": {
     "message": "Usluge"
   },
   "hideBitwarden": {
-    "message": "Sakrij Bitwarden"
+    "message": "Sakrij Black Mask"
   },
   "hideOthers": {
     "message": "Sakrij ostale"
@@ -2038,7 +2038,7 @@
     "message": "Prikaži sve"
   },
   "quitBitwarden": {
-    "message": "Zatvori Bitwarden"
+    "message": "Zatvori Black Mask"
   },
   "valueCopied": {
     "message": " kopirano",
@@ -2184,13 +2184,13 @@
     "message": "Ova će se lozinka koristiti za izvoz i uvoz ove datoteke"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Upotrijebi svoj ključ za šifriranje računa, izveden iz korisničkog imena i glavne lozinke za šifriranje izvoza i ograničavanje uvoza samo na trenutni Bitwarden račun."
+    "message": "Upotrijebi svoj ključ za šifriranje računa, izveden iz korisničkog imena i glavne lozinke za šifriranje izvoza i ograničavanje uvoza samo na trenutni Black Mask račun."
   },
   "passwordProtected": {
     "message": "Zaštićeno lozinkom"
   },
   "passwordProtectedOptionDescription": {
-    "message": "Bitwarden omogućuje dijeljenje trezora s drugima pomoću organizacijskog računa. Za više informacija posjeti bitwarden. com."
+    "message": "Black Mask omogućuje dijeljenje trezora s drugima pomoću organizacijskog računa. Za više informacija posjeti Black Mask. com."
   },
   "exportTypeHeading": {
     "message": "Tip izvoza"
@@ -2224,7 +2224,7 @@
     "message": "Ovaj izvoz šifrira tvoje podatke koristeći ključ za šifriranje. Promijeniš li naknadno ključ za šifriranje, potrebno je ponovno napraviti izvoz jer nećeš moći dešifrirati ovu izvezenu datoteku."
   },
   "encExportAccountWarningDesc": {
-    "message": "Ključ za šifriranje jedinstven je za svakog Bitwarden korisnika, kako bi se šifrirani izvoz mogao uvesti u drugi korisnički račun."
+    "message": "Ključ za šifriranje jedinstven je za svakog Black Mask korisnika, kako bi se šifrirani izvoz mogao uvesti u drugi korisnički račun."
   },
   "noOrganizationsList": {
     "message": "Ne pripadaš niti jednoj organizaciji. Organizacije omogućuju sigurno dijeljenje stavki s drugim korisnicima."
@@ -2254,7 +2254,7 @@
     "message": "Slaba glavna lozinka"
   },
   "weakMasterPasswordDesc": {
-    "message": "Odabrana glavna lozinka je slaba. Trebaš koristiti jaču glavnu lozinku (ili frazu) kako bi tvoj Bitwarden račun bio pravilno zaštićen. Sigurno želiš koristiti ovakvu, slabu glavnu lozinku?"
+    "message": "Odabrana glavna lozinka je slaba. Trebaš koristiti jaču glavnu lozinku (ili frazu) kako bi tvoj Black Mask račun bio pravilno zaštićen. Sigurno želiš koristiti ovakvu, slabu glavnu lozinku?"
   },
   "pin": {
     "message": "PIN",
@@ -2264,7 +2264,7 @@
     "message": "Otključaj PIN-om"
   },
   "setYourPinCode": {
-    "message": "Postavi svoj PIN kôd za otključavanje Bitwardena. Postavke PIN-a se resetiraju ako se potpuno odjaviš iz aplikacije."
+    "message": "Postavi svoj PIN kôd za otključavanje Black Maska. Postavke PIN-a se resetiraju ako se potpuno odjaviš iz aplikacije."
   },
   "pinRequired": {
     "message": "Potreban je PIN."
@@ -2497,10 +2497,10 @@
     "message": "Učini dvostruku autentifikaciju besprijekornom"
   },
   "totpHelper": {
-    "message": "Bitwarden može pohraniti i ispuniti kodove za dvostruku autentifikaciju. Kopiraj i zalijepi ključ u ovo polje."
+    "message": "Black Mask može pohraniti i ispuniti kodove za dvostruku autentifikaciju. Kopiraj i zalijepi ključ u ovo polje."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden može pohraniti i ispuniti kodove provjeru dvostruke autentifikacije. Odaberi ikonu kamere i označi QR kôd za provjeru autentičnosti ove web stranice ili kopiraj i zalijepi ključ u ovo polje."
+    "message": "Black Mask može pohraniti i ispuniti kodove provjeru dvostruke autentifikacije. Odaberi ikonu kamere i označi QR kôd za provjeru autentičnosti ove web stranice ili kopiraj i zalijepi ključ u ovo polje."
   },
   "premium": {
     "message": "Premium",
@@ -2586,7 +2586,7 @@
     "message": "Jedno ili više organizacijskih pravila zahtijeva da glavna lozinka ispunjava sljedeće uvjete:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Primaj e-poštom od Bitwardena savjete, najave i mogućnosti istraživanja."
+    "message": "Primaj e-poštom od Black Maska savjete, najave i mogućnosti istraživanja."
   },
   "unsubscribe": {
     "message": "Poništi pretplatu"
@@ -2616,7 +2616,7 @@
     "message": "Dozvoli integraciju s DuckDuckGo preglednikom"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "Koristi svoj Bitwarden trezor prilikom korištenje DuckDuckGo preglednika."
+    "message": "Koristi svoj Black Mask trezor prilikom korištenje DuckDuckGo preglednika."
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "Integracija preglednika nije podržana"
@@ -2640,7 +2640,7 @@
     "message": "Odobri"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ se želi spojiti s Bitwardenom",
+    "message": "$APPID$ se želi spojiti s Black Maskom",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -2658,7 +2658,7 @@
     "message": "Biometrija nije postavljena"
   },
   "biometricsNotEnabledDesc": {
-    "message": "Biometrija preglednika zahtijeva prethodno omogućenu biometriju u Bitwarden desktop aplikaciji."
+    "message": "Biometrija preglednika zahtijeva prethodno omogućenu biometriju u Black Mask desktop aplikaciji."
   },
   "biometricsManualSetupTitle": {
     "message": "Automatsko postavljanje nije dostupno"
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Generirao Bitwarden.",
+    "message": "Generirao Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Web: $WEBSITE$. Generirao Bitwarden.",
+    "message": "Web: $WEBSITE$. Generirao Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "Obavijest je poslana na tvoj uređaj"
   },
   "notificationSentDevicePart1": {
-    "message": "Otključaj Bitwarden na svojem uređaju ili na "
+    "message": "Otključaj Black Mask na svojem uređaju ili na "
   },
   "notificationSentDeviceAnchor": {
     "message": "web trezoru"
@@ -3501,7 +3501,7 @@
     "message": "Dobiti ćeš obavijest kada je tvoj zahtjev odobren"
   },
   "needAnotherOption": {
-    "message": "Prijava uređajem mora biti namještena u postavka Bitwarden mobilne aplikacije. Trebaš drugu opciju?"
+    "message": "Prijava uređajem mora biti namještena u postavka Black Mask mobilne aplikacije. Trebaš drugu opciju?"
   },
   "viewAllLogInOptions": {
     "message": "Pogledaj sve mogućnosti prijave"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "Bitwarden preporučuje ažuriranje tvojih biometrijskih postavki kako bi se pri prvom otključavanju zahtijevala glavna lozinka (ili PIN). Želiš li sada ažurirati svoje postavke?"
+    "message": "Black Mask preporučuje ažuriranje tvojih biometrijskih postavki kako bi se pri prvom otključavanju zahtijevala glavna lozinka (ili PIN). Želiš li sada ažurirati svoje postavke?"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "Preporučeno ažuriranje postavki"
@@ -3766,7 +3766,7 @@
     "message": "Što je uređaj?"
   },
   "aDeviceIs": {
-    "message": "Uređaj je jedinstvena instalacija Bitwarden aplikacije gdje si prijavljen/a. Ponovna instalacija, brisanje podataka aplikacije ili kolačića može rezultirati višestrukim prikazom uređaja."
+    "message": "Uređaj je jedinstvena instalacija Black Mask aplikacije gdje si prijavljen/a. Ponovna instalacija, brisanje podataka aplikacije ili kolačića može rezultirati višestrukim prikazom uređaja."
   },
   "deviceListDescriptionTemp": {
     "message": "Tvoj račun je prijavljen na svakom od ovih uređaja."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "Otkrivanje podudaranja URI-ja je način na koji Bitwarden identificira prijedloge za auto-ispunu.",
+    "message": "Otkrivanje podudaranja URI-ja je način na koji Black Mask identificira prijedloge za auto-ispunu.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Preuzmi dijagnostičko izvješće i podijeli ga s"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden podrškom",
+    "message": "Black Mask podrškom",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "Biometrijsko otključavanje nije dostupno zbog pogrešno konfiguriranih sistemskih datoteka."
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "Biometrijsko otključavanje nije dostupno jer nije omogućeno za $EMAIL$ u Bitwarden desktop aplikaciji.",
+    "message": "Biometrijsko otključavanje nije dostupno jer nije omogućeno za $EMAIL$ u Black Mask desktop aplikaciji.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Postavi dvostruku autentifikaciju"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "Bitwarden će, počevši od veljače 2025., za provjeru prijava s novih uređaja poslati kôd na e-poštu tvog računa."
+    "message": "Black Mask će, počevši od veljače 2025., za provjeru prijava s novih uređaja poslati kôd na e-poštu tvog računa."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "Prijavu dvostrukom autentifikacijom možeš postaviti kao alternativni način zaštite svog računa ili promijeni svoju e-poštu u onu kojoj možeš pristupiti."
@@ -4470,7 +4470,7 @@
     "message": "Dozvoli snimanje zaslona"
   },
   "allowScreenshotsDesc": {
-    "message": "Dozvoli da Bitwarden desktop aplikacija bude snimljena u snimkama zaslona i prikazana u sesijama udaljene radne površine. Onemogućavanje ove opcije onemogućit će pristup nekim vanjskim zaslonima."
+    "message": "Dozvoli da Black Mask desktop aplikacija bude snimljena u snimkama zaslona i prikazana u sesijama udaljene radne površine. Onemogućavanje ove opcije onemogućit će pristup nekim vanjskim zaslonima."
   },
   "confirmWindowStillVisibleTitle": {
     "message": "Potvrdi prozor je još uvijek vidljiv"
@@ -4607,7 +4607,7 @@
     "message": "O ovoj postavci"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden će koristiti spremljene URI-je za prijavu kako bi identificirao ikonu ili URL za promjenu lozinke koji treba koristiti za poboljšanje tvojeg iskustva. Nikakvi podaci se ne prikupljaju, niti spremaju kada koristiš ovu uslugu."
+    "message": "Black Mask će koristiti spremljene URI-je za prijavu kako bi identificirao ikonu ili URL za promjenu lozinke koji treba koristiti za poboljšanje tvojeg iskustva. Nikakvi podaci se ne prikupljaju, niti spremaju kada koristiš ovu uslugu."
   },
   "assignToCollections": {
     "message": "Dodijeli zbirkama"
@@ -4750,7 +4750,7 @@
     "message": "Pokaži manje"
   },
   "enableAutotypeDescription": {
-    "message": "Bitwarden ne provjerava lokacije unosa, prije korištenja prečaca provjeri da si u pravom prozoru i polju."
+    "message": "Black Mask ne provjerava lokacije unosa, prije korištenja prečaca provjeri da si u pravom prozoru i polju."
   },
   "typeShortcut": {
     "message": "Vrsta prečaca"
@@ -4868,7 +4868,7 @@
     "message": " Nadogradi na Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Tvoja organizacija više ne koristi glavne lozinke za prijavu u Bitwarden. Za nastavak, potvrdi orgnaizaciju i domenu."
+    "message": "Tvoja organizacija više ne koristi glavne lozinke za prijavu u Black Mask. Za nastavak, potvrdi orgnaizaciju i domenu."
   },
   "continueWithLogIn": {
     "message": "Nastavi s prijavom"

@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Hesap oluştur"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Black Mask'da yeni misiniz?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Çıkış yap"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Black Mask hakkında"
   },
   "about": {
     "message": "Hakkında"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Diğer Black Mask ürünleri"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "bitwarden.com'a gitmek ister misiniz?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Passwordless.dev ile geleneksel parolalara ihtiyaç duymadan sorunsuz ve güvenli oturum açma deneyimleri oluşturun. Daha fazla bilgi için bitwarden.com web sitesini ziyaret edin."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Ücretsiz Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Ücretsiz Black Mask Families paketinden faydalanabilirsiniz. Bu teklifi hemen web uygulamasında kullanabilirsiniz."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Giriş yap"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Black Mask'a giriş yapın"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Form alanlarında otomatik doldurma önerilerini göster"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Black Mask verilerinizi kimlik avı saldırılarından nasıl koruyor?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Oluşturulan parolayı gösteren Black Mask otomatik doldurma menüsünün görseli."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Black Mask’da güncelleyin"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask, ardından parola yöneticisinde parolayı güncellemeniz için sizi yönlendirecektir.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Kullanıcıya giriş bilgilerini güncellemesi için bildirim gönderen Black Mask’in görseli."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask otomatik doldurma menüsü düğmesi",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Black Mask otomatik doldurma menüsünü aç/kapat",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Ek dosyayı indir"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Black Mask’ı indirin"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Black Mask’ı tüm cihazlarınıza indirin"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Kasanıza tarayıcıyı kullanmadan erişin, biyometri ile kilit açmayı etkinleştirerek hem masaüstü uygulamasından hem de tarayıcı uzantısından kilit açmayı geliştirin."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Şimdi bitwarden.com’dan indirin"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Parola yeniden üretildi",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Black Mask’a kaydet",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "kullanici@bitwarden.com, kullanici@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Black Mask uygulamalarını indir"
   },
   "emailProtected": {

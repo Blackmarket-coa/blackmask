@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "ایجاد حساب کاربری"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "در Black Mask تازه وارد هستید؟"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "خروج"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "درباره Black Mask"
   },
   "about": {
     "message": "درباره"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "موارد بیشتر از Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "به bitwarden.com ادامه می‌دهید؟"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "با استفاده از Passwordless.dev تجربه‌های ورود روان و ایمنی را بدون نیاز به کلمات عبور سنتی ایجاد کنید. برای اطلاعات بیشتر به وب‌سایت bitwarden.com مراجعه کنید."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "خانواده‌های رایگان Black Mask"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "شما واجد شرایط استفاده رایگان از Black Mask Families هستید. این پیشنهاد را امروز در نسخه وب دریافت کنید."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "ورود"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "وارد Black Mask شوید"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "نمایش پیشنهادهای پر کردن خودکار روی فیلدهای فرم"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "How does Black Mask protect your data from phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "تصویری از منوی پر کردن خودکار Black Mask که یک کلمه عبور تولید شده را نمایش می‌دهد."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "به‌روزرسانی در Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "سپس Black Mask از شما می‌خواهد کلمه عبور را در مدیریت کلمه عبور به‌روزرسانی کنید.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "تصویری از اعلان Black Mask که از کاربر می‌خواهد ورود خود را به‌روزرسانی کند."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "دکمه منوی پر کردن خودکار Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "نمایش یا مخفی کردن منوی پر کردن خودکار Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "بارگیری Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Black Mask را روی همه دستگاه‌ها بارگیری کنید"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "بدون استفاده از مرورگر به گاوصندوق خود دسترسی پیدا کنید و سپس باز کردن قفل با بیومتریک را تنظیم کنید تا باز کردن سریع‌تر قفل در اپ دسکتاپ و افزونه مرورگر انجام شود."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "هم‌اکنون از bitwarden.com بارگیری کنید"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "کلمه عبور تولید شد",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "ذخیره در Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

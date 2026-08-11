@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Създаване на акаунт"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "За пръв път ли ползвате Битуорден?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Отписване"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Относно Битуорден"
   },
   "about": {
     "message": "Относно"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Още от Битуорден"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Продължаване към bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Създавайте лесни за ползване, но защитени процеси за вписване без нужда от традиционни пароли с помощта на Passwordless.dev. Научете повече в уеб сайта bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Безплатен Битуорден за семейства"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Може да се активирате Битуорден за семейства безплатно. Възползвайте се от предложението в уеб приложението."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Вписване"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Впишете се в Битуорден"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Показване на предложения за авт. попълване на полетата във формуляри"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Как Битуорден защитава данните Ви от измами?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Илюстрация на автоматичното попълване на Битуорден, показващо генерирана парола."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Обновяване в Битуорден"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "След това Битуорден ще попита дали искате да обновите паролата в управителя на пароли.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Илюстрация на известието на Битуорден, чрез което пита потребителя дали да се обновят данните за вписване."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Бутон на менюто за авт. попълване на Битуорден",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Превключване на менюто за авт. попълване на Битуорден",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Сваляне на прикачения файл"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Сваляне на Битуорден"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Сваляне на Битуорден на всички устройства"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Използвайте трезора си без браузър. Можете да настроите отключване с биометрични данни, за да ускорите отключването както в настолното приложение, така и в добавката за браузъра."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Свалете от bitwarden.com сега"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Паролата е прегенерирана",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Запазване в Битуорден",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "потребител@bitwarden.com, потребител@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Сваляне на приложенията на Битуорден"
   },
   "emailProtected": {

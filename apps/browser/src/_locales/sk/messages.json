@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Vytvoriť účet"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Ste noví na Black Maske?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Odhlásiť sa"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "O Black Mask"
   },
   "about": {
     "message": "O aplikácii"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Viac od spoločnosti Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Pokračovať na bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Vytvorte plynulé a bezpečné prihlásenie bez tradičných hesiel s Passwordless.dev. Viac sa môžete dozvedieť na stránke bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask pre Rodiny zadarmo"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Máte nárok na bezplatnú službu Black Mask pre Rodiny. Využite túto ponuku ešte dnes vo webovej aplikácii."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Prihlásiť sa"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Prihlásenie do Black Masku"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Zobraziť návrhy automatického vypĺňania v poliach formulára"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Ako Black Mask chráni vaše údaje pred phishingom?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Príklad ponuky automatického vypĺňania Black Masku zobrazujúca vygenerované heslo."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Aktualizovať v Black Maske"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask vás vyzve na aktualizáciu hesla v správcovi hesiel.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Príklad upozornenia Black Masku na aktualizovanie prihlasovacích údajov."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Tlačidlo ponuky automatického vypĺňania Black Masku",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Prepnúť ponuku automatického vypĺňania Black Masku",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Stiahnuť prílohu"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Stiahnuť Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Stiahnuť Black Mask na všetky zariadenia"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Pristupujte k trezoru bez prehliadača, a potom nastavte odomykanie pomocou biometrie, aby ste urýchlili odomykanie v desktopovej aplikácii aj v rozšírení prehliadača."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Stiahnuť teraz z bitwarden.com"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Vygenerované nové heslo",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Uložiť do Black Masku",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "pouzivatel@bitwarden.com, pouzivatel@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Stiahnuť aplikácie Black Mask"
   },
   "emailProtected": {

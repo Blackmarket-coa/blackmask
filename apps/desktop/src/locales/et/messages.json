@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "Filtrid"
@@ -491,10 +491,10 @@
     "message": "Enable SSH agent"
   },
   "enableSshAgentDesc": {
-    "message": "Enable the SSH agent to sign SSH requests right from your Bitwarden vault."
+    "message": "Enable the SSH agent to sign SSH requests right from your Black Mask vault."
   },
   "enableSshAgentHelp": {
-    "message": "The SSH agent is a service targeted at developers that allows you to sign SSH requests directly from your Bitwarden vault."
+    "message": "The SSH agent is a service targeted at developers that allows you to sign SSH requests directly from your Black Mask vault."
   },
   "sshAgentPromptBehavior": {
     "message": "Ask for authorization when using SSH agent"
@@ -524,7 +524,7 @@
     "message": "Sync with browser"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Bitwarden app. You’ll be redirected back to this app once your browser is synced.",
+    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Black Mask app. You’ll be redirected back to this app once your browser is synced.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "Viga dekrüpteerimisel"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden ei suutnud dekrüpteerida allpool olevaid hoidla kirjeid."
+    "message": "Black Mask ei suutnud dekrüpteerida allpool olevaid hoidla kirjeid."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Võta klienditoega ühendust,",
@@ -1056,7 +1056,7 @@
     "message": "Logi sisse"
   },
   "logInToBitwarden": {
-    "message": "Logi sisse Bitwardenisse"
+    "message": "Logi sisse Black Maskisse"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Sisesta oma emailile saadetud kood"
@@ -1217,7 +1217,7 @@
     "message": "Unexpected error"
   },
   "closeThisBitwardenWindow": {
-    "message": "Close this Bitwarden window and try again."
+    "message": "Close this Black Mask window and try again."
   },
   "itemInformation": {
     "message": "Kirje andmed"
@@ -1348,7 +1348,7 @@
     "message": "Self-hosted Environment"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Sisesta enda ise-majutatud Bitwardeni serveri nimi (base URL). Näiteks: https://bitwarden.company.com"
+    "message": "Sisesta enda ise-majutatud Black Maski serveri nimi (base URL). Näiteks: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Täpsemaks seadistamiseks võid määrata serveri nime (base URL) igale teenusele eraldi."
@@ -1439,7 +1439,7 @@
     "message": "Are you sure you want to rotate your account's encryption key?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "After updating your encryption key, you are required to log out and back in to all Bitwarden applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
+    "message": "After updating your encryption key, you are required to log out and back in to all Black Mask applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Any account restricted exports you have saved will become invalid."
@@ -1535,7 +1535,7 @@
     "message": "Jätka veebibrauseris?"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Ülemparooli saab muuta Bitwardeni veebirakenduses."
+    "message": "Ülemparooli saab muuta Black Maski veebirakenduses."
   },
   "fingerprintPhrase": {
     "message": "Unikaalne sõnajada",
@@ -1714,13 +1714,13 @@
     "message": "Käivita koos arvutiga"
   },
   "openAtLoginDesc": {
-    "message": "Bitwardeni töölaua rakendus käivitatakse automaatselt koos arvutiga."
+    "message": "Black Maski töölaua rakendus käivitatakse automaatselt koos arvutiga."
   },
   "alwaysShowDock": {
     "message": "Kuva alati Dockis"
   },
   "alwaysShowDockDesc": {
-    "message": "Bitwardeni ikooni kuvatakse alati Dockis, isegi kui see on minimeeritud menüüribale."
+    "message": "Black Maski ikooni kuvatakse alati Dockis, isegi kui see on minimeeritud menüüribale."
   },
   "confirmTrayTitle": {
     "message": "Kinnita süsteemisalve ikooni keelamine"
@@ -1768,7 +1768,7 @@
     "message": "Vajalik on rakenduse taaskäivitamine"
   },
   "restartToUpdateDesc": {
-    "message": "Versioon $VERSION_NUM$ on paigaldamiseks valmis. Paigaldamise lõpetamiseks on vajalik Bitwarden taaskäivitada. Soovid seda kohe teha?",
+    "message": "Versioon $VERSION_NUM$ on paigaldamiseks valmis. Paigaldamise lõpetamiseks on vajalik Black Mask taaskäivitada. Soovid seda kohe teha?",
     "placeholders": {
       "version_num": {
         "content": "$1",
@@ -1894,7 +1894,7 @@
     "message": "Oled preemium kasutaja!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Täname, et toetad bitwardenit."
+    "message": "Täname, et toetad Black Maskit."
   },
   "premiumPrice": {
     "message": "Kõik see ainult $PRICE$ / aastas!",
@@ -2029,7 +2029,7 @@
     "message": "Teenused"
   },
   "hideBitwarden": {
-    "message": "Peida Bitwarden"
+    "message": "Peida Black Mask"
   },
   "hideOthers": {
     "message": "Peida teised"
@@ -2038,7 +2038,7 @@
     "message": "Näita kõiki"
   },
   "quitBitwarden": {
-    "message": "Välju Bitwardenist"
+    "message": "Välju Black Maskist"
   },
   "valueCopied": {
     "message": "$VALUE$ on kopeeritud",
@@ -2190,7 +2190,7 @@
     "message": "Parooliga kaitstud"
   },
   "passwordProtectedOptionDescription": {
-    "message": "Määra faili parool, et see krüpteerida ja importida teise Bitwardeni kontosse kasutates seda parooli dekrüpteerimiseks."
+    "message": "Määra faili parool, et see krüpteerida ja importida teise Black Maski kontosse kasutates seda parooli dekrüpteerimiseks."
   },
   "exportTypeHeading": {
     "message": "Ekspordi tüüp"
@@ -2224,7 +2224,7 @@
     "message": "Eksporditavate andmete krüpteerimiseks kasutatakse kontol olevat krüpteerimisvõtit. Kui sa peaksid seda krüpteerimise võtit roteerima, ei saa sa järgnevalt eksporditavaid andmeid enam dekrüpteerida."
   },
   "encExportAccountWarningDesc": {
-    "message": "Iga Bitwardeni kasutaja krüpteerimisvõti on unikaalne. Eksporditud andmeid ei saa importida teise Bitwardeni kasutajakontosse."
+    "message": "Iga Black Maski kasutaja krüpteerimisvõti on unikaalne. Eksporditud andmeid ei saa importida teise Black Maski kasutajakontosse."
   },
   "noOrganizationsList": {
     "message": "Sa ei kuulu ühessegi organisatsiooni. Organisatsioonid võimaldavad sul kirjeid turvaliselt teiste kasutajatega jagada."
@@ -2254,7 +2254,7 @@
     "message": "Nõrk ülemparool"
   },
   "weakMasterPasswordDesc": {
-    "message": "Valitud ülemparool on nõrk. Oma Bitwardeni konto paremaks kaitsmiseks peaksid kasutama tugevat parooli. Oled kindel, et soovid seda parooli ülemparoolina kasutada?"
+    "message": "Valitud ülemparool on nõrk. Oma Black Maski konto paremaks kaitsmiseks peaksid kasutama tugevat parooli. Oled kindel, et soovid seda parooli ülemparoolina kasutada?"
   },
   "pin": {
     "message": "PIN",
@@ -2264,7 +2264,7 @@
     "message": "Ava PIN-iga"
   },
   "setYourPinCode": {
-    "message": "Määra Bitwardeni lahtilukustamiseks PIN kood. Rakendusest täielikult välja logides nullitakse ka PIN koodi seaded."
+    "message": "Määra Black Maski lahtilukustamiseks PIN kood. Rakendusest täielikult välja logides nullitakse ka PIN koodi seaded."
   },
   "pinRequired": {
     "message": "Nõutakse PIN koodi."
@@ -2282,7 +2282,7 @@
     "message": "Ava arvuti autentimissüsteemiga"
   },
   "windowsHelloConsentMessage": {
-    "message": "Kinnita Bitwardenisse sisselogimine."
+    "message": "Kinnita Black Maskisse sisselogimine."
   },
   "unlockWithTouchId": {
     "message": "Lukusta lahti Touch ID-ga"
@@ -2291,7 +2291,7 @@
     "message": "Muud Touch ID seaded"
   },
   "touchIdConsentMessage": {
-    "message": "Kinnita Bitwardenisse sisselogimine."
+    "message": "Kinnita Black Maskisse sisselogimine."
   },
   "autoPromptTouchId": {
     "message": "Küsi avamisel Touch ID tuvastust"
@@ -2497,10 +2497,10 @@
     "message": "Make 2-step verification seamless"
   },
   "totpHelper": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Copy and paste the key into this field."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
   },
   "premium": {
     "message": "Premium",
@@ -2586,7 +2586,7 @@
     "message": "One or more organization policies require the master password to meet the following requirements:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Soovin saada nõuandeid, uudiseid ja pakkumisi Bitwardenilt oma postkasti."
+    "message": "Soovin saada nõuandeid, uudiseid ja pakkumisi Black Maskilt oma postkasti."
   },
   "unsubscribe": {
     "message": "Lõpeta tellimus"
@@ -2616,7 +2616,7 @@
     "message": "Lubage DuckDuckGo brauseri integreerimine"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "Kasutage DuckDuckGoga sirvimisel oma Bitwardeni varahoidlat."
+    "message": "Kasutage DuckDuckGoga sirvimisel oma Black Maski varahoidlat."
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "Brauseri integratsioon ei ole toetatud"
@@ -2640,7 +2640,7 @@
     "message": "Kinnita"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ soovib Bitwardeniga ühendust luua",
+    "message": "$APPID$ soovib Black Maskiga ühendust luua",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -2658,7 +2658,7 @@
     "message": "Biomeetria ei ole sisse lülitatud"
   },
   "biometricsNotEnabledDesc": {
-    "message": "Selleks, et kasutada biomeetriat brauseris, peab selle esmalt Bitwardeni töölaua rakenduse seadetes sisse lülitama."
+    "message": "Selleks, et kasutada biomeetriat brauseris, peab selle esmalt Black Maski töölaua rakenduse seadetes sisse lülitama."
   },
   "biometricsManualSetupTitle": {
     "message": "Automaatne seadistamine ei ole saadaval"
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Genereeritud Bitwardeni poolt.",
+    "message": "Genereeritud Black Maski poolt.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Veebisait: $WEBSITE$. Genereeritud Bitwardeni poolt.",
+    "message": "Veebisait: $WEBSITE$. Genereeritud Black Maski poolt.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "A notification was sent to your device"
   },
   "notificationSentDevicePart1": {
-    "message": "Unlock Bitwarden on your device or on the "
+    "message": "Unlock Black Mask on your device or on the "
   },
   "notificationSentDeviceAnchor": {
     "message": "web app"
@@ -3501,7 +3501,7 @@
     "message": "You will be notified once the request is approved"
   },
   "needAnotherOption": {
-    "message": "Bitwardeni rakenduse seadistuses peab olema konfigureeritud sisselogimine läbi seadme. Vajad teist valikut?"
+    "message": "Black Maski rakenduse seadistuses peab olema konfigureeritud sisselogimine läbi seadme. Vajad teist valikut?"
   },
   "viewAllLogInOptions": {
     "message": "View all log in options"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "Bitwarden soovitab muuta oma biomeetria seadeid, et nõuda esimesel sisselogimisel ülemparooli (või PINi). Kas soovid uuendada oma seadeid kohe?"
+    "message": "Black Mask soovitab muuta oma biomeetria seadeid, et nõuda esimesel sisselogimisel ülemparooli (või PINi). Kas soovid uuendada oma seadeid kohe?"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "Soovitatud Muudatus Seadetes"
@@ -3766,7 +3766,7 @@
     "message": "What is a device?"
   },
   "aDeviceIs": {
-    "message": "A device is a unique installation of the Bitwarden app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
+    "message": "A device is a unique installation of the Black Mask app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
   },
   "deviceListDescriptionTemp": {
     "message": "Your account was logged in to each of the devices below."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI match detection is how Bitwarden identifies autofill suggestions.",
+    "message": "URI match detection is how Black Mask identifies autofill suggestions.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
+    "message": "Black Mask support",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "Biometric unlock is unavailable due to misconfigured system files."
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "Biometric unlock is unavailable because it is not enabled for $EMAIL$ in the Bitwarden desktop app.",
+    "message": "Biometric unlock is unavailable because it is not enabled for $EMAIL$ in the Black Mask desktop app.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Set up two-step login"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "Bitwarden will send a code to your account email to verify logins from new devices starting in February 2025."
+    "message": "Black Mask will send a code to your account email to verify logins from new devices starting in February 2025."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "You can set up two-step login as an alternative way to protect your account or change your email to one you can access."
@@ -4470,7 +4470,7 @@
     "message": "Allow screen capture"
   },
   "allowScreenshotsDesc": {
-    "message": "Allow the Bitwarden desktop application to be captured in screenshots and viewed in remote desktop sessions. Disabling this will prevent access on some external displays."
+    "message": "Allow the Black Mask desktop application to be captured in screenshots and viewed in remote desktop sessions. Disabling this will prevent access on some external displays."
   },
   "confirmWindowStillVisibleTitle": {
     "message": "Confirm window still visible"
@@ -4607,7 +4607,7 @@
     "message": "About this setting"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
+    "message": "Black Mask will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
   },
   "assignToCollections": {
     "message": "Assign to collections"
@@ -4750,7 +4750,7 @@
     "message": "Show less"
   },
   "enableAutotypeDescription": {
-    "message": "Bitwarden does not validate input locations, be sure you are in the right window and field before using the shortcut."
+    "message": "Black Mask does not validate input locations, be sure you are in the right window and field before using the shortcut."
   },
   "typeShortcut": {
     "message": "Type shortcut"
@@ -4868,7 +4868,7 @@
     "message": "Upgrade to Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Your organization is no longer using master passwords to log into Bitwarden. To continue, verify the organization and domain."
+    "message": "Your organization is no longer using master passwords to log into Black Mask. To continue, verify the organization and domain."
   },
   "continueWithLogIn": {
     "message": "Continue with log in"
@@ -5111,10 +5111,10 @@
     "message": "Enter multiple emails by separating with a comma."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "reorderToggleButton": {
     "message": "Reorder $LABEL$. Use arrow key to move item up or down.",

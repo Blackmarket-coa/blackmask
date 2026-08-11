@@ -32,6 +32,26 @@ to regenerate or replace the assets. The rebrand landed in
   redrawn as Black Mask artwork. Because these live in a shared lib, the desktop and web apps pick
   up the new mark wherever they use these components.
 
+### Web, desktop, and CLI
+
+- **Locales** — `apps/web/src/locales/*/messages.json` (66), `apps/desktop/src/locales/*/messages.json`
+  (66), and `apps/cli/src/locales/en/messages.json` have had every user-facing "Bitwarden" brand
+  token replaced with "Black Mask". i18n **keys** are untouched.
+- **HTML titles** — `apps/web/src/index.html`, `apps/web/src/404.html`, the six pages under
+  `apps/web/src/connectors/`, and `apps/desktop/src/index.html`, plus their logo `alt` text.
+- **Package metadata** — `description` / `homepage` / `author` / `repository` / `keywords` in
+  `apps/cli/package.json`, `apps/desktop/package.json`, and `apps/desktop/src/package.json`
+  (which also carries `productName`).
+- **Desktop app identity** — `electron-builder.json` / `.beta.json`: `productName`, `appId`
+  (`app.blackmask.desktop`), `copyright`, `extraMetadata.name`, the Linux desktop-entry name, snap
+  summary/description, the snap polkit `action-prefix`, and the protocol handler's display name.
+  `publish` now points at this fork's GitHub releases.
+- **Linux packaging resources** — `apps/desktop/resources/com.bitwarden.desktop.*` renamed to
+  `app.blackmask.desktop.*`, with the referencing scripts in `apps/desktop/package.json` updated.
+- **Desktop runtime strings** — the tray name and OS credential-store service name in
+  `apps/desktop/src/main.ts`, and the Linux autostart entry in `src/main/messaging.main.ts`.
+- **Palette and typography** — see below.
+
 ### Deliberately NOT renamed
 
 These are internal identifiers, not user-facing branding. Renaming them is churn with real
@@ -46,13 +66,33 @@ regression risk and zero user benefit:
 - References to genuinely external Bitwarden products ("Bitwarden Authenticator",
   "Bitwarden Secrets Manager") kept where the string really means that external product.
 
+- The `bitwarden` URL scheme (`x-scheme-handler/bitwarden`, `bitwarden://`). It is a functional
+  protocol handler wired through the SSO callback paths, not a brand string. Only the handler's
+  **display name** changed.
+
 ### Not yet rebranded
 
-- **Desktop, web, and CLI locale files and store assets** — only the browser extension's locale
-  files were swept. The other apps still say "Bitwarden" in most of their UI text (they do inherit
-  the new shared SVG artwork).
 - **Safari appex / Xcode project metadata** (`apps/browser/src/safari/`).
-- **Desktop/web icon binaries** (`apps/desktop/resources/`, `apps/web/src/images/`).
+- **Desktop/web icon binaries** (`apps/desktop/resources/`, `apps/web/src/images/`) — see
+  placeholder assets below.
+- **Code-signing and store-account identities**, which cannot be invented and must be replaced with
+  Black Mask developer accounts before any desktop release: `nsis.publisherName`, `mas.identity`,
+  `appx.publisherDisplayName` / `applicationId` / `identityName`, and the
+  `*.provisionprofile` filenames in `apps/desktop/electron-builder*.json`. These still name
+  Bitwarden; a build cannot be signed with them, so it fails rather than mis-attributing.
+- **Linux flatpak/snap packaging is unverified.** The identifiers were renamed consistently, but no
+  flatpak or snap build has been run against them.
+
+## Fixed: i18n keys corrupted by the first sweep
+
+The original browser sweep replaced the "Bitwarden" token in i18n **keys** as well as values,
+producing 17 broken keys per locale — including keys containing a space, such as
+`"newToBlack Mask"` and `"toggleBlack MaskVaultOverlay"`. The application code still looked up the
+original names (`newToBitwarden`, `toggleBitwardenVaultOverlay`, …), so every one of them was a
+failed translation lookup at runtime.
+
+All 1,071 affected keys across the 63 browser locale files have been restored to their original
+names; only the values remain rebranded. **When sweeping locales, never touch keys.**
 
 ## Placeholder assets — regenerating and replacing
 
@@ -78,6 +118,29 @@ To replace with designed brand assets, overwrite the same file names at the same
 manifests and `apps/browser/src/platform/badge/icon.ts` reference them by path) and update the
 three SVGs in `libs/assets/src/svg/svgs/`. Keep the `tw-fill-*` classes on SVG paths — they carry
 theming — and keep the exported symbol names, which many components import.
+
+## Palette and typography
+
+The brand palette lives in `libs/components/src/tw-theme.css` — the light `:root` block and the
+`.theme_dark` override. `libs/components/tailwind.config.base.js` maps semantic tokens to
+`rgb(var(--color-*) / <alpha-value>)` and holds no literal colors, so a palette change means
+editing the CSS only.
+
+Teal `#1ABC9C` reaches only **2.41:1** against white, which fails WCAG AA for text and controls.
+It is therefore the light **accent** (`--color-primary-300`), while forest green `#16813D`
+(**4.95:1**) carries the interactive `--color-primary-600` step. On dark surfaces the ramp inverts:
+teal reaches **6.90:1** against the dark background and takes the `600` step. `--color-background-alt2/3/4`
+are deep forest greens in place of Bitwarden's blues.
+
+Typography is self-hosted through `@fontsource` — IBM Plex Sans for UI text, Archivo Black for
+display — declared in `libs/components/src/theme.css` and exposed as `--font-sans` and a new
+`--font-display` (available as Tailwind's `tw-font-display`). Inter stays bundled as the fallback.
+No external font CDN is used: the extension CSP forbids it, and a privacy product must not leak
+font requests.
+
+Changing the palette invalidates every Storybook snapshot. Chromatic required a Bitwarden project
+token and has been removed from CI, so there is no visual-regression gate — check light **and**
+dark themes by hand after palette work.
 
 ## Trademark note
 

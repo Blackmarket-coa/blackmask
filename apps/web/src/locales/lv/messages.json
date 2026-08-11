@@ -21,7 +21,7 @@
     "message": "All critical apps"
   },
   "appLogoLabel": {
-    "message": "Bitwarden logotips"
+    "message": "Black Mask logotips"
   },
   "criticalApplications": {
     "message": "Kritiskās lietotnes"
@@ -233,7 +233,7 @@
     "message": "Track improvements across your team"
   },
   "membersAreAutomaticallyNotified": {
-    "message": "Members are automatically notified of at-risk passwords in their Bitwarden extension. No chasing required."
+    "message": "Members are automatically notified of at-risk passwords in their Black Mask extension. No chasing required."
   },
   "importYourOrgDataToGetStarted": {
     "message": "Import your org data to get started"
@@ -396,7 +396,7 @@
     }
   },
   "membersWillReceiveSecurityTask": {
-    "message": "Members of your organization will be assigned a task to change vulnerable passwords. They’ll receive a notification within their Bitwarden browser extension."
+    "message": "Members of your organization will be assigned a task to change vulnerable passwords. They’ll receive a notification within their Black Mask browser extension."
   },
   "membersAtRiskCount": {
     "message": "$COUNT$ dalībnieki ir pakļauti riskam",
@@ -825,10 +825,10 @@
     "message": "Padarīt divpakāpju apliecināšanu plūdenu"
   },
   "totpHelper": {
-    "message": "Bitwarden var glabāt un aizpildīt divpakāpju apliecinājuma kodus. Atslēga jāievieto starpliktuvē un jāielīmē šajā laukā."
+    "message": "Black Mask var glabāt un aizpildīt divpakāpju apliecinājuma kodus. Atslēga jāievieto starpliktuvē un jāielīmē šajā laukā."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden var glabāt un aizpildīt divpakāpju apliecinājuma kodus. Jāizvēlas kameras ikona, lai veiktu tīmekļvietnes autentificētāja kvadrātkoda ekrānuzņēmumu, vai jāievieto starpliktuvē atslēga un jāielīmē šajā laukā."
+    "message": "Black Mask var glabāt un aizpildīt divpakāpju apliecinājuma kodus. Jāizvēlas kameras ikona, lai veiktu tīmekļvietnes autentificētāja kvadrātkoda ekrānuzņēmumu, vai jāievieto starpliktuvē atslēga un jāielīmē šajā laukā."
   },
   "totpCapture": {
     "message": "Scan authenticator QR code from current webpage"
@@ -1734,7 +1734,7 @@
     "message": "Pieteikties ar ierīci"
   },
   "loginWithDeviceEnabledNote": {
-    "message": "Ir jāuzstāda pieteikšanās ar ierīci Bitwarden lietotnes iestatījumos. Nepieciešama cita iespēja?"
+    "message": "Ir jāuzstāda pieteikšanās ar ierīci Black Mask lietotnes iestatījumos. Nepieciešama cita iespēja?"
   },
   "needAnotherOptionV1": {
     "message": "Nepieciešama cita iespēja?"
@@ -1848,7 +1848,7 @@
     "message": "Izveidot kontu"
   },
   "newToBitwarden": {
-    "message": "Bitwarden iepriekš nav izmantots?"
+    "message": "Black Mask iepriekš nav izmantots?"
   },
   "setAStrongPassword": {
     "message": "Jāiestata droša parole"
@@ -1866,7 +1866,7 @@
     "message": "Pieteikties"
   },
   "logInToBitwarden": {
-    "message": "Pieteikties Bitwarden"
+    "message": "Pieteikties Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Jāievada e-pastā nosūtītais kods"
@@ -2124,7 +2124,7 @@
     "message": "Uz ierīci ir nosūtīts paziņojums."
   },
   "notificationSentDevicePart1": {
-    "message": "Bitwarden jāatslēdz savā ierīcē vai "
+    "message": "Black Mask jāatslēdz savā ierīcē vai "
   },
   "accessAttemptBy": {
     "message": "$EMAIL$ piekļuves mēģinājums",
@@ -2148,7 +2148,7 @@
     "message": "Pirms apstiprināšanas jāpārliecinās, ka pirkstu nospieduma vārdkopa atbilst zemāk esošajai."
   },
   "notificationSentDeviceComplete": {
-    "message": "Savā ierīcē jāatslēdz Bitwarden. Pirms apstiprināšanas jāpārliecinās, ka pirkstu nospieduma vārdkopa atbilst zemāk esošajai."
+    "message": "Savā ierīcē jāatslēdz Black Mask. Pirms apstiprināšanas jāpārliecinās, ka pirkstu nospieduma vārdkopa atbilst zemāk esošajai."
   },
   "aNotificationWasSentToYourDevice": {
     "message": "Uz ierīci tika nosūtīts paziņojums"
@@ -2329,7 +2329,7 @@
     "message": "Šī izguve šifrē datus ar konta šifrēšanas atslēgu. Ja tā jebkad tiks mainīta, izvadi vajadzētu veikt vēlreiz, jo vairs nebūs iespējams atšifrēt šo datni."
   },
   "encExportAccountWarningDesc": {
-    "message": "Katram Bitwarden kontam ir neatkārtojamas šifrēšanas atslēgas, tādēļ nav iespējams ievietot šifrētu izguvi citā kontā."
+    "message": "Katram Black Mask kontam ir neatkārtojamas šifrēšanas atslēgas, tādēļ nav iespējams ievietot šifrētu izguvi citā kontā."
   },
   "exportNoun": {
     "message": "Izgūšana",
@@ -2361,10 +2361,10 @@
     "message": "Apstiprināt datnes paroli"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Jāizmanto konta šifrēšanas atslēga, kas iegūta no lietotājvārda un galvenās paroles, lai šifrētu izguvi un atļautu ievietošanu tikai pašreizējā Bitwarden kontā."
+    "message": "Jāizmanto konta šifrēšanas atslēga, kas iegūta no lietotājvārda un galvenās paroles, lai šifrētu izguvi un atļautu ievietošanu tikai pašreizējā Black Mask kontā."
   },
   "passwordProtectedOptionDescription": {
-    "message": "Uzstādīt paroli, lai šifrētu izguvi un tad to ievietotu jebkurā Bitwarden kontā, izmantojot atšifrēšanas paroli."
+    "message": "Uzstādīt paroli, lai šifrētu izguvi un tad to ievietotu jebkurā Black Mask kontā, izmantojot atšifrēšanas paroli."
   },
   "exportTypeHeading": {
     "message": "Izgūšanas veids"
@@ -2532,7 +2532,7 @@
     "message": "Pieprasījums ir apstrādē"
   },
   "logBackInOthersToo": {
-    "message": "Lūgums pieteikties atkārtoti. Ja tiek izmantotas citas Bitwarden lietotnes, ir nepieciešams atteikties un atkārtoti pieteikties arī tajās."
+    "message": "Lūgums pieteikties atkārtoti. Ja tiek izmantotas citas Black Mask lietotnes, ir nepieciešams atteikties un atkārtoti pieteikties arī tajās."
   },
   "changeMasterPassword": {
     "message": "Mainīt galveno paroli"
@@ -2565,7 +2565,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Pārāk liela KDF atkārtojumu skaita iestatīšana var novest pie vājas veiktspējas, kad notiek pieteikšanās Bitwarden (un atslēgšana) lēnākās un vecākās ierīcēs. Ir ieteicams secīgi palielināt vērtību par $INCREMENT$ un tad pārbaudīt ietekmi visās ierīcēs.",
+    "message": "Pārāk liela KDF atkārtojumu skaita iestatīšana var novest pie vājas veiktspējas, kad notiek pieteikšanās Black Mask (un atslēgšana) lēnākās un vecākās ierīcēs. Ir ieteicams secīgi palielināt vērtību par $INCREMENT$ un tad pārbaudīt ietekmi visās ierīcēs.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -2578,7 +2578,7 @@
     "description": "Memory refers to computer memory (RAM). MB is short for megabytes."
   },
   "argon2Warning": {
-    "message": "Pārāk liela KDF atkārtojumu skaita, atmiņas un paralelitātes iestatīšana var novest pie vājas veiktspējas, kad notiek pieteikšanās Bitwarden (un atslēgšana) lēnākās un vecākās ierīcēs. Ir ieteicams secīgi palielināt vērtību par $INCREMENT$ un tad pārbaudīt ietekmi visās ierīcēs."
+    "message": "Pārāk liela KDF atkārtojumu skaita, atmiņas un paralelitātes iestatīšana var novest pie vājas veiktspējas, kad notiek pieteikšanās Black Mask (un atslēgšana) lēnākās un vecākās ierīcēs. Ir ieteicams secīgi palielināt vērtību par $INCREMENT$ un tad pārbaudīt ietekmi visās ierīcēs."
   },
   "kdfParallelism": {
     "message": "KDF paralelitāte"
@@ -2611,10 +2611,10 @@
     "message": "Ieslēgt pieteikšanās jaunā ierīcē aizsardzību"
   },
   "turnOffNewDeviceLoginProtectionModalDesc": {
-    "message": "Turpināt zemāk, lai izslēgtu apliecinājuma e-pasta ziņojumus, ko Bitwarden sūta, kad notiek pieteikšanās jaunā ierīcē."
+    "message": "Turpināt zemāk, lai izslēgtu apliecinājuma e-pasta ziņojumus, ko Black Mask sūta, kad notiek pieteikšanās jaunā ierīcē."
   },
   "turnOnNewDeviceLoginProtectionModalDesc": {
-    "message": "Turpināt zemāk, lai Bitwarden sūtītu apliecinājuma e-pasta ziņojumus, kad notiek pieteikšanās jaunā ierīcē."
+    "message": "Turpināt zemāk, lai Black Mask sūtītu apliecinājuma e-pasta ziņojumus, kad notiek pieteikšanās jaunā ierīcē."
   },
   "turnOffNewDeviceLoginProtectionWarning": {
     "message": "Ar izslēgtu pieteikšanās jaunā ierīcē aizsardzību ikviens ar Tavu galveno paroli var piekļūt kontam no jebkuras ierīces. Lai aizsargātu savu kontu bez apliecinājuma e-pasta ziņojumiem, jāiestata divpakāpju pieteikšanās."
@@ -2818,7 +2818,7 @@
     "message": "Domēnu nosacījumi"
   },
   "domainRulesDesc": {
-    "message": "Ja viens pieteikšanās vienums tiek izmantots dažādos tīmekļvietņu domēnos, tīmekļa vietni var atzīmēt kā \"līdzvērtīgu\". \"Vispārējie\" domēni jau ir Bitwarden izveidoti."
+    "message": "Ja viens pieteikšanās vienums tiek izmantots dažādos tīmekļvietņu domēnos, tīmekļa vietni var atzīmēt kā \"līdzvērtīgu\". \"Vispārējie\" domēni jau ir Black Mask izveidoti."
   },
   "globalEqDomains": {
     "message": "Vispārēji vienlīdzīgie domēni"
@@ -2866,7 +2866,7 @@
     "message": "Iespējo divpakāpju pieteikšanaos savai apvienībai."
   },
   "twoStepLoginEnterpriseDescStart": {
-    "message": "Piemērot Bitwarden divpakāpju pieteikšanās iespējas dalībniekiem ar ",
+    "message": "Piemērot Black Mask divpakāpju pieteikšanās iespējas dalībniekiem ar ",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enforce Bitwarden Two-step Login options for members by using the Two-step Login Policy.'"
   },
   "twoStepLoginPolicy": {
@@ -2879,7 +2879,7 @@
     "message": "Ja ir uzstādīta vienotā pieteikšanās vai tas ir iecerēts, identitātes nodrošinātājs jau var būt piemērojis divpakāpju pieteikšanos."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Divpakāpju pieteikšanās var pastāvīgi liegt piekļuvi Bitwarden kontam. Atkopes kods ļauj piekļūt tam gadījumā, kad vairs nav iespējams izmantot ierasto divpakāpju pieteikšanās nodrošinātāju (piemēram, ir pazaudēta ierīce). Bitwarden atbalsts nevarēs palīdzēt, ja tiks pazaudēta piekļuve kontam. Ir ieteicams, ka atkopes kods tiek pierakstīts vai izdrukāts un turēts drošā vietā."
+    "message": "Divpakāpju pieteikšanās var pastāvīgi liegt piekļuvi Black Mask kontam. Atkopes kods ļauj piekļūt tam gadījumā, kad vairs nav iespējams izmantot ierasto divpakāpju pieteikšanās nodrošinātāju (piemēram, ir pazaudēta ierīce). Black Mask atbalsts nevarēs palīdzēt, ja tiks pazaudēta piekļuve kontam. Ir ieteicams, ka atkopes kods tiek pierakstīts vai izdrukāts un turēts drošā vietā."
   },
   "restrictedItemTypePolicy": {
     "message": "Noņemt karšu vienumu veidu"
@@ -2894,7 +2894,7 @@
     "message": "Pamatnostādne, ko ir iestatījusi viena vai vairākas apvienības, liedz karšu ievietošanu savās glabātavās."
   },
   "yourSingleUseRecoveryCode": {
-    "message": "Vienreizējas izmantošanas atkopes kodu var izmantot, lai izslēgtu divpakāpju pieteikšanos gadījumā, ja tiek zaudēta piekļuve savam divpakāpju pieteikšanās nodrošinātājam. Bitwarden iesaka pierakstīt atkopes kodu un glabāt to drošā vietā."
+    "message": "Vienreizējas izmantošanas atkopes kodu var izmantot, lai izslēgtu divpakāpju pieteikšanos gadījumā, ja tiek zaudēta piekļuve savam divpakāpju pieteikšanās nodrošinātājam. Black Mask iesaka pierakstīt atkopes kodu un glabāt to drošā vietā."
   },
   "viewRecoveryCode": {
     "message": "Apskatīt atkopes kodu"
@@ -2992,13 +2992,13 @@
     }
   },
   "continueToExternalUrlDesc": {
-    "message": "Tiks pamests Bitwarden un jaunā logā tiks atvērta ārēja tīmekļvietne."
+    "message": "Tiks pamests Black Mask un jaunā logā tiks atvērta ārēja tīmekļvietne."
   },
   "twoStepContinueToBitwardenUrlTitle": {
     "message": "Pāriet uz bitwarden.com?"
   },
   "twoStepContinueToBitwardenUrlDesc": {
-    "message": "Bitwarden autentificētājs ļauj glabāt autentificētāja atslēgas un izveidot TOTP kodus divpakāpju apliecināšanas plūsmām. Vairāk var uzzināt tīmekļvietnē bitwarden.com."
+    "message": "Black Mask autentificētājs ļauj glabāt autentificētāja atslēgas un izveidot TOTP kodus divpakāpju apliecināšanas plūsmām. Vairāk var uzzināt tīmekļvietnē bitwarden.com."
   },
   "twoStepAuthenticatorScanCodeV2": {
     "message": "Zemāk esošais kvadrātkods jānolasa ar autnetificētāja lietotni vai jāievada atslēga."
@@ -3040,7 +3040,7 @@
     "message": "Saglabāt veidlapu."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Platformas ierobežojumu dēļ YubiKey nevar izmantot visās Bitwarden lietotnēs. Ir ieteicams iespējot vēl kādu divpakāpju pieteikšanās nodrošinātāju, lai varētu piekļūt kontam, kad nevar izmantot YubiKey. Atbalstītās platformas:"
+    "message": "Platformas ierobežojumu dēļ YubiKey nevar izmantot visās Black Mask lietotnēs. Ir ieteicams iespējot vēl kādu divpakāpju pieteikšanās nodrošinātāju, lai varētu piekļūt kontam, kad nevar izmantot YubiKey. Atbalstītās platformas:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Tīmekļa glabātava, darbvirsmas lietotne, CLI un visi pārlūku paplašinājumi ierīcēs ar USB ligzdu, kas pieņem YubiKey."
@@ -3091,7 +3091,7 @@
     "message": "Atspējot visas atslēgas"
   },
   "twoFactorDuoDesc": {
-    "message": "Ievadīt Bitwarden lietotnes informāciju no Duo pārvaldības rīka."
+    "message": "Ievadīt Black Mask lietotnes informāciju no Duo pārvaldības rīka."
   },
   "twoFactorDuoClientId": {
     "message": "Klienta Id"
@@ -3142,7 +3142,7 @@
     "message": "Saglabāt veidlapu."
   },
   "twoFactorU2fWarning": {
-    "message": "Platformas ierobežojumu dēļ FIDO U2F nevar izmantot visās Bitwarden lietotnēs. Ir Ieteicams iespējot vēl kādu divpakāpju pieteikšanās nodrošinātāju, lai varētu piekļūt kontam, kad FIDO U2F nevar izmantot. Atbalstītās platformas:"
+    "message": "Platformas ierobežojumu dēļ FIDO U2F nevar izmantot visās Black Mask lietotnēs. Ir Ieteicams iespējot vēl kādu divpakāpju pieteikšanās nodrošinātāju, lai varētu piekļūt kontam, kad FIDO U2F nevar izmantot. Atbalstītās platformas:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Tīmekļa glabātava un pārlūku paplašinājums galddatorā/klēpjdatorā ar U2F iespējotu pārlūku (Chrome, Opera, Vivaldi vai Firefox ar iespējotu FIDO U2F)."
@@ -3157,7 +3157,7 @@
     "message": "Radās sarežģījumi, nolasot drošības atslēgu. Jāmēģina vēlreiz."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Bitwarden divpakāpju pieteikšanās atkopes kods"
+    "message": "Black Mask divpakāpju pieteikšanās atkopes kods"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Vēl nav iespējots neviens divpakāpju pieteikšanās nodrošinātājs. Kad tas būs izdarīts, šeit varēs apskatīt atkopes kodu."
@@ -3206,7 +3206,7 @@
     "message": "Pieteikšanās vienumi bez divpakāpju pārbaudes"
   },
   "inactive2faReportDesc": {
-    "message": "Divpakāpju pieteikšanās kontiem nodrošina papildu aizsardzības slāni. Jāuzstāda divpakāpju pierakstīšanos ar Bitwarden autentificētāju šiem kontiem vai jāizmanto cits veids."
+    "message": "Divpakāpju pieteikšanās kontiem nodrošina papildu aizsardzības slāni. Jāuzstāda divpakāpju pierakstīšanos ar Black Mask autentificētāju šiem kontiem vai jāizmanto cits veids."
   },
   "inactive2faFound": {
     "message": "Atrastie pieteikšanās vienumi bez 2FA"
@@ -3494,7 +3494,7 @@
     }
   },
   "bitwardenFamiliesPlan": {
-    "message": "Bitwarden ģimenēm."
+    "message": "Black Mask ģimenēm."
   },
   "addons": {
     "message": "Papildinājumi"
@@ -3679,7 +3679,7 @@
     }
   },
   "churnOfferDiscountBody": {
-    "message": "As a thank-you for being a long-time Bitwarden customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
+    "message": "As a thank-you for being a long-time Black Mask customer, we'd like to offer you a $DISCOUNT$ discount on your next $DURATION$ of service.",
     "description": "Body copy on the churn-mitigation offer card. DISCOUNT = discount amount; DURATION = service duration (e.g. 'year' or '6 months')",
     "placeholders": {
       "discount": {
@@ -3904,7 +3904,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "Black Mask_premium_license.json"
       }
     }
   },
@@ -4097,7 +4097,7 @@
     }
   },
   "trialThankYou": {
-    "message": "Paldies par pieteikšanos Bitwarden $PLAN$!",
+    "message": "Paldies par pieteikšanos Black Mask $PLAN$!",
     "placeholders": {
       "plan": {
         "content": "$1",
@@ -4106,7 +4106,7 @@
     }
   },
   "trialSecretsManagerThankYou": {
-    "message": "Paldies par pieteikšanos Bitwarden noslēpumu pārvaldnieka $PLAN$!",
+    "message": "Paldies par pieteikšanos Black Mask noslēpumu pārvaldnieka $PLAN$!",
     "placeholders": {
       "plan": {
         "content": "$1",
@@ -4242,7 +4242,7 @@
     "message": "SSO ārējais Id"
   },
   "ssoExternalIdDesc": {
-    "message": "SSO ārējais Id ir nešifrēta atsauce starp Bitwarden un konfigurēto SSO nodrošinātāju."
+    "message": "SSO ārējais Id ir nešifrēta atsauce starp Black Mask un konfigurēto SSO nodrošinātāju."
   },
   "nestCollectionUnder": {
     "message": "Ievietot krājumu zem"
@@ -4287,7 +4287,7 @@
     "message": "Invite"
   },
   "inviteUserDesc": {
-    "message": "Uziacināt apvienībā jaunu lietotāju, zemāk esošajā laukā ievadot viņa Bitwarden konta e-pasta adresi. Ja viņam vēl nav Bitwarden konta, tiks vaicāts izveidot jaunu."
+    "message": "Uziacināt apvienībā jaunu lietotāju, zemāk esošajā laukā ievadot viņa Black Mask konta e-pasta adresi. Ja viņam vēl nav Black Mask konta, tiks vaicāts izveidot jaunu."
   },
   "inviteUserDescription": {
     "message": "Invite new users to your organization by entering their email address below."
@@ -4411,10 +4411,10 @@
     "message": "CLI"
   },
   "bitWebVault": {
-    "message": "Bitwarden tīmekļa glabātava"
+    "message": "Black Mask tīmekļa glabātava"
   },
   "bitSecretsManager": {
-    "message": "Bitwarden noslēpumu pārvaldnieks"
+    "message": "Black Mask noslēpumu pārvaldnieks"
   },
   "loggedIn": {
     "message": "Pieteicies"
@@ -5388,7 +5388,7 @@
     }
   },
   "joinOrganizationDesc": {
-    "message": "Tu esi uzaicināts pievienoties augstāk norādītajai apvienībai. Lai to pieņemtu, jāpiesakās vai jāizveido jauns Bitwarden konts."
+    "message": "Tu esi uzaicināts pievienoties augstāk norādītajai apvienībai. Lai to pieņemtu, jāpiesakās vai jāizveido jauns Black Mask konts."
   },
   "finishJoiningThisOrganizationBySettingAMasterPassword": {
     "message": "Pabeigt pievienošanos šai apvienībai ar galvenās paroles iestatīšanu."
@@ -5457,10 +5457,10 @@
     "message": "Ja konts pastāv, tika nosūtīts e-pasta ziņojums ar turpmākām norādēm."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Tika pieprasīts izdzēst Bitwarden kontu. Jāizmanto zemāk esošā poga, lai apstiprinātu."
+    "message": "Tika pieprasīts izdzēst Black Mask kontu. Jāizmanto zemāk esošā poga, lai apstiprinātu."
   },
   "deleteRecoverOrgConfirmDesc": {
-    "message": "Tu pieprasīji izdzēst savu Bitwarden apvienību."
+    "message": "Tu pieprasīji izdzēst savu Black Mask apvienību."
   },
   "myOrganization": {
     "message": "Mana apvienība"
@@ -5785,7 +5785,7 @@
     }
   },
   "updateEncryptionKeyWarning": {
-    "message": "Pēc šifrēšanas atslēgas atjaunināšanas ir nepieciešams atteikties un tad pieteikties visās Bitwarden lietotnēs, kas pašreiz tiek izmantotas (piemēram, tālruņa lietotnē vai pārlūku paplašinājumā). Ja tas netiks darīts (tā tiek lejupielādēta jaunā šifrēšanas atslēga), dati var tikt bojāti. Tiks veikts automātisks atteikšanās mēģinājums, tomēr tas var notikt ar aizkavi."
+    "message": "Pēc šifrēšanas atslēgas atjaunināšanas ir nepieciešams atteikties un tad pieteikties visās Black Mask lietotnēs, kas pašreiz tiek izmantotas (piemēram, tālruņa lietotnē vai pārlūku paplašinājumā). Ja tas netiks darīts (tā tiek lejupielādēta jaunā šifrēšanas atslēga), dati var tikt bojāti. Tiks veikts automātisks atteikšanās mēģinājums, tomēr tas var notikt ar aizkavi."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Jebkuras konta ierobežotās izguves, kas ir saglabātas, kļūs nederīgas."
@@ -5821,7 +5821,7 @@
     "message": "Nekas nav atlasīts."
   },
   "receiveMarketingEmailsV2": {
-    "message": "Iegūt savā iesūtnē padomus, paziņojumus un izpētes iespējas no Bitwarden."
+    "message": "Iegūt savā iesūtnē padomus, paziņojumus un izpētes iespējas no Black Mask."
   },
   "subscribe": {
     "message": "Abonēt"
@@ -6016,7 +6016,7 @@
     "message": "Vāja galvenā parole"
   },
   "weakMasterPasswordDesc": {
-    "message": "Izvēlētā galvenā parole ir vāja. Ir ieteicams izmantot spēcīgu galveno paroli (vai paroles vārdu salikumu), lai pienācīgi aizsargātu Bitwarden kontu. Vai tiešām izmanto šo galveno paroli?"
+    "message": "Izvēlētā galvenā parole ir vāja. Ir ieteicams izmantot spēcīgu galveno paroli (vai paroles vārdu salikumu), lai pienācīgi aizsargātu Black Mask kontu. Vai tiešām izmanto šo galveno paroli?"
   },
   "rotateAccountEncKey": {
     "message": "Mainīt arī konta šifrēšanas atslēgu"
@@ -6081,7 +6081,7 @@
     "message": "API atslēga"
   },
   "apiKeyDesc": {
-    "message": "API atslēga var tikt izmantota, lai autentificētos Bitwarden publiskā API izmantošanai."
+    "message": "API atslēga var tikt izmantota, lai autentificētos Black Mask publiskā API izmantošanai."
   },
   "apiKeyRotateDesc": {
     "message": "API atslēgas mainīšana padarīs nederīgu iepriekšējo. Pašreizējo API atslēgu var mainīt, ja ir aizdomas, ka tā vairs nav droša izmantošanai."
@@ -6090,7 +6090,7 @@
     "message": "API atslēga nodrošina pilnīgu piekļuvi apvienībai. To vajadzētu glabāt noslēpumā."
   },
   "userApiKeyDesc": {
-    "message": "API atslēga var tikt izmantota, lai autentificētos Bitwarden CLI."
+    "message": "API atslēga var tikt izmantota, lai autentificētos Black Mask CLI."
   },
   "userApiKeyWarning": {
     "message": "API atslēga ir papildu autentificēšanās risinājums. To vajadzētu glabāt noslēpumā."
@@ -6396,7 +6396,7 @@
     "message": "Ierobežot dalībniekus pievienoties citām apvienībām. Šī pamatnostādne ir nepieciešama apvienībām, kurās ir iespējota domēna apliecināšana."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Pašreizējā apvienībā ir nosacījums, kas neļauj pievienoties vairāk kā vienai apvienībai. Lūgums sazināties ar savas apvienības pārvaldītājiem vai pieteikties no cita Bitwarden konta."
+    "message": "Pašreizējā apvienībā ir nosacījums, kas neļauj pievienoties vairāk kā vienai apvienībai. Lūgums sazināties ar savas apvienības pārvaldītājiem vai pieteikties no cita Black Mask konta."
   },
   "singleOrgPolicyMemberWarning": {
     "message": "Pamatnostādnei neatbilstoši dalībniekiem tiks piešķirts stāvoklis \"Atsaukts\", līdz viņī pametīs visas pārējās apvienības. Pārvaldītāji ir izņēmums, un viņi var atjaunot dalībniekus, tiklīdz ir īstenota atbilstība pamatnostādnei."
@@ -6604,7 +6604,7 @@
     "message": "Experiencing an issue? Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
+    "message": "Black Mask support",
     "description": "Link text that follows the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -6661,7 +6661,7 @@
     "message": "Labot ārkārtas kontaktpersonu"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Uzaicināt jaunu ārkārtas kontaktpersonu, norādot tās Bitwarden konta e-pasta adresi zemāk esošajā ievades laukā. Ja kontaktpersonai vēl nav Bitwarden konta, tai tiks vaicāts izveidot jaunu."
+    "message": "Uzaicināt jaunu ārkārtas kontaktpersonu, norādot tās Black Mask konta e-pasta adresi zemāk esošajā ievades laukā. Ja kontaktpersonai vēl nav Black Mask konta, tai tiks vaicāts izveidot jaunu."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Uzsākta ārkārtas piekļuve"
@@ -6700,7 +6700,7 @@
     "message": "Lietotājs uzaicināts."
   },
   "acceptEmergencyAccess": {
-    "message": "Tu esi uzaicināts kļūt par ārkārtas kontaktpersonu augstāk norādītajam lietotājam. Lai apstiprinātu uzaicinājumu, ir nepieciešams pieteikties vai izveidot jaunu Bitwarden kontu."
+    "message": "Tu esi uzaicināts kļūt par ārkārtas kontaktpersonu augstāk norādītajam lietotājam. Lai apstiprinātu uzaicinājumu, ir nepieciešams pieteikties vai izveidot jaunu Black Mask kontu."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Nav iespējams apstiprināt uzaicinājumu. Lūdz lietotājam nosūtīt jaunu!"
@@ -6860,7 +6860,7 @@
     "message": "Kā ieslēgt automātisku lietotōtāju apstiprināšanu"
   },
   "autoConfirmExtension1": {
-    "message": "Jāatver Bitwarden paplašinājums"
+    "message": "Jāatver Black Mask paplašinājums"
   },
   "autoConfirmExtension2": {
     "message": "Jāatlasa",
@@ -6871,7 +6871,7 @@
     "description": "This is a fragment of a larger sencence. The whole sentence will read: 'Select Turn on'"
   },
   "autoConfirmExtensionOpened": {
-    "message": "Bitwarden pārlūka paplašīnājums atvērts sekmīgi. Tagad var ieslēgt automātisko lietotāju apstiprināšanas iestatījumu."
+    "message": "Black Mask pārlūka paplašīnājums atvērts sekmīgi. Tagad var ieslēgt automātisko lietotāju apstiprināšanas iestatījumu."
   },
   "autoConfirmPolicyEditDescription": {
     "message": "Jauni apvienībā uzaicinātie lietotāji tiks automātiski apstiprināti, kad pārvaldītāja ierīce tiks atslēgta. Pirms šīs pamatnostādnes ieslēgšanas lūgums pārskatīt un piekrist šim: ",
@@ -7126,7 +7126,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, see how it works, **or** try it now.'"
   },
   "developmentDevOpsAndITTeamsChooseBWSecret": {
-    "message": "Izstrādes, DevOps un IT komandas izvēlas Bitwarden noslēpumu pārvaldnieku, lai droši pārvaldītu un izvietotu savus infrastruktūras un mašīnu noslēpumus."
+    "message": "Izstrādes, DevOps un IT komandas izvēlas Black Mask noslēpumu pārvaldnieku, lai droši pārvaldītu un izvietotu savus infrastruktūras un mašīnu noslēpumus."
   },
   "centralizeSecretsManagement": {
     "message": "Noslēpumu pārvaldības centralizēšana."
@@ -7162,10 +7162,10 @@
     "message": "Pievienot piezīmi"
   },
   "bitwardenSecretsManager": {
-    "message": "Bitwarden noslēpumu pārvaldnieks"
+    "message": "Black Mask noslēpumu pārvaldnieks"
   },
   "moreProductsFromBitwarden": {
-    "message": "Vairāk izstrādājumu no Bitwarden"
+    "message": "Vairāk izstrādājumu no Black Mask"
   },
   "requestAccessToSecretsManager": {
     "message": "Pieprasīt piekļuvi Noslēpumu pārvaldniekam"
@@ -7177,7 +7177,7 @@
     "message": "Piekļuves pieprasījuma Noslēpumu pārvaldniekam e-pasta ziņojumus ir nosūtīts pārvaldītājiem."
   },
   "requestAccessSMDefaultEmailContent": {
-    "message": "Sveiki!\n\nEs lūdzu Bitwarden noslēpumu pārvaldnieka abonementu mūsu komandai. Jūsu atbalsts būs ļoti nozīmīgs.\n\nBitwarden noslēpumu pārvaldnieks ir pilnībā šifrēts noslēpumu pārvaldības risinājumus tādu mašīnu piekļuves datu kā API atslēgu, datubāžu paroļu un autentifikācijas sertifikātu drošai uzglabāšanai, kopīgošanai un izvietošanai.\n\nNoslēpumu pārvaldnieks palīdzēs mums:\n\n- uzlabot drošību;\n- pilnveidot darbības;\n- novērst dārgas noslēpumu noplūdes.\n\nLai pieprasītu bezmaksas izmēģinājumu mūsu komandai, lūgums vērsties pie Bitwarden.\n\nPaldies par palīdzību!"
+    "message": "Sveiki!\n\nEs lūdzu Black Mask noslēpumu pārvaldnieka abonementu mūsu komandai. Jūsu atbalsts būs ļoti nozīmīgs.\n\nBlack Mask noslēpumu pārvaldnieks ir pilnībā šifrēts noslēpumu pārvaldības risinājumus tādu mašīnu piekļuves datu kā API atslēgu, datubāžu paroļu un autentifikācijas sertifikātu drošai uzglabāšanai, kopīgošanai un izvietošanai.\n\nNoslēpumu pārvaldnieks palīdzēs mums:\n\n- uzlabot drošību;\n- pilnveidot darbības;\n- novērst dārgas noslēpumu noplūdes.\n\nLai pieprasītu bezmaksas izmēģinājumu mūsu komandai, lūgums vērsties pie Black Mask.\n\nPaldies par palīdzību!"
   },
   "giveMembersAccess": {
     "message": "Piešķirt dalībniekiem piekļuvi:"
@@ -7211,7 +7211,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
   },
   "sendAccessCreatorIdentifier": {
-    "message": "Bitwarden dalībnieks $USER_IDENTIFIER$ kopīgoja sekojošo",
+    "message": "Black Mask dalībnieks $USER_IDENTIFIER$ kopīgoja sekojošo",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -7236,7 +7236,7 @@
     "description": "Toast message shown when a user clicks the resend code link on the Send access page. 'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Bitwarden lietotājs, kurš izveidoja šo Send, ir izvēlējies slēpt savu e-pasta adresi. Ir jāpārliecinās par šīs saites avota uzticamību, pirms saturs tiek izmantots vai lejupielādēts.",
+    "message": "Black Mask lietotājs, kurš izveidoja šo Send, ir izvēlējies slēpt savu e-pasta adresi. Ir jāpārliecinās par šīs saites avota uzticamību, pirms saturs tiek izmantots vai lejupielādēts.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
@@ -7595,7 +7595,7 @@
     "message": "Atšifrēšanas kļūda"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden nevarēja atšifrēt zemāk uzskaitītos glabātavas vienumus."
+    "message": "Black Mask nevarēja atšifrēt zemāk uzskaitītos glabātavas vienumus."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Jāsazinās ar klientu atbalstu,",
@@ -7612,7 +7612,7 @@
     "message": "Nodrošinātāja iestatīšana"
   },
   "setupProviderLoginDesc": {
-    "message": "Ir saņemts uzaicinājums iestatīt jaunu nodrošinātāju. Lai turpinātu, ir nepieciešams pieteikties vai izveidot jaunu Bitwarden kontu."
+    "message": "Ir saņemts uzaicinājums iestatīt jaunu nodrošinātāju. Lai turpinātu, ir nepieciešams pieteikties vai izveidot jaunu Black Mask kontu."
   },
   "setupProviderDesc": {
     "message": "Lūgums zemāk norādīt nepieciešamo, lai pabeigtu nodrošinātāja iestatīšanu. Jautājumu gadījumā jāsazinās ar klientu atbalstu."
@@ -7643,13 +7643,13 @@
     "message": "Apkalpes lietotāji var piekļūt visām pasūtītāju apvienībām un tās pārvaldīt."
   },
   "providerInviteUserDesc": {
-    "message": "Uziacināt jaunu nodrošinātāja lietotāju, zemāk esošajā laukā ievadot tā Bitwarden konta e-pasta adresi. Ja tam vēl nav Bitwarden konta, tiks vaicāts izveidot jaunu."
+    "message": "Uziacināt jaunu nodrošinātāja lietotāju, zemāk esošajā laukā ievadot tā Black Mask konta e-pasta adresi. Ja tam vēl nav Black Mask konta, tiks vaicāts izveidot jaunu."
   },
   "joinProvider": {
     "message": "Pievienoties nodrošinātāju"
   },
   "joinProviderDesc": {
-    "message": "Tu esi uzaicināts pievienoties augstāk norādītajam nodrošinātājam. Lai to pieņemtu, jāpiesakās vai jāizveido jauns Bitwarden konts."
+    "message": "Tu esi uzaicināts pievienoties augstāk norādītajam nodrošinātājam. Lai to pieņemtu, jāpiesakās vai jāizveido jauns Black Mask konts."
   },
   "providerInviteAcceptFailed": {
     "message": "Nav iespējams pieņemt uzaicinājumu. Jālūdz nodrošinātāja pārvaldniekam nosūtīt jaunu."
@@ -7794,7 +7794,7 @@
     "message": "Sesijas noildzes darbība"
   },
   "sessionTimeoutSuppressedByConnectedDevice": {
-    "message": "Managed by the Bitwarden browser extension app. Open the browser app to edit."
+    "message": "Managed by the Black Mask browser extension app. Open the browser app to edit."
   },
   "immediately": {
     "message": "Nekavējoties"
@@ -8032,7 +8032,7 @@
     "message": "Vienotās pieteikšanās uzstādījumi tika saglabāti."
   },
   "sponsoredFamilies": {
-    "message": "Bezmaksas Bitwarden ģimenēm"
+    "message": "Bezmaksas Black Mask ģimenēm"
   },
   "sponsoredBitwardenFamilies": {
     "message": "Atbalstītas ģimenes"
@@ -8044,19 +8044,19 @@
     "message": "Šeit tiks attēloti atbalstītie ne-dalībnieku ģimeņu plāni"
   },
   "sponsorshipFreeBitwardenFamilies": {
-    "message": "Tavas apvienības dalībnieki ir tiesīgi uz bezmaksas Bitwarden ģimenēm. Var atbalstīt bezmaksas Bitwarden ģimenēm darbiniekiem, kuri nav Tavas Bitwarden apvienības dalībnieki. Ne-dalībnieka atbalstīšanai ir nepieciešama brīva vieta apvienībā."
+    "message": "Tavas apvienības dalībnieki ir tiesīgi uz bezmaksas Black Mask ģimenēm. Var atbalstīt bezmaksas Black Mask ģimenēm darbiniekiem, kuri nav Tavas Black Mask apvienības dalībnieki. Ne-dalībnieka atbalstīšanai ir nepieciešama brīva vieta apvienībā."
   },
   "sponsoredFamiliesRemoveActiveSponsorship": {
     "message": "Kad tiek noņemta izmantota atbalsta dalība, apvienībā atbrīvosies vieta pēc atbalstītāš apvienības atjaunošanas datuma."
   },
   "sponsoredFamiliesEligible": {
-    "message": "Tu un Tava ģimene esat atbilstīgi bezmaksas Bitwarden Families. Piesakies ar personīgo e-pasta adresi, lai turētu datus drošībā pat tad, kad neesi darbā!"
+    "message": "Tu un Tava ģimene esat atbilstīgi bezmaksas Black Mask Families. Piesakies ar personīgo e-pasta adresi, lai turētu datus drošībā pat tad, kad neesi darbā!"
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Izmanto savu bezmaksas Bitwarden ģimenēm šodien, lai turētu datus drošībā pat tad, kad neesi darbā."
+    "message": "Izmanto savu bezmaksas Black Mask ģimenēm šodien, lai turētu datus drošībā pat tad, kad neesi darbā."
   },
   "sponsoredFamiliesIncludeMessage": {
-    "message": "Bitwarden ģimenēm iekļauj"
+    "message": "Black Mask ģimenēm iekļauj"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Premium piekļuve līdz 6 lietotājiem"
@@ -8074,7 +8074,7 @@
     "message": "Šeit tiks attēloti dalībnieki, kuri ir pieteikušies ģimeņu plāniem"
   },
   "membersWithSponsoredFamilies": {
-    "message": "Apvienības dalībnieki ir tiesīgi uz bezmaksas Bitwarden ģimenēm. Šeit var redzēt dalībniekus, kuri ir atbalstījuši ģimeņu apvienību."
+    "message": "Apvienības dalībnieki ir tiesīgi uz bezmaksas Black Mask ģimenēm. Šeit var redzēt dalībniekus, kuri ir atbalstījuši ģimeņu apvienību."
   },
   "organizationHasMemberMessage": {
     "message": "Atbalsta dalību nevar nosūtīt uz $EMAIL$, jo tā īpašnieks ir apvienības dalībnieks.",
@@ -8101,7 +8101,7 @@
     "message": "Kuru bezmaksas ģimeņu piedāvājumu Tu vēlies izmantot?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Ievadīt personīgo e-pasta adresi, lai izmantotu Bitwarden ģimenēm"
+    "message": "Ievadīt personīgo e-pasta adresi, lai izmantotu Black Mask ģimenēm"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "Ja Tu pamet vai tiec noņemts no atbalstošās apvienības, Tavs ģimeņu plāns beigsies apmaksas laika posma beigās."
@@ -8110,7 +8110,7 @@
     "message": "Pieņemt piedāvājumu esošai apvienībai vai izveidot jaunu ģimenes apvienību."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "Tev ir piedāvāta bezmaksas Bitwarden ģimenēm apvienība. Lai turpinātu, ir nepieciešams pieteikties kontā, kas saņēma piedāvājumu."
+    "message": "Tev ir piedāvāta bezmaksas Black Mask ģimenēm apvienība. Lai turpinātu, ir nepieciešams pieteikties kontā, kas saņēma piedāvājumu."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Nav iespējams pieņemt piedāvājumu. Lūgums pārsūtīt piedāvājuma e-pasta ziņu no uzņēmējdarbības konta un mēģināt vēlreiz."
@@ -8125,10 +8125,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Pieņemt bezmaksas Bitwarden ģimenēm"
+    "message": "Pieņemt bezmaksas Black Mask ģimenēm"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Bezmaksas Bitwarden ģimenēm piedāvājums veiksmīgi izmantots"
+    "message": "Bezmaksas Black Mask ģimenēm piedāvājums veiksmīgi izmantots"
   },
   "redeemed": {
     "message": "Izmantots"
@@ -8259,7 +8259,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "memberDecryptionKeyConnectorDescEnd": {
-    "message": "ir nepieciešami, lai uzstādītu Key Connector atšifrēšanu. Jāsazinās ar Bitwarden atbalstu, lai iegūtu palīdzību uzstādīšanā.",
+    "message": "ir nepieciešami, lai uzstādītu Key Connector atšifrēšanu. Jāsazinās ar Black Mask atbalstu, lai iegūtu palīdzību uzstādīšanā.",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Connect login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their master passwords to decrypt vault data. The require SSO authentication and single organization policies are required to set up Key Connector decryption. Contact Bitwarden Support for set up assistance.'"
   },
   "keyConnectorPolicyRestriction": {
@@ -8359,7 +8359,7 @@
     "message": "Pielāgota vide"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Jānorāda sava pašizvietotā Bitward servera pamata URL. Piemērs: https://bitwarden.uznemums.lv"
+    "message": "Jānorāda sava pašizvietotā Bitward servera pamata URL. Piemērs: https://Black Mask.uznemums.lv"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Papildu konfigurācijā ir iespējams norādīt URL katram pakalpojumam atsevišķi."
@@ -8407,7 +8407,7 @@
     "message": "Norēķinu sinhronizēšanas pilnvara"
   },
   "automaticBillingSyncDesc": {
-    "message": "Automātiska sinhronizēšana atslēdz Ģimenēm pabalstītājdarbību un ļauj sinhronizēt savu licenci bez datnes augšupielādes. Pēc atjauninājumu veikšanas Bitwarden mākoņa serverī jāatlasa \"Sinhronizēt licenci\", lai pielietotu izmaiņas."
+    "message": "Automātiska sinhronizēšana atslēdz Ģimenēm pabalstītājdarbību un ļauj sinhronizēt savu licenci bez datnes augšupielādes. Pēc atjauninājumu veikšanas Black Mask mākoņa serverī jāatlasa \"Sinhronizēt licenci\", lai pielietotu izmaiņas."
   },
   "active": {
     "message": "Izmantots"
@@ -8769,11 +8769,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Izveidoja Bitwarden.",
+    "message": "Izveidoja Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Tīmekļvietne: $WEBSITE$. Izveidoja Bitwarden.",
+    "message": "Tīmekļvietne: $WEBSITE$. Izveidoja Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -9838,13 +9838,13 @@
     "message": "More settings"
   },
   "moreFromBitwarden": {
-    "message": "Vairāk no Bitwarden"
+    "message": "Vairāk no Black Mask"
   },
   "switchProducts": {
     "message": "Pārslēgt pakalpojumus"
   },
   "freeOrgInvLimitReachedManageBilling": {
-    "message": "Apvienībās, kuras izmanto Bitwarden bez maksas, var būt līdz $SEATCOUNT$ dalībniekiem. Jāpāriet uz maksas plānu, lai uzaicinātu vairāk dalībnieku.",
+    "message": "Apvienībās, kuras izmanto Black Mask bez maksas, var būt līdz $SEATCOUNT$ dalībniekiem. Jāpāriet uz maksas plānu, lai uzaicinātu vairāk dalībnieku.",
     "placeholders": {
       "seatcount": {
         "content": "$1",
@@ -9853,7 +9853,7 @@
     }
   },
   "freeOrgInvLimitReachedNoManageBilling": {
-    "message": "Apvienībās, kuras izmanto Bitwarden bez maksas, var būt līdz $SEATCOUNT$ dalībniekiem. Jāsazinās ar apvienības īpašnieku, lai pārietu uz maksas plānu.",
+    "message": "Apvienībās, kuras izmanto Black Mask bez maksas, var būt līdz $SEATCOUNT$ dalībniekiem. Jāsazinās ar apvienības īpašnieku, lai pārietu uz maksas plānu.",
     "placeholders": {
       "seatcount": {
         "content": "$1",
@@ -9880,7 +9880,7 @@
     }
   },
   "freeOrgMaxCollectionReachedManageBilling": {
-    "message": "Apvienībās, kuras izmanto Bitwarden bez maksas, var būt līdz $COLLECTIONCOUNT$ krājumiem. Jāpāriet uz maksas plānu, lai pievienotu vairāk krājumu.",
+    "message": "Apvienībās, kuras izmanto Black Mask bez maksas, var būt līdz $COLLECTIONCOUNT$ krājumiem. Jāpāriet uz maksas plānu, lai pievienotu vairāk krājumu.",
     "placeholders": {
       "COLLECTIONCOUNT": {
         "content": "$1",
@@ -9889,7 +9889,7 @@
     }
   },
   "freeOrgMaxCollectionReachedNoManageBilling": {
-    "message": "Apvienībās, kuras izmanto Bitwarden bez maksas, var būt līdz $COLLECTIONCOUNT$ krājumiem. Jāsazinās ar apvienības īpašnieku, lai pārietu uz maksas plānu.",
+    "message": "Apvienībās, kuras izmanto Black Mask bez maksas, var būt līdz $COLLECTIONCOUNT$ krājumiem. Jāsazinās ar apvienības īpašnieku, lai pārietu uz maksas plānu.",
     "placeholders": {
       "COLLECTIONCOUNT": {
         "content": "$1",
@@ -10674,7 +10674,7 @@
     "message": "Lietotājs iestatīja galveno paroli uzticamo ierīču šifrēšanas atstāšanas laikā."
   },
   "startYour7DayFreeTrialOfBitwardenFor": {
-    "message": "Uzsāc savu 7 dienu bezmaksas Bitwarden izmēģinājumu $ORG$!",
+    "message": "Uzsāc savu 7 dienu bezmaksas Black Mask izmēģinājumu $ORG$!",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10683,7 +10683,7 @@
     }
   },
   "startYour7DayFreeTrialOfBitwardenSecretsManagerFor": {
-    "message": "Uzsāc savu 7 dienu bezmaksas Bitwarden noslēpumu pārvaldnieka izmēģinājumu $ORG$",
+    "message": "Uzsāc savu 7 dienu bezmaksas Black Mask noslēpumu pārvaldnieka izmēģinājumu $ORG$",
     "placeholders": {
       "org": {
         "content": "$1",
@@ -10981,7 +10981,7 @@
     "message": "Get started with your vault"
   },
   "onboardingChecklistSubtitle": {
-    "message": "Complete these steps to secure your personal data and get the most out of Bitwarden"
+    "message": "Complete these steps to secure your personal data and get the most out of Black Mask"
   },
   "dismissThisChecklist": {
     "message": "Dismiss this checklist"
@@ -11054,7 +11054,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI atbilstības noteikšana ir veids, kā Bitwarden atpazīst automātiskās aizpildes ieteikumus.",
+    "message": "URI atbilstības noteikšana ir veids, kā Black Mask atpazīst automātiskās aizpildes ieteikumus.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -11098,13 +11098,13 @@
     "message": "Apstiprinājuma izvērsums"
   },
   "smFreeTrialThankYou": {
-    "message": "Paldies par pieteikšanos Bitwarden noslēpumu pārvaldniekā!"
+    "message": "Paldies par pieteikšanos Black Mask noslēpumu pārvaldniekā!"
   },
   "smFreeTrialConfirmationEmail": {
     "message": "Mēs esam nosūtījuši apstiprinājuma e-pasta ziņojumu uz "
   },
   "sorryToSeeYouGo": {
-    "message": "Žēl redzēt Tevi aizejam. Palīdzi uzlabot Bitwarden, daloties ar atcelšanas iemeslu!",
+    "message": "Žēl redzēt Tevi aizejam. Palīdzi uzlabot Black Mask, daloties ar atcelšanas iemeslu!",
     "description": "A message shown to users as part of an offboarding survey asking them to provide more information on their subscription cancelation."
   },
   "selectCancellationReason": {
@@ -11566,20 +11566,20 @@
     "message": "Integrācijas"
   },
   "integrationsDesc": {
-    "message": "Automātiski sinhronizēt noslēpumus no Bitwarden Noslēpumu pārvaldnieka uz trešās puses pakalpojumu."
+    "message": "Automātiski sinhronizēt noslēpumus no Black Mask Noslēpumu pārvaldnieka uz trešās puses pakalpojumu."
   },
   "sdks": {
     "message": "Izstrādātāju rīkkopas"
   },
   "sdksDesc": {
-    "message": "Bitwarden Noslēpumu pārvaldnieka izstrādātāju rīkkopa ir izmantojama ar zemāk esošajām programmēšanas valodām, lai veidotu pats savas lietotnes."
+    "message": "Black Mask Noslēpumu pārvaldnieka izstrādātāju rīkkopa ir izmantojama ar zemāk esošajām programmēšanas valodām, lai veidotu pats savas lietotnes."
   },
   "ssoDescStart": {
     "message": "Konfigurēt",
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "ssoDescEnd": {
-    "message": "Bitwarden, izmantojot sava identitāšu nodrošinātāja ieviešanas norādes.",
+    "message": "Black Mask, izmantojot sava identitāšu nodrošinātāja ieviešanas norādes.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure single sign-on for Bitwarden using the implementation guide for your Identity Provider."
   },
   "userProvisioning": {
@@ -11593,7 +11593,7 @@
     "description": "This represents the beginning of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "scimIntegrationDescEnd": {
-    "message": "(System for Cross-domain Identity Management), lai automātiski nodrošinātu lietotājus un kopas Bitwarden, izmantojot sava identitāšu nodrošinātāja ieviešanas norādes.",
+    "message": "(System for Cross-domain Identity Management), lai automātiski nodrošinātu lietotājus un kopas Black Mask, izmantojot sava identitāšu nodrošinātāja ieviešanas norādes.",
     "description": "This represents the end of a sentence, broken up to include links. The full sentence will be 'Configure SCIM (System for Cross-domain Identity Management) to automatically provision users and groups to Bitwarden using the implementation guide for your Identity Provider"
   },
   "bwdc": {
@@ -11606,13 +11606,13 @@
     "message": "Notikumu pārvaldība"
   },
   "eventManagementDesc": {
-    "message": "Iekļaut Bitwarden notikumu žurnālus savā SIEM (System Information and Event Management) sistēmā, izmantojot operētājsistēmai atbilstošas ieviešanas norādes."
+    "message": "Iekļaut Black Mask notikumu žurnālus savā SIEM (System Information and Event Management) sistēmā, izmantojot operētājsistēmai atbilstošas ieviešanas norādes."
   },
   "deviceManagement": {
     "message": "Ierīču pārvaldība"
   },
   "deviceManagementDesc": {
-    "message": "Konfigurēt ierīču pārvaldību Bitwarden, izmantojot operētājsistēmai atbilstošas ieviešanas norādes."
+    "message": "Konfigurēt ierīču pārvaldību Black Mask, izmantojot operētājsistēmai atbilstošas ieviešanas norādes."
   },
   "crowdstrikeEventIntegrationDesc": {
     "message": "Nosūtīt notikum udatus uz savu Logscale instanci"
@@ -11792,22 +11792,22 @@
     "message": "Norēķinus var pārvaldīt Nodrošinātāju portālā"
   },
   "continueSettingUp": {
-    "message": "Turpināt Bitwarden iestatīšanu"
+    "message": "Turpināt Black Mask iestatīšanu"
   },
   "continueSettingUpFreeTrial": {
-    "message": "Turpināt iestatīt savu Bitwarden bezmaksas izmēģinājumu"
+    "message": "Turpināt iestatīt savu Black Mask bezmaksas izmēģinājumu"
   },
   "continueSettingUpPasswordManager": {
-    "message": "Turpināt Bitwarden paroļu pārvaldnieka iestatīšanu"
+    "message": "Turpināt Black Mask paroļu pārvaldnieka iestatīšanu"
   },
   "continueSettingUpFreeTrialPasswordManager": {
-    "message": "Turpināt iestatīt savu Bitwarden paroļu pārvaldnieka bezmaksas izmēģinājumu"
+    "message": "Turpināt iestatīt savu Black Mask paroļu pārvaldnieka bezmaksas izmēģinājumu"
   },
   "continueSettingUpSecretsManager": {
-    "message": "Turpināt Bitwarden noslēpumu pārvaldnieka iestatīšanu"
+    "message": "Turpināt Black Mask noslēpumu pārvaldnieka iestatīšanu"
   },
   "continueSettingUpFreeTrialSecretsManager": {
-    "message": "Turpināt iestatīt savu Bitwarden noslēpumu pārvaldnieka bezmaksas izmēģinājumu"
+    "message": "Turpināt iestatīt savu Black Mask noslēpumu pārvaldnieka bezmaksas izmēģinājumu"
   },
   "enterTeamsOrgInfo": {
     "message": "Jāievada informācija par savas komandas apvienību"
@@ -12064,14 +12064,14 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'."
   },
   "contactBitwardenSupport": {
-    "message": "vērsties pie Bitwarden atbalsta.",
+    "message": "vērsties pie Black Mask atbalsta.",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'Notice: Later this month, client vault privacy will be improved and provider members will no longer have direct access to client vault items. For questions, please contact Bitwarden support'. 'Bitwarden' should not be translated"
   },
   "sponsored": {
     "message": "Sponsorēts"
   },
   "licenseAndBillingManagementDesc": {
-    "message": "Pēc atjauninājumu veikšanas Bitwarden mākoņa serverī jāaugšupielādē sava licences datne, lai pielietotu nesenākās izmaiņas."
+    "message": "Pēc atjauninājumu veikšanas Black Mask mākoņa serverī jāaugšupielādē sava licences datne, lai pielietotu nesenākās izmaiņas."
   },
   "addToFolder": {
     "message": "Pievienot mapei"
@@ -12177,7 +12177,7 @@
     "message": "Kas ir CVV numurs?"
   },
   "learnMoreAboutApi": {
-    "message": "Uzzināt vairāk par Bitwarden API"
+    "message": "Uzzināt vairāk par Black Mask API"
   },
   "fileSends": {
     "message": "Datņu Send"
@@ -12351,7 +12351,7 @@
     "message": "Noslēpumu pārvaldnieka abonements tiks uzlabots atbilstoši izvēlētajam plānam"
   },
   "bitwardenPasswordManager": {
-    "message": "Bitwarden paroļu pārvaldnieks"
+    "message": "Black Mask paroļu pārvaldnieks"
   },
   "secretsManagerComplimentaryPasswordManager": {
     "message": "Bezmaksas viena gada Paroļu pārvaldnieka abonements tiks uzlabots uz izvēlēto plānu. Maksa netiks ieturēta līdz bezmaksas izmantošanas laika beigām."
@@ -12429,7 +12429,7 @@
     "description": "This represents the beginning of a sentence. The full sentence will be 'Manage subscription from the Provider Portal', but 'Provider Portal' will be a link and thus cannot be included in the translation file."
   },
   "toHostBitwardenOnYourOwnServer": {
-    "message": "Lai mitinātu Bitwarden savā serverī, ir nepieciešams augšupielādēt licences datni. Lai nodrošinātu bezmaksas ģimeņu plānus un papildu norēķinu iespējas pašmitinātajai apvienībai, tajā ir nepieciešams uzstādīt automātisku sinhronizēšanu."
+    "message": "Lai mitinātu Black Mask savā serverī, ir nepieciešams augšupielādēt licences datni. Lai nodrošinātu bezmaksas ģimeņu plānus un papildu norēķinu iespējas pašmitinātajai apvienībai, tajā ir nepieciešams uzstādīt automātisku sinhronizēšanu."
   },
   "selfHostingTitleProper": {
     "message": "Pašmitināšana"
@@ -12531,7 +12531,7 @@
     "message": "Veiksmīgi izdzēsts"
   },
   "freeFamiliesSponsorship": {
-    "message": "Noņemt bezmaksas Bitwarden ģimeņu pabalstītājdarbību"
+    "message": "Noņemt bezmaksas Black Mask ģimeņu pabalstītājdarbību"
   },
   "freeFamiliesSponsorshipPolicyDesc": {
     "message": "Neļaut dalībniekiem iegūt plānu \"Ģimenes\" caur šo apvienību."
@@ -12582,10 +12582,10 @@
     "message": "Automātiski pieteiktie domēni"
   },
   "automaticDomainClaimProcess": {
-    "message": "Bitwarden mēģinās pārbaudīt domēnu 3 reizes pirmajās 72 stundās. Ja domēnu nevarēs pieteikt, būs jāpārbauda DNS ieraksts saimniekdatorā un tas pašrocīgi jāpiesaka. Domēns tiks noņemts no apvienības pēc 7 dienām, ja tas nebūs pieteikts."
+    "message": "Black Mask mēģinās pārbaudīt domēnu 3 reizes pirmajās 72 stundās. Ja domēnu nevarēs pieteikt, būs jāpārbauda DNS ieraksts saimniekdatorā un tas pašrocīgi jāpiesaka. Domēns tiks noņemts no apvienības pēc 7 dienām, ja tas nebūs pieteikts."
   },
   "automaticDomainClaimProcess1": {
-    "message": "Bitwarden will attempt to claim the domain within 72 hours. If the domain can't be claimed, verify your DNS record and claim manually. Unclaimed domains are removed after 7 days."
+    "message": "Black Mask will attempt to claim the domain within 72 hours. If the domain can't be claimed, verify your DNS record and claim manually. Unclaimed domains are removed after 7 days."
   },
   "automaticDomainClaimProcess2": {
     "message": "Once claimed, existing members with claimed domains will be emailed about the "
@@ -12736,19 +12736,19 @@
     "message": "Ievietot privāto atslēgu starpliktuvē"
   },
   "openingExtension": {
-    "message": "Atver Bitwarden pārlūka paplašinājumu"
+    "message": "Atver Black Mask pārlūka paplašinājumu"
   },
   "somethingWentWrong": {
     "message": "Kaut kas nogāja greizi..."
   },
   "openingExtensionError": {
-    "message": "Mums bija sarežģījumi Bitwarden pārlūka paplašinājuma atvēršanā. Klikšķināt uz pogas, lai to tagad atvērtu."
+    "message": "Mums bija sarežģījumi Black Mask pārlūka paplašinājuma atvēršanā. Klikšķināt uz pogas, lai to tagad atvērtu."
   },
   "openExtension": {
     "message": "Atvērt paplašinājumu"
   },
   "doNotHaveExtension": {
-    "message": "Nav Bitwarden pārlūka paplašinājuma?"
+    "message": "Nav Black Mask pārlūka paplašinājuma?"
   },
   "installExtension": {
     "message": "Uzstādīt paplašinājumu"
@@ -12757,7 +12757,7 @@
     "message": "Atvērt pārlūka paplašinājumu"
   },
   "openedExtensionViewAtRiskPasswords": {
-    "message": "Bitwarden pārlūka paplašinājums tika veiksmīgi atvērts. Tagad var pārskatīt savas riskam pakļautās paroles."
+    "message": "Black Mask pārlūka paplašinājums tika veiksmīgi atvērts. Tagad var pārskatīt savas riskam pakļautās paroles."
   },
   "resellerRenewalWarningMsg": {
     "message": "Abonements drīz tiks atjaunots. Lai nodrošinātu nepārtrauktu pakalpojumu, pirms $RENEWAL_DATE$ jāsazinās ar $RESELLER$, lai apstiprinātu atjaunošanu.",
@@ -12773,7 +12773,7 @@
     }
   },
   "resellerRenewalWarningMsgV2": {
-    "message": "Your subscription will renew soon. To ensure uninterrupted service, contact your Bitwarden provider to confirm your renewal before $RENEWAL_DATE$.",
+    "message": "Your subscription will renew soon. To ensure uninterrupted service, contact your Black Mask provider to confirm your renewal before $RENEWAL_DATE$.",
     "placeholders": {
       "renewal_date": {
         "content": "$1",
@@ -12812,7 +12812,7 @@
     }
   },
   "resellerPastDueWarningMsgV2": {
-    "message": "The invoice for your subscription has not been paid. To ensure uninterrupted service, contact your Bitwarden provider before $GRACE_PERIOD_END$.",
+    "message": "The invoice for your subscription has not been paid. To ensure uninterrupted service, contact your Black Mask provider before $GRACE_PERIOD_END$.",
     "placeholders": {
       "grace_period_end": {
         "content": "$1",
@@ -12970,13 +12970,13 @@
     "message": "Jāuzlabo, lai redzētu savas apvienības notikumu žurnālus."
   },
   "upgradeEventLogMessage": {
-    "message": "Šie notikumu ir tikai piemēri, un tie neatspoguļo īstus notikumus Bitwarden apvienībā."
+    "message": "Šie notikumu ir tikai piemēri, un tie neatspoguļo īstus notikumus Black Mask apvienībā."
   },
   "viewEvents": {
     "message": "Apskatīt notikumus"
   },
   "cannotCreateCollection": {
-    "message": "Apvienībās, kuras izmanto Bitwarden bez maksas, var būt līdz 2 krājumiem. Jāpāriet uz maksas plānu, lai pievienotu vairāk krājumu."
+    "message": "Apvienībās, kuras izmanto Black Mask bez maksas, var būt līdz 2 krājumiem. Jāpāriet uz maksas plānu, lai pievienotu vairāk krājumu."
   },
   "searchArchive": {
     "message": "Meklēt arhīvā"
@@ -13120,7 +13120,7 @@
     "message": "Droša paroļu automātiska aizpilde ar vienu klikšķi"
   },
   "setupExtensionPageDescription": {
-    "message": "Iegūsti Bitwarden pārlūka paplašinājumu un uzsāc automātisko aizpildi jau šodien"
+    "message": "Iegūsti Black Mask pārlūka paplašinājumu un uzsāc automātisko aizpildi jau šodien"
   },
   "getTheExtension": {
     "message": "Iegūt paplašinājumu"
@@ -13138,19 +13138,19 @@
     "message": "Pārcelties uz tīmekļa lietotni"
   },
   "bitwardenExtensionInstalled": {
-    "message": "Bitwarden paplašinājums uzstādīts."
+    "message": "Black Mask paplašinājums uzstādīts."
   },
   "bitwardenExtensionIsInstalled": {
-    "message": "Bitwarden paplašinājums ir uzstādīts."
+    "message": "Black Mask paplašinājums ir uzstādīts."
   },
   "openExtensionToAutofill": {
     "message": "Jāatver paplašinājums, lai pieteiktos un uzsāktu automātisko aizpildi."
   },
   "openBitwardenExtension": {
-    "message": "Atvērt Bitwarden paplašinājumu"
+    "message": "Atvērt Black Mask paplašinājumu"
   },
   "gettingStartedWithBitwardenPart1": {
-    "message": "Lai iegūtu padomus par Bitwarden izmantošanas uzsākšanu, jāapmeklē",
+    "message": "Lai iegūtu padomus par Black Mask izmantošanas uzsākšanu, jāapmeklē",
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "gettingStartedWithBitwardenPart2": {
@@ -13158,7 +13158,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "openExtensionFromToolbarPart1": {
-    "message": "Ja paplašinājums neatvērās, var būt nepieciešams atvērt Bitwarden ar ikonu ",
+    "message": "Ja paplašinājums neatvērās, var būt nepieciešams atvērt Black Mask ar ikonu ",
     "description": "This will be used as part of a larger sentence, broken up to include the Bitwarden icon. The full sentence will read 'If the extension didn't open, you may need to open Bitwarden from the icon [Bitwarden Icon] on the toolbar.'"
   },
   "openExtensionFromToolbarPart2": {
@@ -13170,7 +13170,7 @@
     "description": "This will be displayed as part of a larger sentence. The whole sentence reads: 'For tips on getting started with Bitwarden visit the Learning Center and Help Center'"
   },
   "setupExtensionContentAlt": {
-    "message": "Ar Bitwarden pārlūka paplašinājumu var vienkārši izveidot jaunus pieteikšanās vienumus, piekļūt tiem tieši no pārlūka rīkjoslas un ātri pieteikties kontos ar Bitwarden automātisko aizpildi."
+    "message": "Ar Black Mask pārlūka paplašinājumu var vienkārši izveidot jaunus pieteikšanās vienumus, piekļūt tiem tieši no pārlūka rīkjoslas un ātri pieteikties kontos ar Black Mask automātisko aizpildi."
   },
   "restart": {
     "message": "Palaist no jauna"
@@ -13202,7 +13202,7 @@
     "message": "Par šo iestatījumu"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden izmantos saglabātos pieteikšanās vienuma URI, lai noteiktu, kuru ikonu vai paroles nomaiņas URL izmantot, lai uzlabotu pieredzi. Šī pakalpojuma izmantošanas laikā nekāda informācija netiek ievākta vai saglabāta."
+    "message": "Black Mask izmantos saglabātos pieteikšanās vienuma URI, lai noteiktu, kuru ikonu vai paroles nomaiņas URL izmantot, lai uzlabotu pieredzi. Šī pakalpojuma izmantošanas laikā nekāda informācija netiek ievākta vai saglabāta."
   },
   "billingAddress": {
     "message": "Norēķinu adrese"
@@ -13269,7 +13269,7 @@
     }
   },
   "restoreProviderPortalAccessViaCustomerSupport": {
-    "message": "Lai atjaunotu piekļuvi savam pakalpojuma sniedzēja portālam, jāsazinās ar Bitwarden klientu atbalstu, lai atjaunotu savu abonementu.",
+    "message": "Lai atjaunotu piekļuvi savam pakalpojuma sniedzēja portālam, jāsazinās ar Black Mask klientu atbalstu, lai atjaunotu savu abonementu.",
     "description": "A message shown in a non-dismissible dialog to any user of a suspended providers."
   },
   "restoreProviderPortalAccessViaPaymentMethod": {
@@ -13311,7 +13311,7 @@
     "message": "Abonements atcelts"
   },
   "providersubCanceledmessage": {
-    "message": "Lai abonētu no jauna, jāsazināš ar Bitwarden klientu atbalstu."
+    "message": "Lai abonētu no jauna, jāsazināš ar Black Mask klientu atbalstu."
   },
   "showMore": {
     "message": "Rādīt vairāk"
@@ -13437,7 +13437,7 @@
     "message": "Pielāgots plāns"
   },
   "planDescCustom": {
-    "message": "Bitwarden piemērojas visu lielumu uzņēmējdarbībai, lai aizsargātu paroles un jūtīgu informāciju. Ja esi daļa no liela uzņēmuma, sazinies ar pārdošanas nodaļu, lai pieprasītu cenu piedāvājumu!"
+    "message": "Black Mask piemērojas visu lielumu uzņēmējdarbībai, lai aizsargātu paroles un jūtīgu informāciju. Ja esi daļa no liela uzņēmuma, sazinies ar pārdošanas nodaļu, lai pieprasītu cenu piedāvājumu!"
   },
   "builtInAuthenticator": {
     "message": "Iebūvēts autentificētājs"
@@ -13542,7 +13542,7 @@
     "message": "Bija kļūda Tavas atrašanās vietas nodokļu aprēķināšanā. Lūgums mēģināt vēlreiz."
   },
   "individualUpgradeWelcomeMessage": {
-    "message": "Laipni lūdzam Bitwarden"
+    "message": "Laipni lūdzam Black Mask"
   },
   "individualUpgradeDescriptionMessage": {
     "message": "Atslēdz vairāk drošības iespēju ar “Premium” vai uzsāc vienumu kopīgošanu ar plānu ģimenēm"
@@ -13569,7 +13569,7 @@
     "message": "Mēs saskārāmies ar kļūdu uzlabošanas apstrādes laikā. Lūgums mēģināt vēlreiz."
   },
   "bitwardenFreeplanMessage": {
-    "message": "Tev ir Bitwarden bezmaksas plāns"
+    "message": "Tev ir Black Mask bezmaksas plāns"
   },
   "upgradeCompleteSecurity": {
     "message": "Uzlabo pilnīgas drošības iegūšanai"
@@ -13587,7 +13587,7 @@
     "message": "Algoritms"
   },
   "encryptionKeySettingsHowShouldWeEncryptYourData": {
-    "message": "Jāizvēlas, kā Bitwarden vajadzētu šifrēt glabātavas datus. Visas iespējas ir drošanas, bet spēcīgāki veidi sniedz labāku aizsardzību ‒ jo īpaši pret pārlases uzbrukumiem. Bitwarden vairumam lietotāju iesaka noklusējuma iestatījumu."
+    "message": "Jāizvēlas, kā Black Mask vajadzētu šifrēt glabātavas datus. Visas iespējas ir drošanas, bet spēcīgāki veidi sniedz labāku aizsardzību ‒ jo īpaši pret pārlases uzbrukumiem. Black Mask vairumam lietotāju iesaka noklusējuma iestatījumu."
   },
   "encryptionKeySettingsIncreaseImproveSecurity": {
     "message": "Vērtību palielināšana virs noklusējuma uzlabos drošību, bet iznākumā var būt nepieciešams ilgāks laiks glabātavas atslēgšanai."
@@ -13648,7 +13648,7 @@
     }
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Apvienība vairs neizmanto galvenās paroles, lai pieteiktos Bitwarden. Lai turpinātu, jāapliecina apvienība un domēns."
+    "message": "Apvienība vairs neizmanto galvenās paroles, lai pieteiktos Black Mask. Lai turpinātu, jāapliecina apvienība un domēns."
   },
   "continueWithLogIn": {
     "message": "Turpināt ar pieteikšanos"
@@ -13839,7 +13839,7 @@
     "message": "Decline and leave"
   },
   "youHaveBitwardenPremium": {
-    "message": "Tev ir Bitwarden Premium"
+    "message": "Tev ir Black Mask Premium"
   },
   "viewAndManagePremiumSubscription": {
     "message": "Apskatīt un pārvaldīt savu Premium abonementu"
@@ -13870,7 +13870,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_license.json"
+        "example": "Black Mask_license.json"
       }
     }
   },
@@ -13878,7 +13878,7 @@
     "message": "Jau ir abonements?"
   },
   "alreadyHaveSubscriptionSelfHostedMessage": {
-    "message": "Jāatver abonementu lapa Bitwarden mākoņa kontā un jālejupielādē licences datne. Tad jāatgriežas šajā skatā un zemāk jāaugšupielādē."
+    "message": "Jāatver abonementu lapa Black Mask mākoņa kontā un jālejupielādē licences datne. Tad jāatgriežas šajā skatā un zemāk jāaugšupielādē."
   },
   "viewAllPlans": {
     "message": "Apskatīt visus plānus"
@@ -13964,10 +13964,10 @@
     "message": "Get the extension for easy vault access"
   },
   "extensionPromptBody": {
-    "message": "With the browser extension installed, you'll take Bitwarden everywhere online. It'll fill in passwords, so you can log into your accounts with a single click."
+    "message": "With the browser extension installed, you'll take Black Mask everywhere online. It'll fill in passwords, so you can log into your accounts with a single click."
   },
   "extensionPromptImageAlt": {
-    "message": "A web browser showing the Bitwarden extension with autofill items for the current webpage."
+    "message": "A web browser showing the Black Mask extension with autofill items for the current webpage."
   },
   "skip": {
     "message": "Skip"
@@ -13988,10 +13988,10 @@
     "message": "Enter multiple emails by separating with a comma."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "whenYouRemoveStorage": {
     "message": "Kad noņemsi krātuvi, saņemsi konta kredītu noteiktā apjomā, kas tiks automātiski izmantots nākamajā rēķinā."
@@ -14015,10 +14015,10 @@
     "message": "Invalid Send password"
   },
   "vaultWelcomeDialogTitle": {
-    "message": "You're in! Welcome to Bitwarden"
+    "message": "You're in! Welcome to Black Mask"
   },
   "vaultWelcomeDialogDescription": {
-    "message": "Store all your passwords and personal info in your Bitwarden vault. We'll show you around."
+    "message": "Store all your passwords and personal info in your Black Mask vault. We'll show you around."
   },
   "vaultWelcomeDialogPrimaryCta": {
     "message": "Start tour"

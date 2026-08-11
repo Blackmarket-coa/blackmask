@@ -30,7 +30,7 @@ itself hidden unless the corresponding flag is on.
 ## Feature flags — and how to turn them on
 
 All eight flags are declared in `libs/common/src/enums/feature-flag.enum.ts` under the
-`/* Black Mask */` group, and all **default to `false`** in `DefaultFeatureFlagValue`:
+`/* Black Mask */` group, and all **default to `true`** in `DefaultFeatureFlagValue`:
 
 `black-mask-privacy-dashboard`, `black-mask-persona-vault`, `black-mask-tracker-detection`,
 `black-mask-fingerprint-test`, `black-mask-data-exposure`, `black-mask-persona-containers`,
@@ -38,14 +38,16 @@ All eight flags are declared in `libs/common/src/enums/feature-flag.enum.ts` und
 
 Resolution: `ConfigService` reads `featureStates` from the backend's `/config` endpoint; when the
 server doesn't state a flag, the client falls back to `DefaultFeatureFlagValue` (see
-`getFeatureFlagValue` in the same file). So today a feature turns on in one of two ways:
+`getFeatureFlagValue` in the same file).
 
-1. **Server-side** — the backend returns `"black-mask-<feature>": true` in `/config`
-   `featureStates`. A self-hosted Vaultwarden does not serve these by default; this is the open
-   "feature-flag delivery" decision from the execution plan (§6, §9).
-2. **Local development** — flip the flag's entry in `DefaultFeatureFlagValue` to `true` and
-   rebuild, e.g. `npm run build:watch` in `apps/browser`, then load the unpacked extension from
-   `apps/browser/build`.
+**The "feature-flag delivery" question from the execution plan (§6, §9) is resolved: defaults are
+on.** Black Mask ships against a self-hosted Vaultwarden, which does not serve `featureStates`, so
+an off-by-default flag would make every feature invisible in production. A backend that does serve
+`/config` can still override any of them.
+
+The phishing protection surface additionally depends on the upstream `phishing-detection` flag,
+which gates the detection engine itself. That flag is enabled for the same reason — otherwise the
+page correctly but uselessly reports "Unavailable".
 
 These are runtime feature flags, not the compile-time `flags`/`devFlags` mechanism in
 `apps/browser/config/*.json` — the Black Mask flags have no entries there.

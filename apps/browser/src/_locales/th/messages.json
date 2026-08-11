@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "สร้างบัญชี"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "เพิ่งเคยใช้งาน Black Mask ใช่หรือไม่"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "ออกจากระบบ"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "เกี่ยวกับ Black Mask"
   },
   "about": {
     "message": "เกี่ยวกับ"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "เพิ่มเติมจาก Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "ไปที่ bitwarden.com หรือไม่"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "สร้างประสบการณ์การเข้าสู่ระบบที่ลื่นไหลและปลอดภัย ปราศจากรหัสผ่านแบบเดิม ๆ ด้วย Passwordless.dev เรียนรู้เพิ่มเติมที่เว็บไซต์ bitwarden.com"
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask Families ฟรี"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "คุณได้รับสิทธิ์ใช้งาน Black Mask Families ฟรี รับสิทธิ์ข้อเสนอนี้ได้ทันทีในเว็บแอป"
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "เข้าสู่ระบบ"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "เข้าสู่ระบบ Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "แสดงคำแนะนำการป้อนอัตโนมัติบนช่องกรอกข้อมูล"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Black Mask ปกป้องข้อมูลของคุณจากการฟิชชิงได้อย่างไร"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "ภาพประกอบเมนูป้อนอัตโนมัติของ Black Mask แสดงรหัสผ่านที่ถูกสร้าง"
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "อัปเดตใน Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "จากนั้น Black Mask จะแจ้งให้คุณอัปเดตรหัสผ่านในตัวจัดการรหัสผ่าน",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "ภาพประกอบการแจ้งเตือนของ Black Mask ที่ให้ผู้ใช้อัปเดตข้อมูลเข้าสู่ระบบ"
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "ปุ่มเมนูป้อนอัตโนมัติ Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "สลับเมนูป้อนอัตโนมัติ Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "ดาวน์โหลด Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "ดาวน์โหลด Black Mask บนทุกอุปกรณ์"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "เข้าถึงตู้นิรภัยโดยไม่ต้องใช้เบราว์เซอร์ จากนั้นตั้งค่าการปลดล็อกด้วยไบโอเมตริกเพื่อเร่งการปลดล็อกทั้งในแอปเดสก์ท็อปและส่วนขยายเบราว์เซอร์"
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "ดาวน์โหลดจาก bitwarden.com เลย"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "สร้างรหัสผ่านใหม่แล้ว",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "บันทึกลง Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

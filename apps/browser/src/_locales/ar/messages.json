@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "إنشاء حساب"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "جديد على Black Mask؟"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "تسجيل الخروج"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "حول Black Mask"
   },
   "about": {
     "message": "عن التطبيق"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "المزيد من Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "المتابعة إلى bitwarden.com؟"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "أنشئ تجارب تسجيل دخول سلسة وآمنة بدون كلمات المرور التقليدية مع Passwordless.dev. اعرف المزيد على موقع bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask للعائلات المجاني"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "أنت مؤهل للحصول على Black Mask للعائلات المجاني. أحصل على هذا العرض اليوم عبر تطبيق الويب."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "تسجيل الدخول"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "تسجيل الدخول إلى Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "إظهار اقتراحات التعبئة التلقائية في حقول النموذج"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "كيف يحمي Black Mask بياناتك من التصيد الاحتيالي؟"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "رسم توضيحي لقائمة الملء التلقائي لـ Black Mask تعرض كلمة مرور تم توليدها."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "تحديث في Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "سيطلب منك Black Mask بعد ذلك تحديث كلمة المرور في مدير كلمات المرور.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "رسم توضيحي لإشعار Black Mask يطلب من المستخدم تحديث الحساب."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "زر قائمة الملء التلقائي Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "تبديل قائمة الملء التلقائي لـ Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "تنزيل المرفق"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "تنزيل Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "تنزيل Black Mask على جميع الأجهزة"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "الوصول إلى خزنتك دون متصفح، ثم فعّل المصادقة البيومترية لتسريع فتح القفل في كل من تطبيق سطح المكتب وإضافة المتصفح."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "تنزيل من bitwarden.com الآن"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "تمت إعادة توليد كلمة المرور",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "الحفظ في Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com، user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "تنزيل تطبيق Black Mask"
   },
   "emailProtected": {

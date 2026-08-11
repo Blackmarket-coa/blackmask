@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Black Mask
+Exec=blackmask %u
+Terminal=false
+Type=Application
+Icon=app.blackmask.desktop
+StartupWMClass=app.blackmask.desktop
+GenericName=Password Manager
+Comment=Privacy and counter-surveillance tools with a secure vault for all of your devices.
+MimeType=x-scheme-handler/bitwarden;
+Categories=System;Security;

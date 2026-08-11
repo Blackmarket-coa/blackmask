@@ -1,13 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-
   "extraMetadata": {
-    "name": "bitwarden-beta"
+    "name": "blackmask-beta"
   },
-  "productName": "Bitwarden Beta",
-  "appId": "com.bitwarden.desktop.beta",
+  "productName": "Black Mask Beta",
+  "appId": "app.blackmask.desktop.beta",
   "buildDependenciesFromSource": true,
-  "copyright": "Copyright © 2015-2026 Bitwarden Inc.",
+  "copyright": "Copyright \u00a9 2026 Blackmarket-coa",
   "directories": {
     "buildResources": "resources",
     "output": "dist",
@@ -26,8 +25,9 @@
   "electronVersion": "37.7.0",
   "generateUpdatesFilesForAllChannels": true,
   "publish": {
-    "provider": "generic",
-    "url": "https://artifacts.bitwarden.com/desktop"
+    "provider": "github",
+    "owner": "Blackmarket-coa",
+    "repo": "blackmask"
   },
   "win": {
     "electronUpdaterCompatibility": ">=0.0.1",
@@ -52,16 +52,16 @@
     "oneClick": false,
     "perMachine": false,
     "allowToChangeInstallationDirectory": false,
-    "artifactName": "Bitwarden-Beta-Installer-${version}.${ext}",
+    "artifactName": "Black-Mask-Beta-Installer-${version}.${ext}",
     "uninstallDisplayName": "${productName}",
     "deleteAppDataOnUninstall": true,
     "include": "installer.nsh"
   },
   "portable": {
-    "artifactName": "Bitwarden-Beta-Portable-${version}.${ext}"
+    "artifactName": "Black-Mask-Beta-Portable-${version}.${ext}"
   },
   "appx": {
-    "artifactName": "Bitwarden-Beta-${version}-${arch}.${ext}",
+    "artifactName": "Black-Mask-Beta-${version}-${arch}.${ext}",
     "backgroundColor": "#175DDC",
     "applicationId": "BitwardenBeta",
     "identityName": "8bitSolutionsLLC.BitwardenBeta",
@@ -134,7 +134,7 @@
   },
   "protocols": [
     {
-      "name": "Bitwarden",
+      "name": "Black Mask",
       "schemes": ["bitwarden"]
     }
   ]

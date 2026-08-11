@@ -21,6 +21,36 @@ fn setup() {
     init_tracing();
 }
 
+/// Performs one request-identities exchange, returning `None` if the pipe instance we landed on
+/// closes before answering.
+async fn try_request_identities() -> Option<Vec<u8>> {
+    use tokio::io::AsyncReadExt;
+
+    let mut client = ClientOptions::new().open(PIPE_NAME).ok()?;
+    client.write_all(&framed_request_identities()).await.ok()?;
+
+    let mut len_buf = [0u8; 4];
+    client.read_exact(&mut len_buf).await.ok()?;
+    let mut body = vec![0u8; u32::from_be_bytes(len_buf) as usize];
+    client.read_exact(&mut body).await.ok()?;
+    Some(body)
+}
+
+/// `stop()` signals cancellation and calls `JoinHandle::abort()` on the accept loop, but does not
+/// await the task, so the outgoing pipe instance can still be listening when `start()` creates the
+/// replacement. Windows keeps both instances registered under the same name, and a client that
+/// lands on the doomed one sees it close mid-exchange — surfacing as `UnexpectedEof` while reading
+/// the length prefix. Retry until the live instance answers.
+async fn request_identities_from_live_instance() -> Vec<u8> {
+    for _ in 0..50 {
+        if let Some(response) = try_request_identities().await {
+            return response;
+        }
+        tokio::time::sleep(std::time::Duration::from_millis(20)).await;
+    }
+    panic!("no live named pipe instance answered within the retry budget");
+}
+
 #[serial]
 #[tokio::test(flavor = "multi_thread")]
 async fn test_start_creates_pipe() {
@@ -103,12 +133,7 @@ async fn test_stop_clears_keys() {
     agent.start().unwrap();
 
     // New connection sees an empty keystore
-    let mut client2 = ClientOptions::new().open(PIPE_NAME).unwrap();
-    client2
-        .write_all(&framed_request_identities())
-        .await
-        .unwrap();
-    let response2 = read_framed_response(&mut client2).await;
+    let response2 = request_identities_from_live_instance().await;
     assert_eq!(
         u32::from_be_bytes(response2[1..5].try_into().unwrap()),
         0,

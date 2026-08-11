@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Konto erstellen"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Neu bei Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Abmelden"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Über Black Mask"
   },
   "about": {
     "message": "Über uns"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Mehr von Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Weiter zu bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Erstelle reibungslose und sichere Anmeldeerfahrungen ohne herkömmliche Passwörter mit Passwordless.dev. Erfahre mehr auf der bitwarden.com Website."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Free Black Mask Families"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Du bist für Free Black Mask Families berechtigt. Löse dieses Angebot heute in der Web-App ein."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Anmelden"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Bei Black Mask anmelden"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Vorschläge zum Auto-Ausfüllen in Formularfeldern anzeigen"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Wie schützt Black Mask deine Daten vor Phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Illustration des Black Mask Auto-Ausfüllen-Menüs, das ein generiertes Passwort anzeigt."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "In Black Mask aktualisieren"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask wird dich dann auffordern, das Passwort im Passwort-Manager zu aktualisieren.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Illustration einer Black Mask-Benachrichtigung, die den Benutzer dazu auffordert, die Zugangsdaten zu aktualisieren."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask Auto-Ausfüllen Menütaste",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Black Mask Auto-Ausfüllen Menü umschalten",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Anhang herunterladen"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Black Mask herunterladen"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Black Mask auf allen Geräten herunterladen"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Greife ohne Browser auf deinen Tresor zu und richte dann das Entsperren mit Biometrie ein, um die Entsperrung sowohl in der Desktop-App als auch in der Browser-Erweiterung zu beschleunigen."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Jetzt von bitwarden.com herunterladen"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Passwort neu generiert",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "In Black Mask speichern",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "benutzer@bitwarden.com, benutzer@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Black Mask-Apps herunterladen"
   },
   "emailProtected": {

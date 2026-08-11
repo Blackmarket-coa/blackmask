@@ -47,6 +47,7 @@ jobs:
             ! -path "*/.DS_Store" \
             ! -path "*/*locales/*" \
             ! -path "./.github/*" \
+            ! -path "./third_party/*" \
             ! -path "*/README.md" \
             ! -path "*/Cargo.toml" \
             ! -path "*/Cargo.lock" \
@@ -80,6 +81,8 @@ jobs:
         run: npm run lint:sdk-internal-versions
 
       - name: Run linter
+        # The heap ceiling for this lives in .npmrc (`node-options`); setting NODE_OPTIONS here
+        # would have no effect, because npm overrides it for every script it runs.
         run: npm run lint
 
   rust:

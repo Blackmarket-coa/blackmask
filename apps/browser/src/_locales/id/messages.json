@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Buat akun"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Baru menggunakan Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Keluar"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Tentang Black Mask"
   },
   "about": {
     "message": "Tentang"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Selebihnya dari Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Lanjutkan ke bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Buat pengalaman masuk yang lancar dan aman dari kata sandi tradisional dengan Passwordless.dev. Pelajari lebih lanjut di situs web bitwarden.com."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Black Mask Keluarga Gratis"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Anda berhak untuk Black Mask Keluarga Gratis. Tukarkan penawaran ini hari ini di aplikasi web."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Masuk"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Masuk ke Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Tampilkan saran isi otomatis pada kolom formulir"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "How does Black Mask protect your data from phishing?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Gambaran dari menu isi otomatis Black Mask yang menampilkan kata sandi yang dihasilkan."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Perbarui di Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask akan meminta Anda untuk memperbarui kata sandi di pengelola sandi.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Gambaran dari pemberitahuan Black Mask yang meminta pengguna untuk memperbarui info masuk."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Tombol menu isi otomatis Black Mask",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Saklar menu isi otomatis Black Mask",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Download Attachment"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Unduh Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Unduh Black Mask"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Akses brankas Anda tanpa sebuah peramban, kemudian atur buka dengan biometrik untuk mempercepat membuka di aplikasi desktop dan ekstensi peramban."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Unduh dari bitwarden.com sekarang"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Kata sandi dibuat ulang",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Simpan ke Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Download Black Mask apps"
   },
   "emailProtected": {

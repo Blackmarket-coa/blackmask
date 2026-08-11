@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "Φίλτρα"
@@ -491,10 +491,10 @@
     "message": "Ενεργοποίηση πράκτορα SSH"
   },
   "enableSshAgentDesc": {
-    "message": "Ενεργοποιήστε τον πράκτορα SSH για την υπογραφή αιτημάτων SSH απευθείας από την κρύπτη Bitwarden."
+    "message": "Ενεργοποιήστε τον πράκτορα SSH για την υπογραφή αιτημάτων SSH απευθείας από την κρύπτη Black Mask."
   },
   "enableSshAgentHelp": {
-    "message": "Ο πράκτορα SSH είναι μια υπηρεσία που απευθύνεται σε προγραμματιστές που σας επιτρέπει να υπογράψετε αιτήματα SSH απευθείας από την κρύπτη Bitwarden σας."
+    "message": "Ο πράκτορα SSH είναι μια υπηρεσία που απευθύνεται σε προγραμματιστές που σας επιτρέπει να υπογράψετε αιτήματα SSH απευθείας από την κρύπτη Black Mask σας."
   },
   "sshAgentPromptBehavior": {
     "message": "Ask for authorization when using SSH agent"
@@ -524,7 +524,7 @@
     "message": "Συγχρονισμός με πρόγραμμα περιήγησης"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Bitwarden app. You’ll be redirected back to this app once your browser is synced.",
+    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Black Mask app. You’ll be redirected back to this app once your browser is synced.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "Σφάλμα αποκρυπτογράφησης"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Το Bitwarden δεν μπόρεσε να αποκρυπτογραφήσει τα αντικείμενα κρύπτης που αναφέρονται παρακάτω."
+    "message": "Το Black Mask δεν μπόρεσε να αποκρυπτογραφήσει τα αντικείμενα κρύπτης που αναφέρονται παρακάτω."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Εποικινωνία επιτυχίας επαφής πελάτη",
@@ -1044,7 +1044,7 @@
     "message": "Δημιουργία λογαριασμού"
   },
   "newToBitwarden": {
-    "message": "Μόλις ήρθες στο Bitwarden;"
+    "message": "Μόλις ήρθες στο Black Mask;"
   },
   "setAStrongPassword": {
     "message": "Ορίστε έναν ισχυρό κωδικό πρόσβασης"
@@ -1056,7 +1056,7 @@
     "message": "Είσοδος"
   },
   "logInToBitwarden": {
-    "message": "Σύνδεση στο Bitwarden"
+    "message": "Σύνδεση στο Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Εισάγετε τον κωδικό που στάλθηκε στο email σας"
@@ -1217,7 +1217,7 @@
     "message": "Απρόσμενο σφάλμα"
   },
   "closeThisBitwardenWindow": {
-    "message": "Κλείστε αυτό το παράθυρο του Bitwarden και δοκιμάστε ξανά."
+    "message": "Κλείστε αυτό το παράθυρο του Black Mask και δοκιμάστε ξανά."
   },
   "itemInformation": {
     "message": "Πληροφορίες αντικειμένου"
@@ -1348,7 +1348,7 @@
     "message": "Αυτο-φιλοξενούμενο περιβάλλον"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Καθορίστε το βασικό URL της εγκατάστασης Bitwarden που φιλοξενείται στο χώρο σας. Παράδειγμα: https://bitwarden.company.com"
+    "message": "Καθορίστε το βασικό URL της εγκατάστασης Black Mask που φιλοξενείται στο χώρο σας. Παράδειγμα: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Για προχωρημένη παραμετροποίηση, μπορείτε να ορίσετε ανεξάρτητα το βασικό URL κάθε υπηρεσίας."
@@ -1439,7 +1439,7 @@
     "message": "Are you sure you want to rotate your account's encryption key?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "After updating your encryption key, you are required to log out and back in to all Bitwarden applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
+    "message": "After updating your encryption key, you are required to log out and back in to all Black Mask applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Any account restricted exports you have saved will become invalid."
@@ -1535,7 +1535,7 @@
     "message": "Συνέχεια στη διαδικτυακή εφαρμογή;"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Μπορείτε να αλλάξετε τον κύριο κωδικό πρόσβασής σας στη διαδικτυακή εφαρμογή του Bitwarden."
+    "message": "Μπορείτε να αλλάξετε τον κύριο κωδικό πρόσβασής σας στη διαδικτυακή εφαρμογή του Black Mask."
   },
   "fingerprintPhrase": {
     "message": "Φράση δακτυλικών αποτυπωμάτων",
@@ -1714,13 +1714,13 @@
     "message": "Εκκίνηση αυτόματα κατά τη σύνδεση"
   },
   "openAtLoginDesc": {
-    "message": "Εκκίνηση της εφαρμογής Bitwarden στην επιφάνεια εργασίας αυτόματα κατά τη σύνδεση."
+    "message": "Εκκίνηση της εφαρμογής Black Mask στην επιφάνεια εργασίας αυτόματα κατά τη σύνδεση."
   },
   "alwaysShowDock": {
     "message": "Να εμφανίζεται πάντα στο Dock"
   },
   "alwaysShowDockDesc": {
-    "message": "Εμφάνιση του εικονιδίου Bitwarden στο Dock ακόμα και όταν ελαχιστοποιείται στη γραμμή μενού."
+    "message": "Εμφάνιση του εικονιδίου Black Mask στο Dock ακόμα και όταν ελαχιστοποιείται στη γραμμή μενού."
   },
   "confirmTrayTitle": {
     "message": "Επιβεβαίωση απόκρυψης γραμμής συστήματος"
@@ -1888,13 +1888,13 @@
     "message": "Αγορά Premium έκδοσης"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Μπορείτε να αγοράσετε το Premium από τις ρυθμίσεις λογαριασμού σας στη διαδικτυακή εφαρμογή του Bitwarden."
+    "message": "Μπορείτε να αγοράσετε το Premium από τις ρυθμίσεις λογαριασμού σας στη διαδικτυακή εφαρμογή του Black Mask."
   },
   "premiumCurrentMember": {
     "message": "Είστε ένα premium μέλος!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Ευχαριστούμε που υποστηρίζετε το Bitwarden."
+    "message": "Ευχαριστούμε που υποστηρίζετε το Black Mask."
   },
   "premiumPrice": {
     "message": "Όλα για μόνο $PRICE$ /έτος!",
@@ -2029,7 +2029,7 @@
     "message": "Υπηρεσίες"
   },
   "hideBitwarden": {
-    "message": "Απόκρυψη Bitwarden"
+    "message": "Απόκρυψη Black Mask"
   },
   "hideOthers": {
     "message": "Απόκρυψη άλλων"
@@ -2038,7 +2038,7 @@
     "message": "Εμφάνιση όλων"
   },
   "quitBitwarden": {
-    "message": "Έξοδος Bitwarden"
+    "message": "Έξοδος Black Mask"
   },
   "valueCopied": {
     "message": "$VALUE$ αντιγράφηκε",
@@ -2184,13 +2184,13 @@
     "message": "Αυτός ο κωδικός πρόσβασης θα χρησιμοποιηθεί για την εξαγωγή και εισαγωγή αυτού του αρχείου"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Χρησιμοποιήστε το κλειδί κρυπτογράφησης του λογαριασμού σας, που προέρχεται από το όνομα χρήστη και τον Κύριο Κωδικό Πρόσβασης του λογαριασμού σας, για να κρυπτογραφήσετε την εξαγωγή και να περιορίσετε την εισαγωγή μόνο στον τρέχοντα λογαριασμό Bitwarden."
+    "message": "Χρησιμοποιήστε το κλειδί κρυπτογράφησης του λογαριασμού σας, που προέρχεται από το όνομα χρήστη και τον Κύριο Κωδικό Πρόσβασης του λογαριασμού σας, για να κρυπτογραφήσετε την εξαγωγή και να περιορίσετε την εισαγωγή μόνο στον τρέχοντα λογαριασμό Black Mask."
   },
   "passwordProtected": {
     "message": "Προστατευμένο με κωδικό πρόσβασης"
   },
   "passwordProtectedOptionDescription": {
-    "message": "Ορίστε έναν κωδικό πρόσβασης αρχείου για να κρυπτογραφήσετε την εξαγωγή και να τον εισάγετε σε οποιονδήποτε λογαριασμό Bitwarden χρησιμοποιώντας τον κωδικό πρόσβασης για αποκρυπτογράφηση."
+    "message": "Ορίστε έναν κωδικό πρόσβασης αρχείου για να κρυπτογραφήσετε την εξαγωγή και να τον εισάγετε σε οποιονδήποτε λογαριασμό Black Mask χρησιμοποιώντας τον κωδικό πρόσβασης για αποκρυπτογράφηση."
   },
   "exportTypeHeading": {
     "message": "Τύπος εξαγωγής"
@@ -2224,7 +2224,7 @@
     "message": "Αυτή η εξαγωγή κρυπτογραφεί τα δεδομένα σας χρησιμοποιώντας το κλειδί κρυπτογράφησης του λογαριασμού σας. Εάν ποτέ περιστρέψετε το κλειδί κρυπτογράφησης του λογαριασμού σας, θα πρέπει να κάνετε εξαγωγή ξανά, καθώς δεν θα μπορείτε να αποκρυπτογραφήσετε αυτό το αρχείο εξαγωγής."
   },
   "encExportAccountWarningDesc": {
-    "message": "Τα κλειδιά κρυπτογράφησης λογαριασμού είναι μοναδικά για κάθε λογαριασμό χρήστη Bitwarden, οπότε δεν μπορείτε να εισάγετε μια κρυπτογραφημένη εξαγωγή σε διαφορετικό λογαριασμό."
+    "message": "Τα κλειδιά κρυπτογράφησης λογαριασμού είναι μοναδικά για κάθε λογαριασμό χρήστη Black Mask, οπότε δεν μπορείτε να εισάγετε μια κρυπτογραφημένη εξαγωγή σε διαφορετικό λογαριασμό."
   },
   "noOrganizationsList": {
     "message": "Δεν συμμετέχετε σε κάποιον οργανισμό. Οι οργανισμοί επιτρέπουν την ασφαλή κοινοποίηση στοιχείων με άλλους χρήστες."
@@ -2254,7 +2254,7 @@
     "message": "Αδύναμος κύριος κωδικός πρόσβασης"
   },
   "weakMasterPasswordDesc": {
-    "message": "Ο κύριος κωδικός που έχετε επιλέξει είναι αδύναμος. Θα πρέπει να χρησιμοποιήσετε έναν ισχυρό κύριο κωδικό (ή μια φράση) για την κατάλληλη προστασία του λογαριασμού Bitwarden. Είστε βέβαιοι ότι θέλετε να χρησιμοποιήσετε αυτόν τον κύριο κωδικό;"
+    "message": "Ο κύριος κωδικός που έχετε επιλέξει είναι αδύναμος. Θα πρέπει να χρησιμοποιήσετε έναν ισχυρό κύριο κωδικό (ή μια φράση) για την κατάλληλη προστασία του λογαριασμού Black Mask. Είστε βέβαιοι ότι θέλετε να χρησιμοποιήσετε αυτόν τον κύριο κωδικό;"
   },
   "pin": {
     "message": "PIN",
@@ -2264,7 +2264,7 @@
     "message": "Ξεκλείδωμα με PIN"
   },
   "setYourPinCode": {
-    "message": "Ορίστε τον κωδικό PIN για να ξεκλειδώσετε το Bitwarden. Οι ρυθμίσεις PIN θα επαναρυθμιστούν αν αποσυνδεθείτε πλήρως από την εφαρμογή."
+    "message": "Ορίστε τον κωδικό PIN για να ξεκλειδώσετε το Black Mask. Οι ρυθμίσεις PIN θα επαναρυθμιστούν αν αποσυνδεθείτε πλήρως από την εφαρμογή."
   },
   "pinRequired": {
     "message": "Απαιτείται κωδικός PIN."
@@ -2282,7 +2282,7 @@
     "message": "Ξεκλείδωμα με αυθεντικοποίηση συστήματος"
   },
   "windowsHelloConsentMessage": {
-    "message": "Επαληθεύστε για το Bitwarden."
+    "message": "Επαληθεύστε για το Black Mask."
   },
   "unlockWithTouchId": {
     "message": "Ξεκλείδωμα με Touch ID"
@@ -2497,10 +2497,10 @@
     "message": "Make 2-step verification seamless"
   },
   "totpHelper": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Copy and paste the key into this field."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
   },
   "premium": {
     "message": "Premium",
@@ -2586,7 +2586,7 @@
     "message": "One or more organization policies require the master password to meet the following requirements:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Λάβετε συμβουλές, ανακοινώσεις και ευκαιρίες έρευνας από το Bitwarden στα εισερχόμενά σας."
+    "message": "Λάβετε συμβουλές, ανακοινώσεις και ευκαιρίες έρευνας από το Black Mask στα εισερχόμενά σας."
   },
   "unsubscribe": {
     "message": "Ακύρωση συνδρομής"
@@ -2616,7 +2616,7 @@
     "message": "Επίτρεψε ενσωμάτωση περιηγητή DuckDuckGo"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "Χρησιμοποιήστε το θησαυ/κιο Bitwarden σας κατά την περιήγηση με το DuckDuckGo."
+    "message": "Χρησιμοποιήστε το θησαυ/κιο Black Mask σας κατά την περιήγηση με το DuckDuckGo."
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "Η ενσωμάτωση του περιηγητή δεν υποστηρίζεται"
@@ -2640,7 +2640,7 @@
     "message": "Έγκριση"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ θέλει να συνδεθεί με το Bitwarden",
+    "message": "$APPID$ θέλει να συνδεθεί με το Black Mask",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Δημιουργήθηκε από το Bitwarden.",
+    "message": "Δημιουργήθηκε από το Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Ιστοσελίδα: $WEBSITE$. Δημιουργήθηκε από το Bitwarden.",
+    "message": "Ιστοσελίδα: $WEBSITE$. Δημιουργήθηκε από το Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "Μια ειδοποίηση στάλθηκε στη συσκευή σας"
   },
   "notificationSentDevicePart1": {
-    "message": "Ξεκλειδώστε το Bitwarden στη συσκευή σας ή στην "
+    "message": "Ξεκλειδώστε το Black Mask στη συσκευή σας ή στην "
   },
   "notificationSentDeviceAnchor": {
     "message": "εφαρμογή ιστού"
@@ -3501,7 +3501,7 @@
     "message": "Θα ειδοποιηθείτε μόλις εγκριθεί η αίτηση"
   },
   "needAnotherOption": {
-    "message": "Η σύνδεση με τη χρήση συσκευής πρέπει να οριστεί στις ρυθμίσεις της εφαρμογής Bitwarden. Χρειάζεστε κάποια άλλη επιλογή;"
+    "message": "Η σύνδεση με τη χρήση συσκευής πρέπει να οριστεί στις ρυθμίσεις της εφαρμογής Black Mask. Χρειάζεστε κάποια άλλη επιλογή;"
   },
   "viewAllLogInOptions": {
     "message": "Δείτε όλες τις επιλογές σύνδεσης"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "Το Bitwarden συστήνει την ενημέρωση των βιομετρικών ρυθμίσεών σας ώστε να απαιτείται ο κύριος κωδικός πρόσβασης (ή PIN) στο πρώτο ξεκλείδωμα. Θέλετε να ενημερώσετε τις ρυθμίσεις σας τώρα;"
+    "message": "Το Black Mask συστήνει την ενημέρωση των βιομετρικών ρυθμίσεών σας ώστε να απαιτείται ο κύριος κωδικός πρόσβασης (ή PIN) στο πρώτο ξεκλείδωμα. Θέλετε να ενημερώσετε τις ρυθμίσεις σας τώρα;"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "Ενημέρωση Προτεινόμενων Ρυθμίσεων"
@@ -3766,7 +3766,7 @@
     "message": "Τι είναι μια συσκευή;"
   },
   "aDeviceIs": {
-    "message": "A device is a unique installation of the Bitwarden app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
+    "message": "A device is a unique installation of the Black Mask app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
   },
   "deviceListDescriptionTemp": {
     "message": "Your account was logged in to each of the devices below."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI match detection is how Bitwarden identifies autofill suggestions.",
+    "message": "URI match detection is how Black Mask identifies autofill suggestions.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
+    "message": "Black Mask support",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "Το βιομετρικό ξεκλείδωμα δεν είναι διαθέσιμο λόγω εσφαλμένων ρυθμίσεων αρχείων συστήματος."
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "Το βιομετρικό ξεκλείδωμα δεν είναι διαθέσιμο επειδή δεν είναι ενεργοποιημένο για το $EMAIL$ στην εφαρμογή Bitwarden για υπολογιστές.",
+    "message": "Το βιομετρικό ξεκλείδωμα δεν είναι διαθέσιμο επειδή δεν είναι ενεργοποιημένο για το $EMAIL$ στην εφαρμογή Black Mask για υπολογιστές.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Ρύθμιση σύνδεσης δύο βημάτων"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "Bitwarden will send a code to your account email to verify logins from new devices starting in February 2025."
+    "message": "Black Mask will send a code to your account email to verify logins from new devices starting in February 2025."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "You can set up two-step login as an alternative way to protect your account or change your email to one you can access."
@@ -4470,7 +4470,7 @@
     "message": "Να επιτρέπεται η καταγραφή οθόνης"
   },
   "allowScreenshotsDesc": {
-    "message": "Allow the Bitwarden desktop application to be captured in screenshots and viewed in remote desktop sessions. Disabling this will prevent access on some external displays."
+    "message": "Allow the Black Mask desktop application to be captured in screenshots and viewed in remote desktop sessions. Disabling this will prevent access on some external displays."
   },
   "confirmWindowStillVisibleTitle": {
     "message": "Confirm window still visible"
@@ -4607,7 +4607,7 @@
     "message": "Σχετικά με αυτήν τη ρύθμιση"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
+    "message": "Black Mask will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
   },
   "assignToCollections": {
     "message": "Ανάθεση σε συλλογές"
@@ -4750,7 +4750,7 @@
     "message": "Εμφάνιση λιγότερων"
   },
   "enableAutotypeDescription": {
-    "message": "Bitwarden does not validate input locations, be sure you are in the right window and field before using the shortcut."
+    "message": "Black Mask does not validate input locations, be sure you are in the right window and field before using the shortcut."
   },
   "typeShortcut": {
     "message": "Συντόμευση πληκτρολογίου"
@@ -4868,7 +4868,7 @@
     "message": "Αναβάθμιση στο Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Your organization is no longer using master passwords to log into Bitwarden. To continue, verify the organization and domain."
+    "message": "Your organization is no longer using master passwords to log into Black Mask. To continue, verify the organization and domain."
   },
   "continueWithLogIn": {
     "message": "Continue with log in"
@@ -5111,10 +5111,10 @@
     "message": "Enter multiple emails by separating with a comma."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "reorderToggleButton": {
     "message": "Reorder $LABEL$. Use arrow key to move item up or down.",

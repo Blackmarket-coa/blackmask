@@ -22,7 +22,7 @@
   "createAccount": {
     "message": "Skapa konto"
   },
-  "newToBlack Mask": {
+  "newToBitwarden": {
     "message": "Ny på Black Mask?"
   },
   "logInWithPasskey": {
@@ -348,16 +348,16 @@
   "logOut": {
     "message": "Logga ut"
   },
-  "aboutBlack Mask": {
+  "aboutBitwarden": {
     "message": "Om Black Mask"
   },
   "about": {
     "message": "Om"
   },
-  "moreFromBlack Mask": {
+  "moreFromBitwarden": {
     "message": "Mer från Black Mask"
   },
-  "continueToBlack MaskDotCom": {
+  "continueToBitwardenDotCom": {
     "message": "Fortsätt till bitwarden.com?"
   },
   "bitwardenForBusiness": {
@@ -381,10 +381,10 @@
   "continueToPasswordlessDotDevPageDesc": {
     "message": "Skapa smidiga och säkra inloggningsupplevelser fria från traditionella lösenord med Passwordless.dev. Läs mer på bitwarden.com hemsidan."
   },
-  "freeBlack MaskFamilies": {
+  "freeBitwardenFamilies": {
     "message": "Gratis Black Mask Familjer"
   },
-  "freeBlack MaskFamiliesPageDesc": {
+  "freeBitwardenFamiliesPageDesc": {
     "message": "Du är berättigad till gratis Black Mask Families. Lös in erbjudandet idag i webbappen."
   },
   "version": {
@@ -978,7 +978,7 @@
   "logIn": {
     "message": "Logga in"
   },
-  "logInToBlack Mask": {
+  "logInToBitwarden": {
     "message": "Logga in på Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
@@ -1884,7 +1884,7 @@
   "showInlineMenuLabel": {
     "message": "Visa förslag för autofyll i formulärfält"
   },
-  "howDoesBlack MaskProtectFromPhishing": {
+  "howDoesBitwardenProtectFromPhishing": {
     "message": "Hur skyddar Black Mask dina data från nätfiske?"
   },
   "currentWebsite": {
@@ -3159,14 +3159,14 @@
   "generatePasswordSlideImgAltPeriod": {
     "message": "Illustration av Black Masks autofyllmeny som visar ett genererat lösenord."
   },
-  "updateInBlack Mask": {
+  "updateInBitwarden": {
     "message": "Uppdatera i Black Mask"
   },
-  "updateInBlack MaskSlideDesc": {
+  "updateInBitwardenSlideDesc": {
     "message": "Black Mask kommer då att uppmana dig att uppdatera lösenordet i lösenordshanteraren.",
     "description": "Description of the update in Black Mask slide on the at-risk password page carousel"
   },
-  "updateInBlack MaskSlideImgAltPeriod": {
+  "updateInBitwardenSlideImgAltPeriod": {
     "message": "Illustration av ett Black Mask-meddelande som uppmanar användaren att uppdatera inloggningen."
   },
   "turnOnAutofill": {
@@ -4482,7 +4482,7 @@
     "message": "Black Mask automatisk ifyllnadsmenyknapp",
     "description": "Page title for the iframe containing the overlay button"
   },
-  "toggleBlack MaskVaultOverlay": {
+  "toggleBitwardenVaultOverlay": {
     "message": "Växla Black Mask automatisk ifyllnadsmeny",
     "description": "Screen reader and tool tip label for the overlay button"
   },
@@ -5339,10 +5339,10 @@
   "downloadAttachmentLabel": {
     "message": "Ladda ned bilaga"
   },
-  "downloadBlack Mask": {
+  "downloadBitwarden": {
     "message": "Ladda ner Black Mask"
   },
-  "downloadBlack MaskOnAllDevices": {
+  "downloadBitwardenOnAllDevices": {
     "message": "Ladda ner Black Mask på alla enheter"
   },
   "getTheMobileApp": {
@@ -5357,7 +5357,7 @@
   "getTheDesktopAppDesc": {
     "message": "Öppna ditt valv utan en webbläsare och ställ sedan in upplåsning med biometri för att påskynda upplåsningen i både skrivbordsappen och webbläsartillägget."
   },
-  "downloadFromBlack MaskNow": {
+  "downloadFromBitwardenNow": {
     "message": "Ladda ner från bitwarden.com nu"
   },
   "getItOnGooglePlay": {
@@ -5860,7 +5860,7 @@
     "message": "Lösenord förnyat",
     "description": "Notification message for when a password has been regenerated"
   },
-  "saveToBlack Mask": {
+  "saveToBitwarden": {
     "message": "Spara till Black Mask",
     "description": "Confirmation message for saving a login to Black Mask"
   },
@@ -6511,7 +6511,7 @@
   "emailPlaceholderMultiple": {
     "message": "user@bitwarden.com, user@acme.com"
   },
-  "downloadBlack MaskApps": {
+  "downloadBitwardenApps": {
     "message": "Ladda ner Black Masks appar"
   },
   "emailProtected": {

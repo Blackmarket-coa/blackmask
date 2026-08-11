@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "フィルター"
@@ -491,10 +491,10 @@
     "message": "SSH エージェントを有効にする"
   },
   "enableSshAgentDesc": {
-    "message": "Bitwarden 保管庫から直接 SSH 要求に署名するために SSH エージェントを有効にします。"
+    "message": "Black Mask 保管庫から直接 SSH 要求に署名するために SSH エージェントを有効にします。"
   },
   "enableSshAgentHelp": {
-    "message": "SSH エージェントとは、Bitwarden 保管庫から直接 SSH リクエストに署名できる、開発者を対象としたサービスです。"
+    "message": "SSH エージェントとは、Black Mask 保管庫から直接 SSH リクエストに署名できる、開発者を対象としたサービスです。"
   },
   "sshAgentPromptBehavior": {
     "message": "SSHエージェントを使用する際に認証を要求する"
@@ -524,7 +524,7 @@
     "message": "Sync with browser"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Bitwarden app. You’ll be redirected back to this app once your browser is synced.",
+    "message": "To connect to $VAULTURL$, you need to sync your default browser with the Black Mask app. You’ll be redirected back to this app once your browser is synced.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "復号エラー"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "Bitwarden は以下の保管庫のアイテムを復号できませんでした。"
+    "message": "Black Mask は以下の保管庫のアイテムを復号できませんでした。"
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "カスタマーサクセスに問い合わせて、",
@@ -1044,7 +1044,7 @@
     "message": "アカウントの作成"
   },
   "newToBitwarden": {
-    "message": "Bitwarden は初めてですか？"
+    "message": "Black Mask は初めてですか？"
   },
   "setAStrongPassword": {
     "message": "強力なパスワードを設定する"
@@ -1056,7 +1056,7 @@
     "message": "ログイン"
   },
   "logInToBitwarden": {
-    "message": "Bitwarden にログイン"
+    "message": "Black Mask にログイン"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "メールアドレスに送信されたコードを入力してください"
@@ -1217,7 +1217,7 @@
     "message": "Unexpected error"
   },
   "closeThisBitwardenWindow": {
-    "message": "Close this Bitwarden window and try again."
+    "message": "Close this Black Mask window and try again."
   },
   "itemInformation": {
     "message": "アイテム情報"
@@ -1348,7 +1348,7 @@
     "message": "セルフホスティング環境"
   },
   "selfHostedBaseUrlHint": {
-    "message": "オンプレミスホストした Bitwarden のベース URL を指定してください。例: https://bitwarden.company.com"
+    "message": "オンプレミスホストした Black Mask のベース URL を指定してください。例: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "高度な設定では、各サービスのベース URL を個別に指定できます。"
@@ -1439,7 +1439,7 @@
     "message": "Are you sure you want to rotate your account's encryption key?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "After updating your encryption key, you are required to log out and back in to all Bitwarden applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
+    "message": "After updating your encryption key, you are required to log out and back in to all Black Mask applications that you are currently using (such as the mobile app or browser extensions). Failure to log out and back in (which downloads your new encryption key) may result in data corruption. We will attempt to log you out automatically, however, it may be delayed."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Any account restricted exports you have saved will become invalid."
@@ -1535,7 +1535,7 @@
     "message": "ウェブアプリに進みますか?"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Bitwarden ウェブアプリでマスターパスワードを変更できます。"
+    "message": "Black Mask ウェブアプリでマスターパスワードを変更できます。"
   },
   "fingerprintPhrase": {
     "message": "パスフレーズ",
@@ -1714,13 +1714,13 @@
     "message": "ログイン時に自動的に起動"
   },
   "openAtLoginDesc": {
-    "message": "Bitwarden デスクトップアプリケーションをログイン時に自動的に起動します。"
+    "message": "Black Mask デスクトップアプリケーションをログイン時に自動的に起動します。"
   },
   "alwaysShowDock": {
     "message": "常にドックに表示"
   },
   "alwaysShowDockDesc": {
-    "message": "メニューバーに最小化した場合でも、Bitwarden アイコンを表示します。"
+    "message": "メニューバーに最小化した場合でも、Black Mask アイコンを表示します。"
   },
   "confirmTrayTitle": {
     "message": "トレイの無効化の確認"
@@ -1888,13 +1888,13 @@
     "message": "プレミアム会員に加入"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Bitwarden ウェブアプリでアカウント設定からプレミアムを購入できます。"
+    "message": "Black Mask ウェブアプリでアカウント設定からプレミアムを購入できます。"
   },
   "premiumCurrentMember": {
     "message": "あなたはプレミアム会員です！"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Bitwarden を支援いただき、ありがとうございます。"
+    "message": "Black Mask を支援いただき、ありがとうございます。"
   },
   "premiumPrice": {
     "message": "全部で年間たった$PRICE$！",
@@ -2023,13 +2023,13 @@
     "description": "Bring all windows to front (foreground)"
   },
   "aboutBitwarden": {
-    "message": "Bitwarden について"
+    "message": "Black Mask について"
   },
   "services": {
     "message": "サービス"
   },
   "hideBitwarden": {
-    "message": "Bitwarden を隠す"
+    "message": "Black Mask を隠す"
   },
   "hideOthers": {
     "message": "他を隠す"
@@ -2038,7 +2038,7 @@
     "message": "すべて表示"
   },
   "quitBitwarden": {
-    "message": "Bitwarden の終了"
+    "message": "Black Mask の終了"
   },
   "valueCopied": {
     "message": "$VALUE$ をコピーしました",
@@ -2184,13 +2184,13 @@
     "message": "このパスワードはこのファイルのエクスポートとインポート時に使用します"
   },
   "accountRestrictedOptionDescription": {
-    "message": "アカウントのユーザー名とマスターパスワードから得られる暗号化キーを使用してエクスポートするデータを暗号化し、現在の Bitwarden アカウントのみがインポートできるよう制限します。"
+    "message": "アカウントのユーザー名とマスターパスワードから得られる暗号化キーを使用してエクスポートするデータを暗号化し、現在の Black Mask アカウントのみがインポートできるよう制限します。"
   },
   "passwordProtected": {
     "message": "パスワード保護あり"
   },
   "passwordProtectedOptionDescription": {
-    "message": "エクスポートを暗号化するためのファイルパスワードを設定します。そのパスワードを使用して、任意の Bitwarden アカウントにインポートします。"
+    "message": "エクスポートを暗号化するためのファイルパスワードを設定します。そのパスワードを使用して、任意の Black Mask アカウントにインポートします。"
   },
   "exportTypeHeading": {
     "message": "エクスポートの種類"
@@ -2224,7 +2224,7 @@
     "message": "このエクスポートは、アカウントの暗号化キーを使用してデータを暗号化します。 暗号化キーをローテーションした場合は、このエクスポートファイルを復号することはできなくなるため、もう一度エクスポートする必要があります。"
   },
   "encExportAccountWarningDesc": {
-    "message": "アカウント暗号化キーは各 Bitwarden ユーザーアカウントに固有であるため、暗号化されたエクスポートを別のアカウントにインポートすることはできません。"
+    "message": "アカウント暗号化キーは各 Black Mask ユーザーアカウントに固有であるため、暗号化されたエクスポートを別のアカウントにインポートすることはできません。"
   },
   "noOrganizationsList": {
     "message": "あなたはどの組織にも属していません。組織では他のユーザーとアイテムを安全に共有できます。"
@@ -2254,7 +2254,7 @@
     "message": "脆弱なマスターパスワード"
   },
   "weakMasterPasswordDesc": {
-    "message": "設定されたマスターパスワードの強度は脆弱です。Bitwarden アカウントを適切に保護するために、強力なマスターパスワード（またはパスフレーズ）を使用すべきです。本当にこのマスターパスワードを使用しますか？"
+    "message": "設定されたマスターパスワードの強度は脆弱です。Black Mask アカウントを適切に保護するために、強力なマスターパスワード（またはパスフレーズ）を使用すべきです。本当にこのマスターパスワードを使用しますか？"
   },
   "pin": {
     "message": "PIN",
@@ -2264,7 +2264,7 @@
     "message": "PIN でロック解除"
   },
   "setYourPinCode": {
-    "message": "Bitwarden のロックを解除するための PIN コードを設定します。アプリから完全にログアウトすると、PIN 設定はリセットされます。"
+    "message": "Black Mask のロックを解除するための PIN コードを設定します。アプリから完全にログアウトすると、PIN 設定はリセットされます。"
   },
   "pinRequired": {
     "message": "PIN コードが必要です。"
@@ -2282,7 +2282,7 @@
     "message": "システム認証でロック解除"
   },
   "windowsHelloConsentMessage": {
-    "message": "Bitwarden の認証を行います。"
+    "message": "Black Mask の認証を行います。"
   },
   "unlockWithTouchId": {
     "message": "Touch ID でロック解除"
@@ -2291,7 +2291,7 @@
     "message": "追加の Touch ID 設定"
   },
   "touchIdConsentMessage": {
-    "message": "Bitwarden の認証を行います。"
+    "message": "Black Mask の認証を行います。"
   },
   "autoPromptTouchId": {
     "message": "起動時に Touch ID を要求する"
@@ -2497,10 +2497,10 @@
     "message": "Make 2-step verification seamless"
   },
   "totpHelper": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Copy and paste the key into this field."
   },
   "totpHelperWithCapture": {
-    "message": "Bitwarden can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
+    "message": "Black Mask can store and fill 2-step verification codes. Select the camera icon to take a screenshot of this website's authenticator QR code, or copy and paste the key into this field."
   },
   "premium": {
     "message": "Premium",
@@ -2586,7 +2586,7 @@
     "message": "One or more organization policies require the master password to meet the following requirements:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Bitwarden からメールでアドバイスやお知らせ、リサーチの機会を受け取りましょう。"
+    "message": "Black Mask からメールでアドバイスやお知らせ、リサーチの機会を受け取りましょう。"
   },
   "unsubscribe": {
     "message": "配信停止"
@@ -2616,7 +2616,7 @@
     "message": "DuckDuckGo ブラウザの統合を許可する"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "DuckDuckGo でブラウズするときに Bitwarden 保管庫を使用します。"
+    "message": "DuckDuckGo でブラウズするときに Black Mask 保管庫を使用します。"
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "ブラウザー統合はサポートされていません"
@@ -2640,7 +2640,7 @@
     "message": "承認"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "$APPID$ が Bitwarden に接続しようとしています",
+    "message": "$APPID$ が Black Mask に接続しようとしています",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Bitwarden によって生成されました。",
+    "message": "Black Mask によって生成されました。",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "ウェブサイト: $WEBSITE$ Bitwarden によって生成されました。",
+    "message": "ウェブサイト: $WEBSITE$ Black Mask によって生成されました。",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3486,7 +3486,7 @@
     "message": "ウェブアプリ"
   },
   "notificationSentDevicePart2": {
-    "message": "上で、Bitwarden をロック解除してください。承認する前に、フィンガープリントフレーズが以下と一致していることを確認してください。"
+    "message": "上で、Black Mask をロック解除してください。承認する前に、フィンガープリントフレーズが以下と一致していることを確認してください。"
   },
   "needAnotherOptionV1": {
     "message": "別の選択肢が必要ですか？"
@@ -3501,7 +3501,7 @@
     "message": "リクエストが承認されると通知されます"
   },
   "needAnotherOption": {
-    "message": "Bitwarden アプリの設定でデバイスでログインする必要があります。別のオプションが必要ですか？"
+    "message": "Black Mask アプリの設定でデバイスでログインする必要があります。別のオプションが必要ですか？"
   },
   "viewAllLogInOptions": {
     "message": "すべてのログインオプションを表示"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "Bitwarden は最初のロック解除時にマスターパスワード（または PIN）を要求するよう生体認証設定を更新することをおすすめします。今すぐ設定を更新しますか？"
+    "message": "Black Mask は最初のロック解除時にマスターパスワード（または PIN）を要求するよう生体認証設定を更新することをおすすめします。今すぐ設定を更新しますか？"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "設定の更新を推奨"
@@ -3766,7 +3766,7 @@
     "message": "What is a device?"
   },
   "aDeviceIs": {
-    "message": "A device is a unique installation of the Bitwarden app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
+    "message": "A device is a unique installation of the Black Mask app where you have logged in. Reinstalling, clearing app data, or clearing your cookies could result in a device appearing multiple times."
   },
   "deviceListDescriptionTemp": {
     "message": "Your account was logged in to each of the devices below."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "URI match detection is how Bitwarden identifies autofill suggestions.",
+    "message": "URI match detection is how Black Mask identifies autofill suggestions.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Download then share the diagnostic report with"
   },
   "bitwardenSupport": {
-    "message": "Bitwarden support",
+    "message": "Black Mask support",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "システムファイルの設定が誤っているため、生体認証によるロック解除は利用できません。"
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "生体認証による $EMAIL$ のロック解除は、 Bitwarden デスクトップアプリ上で有効になっていないため、利用できません。",
+    "message": "生体認証による $EMAIL$ のロック解除は、 Black Mask デスクトップアプリ上で有効になっていないため、利用できません。",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Set up two-step login"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "Bitwarden will send a code to your account email to verify logins from new devices starting in February 2025."
+    "message": "Black Mask will send a code to your account email to verify logins from new devices starting in February 2025."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "You can set up two-step login as an alternative way to protect your account or change your email to one you can access."
@@ -4470,7 +4470,7 @@
     "message": "スクリーンショットを許可"
   },
   "allowScreenshotsDesc": {
-    "message": "Bitwarden デスクトップアプリをスクリーンショットでキャプチャしたり、リモートデスクトップセッションで表示したりすることを許可します。これを無効にすると、一部の外部ディスプレイ上でアクセスできなくなります。"
+    "message": "Black Mask デスクトップアプリをスクリーンショットでキャプチャしたり、リモートデスクトップセッションで表示したりすることを許可します。これを無効にすると、一部の外部ディスプレイ上でアクセスできなくなります。"
   },
   "confirmWindowStillVisibleTitle": {
     "message": "ウィンドウが表示されていることを確認"
@@ -4607,7 +4607,7 @@
     "message": "About this setting"
   },
   "permitCipherDetailsDescription": {
-    "message": "Bitwarden will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
+    "message": "Black Mask will use saved login URIs to identify which icon or change password URL should be used to improve your experience. No information is collected or saved when you use this service."
   },
   "assignToCollections": {
     "message": "Assign to collections"
@@ -4750,7 +4750,7 @@
     "message": "Show less"
   },
   "enableAutotypeDescription": {
-    "message": "Bitwarden does not validate input locations, be sure you are in the right window and field before using the shortcut."
+    "message": "Black Mask does not validate input locations, be sure you are in the right window and field before using the shortcut."
   },
   "typeShortcut": {
     "message": "Type shortcut"
@@ -4868,7 +4868,7 @@
     "message": "Upgrade to Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "Your organization is no longer using master passwords to log into Bitwarden. To continue, verify the organization and domain."
+    "message": "Your organization is no longer using master passwords to log into Black Mask. To continue, verify the organization and domain."
   },
   "continueWithLogIn": {
     "message": "Continue with log in"
@@ -5111,10 +5111,10 @@
     "message": "Enter multiple emails by separating with a comma."
   },
   "emailPlaceholder": {
-    "message": "user@bitwarden.com , user@acme.com"
+    "message": "user@blackmask.app , user@acme.com"
   },
   "emailPlaceholderMultiple": {
-    "message": "user@bitwarden.com, user@acme.com"
+    "message": "user@blackmask.app, user@acme.com"
   },
   "reorderToggleButton": {
     "message": "Reorder $LABEL$. Use arrow key to move item up or down.",

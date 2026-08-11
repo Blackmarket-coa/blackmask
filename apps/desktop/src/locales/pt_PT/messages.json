@@ -1,6 +1,6 @@
 {
   "bitwarden": {
-    "message": "Bitwarden"
+    "message": "Black Mask"
   },
   "filters": {
     "message": "Filtros"
@@ -491,10 +491,10 @@
     "message": "Ativar o agente SSH"
   },
   "enableSshAgentDesc": {
-    "message": "Ative o agente SSH para assinar pedidos SSH diretamente do seu cofre Bitwarden."
+    "message": "Ative o agente SSH para assinar pedidos SSH diretamente do seu cofre Black Mask."
   },
   "enableSshAgentHelp": {
-    "message": "O agente SSH é um serviço direcionado a programadores que lhe permite assinar pedidos SSH diretamente do seu cofre Bitwarden."
+    "message": "O agente SSH é um serviço direcionado a programadores que lhe permite assinar pedidos SSH diretamente do seu cofre Black Mask."
   },
   "sshAgentPromptBehavior": {
     "message": "Pedir autorização ao utilizar o agente SSH"
@@ -524,7 +524,7 @@
     "message": "Sincronizar com o navegador"
   },
   "acquireCookieSpeedbumpContent": {
-    "message": "Para se ligar a $VAULTURL$, tem de sincronizar o seu navegador predefinido com a app Bitwarden. Será redirecionado de volta para esta aplicação assim que o navegador estiver sincronizado.",
+    "message": "Para se ligar a $VAULTURL$, tem de sincronizar o seu navegador predefinido com a app Black Mask. Será redirecionado de volta para esta aplicação assim que o navegador estiver sincronizado.",
     "description": "A speedbump message (dialog) shown when the user needs to sync with the browser to acquire an SSO cookie.",
     "placeholders": {
       "vaultUrl": {
@@ -546,7 +546,7 @@
     "message": "Erro de desencriptação"
   },
   "couldNotDecryptVaultItemsBelow": {
-    "message": "O Bitwarden não conseguiu desencriptar o(s) item(ns) do cofre listado(s) abaixo."
+    "message": "O Black Mask não conseguiu desencriptar o(s) item(ns) do cofre listado(s) abaixo."
   },
   "contactCSToAvoidDataLossPart1": {
     "message": "Contacte o serviço de apoio ao cliente",
@@ -1044,7 +1044,7 @@
     "message": "Criar conta"
   },
   "newToBitwarden": {
-    "message": "Novo no Bitwarden?"
+    "message": "Novo no Black Mask?"
   },
   "setAStrongPassword": {
     "message": "Defina uma palavra-passe forte"
@@ -1056,7 +1056,7 @@
     "message": "Iniciar sessão"
   },
   "logInToBitwarden": {
-    "message": "Iniciar sessão no Bitwarden"
+    "message": "Iniciar sessão no Black Mask"
   },
   "enterTheCodeSentToYourEmail": {
     "message": "Introduza o código enviado para o seu e-mail"
@@ -1217,7 +1217,7 @@
     "message": "Erro inesperado"
   },
   "closeThisBitwardenWindow": {
-    "message": "Feche esta janela do Bitwarden e tente novamente."
+    "message": "Feche esta janela do Black Mask e tente novamente."
   },
   "itemInformation": {
     "message": "Informações do item"
@@ -1348,7 +1348,7 @@
     "message": "Ambiente auto-hospedado"
   },
   "selfHostedBaseUrlHint": {
-    "message": "Especifique o URL de base da sua instalação Bitwarden hospedada no local. Exemplo: https://bitwarden.company.com"
+    "message": "Especifique o URL de base da sua instalação Black Mask hospedada no local. Exemplo: https://blackmask.company.com"
   },
   "selfHostedCustomEnvHeader": {
     "message": "Para uma configuração avançada, pode especificar o URL de base de cada serviço de forma independente."
@@ -1439,7 +1439,7 @@
     "message": "Tem a certeza de que pretende rotacionar a chave de encriptação da sua conta?"
   },
   "updateEncryptionKeyWarning": {
-    "message": "Após atualizar a sua chave de encriptação, terá de terminar a sessão e iniciar sessão novamente em todas as aplicações Bitwarden que está atualmente a utilizar (como a aplicação móvel ou as extensões do navegador). Não o fazer (o que permite descarregar a nova chave de encriptação) pode resultar em corrupção de dados. Tentaremos terminar a sua sessão automaticamente, no entanto, poderá sofrer algum atraso."
+    "message": "Após atualizar a sua chave de encriptação, terá de terminar a sessão e iniciar sessão novamente em todas as aplicações Black Mask que está atualmente a utilizar (como a aplicação móvel ou as extensões do navegador). Não o fazer (o que permite descarregar a nova chave de encriptação) pode resultar em corrupção de dados. Tentaremos terminar a sua sessão automaticamente, no entanto, poderá sofrer algum atraso."
   },
   "updateEncryptionKeyAccountExportWarning": {
     "message": "Todas as exportações com restrições de conta que tenha guardado tornar-se-ão inválidas."
@@ -1535,7 +1535,7 @@
     "message": "Continuar para a aplicação web?"
   },
   "changeMasterPasswordOnWebConfirmation": {
-    "message": "Pode alterar a sua palavra-passe mestra na aplicação web Bitwarden."
+    "message": "Pode alterar a sua palavra-passe mestra na aplicação web Black Mask."
   },
   "fingerprintPhrase": {
     "message": "Frase de impressão digital",
@@ -1714,13 +1714,13 @@
     "message": "Iniciar automaticamente ao iniciar sessão"
   },
   "openAtLoginDesc": {
-    "message": "Iniciar a aplicação para computador Bitwarden automaticamente ao iniciar a sessão."
+    "message": "Iniciar a aplicação para computador Black Mask automaticamente ao iniciar a sessão."
   },
   "alwaysShowDock": {
     "message": "Mostrar sempre na Dock"
   },
   "alwaysShowDockDesc": {
-    "message": "Mostrar o ícone do Bitwarden na Dock mesmo quando minimizado na barra de menus."
+    "message": "Mostrar o ícone do Black Mask na Dock mesmo quando minimizado na barra de menus."
   },
   "confirmTrayTitle": {
     "message": "Confirmar a ocultação do tabuleiro"
@@ -1888,13 +1888,13 @@
     "message": "Adquirir Premium"
   },
   "premiumPurchaseAlertV2": {
-    "message": "Pode adquirir o Premium a partir das definições da sua conta na aplicação web do Bitwarden."
+    "message": "Pode adquirir o Premium a partir das definições da sua conta na aplicação web do Black Mask."
   },
   "premiumCurrentMember": {
     "message": "É um membro Premium!"
   },
   "premiumCurrentMemberThanks": {
-    "message": "Obrigado por apoiar o Bitwarden."
+    "message": "Obrigado por apoiar o Black Mask."
   },
   "premiumPrice": {
     "message": "Tudo por apenas $PRICE$ /ano!",
@@ -2023,13 +2023,13 @@
     "description": "Bring all windows to front (foreground)"
   },
   "aboutBitwarden": {
-    "message": "Acerca do Bitwarden"
+    "message": "Acerca do Black Mask"
   },
   "services": {
     "message": "Serviços"
   },
   "hideBitwarden": {
-    "message": "Ocultar o Bitwarden"
+    "message": "Ocultar o Black Mask"
   },
   "hideOthers": {
     "message": "Ocultar outros"
@@ -2038,7 +2038,7 @@
     "message": "Mostrar tudo"
   },
   "quitBitwarden": {
-    "message": "Sair do Bitwarden"
+    "message": "Sair do Black Mask"
   },
   "valueCopied": {
     "message": "$VALUE$ copiado(a)",
@@ -2184,13 +2184,13 @@
     "message": "Esta palavra-passe será utilizada para exportar e importar este ficheiro"
   },
   "accountRestrictedOptionDescription": {
-    "message": "Utilize a chave de encriptação da sua conta, derivada do nome de utilizador e da palavra-passe mestra da sua conta, para encriptar a exportação e restringir a importação apenas à conta Bitwarden atual."
+    "message": "Utilize a chave de encriptação da sua conta, derivada do nome de utilizador e da palavra-passe mestra da sua conta, para encriptar a exportação e restringir a importação apenas à conta Black Mask atual."
   },
   "passwordProtected": {
     "message": "Protegido por palavra-passe"
   },
   "passwordProtectedOptionDescription": {
-    "message": "Defina uma palavra-passe do ficheiro para encriptar a exportação e importe-a para qualquer conta Bitwarden utilizando a palavra-passe de desencriptação."
+    "message": "Defina uma palavra-passe do ficheiro para encriptar a exportação e importe-a para qualquer conta Black Mask utilizando a palavra-passe de desencriptação."
   },
   "exportTypeHeading": {
     "message": "Tipo de exportação"
@@ -2224,7 +2224,7 @@
     "message": "Esta exportação encripta os seus dados utilizando a chave de encriptação da sua conta. Se alguma vez rotacionar a sua chave de encriptação, deverá exportar novamente, uma vez que não conseguirá desencriptar este ficheiro de exportação."
   },
   "encExportAccountWarningDesc": {
-    "message": "As chaves de encriptação da conta são únicas para cada conta de utilizador Bitwarden, pelo que não é possível importar uma exportação encriptada para uma conta diferente."
+    "message": "As chaves de encriptação da conta são únicas para cada conta de utilizador Black Mask, pelo que não é possível importar uma exportação encriptada para uma conta diferente."
   },
   "noOrganizationsList": {
     "message": "Não pertence a nenhuma organização. As organizações permitem-lhe partilhar itens em segurança com outros utilizadores."
@@ -2254,7 +2254,7 @@
     "message": "Palavra-passe mestra fraca"
   },
   "weakMasterPasswordDesc": {
-    "message": "A palavra-passe mestra que escolheu é fraca. Deve utilizar uma palavra-passe mestra forte (ou uma frase de acesso) para proteger adequadamente a sua conta Bitwarden. Tem a certeza de que pretende utilizar esta palavra-passe mestra?"
+    "message": "A palavra-passe mestra que escolheu é fraca. Deve utilizar uma palavra-passe mestra forte (ou uma frase de acesso) para proteger adequadamente a sua conta Black Mask. Tem a certeza de que pretende utilizar esta palavra-passe mestra?"
   },
   "pin": {
     "message": "PIN",
@@ -2264,7 +2264,7 @@
     "message": "Desbloquear com PIN"
   },
   "setYourPinCode": {
-    "message": "Defina o seu código PIN para desbloquear o Bitwarden. As suas definições de PIN serão redefinidas se alguma vez terminar sessão por completo da aplicação."
+    "message": "Defina o seu código PIN para desbloquear o Black Mask. As suas definições de PIN serão redefinidas se alguma vez terminar sessão por completo da aplicação."
   },
   "pinRequired": {
     "message": "É necessário o código PIN."
@@ -2282,7 +2282,7 @@
     "message": "Desbloqueio com autenticação do sistema"
   },
   "windowsHelloConsentMessage": {
-    "message": "Verificar para o Bitwarden."
+    "message": "Verificar para o Black Mask."
   },
   "unlockWithTouchId": {
     "message": "Desbloquear com Touch ID"
@@ -2497,10 +2497,10 @@
     "message": "Torne a verificação de dois passos simples"
   },
   "totpHelper": {
-    "message": "O Bitwarden pode armazenar e preencher códigos de verificação de dois passos. Copie e cole a chave neste campo."
+    "message": "O Black Mask pode armazenar e preencher códigos de verificação de dois passos. Copie e cole a chave neste campo."
   },
   "totpHelperWithCapture": {
-    "message": "O Bitwarden pode armazenar e preencher códigos de verificação de dois passos. Selecione o ícone da câmara para tirar uma captura de ecrã do código QR do autenticador deste site ou copie e cole a chave neste campo."
+    "message": "O Black Mask pode armazenar e preencher códigos de verificação de dois passos. Selecione o ícone da câmara para tirar uma captura de ecrã do código QR do autenticador deste site ou copie e cole a chave neste campo."
   },
   "premium": {
     "message": "Premium",
@@ -2586,7 +2586,7 @@
     "message": "Uma ou mais políticas da organização exigem que a palavra-passe mestra cumpra os seguintes requisitos:"
   },
   "receiveMarketingEmailsV2": {
-    "message": "Receba conselhos, anúncios e oportunidades de investigação do Bitwarden na sua caixa de entrada."
+    "message": "Receba conselhos, anúncios e oportunidades de investigação do Black Mask na sua caixa de entrada."
   },
   "unsubscribe": {
     "message": "Anular subscrição"
@@ -2616,7 +2616,7 @@
     "message": "Permitir a integração do navegador DuckDuckGo"
   },
   "enableDuckDuckGoBrowserIntegrationDesc": {
-    "message": "Utilize o seu cofre Bitwarden quando navegar com o DuckDuckGo."
+    "message": "Utilize o seu cofre Black Mask quando navegar com o DuckDuckGo."
   },
   "browserIntegrationUnsupportedTitle": {
     "message": "Integração com o navegador não suportada"
@@ -2640,7 +2640,7 @@
     "message": "Aprovar"
   },
   "verifyNativeMessagingConnectionTitle": {
-    "message": "O(A) $APPID$ quer ligar-se ao Bitwarden",
+    "message": "O(A) $APPID$ quer ligar-se ao Black Mask",
     "placeholders": {
       "appid": {
         "content": "$1",
@@ -3309,11 +3309,11 @@
     }
   },
   "forwarderGeneratedBy": {
-    "message": "Gerado pelo Bitwarden.",
+    "message": "Gerado pelo Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen."
   },
   "forwarderGeneratedByWithWebsite": {
-    "message": "Site: $WEBSITE$. Gerado pelo Bitwarden.",
+    "message": "Site: $WEBSITE$. Gerado pelo Black Mask.",
     "description": "Displayed with the address on the forwarding service's configuration screen.",
     "placeholders": {
       "WEBSITE": {
@@ -3480,7 +3480,7 @@
     "message": "Foi enviada uma notificação para o seu dispositivo"
   },
   "notificationSentDevicePart1": {
-    "message": "Desbloqueie o Bitwarden no seu dispositivo ou no "
+    "message": "Desbloqueie o Black Mask no seu dispositivo ou no "
   },
   "notificationSentDeviceAnchor": {
     "message": "aplicação web"
@@ -3501,7 +3501,7 @@
     "message": "Será notificado quando o pedido for aprovado"
   },
   "needAnotherOption": {
-    "message": "O início de sessão com o dispositivo deve ser ativado nas definições da app Bitwarden. Precisa de outra opção?"
+    "message": "O início de sessão com o dispositivo deve ser ativado nas definições da app Black Mask. Precisa de outra opção?"
   },
   "viewAllLogInOptions": {
     "message": "Ver todas as opções de início de sessão"
@@ -3681,7 +3681,7 @@
     }
   },
   "windowsBiometricUpdateWarning": {
-    "message": "O Bitwarden recomenda a atualização das suas definições biométricas para exigir a sua palavra-passe mestra (ou PIN) no primeiro desbloqueio. Gostaria de atualizar as suas definições agora?"
+    "message": "O Black Mask recomenda a atualização das suas definições biométricas para exigir a sua palavra-passe mestra (ou PIN) no primeiro desbloqueio. Gostaria de atualizar as suas definições agora?"
   },
   "windowsBiometricUpdateWarningTitle": {
     "message": "Atualização de definições recomendadas"
@@ -3766,7 +3766,7 @@
     "message": "O que é um dispositivo?"
   },
   "aDeviceIs": {
-    "message": "Um dispositivo é uma instalação única da app Bitwarden onde o utilizador iniciou sessão. Reinstalar, limpar os dados da aplicação ou limpar os seus cookies pode fazer com que um dispositivo apareça várias vezes."
+    "message": "Um dispositivo é uma instalação única da app Black Mask onde o utilizador iniciou sessão. Reinstalar, limpar os dados da aplicação ou limpar os seus cookies pode fazer com que um dispositivo apareça várias vezes."
   },
   "deviceListDescriptionTemp": {
     "message": "Tem sessão iniciada em cada um dos dispositivos abaixo."
@@ -4184,7 +4184,7 @@
     "description": "Label indicating the most common import formats"
   },
   "uriMatchDefaultStrategyHint": {
-    "message": "A deteção de correspondência de URI é a forma como o Bitwarden identifica sugestões de preenchimento automático.",
+    "message": "A deteção de correspondência de URI é a forma como o Black Mask identifica sugestões de preenchimento automático.",
     "description": "Explains to the user that URI match detection determines how Bitwarden suggests autofill options, and clarifies that this default strategy applies when no specific match detection is set for a login item."
   },
   "regExAdvancedOptionWarning": {
@@ -4223,7 +4223,7 @@
     "message": "Transfira e partilhe o relatório de diagnóstico com o"
   },
   "bitwardenSupport": {
-    "message": "suporte do Bitwarden⁠",
+    "message": "suporte do Black Mask⁠",
     "description": "Link text following the troubleshooting description sentence. 'Bitwarden' should not be translated."
   },
   "download": {
@@ -4317,7 +4317,7 @@
     "message": "O desbloqueio biométrico não está disponível devido a ficheiros de sistema mal configurados."
   },
   "biometricsStatusHelptextNotEnabledLocally": {
-    "message": "O desbloqueio biométrico não está disponível porque não está ativado para $EMAIL$ na app Bitwarden para computador.",
+    "message": "O desbloqueio biométrico não está disponível porque não está ativado para $EMAIL$ na app Black Mask para computador.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4404,7 +4404,7 @@
     "message": "Definir a verificação de dois passos"
   },
   "newDeviceVerificationNoticeContentPage1": {
-    "message": "O Bitwarden enviará um código para o e-mail da sua conta para verificar as credenciais de novos dispositivos a partir de fevereiro de 2025."
+    "message": "O Black Mask enviará um código para o e-mail da sua conta para verificar as credenciais de novos dispositivos a partir de fevereiro de 2025."
   },
   "newDeviceVerificationNoticeContentPage2": {
     "message": "Pode configurar a verificação de dois passos como forma alternativa de proteger a sua conta ou alterar o seu e-mail para um a que possa aceder."
@@ -4470,7 +4470,7 @@
     "message": "Permitir a captura de ecrã"
   },
   "allowScreenshotsDesc": {
-    "message": "Permitir capturas de ecrã à aplicação para computador do Bitwarden e que seja vista em sessões remotas no computador. Desativar esta opção impedirá o acesso de alguns monitores externos."
+    "message": "Permitir capturas de ecrã à aplicação para computador do Black Mask e que seja vista em sessões remotas no computador. Desativar esta opção impedirá o acesso de alguns monitores externos."
   },
   "confirmWindowStillVisibleTitle": {
     "message": "Janela de confirmação ainda visível"
@@ -4607,7 +4607,7 @@
     "message": "Acerca desta definição"
   },
   "permitCipherDetailsDescription": {
-    "message": "O Bitwarden utilizará os URIs de credenciais guardadas para identificar qual o ícone ou URL de alteração de palavra-passe que deve ser utilizado para melhorar a sua experiência. Nenhuma informação é recolhida ou guardada quando utiliza este serviço."
+    "message": "O Black Mask utilizará os URIs de credenciais guardadas para identificar qual o ícone ou URL de alteração de palavra-passe que deve ser utilizado para melhorar a sua experiência. Nenhuma informação é recolhida ou guardada quando utiliza este serviço."
   },
   "assignToCollections": {
     "message": "Atribuir às coleções"
@@ -4750,7 +4750,7 @@
     "message": "Mostrar menos"
   },
   "enableAutotypeDescription": {
-    "message": "O Bitwarden não valida a introdução de localizações. Certifique-se de que está na janela e no campo corretos antes de utilizar o atalho."
+    "message": "O Black Mask não valida a introdução de localizações. Certifique-se de que está na janela e no campo corretos antes de utilizar o atalho."
   },
   "typeShortcut": {
     "message": "Introduzir atalho"
@@ -4868,7 +4868,7 @@
     "message": "Atualize para o Premium"
   },
   "removeMasterPasswordForOrgUserKeyConnector": {
-    "message": "A sua organização já não utiliza palavras-passe mestras para iniciar sessão no Bitwarden. Para continuar, verifique a organização e o domínio."
+    "message": "A sua organização já não utiliza palavras-passe mestras para iniciar sessão no Black Mask. Para continuar, verifique a organização e o domínio."
   },
   "continueWithLogIn": {
     "message": "Continuar com o início de sessão"
