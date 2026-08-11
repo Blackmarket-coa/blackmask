@@ -8,7 +8,12 @@ import { CipherType, FieldType } from "@bitwarden/common/vault/enums";
 import { CipherView } from "@bitwarden/common/vault/models/view/cipher.view";
 import { FieldView } from "@bitwarden/common/vault/models/view/field.view";
 import { IdentityView } from "@bitwarden/common/vault/models/view/identity.view";
-import { CredentialGeneratorService, GenerateRequest, Type } from "@bitwarden/generator-core";
+import {
+  CredentialGeneratorService,
+  GenerateRequest,
+  Type,
+  isForwarderExtensionId,
+} from "@bitwarden/generator-core";
 
 /**
  * Identity-firewall layers. A persona belongs to exactly one layer so activity under one identity
@@ -96,6 +101,33 @@ export class PersonaService {
       this.generatorService.generate$({ on$: of(request), account$: of(account) }),
     );
     return generated.credential;
+  }
+
+  /**
+   * Whether the configured email generator routes through a forwarding service (SimpleLogin, Addy,
+   * Fastmail, Firefox Relay, DuckDuckGo) rather than deriving the address from the user's own
+   * mailbox.
+   *
+   * This matters for personas specifically. The two built-in email algorithms both stay on the
+   * user's own domain — `plusAddress` produces `you+tag@yours`, which strips back to the real
+   * mailbox, and `catchall` produces `random@yours`, which links every persona to one domain. A
+   * persona whose email points back at its owner does not provide the separation the layer implies,
+   * so the editor says so rather than quietly generating one.
+   *
+   * Returns false when the preference cannot be read; the warning is the safe default.
+   */
+  async aliasForwarded(): Promise<boolean> {
+    try {
+      const account = await firstValueFrom(
+        this.accountService.activeAccount$.pipe(filter((a): a is Account => a != null)),
+      );
+      const preferred = await firstValueFrom(
+        this.generatorService.preferredAlgorithm$(Type.email, { account$: of(account) }),
+      );
+      return isForwarderExtensionId(preferred.id);
+    } catch {
+      return false;
+    }
   }
 
   /** Creates a persona as an Identity cipher tagged with its layer, and saves it to the vault. */

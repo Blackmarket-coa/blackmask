@@ -48,9 +48,9 @@ Point the extension at the Phase 0 Vaultwarden and register a test account first
 - [ ] Add a custom field to the persona in the normal vault UI, then edit it in the persona editor:
       **the custom field must survive.** This is the case unit tests cover, worth confirming for real.
 - [ ] Clear the email and notes; both clear on the item.
-- [ ] Generate an alias. Note which algorithm the generator is configured with — if it is
-      `plusAddress` the alias still derives from the user's real mailbox, which undercuts the
-      separation a persona implies.
+- [ ] Generate an alias. With the generator set to `plusAddress` or `catchall`, both persona
+      screens must show the "traced back to you" warning; with a forwarder configured (SimpleLogin,
+      Addy, Fastmail, Firefox Relay, DuckDuckGo) it must disappear.
 
 ### Fingerprint exposure
 

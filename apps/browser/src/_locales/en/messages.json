@@ -6741,6 +6741,9 @@
   "blackMaskAliasGenerated": {
     "message": "Alias generated"
   },
+  "blackMaskAliasNotSeparated": {
+    "message": "Your email generator builds addresses on your own domain, so this persona's email can still be traced back to you. Pick a forwarding service in the generator settings for an address that isn't linked to your mailbox."
+  },
   "blackMaskAliasError": {
     "message": "Couldn't generate an alias. Configure an email forwarder (e.g. SimpleLogin) in the generator settings first."
   },

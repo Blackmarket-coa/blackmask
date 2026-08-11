@@ -47,6 +47,12 @@
           {{ "blackMaskGenerateAlias" | i18n }}
         </button>
 
+        @if (aliasLinkedToUser()) {
+          <bit-callout type="warning" class="tw-mt-2">{{
+            "blackMaskAliasNotSeparated" | i18n
+          }}</bit-callout>
+        }
+
         <bit-form-field>
           <bit-label>{{ "notes" | i18n }}</bit-label>
           <textarea bitInput formControlName="notes" id="edit-persona_input_notes"></textarea>

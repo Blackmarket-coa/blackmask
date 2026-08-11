@@ -7,6 +7,7 @@ import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.servic
 import { LogService } from "@bitwarden/common/platform/abstractions/log.service";
 import {
   ButtonModule,
+  CalloutModule,
   CardComponent,
   FormFieldModule,
   InputModule,
@@ -35,6 +36,7 @@ import { PersonaLayer, PersonaService } from "./services/persona.service";
     PopupPageComponent,
     PopupHeaderComponent,
     PopOutComponent,
+    CalloutModule,
     CardComponent,
     FormFieldModule,
     InputModule,
@@ -52,6 +54,19 @@ export class CreatePersonaComponent {
 
   protected readonly loading = signal(false);
   protected readonly generatingAlias = signal(false);
+  /**
+   * True when the configured email generator builds addresses on the user's own domain rather than
+   * through a forwarder, so a generated alias still points back at them.
+   */
+  protected readonly aliasLinkedToUser = signal(false);
+
+  constructor() {
+    void this.checkAliasSeparation();
+  }
+
+  private async checkAliasSeparation(): Promise<void> {
+    this.aliasLinkedToUser.set(!(await this.personaService.aliasForwarded()));
+  }
 
   protected readonly form = this.formBuilder.group({
     layer: this.formBuilder.control<PersonaLayer>(PersonaLayer.Anonymous, {

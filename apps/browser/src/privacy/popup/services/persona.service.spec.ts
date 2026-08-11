@@ -3,13 +3,21 @@ import { mock, MockProxy } from "jest-mock-extended";
 import { firstValueFrom, of } from "rxjs";
 
 import { Account, AccountService } from "@bitwarden/common/auth/abstractions/account.service";
+import { VendorId } from "@bitwarden/common/tools/extension";
 import { UserId } from "@bitwarden/common/types/guid";
 import { CipherService } from "@bitwarden/common/vault/abstractions/cipher.service";
 import { CipherType, FieldType } from "@bitwarden/common/vault/enums";
 import { CipherView } from "@bitwarden/common/vault/models/view/cipher.view";
 import { FieldView } from "@bitwarden/common/vault/models/view/field.view";
 import { IdentityView } from "@bitwarden/common/vault/models/view/identity.view";
-import { CredentialGeneratorService, GeneratedCredential, Type } from "@bitwarden/generator-core";
+import {
+  Algorithm,
+  AlgorithmMetadata,
+  CredentialAlgorithm,
+  CredentialGeneratorService,
+  GeneratedCredential,
+  Type,
+} from "@bitwarden/generator-core";
 
 import {
   PERSONA_LAYER_FIELD_NAME,
@@ -225,6 +233,43 @@ describe("PersonaService", () => {
 
       expect(alias).toBe("alias@simplelogin.io");
       expect(generatorService.generate$).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe("aliasForwarded", () => {
+    /** Only `id` is read, so the rest of the metadata is irrelevant to these cases. */
+    function preferAlgorithm(id: CredentialAlgorithm) {
+      generatorService.preferredAlgorithm$.mockReturnValue(
+        of({ id, type: Type.email, weight: 0, i18nKeys: {} } as AlgorithmMetadata),
+      );
+    }
+
+    it("is true for a forwarder, which gives an address unlinked from the user", async () => {
+      preferAlgorithm({ forwarder: "simplelogin" as VendorId });
+
+      await expect(service.aliasForwarded()).resolves.toBe(true);
+    });
+
+    it("is false for plus-addressing, which strips back to the real mailbox", async () => {
+      preferAlgorithm(Algorithm.plusAddress);
+
+      await expect(service.aliasForwarded()).resolves.toBe(false);
+    });
+
+    it("is false for catch-all, which links every persona to one domain", async () => {
+      preferAlgorithm(Algorithm.catchall);
+
+      await expect(service.aliasForwarded()).resolves.toBe(false);
+    });
+
+    it("falls back to false when the preference cannot be read", async () => {
+      // Warning the user is the safe default: claiming separation we could not verify is worse
+      // than warning about separation that may in fact exist.
+      generatorService.preferredAlgorithm$.mockImplementation(() => {
+        throw new Error("unavailable");
+      });
+
+      await expect(service.aliasForwarded()).resolves.toBe(false);
     });
   });
 

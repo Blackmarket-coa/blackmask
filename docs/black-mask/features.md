@@ -159,13 +159,29 @@ forwarder the user configured, e.g. self-hosted SimpleLogin), tagged with source
 `black-mask-persona`. `personas$()` streams non-deleted Identity ciphers carrying a valid layer
 field.
 
+**Editing** (`popup/edit-persona.component.ts`). Rows open `/edit-persona`, which understands the
+persona concepts a raw cipher view does not — the layer as a picker rather than a text field, and
+alias generation inline. `updatePersona` replaces only the `Black Mask Layer` field and preserves
+every other custom field, and refuses outright (`PersonaNotEditableError`) when the underlying
+cipher is not editable, because the vault's update path silently degrades those to a partial
+request that would drop the changes while reporting success.
+
+**Alias separation warning.** `aliasForwarded()` reads the configured email algorithm and both
+persona screens warn when it is not a forwarder. This matters because the two built-in email
+algorithms stay on the user's own domain: `plusAddress` yields `you+tag@yours`, which strips back
+to the real mailbox, and `catchall` yields `random@yours`, which links every persona to one domain.
+Either one gives a persona an email that points back at its owner — the opposite of what a layer
+implies. Black Mask does not force a vendor (that would break users on Addy, Fastmail, Firefox
+Relay or DuckDuckGo); it states the consequence and leaves the choice alone. The check fails
+closed: an unreadable preference warns rather than claims separation it could not verify.
+
 **Privacy posture.** Persona data is vault data — encrypted client-side and synced through the
 existing pipeline. Alias generation goes only to the user's configured forwarder.
 
 **Limitations.** Bio/avatar generation (backend inference) is not wired — those are sibling-repo
-contracts. Rows open the standard `/view-cipher` screen rather than a persona-specific editor.
+contracts.
 
-**Tests.** `persona.service.spec.ts` (4).
+**Tests.** `persona.service.spec.ts` (17).
 
 ---
 

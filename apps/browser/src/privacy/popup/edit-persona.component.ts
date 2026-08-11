@@ -62,6 +62,11 @@ export class EditPersonaComponent {
   protected readonly notFound = signal(false);
   /** True for a persona shared read-only from an organization; the form is disabled for those. */
   protected readonly readOnly = signal(false);
+  /**
+   * True when the configured email generator builds addresses on the user's own domain rather than
+   * through a forwarder, so a generated alias still points back at them.
+   */
+  protected readonly aliasLinkedToUser = signal(false);
 
   protected readonly form = this.formBuilder.group({
     layer: this.formBuilder.control<PersonaLayer>(PersonaLayer.Anonymous, {
@@ -87,6 +92,7 @@ export class EditPersonaComponent {
   private async load(): Promise<void> {
     const cipherId = this.route.snapshot.queryParamMap.get("cipherId") ?? undefined;
     try {
+      this.aliasLinkedToUser.set(!(await this.personaService.aliasForwarded()));
       const persona = cipherId ? await this.personaService.getPersona(cipherId) : undefined;
       if (persona == null) {
         this.notFound.set(true);
