@@ -48,6 +48,20 @@ export interface Persona {
 /** A persona plus the fields only needed when editing one. */
 export interface PersonaDetail extends Persona {
   notes?: string;
+  /**
+   * False for a persona shared from an organization that the user may read but not change. The
+   * vault update path silently degrades to a partial request for those, sending only `folderId`
+   * and `favorite`, so an editor that ignored this would report success while dropping every edit.
+   */
+  editable: boolean;
+}
+
+/** Thrown when a save is attempted against a persona the user only has read access to. */
+export class PersonaNotEditableError extends Error {
+  constructor() {
+    super("Persona is not editable.");
+    this.name = "PersonaNotEditableError";
+  }
 }
 
 /** Type guard for the known persona layers. */
@@ -102,12 +116,12 @@ export class PersonaService {
       return undefined;
     }
     const persona = this.toPersona(cipher);
-    return persona && { ...persona, notes: cipher.notes };
+    return persona && { ...persona, notes: cipher.notes, editable: cipher.edit };
   }
 
   /**
    * Updates an existing persona in place.
-   * @throws when the id does not resolve to a persona.
+   * @throws when the id does not resolve to a persona, or resolves to one the user cannot edit.
    */
   async updatePersona(request: UpdatePersonaRequest): Promise<CipherView> {
     const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
@@ -115,6 +129,11 @@ export class PersonaService {
     const existing = await this.findPersonaCipher(request.id);
     if (existing == null) {
       throw new Error("Persona not found.");
+    }
+    // Refuse rather than let the vault degrade to a partial update: that path keeps only
+    // `folderId` and `favorite`, so the save would appear to succeed and change nothing.
+    if (!existing.edit) {
+      throw new PersonaNotEditableError();
     }
 
     const cipher = await this.cipherService.getFullCipherView(existing);

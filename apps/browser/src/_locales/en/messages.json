@@ -6756,6 +6756,9 @@
   "blackMaskPersonaNotFound": {
     "message": "This persona is no longer in your vault."
   },
+  "blackMaskPersonaReadOnly": {
+    "message": "This persona was shared with you and can't be changed."
+  },
   "blackMaskPersonas": {
     "message": "Personas"
   },

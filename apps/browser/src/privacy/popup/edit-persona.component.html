@@ -9,6 +9,12 @@
     <p class="tw-mt-4 tw-text-center tw-text-muted">{{ "blackMaskPersonaNotFound" | i18n }}</p>
   } @else if (!loading()) {
     <form [formGroup]="form" (ngSubmit)="submit()">
+      @if (readOnly()) {
+        <bit-callout type="info" class="tw-mt-2">{{
+          "blackMaskPersonaReadOnly" | i18n
+        }}</bit-callout>
+      }
+
       <bit-card>
         <bit-form-field>
           <bit-label>{{ "blackMaskPersonaLayer" | i18n }}</bit-label>
@@ -34,6 +40,7 @@
           bitButton
           buttonType="secondary"
           [loading]="generatingAlias()"
+          [disabled]="readOnly()"
           (click)="generateAlias()"
           id="edit-persona_button_generate-alias"
         >
@@ -46,16 +53,18 @@
         </bit-form-field>
       </bit-card>
 
-      <button
-        type="submit"
-        bitButton
-        buttonType="primary"
-        [block]="true"
-        [loading]="saving()"
-        id="edit-persona_button_save"
-      >
-        {{ "save" | i18n }}
-      </button>
+      @if (!readOnly()) {
+        <button
+          type="submit"
+          bitButton
+          buttonType="primary"
+          [block]="true"
+          [loading]="saving()"
+          id="edit-persona_button_save"
+        >
+          {{ "save" | i18n }}
+        </button>
+      }
     </form>
   }
 </popup-page>

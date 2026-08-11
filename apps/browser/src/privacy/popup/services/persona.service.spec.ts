@@ -11,7 +11,12 @@ import { FieldView } from "@bitwarden/common/vault/models/view/field.view";
 import { IdentityView } from "@bitwarden/common/vault/models/view/identity.view";
 import { CredentialGeneratorService, GeneratedCredential, Type } from "@bitwarden/generator-core";
 
-import { PERSONA_LAYER_FIELD_NAME, PersonaLayer, PersonaService } from "./persona.service";
+import {
+  PERSONA_LAYER_FIELD_NAME,
+  PersonaLayer,
+  PersonaNotEditableError,
+  PersonaService,
+} from "./persona.service";
 
 describe("PersonaService", () => {
   const userId = "user-1" as UserId;
@@ -25,6 +30,9 @@ describe("PersonaService", () => {
     cipher.id = id;
     cipher.type = CipherType.Identity;
     cipher.name = name;
+    // `CipherView` defaults `edit` to false; personally-owned ciphers are editable, and that is
+    // what these tests describe unless a case says otherwise.
+    cipher.edit = true;
     cipher.identity = new IdentityView();
     if (email) {
       cipher.identity.email = email;
@@ -104,7 +112,16 @@ describe("PersonaService", () => {
         layer: PersonaLayer.Creator,
         email: "jane@example.com",
         notes: "a note",
+        editable: true,
       });
+    });
+
+    it("reports a persona shared read-only as not editable", async () => {
+      const cipher = personaCipher("p1", "Jane", PersonaLayer.Creator);
+      cipher.edit = false;
+      cipherService.cipherViews$.mockReturnValue(of([cipher]));
+
+      await expect(service.getPersona("p1")).resolves.toMatchObject({ editable: false });
     });
 
     it("returns undefined for an id that is not a persona", async () => {
@@ -181,6 +198,19 @@ describe("PersonaService", () => {
       await expect(
         service.updatePersona({ id: "missing", name: "Jane", layer: PersonaLayer.Real }),
       ).rejects.toThrow("Persona not found.");
+      expect(cipherService.updateWithServer).not.toHaveBeenCalled();
+    });
+
+    it("refuses to save a persona the user cannot edit", async () => {
+      // The vault silently degrades a non-editable update to a partial request carrying only
+      // `folderId` and `favorite`, so saving would report success and change nothing.
+      const cipher = personaCipher("p1", "Jane", PersonaLayer.Real);
+      cipher.edit = false;
+      cipherService.cipherViews$.mockReturnValue(of([cipher]));
+
+      await expect(
+        service.updatePersona({ id: "p1", name: "Changed", layer: PersonaLayer.Business }),
+      ).rejects.toBeInstanceOf(PersonaNotEditableError);
       expect(cipherService.updateWithServer).not.toHaveBeenCalled();
     });
   });

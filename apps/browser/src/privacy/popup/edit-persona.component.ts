@@ -7,6 +7,7 @@ import { I18nService } from "@bitwarden/common/platform/abstractions/i18n.servic
 import { LogService } from "@bitwarden/common/platform/abstractions/log.service";
 import {
   ButtonModule,
+  CalloutModule,
   CardComponent,
   FormFieldModule,
   InputModule,
@@ -36,6 +37,7 @@ import { PersonaLayer, PersonaService } from "./services/persona.service";
     PopupPageComponent,
     PopupHeaderComponent,
     PopOutComponent,
+    CalloutModule,
     CardComponent,
     FormFieldModule,
     InputModule,
@@ -58,6 +60,8 @@ export class EditPersonaComponent {
   protected readonly saving = signal(false);
   protected readonly generatingAlias = signal(false);
   protected readonly notFound = signal(false);
+  /** True for a persona shared read-only from an organization; the form is disabled for those. */
+  protected readonly readOnly = signal(false);
 
   protected readonly form = this.formBuilder.group({
     layer: this.formBuilder.control<PersonaLayer>(PersonaLayer.Anonymous, {
@@ -96,6 +100,11 @@ export class EditPersonaComponent {
         email: persona.email ?? "",
         notes: persona.notes ?? "",
       });
+
+      if (!persona.editable) {
+        this.readOnly.set(true);
+        this.form.disable();
+      }
     } catch (e) {
       this.logService.error(e);
       this.notFound.set(true);
@@ -129,7 +138,7 @@ export class EditPersonaComponent {
 
   protected async submit(): Promise<void> {
     const id = this.personaId();
-    if (id == null) {
+    if (id == null || this.readOnly()) {
       return;
     }
     if (this.form.invalid) {
