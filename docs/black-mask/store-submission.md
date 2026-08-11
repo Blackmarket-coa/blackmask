@@ -73,15 +73,36 @@ desktop, not before.
 
 1. **Move `nativeMessaging` to `optional_permissions`** and request it at runtime when the user
    enables desktop integration. Nothing to justify at submission, no install-time warning for a
-   dormant feature, and no forced re-consent later. Needs care: `permissions.request()` requires a
-   user gesture, and the connect path is not currently gesture-driven.
+   dormant feature, and no forced re-consent later. This is the right end state, but it is **not a
+   manifest-only change** — see below.
 2. **Leave it and justify it** as "desktop application integration for biometric unlock", accepting
    that a reviewer may ask why a feature with no shipping desktop app needs it.
 3. **Strip it.** Cheapest now, worst later — adding a permission to a published extension disables
    it until every user re-consents.
 
-Do not defer this to the submission form. Option 1 is the right end state; option 2 is acceptable
-if desktop is close.
+Do not defer this to the submission form. Option 2 is acceptable if desktop is close; option 1 is
+where this should land otherwise.
+
+### What option 1 actually costs
+
+Moving the permission means the extension no longer holds `nativeMessaging` by default, and
+`BackgroundBrowserBiometricsService` connects in two places that have **no user gesture available**:
+
+- Its constructor starts a **30-second poll** (`BACKGROUND_POLLING_INTERVAL`) that calls
+  `connect()` whenever `biometricUnlockEnabled$` is true. That runs in the service worker, where
+  `permissions.request()` is not callable at all.
+- `canEnableBiometricUnlock()` calls `getBiometricsStatus()`, which connects. That is what decides
+  whether to **offer** the biometrics toggle — so the probe happens before the user has agreed to
+  anything, and cannot itself be the gesture that requests the permission.
+
+So the change is: gate both paths on `permissions.contains()`, report `DesktopDisconnected` when
+the permission is absent instead of attempting a connection, and add an explicit "Connect desktop
+app" control in the biometrics settings UI whose click is the gesture that calls
+`permissions.request()` and then probes.
+
+That is a real change to the unlock path in a password manager, which argues for doing it
+deliberately rather than as submission paperwork — and for doing it when there is a desktop build
+to test against.
 
 ---
 
