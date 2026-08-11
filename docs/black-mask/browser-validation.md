@@ -56,6 +56,11 @@ Point the extension at the Phase 0 Vaultwarden and register a test account first
 
 - [ ] Canvas, WebGL, audio and font probes all return values rather than throwing.
 - [ ] The exposure level is plausible against a known reference such as coveryourtracks.eff.org.
+- [ ] The privacy dashboard shows **no** fingerprint factor before the test has ever been run, and
+      gains one after. Getting this backwards is the failure worth catching: an unmeasured browser
+      must not score as a fully-exposed one.
+- [ ] After a browser restart the factor disappears again (the cache is session-scoped) and returns
+      once the test is re-run.
 
 ### Data exposure
 

@@ -6925,6 +6925,9 @@
   "blackMaskScoreTwoFactor": {
     "message": "Two-step login where supported"
   },
+  "blackMaskScoreFingerprint": {
+    "message": "Low browser fingerprint"
+  },
   "blackMaskTrackers": {
     "message": "Trackers"
   },
