@@ -1,0 +1,7 @@
+# The repo root .gitignore does NOT cover a bare `.env` — it only ignores
+# .devcontainer/common/.env. Without this file, following the README would stage a real
+# Cloudflare tunnel token, Postgres password, admin token and HIBP key.
+.env
+
+# Build output copied here by the README's step 2.
+web-vault/

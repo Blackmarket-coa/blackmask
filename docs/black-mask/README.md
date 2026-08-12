@@ -17,6 +17,8 @@ in _this codebase_.
 | [`branding.md`](./branding.md)                                     | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets.                                                |
 | [`store-submission.md`](./store-submission.md)                     | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting.         |
 | [`browser-validation.md`](./browser-validation.md)                 | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector.                          |
+| [`deploy/`](./deploy/)                                             | Phase 0 backend: compose file, env template, and a smoke test. The blocking item — nothing ships without it.                                        |
+| [`privacy-policy.md`](./privacy-policy.md)                         | **Draft** policy written from the source. Required by both stores. Needs qualified review before publishing.                                        |
 
 ## Current status
 

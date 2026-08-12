@@ -1,0 +1,82 @@
+# Black Mask backend — Vaultwarden + Cloudflare Tunnel.
+#
+# The web vault is served BY Vaultwarden, not beside it. That is a hard requirement, not a
+# preference: apps/web derives its api/identity URLs from window.location.origin, and
+# WebEnvironmentService.setEnvironment() throws outright for Region.SelfHosted. A web vault on a
+# different origin from /api cannot be repointed at runtime — it simply will not work.
+#
+# Serving at exactly https://vault.blackmask.app also makes the client match its built-in region
+# config (PRODUCTION_REGIONS in libs/common), so the browser extension defaults to this server with
+# no manual URL entry. A different hostname still works, but extension users would have to type the
+# server address, which is the funnel drop-off this setup exists to avoid.
+#
+# Usage:
+#   cp .env.example .env      # then fill it in — never commit .env
+#   docker compose up -d
+#   ./smoke-test.sh https://vault.blackmask.app
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:1.36.0
+    container_name: blackmask-vaultwarden
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # Serve the built web vault from this container. Point WEB_VAULT_FOLDER at a bind mount of
+      # apps/web/build (see volumes below); the image's bundled vault is replaced by ours.
+      WEB_VAULT_ENABLED: "true"
+      WEB_VAULT_FOLDER: /web-vault
+      ROCKET_ADDRESS: 0.0.0.0
+      ROCKET_PORT: "80"
+      # Vaultwarden sits behind the tunnel, which terminates TLS. It must be told the public
+      # origin or password-reset and emergency-access links point at the container.
+      DOMAIN: ${DOMAIN}
+      SIGNUPS_ALLOWED: ${SIGNUPS_ALLOWED}
+      # Without this the Black Mask data exposure dashboard degrades to an error card. It is a
+      # paid Have I Been Pwned subscription — the feature is dead on arrival without one.
+      HIBP_API_KEY: ${HIBP_API_KEY}
+      DATABASE_URL: ${DATABASE_URL}
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+    volumes:
+      - vaultwarden-data:/data
+      # Build with `npm run dist:oss:selfhost` and copy apps/web/build here.
+      - ./web-vault:/web-vault:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [blackmask]
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: blackmask-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      # Vaultwarden crashes on boot if Postgres is not accepting connections yet, so this
+      # healthcheck gates startup rather than relying on restart-on-failure.
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks: [blackmask]
+
+  cloudflared:
+    image: cloudflare/cloudflared:2026.2.1
+    container_name: blackmask-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on: [vaultwarden]
+    networks: [blackmask]
+
+volumes:
+  vaultwarden-data:
+  postgres-data:
+
+networks:
+  blackmask:
+    driver: bridge
