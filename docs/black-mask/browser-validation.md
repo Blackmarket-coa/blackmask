@@ -2,8 +2,28 @@
 
 The privacy features carry `NEEDS BROWSER VALIDATION` notes for a reason: `declarativeNetRequest`
 blocking, container creation, the fingerprint probes and the ONNX detector cannot be exercised by
-jest. Unit tests cover their pure logic only. **Nothing here has been confirmed in a real browser
-yet** — walk this before submitting to a store or recording a demo.
+jest. Unit tests cover their pure logic only. **Almost nothing here has been confirmed in a real
+browser** — walk this before submitting to a store or recording a demo.
+
+## Already confirmed by an automated run
+
+A headless Chromium was driven over CDP with the unpacked build loaded. What it settled:
+
+- [x] The extension **builds and loads**, and its MV3 service worker registers and runs.
+- [x] The built manifest is MV3, and `nativeMessaging` is **absent from `permissions`** and present
+      in `optional_permissions` — the install prompt will not carry a native-messaging warning.
+- [x] The tracker ruleset ships with 20 domains and `enabled: false`, so runtime toggling is what
+      turns it on.
+- [x] `extName` resolves to "Black Mask Privacy & Password Manager".
+
+It also **found a rebrand miss**: the popup's `<title>` was still `Bitwarden`, in
+`src/popup/index.ejs`. Earlier sweeps missed it because they globbed `.html`, and that is the only
+`.ejs` in the repo. Fixed and re-verified in the build output.
+
+**What it could not settle.** The popup rendered blank and the browser then died mid-run. That is
+most likely this container's memory against a 9 MiB background bundle plus Angular, not a product
+defect — but it is unproven either way, so treat "the popup renders" as still open, and watch for
+it below. Nothing requiring a signed-in vault, a backend, or Firefox was attempted at all.
 
 ## Builds to test
 
@@ -78,10 +98,17 @@ Point the extension at the Phase 0 Vaultwarden and register a test account first
 - [ ] Reports **Available**, not "Unavailable". If it still says unavailable, the upstream
       `phishing-detection` flag is off — it gates the engine independently of the Black Mask flag.
 
+### Popup basics
+
+- [ ] The popup **renders** rather than showing a blank page, and the window title reads
+      "Black Mask". The automated run could not confirm this — it saw a blank popup before the
+      browser died, and could not distinguish a container memory limit from a real defect.
+
 ### Desktop integration permission
 
-- [ ] A fresh install shows **no** native-messaging warning on the install prompt. This is the whole
-      point of the change; if the warning is there, the permission is still required somewhere.
+- [x] The built manifest keeps `nativeMessaging` out of `permissions` — confirmed automatically.
+- [ ] A fresh install shows **no** native-messaging warning on the install prompt. The manifest is
+      right; this confirms the browser agrees.
 - [ ] Account security shows the **Connect desktop app** button, and clicking it opens the browser's
       permission prompt. The prompt must appear — if it silently no-ops, the click is not reaching
       `permissions.request()` as a user gesture.
