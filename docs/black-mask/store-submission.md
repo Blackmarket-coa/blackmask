@@ -38,14 +38,18 @@ Chrome asks for a per-permission justification. These are the actual call sites,
 | `notifications`                                    | Save/update-password prompts.                                                                                                                                                  |
 | `host_permissions: https://*/*`, `http://*/*`      | Autofill must work on whatever site the user chooses. Narrower host lists are impossible for a general password manager.                                                       |
 | `privacy` _(optional)_                             | Requested only when the user opts to turn off the browser's own built-in autofill (`autofill/popup/settings/autofill.component.ts`). Optional, so it never appears at install. |
+| `nativeMessaging` _(optional)_                     | Desktop biometric unlock. Requested from the Connect desktop app button in account security, so it never appears at install. Required on Safari only — see below.              |
 | `cookies`, `contextualIdentities` _(Firefox only)_ | Per-persona browsing containers. Declared in `__firefox__permissions`, absent from Chromium builds.                                                                            |
 
 ---
 
-## `nativeMessaging` — resolve before submitting
+## `nativeMessaging` — resolved: now optional
 
-**This permission is currently requested but the feature behind it cannot work.** It is the weakest
-item in the list and the most likely to draw a reviewer question.
+**Chromium and Firefox builds no longer request `nativeMessaging` at install.** It moved to
+`optional_permissions`, so there is nothing to justify on the submission form and no
+native-messaging warning on the install prompt for a feature that is dormant until desktop ships.
+Safari keeps it required — its extensions are packaged inside a host app, where the
+optional-permission flow does not apply.
 
 It powers desktop biometric unlock: `nativeMessaging.background.ts` opens a port to a native host,
 which the desktop app registers. Three things are true today:
@@ -69,40 +73,36 @@ one socket. It is not fixed here because the macOS half needs an App Group under
 do not have, and there is no desktop build to test the change against. Fix it as part of shipping
 desktop, not before.
 
-**Options, in preference order:**
+### Why this was not a manifest-only change
 
-1. **Move `nativeMessaging` to `optional_permissions`** and request it at runtime when the user
-   enables desktop integration. Nothing to justify at submission, no install-time warning for a
-   dormant feature, and no forced re-consent later. This is the right end state, but it is **not a
-   manifest-only change** — see below.
-2. **Leave it and justify it** as "desktop application integration for biometric unlock", accepting
-   that a reviewer may ask why a feature with no shipping desktop app needs it.
-3. **Strip it.** Cheapest now, worst later — adding a permission to a published extension disables
-   it until every user re-consents.
+Two code paths connected with **no user gesture available**, and `permissions.request()` requires
+one:
 
-Do not defer this to the submission form. Option 2 is acceptable if desktop is close; option 1 is
-where this should land otherwise.
+- `BackgroundBrowserBiometricsService`'s constructor starts a 30-second poll
+  (`BACKGROUND_POLLING_INTERVAL`) calling `connect()` whenever `biometricUnlockEnabled$` is true.
+  That runs in the service worker, where `permissions.request()` is not callable at all.
+- `canEnableBiometricUnlock()` connects in order to decide whether to **offer** the biometrics
+  toggle, so the probe precedes any user agreement and cannot itself be the gesture.
 
-### What option 1 actually costs
+What landed:
 
-Moving the permission means the extension no longer holds `nativeMessaging` by default, and
-`BackgroundBrowserBiometricsService` connects in two places that have **no user gesture available**:
+- `NativeMessagingBackground.permitted()` checks the grant, and `connect()` throws
+  `NativeMessagingPermissionError` without opening a port when it is absent. One choke point, so
+  every caller is covered — the existing `catch` blocks already degrade to `DesktopDisconnected`.
+- The background poll skips entirely when the permission is absent, rather than retrying a
+  connection that cannot succeed until the user opts in.
+- Account security gains a **Connect desktop app** button. Its click is the gesture. The permission
+  is polled separately from biometric status, because the user can revoke it from the browser's own
+  extension settings at any time.
 
-- Its constructor starts a **30-second poll** (`BACKGROUND_POLLING_INTERVAL`) that calls
-  `connect()` whenever `biometricUnlockEnabled$` is true. That runs in the service worker, where
-  `permissions.request()` is not callable at all.
-- `canEnableBiometricUnlock()` calls `getBiometricsStatus()`, which connects. That is what decides
-  whether to **offer** the biometrics toggle — so the probe happens before the user has agreed to
-  anything, and cannot itself be the gesture that requests the permission.
+**The guard fails open by design.** Only an explicit `false` from the permissions query denies;
+a throw, a missing API, or a non-answer all count as permitted. A false negative would silently
+disable biometric unlock, which is worse than attempting a connection that fails on its own — and
+this is the unlock path in a password manager, so the failure mode matters more than the tidiness.
 
-So the change is: gate both paths on `permissions.contains()`, report `DesktopDisconnected` when
-the permission is absent instead of attempting a connection, and add an explicit "Connect desktop
-app" control in the biometrics settings UI whose click is the gesture that calls
-`permissions.request()` and then probes.
-
-That is a real change to the unlock path in a password manager, which argues for doing it
-deliberately rather than as submission paperwork — and for doing it when there is a desktop build
-to test against.
+MV2 (`manifest.json`) deliberately keeps `nativeMessaging` required. It is not a shipping build —
+`dist:firefox` produces MV2 and loses tracker blocking — and the runtime guard reads the permission
+as granted there, so that build's behaviour is unchanged.
 
 ---
 

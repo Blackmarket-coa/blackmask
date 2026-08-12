@@ -78,6 +78,18 @@ Point the extension at the Phase 0 Vaultwarden and register a test account first
 - [ ] Reports **Available**, not "Unavailable". If it still says unavailable, the upstream
       `phishing-detection` flag is off — it gates the engine independently of the Black Mask flag.
 
+### Desktop integration permission
+
+- [ ] A fresh install shows **no** native-messaging warning on the install prompt. This is the whole
+      point of the change; if the warning is there, the permission is still required somewhere.
+- [ ] Account security shows the **Connect desktop app** button, and clicking it opens the browser's
+      permission prompt. The prompt must appear — if it silently no-ops, the click is not reaching
+      `permissions.request()` as a user gesture.
+- [ ] Granting it makes the button disappear. Revoking it from the browser's own extension settings
+      brings it back within a couple of seconds, without reopening the popup.
+- [ ] With the permission absent, the background service does **not** spam connection attempts — the
+      poll should skip, not retry.
+
 ### Theme
 
 - [ ] Palette and fonts render correctly in **both** light and dark themes, across the popup and

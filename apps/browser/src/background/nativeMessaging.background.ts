@@ -68,6 +68,18 @@ type SecureChannel = {
   setupResolve: (value?: unknown) => void;
 };
 
+/**
+ * Thrown when a connection is attempted without the optional `nativeMessaging` permission. Callers
+ * that already treat a failed connection as "desktop unavailable" need no special handling; the UI
+ * distinguishes this case so it can offer to request the permission instead of reporting a fault.
+ */
+export class NativeMessagingPermissionError extends Error {
+  constructor() {
+    super("The nativeMessaging permission has not been granted.");
+    this.name = "NativeMessagingPermissionError";
+  }
+}
+
 export class NativeMessagingBackground {
   connected = false;
   private connecting: boolean = false;
@@ -90,12 +102,43 @@ export class NativeMessagingBackground {
     private accountService: AccountService,
   ) {}
 
+  /**
+   * Whether the extension currently holds the `nativeMessaging` permission.
+   *
+   * It is an *optional* permission on Chromium and Firefox — the extension ships without it and
+   * asks only when the user opts into desktop integration, so a dormant feature does not put a
+   * native-messaging warning on the install prompt. Safari keeps it as a required permission (its
+   * extensions are packaged inside a host app, where the optional-permission flow does not apply),
+   * so the check is skipped there.
+   *
+   * Fails **open** when the permissions API is unreachable: a false negative here would silently
+   * disable biometric unlock, which is worse than attempting a connection that then fails.
+   */
+  async permitted(): Promise<boolean> {
+    if (this.platformUtilsService.isSafari() || typeof chrome === "undefined") {
+      return true;
+    }
+    try {
+      const granted = await BrowserApi.permissionsGranted(["nativeMessaging"]);
+      // Only an explicit `false` denies. Anything else means the query did not answer, and
+      // treating a non-answer as denial would disable biometric unlock outright.
+      return granted !== false;
+    } catch {
+      return true;
+    }
+  }
+
   async connect() {
     if (this.connected || this.connecting) {
       return;
     }
 
-    this.logService.info("[Native Messaging IPC] Connecting to Bitwarden Desktop app...");
+    if (!(await this.permitted())) {
+      // Not an error worth logging on every poll — the user simply has not opted in yet.
+      throw new NativeMessagingPermissionError();
+    }
+
+    this.logService.info("[Native Messaging IPC] Connecting to Black Mask desktop app...");
     const appId = await this.appIdService.getAppId();
     this.appId = appId;
     await this.biometricStateService.setFingerprintValidated(false);

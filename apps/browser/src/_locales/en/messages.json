@@ -5825,6 +5825,12 @@
   "biometricsStatusHelptextDesktopDisconnected": {
     "message": "Biometric unlock is unavailable because the Black Mask desktop app is closed."
   },
+  "connectDesktopApp": {
+    "message": "Connect desktop app"
+  },
+  "connectDesktopAppDesc": {
+    "message": "Biometric unlock talks to the Black Mask desktop app. Grant permission to connect to it."
+  },
   "biometricsStatusHelptextNotEnabledInDesktop": {
     "message": "Biometric unlock is unavailable because it is not enabled for $EMAIL$ in the Black Mask desktop app.",
     "placeholders": {
