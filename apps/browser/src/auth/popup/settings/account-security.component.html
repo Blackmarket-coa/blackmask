@@ -35,6 +35,23 @@
                   {{ biometricUnavailabilityReason }}
                 </bit-hint>
               }
+              @if (nativeMessagingPermissionMissing()) {
+                <bit-hint>
+                  {{ "connectDesktopAppDesc" | i18n }}
+                </bit-hint>
+                <button
+                  type="button"
+                  bitButton
+                  buttonType="secondary"
+                  size="small"
+                  class="tw-mt-2"
+                  [loading]="requestingNativeMessaging()"
+                  (click)="requestNativeMessagingPermission()"
+                  id="account-security_button_connect-desktop"
+                >
+                  {{ "connectDesktopApp" | i18n }}
+                </button>
+              }
             </bit-form-control>
           }
           @if (this.form.value.biometric && !(sharedUnlockFeatureEnabled$ | async)) {

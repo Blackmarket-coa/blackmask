@@ -5825,6 +5825,12 @@
   "biometricsStatusHelptextDesktopDisconnected": {
     "message": "Biometric unlock is unavailable because the Black Mask desktop app is closed."
   },
+  "connectDesktopApp": {
+    "message": "Connect desktop app"
+  },
+  "connectDesktopAppDesc": {
+    "message": "Biometric unlock talks to the Black Mask desktop app. Grant permission to connect to it."
+  },
   "biometricsStatusHelptextNotEnabledInDesktop": {
     "message": "Biometric unlock is unavailable because it is not enabled for $EMAIL$ in the Black Mask desktop app.",
     "placeholders": {
@@ -6741,11 +6747,26 @@
   "blackMaskAliasGenerated": {
     "message": "Alias generated"
   },
+  "blackMaskAliasNotSeparated": {
+    "message": "Your email generator builds addresses on your own domain, so this persona's email can still be traced back to you. Pick a forwarding service in the generator settings for an address that isn't linked to your mailbox."
+  },
   "blackMaskAliasError": {
     "message": "Couldn't generate an alias. Configure an email forwarder (e.g. SimpleLogin) in the generator settings first."
   },
   "blackMaskPersonaCreated": {
     "message": "Persona created"
+  },
+  "blackMaskEditPersona": {
+    "message": "Edit persona"
+  },
+  "blackMaskPersonaUpdated": {
+    "message": "Persona updated"
+  },
+  "blackMaskPersonaNotFound": {
+    "message": "This persona is no longer in your vault."
+  },
+  "blackMaskPersonaReadOnly": {
+    "message": "This persona was shared with you and can't be changed."
   },
   "blackMaskPersonas": {
     "message": "Personas"
@@ -6912,6 +6933,9 @@
   },
   "blackMaskScoreTwoFactor": {
     "message": "Two-step login where supported"
+  },
+  "blackMaskScoreFingerprint": {
+    "message": "Low browser fingerprint"
   },
   "blackMaskTrackers": {
     "message": "Trackers"

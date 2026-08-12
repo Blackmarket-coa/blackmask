@@ -14,8 +14,9 @@ import { FingerprintService } from "./services/fingerprint.service";
 
 /**
  * Black Mask fingerprint exposure test (M3). Runs on-device fingerprinting probes and shows how
- * identifying the browser is, with a per-signal breakdown. Diagnostic only — it does not affect the
- * privacy score. Gated behind the `black-mask-fingerprint-test` feature flag at the route level.
+ * identifying the browser is, with a per-signal breakdown. Running it also feeds the entropy total
+ * into the privacy score, which leaves the factor out until a measurement exists. Gated behind the
+ * `black-mask-fingerprint-test` feature flag at the route level.
  */
 @Component({
   templateUrl: "./fingerprint.component.html",

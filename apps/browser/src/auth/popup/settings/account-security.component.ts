@@ -42,6 +42,7 @@ import { PlatformUtilsService } from "@bitwarden/common/platform/abstractions/pl
 import { ValidationService } from "@bitwarden/common/platform/abstractions/validation.service";
 import {
   DialogRef,
+  ButtonModule,
   CardComponent,
   CheckboxModule,
   DialogService,
@@ -82,6 +83,7 @@ import { AwaitDesktopDialogComponent } from "./await-desktop-dialog.component";
 @Component({
   templateUrl: "account-security.component.html",
   imports: [
+    ButtonModule,
     CardComponent,
     CheckboxModule,
     CommonModule,
@@ -113,6 +115,15 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
   showChangeMasterPass = true;
   pinEnabled$: Observable<boolean> = of(true);
   protected readonly loading = signal(true);
+  /**
+   * True when desktop integration is unavailable only because the optional `nativeMessaging`
+   * permission has not been granted. Distinguished from the other unavailability reasons because
+   * this one the user can fix here and now — the connect button's click is the gesture Chromium
+   * requires for `permissions.request()`, which is why it cannot be requested from the background
+   * poll that otherwise drives biometric status.
+   */
+  protected readonly nativeMessagingPermissionMissing = signal(false);
+  protected readonly requestingNativeMessaging = signal(false);
 
   form = this.formBuilder.group({
     pin: [null as boolean | null],
@@ -231,7 +242,14 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
           }
 
           const status = await this.biometricsService.getBiometricsStatusForUser(activeAccount.id);
-          if (status === BiometricsStatus.DesktopDisconnected && !biometricSettingAvailable) {
+          if (this.nativeMessagingPermissionMissing() && !biometricSettingAvailable) {
+            // The connect button carries the explanation, so a duplicate "desktop disconnected"
+            // helptext here would only misattribute the cause.
+            this.biometricUnavailabilityReason = "";
+          } else if (
+            status === BiometricsStatus.DesktopDisconnected &&
+            !biometricSettingAvailable
+          ) {
             this.biometricUnavailabilityReason = this.i18nService.t(
               "biometricsStatusHelptextDesktopDisconnected",
             );
@@ -253,6 +271,18 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
           } else {
             this.biometricUnavailabilityReason = "";
           }
+        }),
+        takeUntil(this.destroy$),
+      )
+      .subscribe();
+
+    // Polled separately from the biometrics status above, rather than inside it. The permission
+    // can be revoked from the browser's own extension settings at any time, so it has to be
+    // watched — but folding an extra await into that chain changes when its assignments land.
+    timer(0, this.BIOMETRICS_POLLING_INTERVAL)
+      .pipe(
+        switchMap(async () => {
+          this.nativeMessagingPermissionMissing.set(!(await this.nativeMessagingPermitted()));
         }),
         takeUntil(this.destroy$),
       )
@@ -366,6 +396,40 @@ export class AccountSecurityComponent implements OnInit, OnDestroy {
     } else {
       const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
       await this.pinService.unsetPin(userId);
+    }
+  }
+
+  /**
+   * Safari packages its extension inside a host app and keeps `nativeMessaging` as a required
+   * permission, so there is nothing to grant there. Fails open if the check throws, matching the
+   * background service — a false negative would offer a pointless connect button.
+   */
+  private async nativeMessagingPermitted(): Promise<boolean> {
+    if (this.platformUtilsService.isSafari()) {
+      return true;
+    }
+    try {
+      // Only an explicit `false` denies; see `NativeMessagingBackground.permitted`.
+      return (await BrowserApi.permissionsGranted(["nativeMessaging"])) !== false;
+    } catch {
+      return true;
+    }
+  }
+
+  /**
+   * Requests the optional `nativeMessaging` permission. Must stay driven by a click: Chromium only
+   * honours `permissions.request()` during a user gesture, which is the whole reason this control
+   * exists rather than the background poll asking on the user's behalf.
+   */
+  protected async requestNativeMessagingPermission(): Promise<void> {
+    this.requestingNativeMessaging.set(true);
+    try {
+      await BrowserApi.requestPermission({ permissions: ["nativeMessaging"] });
+      this.nativeMessagingPermissionMissing.set(!(await this.nativeMessagingPermitted()));
+    } catch (e) {
+      this.logService.error(e);
+    } finally {
+      this.requestingNativeMessaging.set(false);
     }
   }
 

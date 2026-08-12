@@ -5,6 +5,10 @@ import {
   FingerprintSignals,
   estimateFingerprintEntropy,
 } from "../../fingerprint";
+import {
+  FINGERPRINT_EXPOSURE_SESSION_KEY,
+  toFingerprintBits,
+} from "../../fingerprint-exposure-store";
 
 const CANDIDATE_FONTS: readonly string[] = [
   "Arial",
@@ -46,12 +50,37 @@ const CANDIDATE_FONTS: readonly string[] = [
  * audio rendering) are materially what a web page sees. Moving the probes to a content script later
  * would measure the exact page environment and per-origin anti-fingerprinting.
  *
+ * The entropy total is cached in session storage so the privacy dashboard can include it as a score
+ * factor without paying for the probes on every popup open.
+ *
  * NEEDS BROWSER VALIDATION: canvas/WebGL/audio/font probes can't be exercised by unit tests.
  */
 @Injectable({ providedIn: "root" })
 export class FingerprintService {
   async exposure(): Promise<FingerprintExposure> {
-    return estimateFingerprintEntropy(await this.collect());
+    const exposure = estimateFingerprintEntropy(await this.collect());
+    await this.cacheBits(exposure.bits);
+    return exposure;
+  }
+
+  /**
+   * The entropy total from the last run, without re-running the probes. Undefined when the test has
+   * not been run this session, which the privacy score treats as "not measured" rather than "fully
+   * exposed".
+   */
+  async lastMeasuredBits(): Promise<number | undefined> {
+    if (typeof chrome === "undefined" || chrome.storage?.session == null) {
+      return undefined;
+    }
+    const result = await chrome.storage.session.get(FINGERPRINT_EXPOSURE_SESSION_KEY);
+    return toFingerprintBits(result?.[FINGERPRINT_EXPOSURE_SESSION_KEY]);
+  }
+
+  private async cacheBits(bits: number): Promise<void> {
+    if (typeof chrome === "undefined" || chrome.storage?.session == null) {
+      return;
+    }
+    await chrome.storage.session.set({ [FINGERPRINT_EXPOSURE_SESSION_KEY]: bits });
   }
 
   private async collect(): Promise<FingerprintSignals> {

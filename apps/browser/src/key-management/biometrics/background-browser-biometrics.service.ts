@@ -51,6 +51,12 @@ export class BackgroundBrowserBiometricsService extends BiometricsService {
         filter(([_, enabled]) => enabled),
         filter(([_]) => !this.nativeMessagingBackground().connected),
         concatMap(async () => {
+          // `nativeMessaging` is an optional permission, and this loop runs in the service worker
+          // where it cannot be requested — there is no user gesture here. Skip rather than retry a
+          // connection that cannot succeed until the user opts in from the settings screen.
+          if (!(await this.nativeMessagingBackground().permitted())) {
+            return;
+          }
           try {
             await this.nativeMessagingBackground().connect();
             await this.getBiometricsStatus();

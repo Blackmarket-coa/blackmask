@@ -15,7 +15,10 @@ import { UserId } from "@bitwarden/user-core";
 
 import { BrowserApi } from "../platform/browser/browser-api";
 
-import { NativeMessagingBackground } from "./nativeMessaging.background";
+import {
+  NativeMessagingBackground,
+  NativeMessagingPermissionError,
+} from "./nativeMessaging.background";
 
 // Mock BrowserApi
 jest.mock("../platform/browser/browser-api");
@@ -116,6 +119,49 @@ describe("NativeMessagingBackground", () => {
       expect(logService.info).toHaveBeenCalledWith(
         "[Native Messaging IPC] Connection to Safari swift module established!",
       );
+    });
+
+    it("refuses to connect without the optional nativeMessaging permission", async () => {
+      (BrowserApi.permissionsGranted as jest.Mock).mockResolvedValue(false);
+      // This spec does not reset call history between tests, and the case above connects.
+      (BrowserApi.connectNative as jest.Mock).mockClear();
+
+      await expect(sut.connect()).rejects.toBeInstanceOf(NativeMessagingPermissionError);
+      expect(BrowserApi.connectNative).not.toHaveBeenCalled();
+      expect(sut.connected).toBe(false);
+    });
+  });
+
+  describe("permitted", () => {
+    it("is true once the permission has been granted", async () => {
+      (BrowserApi.permissionsGranted as jest.Mock).mockResolvedValue(true);
+
+      await expect(sut.permitted()).resolves.toBe(true);
+    });
+
+    it("is true on Safari without consulting the permissions API", async () => {
+      // Safari packages the extension inside a host app and keeps nativeMessaging required, so
+      // there is no optional permission to hold.
+      platformUtilsService.isSafari.mockReturnValue(true);
+      (BrowserApi.permissionsGranted as jest.Mock).mockResolvedValue(false);
+      (BrowserApi.permissionsGranted as jest.Mock).mockClear();
+
+      await expect(sut.permitted()).resolves.toBe(true);
+      expect(BrowserApi.permissionsGranted).not.toHaveBeenCalled();
+    });
+
+    it("fails open when the permissions query throws", async () => {
+      // A false negative here would silently disable biometric unlock, which is worse than
+      // attempting a connection that then fails on its own.
+      (BrowserApi.permissionsGranted as jest.Mock).mockRejectedValue(new Error("unavailable"));
+
+      await expect(sut.permitted()).resolves.toBe(true);
+    });
+
+    it("fails open when the permissions query does not answer", async () => {
+      (BrowserApi.permissionsGranted as jest.Mock).mockResolvedValue(undefined);
+
+      await expect(sut.permitted()).resolves.toBe(true);
     });
   });
 

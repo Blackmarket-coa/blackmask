@@ -73,16 +73,26 @@ Everything below cites exact paths relative to `apps/browser/src/` unless noted.
 **What it does.** The `/privacy-dashboard` page aggregates local signals into a single privacy
 score with a per-factor breakdown, and links out to the other tools.
 
-**Scoring** (`privacy/privacy-score.ts`, pure `computePrivacyScore`): five factors, 250 points
-max, shown as a percentage —
+**Scoring** (`privacy/privacy-score.ts`, pure `computePrivacyScore`): five always-present factors
+worth 250 points, plus a sixth worth 50 that appears only once measured, shown as a percentage —
 
-| Factor             | Points                       | Full marks when                                |
-| ------------------ | ---------------------------- | ---------------------------------------------- |
-| Tracker protection | 50                           | tracker blocking is enabled                    |
-| Personas           | 10 per persona, capped at 50 | at least one persona exists                    |
-| Reused passwords   | 50                           | zero reused login passwords                    |
-| Weak passwords     | 50                           | zero weak passwords (zxcvbn score ≤ 2 is weak) |
-| 2FA gaps           | 50                           | zero logins on 2FA-capable sites lacking TOTP  |
+| Factor              | Points                       | Full marks when                                |
+| ------------------- | ---------------------------- | ---------------------------------------------- |
+| Tracker protection  | 50                           | tracker blocking is enabled                    |
+| Personas            | 10 per persona, capped at 50 | at least one persona exists                    |
+| Reused passwords    | 50                           | zero reused login passwords                    |
+| Weak passwords      | 50                           | zero weak passwords (zxcvbn score ≤ 2 is weak) |
+| 2FA gaps            | 50                           | zero logins on 2FA-capable sites lacking TOTP  |
+| Browser fingerprint | 50 (omitted until measured)  | ≤ 20 bits of estimated entropy                 |
+
+**The fingerprint factor is conditional on purpose.** When the user has never run the fingerprint
+test, the factor is left out of both `score` and `max` rather than scored zero — otherwise an
+unmeasured browser would look identical to a fully-exposed one and the percentage would drop the
+moment the feature shipped. Once measured, it ramps linearly: full points at or below 20 bits, none
+at or above 35, matching the thresholds the fingerprint page itself reports so the two never
+disagree. The measurement is read from a session-storage cache
+(`privacy/fingerprint-exposure-store.ts`) that the fingerprint page writes, because re-running the
+probes on every dashboard open would be expensive.
 
 **Account-security factors** (`privacy/account-audit.ts` + `popup/services/account-audit.service.ts`)
 are computed on-device over already-decrypted cipher views: `countReusedPasswords`,
@@ -93,9 +103,10 @@ are computed on-device over already-decrypted cipher views: `countReusedPassword
 **Privacy posture.** Entirely on-device; no vault data leaves the client and nothing is logged.
 
 **Limitations.** The 2FA-capable list is a 37-domain seed — production intent is to sync a full
-list from the backend. Fingerprint exposure deliberately does **not** affect the score (see below).
+list from the backend.
 
-**Tests.** `privacy-score.spec.ts` (7), `account-audit.spec.ts` (13).
+**Tests.** `privacy-score.spec.ts` (13), `account-audit.spec.ts` (13),
+`fingerprint-exposure-store.spec.ts` (2).
 
 ---
 
@@ -148,13 +159,29 @@ forwarder the user configured, e.g. self-hosted SimpleLogin), tagged with source
 `black-mask-persona`. `personas$()` streams non-deleted Identity ciphers carrying a valid layer
 field.
 
+**Editing** (`popup/edit-persona.component.ts`). Rows open `/edit-persona`, which understands the
+persona concepts a raw cipher view does not — the layer as a picker rather than a text field, and
+alias generation inline. `updatePersona` replaces only the `Black Mask Layer` field and preserves
+every other custom field, and refuses outright (`PersonaNotEditableError`) when the underlying
+cipher is not editable, because the vault's update path silently degrades those to a partial
+request that would drop the changes while reporting success.
+
+**Alias separation warning.** `aliasForwarded()` reads the configured email algorithm and both
+persona screens warn when it is not a forwarder. This matters because the two built-in email
+algorithms stay on the user's own domain: `plusAddress` yields `you+tag@yours`, which strips back
+to the real mailbox, and `catchall` yields `random@yours`, which links every persona to one domain.
+Either one gives a persona an email that points back at its owner — the opposite of what a layer
+implies. Black Mask does not force a vendor (that would break users on Addy, Fastmail, Firefox
+Relay or DuckDuckGo); it states the consequence and leaves the choice alone. The check fails
+closed: an unreadable preference warns rather than claims separation it could not verify.
+
 **Privacy posture.** Persona data is vault data — encrypted client-side and synced through the
 existing pipeline. Alias generation goes only to the user's configured forwarder.
 
 **Limitations.** Bio/avatar generation (backend inference) is not wired — those are sibling-repo
-contracts. Rows open the standard `/view-cipher` screen rather than a persona-specific editor.
+contracts.
 
-**Tests.** `persona.service.spec.ts` (4).
+**Tests.** `persona.service.spec.ts` (17).
 
 ---
 
@@ -197,10 +224,16 @@ total to an exposure level: ≥ 35 bits High, ≥ 20 Medium, else Low.
 **Privacy posture.** Everything stays on-device; signals are measured, scored, and displayed —
 never transmitted.
 
-**Limitations.** **Diagnostic only** — it doesn't feed the privacy score (exposure is mostly fixed
-by hardware/browser, and there is no fingerprint defense to act on yet). Probes currently run in
-the popup context; moving them to a content script would give page-context accuracy. The
-canvas/WebGL/audio/font probes need manual browser validation.
+**Feeds the privacy score.** Running the test caches its entropy total, which the dashboard picks
+up as a sixth score factor (see above). Note what this factor does and does not claim: Black Mask
+measures fingerprint entropy, it does not reduce it. The factor still responds to real user action
+— Firefox's `resistFingerprinting`, Tor Browser, disabling canvas readback — which is why it is
+scored on a ramp rather than awarded for merely having run the test.
+
+**Limitations.** Probes currently run in the popup context; moving them to a content script would
+give page-context accuracy. The cache is session-scoped, so the factor disappears again after a
+browser restart until the test is re-run. The canvas/WebGL/audio/font probes need manual browser
+validation.
 
 **Tests.** `fingerprint.spec.ts` (6).
 

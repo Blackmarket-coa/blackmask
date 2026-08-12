@@ -132,8 +132,8 @@ export class NativeMessagingMain {
 
   private async generateChromeJson(binaryPath: string) {
     return {
-      name: "com.8bit.bitwarden",
-      description: "Bitwarden desktop <-> browser bridge",
+      name: "app.blackmask.desktop",
+      description: "Black Mask desktop <-> browser bridge",
       path: binaryPath,
       type: "stdio",
       allowed_origins: await this.loadChromeIds(),
@@ -142,11 +142,14 @@ export class NativeMessagingMain {
 
   private async generateFirefoxJson(binaryPath: string) {
     return {
-      name: "com.8bit.bitwarden",
-      description: "Bitwarden desktop <-> browser bridge",
+      name: "app.blackmask.desktop",
+      description: "Black Mask desktop <-> browser bridge",
       path: binaryPath,
       type: "stdio",
-      allowed_extensions: ["{446900e4-71c2-419f-a6a7-df9c091e268b}"],
+      // Bitwarden's Firefox extension id previously sat here, which would have let their
+      // extension talk to a Black Mask desktop app. Replace with Black Mask's own id from
+      // browser_specific_settings once the add-on is published.
+      allowed_extensions: [],
     };
   }
 
@@ -182,7 +185,7 @@ export class NativeMessagingMain {
         const nmhs = this.getDarwinNMHS();
         for (const [key, value] of Object.entries(nmhs)) {
           if (existsSync(value)) {
-            const p = path.join(value, "NativeMessagingHosts", "com.8bit.bitwarden.json");
+            const p = path.join(value, "NativeMessagingHosts", "app.blackmask.desktop.json");
 
             let manifest: any = await this.generateChromeJson(binaryPath);
             if (key === "Firefox" || key === "Zen") {
@@ -219,12 +222,12 @@ export class NativeMessagingMain {
 
             if (key === "Firefox") {
               await this.writeManifest(
-                path.join(nhmsPath, "com.8bit.bitwarden.json"),
+                path.join(nhmsPath, "app.blackmask.desktop.json"),
                 await this.generateFirefoxJson(browserBinaryPath),
               );
             } else {
               await this.writeManifest(
-                path.join(nhmsPath, "com.8bit.bitwarden.json"),
+                path.join(nhmsPath, "app.blackmask.desktop.json"),
                 await this.generateChromeJson(browserBinaryPath),
               );
             }
@@ -243,12 +246,12 @@ export class NativeMessagingMain {
 
             if (key === "Firefox") {
               await this.writeManifest(
-                path.join(value, "com.8bit.bitwarden.json"),
+                path.join(value, "app.blackmask.desktop.json"),
                 await this.generateFirefoxJson(sandboxedProxyBinaryPath),
               );
             } else if (key === "Chrome" || key === "Chromium" || key === "Microsoft Edge") {
               await this.writeManifest(
-                path.join(value, "com.8bit.bitwarden.json"),
+                path.join(value, "app.blackmask.desktop.json"),
                 await this.generateChromeJson(sandboxedProxyBinaryPath),
               );
             } else {
@@ -268,7 +271,7 @@ export class NativeMessagingMain {
 
   async generateDdgManifests() {
     const manifest = {
-      name: "com.8bit.bitwarden",
+      name: "app.blackmask.desktop",
       description: "Bitwarden desktop <-> DuckDuckGo bridge",
       path: this.binaryPath(),
       type: "stdio",
@@ -281,7 +284,7 @@ export class NativeMessagingMain {
     switch (process.platform) {
       case "darwin": {
         /* eslint-disable-next-line no-useless-escape */
-        const path = `${this.homedir()}/Library/Containers/com.duckduckgo.macos.browser/Data/Library/Application\ Support/NativeMessagingHosts/com.8bit.bitwarden.json`;
+        const path = `${this.homedir()}/Library/Containers/com.duckduckgo.macos.browser/Data/Library/Application\ Support/NativeMessagingHosts/app.blackmask.desktop.json`;
         await this.writeManifest(path, manifest);
         break;
       }
@@ -306,7 +309,7 @@ export class NativeMessagingMain {
         const nmhs = this.getDarwinNMHS();
         for (const [, value] of Object.entries(nmhs)) {
           await this.removeIfExists(
-            path.join(value, "NativeMessagingHosts", "com.8bit.bitwarden.json"),
+            path.join(value, "NativeMessagingHosts", "app.blackmask.desktop.json"),
           );
         }
         break;
@@ -315,17 +318,17 @@ export class NativeMessagingMain {
         for (const [key, value] of Object.entries(this.getLinuxNMHS())) {
           if (key === "Firefox") {
             await this.removeIfExists(
-              path.join(value, "native-messaging-hosts", "com.8bit.bitwarden.json"),
+              path.join(value, "native-messaging-hosts", "app.blackmask.desktop.json"),
             );
           } else {
             await this.removeIfExists(
-              path.join(value, "NativeMessagingHosts", "com.8bit.bitwarden.json"),
+              path.join(value, "NativeMessagingHosts", "app.blackmask.desktop.json"),
             );
           }
         }
 
         for (const [, value] of Object.entries(this.getFlatpakNMHS())) {
-          await this.removeIfExists(path.join(value, "com.8bit.bitwarden.json"));
+          await this.removeIfExists(path.join(value, "app.blackmask.desktop.json"));
           await this.removeIfExists(path.join(value, ".bitwarden_desktop_proxy"));
         }
 
@@ -340,7 +343,7 @@ export class NativeMessagingMain {
     switch (process.platform) {
       case "darwin": {
         /* eslint-disable-next-line no-useless-escape */
-        const path = `${this.homedir()}/Library/Containers/com.duckduckgo.macos.browser/Data/Library/Application\ Support/NativeMessagingHosts/com.8bit.bitwarden.json`;
+        const path = `${this.homedir()}/Library/Containers/com.duckduckgo.macos.browser/Data/Library/Application\ Support/NativeMessagingHosts/app.blackmask.desktop.json`;
         await this.removeIfExists(path);
         break;
       }
@@ -364,17 +367,17 @@ export class NativeMessagingMain {
 
   private getWindowsNMHS() {
     return {
-      Firefox: ["HKCU", "SOFTWARE\\Mozilla\\NativeMessagingHosts\\com.8bit.bitwarden"],
-      Chrome: ["HKCU", "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\com.8bit.bitwarden"],
-      Chromium: ["HKCU", "SOFTWARE\\Chromium\\NativeMessagingHosts\\com.8bit.bitwarden"],
+      Firefox: ["HKCU", "SOFTWARE\\Mozilla\\NativeMessagingHosts\\app.blackmask.desktop"],
+      Chrome: ["HKCU", "SOFTWARE\\Google\\Chrome\\NativeMessagingHosts\\app.blackmask.desktop"],
+      Chromium: ["HKCU", "SOFTWARE\\Chromium\\NativeMessagingHosts\\app.blackmask.desktop"],
       "Microsoft Edge": [
         "HKCU",
-        "SOFTWARE\\Microsoft\\Edge\\NativeMessagingHosts\\com.8bit.bitwarden",
+        "SOFTWARE\\Microsoft\\Edge\\NativeMessagingHosts\\app.blackmask.desktop",
       ],
-      Vivaldi: ["HKCU", "SOFTWARE\\Vivaldi\\NativeMessagingHosts\\com.8bit.bitwarden"],
+      Vivaldi: ["HKCU", "SOFTWARE\\Vivaldi\\NativeMessagingHosts\\app.blackmask.desktop"],
       Brave: [
         "HKCU",
-        "SOFTWARE\\BraveSoftware\\Brave-Browser\\NativeMessagingHosts\\com.8bit.bitwarden",
+        "SOFTWARE\\BraveSoftware\\Brave-Browser\\NativeMessagingHosts\\app.blackmask.desktop",
       ],
     };
   }
@@ -430,16 +433,15 @@ export class NativeMessagingMain {
   }
 
   private async loadChromeIds(): Promise<string[]> {
-    const ids: Set<string> = new Set([
-      // Chrome extension
-      "chrome-extension://nngceckbapebfimnlniiiahkandclblb/",
-      // Chrome beta extension
-      "chrome-extension://hccnnhgbibccigepcmlgppchkpfdophk/",
-      // Edge extension
-      "chrome-extension://jbkfoedolllekgbhcbcoahefnbanhhlh/",
-      // Opera extension
-      "chrome-extension://ccnckbpmaceehanjmeomladnmlffdjgn/",
-    ]);
+    // Deliberately empty. This list previously held Bitwarden's four published extension ids,
+    // which would have let *their* extension drive biometric unlock against a Black Mask desktop
+    // app — and never included ours, so our own extension was refused regardless.
+    //
+    // A Chromium extension id is derived from the signing key the store assigns on first publish,
+    // so Black Mask's ids cannot be known until the extension is accepted. Add them here then;
+    // until they exist, desktop biometric unlock is unavailable on Chromium by construction.
+    // Dev builds still work: the branch below discovers the unpacked id from local profiles.
+    const ids: Set<string> = new Set<string>([]);
 
     if (!isDev()) {
       return Array.from(ids);

@@ -15,6 +15,8 @@ in _this codebase_.
 | [`features.md`](./features.md)                                     | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests.                       |
 | [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
 | [`branding.md`](./branding.md)                                     | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets.                                                |
+| [`store-submission.md`](./store-submission.md)                     | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting.         |
+| [`browser-validation.md`](./browser-validation.md)                 | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector.                          |
 
 ## Current status
 
@@ -22,8 +24,13 @@ The v1 milestones (M0–M4) from the execution plan are **feature-complete** in 
 extension: privacy dashboard & score, persona vault, tracker detection, fingerprint exposure test,
 data exposure dashboard, per-persona containers, phishing protection, and — beyond the original
 plan — an on-device AI-generated media detector. All are gated behind `black-mask-*` feature flags
-that **default to off**. See [`features.md`](./features.md) for what each feature does, where its
-code lives, and how to enable it.
+that now **default to on**, because a self-hosted Vaultwarden does not serve `/config` feature
+states and an off-by-default flag would make every feature invisible in production. See
+[`features.md`](./features.md) for what each feature does, where its code lives, and its
+limitations.
+
+None of them have been validated in a real browser yet — see
+[`browser-validation.md`](./browser-validation.md) before demoing or submitting to a store.
 
 Everything else in the feature → subsystem map (§3 of the execution plan) — the Android app,
 VPN/network layer, backend inference/IOC/SAR services, and coalition features — remains

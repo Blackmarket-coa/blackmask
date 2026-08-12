@@ -15,6 +15,7 @@ import { computePrivacyScore } from "../privacy-score";
 import { TRACKER_BLOCKLIST } from "../trackers/tracker-blocklist";
 
 import { AccountAuditService } from "./services/account-audit.service";
+import { FingerprintService } from "./services/fingerprint.service";
 import { PersonaService } from "./services/persona.service";
 import { TrackerCountService } from "./services/tracker-count.service";
 
@@ -39,6 +40,7 @@ export class PrivacyDashboardComponent {
   private readonly personaService = inject(PersonaService);
   private readonly trackerCountService = inject(TrackerCountService);
   private readonly accountAuditService = inject(AccountAuditService);
+  private readonly fingerprintService = inject(FingerprintService);
 
   protected readonly accountAudit = toSignal(this.accountAuditService.accountAudit$(), {
     initialValue: { reusedPasswordCount: 0, weakPasswordCount: 0, twoFactorGapCount: 0 },
@@ -66,6 +68,15 @@ export class PrivacyDashboardComponent {
 
   protected readonly knownTrackerCount = String(TRACKER_BLOCKLIST.length);
 
+  /**
+   * The last fingerprint measurement, not a fresh one — the probes are expensive enough that the
+   * dashboard should not re-run them on every open. Undefined until the user runs the test, which
+   * leaves the factor out of the score rather than scoring it zero.
+   */
+  protected readonly fingerprintBits = toSignal(from(this.fingerprintService.lastMeasuredBits()), {
+    initialValue: undefined,
+  });
+
   protected readonly privacyScore = computed(() => {
     const audit = this.accountAudit();
     return computePrivacyScore({
@@ -74,6 +85,7 @@ export class PrivacyDashboardComponent {
       reusedPasswordCount: audit.reusedPasswordCount,
       weakPasswordCount: audit.weakPasswordCount,
       twoFactorGapCount: audit.twoFactorGapCount,
+      fingerprintBits: this.fingerprintBits(),
     });
   });
 }
