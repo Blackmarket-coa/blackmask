@@ -1,8 +1,0 @@
-portbase
-apitest
-misc
-
-go.mod.*
-vendor
-go.work
-go.work.sum

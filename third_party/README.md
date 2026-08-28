@@ -1,8 +1,18 @@
 # third_party — vendored upstream OSS sources
 
-Full-source snapshots of the open-source projects in the Black Mask build map, vendored into this
-repository. Each snapshot was taken with a shallow clone (`--depth 1 --single-branch`) and had its
-`.git` directory removed, so the files are tracked as ordinary files in this repo.
+> **Status (2026-08-28): the vendored source trees are removed from this repository.** They were
+> ~1.2 GB of reference-only snapshots that never participated in the build, lint, or store
+> archives (see the repo consolidation review, `docs/REPO_CONSOLIDATION_REVIEW.md` in
+> `Blackmarket-coa/free-black-market`). This inventory and its pinned commits remain the record;
+> re-fetch any project on demand with a shallow clone at the pinned commit, e.g.
+> `git clone --depth 1 <source> && git -C <dir> fetch --depth 1 origin <commit> && git -C <dir> checkout <commit>`,
+> or use [`./fetch-large-sources.sh`](./fetch-large-sources.sh) for the two trees it covers.
+> Git history before this removal still contains the full trees.
+
+Full-source snapshots of the open-source projects in the Black Mask build map were previously
+vendored into this repository. Each snapshot was taken with a shallow clone
+(`--depth 1 --single-branch`) and had its `.git` directory removed, so the files were tracked as
+ordinary files in this repo.
 
 **This directory is NOT part of the monorepo build.** It is excluded from ESLint (`eslint.config.mjs`)
 and Prettier (`.prettierignore`), and `third_party/*` does not match any npm workspace glob. Do not

@@ -1,3 +1,0 @@
-sessions.bugsnag.com
-api.bugfender.com
-firebaselogging-pa.googleapis.com

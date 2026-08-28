@@ -1,1 +1,0 @@
-bloqueur,pubs,dnscloak,wireguard,confidentialité,traqueur,bouclier,sécurité,filtre,rapide,vpn,dns

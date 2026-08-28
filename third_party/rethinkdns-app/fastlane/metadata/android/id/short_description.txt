@@ -1,1 +1,0 @@
-Firewall, gunakan WireGuard VPN, memantau jaringan, blokir malware, merubah DNS.

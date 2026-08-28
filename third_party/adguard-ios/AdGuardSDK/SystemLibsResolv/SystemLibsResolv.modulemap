@@ -1,4 +1,0 @@
-framework module SystemLibsResolv [system] {
-    header "SystemLibs.h"
-    export *
-}

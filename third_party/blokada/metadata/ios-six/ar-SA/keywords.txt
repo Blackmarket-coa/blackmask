@@ -1,1 +1,0 @@
-adblock,dnscloak,wireguard,privacy,tracker,shield,fast,safe,online,gaming,secure,filter,vpn,dns

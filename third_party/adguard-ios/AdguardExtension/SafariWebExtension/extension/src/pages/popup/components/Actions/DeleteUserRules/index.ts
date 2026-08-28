@@ -1,1 +1,0 @@
-export { DeleteUserRules } from './DeleteUserRules';

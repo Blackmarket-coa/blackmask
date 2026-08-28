@@ -1,1 +1,0 @@
-While reviewing the diff, keep an eye out for small, easy wins in the immediate surrounding context (e.g., fixing a nearby typo, simplifying a complex boolean expression, or removing an unused local variable). Suggest these as "drive-by fixes" if they are extremely low risk and related to the PR's scope.
