@@ -34,3 +34,4 @@
 ./SECURITY.md
 ./libs/nx-plugin/src/generators/files/README.md__tmpl__
 ./.claude/CONTRIBUTING.md
+./CONSOLIDATION.md
