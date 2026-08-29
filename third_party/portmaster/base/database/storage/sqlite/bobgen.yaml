@@ -1,6 +1,0 @@
-sqlite:
-  dsn: "testdata/schema.db"
-  except:
-    migrations:
-
-no_factory: true

@@ -1,1 +1,0 @@
-Tűzfal, WireGuard VPN, hálózatfigyelés, kártevőblokkolás, DNS-csere.

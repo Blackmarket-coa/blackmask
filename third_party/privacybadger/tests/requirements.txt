@@ -1,4 +1,0 @@
-pytest
-pytest-rerunfailures
-selenium
-xvfbwrapper

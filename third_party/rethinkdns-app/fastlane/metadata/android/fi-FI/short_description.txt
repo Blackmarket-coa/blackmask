@@ -1,1 +1,0 @@
-Palomuuri sovelluksille, WireGuard VPN, seuraa internetyhteyttä, estä haittaohjelmia, vaihda DNS.

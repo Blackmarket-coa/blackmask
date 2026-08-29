@@ -1,1 +1,0 @@
-App-Brandvägg, kör WireGuard VPN, iaktta nätverk, blocka skadlig kod, ändra DNS.

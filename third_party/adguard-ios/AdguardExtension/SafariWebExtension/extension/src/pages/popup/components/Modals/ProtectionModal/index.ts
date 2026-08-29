@@ -1,1 +1,0 @@
-export { ProtectionModal } from './ProtectionModal';

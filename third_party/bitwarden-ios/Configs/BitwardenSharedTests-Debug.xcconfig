@@ -1,4 +1,0 @@
-#include "./Base-Debug.xcconfig"
-#include? "./Local-bwpm.xcconfig"
-
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) $(BITWARDEN_FLAGS)

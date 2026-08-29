@@ -1,7 +1,0 @@
-@import 'mixins/_pill.scss';
-
-.pill-container {
-  @include pill-container;
-  @apply pl-2;
-  @apply bg-buttons-dark;
-}
