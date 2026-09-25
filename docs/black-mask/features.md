@@ -335,11 +335,12 @@ tests plus 15 service tests at the time of writing. Browser-runtime behavior (DN
 webRequest counting, contextualIdentities, fingerprint probes, wasm inference) requires loading
 the unpacked extension; jest cannot exercise it.
 
-**Vendored references.** `third_party/` holds full-source snapshots of the open-source projects in
-the Black Mask build map (uBlock Origin, PrivacyBadger, CanvasBlocker, Multi-Account Containers,
-SimpleLogin, mat2, vaultwarden, …) for reference and clean-room study only — excluded from the
-build, never imported. See [`third_party/README.md`](../../third_party/README.md) for the
-inventory, pinned commits, and license cautions.
+**Upstream references.** The full-source snapshots once vendored under `third_party/` (uBlock
+Origin, PrivacyBadger, CanvasBlocker, Multi-Account Containers, SimpleLogin, mat2, vaultwarden, …)
+have been removed from the repository; they were reference-only, never built or imported. What
+remains is [`third_party/README.md`](../../third_party/README.md) — the inventory with pinned
+commits and license cautions, for re-fetching any project on demand for clean-room study — and
+`fetch-large-sources.sh`, which re-clones two of them.
 
 **Branding.** The extension's user-facing branding (manifests, locales, icons, shared SVG marks)
 is Black Mask, with generated placeholder icon assets — see [`branding.md`](./branding.md).

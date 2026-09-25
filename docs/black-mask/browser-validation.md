@@ -18,14 +18,56 @@ to demo. Chrome gets everything except containers.
 
 Point the extension at the Phase 0 Vaultwarden and register a test account first.
 
+The builds above are development builds, and they load `apps/browser/config/development.json`.
+Two of its dev flags change first install: `managedEnvironment` switches the extension to
+`https://localhost:8080`, and `skipWelcomeOnInstall` suppresses the welcome tab. The
+[Environment](#environment) checks cover that behaviour, so run them on a fresh install of a
+production build (`NODE_ENV=production`, where every dev flag is off):
+
+```bash
+cd apps/browser
+npm run build:prod:chrome                       # → apps/browser/build, load unpacked
+MANIFEST_VERSION=3 npm run build:prod:firefox   # Firefox MV3
+```
+
+Remove any earlier build of the extension first. Reloading it counts as an update, not an install,
+and keeps the server that the last install stored.
+
 ## Checklist
 
 ### Environment
 
 - [ ] Extension defaults to the Black Mask server with **no** manual URL entry. This is what the
       `PRODUCTION_REGIONS` change buys; if a user has to type a server address, the funnel is dead.
+      Run it on a fresh install of a **production** build (see [Builds to test](#builds-to-test)):
+      development builds apply the `managedEnvironment` dev flag on first install and switch to
+      `https://localhost:8080`, so they never show the default. That default,
+      `https://vault.blackmask.app`, also does not resolve in DNS yet, so this check cannot pass
+      until the server is live either — see [launch prerequisites](./README.md#launch-prerequisites).
 - [ ] Register, log in, create and sync a vault item.
-- [ ] Devtools network tab shows **zero** requests to `bitwarden.com`.
+- [ ] Devtools network tab shows **zero** requests to `bitwarden.com`, apart from the known
+      exception below.
+
+**Known exception: the phishing blocklist.** Phishing detection is the upstream Bitwarden engine
+(`apps/browser/src/dirt/phishing-detection/`), and it still downloads its data from Bitwarden's
+servers. The URLs are in `apps/browser/src/dirt/phishing-detection/phishing-resources.ts`:
+`manifest.json`, delta patches, and the full `link-blocklist.txt` under
+`https://assets.bitwarden.com/security/v1/`. If the manifest cannot be fetched, it falls back to an
+MD5 checksum from `raw.githubusercontent.com` (Phishing-Database). These are plain GETs of static
+files — visited URLs are checked locally against the downloaded list and are never sent. They run
+when phishing detection turns on and then every 24 hours, and stop when phishing detection is off.
+Expect them in the service worker's network tab; any _other_ `bitwarden.com` request is a failure.
+Serving the list from a Black Mask origin would remove the exception, but that is a code change, not
+done yet.
+
+**Not an exception — a leftover to fix.** Production builds (`NODE_ENV=production`, e.g.
+`npm run build:prod:chrome` or `npm run dist:chrome`, whether loaded unpacked or installed from a
+store) open a tab to `https://bitwarden.com/browser-start/` on first install (`WELCOME_PAGE_URL` in
+`apps/browser/src/platform/services/browser-initial-install.service.ts`). The development builds
+listed under [Builds to test](#builds-to-test) skip it, because `apps/browser/config/development.json`
+sets the `skipWelcomeOnInstall` dev flag — so catching it takes a fresh install of a production
+build. It is a navigation in a new tab, not a background fetch, so the extension's devtools network
+tab does not show it; record it as a failure of this check until the welcome page is repointed.
 
 ### Tracker detection _(Chrome + Firefox MV3)_
 
