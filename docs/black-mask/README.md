@@ -36,17 +36,48 @@ Everything else in the feature → subsystem map (§3 of the execution plan) —
 VPN/network layer, backend inference/IOC/SAR services, and coalition features — remains
 sibling-repo or later-phase work and is not part of what ships from this repository today.
 
-## v1 scope (locked)
+## Launch prerequisites
 
-v1 is **browser extension + Android app, together. No local VPN.** Everything runs on the user's
-devices plus a self-hosted backend — no coalition/Blackout dependency. The coalition features are a
-later upgrade tier, not a launch prerequisite.
+**The default server does not exist yet.** The browser extension defaults to
+`BLACK_MASK_BASE_URL = "https://vault.blackmask.app"` (the `PRODUCTION_REGIONS` entry in
+`libs/common/src/platform/services/default-environment.service.ts`), so a fresh install of a
+production build talks to that origin with no manual server entry. As of 2026-09-25 the name does not resolve: public DNS
+returns NXDOMAIN for both `vault.blackmask.app` and `blackmask.app`, and the `.app` registry's RDAP
+service reports `blackmask.app` as not found — the domain is unregistered. Until that changes, a
+user who keeps the default cannot register or log in, and has to pick a self-hosted server by hand.
+
+Before launch:
+
+- **Register `blackmask.app`.** This is also a security item, not just an availability one: while
+  the domain is unregistered, anyone can register it and receive the login attempts of every fresh
+  install that keeps the default.
+- Publish DNS for `vault.blackmask.app` and serve Vaultwarden there over HTTPS with a valid
+  certificate. `.app` is on the browsers' HSTS preload list, so plain HTTP is refused. The region
+  config sets only `base` and `webVault`, which assumes Vaultwarden serves the API, identity,
+  icons, notifications and events endpoints from that single origin under path prefixes.
+- Re-run the **Environment** section of [`browser-validation.md`](./browser-validation.md) against
+  the live server, on a fresh install of a production build (`npm run build:prod:chrome`, or
+  `MANIFEST_VERSION=3 npm run build:prod:firefox` for Firefox MV3). Development builds cannot run
+  this check: on first install they apply the `managedEnvironment` dev flag from
+  `apps/browser/config/development.json` and switch to `https://localhost:8080`, so they never
+  show the `vault.blackmask.app` default.
+
+## v1 scope
+
+v1 is the **browser extension** plus the **self-hosted web vault**. No local VPN. Everything runs
+on the user's devices plus a self-hosted backend — no coalition/Blackout dependency. The coalition
+features are a later upgrade tier, not a launch prerequisite.
+
+This replaces the original "browser extension + Android app, together" scope still recorded in the
+[execution plan](./engineering-execution-plan.md): the consolidation review
+([`CONSOLIDATION.md`](../../CONSOLIDATION.md)) made the extension and the web vault the shipping
+surfaces. This repository contains no Android code.
 
 ## The one thing to know first: repo boundary
 
-This repository is `bitwarden/clients` — it contains the **browser extension** (the v1 surface that
-lives here), plus the desktop, web, and CLI apps and the shared libraries they depend on. It does
-**not** contain:
+This repository is `bitwarden/clients` — it contains the **browser extension** and the **web
+vault** (the v1 surfaces that live here), plus the desktop and CLI apps and the shared libraries
+they depend on. It does **not** contain:
 
 - the **Android app** (sibling repo, `bitwarden/android`),
 - the **sync backend** (sibling repo, `vaultwarden`), or

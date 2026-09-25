@@ -18,6 +18,11 @@ reused as-is. One account drives protection across every surface tied to it.
 
 **v1 surface (locked): browser extension + Android app, together. No local VPN.**
 
+> **Superseded (2026-08-28):** the consolidation review ([`CONSOLIDATION.md`](../../CONSOLIDATION.md))
+> re-scoped the shipping surfaces to the **browser extension + self-hosted web vault**. There is no
+> Android code in this repository. The Android material below is kept as the original plan of
+> record, not current scope.
+
 - **Extension** (this repo) — tracker/fingerprint defense, personas, form-fill, in-page visibility.
 - **Android app** (sibling repo) — persona vault + autofill keyboard, device/IOC scanner, privacy
   score, exposure dashboard, metadata tools, and system-wide DNS blocking via guided Private DNS

@@ -1,7 +1,5 @@
 <p align="center">
   <a href="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-browser.yml?query=branch:main" target="_blank"><img src="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-browser.yml/badge.svg?branch=main" alt="GitHub Workflow browser build on main" /></a>
-  <a href="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-cli.yml?query=branch:main" target="_blank"><img src="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-cli.yml/badge.svg?branch=main" alt="GitHub Workflow CLI build on main" /></a>
-  <a href="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-desktop.yml?query=branch:main" target="_blank"><img src="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-desktop.yml/badge.svg?branch=main" alt="GitHub Workflow desktop build on main" /></a>
   <a href="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-web.yml?query=branch:main" target="_blank"><img src="https://github.com/Blackmarket-coa/blackmask/actions/workflows/build-web.yml/badge.svg?branch=main" alt="GitHub Workflow web build on main" /></a>
 </p>
 
@@ -24,27 +22,36 @@ storage from scratch. **No new encryption logic is added here** — see
 
 This repo houses the client applications — everything except the mobile apps:
 
-- **`apps/browser`** — the v1 Black Mask surface. Tracker/fingerprint defense, a persona vault with
+- **`apps/browser`** — the primary v1 Black Mask surface. Tracker/fingerprint defense, a persona vault with
   per-persona browsing containers, phishing protection, a data-exposure dashboard, an on-device
   AI-generated media detector, and a privacy-score dashboard, alongside the inherited Bitwarden
   vault/autofill/sync functionality. Each feature is documented in the
   [feature reference](docs/black-mask/features.md).
-- **`apps/desktop`**, **`apps/web`**, **`apps/cli`** — inherited from the Bitwarden fork; not v1
-  priorities for Black Mask, but they pick up shared-library changes.
+- **`apps/web`** — the self-hosted web vault, the second shipping surface. CI builds it with
+  `npm run dist:oss:selfhost` ([`build-web.yml`](.github/workflows/build-web.yml)).
+- **`apps/desktop`**, **`apps/cli`** — inherited from the Bitwarden fork and rebranded, but they
+  have no build workflows and are not shipping surfaces; they pick up shared-library changes.
 - **`libs/*`** — shared code across the apps (vault, auth, sync, generators, UI, etc.).
 - **`docs/black-mask/`** — the Black Mask engineering documentation: how the product spec maps onto
   this codebase, what's reused vs. net-new, and the v1 build sequence. Start with
   [`docs/black-mask/README.md`](docs/black-mask/README.md).
-- **`third_party/`** — vendored, non-buildable snapshots of open-source projects referenced by the
-  Black Mask build map (see [`third_party/README.md`](third_party/README.md)). Not part of the
-  monorepo build.
+- **`third_party/`** — only an inventory: [`third_party/README.md`](third_party/README.md) lists the
+  open-source projects referenced by the Black Mask build map, with pinned upstream commits and
+  license cautions, and [`fetch-large-sources.sh`](third_party/fetch-large-sources.sh) re-clones
+  two of them on demand. The vendored source trees themselves were removed in commit `2ac39234`.
+  Not part of the monorepo build.
 
 ## Project scope (v1)
 
-v1 ships as a **browser extension + Android app, together — no local VPN**. Everything runs on the
-user's own devices plus a self-hosted backend; there's no dependency on a larger coalition network.
-The Android app and backend services are sibling repositories referenced only at the client-contract
-level from this repo. Full detail, including the feature-to-subsystem mapping and risks, is in
+v1 ships as the **browser extension** (`apps/browser`) plus the **self-hosted web vault**
+(`apps/web`) — **no local VPN**. Everything runs on the user's own devices plus a self-hosted
+backend; there's no dependency on a larger coalition network. The original plan paired the
+extension with an Android app; [`CONSOLIDATION.md`](CONSOLIDATION.md) re-scoped the shipping
+surfaces to the two above, and this repository contains no Android code. Backend services are
+sibling repositories referenced only at the client-contract level from this repo. The client's
+default server, `https://vault.blackmask.app`, is not live yet — see
+[launch prerequisites](docs/black-mask/README.md#launch-prerequisites). The feature-to-subsystem
+mapping and risks are in
 [`docs/black-mask/engineering-execution-plan.md`](docs/black-mask/engineering-execution-plan.md).
 
 ## Attribution & license
