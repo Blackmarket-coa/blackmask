@@ -171,6 +171,42 @@ Blackmask must never promise:
 
 Product copy must match the current implementation, deployment configuration, tests, and threat model. When those disagree, use the more conservative claim and fix the documentation.
 
+
+## 12. Location privacy and Coalition operations (proposed integration)
+
+Blackout Coalition owns the map, operational status, tasks, volunteer slots, assets, routes, and field reports. Blackmask owns **the user's ability to understand and control the privacy consequences** of using them. Do not add a parallel map, force tracker, or operations database to Blackmask.
+
+### Useful Blackmask capabilities
+
+1. **Location sharing control panel:** Show active and recent permissions, intended audiences, precision, expiration, and a clear stop-sharing action. Use exact / approximate block / neighborhood choices only when the underlying provider actually enforces them; never label a rounded coordinate "anonymous."
+2. **Consent and expiry:** Default to off; require explicit, per-session opt-in for any live location. Require bounded duration, visible recipients, and automatic expiry. No streaks, social pressure, or rewards for revealing location.
+3. **Identity-context guardrails:** Warn before location or operational activity can connect a pseudonymous Blackmask persona with a real name, other persona, Blackout account, or public Coalition activity. Do not automatically map browser personas onto Matrix identities.
+4. **Third-party map exposure:** Warn when remote tile, geocoding, or routing providers receive map requests that may disclose the viewed area, IP address, or usage patterns. Prefer a self-hosted/offline map option for sensitive activity, owned by Blackout infrastructure.
+5. **Check-in without tracking:** Favor voluntary status updates and buddy check-ins over continuous GPS. Blackout owns the check-in workflow; Blackmask explains what data is disclosed and helps users review permissions.
+6. **Sharing audit and revocation:** Make it easy to inspect sharing recipients and stop future transmissions. Explain that stopping sharing does **not** retract locations already seen, cached, screenshot, forwarded, or stored on other devices or servers.
+7. **Location metadata literacy:** Explain that time, route, repeated approximate positions, volunteer shifts, and spot reports can reveal home/work patterns and identities even when exact coordinates are hidden.
+8. **Fail safely:** If encryption, authorization, recipient validation, or delivery is uncertain, do not silently downgrade sensitive location sharing to a public channel. Display a failure and require an informed choice.
+
+### Cross-product release gates
+
+- **Authorization first:** Blackout must verify per-object/per-layer audiences (public, coalition, operations team, Steward) on the server, not only hide UI controls. Confirm the latest Coalition audit findings are resolved before connecting sensitive Blackmask controls to Coalition data.
+- **No live dots in open-join groups:** Limit sensitive live-sharing designs to restricted, verified audiences; room membership changes and invitations must be accounted for.
+- **Do not claim secure live sharing before verification:** Matrix live-location event support, client interoperability, encryption behavior, retention, and decryption reliability require implementation tests. An encrypted room does not by itself prove that position history disappears from servers or recipients.
+- **Protect against location history:** Avoid creating a persistent plaintext location history. Document ciphertext retention, Matrix event history, backups, recipients' copies, server metadata, and device-compromise risks.
+- **Validate operational reliability:** Resolve relevant decryption and delivery failures before positioning check-ins or live sharing as safety-critical.
+- **Keep infrastructure ownership clear:** Offline tiles, spatial objects, status boards, assets, operational lifecycle, reports, and LoRa/mesh transport remain Blackout/Coalition responsibilities.
+
+### Suggested sequence
+
+- **Phase A — Privacy specification:** Define audiences, precision semantics, data flows, retention, threats, third-party map requests, consent, and stop-sharing behavior. Audit Blackout authorization and map providers.
+- **Phase B — Blackmask privacy UX:** Prototype a location-permission dashboard, exposure explanations, identity-context warnings, and revocation flows. Use mocked integrations until Blackout contracts exist.
+- **Phase C — Blackout integration:** After authorization, encryption, and delivery gates pass, connect to Blackout's consented location/check-in APIs and encrypted communication surfaces. Test across devices, offline recovery, room membership changes, and expiry.
+- **Phase D — Independent validation:** Security review and user testing of claims, controls, and failure states before release.
+
+**Product success:** Users can correctly answer "Who can see me? What can they see? How long can they see it? How do I stop?" without assuming absolute anonymity or guaranteed erasure.
+
+**Evidence status:** The Coalition implementation observations that motivated this section were supplied as a 2 November review, not independently revalidated here. They are inputs for verification, not claims of currently deployed or working live-location functionality.
+
 ## 11. Source documents to keep aligned
 
 - Blackout feature map: Blackmarket-coa/blackout/docs/features/OVERVIEW.md
