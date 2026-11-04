@@ -13,6 +13,7 @@ in _this codebase_.
 | Doc | What it is |
 | --- | --- |
 | [`location-privacy-mvp.md`](./location-privacy-mvp.md) | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates. |
+| [`mvp.md`](./mvp.md) | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria. |
 | [`product-strategy.md`](./product-strategy.md) | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship. |
 | [`features.md`](./features.md) | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests. |
 | [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
