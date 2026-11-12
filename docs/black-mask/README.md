@@ -1,5 +1,7 @@
 # Black Mask — Project Docs
 
+> **2026-11-12 source/CI review:** [Implementation status and release gaps](implementation-status-2026-11-12.md) is the current scoped evidence summary. Enhancement features are **one-time purchases; no subscription**. Full-product runtime and real-browser verification remain outstanding.
+
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
 the Bitwarden clients monorepo). Its mission: **give individuals the tools to understand, reduce, and
 control the data collected about them** — detect surveillance, reduce data collection, increase
@@ -24,7 +26,7 @@ in _this codebase_.
 
 ## Current status
 
-The v1 milestones (M0–M4) from the execution plan are **feature-complete** in the browser
+The v1 milestones (M0–M4) have **implemented code, with real-browser behavior unverified** in the browser
 extension: privacy dashboard & score, persona vault, tracker detection, fingerprint exposure test,
 data exposure dashboard, per-persona containers, phishing protection, and — beyond the original
 plan — an on-device AI-generated media detector. All are gated behind `black-mask-*` feature flags
@@ -42,7 +44,7 @@ sibling-repo or later-phase work and is not part of what ships from this reposit
 
 ## Launch prerequisites
 
-**The default server does not exist yet.** The browser extension defaults to
+**Default-server readiness requires a fresh check.** The finding below is dated 2026-09-25 and was not re-tested in the 2026-11-12 source/CI review. The browser extension defaults to
 `BLACK_MASK_BASE_URL = "https://vault.blackmask.app"` (the `PRODUCTION_REGIONS` entry in
 `libs/common/src/platform/services/default-environment.service.ts`), so a fresh install of a
 production build talks to that origin with no manual server entry. As of 2026-09-25 the name does not resolve: public DNS
@@ -70,7 +72,7 @@ Before launch:
 
 v1 is the **browser extension** plus the **self-hosted web vault**. No local VPN. Everything runs
 on the user's devices plus a self-hosted backend — no coalition/Blackout dependency. The coalition
-features are a later upgrade tier, not a launch prerequisite.
+features are later integration work, not a launch prerequisite. Any paid enhancement is a one-time purchase, with no subscription.
 
 This replaces the original "browser extension + Android app, together" scope still recorded in the
 [execution plan](./engineering-execution-plan.md): the consolidation review
