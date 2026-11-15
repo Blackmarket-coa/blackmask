@@ -2,8 +2,16 @@
 
 The privacy features carry `NEEDS BROWSER VALIDATION` notes for a reason: `declarativeNetRequest`
 blocking, container creation, the fingerprint probes and the ONNX detector cannot be exercised by
-jest. Unit tests cover their pure logic only. **Nothing here has been confirmed in a real browser
-yet** — walk this before submitting to a store or recording a demo.
+jest. Unit tests cover their pure logic only. Walk this before submitting to a store or recording a
+demo.
+
+**Automated coverage so far.** `scripts/validate-black-mask-chromium.js` loads a built extension into
+a fresh Chromium profile and checks what a logged-out install can show: the default server, tabs
+opened on install, hosts contacted, tracker blocking and counting, the permission set, and logged-out
+route guards. The [2026-11-15 run](./evidence/2026-11-15-chromium-automated.md) passed tracker
+blocking and counting on Chromium and confirmed the welcome-tab leftover below. **Everything behind
+login, and all of Firefox, is still unconfirmed** — status per feature is in the
+[feature audit register](./feature-audit-register.md).
 
 ## Builds to test
 
