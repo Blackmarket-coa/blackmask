@@ -207,12 +207,28 @@ Blackout Coalition owns the map, operational status, tasks, volunteer slots, ass
 
 **Evidence status:** The Coalition implementation observations that motivated this section were supplied as a 2 November review, not independently revalidated here. They are inputs for verification, not claims of currently deployed or working live-location functionality.
 
+## 13. Visual onboarding, useful habits, and earned features (planned)
+
+The [onboarding, habits, and rewards plan](./onboarding-habits-and-rewards.md) records the November 15, 2026 requirements and deferred implementation checklist.
+
+- Prefer demonstrations, previews, highlighted controls, icons, and optional sound/haptics for instruction, while retaining accessible labels and clear security/consent explanations.
+- Use a relevant cue, one easy action, an immediate useful result, and visible progress toward a completion reward.
+- Keep setup goals short; consolidate steps, reuse authorized answers, autosave, and allow pause/resume.
+- Apply hope, social acceptance, avoidance of social rejection and fear, pleasure, and pain avoidance through welcoming interactions, private rehearsal, understandable controls, and reduced friction.
+- Use recognition over recall, familiar controls, contextual defaults, previews, small commitments, and immediate feedback.
+- Award published milestone points toward free native features; offer varied eligible digital products and let the user choose upon completion. Optional paid enhancements are one-time purchases.
+- Preserve core privacy, recovery, accessibility, and earned progress independently of rewards. Reward meaningful outcomes without requiring disclosure, recruitment, purchases, or compulsive use.
+- Keep the standalone extension/web-vault path useful; route later conversation experiences through supported, explicit Blackout integration.
+
+This section specifies future work. It does not assert that onboarding progress, points, a reward catalog, or Blackout integration are implemented.
+
 ## 11. Source documents to keep aligned
 
 - Blackout feature map: Blackmarket-coa/blackout/docs/features/OVERVIEW.md
 - Blackout messaging/Discord parity map: Blackmarket-coa/blackout/docs/features/discord_parity_blueprint.md
 - Blackout authoritative threat model: Blackmarket-coa/blackout/THREAT_MODEL.md
 - Blackout feature documentation index: Blackmarket-coa/blackout/docs/features/README.md
+- Blackmask onboarding and rewards plan: [onboarding-habits-and-rewards.md](./onboarding-habits-and-rewards.md)
 - Blackmask implementation reference: docs/black-mask/features.md
 - Blackmask engineering scope and sequencing: docs/black-mask/engineering-execution-plan.md
 

@@ -16,6 +16,7 @@ in _this codebase_.
 | [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates. |
 | [`mvp.md`](./mvp.md) | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria. |
 | [`product-strategy.md`](./product-strategy.md) | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship. |
+| [`onboarding-habits-and-rewards.md`](./onboarding-habits-and-rewards.md) | **Planned onboarding and rewards** — visual prompts, short setup goals, motivators, fewer steps, milestone points, chosen native products, and a deferred implementation checklist. |
 | [`features.md`](./features.md) | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests. |
 | [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
 | [`branding.md`](./branding.md) | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets. |
