@@ -24,13 +24,13 @@ Each prompt must have an identifiable purpose, an easy action, and a visible res
 
 Examples:
 
-| Moment | Prompt or trigger | Desired action | Immediate result |
-| --- | --- | --- | --- |
-| Choose an identity | Preview cards showing different masks/personas | Tap a card and personalize it | Live preview updates |
-| Understand visibility | Small audience illustration beside the current setting | Select who can see the identity or content | Audience preview changes immediately |
-| Start a conversation | Brief composer demonstration in an empty conversation | Send a first message or try a private demo | Message appears with a clear delivery state |
-| Return to trusted people | User-enabled conversation indicator | Open the relevant conversation | Resume where the user left off |
-| Finish setup | Completed progress segments and reward previews | Choose a digital product | Product unlocks and can be used immediately |
+| Moment                   | Prompt or trigger                                      | Desired action                             | Immediate result                            |
+| ------------------------ | ------------------------------------------------------ | ------------------------------------------ | ------------------------------------------- |
+| Choose an identity       | Preview cards showing different masks/personas         | Tap a card and personalize it              | Live preview updates                        |
+| Understand visibility    | Small audience illustration beside the current setting | Select who can see the identity or content | Audience preview changes immediately        |
+| Start a conversation     | Brief composer demonstration in an empty conversation  | Send a first message or try a private demo | Message appears with a clear delivery state |
+| Return to trusted people | User-enabled conversation indicator                    | Open the relevant conversation             | Resume where the user left off              |
+| Finish setup             | Completed progress segments and reward previews        | Choose a digital product                   | Product unlocks and can be used immediately |
 
 Demonstrations and security indicators must reflect actual supported behavior. A demo must be clearly identified as a demo.
 
@@ -57,14 +57,14 @@ Proposed starter journey: **choose your identity → complete one useful private
 
 Treat these as design hypotheses to evaluate with users, not guarantees about behavior.
 
-| Motivator | Blackmask application |
-| --- | --- |
-| Hope | Show an attainable next step toward a private, comfortable digital space |
-| Social acceptance | Offer a welcoming invitation, chosen group identity, and optional recognition from trusted people |
+| Motivator                 | Blackmask application                                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Hope                      | Show an attainable next step toward a private, comfortable digital space                             |
+| Social acceptance         | Offer a welcoming invitation, chosen group identity, and optional recognition from trusted people    |
 | Avoiding social rejection | Let users rehearse privately, choose a pseudonym, and understand their audience before participating |
-| Avoiding fear | Show understandable controls, truthful status, and clear recovery paths |
-| Seeking pleasure | Offer playful mask customization, expressive reactions, satisfying feedback, and appealing rewards |
-| Avoiding pain | Remove repeated setup, confusing navigation, unwanted interruptions, and unnecessary disclosure |
+| Avoiding fear             | Show understandable controls, truthful status, and clear recovery paths                              |
+| Seeking pleasure          | Offer playful mask customization, expressive reactions, satisfying feedback, and appealing rewards   |
+| Avoiding pain             | Remove repeated setup, confusing navigation, unwanted interruptions, and unnecessary disclosure      |
 
 Use recognition over recall, familiar controls, contextual defaults, small commitments, immediate feedback, and visible progress toward a nearby goal. Preview outcomes before commitment and make reversible choices easy to change. Keep social proof authentic and relevant. Build confidence and belonging without rejection threats, fabricated urgency, or inflated security claims.
 

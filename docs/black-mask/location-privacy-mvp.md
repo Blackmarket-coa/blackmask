@@ -14,22 +14,22 @@ People joining location-aware communities and operations cannot easily answer: *
 
 ## 2. MVP scope and acceptance criteria
 
-| ID | Capability | Minimum acceptance criteria |
-| --- | --- | --- |
-| M1 | Location privacy overview | A single screen lists Blackmask-managed sharing sessions and their states: pending, active, expired, stopped, failed. It distinguishes connected integrations from external browser/OS permissions it cannot manage. |
-| M2 | Consent summary | Before starting a supported session, display requesting product, selected identity/account, audience, precision, purpose, and end time; no preselected consent. |
-| M3 | Audience and identity warning | Identify whether audience is restricted or potentially open-join. Warn when sharing could connect personas or reveal routine locations; block unsupported or unknown audiences rather than treating them as private. |
-| M4 | Precision and metadata explanation | Explain exact, approximate/block, and neighborhood precision as *requested semantics*, not anonymity guarantees. Only offer a precision choice if the provider can enforce it; show effective precision where verified. |
-| M5 | Time-boxed sharing | Require a finite duration; display remaining time; integration must stop new transmissions at expiry. On disconnect, the sender must fail closed rather than keep broadcasting. |
-| M6 | Stop sharing | A prominent stop action halts future sends for a Blackmask-controlled session and reports confirmed, pending, or failed revocation. Explicitly say previously shared data may persist with recipients, devices, or servers. |
-| M7 | Map-provider privacy notice | Explain that third-party map tiles/geocoding/routing may expose IP and viewed area; show provider only when known. Never assert that all map requests are private. |
-| M8 | Failure transparency | If encryption, audience authorization, expiry enforcement, or session state cannot be verified, disable start/resume and show an actionable error; never silently downgrade to plaintext or public sharing. |
+| ID  | Capability                         | Minimum acceptance criteria                                                                                                                                                                                                 |
+| --- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| M1  | Location privacy overview          | A single screen lists Blackmask-managed sharing sessions and their states: pending, active, expired, stopped, failed. It distinguishes connected integrations from external browser/OS permissions it cannot manage.        |
+| M2  | Consent summary                    | Before starting a supported session, display requesting product, selected identity/account, audience, precision, purpose, and end time; no preselected consent.                                                             |
+| M3  | Audience and identity warning      | Identify whether audience is restricted or potentially open-join. Warn when sharing could connect personas or reveal routine locations; block unsupported or unknown audiences rather than treating them as private.        |
+| M4  | Precision and metadata explanation | Explain exact, approximate/block, and neighborhood precision as _requested semantics_, not anonymity guarantees. Only offer a precision choice if the provider can enforce it; show effective precision where verified.     |
+| M5  | Time-boxed sharing                 | Require a finite duration; display remaining time; integration must stop new transmissions at expiry. On disconnect, the sender must fail closed rather than keep broadcasting.                                             |
+| M6  | Stop sharing                       | A prominent stop action halts future sends for a Blackmask-controlled session and reports confirmed, pending, or failed revocation. Explicitly say previously shared data may persist with recipients, devices, or servers. |
+| M7  | Map-provider privacy notice        | Explain that third-party map tiles/geocoding/routing may expose IP and viewed area; show provider only when known. Never assert that all map requests are private.                                                          |
+| M8  | Failure transparency               | If encryption, audience authorization, expiry enforcement, or session state cannot be verified, disable start/resume and show an actionable error; never silently downgrade to plaintext or public sharing.                 |
 
 ### MVP user flow
 
 1. User opens **Location Privacy** from Blackmask.
 2. Screen explains what is managed, what is merely informational, and whether Blackout is connected.
-3. A Blackout-initiated sharing request, *when a verified integration exists*, presents audience, identity, precision, and expiry.
+3. A Blackout-initiated sharing request, _when a verified integration exists_, presents audience, identity, precision, and expiry.
 4. User explicitly accepts or declines. Default is **decline**.
 5. During an active session, Blackmask shows recipient scope, precision, remaining time, and **Stop sharing**.
 6. On stop/expiry/failure, Blackmask reflects the verified state and explains limits of deletion.
@@ -37,6 +37,7 @@ People joining location-aware communities and operations cannot easily answer: *
 ### No Blackout integration yet: useful standalone slice
 
 Ship a local-only **Location Privacy Review** screen first if Blackout contracts are not ready:
+
 - Explain location-related browser permissions **only where browser APIs actually expose them**; link to native browser/site settings when Blackmask cannot revoke them.
 - Show an educational map-provider exposure explanation and persona/location correlation risks.
 - Use an explicit **demo/simulated session** for UX testing; never represent mock state as live protection.
@@ -70,6 +71,7 @@ The protocol, API endpoints, authentication, Matrix event types, and exact reten
 ## 5. Threats and release gates
 
 Before enabling live sharing:
+
 1. Re-audit Blackout Coalition's per-object/per-layer authorization and Matrix power-level enforcement. A UI-only visibility filter is insufficient.
 2. Confirm client and homeserver support for the selected location-sharing event format, encryption, expiry semantics, and recipient handling.
 3. Investigate and resolve relevant `DecryptionError` and delivery reliability defects; no safety-critical claims until failure handling is tested.
@@ -82,14 +84,14 @@ Before enabling live sharing:
 
 ## 6. PR-sized build plan
 
-| PR | Scope | Definition of done |
-| --- | --- | --- |
-| PR 1 | UX/spec and threat-model update | States, consent copy, recipient semantics, data-flow diagram, and failure cases reviewed; no runtime permissions added. |
-| PR 2 | Local privacy-review screen | Screen available behind a feature flag in browser extension; no GPS access or networked location collection; browser limitations accurately explained. |
-| PR 3 | Session UI with mock adapter | Consent, expiry, stop, error, and disconnected states testable against simulated data; prominent demo labeling. |
+| PR   | Scope                                            | Definition of done                                                                                                                                     |
+| ---- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| PR 1 | UX/spec and threat-model update                  | States, consent copy, recipient semantics, data-flow diagram, and failure cases reviewed; no runtime permissions added.                                |
+| PR 2 | Local privacy-review screen                      | Screen available behind a feature flag in browser extension; no GPS access or networked location collection; browser limitations accurately explained. |
+| PR 3 | Session UI with mock adapter                     | Consent, expiry, stop, error, and disconnected states testable against simulated data; prominent demo labeling.                                        |
 | PR 4 | Blackout contract and authorization verification | Documented, tested contract and evidence for audience authorization, encryption, retention, and stop/expiry behavior. Blocked until Blackout is ready. |
-| PR 5 | Gated real integration | Connect authenticated session status and stop/approval actions; end-to-end tests across failure, offline, identity, and audience changes. |
-| PR 6 | Security/accessibility validation | Independent security review, keyboard/screen-reader tests, plain-language comprehension tests, telemetry audit, and launch checklist. |
+| PR 5 | Gated real integration                           | Connect authenticated session status and stop/approval actions; end-to-end tests across failure, offline, identity, and audience changes.              |
+| PR 6 | Security/accessibility validation                | Independent security review, keyboard/screen-reader tests, plain-language comprehension tests, telemetry audit, and launch checklist.                  |
 
 **Suggested implementation location:** Browser-extension privacy UI under `apps/browser/src/privacy/` and its popup route, consistent with the existing execution plan. Keep integration adapters isolated; do not add new cryptography to Blackmask.
 

@@ -3,7 +3,7 @@
 **Status:** Execution plan; not evidence that an audit or test run has occurred  
 **Scope:** Entire Blackmask MVP: browser extension, web vault, shared libraries, configured backend, build/distribution, and user-facing claims  
 **Parent:** [Whole-product MVP](./mvp.md)  
-**Rule:** *Verify it, finish it, or hide it.* Keep unfinished work in source control and make it easy to re-enable after passing tests.
+**Rule:** _Verify it, finish it, or hide it._ Keep unfinished work in source control and make it easy to re-enable after passing tests.
 
 ## 1. Objective and definition of done
 
@@ -20,6 +20,7 @@ Create and maintain `docs/black-mask/feature-audit-register.md` (or machine-read
 Fields: ID; user promise; routes/menus/settings/onboarding entry points; browser/platform; implementation files; feature flag and default; backend/remote dependency; threat/privacy impact; automated tests; browser/runtime test evidence (commands, environment, date, result); defects; severity; effort estimate; disposition; release gate; PR/commit; reviewer; retest status.
 
 **Status vocabulary:**
+
 - **Verified:** exercised successfully in supported real release-like environment, with reproducible evidence.
 - **Implemented, unverified:** code exists; runtime behavior not established.
 - **Broken:** reproducible user-visible failure.
@@ -28,22 +29,25 @@ Fields: ID; user promise; routes/menus/settings/onboarding entry points; browser
 - **Deferred/hidden:** deliberately removed from shipping UI, preserved in code.
 - **Removed:** only when explicitly approved and safe; not the default for incomplete work.
 
-Separate *code presence*, *unit-test pass*, *browser verification*, *backend verification*, and *security approval* into distinct fields. A green unit test never automatically becomes a Verified feature.
+Separate _code presence_, _unit-test pass_, _browser verification_, _backend verification_, and _security approval_ into distinct fields. A green unit test never automatically becomes a Verified feature.
 
 ## 3. Full audit coverage
 
 ### Product and navigation
+
 - Every popup route, settings item, web-vault route, onboarding step, login/signup/reset, empty/loading/error state, link, toggle, help page, and first-run welcome destination.
 - Flag-off behavior: no dead links, stale settings entries, notifications, commands, or background jobs for hidden features.
 - Browser/platform parity: Chrome MV3, Firefox MV3, and any other claimed targets. Explicitly identify Firefox-only containers and unsupported Chromium isolation.
 
 ### Security and privacy
+
 - Auth, lock/unlock, sync, vault item create/edit/delete/export, autofill, password-health checks, persona handling, alias warnings, tracker blocking, phishing warnings, fingerprint estimates, breach lookup, and AI-media detection.
 - Extension permissions, content scripts, external requests, remote models, downloaded feeds, local storage, logging, analytics, error reports, supply-chain/dependency risks, update/release integrity.
 - Confirm that no plaintext secrets, raw browsing history, or persona contents are sent to product telemetry.
 - Distinguish local protection, measurement, encrypted storage, and external-service behavior.
 
 ### Infrastructure and release
+
 - Production domain ownership, DNS, HTTPS, Vaultwarden/backend compatibility, auth and sync, fresh-install production defaults, welcome-page redirect, build reproducibility, package/store disclosures, browser permission explanations, and support path.
 - Failures of core authentication, encryption, sync integrity, or unowned default login destination are **release blockers**, not optional hidden features.
 
@@ -67,6 +71,7 @@ Repeat until all visible MVP capabilities are Verified or explicitly blocked fro
 **Do not delete unfinished work by default.** Hide it behind a release-safe feature flag or remove its entry points from production navigation while preserving code, tests, documentation, and a reactivation ticket.
 
 For every deferred feature:
+
 - Set the **production default to off** (not only a backend flag that may be absent from self-hosted Vaultwarden `/config`).
 - Hide all entry points, including settings, onboarding, shortcuts, deep links, notifications, and cross-links; deny direct route access with a clear fallback.
 - Disable unnecessary background jobs, API calls, browser permissions, and model downloads associated with the feature wherever feasible.
@@ -78,48 +83,54 @@ For every deferred feature:
 
 ## 6. First-pass feature decisions to investigate (not pre-judged)
 
-| Feature | Current documentation says | AI audit action |
-| --- | --- | --- |
-| Vault/auth/sync/autofill | Existing Bitwarden-derived foundation | Verify fresh production install, backend, credentials, sync, export and recovery first; block release on critical failure |
-| Tracker blocking | 20-domain DNR seed list; runtime not validated | Exercise network blocking in Chrome/Firefox MV3; fix counting mismatches; disclose limited coverage |
-| Phishing protection | Upstream engine and remote feed | Test warning/disable/offline flows and external feed requests; fix or disclose dependencies |
-| Personas | Existing Identity cipher and alias warnings | Test create/edit/sync/autofill; ensure custom fields survive and linked aliases warn |
-| Persona containers | Firefox-only | Verify cookie isolation in Firefox; hide or accurately mark unsupported on Chromium |
-| Privacy dashboard/score | Local heuristic | Test all factors and labels; do not claim objective safety or protection where only measurement exists |
-| Fingerprint exposure | Popup measurement, not mitigation | Test probes; correct measurement claims; hide if misleading or unreliable |
-| Data exposure | Depends on `/hibp/breach` backend support | Test actual backend; if unsupported, hide action or present explicit unavailable state rather than a broken default flow |
-| AI media detector | On-device ONNX model, bonus feature | Validate model loading, browser CSP, size, performance, and false-positive messaging; defer if unstable |
-| Blackout/Coalition integrations | Later roadmap | Keep out of standalone MVP navigation unless independently integrated and verified |
-| Location Privacy Control Center | Separate proposed MVP | Keep hidden/deferred; not a blocker for whole-product launch |
+| Feature                         | Current documentation says                     | AI audit action                                                                                                           |
+| ------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Vault/auth/sync/autofill        | Existing Bitwarden-derived foundation          | Verify fresh production install, backend, credentials, sync, export and recovery first; block release on critical failure |
+| Tracker blocking                | 20-domain DNR seed list; runtime not validated | Exercise network blocking in Chrome/Firefox MV3; fix counting mismatches; disclose limited coverage                       |
+| Phishing protection             | Upstream engine and remote feed                | Test warning/disable/offline flows and external feed requests; fix or disclose dependencies                               |
+| Personas                        | Existing Identity cipher and alias warnings    | Test create/edit/sync/autofill; ensure custom fields survive and linked aliases warn                                      |
+| Persona containers              | Firefox-only                                   | Verify cookie isolation in Firefox; hide or accurately mark unsupported on Chromium                                       |
+| Privacy dashboard/score         | Local heuristic                                | Test all factors and labels; do not claim objective safety or protection where only measurement exists                    |
+| Fingerprint exposure            | Popup measurement, not mitigation              | Test probes; correct measurement claims; hide if misleading or unreliable                                                 |
+| Data exposure                   | Depends on `/hibp/breach` backend support      | Test actual backend; if unsupported, hide action or present explicit unavailable state rather than a broken default flow  |
+| AI media detector               | On-device ONNX model, bonus feature            | Validate model loading, browser CSP, size, performance, and false-positive messaging; defer if unstable                   |
+| Blackout/Coalition integrations | Later roadmap                                  | Keep out of standalone MVP navigation unless independently integrated and verified                                        |
+| Location Privacy Control Center | Separate proposed MVP                          | Keep hidden/deferred; not a blocker for whole-product launch                                                              |
 
 ## 7. AI-first workstreams and deliverables
 
 ### Wave 0 — Establish reproducible environment
+
 AI: read repo guidance, identify package manager, pin versions, install dependencies in isolated workspace, capture baseline build/lint/test results, enumerate supported browser targets, and create an evidence directory. Never put secrets in logs or commits.
 
 **Output:** baseline report with exact commands, failures, environment, and constraints.
 
 ### Wave 1 — Complete inventory and static review
+
 AI: crawl routes, menus, feature flags/defaults, manifests, background workers, service calls, external domains, TODO/FIXME/stubs, tests, and backend contracts. Compare documentation promises to implementation.
 
 **Output:** feature audit register, dependency map, and prioritized issue queue.
 
 ### Wave 2 — Automated runtime verification
+
 AI: execute unit/integration tests, build release-like extensions, launch Chrome/Firefox via browser automation when supported, exercise representative user journeys, inspect network behavior, and verify actual backend responses. Capture reproducible artifacts.
 
 **Output:** per-feature pass/fail/blocked evidence and browser compatibility matrix.
 
 ### Wave 3 — Repair or gate
+
 AI: tackle bounded fixes in dependency order, adding regression tests. For unfinishable items, implement production-off gating across routes and background behavior. Update docs and reactivation tickets.
 
 **Output:** focused PRs, deferred backlog, and no broken visible paths.
 
 ### Wave 4 — End-to-end and adversarial verification
+
 AI: test fresh install, account lifecycle, credential sync, tracker/phishing protection, persona separation, privacy explanations, offline/error states, and permission boundaries; run dependency/security scans and inspect outgoing traffic.
 
 **Output:** consolidated release-candidate report and open risks.
 
 ### Wave 5 — Human-only gates and launch
+
 Humans: confirm domain/account ownership, provision production credentials and billing, approve legal/privacy/store disclosures, conduct independent security review of sensitive changes, verify real-device/store installation where automation cannot, and authorize deployment.
 
 **Output:** short action list for humans with exact evidence, decisions, and blockers. AI can prepare materials and retry checks after access is provided.
@@ -148,6 +159,7 @@ AI should avoid open-ended refactors, new crypto, security theater, and shipping
 ## 10. Final handoff format
 
 Provide a single release-readiness report with:
+
 1. **Verified and visible:** features with linked evidence.
 2. **Repaired:** issues and PRs with regression tests.
 3. **Hidden/deferred:** features, reasons, flags, and reactivation criteria.
