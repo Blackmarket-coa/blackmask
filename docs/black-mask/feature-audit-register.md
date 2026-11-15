@@ -394,7 +394,8 @@ Code and docs disagree in these places (verified in code; the docs are not chang
 
 1. **Get a backend.** Run Vaultwarden (the version the hosted service will use) and a test account,
    then re-run `scripts/validate-black-mask-chromium.js` and walk the logged-in checklist sections.
-   This unblocks 20 of the 30 records.
+   About two-thirds of the records (every page behind login, the account flows, and the
+   phishing-feed and model-download dependencies) are waiting on this.
 2. **Firefox MV3.** Containers (BM-06) and Firefox blocking (BM-03) need a Firefox run.
 3. **Fix the bounded defects:** DEP-02, BM-01, DEP-07, then the BM-08 decision.
 4. **Human gates:** DEP-01, DEP-05, DEP-09, and sign-off on the crypto-bigint ignore (DEP-10).
