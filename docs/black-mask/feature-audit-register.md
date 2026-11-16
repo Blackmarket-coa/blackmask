@@ -34,40 +34,40 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 
 ## Summary
 
-| ID      | Feature or dependency                | Status                  | Unit (11-16) | Browser (Chromium)                     | Backend (local VW) | Sev | Disposition                                |
-| ------- | ------------------------------------ | ----------------------- | ------------ | -------------------------------------- | ------------------ | --- | ------------------------------------------ |
-| BM-01   | Privacy dashboard and score          | Implemented, unverified | 13 pass      | Pass (DASH-01, FP-01)                  | Pass               | P2  | Finish now (score truthfulness)            |
-| BM-02   | Account audit                        | Implemented, unverified | 13 pass      | Renders (DASH-01); counts not asserted | Pass               | —   | Keep, verify counts                        |
-| BM-03   | Tracker blocking (DNR)               | Implemented, unverified | 8 pass       | Pass (TRK-01, TRK-02)                  | n/a                | P2  | Keep; Firefox retest                       |
-| BM-04   | Tracker counting and trackers page   | Implemented, unverified | 5 pass       | Pass (TRK-03, TRK-04)                  | n/a                | P3  | Keep                                       |
-| BM-05   | Persona vault and alias warning      | Implemented, unverified | 18 pass      | Pass (PER-01, PER-02)                  | Pass (SYNC-01)     | —   | Keep; run remaining items                  |
-| BM-06   | Per-persona containers               | Implemented, unverified | 4 pass       | Notice shown (CTR-01, CTR-02)          | n/a                | P3  | Keep (Firefox-only)                        |
-| BM-07   | Fingerprint exposure test            | Implemented, unverified | 8 pass       | Pass (FP-01)                           | n/a                | —   | Keep                                       |
-| BM-08   | Phishing protection                  | Implemented, unverified | 12 pass      | Active (PH-01)                         | Pass               | P2  | **Decided**: free for everyone (done)      |
-| BM-09   | Data exposure (breach lookup)        | Implemented, unverified | 9 pass       | Pass (EXP-01)                          | No key configured  | P2  | Configure the key or hide                  |
-| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Keep as bonus or hide                      |
-| BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                       |
-| BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)           |
-| CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend               |
-| CORE-02 | Lock, unlock, vault timeout          | **Blocked**             | Not run      | Blocked (LOCK-01)                      | Lock logged        | P1  | Check by hand in Chrome before release     |
-| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01)                 | Pass               | —   | Verify on the hosted backend               |
-| CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                     |
-| CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                     |
-| CORE-06 | Send                                 | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Decide: keep or hide                       |
-| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify export                              |
-| CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                     |
-| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the one-time-purchase decision  |
-| DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                              |
-| DEP-02  | Welcome tab on install               | Fixed (see BM-12)       | —            | Pass (ENV-02)                          | n/a                | —   | Done                                       |
-| DEP-03  | Phishing feed hosted by Bitwarden    | Implemented, unverified | —            | Fetched after login (ENV-04)           | n/a                | P2  | Disclosed on welcome page; self-host later |
-| DEP-04  | AI model hosted by Hugging Face      | Implemented, unverified | —            | Not run                                | n/a                | P3  | Self-host weights                          |
-| DEP-05  | Breach endpoint (`HIBP_API_KEY`)     | Blocked                 | —            | Honest "not set up" (EXP-01)           | No key             | P2  | Configure the key or hide BM-09            |
-| DEP-06  | Feature-flag delivery                | Implemented, unverified | —            | Defaults applied (TRK-01)              | Not run            | P3  | Keep                                       |
-| DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                 |
-| DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                  |
-| DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                      |
-| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Merge PR #15; fix macOS runners            |
-| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P2  | Disclose in the privacy policy             |
+| ID      | Feature or dependency                | Status                  | Unit (11-16) | Browser (Chromium)                     | Backend (local VW) | Sev | Disposition                                  |
+| ------- | ------------------------------------ | ----------------------- | ------------ | -------------------------------------- | ------------------ | --- | -------------------------------------------- |
+| BM-01   | Privacy dashboard and score          | Implemented, unverified | 13 pass      | Pass (DASH-01, FP-01)                  | Pass               | P2  | Finish now (score truthfulness)              |
+| BM-02   | Account audit                        | Implemented, unverified | 13 pass      | Renders (DASH-01); counts not asserted | Pass               | —   | Keep, verify counts                          |
+| BM-03   | Tracker blocking (DNR)               | Implemented, unverified | 8 pass       | Pass (TRK-01, TRK-02)                  | n/a                | P2  | Keep; Firefox retest                         |
+| BM-04   | Tracker counting and trackers page   | Implemented, unverified | 5 pass       | Pass (TRK-03, TRK-04)                  | n/a                | P3  | Keep                                         |
+| BM-05   | Persona vault and alias warning      | Implemented, unverified | 18 pass      | Pass (PER-01, PER-02)                  | Pass (SYNC-01)     | —   | Keep; run remaining items                    |
+| BM-06   | Per-persona containers               | Implemented, unverified | 4 pass       | Notice shown (CTR-01, CTR-02)          | n/a                | P3  | Keep (Firefox-only)                          |
+| BM-07   | Fingerprint exposure test            | Implemented, unverified | 8 pass       | Pass (FP-01)                           | n/a                | —   | Keep                                         |
+| BM-08   | Phishing protection                  | Implemented, unverified | 12 pass      | Active (PH-01)                         | Pass               | P2  | **Decided**: free for everyone (done)        |
+| BM-09   | Data exposure (breach lookup)        | Implemented, unverified | 9 pass       | Pass (EXP-01)                          | No key configured  | P2  | Configure the key or hide                    |
+| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Keep as bonus or hide                        |
+| BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                         |
+| BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)             |
+| CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend                 |
+| CORE-02 | Lock, unlock, vault timeout          | **Blocked**             | Not run      | Blocked (LOCK-01)                      | Lock logged        | P1  | Check by hand in Chrome before release       |
+| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01)                 | Pass               | —   | Verify on the hosted backend                 |
+| CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
+| CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                       |
+| CORE-06 | Send                                 | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Decide: keep or hide                         |
+| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify export                                |
+| CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
+| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the one-time-purchase decision    |
+| DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                                |
+| DEP-02  | Welcome tab on install               | Fixed (see BM-12)       | —            | Pass (ENV-02)                          | n/a                | —   | Done                                         |
+| DEP-03  | Phishing feed hosted by Bitwarden    | Implemented, unverified | —            | Fetched after login (ENV-04)           | n/a                | P2  | Disclosed on welcome page; self-host later   |
+| DEP-04  | AI model hosted by Hugging Face      | Implemented, unverified | —            | Not run                                | n/a                | P3  | Self-host weights                            |
+| DEP-05  | Breach endpoint (`HIBP_API_KEY`)     | Blocked                 | —            | Honest "not set up" (EXP-01)           | No key             | P2  | Configure the key or hide BM-09              |
+| DEP-06  | Feature-flag delivery                | Implemented, unverified | —            | Defaults applied (TRK-01)              | Not run            | P3  | Keep                                         |
+| DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                   |
+| DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                    |
+| DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                        |
+| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Merge PR #15; decide on a desktop build gate |
+| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P2  | Disclose in the privacy policy               |
 
 ## Black Mask features
 
@@ -280,8 +280,14 @@ against the intended backend (pillar A).
 
 ### DEP-10 · CI health
 
-- PR #15 fixes the Lint workflow (Prettier on docs; three cargo-deny advisories); its CI run shows Lint and Rust lint passing on Linux and Windows. The crypto-bigint advisory is ignored with a written reason that needs sign-off. macOS jobs are cancelled before a runner starts, which fails the Testing gate even when every test passes.
-- **Severity:** P2 / S. **Disposition:** Merge PR #15; check the Actions minutes or spending limit, or make macOS desktop jobs optional.
+`main` was red for four separate reasons. PR #15 addresses each; PR #14 shares the first three fixes.
+
+- **Lint:** six planning docs were not Prettier formatted, and `cargo deny` flagged three advisories in the desktop lockfile. Both fixed. The crypto-bigint advisory is ignored with a written reason that needs sign-off.
+- **macOS jobs, retired image:** GitHub retired the `macos-14` runner image on 2026-11-02. Jobs asking for it were cancelled on arrival ("The configuration 'macos-14-arm64-us-default' is not supported"), which failed the "Run tests" gate on every pull request and on `main` with no test failing. This was first misread here as an Actions minutes or spending limit; it was not.
+- **macOS jobs, arm64 capacity:** on `macos-15` the jobs were accepted but never started. GitHub cancelled them after 15 to 20 minutes in the queue ("The job was not acquired by Runner of type hosted even after multiple attempts"), including on a re-run, with a notice that macOS arm64 runners are capacity constrained. The three macOS jobs now use the separate `macos-15-intel` pool. Nothing under `apps/desktop/desktop_native` is specific to a macOS CPU architecture, so the same tests run. Move back to `macos-15` when arm64 capacity recovers.
+- **Nx affected job:** on a pull request that touches shared code it ran about 100 build, lint and test tasks four at a time and starved the runner ("The hosted runner lost communication with the server" after 65 and 77 minutes). It now runs one task at a time with two Jest workers; the same run on a 4-core, 15 GB machine took 34 minutes for build and lint at a 12 GB peak. The job is experimental and non-gating, and still tolerates six failing tasks that are tooling configuration, not product defects: five library builds fail with TS5055 (output would overwrite input), and the desktop package's per-project lint cannot resolve the Tailwind config.
+- **Desktop build:** the desktop main process did not compile on `main` from PR #11 until PR #15 (TS7018 in `apps/desktop/src/main/native-messaging.main.ts`). Nothing gated on it: there is no desktop build workflow, Jest does not type-check, and the Nx job, the only one that builds desktop, ignores failures.
+- **Severity:** P2 / S. **Disposition:** Merge PR #15. Decide whether a desktop build should gate while desktop is not a shipping surface.
 
 ### DEP-11 · Third-party requests after login
 
