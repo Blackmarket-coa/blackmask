@@ -12,6 +12,8 @@ browser verification, backend verification and security approval kept as **separ
 - Unit tests run on 2026-11-16: browser 18 suites / 180 tests and `libs/common` 2 suites / 27 tests,
   all passing.
 - A static inventory of routes, flags and external hosts.
+- The [2026-11-12 source/CI review](./implementation-status-2026-11-12.md), the earlier scoped
+  summary that this register follows.
 
 The backend was a local Vaultwarden 1.37.5, not the hosted service, so "Backend" results are against
 that stand-in. Dispositions are **proposals** for review unless marked as decided.
@@ -66,7 +68,7 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                   |
 | DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                    |
 | DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                        |
-| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Merge PR #15; decide on a desktop build gate |
+| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Merged 11-16; decide on a desktop build gate |
 | DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P2  | Disclose in the privacy policy               |
 
 ## Black Mask features
@@ -280,14 +282,15 @@ against the intended backend (pillar A).
 
 ### DEP-10 · CI health
 
-`main` was red for four separate reasons. PR #15 addresses each; PR #14 shares the first three fixes.
+`main` was red for four separate reasons. PRs #14 and #15 fixed them and were both merged on 2026-11-16; #14 carried the first three fixes.
 
 - **Lint:** six planning docs were not Prettier formatted, and `cargo deny` flagged three advisories in the desktop lockfile. Both fixed. The crypto-bigint advisory is ignored with a written reason that needs sign-off.
 - **macOS jobs, retired image:** GitHub retired the `macos-14` runner image on 2026-11-02. Jobs asking for it were cancelled on arrival ("The configuration 'macos-14-arm64-us-default' is not supported"), which failed the "Run tests" gate on every pull request and on `main` with no test failing. This was first misread here as an Actions minutes or spending limit; it was not.
 - **macOS jobs, arm64 capacity:** on `macos-15` the jobs were accepted but never started. GitHub cancelled them after 15 to 20 minutes in the queue ("The job was not acquired by Runner of type hosted even after multiple attempts"), including on a re-run, with a notice that macOS arm64 runners are capacity constrained. The three macOS jobs now use the separate `macos-15-intel` pool. Nothing under `apps/desktop/desktop_native` is specific to a macOS CPU architecture, so the same tests run. Move back to `macos-15` when arm64 capacity recovers.
 - **Nx affected job:** on a pull request that touches shared code it ran about 100 build, lint and test tasks four at a time and starved the runner ("The hosted runner lost communication with the server" after 65 and 77 minutes). It now runs one task at a time with two Jest workers; the same run on a 4-core, 15 GB machine took 34 minutes for build and lint at a 12 GB peak. The job is experimental and non-gating, and still tolerates six failing tasks that are tooling configuration, not product defects: five library builds fail with TS5055 (output would overwrite input), and the desktop package's per-project lint cannot resolve the Tailwind config.
 - **Desktop build:** the desktop main process did not compile on `main` from PR #11 until PR #15 (TS7018 in `apps/desktop/src/main/native-messaging.main.ts`). Nothing gated on it: there is no desktop build workflow, Jest does not type-check, and the Nx job, the only one that builds desktop, ignores failures.
-- **Severity:** P2 / S. **Disposition:** Merge PR #15. Decide whether a desktop build should gate while desktop is not a shipping surface.
+- **Evidence on `main`:** the first push runs after the merges all passed on 2026-11-16, for both merge commits. At `a56695cf`, the head: [Testing](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072662), [Lint](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072603), [Build Browser](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072412) and [Build Web](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072392). The push before them (`68d184bd`, 2026-11-15) had failed Lint and had Testing cancelled.
+- **Severity:** P2 / S. **Disposition:** Fixes merged on 2026-11-16. Still to decide: whether a desktop build should gate while desktop is not a shipping surface.
 
 ### DEP-11 · Third-party requests after login
 

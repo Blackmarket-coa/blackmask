@@ -1,6 +1,6 @@
 # Black Mask — Project Docs
 
-> **2026-11-12 source/CI review:** [Implementation status and release gaps](implementation-status-2026-11-12.md) is the current scoped evidence summary. Enhancement features are **one-time purchases; no subscription**. Full-product runtime and real-browser verification remain outstanding.
+> **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-16 Chromium run](evidence/2026-11-16-chromium-logged-in.md): a production Chrome build passed 27 of 30 checks against a local Vaultwarden. Nothing is fully verified yet: Firefox, a store-installed build, the hosted backend and lock/unlock are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
 
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
 the Bitwarden clients monorepo). Its mission: **give individuals the tools to understand, reduce, and
@@ -29,7 +29,7 @@ in _this codebase_.
 
 ## Current status
 
-The v1 milestones (M0–M4) have **implemented code, with real-browser behavior unverified** in the browser
+The v1 milestones (M0–M4) have **implemented code, with real-browser behavior not yet fully verified** in the browser
 extension: privacy dashboard & score, persona vault, tracker detection, fingerprint exposure test,
 data exposure dashboard, per-persona containers, phishing protection, and — beyond the original
 plan — an on-device AI-generated media detector. All are gated behind `black-mask-*` feature flags
@@ -38,8 +38,14 @@ states and an off-by-default flag would make every feature invisible in producti
 [`features.md`](./features.md) for what each feature does, where its code lives, and its
 limitations.
 
-None of them have been validated in a real browser yet — see
-[`browser-validation.md`](./browser-validation.md) before demoing or submitting to a store.
+Validation so far covers one environment. On 2026-11-16 a production Chrome build passed 27 of 30
+automated checks in Chromium against a local Vaultwarden
+([evidence](./evidence/2026-11-16-chromium-logged-in.md)). That run leaves gaps, listed in the
+report: the phishing warning flow, the AI model download, real breach data, autofill and export
+among them. Firefox (containers included), a store-installed build, the hosted backend and
+lock/unlock have not been verified, so the [register](./feature-audit-register.md) marks no feature
+Verified. Work through [`browser-validation.md`](./browser-validation.md) before demoing or
+submitting to a store.
 
 Everything else in the feature → subsystem map (§3 of the execution plan) — the Android app,
 VPN/network layer, backend inference/IOC/SAR services, and coalition features — remains
