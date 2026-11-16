@@ -10,6 +10,9 @@ jobs:
   nx-experiment:
     name: Run Nx Affected Tasks
     runs-on: ubuntu-22.04
+    # A pull request that touches shared code affects most projects. Bound the job, so a run
+    # that goes wrong is stopped rather than left to hold a runner.
+    timeout-minutes: 120
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -38,6 +41,16 @@ jobs:
       - name: Set Nx SHAs for affected detection
         uses: nrwl/nx-set-shas@afb73a62d26e41464e9254689e1fd6122ee683c1 # v5.0.1
       
-      - name: Run Nx affected tasks
+      # Tasks run one at a time. With the nx.json default of four in parallel, and every Jest
+      # task starting its own worker pool (up to eight workers for the plain TypeScript libs),
+      # a change to shared code starves a standard 16 GB runner: the job dies after about an
+      # hour with "The hosted runner lost communication with the server", which
+      # continue-on-error cannot catch.
+      - name: Run Nx affected build and lint
         continue-on-error: true
-        run: npx nx affected -t build lint test
+        run: npx nx affected -t build lint --parallel=1
+
+      # Two Jest workers per task, as in test.yml.
+      - name: Run Nx affected tests
+        continue-on-error: true
+        run: npx nx affected -t test --parallel=1 --maxWorkers=2
