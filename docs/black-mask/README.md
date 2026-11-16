@@ -12,17 +12,18 @@ in _this codebase_.
 
 ## Documents
 
-| Doc | What it is |
-| --- | --- |
-| [`location-privacy-mvp.md`](./location-privacy-mvp.md) | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates. |
-| [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates. |
-| [`mvp.md`](./mvp.md) | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria. |
-| [`product-strategy.md`](./product-strategy.md) | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship. |
-| [`features.md`](./features.md) | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests. |
-| [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
-| [`branding.md`](./branding.md) | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets. |
-| [`store-submission.md`](./store-submission.md) | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting. |
-| [`browser-validation.md`](./browser-validation.md) | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector. |
+| Doc                                                                          | What it is                                                                                                                                                                          |
+| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`location-privacy-mvp.md`](./location-privacy-mvp.md)                       | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates.                                      |
+| [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates.                                 |
+| [`mvp.md`](./mvp.md)                                                         | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria.                                             |
+| [`product-strategy.md`](./product-strategy.md)                               | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship.                 |
+| [`onboarding-habits-and-rewards.md`](./onboarding-habits-and-rewards.md)     | **Planned onboarding and rewards** — visual prompts, short setup goals, motivators, fewer steps, milestone points, chosen native products, and a deferred implementation checklist. |
+| [`features.md`](./features.md)                                               | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests.                                                       |
+| [`engineering-execution-plan.md`](./engineering-execution-plan.md)           | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks.                                 |
+| [`branding.md`](./branding.md)                                               | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets.                                                                                |
+| [`store-submission.md`](./store-submission.md)                               | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting.                                         |
+| [`browser-validation.md`](./browser-validation.md)                           | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector.                                                          |
 
 ## Current status
 
@@ -64,7 +65,7 @@ Before launch:
 - Re-run the **Environment** section of [`browser-validation.md`](./browser-validation.md) against
   the live server, on a fresh install of a production build (`npm run build:prod:chrome`, or
   `MANIFEST_VERSION=3 npm run build:prod:firefox` for Firefox MV3). Development builds cannot run
-   this check: on first install they apply the `managedEnvironment` dev flag from
+  this check: on first install they apply the `managedEnvironment` dev flag from
   `apps/browser/config/development.json` and switch to `https://localhost:8080`, so they never
   show the `vault.blackmask.app` default.
 

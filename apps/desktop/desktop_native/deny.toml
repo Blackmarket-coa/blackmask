@@ -10,6 +10,12 @@ ignore = [
   { id = "RUSTSEC-2026-0097", reason = "Transitive dep via num-bigint-dig; no fix available. Not exploitable: no custom logger uses rand." },
   # Vulnerability in `russh-cryptovec` crate: https://rustsec.org/advisories/RUSTSEC-2026-0153
   { id = "RUSTSEC-2026-0153", reason = "This will be fixed by removal of the russh dependency in upcoming SSH Agent v2 release." },
+  # Timing side channels in `crypto-bigint` < 0.7.6: https://rustsec.org/advisories/RUSTSEC-2026-0387
+  # 0.5.5 comes in through elliptic-curve 0.13 (ecdsa, p256/p384/p521) under the pinned ssh-key 0.6.7 and
+  # bitwarden-russh. Every elliptic-curve 0.13 release requires crypto-bigint ^0.5, so reaching 0.7.6 means
+  # moving both to elliptic-curve 0.14. Desktop SSH agent only; desktop is not a shipping surface.
+  # Revisit when desktop ships or when ssh-key and bitwarden-russh move to elliptic-curve 0.14.
+  { id = "RUSTSEC-2026-0387", reason = "No fix reachable: elliptic-curve 0.13 (via pinned ssh-key 0.6.7 and bitwarden-russh) requires crypto-bigint ^0.5. Desktop SSH agent only." },
 ]
 
 # https://embarkstudios.github.io/cargo-deny/checks/licenses/cfg.html
