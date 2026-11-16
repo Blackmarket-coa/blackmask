@@ -1,5 +1,8 @@
 # Evidence — automated Chromium run, 2026-11-15
 
+> Superseded by the [2026-11-16 run](./2026-11-16-chromium-logged-in.md), which adds a backend and
+> follows the fixes in PR #15 (ENV-02 now passes). Kept as the logged-out baseline.
+
 First automated pass over the parts of [`browser-validation.md`](../browser-validation.md) that need
 no backend account, plus the unit-test baseline for the [feature audit register](../feature-audit-register.md).
 This is evidence for a **logged-out, fresh-install** state only. Everything behind login is listed under
