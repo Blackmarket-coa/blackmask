@@ -29,17 +29,17 @@ usage costs must be transparent and must not disguise an enhancement subscriptio
 
 ## Source-backed inventory
 
-| Problem | Existing implementation | What remains |
-| --- | --- | --- |
-| Credentials, identities and autofill | Bitwarden-derived vault/auth/sync/autofill foundation and persona code. | Fresh production install, intended backend, create/edit/sync/export/recovery tests. Inherited code alone does not verify the configured service. |
-| Trackers | Static 20-domain seed and browser DNR rules. | Real Chrome/Firefox MV3 blocking/counting validation, broader coverage and updates. No runtime blocklist updating is established. |
-| Fingerprint exposure | Browser probes and measurement/reporting. | Real-browser accuracy, error handling and honest labels; this is not verified fingerprint mitigation. |
-| Persona separation | Firefox container descriptors/runtime integration. | Demonstrate cookie isolation in Firefox; do not promise equivalent Chromium isolation. |
-| Phishing | Inherited local checking against downloaded feed. | Warnings, disable/offline behavior and disclosure of upstream feed dependencies. |
-| Breach/exposure lookup | Backend-dependent client flow. | Selected backend support and explicit unavailable behavior; do not assume every Vaultwarden configuration supports it. |
-| Privacy dashboard / AI-media detector | Implementations and logic tests. | Browser behavior, model loading/performance and accurate limitations. No objective safety guarantee. |
-| Production onboarding | First-install service still sets the welcome URL to Bitwarden's browser-start page. | Repoint it and test a fresh production install; development flags can conceal the behavior. |
-| Backend/domain availability | Configured default origin and an older documented launch-prerequisite finding. | Recheck ownership, DNS, HTTPS and intended backend now; this review does not assert current domain status. |
+| Problem                               | Existing implementation                                                             | What remains                                                                                                                                     |
+| ------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Credentials, identities and autofill  | Bitwarden-derived vault/auth/sync/autofill foundation and persona code.             | Fresh production install, intended backend, create/edit/sync/export/recovery tests. Inherited code alone does not verify the configured service. |
+| Trackers                              | Static 20-domain seed and browser DNR rules.                                        | Real Chrome/Firefox MV3 blocking/counting validation, broader coverage and updates. No runtime blocklist updating is established.                |
+| Fingerprint exposure                  | Browser probes and measurement/reporting.                                           | Real-browser accuracy, error handling and honest labels; this is not verified fingerprint mitigation.                                            |
+| Persona separation                    | Firefox container descriptors/runtime integration.                                  | Demonstrate cookie isolation in Firefox; do not promise equivalent Chromium isolation.                                                           |
+| Phishing                              | Inherited local checking against downloaded feed.                                   | Warnings, disable/offline behavior and disclosure of upstream feed dependencies.                                                                 |
+| Breach/exposure lookup                | Backend-dependent client flow.                                                      | Selected backend support and explicit unavailable behavior; do not assume every Vaultwarden configuration supports it.                           |
+| Privacy dashboard / AI-media detector | Implementations and logic tests.                                                    | Browser behavior, model loading/performance and accurate limitations. No objective safety guarantee.                                             |
+| Production onboarding                 | First-install service still sets the welcome URL to Bitwarden's browser-start page. | Repoint it and test a fresh production install; development flags can conceal the behavior.                                                      |
+| Backend/domain availability           | Configured default origin and an older documented launch-prerequisite finding.      | Recheck ownership, DNS, HTTPS and intended backend now; this review does not assert current domain status.                                       |
 
 Sources: [tracker seed](../../apps/browser/src/privacy/trackers/tracker-blocklist.ts),
 [container mapping](../../apps/browser/src/privacy/persona-container.ts),
