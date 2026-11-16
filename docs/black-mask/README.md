@@ -1,5 +1,7 @@
 # Black Mask — Project Docs
 
+> **2026-11-12 source/CI review:** [Implementation status and release gaps](implementation-status-2026-11-12.md) is the current scoped evidence summary. Enhancement features are **one-time purchases; no subscription**. Full-product runtime and real-browser verification remain outstanding.
+
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
 the Bitwarden clients monorepo). Its mission: **give individuals the tools to understand, reduce, and
 control the data collected about them** — detect surveillance, reduce data collection, increase
@@ -10,22 +12,22 @@ in _this codebase_.
 
 ## Documents
 
-| Doc | What it is |
-| --- | --- |
-| [`location-privacy-mvp.md`](./location-privacy-mvp.md) | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates. |
-| [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates. |
-| [`mvp.md`](./mvp.md) | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria. |
-| [`product-strategy.md`](./product-strategy.md) | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship. |
-| [`onboarding-habits-and-rewards.md`](./onboarding-habits-and-rewards.md) | **Planned onboarding and rewards** — visual prompts, short setup goals, motivators, fewer steps, milestone points, chosen native products, and a deferred implementation checklist. |
-| [`features.md`](./features.md) | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests. |
-| [`engineering-execution-plan.md`](./engineering-execution-plan.md) | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks. |
-| [`branding.md`](./branding.md) | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets. |
-| [`store-submission.md`](./store-submission.md) | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting. |
-| [`browser-validation.md`](./browser-validation.md) | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector. |
+| Doc                                                                          | What it is                                                                                                                                                                          |
+| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`location-privacy-mvp.md`](./location-privacy-mvp.md)                       | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates.                                      |
+| [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates.                                 |
+| [`mvp.md`](./mvp.md)                                                         | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria.                                             |
+| [`product-strategy.md`](./product-strategy.md)                               | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship.                 |
+| [`onboarding-habits-and-rewards.md`](./onboarding-habits-and-rewards.md)     | **Planned onboarding and rewards** — visual prompts, short setup goals, motivators, fewer steps, milestone points, chosen native products, and a deferred implementation checklist. |
+| [`features.md`](./features.md)                                               | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests.                                                       |
+| [`engineering-execution-plan.md`](./engineering-execution-plan.md)           | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks.                                 |
+| [`branding.md`](./branding.md)                                               | What the Black Mask rebrand covers, what's placeholder, and how to regenerate or replace the assets.                                                                                |
+| [`store-submission.md`](./store-submission.md)                               | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting.                                         |
+| [`browser-validation.md`](./browser-validation.md)                           | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector.                                                          |
 
 ## Current status
 
-The v1 milestones (M0–M4) from the execution plan are **feature-complete** in the browser
+The v1 milestones (M0–M4) have **implemented code, with real-browser behavior unverified** in the browser
 extension: privacy dashboard & score, persona vault, tracker detection, fingerprint exposure test,
 data exposure dashboard, per-persona containers, phishing protection, and — beyond the original
 plan — an on-device AI-generated media detector. All are gated behind `black-mask-*` feature flags
@@ -43,7 +45,7 @@ sibling-repo or later-phase work and is not part of what ships from this reposit
 
 ## Launch prerequisites
 
-**The default server does not exist yet.** The browser extension defaults to
+**Default-server readiness requires a fresh check.** The finding below is dated 2026-09-25 and was not re-tested in the 2026-11-12 source/CI review. The browser extension defaults to
 `BLACK_MASK_BASE_URL = "https://vault.blackmask.app"` (the `PRODUCTION_REGIONS` entry in
 `libs/common/src/platform/services/default-environment.service.ts`), so a fresh install of a
 production build talks to that origin with no manual server entry. As of 2026-09-25 the name does not resolve: public DNS
@@ -63,7 +65,7 @@ Before launch:
 - Re-run the **Environment** section of [`browser-validation.md`](./browser-validation.md) against
   the live server, on a fresh install of a production build (`npm run build:prod:chrome`, or
   `MANIFEST_VERSION=3 npm run build:prod:firefox` for Firefox MV3). Development builds cannot run
-   this check: on first install they apply the `managedEnvironment` dev flag from
+  this check: on first install they apply the `managedEnvironment` dev flag from
   `apps/browser/config/development.json` and switch to `https://localhost:8080`, so they never
   show the `vault.blackmask.app` default.
 
@@ -71,7 +73,7 @@ Before launch:
 
 v1 is the **browser extension** plus the **self-hosted web vault**. No local VPN. Everything runs
 on the user's devices plus a self-hosted backend — no coalition/Blackout dependency. The coalition
-features are a later upgrade tier, not a launch prerequisite.
+features are later integration work, not a launch prerequisite. Any paid enhancement is a one-time purchase, with no subscription.
 
 This replaces the original "browser extension + Android app, together" scope still recorded in the
 [execution plan](./engineering-execution-plan.md): the consolidation review

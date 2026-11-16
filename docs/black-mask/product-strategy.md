@@ -20,11 +20,11 @@ Blackmask and Blackout are complementary products with distinct responsibilities
 
 Blackout is the messaging and community layer Blackmask should use. Integration should make the products feel connected without collapsing their security boundaries or making Blackout a prerequisite for Blackmask's standalone v1.
 
-| Product | Primary responsibility | User value |
-| --- | --- | --- |
-| **Blackmask** | Privacy, counter-surveillance, identity separation, browsing protection, exposure awareness, and personal-data control | Understand and reduce what websites, trackers, and other parties can learn or collect |
-| **Blackout** | Private communication and community: messaging, direct and group conversations, Canopies and Dens, voice/video, and community participation | Stay connected, organize, share, and build trusted communities |
-| **Together** | A coherent privacy and communication experience across the BMC ecosystem | Carry stronger privacy habits from browsing and identity management into everyday relationships and collective activity |
+| Product       | Primary responsibility                                                                                                                      | User value                                                                                                              |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Blackmask** | Privacy, counter-surveillance, identity separation, browsing protection, exposure awareness, and personal-data control                      | Understand and reduce what websites, trackers, and other parties can learn or collect                                   |
+| **Blackout**  | Private communication and community: messaging, direct and group conversations, Canopies and Dens, voice/video, and community participation | Stay connected, organize, share, and build trusted communities                                                          |
+| **Together**  | A coherent privacy and communication experience across the BMC ecosystem                                                                    | Carry stronger privacy habits from browsing and identity management into everyday relationships and collective activity |
 
 ### Blackout capabilities to build around
 
@@ -170,7 +170,6 @@ Blackmask must never promise:
 - That a feature is available or validated merely because code or a design document exists.
 
 Product copy must match the current implementation, deployment configuration, tests, and threat model. When those disagree, use the more conservative claim and fix the documentation.
-
 
 ## 12. Location privacy and Coalition operations (proposed integration)
 

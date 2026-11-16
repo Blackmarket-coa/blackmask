@@ -1,5 +1,7 @@
 # Consolidation Status — Black Mask
 
+> **2026-11-12 status:** [Implementation and release gaps](docs/black-mask/implementation-status-2026-11-12.md) records source/CI evidence separately from browser/backend validation. Enhancement features are one-time purchases with **no subscription**. Desired private social interaction remains a product goal; current browser/vault code is not evidence that a separate chat service is implemented.
+
 Part of the 2026-08-28 seven-repo BMC consolidation review. The canonical review — audit verdicts,
 decisions, and the ordered roadmap — is `docs/REPO_CONSOLIDATION_REVIEW.md` in
 `Blackmarket-coa/free-black-market`.

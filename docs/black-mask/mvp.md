@@ -18,6 +18,7 @@ The product must provide immediate standalone value without Blackout, Coalition,
 **Secondary user:** A creator, seller, organizer, or community participant who uses multiple identities and needs to reduce accidental crossover between personal, professional, and pseudonymous contexts.
 
 **Jobs to be done:**
+
 - “Stop common trackers and tell me what was blocked.”
 - “Warn me before I follow a known phishing destination.”
 - “Let me create and use a different identity for a different purpose.”
@@ -28,16 +29,16 @@ The product must provide immediate standalone value without Blackout, Coalition,
 
 ## 3. Locked MVP scope
 
-| Pillar | Required user-facing capability | Definition of done |
-| --- | --- | --- |
-| A. Safe foundation | Install browser extension, connect to a functioning self-hosted vault, sign in, unlock, save, sync, and autofill credentials | Fresh-install and return-user flows work in supported browsers; credentials sync securely; errors and offline states are understandable |
-| B. Tracker protection | Block a documented set of known tracking requests; display protection status and counts | Blocking verified against actual network requests, not inferred from counters; list coverage and limitations visible |
-| C. Phishing protection | Warn on known malicious destinations and allow user to understand or change protection status | Detection works in supported browser builds; warning and bypass flows tested; feed origin disclosed |
-| D. Persona vault | Create, edit, and use Real, Business, Creator, and Pseudonymous/Anonymous-labelled identity records, with alias guidance | Persona data survives sync; editing preserves unrelated fields; alias warnings distinguish forwarding aliases from easily linked addresses |
-| E. Browsing separation | Offer actual per-persona cookie/container separation where supported | Firefox container isolation validated; unsupported browsers clearly say the feature is unavailable—never claim Chromium isolation without implementation |
-| F. Exposure awareness | Privacy overview, account password-health checks, fingerprint exposure estimate, and explicit breach lookup where backend supports it | Results are accurate to measured inputs; fingerprint measurement is not described as fingerprint prevention; unsupported breach API produces an honest unavailable state |
-| G. User control and trust | Review protection status, adjust supported controls, export/manage vault data, understand permissions and retention | No hidden collection of browsing history or persona content for engagement analytics; clear settings and privacy disclosures |
-| H. Usable product | Consistent onboarding, clear navigation, accessible error/empty/loading states, basic support and issue-reporting path | A first-time tester can install, understand protection, create a persona, and complete an account-health review without developer help |
+| Pillar                    | Required user-facing capability                                                                                                       | Definition of done                                                                                                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| A. Safe foundation        | Install browser extension, connect to a functioning self-hosted vault, sign in, unlock, save, sync, and autofill credentials          | Fresh-install and return-user flows work in supported browsers; credentials sync securely; errors and offline states are understandable                                  |
+| B. Tracker protection     | Block a documented set of known tracking requests; display protection status and counts                                               | Blocking verified against actual network requests, not inferred from counters; list coverage and limitations visible                                                     |
+| C. Phishing protection    | Warn on known malicious destinations and allow user to understand or change protection status                                         | Detection works in supported browser builds; warning and bypass flows tested; feed origin disclosed                                                                      |
+| D. Persona vault          | Create, edit, and use Real, Business, Creator, and Pseudonymous/Anonymous-labelled identity records, with alias guidance              | Persona data survives sync; editing preserves unrelated fields; alias warnings distinguish forwarding aliases from easily linked addresses                               |
+| E. Browsing separation    | Offer actual per-persona cookie/container separation where supported                                                                  | Firefox container isolation validated; unsupported browsers clearly say the feature is unavailable—never claim Chromium isolation without implementation                 |
+| F. Exposure awareness     | Privacy overview, account password-health checks, fingerprint exposure estimate, and explicit breach lookup where backend supports it | Results are accurate to measured inputs; fingerprint measurement is not described as fingerprint prevention; unsupported breach API produces an honest unavailable state |
+| G. User control and trust | Review protection status, adjust supported controls, export/manage vault data, understand permissions and retention                   | No hidden collection of browsing history or persona content for engagement analytics; clear settings and privacy disclosures                                             |
+| H. Usable product         | Consistent onboarding, clear navigation, accessible error/empty/loading states, basic support and issue-reporting path                | A first-time tester can install, understand protection, create a persona, and complete an account-health review without developer help                                   |
 
 **Launch principle:** A smaller set of verified capabilities is better than a large collection of pages that appear functional but fail in real browsers.
 
@@ -118,15 +119,15 @@ Do not require Blackout registration, a Coalition membership, location access, o
 
 ## 9. PR-sized delivery sequence
 
-| Workstream | Deliverable | Exit criterion |
-| --- | --- | --- |
-| 0. Product truth audit | Current feature/status matrix and supported-browser matrix | Every claim mapped to a tested behavior, a known limitation, or a disabled feature |
-| 1. Launch infrastructure | Controlled domain, HTTPS, working vault backend, safe production defaults, welcome-page fix | Fresh install and account sync work without third-party branding redirects |
-| 2. Core protection validation | Tracker and phishing integration tests, feed-failure handling, honest coverage copy | Confirmed request blocking and phishing behavior in supported browsers |
-| 3. Identity validation | Persona create/edit/sync/autofill, forwarding-alias guidance, Firefox container tests | Identity flows work and browser differences are disclosed |
-| 4. Exposure and dashboard | Account-health checks, fingerprint measurement labels, optional breach endpoint fallback | No false safety guarantees or broken default actions |
-| 5. Hardening and distribution | Security/privacy audit, accessibility, docs, browser-store packages, issue reporting | Launch checklist signed off with reproducible release builds |
-| 6. Post-launch integration | Separate Blackout identity/privacy contracts, Location Privacy Control Center | Starts only after standalone MVP is stable; separately security-gated |
+| Workstream                    | Deliverable                                                                                 | Exit criterion                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 0. Product truth audit        | Current feature/status matrix and supported-browser matrix                                  | Every claim mapped to a tested behavior, a known limitation, or a disabled feature |
+| 1. Launch infrastructure      | Controlled domain, HTTPS, working vault backend, safe production defaults, welcome-page fix | Fresh install and account sync work without third-party branding redirects         |
+| 2. Core protection validation | Tracker and phishing integration tests, feed-failure handling, honest coverage copy         | Confirmed request blocking and phishing behavior in supported browsers             |
+| 3. Identity validation        | Persona create/edit/sync/autofill, forwarding-alias guidance, Firefox container tests       | Identity flows work and browser differences are disclosed                          |
+| 4. Exposure and dashboard     | Account-health checks, fingerprint measurement labels, optional breach endpoint fallback    | No false safety guarantees or broken default actions                               |
+| 5. Hardening and distribution | Security/privacy audit, accessibility, docs, browser-store packages, issue reporting        | Launch checklist signed off with reproducible release builds                       |
+| 6. Post-launch integration    | Separate Blackout identity/privacy contracts, Location Privacy Control Center               | Starts only after standalone MVP is stable; separately security-gated              |
 
 Workstreams may run in parallel, but launch blockers cannot be waived merely because UI pages exist.
 

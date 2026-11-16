@@ -7,6 +7,8 @@
 
 # Black Mask
 
+> **Implementation review (2026-11-12):** [Source/CI status and launch gaps](docs/black-mask/implementation-status-2026-11-12.md) distinguishes browser/privacy code from real-browser and backend verification. Enhancement features are **one-time purchases; no subscription**. The current code does not establish a standalone social/chat replacement; communications integration requires separate verification.
+
 Black Mask is a privacy and counter-surveillance product that gives individuals the tools to
 understand, reduce, and control the data collected about them — detecting tracking and
 surveillance, reducing data collection, increasing anonymity, and exposing exposure, all within
@@ -22,7 +24,7 @@ storage from scratch. **No new encryption logic is added here** — see
 
 This repo houses the client applications — everything except the mobile apps:
 
-- **`apps/browser`** — the primary v1 Black Mask surface. Tracker/fingerprint defense, a persona vault with
+- **`apps/browser`** — the primary v1 Black Mask surface. A starter tracker-blocking list, fingerprint-exposure measurement, a persona vault with
   per-persona browsing containers, phishing protection, a data-exposure dashboard, an on-device
   AI-generated media detector, and a privacy-score dashboard, alongside the inherited Bitwarden
   vault/autofill/sync functionality. Each feature is documented in the
