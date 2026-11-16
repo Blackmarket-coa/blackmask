@@ -28,6 +28,9 @@ describe("BrowserInitialInstallService", () => {
 
     getInstallTypeSpy = jest.spyOn(BrowserApi, "getInstallType");
     createNewTabSpy = jest.spyOn(BrowserApi, "createNewTab").mockResolvedValue({} as any);
+    jest
+      .spyOn(BrowserApi, "getRuntimeURL")
+      .mockImplementation((path) => `chrome-extension://extension-id/${path}`);
     devFlagEnabledMock.mockReturnValue(false);
 
     service = new BrowserInitialInstallService(stateProvider);
@@ -49,7 +52,9 @@ describe("BrowserInitialInstallService", () => {
       await service.displayWelcomePage();
 
       expect(createNewTabSpy).toHaveBeenCalledTimes(1);
-      expect(createNewTabSpy).toHaveBeenCalledWith("https://bitwarden.com/browser-start/");
+      expect(createNewTabSpy).toHaveBeenCalledWith(
+        "chrome-extension://extension-id/popup/index.html#/welcome",
+      );
     });
 
     it.each([

@@ -7124,5 +7124,50 @@
   },
   "blackMaskFpTouch": {
     "message": "Touch points"
+  },
+  "blackMaskWelcomeTitle": {
+    "message": "Welcome to Black Mask"
+  },
+  "blackMaskWelcomeSubtitle": {
+    "message": "What it does, what it only measures, and what it can't do."
+  },
+  "blackMaskWelcomeDoesHeading": {
+    "message": "What it does"
+  },
+  "blackMaskWelcomeDoesTrackers": {
+    "message": "Blocks requests to a starter list of 20 known tracker domains on every site."
+  },
+  "blackMaskWelcomeDoesPhishing": {
+    "message": "Once you're logged in, warns you before you open a known phishing site. The list comes from Bitwarden's public phishing feed; the sites you visit are checked against it on this device."
+  },
+  "blackMaskWelcomeDoesPersonas": {
+    "message": "Keeps separate personas for different parts of your life, and warns you when an email alias can be traced back to you."
+  },
+  "blackMaskWelcomeDoesVault": {
+    "message": "Encrypts your logins and identities on this device before they sync."
+  },
+  "blackMaskWelcomeMeasuresHeading": {
+    "message": "What it only measures"
+  },
+  "blackMaskWelcomeMeasuresFingerprint": {
+    "message": "The fingerprint test estimates how identifiable your browser is. It doesn't stop fingerprinting."
+  },
+  "blackMaskWelcomeMeasuresScore": {
+    "message": "The privacy score points to what to fix next. It isn't a guarantee of safety."
+  },
+  "blackMaskWelcomeCannotHeading": {
+    "message": "What it can't do"
+  },
+  "blackMaskWelcomeCannotVpn": {
+    "message": "It isn't a VPN and doesn't hide your IP address."
+  },
+  "blackMaskWelcomeCannotAnonymity": {
+    "message": "A persona doesn't make you anonymous. Payment details, recovery emails, writing style and behavior can still link your identities."
+  },
+  "blackMaskWelcomeCannotContainers": {
+    "message": "Separate browsing containers for each persona work only in Firefox."
+  },
+  "blackMaskWelcomeNextStep": {
+    "message": "Pin Black Mask to your toolbar, then create an account or log in. To use your own server, open the server menu on the login screen and choose Self-hosted."
   }
 }

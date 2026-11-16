@@ -1,0 +1,55 @@
+<section class="tw-mb-6" aria-labelledby="black-mask-welcome-does">
+  <h2 bitTypography="h4" id="black-mask-welcome-does">
+    {{ "blackMaskWelcomeDoesHeading" | i18n }}
+  </h2>
+  <ul class="tw-list-disc tw-ps-5 tw-mb-0">
+    <li bitTypography="body1">{{ "blackMaskWelcomeDoesTrackers" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeDoesPhishing" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeDoesPersonas" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeDoesVault" | i18n }}</li>
+  </ul>
+</section>
+
+<section class="tw-mb-6" aria-labelledby="black-mask-welcome-measures">
+  <h2 bitTypography="h4" id="black-mask-welcome-measures">
+    {{ "blackMaskWelcomeMeasuresHeading" | i18n }}
+  </h2>
+  <ul class="tw-list-disc tw-ps-5 tw-mb-0">
+    <li bitTypography="body1">{{ "blackMaskWelcomeMeasuresFingerprint" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeMeasuresScore" | i18n }}</li>
+  </ul>
+</section>
+
+<section class="tw-mb-6" aria-labelledby="black-mask-welcome-cannot">
+  <h2 bitTypography="h4" id="black-mask-welcome-cannot">
+    {{ "blackMaskWelcomeCannotHeading" | i18n }}
+  </h2>
+  <ul class="tw-list-disc tw-ps-5 tw-mb-0">
+    <li bitTypography="body1">{{ "blackMaskWelcomeCannotVpn" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeCannotAnonymity" | i18n }}</li>
+    <li bitTypography="body1">{{ "blackMaskWelcomeCannotContainers" | i18n }}</li>
+  </ul>
+</section>
+
+<p bitTypography="body1">{{ "blackMaskWelcomeNextStep" | i18n }}</p>
+
+<button
+  id="welcome_button_create-account"
+  type="button"
+  bitButton
+  buttonType="primary"
+  (click)="navigateToSignup()"
+  class="tw-w-full tw-mt-2"
+>
+  {{ "createAccount" | i18n }}
+</button>
+<button
+  id="welcome_button_log-in"
+  type="button"
+  bitButton
+  buttonType="secondary"
+  (click)="navigateToLogin()"
+  class="tw-w-full tw-mt-2"
+>
+  {{ "logIn" | i18n }}
+</button>

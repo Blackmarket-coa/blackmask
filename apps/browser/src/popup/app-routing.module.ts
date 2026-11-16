@@ -82,6 +82,7 @@ import { PersonasComponent } from "../privacy/popup/personas.component";
 import { PhishingProtectionComponent } from "../privacy/popup/phishing-protection.component";
 import { PrivacyDashboardComponent } from "../privacy/popup/privacy-dashboard.component";
 import { TrackersComponent } from "../privacy/popup/trackers.component";
+import { WelcomeComponent } from "../privacy/popup/welcome.component";
 import { CredentialGeneratorHistoryComponent } from "../tools/popup/generator/credential-generator-history.component";
 import { CredentialGeneratorComponent } from "../tools/popup/generator/credential-generator.component";
 import { filePickerPopoutGuard } from "../tools/popup/guards/file-picker-popout.guard";
@@ -757,6 +758,26 @@ const routes: Routes = [
         path: "",
         component: IntroCarouselComponent,
         data: {
+          pageIcon: null,
+          hideFooter: true,
+        } satisfies ExtensionAnonLayoutWrapperData,
+      },
+    ],
+  },
+  {
+    // Black Mask: bundled welcome page, opened in a tab on first install. No guard: it is
+    // shown before any account exists.
+    path: "welcome",
+    component: ExtensionAnonLayoutWrapperComponent,
+    canActivate: [],
+    data: { elevation: 0, doNotSaveUrl: true } satisfies RouteDataProperties,
+    children: [
+      {
+        path: "",
+        component: WelcomeComponent,
+        data: {
+          pageTitle: { key: "blackMaskWelcomeTitle" },
+          pageSubtitle: { key: "blackMaskWelcomeSubtitle" },
           pageIcon: null,
           hideFooter: true,
         } satisfies ExtensionAnonLayoutWrapperData,
