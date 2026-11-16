@@ -1,5 +1,12 @@
 # Blackmask implementation status — 2026-11-12
 
+> **Snapshot of 2026-11-12, kept as written.** Later evidence is in the
+> [feature audit register](feature-audit-register.md) and the
+> [2026-11-16 Chromium run](evidence/2026-11-16-chromium-logged-in.md). Several gaps listed below
+> have since been closed or narrowed: first install now opens a welcome page bundled with the
+> extension, the two Lint workflow failures are fixed, and a production Chrome build has been
+> checked against a local Vaultwarden. The register has the current state of each item.
+
 ## Scope
 
 Source review of `main` at `3d84b9528b99dbd20f88880b8bac9e0bb4d0c5a4`

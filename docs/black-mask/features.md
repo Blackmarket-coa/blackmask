@@ -6,8 +6,10 @@ limitations. The [engineering execution plan](./engineering-execution-plan.md) e
 features are built this way; this document describes _what exists_.
 
 All features live in the **browser extension** (`apps/browser`). The v1 milestones M0–M4 from the
-execution plan (§8) are feature-complete, plus one addition beyond the original plan (the AI
-media detector).
+execution plan (§8) are implemented in code, plus one addition beyond the original plan (the AI
+media detector). Implemented is not verified: the
+[feature audit register](./feature-audit-register.md) records what has been checked in a browser
+and against a backend.
 
 ## Summary
 
