@@ -8,6 +8,7 @@ import { CipherType, FieldType } from "@bitwarden/common/vault/enums";
 import { CipherView } from "@bitwarden/common/vault/models/view/cipher.view";
 import { FieldView } from "@bitwarden/common/vault/models/view/field.view";
 import { IdentityView } from "@bitwarden/common/vault/models/view/identity.view";
+import { filterOutNullish } from "@bitwarden/common/vault/utils/observable-utilities";
 import {
   CredentialGeneratorService,
   GenerateRequest,
@@ -207,7 +208,10 @@ export class PersonaService {
 
   private async findPersonaCipher(id: string): Promise<CipherView | undefined> {
     const userId = await firstValueFrom(this.accountService.activeAccount$.pipe(getUserId));
-    const ciphers = await firstValueFrom(this.cipherService.cipherViews$(userId));
+    // cipherViews$ emits null while decrypted ciphers are cleared (e.g. right after a save).
+    const ciphers = await firstValueFrom(
+      this.cipherService.cipherViews$(userId).pipe(filterOutNullish()),
+    );
     return ciphers.find((cipher) => cipher.id === id && this.toPersona(cipher) != null);
   }
 
@@ -215,7 +219,9 @@ export class PersonaService {
   personas$(): Observable<Persona[]> {
     return this.accountService.activeAccount$.pipe(
       getUserId,
-      switchMap((userId) => this.cipherService.cipherViews$(userId)),
+      // cipherViews$ emits null while decrypted ciphers are cleared after a save; mapping over it
+      // would error the stream and blank the list until the popup reopened.
+      switchMap((userId) => this.cipherService.cipherViews$(userId).pipe(filterOutNullish())),
       map((ciphers) =>
         ciphers
           .map((cipher) => this.toPersona(cipher))

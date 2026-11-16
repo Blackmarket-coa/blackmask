@@ -49,7 +49,6 @@ import { ExtensionAuthRequestAnsweringService } from "@bitwarden/browser/auth/se
 import { ExtensionNewDeviceVerificationComponentService } from "@bitwarden/browser/auth/services/new-device-verification/extension-new-device-verification-component.service";
 import { BrowserRouterService } from "@bitwarden/browser/platform/popup/services/browser-router.service";
 import { ApiService } from "@bitwarden/common/abstractions/api.service";
-import { OrganizationService } from "@bitwarden/common/admin-console/abstractions/organization/organization.service.abstraction";
 import { PolicyService } from "@bitwarden/common/admin-console/abstractions/policy/policy.service.abstraction";
 import {
   AccountService,
@@ -549,15 +548,7 @@ const safeProviders: SafeProvider[] = [
   safeProvider({
     provide: PhishingDetectionSettingsServiceAbstraction,
     useClass: PhishingDetectionSettingsService,
-    deps: [
-      AccountService,
-      BillingAccountProfileStateService,
-      ConfigService,
-      LogService,
-      OrganizationService,
-      PlatformUtilsService,
-      StateProvider,
-    ],
+    deps: [AccountService, ConfigService, LogService, PlatformUtilsService, StateProvider],
   }),
   safeProvider({
     provide: MessageListener,

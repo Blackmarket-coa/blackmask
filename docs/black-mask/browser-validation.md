@@ -2,8 +2,17 @@
 
 The privacy features carry `NEEDS BROWSER VALIDATION` notes for a reason: `declarativeNetRequest`
 blocking, container creation, the fingerprint probes and the ONNX detector cannot be exercised by
-jest. Unit tests cover their pure logic only. **Nothing here has been confirmed in a real browser
-yet** — walk this before submitting to a store or recording a demo.
+jest. Unit tests cover their pure logic only. Walk this before submitting to a store or recording a
+demo.
+
+**Automated coverage so far.** `scripts/validate-black-mask-chromium.js` loads a built extension into
+a fresh Chromium profile and checks the default server, tabs opened on install, hosts contacted,
+tracker blocking and counting, the permission set and route guards; with `--server` it also creates
+an account and walks most logged-in checks. The
+[2026-11-16 run](./evidence/2026-11-16-chromium-logged-in.md) against a local Vaultwarden passed
+everything it attempted except **lock and unlock**, which it could not complete under automation.
+**Lock, the items marked not run, and all of Firefox still need a person** — status per feature is in
+the [feature audit register](./feature-audit-register.md).
 
 ## Builds to test
 
@@ -16,7 +25,10 @@ npm run build:watch:firefox:mv3   # MV3. `build:firefox` is MV2 and has no DNR r
 Firefox MV3 is the only build that gets **both** tracker blocking and containers, so it is the one
 to demo. Chrome gets everything except containers.
 
-Point the extension at the Phase 0 Vaultwarden and register a test account first.
+Point the extension at the Phase 0 Vaultwarden and register a test account first. The server must
+be HTTPS: the self-hosted form on the login screen refuses plain-HTTP URLs ("URLs must use HTTPS").
+`scripts/validate-black-mask-chromium.js --server <url>` automates the account setup and most
+logged-in checks below in Chromium.
 
 The builds above are development builds, and they load `apps/browser/config/development.json`.
 Two of its dev flags change first install: `managedEnvironment` switches the extension to
@@ -60,14 +72,18 @@ Expect them in the service worker's network tab; any _other_ `bitwarden.com` req
 Serving the list from a Black Mask origin would remove the exception, but that is a code change, not
 done yet.
 
-**Not an exception — a leftover to fix.** Production builds (`NODE_ENV=production`, e.g.
+**The welcome tab stays inside the extension.** Production builds (`NODE_ENV=production`, e.g.
 `npm run build:prod:chrome` or `npm run dist:chrome`, whether loaded unpacked or installed from a
-store) open a tab to `https://bitwarden.com/browser-start/` on first install (`WELCOME_PAGE_URL` in
-`apps/browser/src/platform/services/browser-initial-install.service.ts`). The development builds
-listed under [Builds to test](#builds-to-test) skip it, because `apps/browser/config/development.json`
-sets the `skipWelcomeOnInstall` dev flag — so catching it takes a fresh install of a production
-build. It is a navigation in a new tab, not a background fetch, so the extension's devtools network
-tab does not show it; record it as a failure of this check until the welcome page is repointed.
+store) open a tab on first install. It used to go to `https://bitwarden.com/browser-start/`; it now
+opens the bundled welcome page, `popup/index.html#/welcome` (`WELCOME_PAGE_PATH` in
+`apps/browser/src/platform/services/browser-initial-install.service.ts`), which needs no account
+and makes no requests. The development builds listed under [Builds to test](#builds-to-test) skip
+the tab, because `apps/browser/config/development.json` sets the `skipWelcomeOnInstall` dev flag —
+so checking it takes a fresh install of a production build. It is a navigation in a new tab, not a
+background fetch, so the extension's devtools network tab does not show it.
+
+- [ ] A fresh install of a production build opens **Welcome to Black Mask** in a new tab, and no
+      tab outside the extension.
 
 ### Tracker detection _(Chrome + Firefox MV3)_
 
@@ -106,8 +122,9 @@ tab does not show it; record it as a failure of this check until the welcome pag
 
 ### Data exposure
 
-- [ ] Returns real breach data. This requires `HIBP_API_KEY` on the Vaultwarden deployment —
-      without it the page degrades to an error card and the feature is dead on arrival.
+- [ ] Returns real breach data. This requires `HIBP_API_KEY` on the Vaultwarden deployment.
+- [ ] Without the key, the page says breach lookup isn't set up on this server. Vaultwarden answers
+      with a placeholder "Manual HIBP Check" entry; it must never be shown as a breach.
 
 ### AI media detector
 
@@ -117,8 +134,10 @@ tab does not show it; record it as a failure of this check until the welcome pag
 
 ### Phishing protection
 
-- [ ] Reports **Available**, not "Unavailable". If it still says unavailable, the upstream
-      `phishing-detection` flag is off — it gates the engine independently of the Black Mask flag.
+- [ ] Reports **Available**, not "Unavailable", for a logged-in account **without** premium. If it
+      says unavailable, check that you are logged in, that the build is not Safari, and that the
+      server's `/config` has not turned the upstream `phishing-detection` flag off — that flag gates
+      the engine independently of the Black Mask flag.
 
 ### Desktop integration permission
 

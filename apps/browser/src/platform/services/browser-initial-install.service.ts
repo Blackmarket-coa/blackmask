@@ -11,7 +11,11 @@ import {
 import { BrowserApi } from "../browser/browser-api";
 import { ExtensionInstallType } from "../browser/extension-install-type";
 
-const WELCOME_PAGE_URL = "https://bitwarden.com/browser-start/";
+/**
+ * The Black Mask welcome page, bundled with the extension (an unguarded popup route), so first
+ * install opens nothing outside the extension.
+ */
+const WELCOME_PAGE_PATH = "popup/index.html#/welcome";
 
 const EXTENSION_INSTALLED = new KeyDefinition<boolean>(
   EXTENSION_INITIAL_INSTALL_DISK,
@@ -54,7 +58,7 @@ export default class BrowserInitialInstallService {
       installType === ExtensionInstallType.Unknown;
 
     if (isUserInitiatedInstall && !devFlagEnabled("skipWelcomeOnInstall")) {
-      void BrowserApi.createNewTab(WELCOME_PAGE_URL);
+      void BrowserApi.createNewTab(BrowserApi.getRuntimeURL(WELCOME_PAGE_PATH));
     }
   }
 }

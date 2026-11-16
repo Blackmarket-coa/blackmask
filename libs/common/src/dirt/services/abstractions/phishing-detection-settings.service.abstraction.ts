@@ -9,13 +9,9 @@ export abstract class PhishingDetectionSettingsServiceAbstraction {
   /**
    * An observable for whether phishing detection is available for the active user account.
    *
-   * Access is granted only when the PhishingDetection feature flag is enabled and
-   * at least one of the following is true for the active account:
-   * - the user has a personal premium subscription
-   * - the user is a member of a Family org (ProductTierType.Families)
-   * - the user is a member of an Enterprise org with `usePhishingBlocker` enabled
-   *
-   * Note: Non-specified organization types (e.g., Team orgs) do not grant access.
+   * True when there is an active account and the PhishingDetection feature flag is enabled.
+   * Always false on Safari. No subscription or organization is required: in Black Mask,
+   * phishing protection is core safety and only enhanced features are premium.
    */
   abstract readonly available$: Observable<boolean>;
   /**

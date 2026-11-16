@@ -11,21 +11,26 @@ media detector).
 
 ## Summary
 
-| Feature                     | Route                          | Feature flag                     | Landed in                                                     |
-| --------------------------- | ------------------------------ | -------------------------------- | ------------------------------------------------------------- |
-| Privacy dashboard & score   | `/privacy-dashboard`           | `black-mask-privacy-dashboard`   | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2), #3 |
-| Persona vault               | `/personas`, `/create-persona` | `black-mask-persona-vault`       | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2)     |
-| Tracker detection           | `/trackers`                    | `black-mask-tracker-detection`   | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2), #3 |
-| Fingerprint exposure test   | `/fingerprint`                 | `black-mask-fingerprint-test`    | [#3](https://github.com/Blackmarket-coa/blackmask/pull/3)     |
-| Data exposure dashboard     | `/data-exposure`               | `black-mask-data-exposure`       | [#4](https://github.com/Blackmarket-coa/blackmask/pull/4)     |
-| Per-persona containers      | `/persona-containers`          | `black-mask-persona-containers`  | [#5](https://github.com/Blackmarket-coa/blackmask/pull/5)     |
-| Phishing protection surface | `/phishing-protection`         | `black-mask-phishing-protection` | [#6](https://github.com/Blackmarket-coa/blackmask/pull/6)     |
-| AI-generated media detector | `/ai-media-detector`           | `black-mask-ai-media-detector`   | [#7](https://github.com/Blackmarket-coa/blackmask/pull/7)     |
+| Feature                      | Route                                           | Feature flag                     | Landed in                                                                                                              |
+| ---------------------------- | ----------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Privacy dashboard & score    | `/privacy-dashboard`                            | `black-mask-privacy-dashboard`   | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2), #3                                                          |
+| Persona vault                | `/personas`, `/create-persona`, `/edit-persona` | `black-mask-persona-vault`       | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2), [#11](https://github.com/Blackmarket-coa/blackmask/pull/11) |
+| Tracker detection            | `/trackers`                                     | `black-mask-tracker-detection`   | [#2](https://github.com/Blackmarket-coa/blackmask/pull/2), #3                                                          |
+| Fingerprint exposure test    | `/fingerprint`                                  | `black-mask-fingerprint-test`    | [#3](https://github.com/Blackmarket-coa/blackmask/pull/3)                                                              |
+| Data exposure dashboard      | `/data-exposure`                                | `black-mask-data-exposure`       | [#4](https://github.com/Blackmarket-coa/blackmask/pull/4)                                                              |
+| Per-persona containers       | `/persona-containers`                           | `black-mask-persona-containers`  | [#5](https://github.com/Blackmarket-coa/blackmask/pull/5)                                                              |
+| Phishing protection surface  | `/phishing-protection`                          | `black-mask-phishing-protection` | [#6](https://github.com/Blackmarket-coa/blackmask/pull/6)                                                              |
+| AI-generated media detector  | `/ai-media-detector`                            | `black-mask-ai-media-detector`   | [#7](https://github.com/Blackmarket-coa/blackmask/pull/7)                                                              |
+| Welcome page (first install) | `/welcome`                                      | none                             | [#15](https://github.com/Blackmarket-coa/blackmask/pull/15)                                                            |
 
 Every route is registered in `apps/browser/src/popup/app-routing.module.ts`, guarded by
 `authGuard` + `canAccessFeature(<flag>)`, and reachable from a matching entry on the extension's
 **Settings** page (`apps/browser/src/tools/popup/settings/settings-v2.component.ts`), which is
-itself hidden unless the corresponding flag is on.
+itself hidden unless the corresponding flag is on. The exception is `/welcome`: it has no guard and
+no flag, because first install opens it in a tab before any account exists
+(`apps/browser/src/platform/services/browser-initial-install.service.ts`). It says what Black Mask
+blocks, what it only measures and what it cannot do, then hands off to signup or login
+(`apps/browser/src/privacy/popup/welcome.component.ts`, tested by `welcome.component.spec.ts`).
 
 ## Feature flags — and how to turn them on
 
@@ -179,9 +184,11 @@ closed: an unreadable preference warns rather than claims separation it could no
 existing pipeline. Alias generation goes only to the user's configured forwarder.
 
 **Limitations.** Bio/avatar generation (backend inference) is not wired — those are sibling-repo
-contracts.
+contracts. `cipherViews$` emits `null` while the vault re-decrypts after a save, so the persona list
+and the account audit filter those emissions out; without that the list went blank after creating a
+persona until the popup was reopened.
 
-**Tests.** `persona.service.spec.ts` (17).
+**Tests.** `persona.service.spec.ts` (18).
 
 ---
 
@@ -255,10 +262,14 @@ response.
 user's own backend — never a third party. No breach data or email is logged. Password-exposure
 checking (k-anonymity) is deliberately out of scope here (it belongs to the account audit).
 
-**Limitations.** Self-hosted Vaultwarden may not implement `/hibp/breach`; the page degrades to an
-error card. The richer backend "exposure index" from the plan is a sibling-service contract.
+**Limitations.** Real breach data needs `HIBP_API_KEY` on the Vaultwarden deployment. Without it,
+Vaultwarden answers `/hibp/breach` with a placeholder entry ("Manual HIBP Check", data class
+`Error - No API key set!`) instead of an error. `isLookupNotConfigured` recognizes it and the page
+says breach lookup isn't set up on this server, rather than reporting the placeholder as a breach.
+Any other failure shows the error card. The richer backend "exposure index" from the plan is a
+sibling-service contract.
 
-**Tests.** `data-exposure.spec.ts` (5).
+**Tests.** `data-exposure.spec.ts` (7), `data-exposure.service.spec.ts` (2).
 
 ---
 
@@ -277,10 +288,13 @@ settings abstraction (`PhishingDetectionSettingsServiceAbstraction`: `available$
 **Privacy posture.** Detection runs locally against a downloaded blocklist; this page adds no new
 detection and sends nothing about visited sites anywhere.
 
-**Limitations.** The engine's `available$` is gated by the separate upstream `phishing-detection`
-flag (and returns unavailable on Safari), so the page honestly reports "Unavailable" until that
-flag is delivered too. A live "is the current tab phishing?" indicator would need a new background
-message handler — an explicit follow-up.
+**Limitations.** The engine's `available$` needs an active account and the upstream
+`phishing-detection` flag (on by default here), and is always false on Safari. Upstream also
+required personal premium or a Families/Enterprise organization; Black Mask removed that
+requirement, because phishing protection is core safety and only enhanced features are premium. The
+blocklist still downloads from Bitwarden's servers (see the
+[Environment checks](./browser-validation.md#environment)). A live "is the current tab phishing?"
+indicator would need a new background message handler — an explicit follow-up.
 
 **Tests.** `phishing-protection.spec.ts` (3).
 

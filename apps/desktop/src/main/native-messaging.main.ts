@@ -141,15 +141,19 @@ export class NativeMessagingMain {
   }
 
   private async generateFirefoxJson(binaryPath: string) {
+    // Bitwarden's Firefox extension id previously sat here, which would have let their
+    // extension talk to a Black Mask desktop app. Add Black Mask's own id from
+    // browser_specific_settings once the add-on is published.
+    // Typed explicitly: a bare `[]` in the object literal is an implicit any[] (TS7018), which
+    // fails the desktop main-process build.
+    const allowedExtensions: string[] = [];
+
     return {
       name: "app.blackmask.desktop",
       description: "Black Mask desktop <-> browser bridge",
       path: binaryPath,
       type: "stdio",
-      // Bitwarden's Firefox extension id previously sat here, which would have let their
-      // extension talk to a Black Mask desktop app. Replace with Black Mask's own id from
-      // browser_specific_settings once the add-on is published.
-      allowed_extensions: [],
+      allowed_extensions: allowedExtensions,
     };
   }
 
