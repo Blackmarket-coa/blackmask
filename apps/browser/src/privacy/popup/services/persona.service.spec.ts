@@ -1,6 +1,6 @@
 import { TestBed } from "@angular/core/testing";
 import { mock, MockProxy } from "jest-mock-extended";
-import { firstValueFrom, of } from "rxjs";
+import { firstValueFrom, of, Subject } from "rxjs";
 
 import { Account, AccountService } from "@bitwarden/common/auth/abstractions/account.service";
 import { VendorId } from "@bitwarden/common/tools/extension";
@@ -21,6 +21,7 @@ import {
 
 import {
   PERSONA_LAYER_FIELD_NAME,
+  Persona,
   PersonaLayer,
   PersonaNotEditableError,
   PersonaService,
@@ -292,6 +293,33 @@ describe("PersonaService", () => {
 
       expect(personas).toEqual([
         { id: "p1", name: "Jane", layer: PersonaLayer.Anonymous, email: "jane@example.com" },
+      ]);
+    });
+
+    it("keeps streaming when the vault briefly clears its decrypted ciphers after a save", () => {
+      const ciphers$ = new Subject<CipherView[]>();
+      cipherService.cipherViews$.mockReturnValue(ciphers$);
+      const emitted: Persona[][] = [];
+      const errors: unknown[] = [];
+      const subscription = service.personas$().subscribe({
+        next: (personas) => emitted.push(personas),
+        error: (error: unknown) => errors.push(error),
+      });
+
+      ciphers$.next([personaCipher("p1", "Jane", PersonaLayer.Real)]);
+      // The abstraction types cipherViews$ as non-null, but the implementation emits null while
+      // decrypted ciphers are cleared (libs/common/src/vault/services/cipher.service.ts).
+      ciphers$.next(null as unknown as CipherView[]);
+      ciphers$.next([
+        personaCipher("p1", "Jane", PersonaLayer.Real),
+        personaCipher("p2", "Sam", PersonaLayer.Creator),
+      ]);
+      subscription.unsubscribe();
+
+      expect(errors).toEqual([]);
+      expect(emitted.map((list) => list.map((persona) => persona.id))).toEqual([
+        ["p1"],
+        ["p1", "p2"],
       ]);
     });
   });

@@ -7,6 +7,7 @@ import { PasswordStrengthServiceAbstraction } from "@bitwarden/common/tools/pass
 import { CipherService } from "@bitwarden/common/vault/abstractions/cipher.service";
 import { CipherType } from "@bitwarden/common/vault/enums";
 import { CipherView } from "@bitwarden/common/vault/models/view/cipher.view";
+import { filterOutNullish } from "@bitwarden/common/vault/utils/observable-utilities";
 
 import {
   TwoFactorLogin,
@@ -43,7 +44,8 @@ export class AccountAuditService {
   accountAudit$(): Observable<AccountAuditSummary> {
     return this.accountService.activeAccount$.pipe(
       getUserId,
-      switchMap((userId) => this.cipherService.cipherViews$(userId)),
+      // cipherViews$ emits null while decrypted ciphers are cleared after a vault change.
+      switchMap((userId) => this.cipherService.cipherViews$(userId).pipe(filterOutNullish())),
       map((ciphers) => this.summarize(ciphers)),
     );
   }
