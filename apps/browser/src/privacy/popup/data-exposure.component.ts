@@ -7,11 +7,11 @@ import { ButtonModule, CardComponent } from "@bitwarden/components";
 import { PopOutComponent } from "../../platform/popup/components/pop-out.component";
 import { PopupHeaderComponent } from "../../platform/popup/layout/popup-header.component";
 import { PopupPageComponent } from "../../platform/popup/layout/popup-page.component";
-import { DataExposureSummary } from "../data-exposure";
+import { BreachLookupNotConfiguredError, DataExposureSummary } from "../data-exposure";
 
 import { DataExposureService } from "./services/data-exposure.service";
 
-type CheckStatus = "idle" | "loading" | "error";
+type CheckStatus = "idle" | "loading" | "error" | "notConfigured";
 
 /**
  * Black Mask data-exposure dashboard (M4). Checks the account email against the breach database and
@@ -51,8 +51,8 @@ export class DataExposureComponent {
     try {
       this.result.set(await this.dataExposureService.checkBreaches(email));
       this.status.set("idle");
-    } catch {
-      this.status.set("error");
+    } catch (error) {
+      this.status.set(error instanceof BreachLookupNotConfiguredError ? "notConfigured" : "error");
     }
   }
 }

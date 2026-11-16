@@ -25,6 +25,27 @@ export interface DataExposureSummary {
   items: BreachSummaryItem[];
 }
 
+/**
+ * The data class on the placeholder Vaultwarden returns instead of breach data when the server has
+ * no Have I Been Pwned API key ("Manual HIBP Check", pwnCount 0). The placeholder is not a breach.
+ */
+export const LOOKUP_NOT_CONFIGURED_DATA_CLASS = "Error - No API key set!";
+
+/** The server cannot look up breaches, so the account was not checked. */
+export class BreachLookupNotConfiguredError extends Error {
+  constructor() {
+    super("Breach lookup is not configured on this server");
+    this.name = "BreachLookupNotConfiguredError";
+  }
+}
+
+/** True when the server answered with its "no API key" placeholder instead of breach data. */
+export function isLookupNotConfigured(
+  breaches: readonly Pick<BreachSummaryItem, "dataClasses">[],
+): boolean {
+  return breaches.some((breach) => breach.dataClasses.includes(LOOKUP_NOT_CONFIGURED_DATA_CLASS));
+}
+
 /** Aggregates a set of breaches into the dashboard summary. */
 export function summarizeBreaches(breaches: readonly BreachSummaryItem[]): DataExposureSummary {
   const dataClasses = new Set<string>();

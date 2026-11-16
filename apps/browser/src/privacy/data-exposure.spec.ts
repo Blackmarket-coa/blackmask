@@ -1,4 +1,9 @@
-import { BreachSummaryItem, summarizeBreaches } from "./data-exposure";
+import {
+  BreachSummaryItem,
+  LOOKUP_NOT_CONFIGURED_DATA_CLASS,
+  isLookupNotConfigured,
+  summarizeBreaches,
+} from "./data-exposure";
 
 function breach(overrides: Partial<BreachSummaryItem> = {}): BreachSummaryItem {
   return {
@@ -56,5 +61,26 @@ describe("summarizeBreaches", () => {
     ]);
 
     expect(result.items.map((item) => item.name)).toEqual(["New", "Mid", "Old"]);
+  });
+});
+
+describe("isLookupNotConfigured", () => {
+  // What Vaultwarden 1.37.5 returns from /api/hibp/breach when HIBP_API_KEY is not set.
+  const vaultwardenPlaceholder = breach({
+    name: "HaveIBeenPwned",
+    title: "Manual HIBP Check",
+    domain: "haveibeenpwned.com",
+    breachDate: "2019-08-18T00:00:00Z",
+    pwnCount: 0,
+    dataClasses: [LOOKUP_NOT_CONFIGURED_DATA_CLASS],
+  });
+
+  it("recognizes the server's no-API-key placeholder", () => {
+    expect(isLookupNotConfigured([vaultwardenPlaceholder])).toBe(true);
+  });
+
+  it("is false for real breaches and for no breaches", () => {
+    expect(isLookupNotConfigured([breach(), breach({ name: "Other" })])).toBe(false);
+    expect(isLookupNotConfigured([])).toBe(false);
   });
 });

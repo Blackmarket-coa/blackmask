@@ -28,6 +28,12 @@
     </bit-card>
   }
 
+  @if (status() === "notConfigured") {
+    <bit-card>
+      <p class="tw-mb-0">{{ "blackMaskExposureNotConfigured" | i18n }}</p>
+    </bit-card>
+  }
+
   @if (result(); as summary) {
     @if (summary.breachCount === 0) {
       <bit-card>

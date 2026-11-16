@@ -7169,5 +7169,8 @@
   },
   "blackMaskWelcomeNextStep": {
     "message": "Pin Black Mask to your toolbar, then create an account or log in. To use your own server, open the server menu on the login screen and choose Self-hosted."
+  },
+  "blackMaskExposureNotConfigured": {
+    "message": "Breach lookup isn't set up on this server, so your email wasn't checked. The server owner can turn it on with a Have I Been Pwned API key."
   }
 }
