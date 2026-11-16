@@ -1693,10 +1693,8 @@ export default class MainBackground {
 
     this.phishingDetectionSettingsService = new PhishingDetectionSettingsService(
       this.accountService,
-      this.billingAccountProfileStateService,
       this.configService,
       this.logService,
-      this.organizationService,
       this.platformUtilsService,
       this.stateProvider,
     );
