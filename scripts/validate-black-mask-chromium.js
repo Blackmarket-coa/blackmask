@@ -16,7 +16,13 @@
  * With --server it also creates a synthetic account on that server through the UI and walks the
  * logged-in checks: vault item and sync (from a second profile), privacy dashboard, fingerprint
  * test, trackers page, personas, data exposure, containers notice, phishing, AI detector page,
- * account security and lock.
+ * account security, Send (text, file, view limit, password, delete), attachments, export, lock
+ * and unlock, and log out.
+ *
+ * Send links are opened the way a recipient would: in a tab with no account, on the web vault the
+ * server itself serves. With --server-data (the test server's data folder, when it is on this
+ * machine) the run also reads the stored attachment and Send files and checks they are not
+ * plaintext.
  *
  * The run is hermetic: every hostname except localhost and the --server host resolves to
  * NOTFOUND, so nothing else leaves the machine. Blocking still shows up as ERR_BLOCKED_BY_CLIENT
@@ -24,7 +30,8 @@
  *
  * Usage:
  *   node scripts/validate-black-mask-chromium.js [--extension <dir>] [--out <dir>]
- *     [--chromium <path>] [--server <https url> [--trust-spki <base64>] [--email <e>] [--password <p>]]
+ *     [--chromium <path>] [--server <https url> [--trust-spki <base64>] [--server-data <dir>]
+ *     [--email <e>] [--password <p>]]
  *
  * Build the extension first (e.g. `npm run build:prod:chrome` in apps/browser). --chromium (or
  * CHROMIUM_PATH) points at a full Chromium binary when Playwright's bundled browser does not match
@@ -84,6 +91,9 @@ function parseArgs(argv) {
     // Base64 SHA-256 of the server certificate's SPKI, for a self-signed test server. Chromium
     // then trusts that one key, rather than ignoring certificate errors in general.
     "trust-spki": null,
+    // The test server's data folder, when it is on this machine. Lets the run read the stored
+    // attachment and Send files and check that they are ciphertext.
+    "server-data": null,
     // A fresh synthetic account per run, so re-runs against the same server never collide.
     email: `bm-validation-${Date.now()}@example.com`,
     password: "correct-horse-battery-staple-2026",
@@ -97,7 +107,39 @@ function parseArgs(argv) {
   }
   args.extension = path.resolve(args.extension);
   args.out = path.resolve(args.out ?? fs.mkdtempSync(path.join(os.tmpdir(), "bm-validation-")));
+  if (args["server-data"]) {
+    args["server-data"] = path.resolve(args["server-data"]);
+  }
   return args;
+}
+
+/**
+ * A fresh profile with Developer mode on. Chrome disables an unpacked extension when it reloads
+ * itself unless Developer mode is on (chrome://extensions-internals then lists the disable reason
+ * DISABLE_UNSUPPORTED_DEVELOPER_EXTENSION). Locking and logging out reload the extension to clear
+ * secrets from memory, so without this the extension never comes back after either. A person
+ * loading an unpacked build has Developer mode on already; a store install is not affected.
+ */
+function newProfile(prefix) {
+  const profileDir = fs.mkdtempSync(path.join(os.tmpdir(), prefix));
+  fs.mkdirSync(path.join(profileDir, "Default"), { recursive: true });
+  fs.writeFileSync(
+    path.join(profileDir, "Default", "Preferences"),
+    JSON.stringify({ extensions: { ui: { developer_mode: true } } }),
+  );
+  return profileDir;
+}
+
+/** Every file under a folder, or none if the folder does not exist. */
+function filesUnder(dir) {
+  if (!fs.existsSync(dir)) {
+    return [];
+  }
+  return fs
+    .readdirSync(dir, { withFileTypes: true })
+    .flatMap((entry) =>
+      entry.isDirectory() ? filesUnder(path.join(dir, entry.name)) : [path.join(dir, entry.name)],
+    );
 }
 
 function check(results, id, title, status, evidence) {
@@ -386,6 +428,12 @@ async function browserChecks(context, args, results, mark, msg) {
 const ITEM_NAME = "Black Mask validation login";
 const PERSONA_NAME = "Validation persona";
 const PERSONA_LAYER_FIELD = "Black Mask Layer";
+const ITEM_PASSWORD = "Validation-Password-2026";
+const TEXT_SEND_NAME = "Validation text Send";
+const SEND_PASSWORD = "send-password-2026";
+// A recognizable string for text and files that leave the browser. The run checks that it reaches
+// a recipient intact and never appears in what the server stores.
+const PLAINTEXT_MARKER = "BM-PLAINTEXT-MARKER-7f3a9c";
 
 /**
  * Logged-in checks against a server you control (--server). Creates a synthetic account through
@@ -471,6 +519,156 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
     await open("login");
     await enterCredentials(page);
   };
+  /**
+   * Opens a route that has a file picker. On Linux and macOS the popup will not show one and
+   * moves to a pop-out window instead; loading the pop-out URL directly keeps the run in one tab.
+   */
+  const openPopout = async (popoutRoute) => {
+    await reopenIfClosed();
+    await page.goto(`${popupUrl}?uilocation=popout#/${popoutRoute}`);
+    await page.locator("input[type='file']").waitFor({ state: "attached", timeout: 30000 });
+    await sleep(1500);
+  };
+  /** Chrome's own record of the extension: how it was loaded and why it is disabled, if it is. */
+  const extensionState = async () => {
+    const tab = await context.newPage();
+    try {
+      await tab.goto("chrome://extensions-internals/", { timeout: 15000 });
+      const entries = JSON.parse(await tab.evaluate(() => document.body.innerText));
+      const entry = entries.find((e) => e.id === extensionId);
+      return entry
+        ? { location: entry.location, disable_reasons: entry.disable_reasons }
+        : { listed: false };
+    } catch (error) {
+      return { error: String(error).slice(0, 200) };
+    } finally {
+      await tab.close().catch(() => undefined);
+    }
+  };
+
+  const plainFile = path.join(args.out, "validation-attachment.txt");
+  fs.writeFileSync(plainFile, `${PLAINTEXT_MARKER}\n`.repeat(200));
+  /** What the server holds under a data subfolder, when --server-data makes it readable. */
+  const storedOnServer = (subfolder) => {
+    if (!args["server-data"]) {
+      return { checked: false, reason: "no --server-data" };
+    }
+    const files = filesUnder(path.join(args["server-data"], subfolder));
+    const plaintext = files.filter((file) => fs.readFileSync(file).includes(PLAINTEXT_MARKER));
+    return { checked: true, files: files.length, filesContainingPlaintext: plaintext.length };
+  };
+  const ciphertextOnly = (stored) =>
+    !stored.checked || (stored.files > 0 && stored.filesContainingPlaintext === 0);
+
+  const copiedSendLinks = new Set();
+  /** Clicks Copy link and returns what reached the clipboard. */
+  const copySendLink = async () => {
+    await page.bringToFront();
+    await page
+      .getByRole("button", { name: msg("copyLink") })
+      .first()
+      .click();
+    // MV3 copies through an offscreen document, so the link arrives a moment later; until then
+    // the clipboard may still hold the previous Send's link.
+    for (let i = 0; i < 30; i++) {
+      await sleep(500);
+      const copied = await page.evaluate(() => navigator.clipboard.readText()).catch(() => "");
+      if (copied.includes("#/send/") && !copiedSendLinks.has(copied)) {
+        copiedSendLinks.add(copied);
+        return copied;
+      }
+    }
+    throw new Error("The Send link never reached the clipboard");
+  };
+  /** Creates a Send through the popup and returns its link. A `file` makes it a file Send. */
+  const createSend = async ({ name, body, file, maxViews, password }) => {
+    if (file) {
+      await openPopout("add-send?type=1");
+      await page.locator("input[type='file']").setInputFiles(file);
+    } else {
+      await open("add-send?type=0");
+      await page.locator("#text").fill(body);
+    }
+    await page.locator("input[formcontrolname='name']").fill(name);
+    if (maxViews) {
+      await page.locator("#maxAccessCountInput").fill(String(maxViews));
+    }
+    if (password) {
+      await page.locator("bit-select[formcontrolname='authType']").click();
+      await page.getByRole("option", { name: msg("anyOneWithPassword"), exact: true }).click();
+      await page.locator("input[formcontrolname='password']").fill(password);
+    }
+    await page.getByRole("button", { name: msg("save"), exact: true }).click();
+    await page.getByText(msg("createdSendSuccessfully")).waitFor({ timeout: 60000 });
+    return copySendLink();
+  };
+  /**
+   * Opens a Send link as a recipient would: in a tab with no account, on the web vault the server
+   * serves. Returns what the page shows and the status codes the server gave it.
+   */
+  const viewAsRecipient = async (link, { password, downloadTo } = {}) => {
+    const tab = await context.newPage();
+    const serverResponses = [];
+    tab.on("response", (response) => {
+      const url = new URL(response.url());
+      if (url.pathname === "/identity/connect/token" || url.pathname.startsWith("/api/sends")) {
+        const shortPath = url.pathname.replace(/[0-9a-f-]{20,}/g, "<id>");
+        serverResponses.push(`${response.request().method()} ${shortPath} ${response.status()}`);
+      }
+    });
+    try {
+      await tab.goto(link);
+      await sleep(6000);
+      if (password) {
+        await tab.locator("input[type='password']").fill(password);
+        await tab.getByRole("button", { name: /continue/i }).click();
+        await sleep(5000);
+      }
+      let downloaded = false;
+      if (downloadTo) {
+        const download = tab.waitForEvent("download", { timeout: 30000 });
+        await tab
+          .getByRole("button", { name: /download/i })
+          .first()
+          .click();
+        await (await download).saveAs(downloadTo);
+        downloaded = true;
+      }
+      const shown = await tab.evaluate(() =>
+        [
+          document.body.innerText,
+          ...Array.from(document.querySelectorAll("input, textarea"), (control) => control.value),
+        ].join("\n"),
+      );
+      // The server lets a recipient in by answering the access call; anything else is a refusal.
+      const admitted = serverResponses.some((r) => /^POST \/api\/sends\/access 200$/.test(r));
+      return { shown: shown.replace(/\s+/g, " "), admitted, serverResponses, downloaded };
+    } finally {
+      await tab.close();
+    }
+  };
+  /** Exports the vault in one format and returns the file's contents. The file is not kept. */
+  const exportVault = async (formatLabel) => {
+    await open("export");
+    await page.locator("select[formcontrolname='format']").selectOption({ label: formatLabel });
+    await page
+      .locator(
+        "#export_form_exportForm button[type='submit'], button[type='submit'][form='export_form_exportForm']",
+      )
+      .first()
+      .click();
+    await page.locator("#masterPassword").fill(args.password);
+    const download = page.waitForEvent("download", { timeout: 30000 });
+    await page.getByRole("button", { name: msg("continue"), exact: true }).click();
+    const file = await download;
+    const saved = path.join(args.out, "vault-export.tmp");
+    await file.saveAs(saved);
+    const body = fs.readFileSync(saved, "utf8");
+    fs.rmSync(saved);
+    return { suggestedName: file.suggestedFilename(), body };
+  };
+  let loginCipherId = null;
+  let textSendLink = null;
 
   await run("SRV-01", "A self-hosted server can be chosen on the login screen", async () => {
     await open("login");
@@ -533,9 +731,11 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
         await page
           .getByLabel(/^password/i)
           .first()
-          .fill("Validation-Password-2026");
+          .fill(ITEM_PASSWORD);
         await page.getByRole("button", { name: msg("save"), exact: true }).click();
         await sleep(3000);
+        // Saving lands on the item's view, whose address carries the item's id.
+        loginCipherId = new URLSearchParams(route().split("?")[1] ?? "").get("cipherId");
         await open("tabs/vault");
         const listed = (await text()).includes(ITEM_NAME);
         return { status: listed ? "PASS" : "FAIL", evidence: { listed } };
@@ -712,7 +912,7 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
       async () => {
         // A separate browser and profile, so this proves the round trip through the server
         // without logging out (logout reloads the extension, like lock below).
-        const profileDir = fs.mkdtempSync(path.join(os.tmpdir(), "bm-second-profile-"));
+        const profileDir = newProfile("bm-second-profile-");
         const second = await chromium.launchPersistentContext(profileDir, {
           executablePath: args.chromium,
           headless: true,
@@ -752,8 +952,184 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
       },
     ],
     [
+      "SEND-01",
+      "A text Send can be created, and someone with no account can read it from its link",
+      async () => {
+        const body = `Text for the recipient ${PLAINTEXT_MARKER}`;
+        textSendLink = await createSend({ name: TEXT_SEND_NAME, body });
+        const view = await viewAsRecipient(textSendLink);
+        const readable = view.shown.includes(body);
+        return {
+          status: readable ? "PASS" : "FAIL",
+          evidence: {
+            // The link's fragment holds the Send's key, so only its shape is recorded.
+            linkOnServer: textSendLink.startsWith(`${args.server.replace(/\/$/, "")}/#/send/`),
+            readable,
+            // The recipient page names the sender's account unless "Hide my email" is ticked.
+            showsSenderEmail: view.shown.includes(args.email),
+            serverResponses: view.serverResponses,
+          },
+        };
+      },
+    ],
+    [
+      "SEND-02",
+      "A Send limited to one view opens once, and the server refuses the second view",
+      async () => {
+        const body = "Readable once only";
+        const link = await createSend({ name: "Validation single-view Send", body, maxViews: 1 });
+        const first = await viewAsRecipient(link);
+        const second = await viewAsRecipient(link);
+        const firstOpened = first.shown.includes(body);
+        const secondRefused = !second.admitted && !second.shown.includes(body);
+        return {
+          status: firstOpened && secondRefused ? "PASS" : "FAIL",
+          evidence: {
+            firstOpened,
+            secondRefused,
+            firstResponses: first.serverResponses,
+            secondResponses: second.serverResponses,
+          },
+        };
+      },
+    ],
+    [
+      "SEND-03",
+      "A password-protected Send stays closed without the right password and opens with it",
+      async () => {
+        const body = "Behind a password";
+        const link = await createSend({
+          name: "Validation password Send",
+          body,
+          password: SEND_PASSWORD,
+        });
+        const without = await viewAsRecipient(link);
+        const wrong = await viewAsRecipient(link, { password: "not-the-password" });
+        const right = await viewAsRecipient(link, { password: SEND_PASSWORD });
+        const closedWithout = !without.admitted && !without.shown.includes(body);
+        const closedWhenWrong = !wrong.admitted && !wrong.shown.includes(body);
+        const opensWhenRight = right.shown.includes(body);
+        return {
+          status: closedWithout && closedWhenWrong && opensWhenRight ? "PASS" : "FAIL",
+          evidence: {
+            closedWithout,
+            closedWhenWrong,
+            opensWhenRight,
+            responsesWithout: without.serverResponses,
+            responsesWhenWrong: wrong.serverResponses,
+            responsesWhenRight: right.serverResponses,
+          },
+        };
+      },
+    ],
+    [
+      "SEND-04",
+      "A file Send reaches a recipient intact, and the server stores it as ciphertext",
+      async () => {
+        const link = await createSend({ name: "Validation file Send", file: plainFile });
+        const received = path.join(args.out, "send-file-received.bin");
+        const view = await viewAsRecipient(link, { downloadTo: received });
+        const intact =
+          view.downloaded && fs.readFileSync(received).equals(fs.readFileSync(plainFile));
+        const stored = storedOnServer("sends");
+        return {
+          status: intact && ciphertextOnly(stored) ? "PASS" : "FAIL",
+          evidence: { intact, stored, serverResponses: view.serverResponses },
+        };
+      },
+    ],
+    [
+      "SEND-05",
+      "Deleting a Send closes its link",
+      async () => {
+        if (!textSendLink) {
+          throw new Error("SEND-01 produced no link to delete");
+        }
+        await open("tabs/send");
+        await page.getByText(TEXT_SEND_NAME, { exact: true }).first().click();
+        await page.waitForURL(/edit-send/, { timeout: 15000 });
+        await sleep(1500);
+        await page
+          .getByRole("button", { name: msg("delete"), exact: true })
+          .first()
+          .click();
+        await page.getByRole("button", { name: msg("yes"), exact: true }).click();
+        await sleep(3000);
+        const view = await viewAsRecipient(textSendLink);
+        const closed = !view.admitted && !view.shown.includes(PLAINTEXT_MARKER);
+        return {
+          status: closed ? "PASS" : "FAIL",
+          evidence: { closed, serverResponses: view.serverResponses },
+        };
+      },
+    ],
+    [
+      "ATT-01",
+      "An attachment uploads, downloads back intact, and is stored as ciphertext",
+      async () => {
+        if (!loginCipherId) {
+          throw new Error("VLT-01 did not yield the login item's id");
+        }
+        await openPopout(`attachments?cipherId=${loginCipherId}`);
+        await page.locator("input[type='file']").setInputFiles(plainFile);
+        await page.getByRole("button", { name: msg("upload"), exact: true }).click();
+        await sleep(6000);
+        await open(`view-cipher?cipherId=${loginCipherId}`, 4000);
+        const listed = (await text()).includes(path.basename(plainFile));
+        const download = page.waitForEvent("download", { timeout: 30000 });
+        await page.locator("app-download-attachment button").first().click();
+        const received = path.join(args.out, "attachment-received.bin");
+        await (await download).saveAs(received);
+        const intact = fs.readFileSync(received).equals(fs.readFileSync(plainFile));
+        const stored = storedOnServer("attachments");
+        return {
+          status: listed && intact && ciphertextOnly(stored) ? "PASS" : "FAIL",
+          evidence: { listed, intact, stored },
+        };
+      },
+    ],
+    [
+      "EXPORT-01",
+      "A JSON export contains the vault's items",
+      async () => {
+        const { suggestedName, body } = await exportVault(".json");
+        const parsed = JSON.parse(body);
+        const names = (parsed.items ?? []).map((item) => item.name);
+        const hasLogin = names.includes(ITEM_NAME);
+        const hasPersona = names.includes(PERSONA_NAME);
+        return {
+          status: parsed.encrypted === false && hasLogin && hasPersona ? "PASS" : "FAIL",
+          evidence: {
+            suggestedName,
+            encrypted: parsed.encrypted,
+            items: names.length,
+            hasLogin,
+            hasPersona,
+          },
+        };
+      },
+    ],
+    [
+      "EXPORT-02",
+      "An account-restricted encrypted export holds no readable item names or passwords",
+      async () => {
+        const { suggestedName, body } = await exportVault(".json (Encrypted)");
+        const parsed = JSON.parse(body);
+        const readable = [ITEM_NAME, PERSONA_NAME, ITEM_PASSWORD].filter((s) => body.includes(s));
+        return {
+          status: parsed.encrypted === true && readable.length === 0 ? "PASS" : "FAIL",
+          evidence: {
+            suggestedName,
+            encrypted: parsed.encrypted,
+            items: (parsed.items ?? []).length,
+            readableStrings: readable.length,
+          },
+        };
+      },
+    ],
+    [
       "LOCK-01",
-      "Lock now locks the vault and the master password unlocks it",
+      "Lock now locks the vault, and the master password unlocks it",
       async () => {
         await open("account-switcher");
         // Locking reloads the extension (chrome.runtime.reload) once every popup view has closed.
@@ -762,31 +1138,62 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
           url.hash.startsWith("#/lock"),
         );
         if (!(await restarted)) {
-          // Seen under headless automation with both --load-extension and CDP-loaded unpacked
-          // extensions: after the lock-triggered reload the extension never returns, although a
-          // direct chrome.runtime.reload() recovers in about two seconds. Report it as blocked,
-          // not as a product failure, and check lock and unlock by hand in Chrome.
-          const lockLogged = results.serviceWorkerConsole.some((line) =>
-            line.includes("[LockService] Locked user"),
-          );
           return {
-            status: "BLOCKED",
+            status: "FAIL",
             evidence: {
-              lockLogged,
-              reason:
-                "the extension did not come back within 45s of its lock-triggered reload; verify lock and unlock manually",
+              reason: "the extension did not restart within 45s of locking",
+              lockLogged: results.serviceWorkerConsole.some((line) =>
+                line.includes("[LockService] Locked user"),
+              ),
+              extensionState: await extensionState(),
             },
           };
         }
-        await open("lock", 4000);
-        const locked = route().startsWith("#/lock");
+        // A locked vault sends its pages to the lock screen and shows no items.
+        await open("tabs/vault", 4000);
+        const sentToLockScreen = route().startsWith("#/lock");
+        const itemShownWhileLocked = (await text()).includes(ITEM_NAME);
         await page
           .getByLabel(/master password/i)
           .first()
           .fill(args.password);
         await page.getByRole("button", { name: msg("unlock"), exact: true }).click();
         await page.waitForURL((url) => url.hash.startsWith("#/tabs/"), { timeout: 60000 });
-        return { status: locked ? "PASS" : "FAIL", evidence: { locked, unlockedTo: route() } };
+        await open("tabs/vault", 4000);
+        const itemBackAfterUnlock = (await text()).includes(ITEM_NAME);
+        return {
+          status:
+            sentToLockScreen && !itemShownWhileLocked && itemBackAfterUnlock ? "PASS" : "FAIL",
+          evidence: { sentToLockScreen, itemShownWhileLocked, itemBackAfterUnlock },
+        };
+      },
+    ],
+    [
+      "LOGOUT-01",
+      "Log out leaves the vault closed until someone logs in again",
+      async () => {
+        await open("account-switcher");
+        // Logging out reloads the extension too.
+        const restarted = waitForRestart();
+        await page.getByRole("button", { name: msg("logOut") }).click();
+        await clickAndSettle(
+          page.getByRole("button", { name: msg("yes"), exact: true }),
+          (url) => !url.hash.includes("account-switcher"),
+        );
+        const extensionRestarted = await restarted;
+        await open("tabs/vault", 4000);
+        const landedOn = route();
+        const vaultClosed = !landedOn.startsWith("#/tabs/") && !landedOn.startsWith("#/lock");
+        const itemShown = (await text()).includes(ITEM_NAME);
+        return {
+          status: vaultClosed && !itemShown ? "PASS" : "FAIL",
+          evidence: {
+            extensionRestarted,
+            landedOn,
+            itemShown,
+            ...(extensionRestarted ? {} : { extensionState: await extensionState() }),
+          },
+        };
       },
     ],
   ];
@@ -887,7 +1294,7 @@ async function main() {
   fs.mkdirSync(args.out, { recursive: true });
   step("baseline: running Chromium without the extension for 20s");
   const baseline = await baselineHosts(args);
-  const profileDir = fs.mkdtempSync(path.join(os.tmpdir(), "bm-profile-"));
+  const profileDir = newProfile("bm-profile-");
   const netLogPath = path.join(args.out, "netlog.json");
   const phases = [];
   const mark = (name) => phases.push({ name, at: Date.now() });

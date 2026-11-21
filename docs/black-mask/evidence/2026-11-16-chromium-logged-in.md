@@ -6,6 +6,11 @@ Vaultwarden. It does not cover Firefox, a store-installed build or the hosted se
 feature is in the [feature audit register](../feature-audit-register.md); the logged-out baseline from
 the day before is in [`2026-11-15-chromium-automated.md`](./2026-11-15-chromium-automated.md).
 
+> **Later evidence:** the [2026-11-21 run](./2026-11-21-chromium-vault-flows.md) explains the lock
+> result below (a Chromium rule for unpacked extensions, not a product defect), corrects the
+> direct-reload control in that section, and confirms what triggers the `api.pwnedpasswords.com`
+> request.
+
 ## Environment
 
 | Item     | Value                                                                                                                                                                  |

@@ -13,8 +13,10 @@ no records yet.
 [What the app plan relies on here](#what-the-2026-11-20-app-plan-relies-on-here) maps the plan onto
 these records.
 
-**Last updated 2026-11-21** (direction update and CI; no new browser run). Evidence:
+**Last updated 2026-11-21.** Evidence:
 
+- [Vault flows the app plan reuses](./evidence/2026-11-21-chromium-vault-flows.md) (2026-11-21):
+  Send, attachments, export, lock and unlock, log out; 37 of 39 checks pass.
 - [Automated Chromium run with a local Vaultwarden](./evidence/2026-11-16-chromium-logged-in.md)
   (2026-11-16): logged-out and logged-in checks, production build.
 - [Logged-out baseline](./evidence/2026-11-15-chromium-automated.md) (2026-11-15).
@@ -60,12 +62,12 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                         |
 | BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)             |
 | CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend                 |
-| CORE-02 | Lock, unlock, vault timeout          | **Blocked**             | Not run      | Blocked (LOCK-01)                      | Lock logged        | P1  | Check by hand in Chrome before release       |
-| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01)                 | Pass               | —   | Verify on the hosted backend                 |
+| CORE-02 | Lock, unlock, vault timeout          | Implemented, unverified | Not run      | Pass (LOCK-01, LOGOUT-01)              | n/a                | —   | Verify timeout, PIN and a store build        |
+| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01, ATT-01)         | Pass               | —   | Verify on the hosted backend                 |
 | CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
 | CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                       |
-| CORE-06 | Send                                 | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Keep; verify as the app's sharing base       |
-| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify export                                |
+| CORE-06 | Send                                 | Implemented, unverified | Not run      | Pass (SEND-01 to SEND-05)              | Pass               | P2  | Keep; decide the sender-email default        |
+| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Export pass (EXPORT-01, EXPORT-02)     | n/a                | —   | Verify import                                |
 | CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
 | CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the 11-20 payment rule            |
 | DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                                |
@@ -78,7 +80,7 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                    |
 | DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                        |
 | DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Keep green; decide on the desktop build gate |
-| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P2  | Disclose in the privacy policy               |
+| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P1  | Make it opt-in, or disclose before release   |
 
 ## What the 2026-11-20 app plan relies on here
 
@@ -86,17 +88,17 @@ The [app plan](./app-plan.md) reuses this repository's vault and privacy code in
 messenger. This table sets what the plan relies on against the records above. It holds no new test
 results.
 
-| What the plan relies on                             | Plan                 | Record           | Evidence today                                                                                                              |
-| --------------------------------------------------- | -------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| A vault that locks on its own while chats stay open | §6, Phase C          | CORE-02          | One lock covers the whole account, and lock and unlock is the one core flow that could not be verified                      |
-| Controlled sharing from the vault into a chat       | §4                   | CORE-06          | Send has not been run; file Sends check premium                                                                             |
-| Vault items, sync and recovery                      | §2, Phase C          | CORE-01, CORE-03 | Register, log in, create and sync pass on a local Vaultwarden; recovery and the hosted backend are unverified               |
-| Attachments as paid hosted storage                  | §10; monetization §6 | CORE-09          | Attachments check premium; there is no allowance, quota or billing                                                          |
-| The mask chooser under the profile button           | §7                   | BM-05            | Personas are vault records; nothing links one to a messaging identity                                                       |
-| The optional Inspect action for media               | §4, §8               | BM-10            | The page renders; the model has never been exercised                                                                        |
-| Destination checks for links in chats               | §8                   | BM-08            | The engine is browser-only, and its warning flow has not been exercised                                                     |
-| A server the project controls                       | Phases A and F       | DEP-01           | The default domain was unregistered as of 2026-09-25; not rechecked                                                         |
-| Chats, Spaces and the mobile shell                  | §3 to §5, Phases A–B | none             | No code in this repository. Messaging is to come from Blackout, which this register has not examined; the shell is new work |
+| What the plan relies on                             | Plan                 | Record           | Evidence today                                                                                                           |
+| --------------------------------------------------- | -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| A vault that locks on its own while chats stay open | §6, Phase C          | CORE-02          | One lock covers the whole account. Lock and unlock pass in Chromium (LOCK-01, 2026-11-21)                                |
+| Controlled sharing from the vault into a chat       | §4                   | CORE-06          | Send passes five checks in Chromium. It names the sender by default, and file Sends check premium                        |
+| Vault items, sync and recovery                      | §2, Phase C          | CORE-01, CORE-03 | Register, log in, create and sync pass on a local Vaultwarden; recovery and the hosted backend are unverified            |
+| Attachments as paid hosted storage                  | §10; monetization §6 | CORE-09          | Attachments work and are stored encrypted (ATT-01). They check premium; there is no allowance, quota or billing          |
+| The mask chooser under the profile button           | §7                   | BM-05            | Personas are vault records; nothing links one to a messaging identity                                                    |
+| The optional Inspect action for media               | §4, §8               | BM-10            | The page renders; the model has never been exercised                                                                     |
+| Destination checks for links in chats               | §8                   | BM-08            | The engine is browser-only, and its warning flow has not been exercised                                                  |
+| A server the project controls                       | Phases A and F       | DEP-01           | The default domain was unregistered as of 2026-09-25; not rechecked                                                      |
+| Chats, Spaces and the mobile shell                  | §3 to §5, Phases A–B | none             | No code in this repository. The [mobile shell brief](./mobile-shell-options.md) records what Blackout's repository holds |
 
 ## Black Mask features
 
@@ -238,15 +240,17 @@ against the intended backend (pillar A).
 
 ### CORE-02 · Lock, unlock, vault timeout
 
-- **Evidence:** LOCK-01 **blocked**. The lock happens (background log `[LockService] Locked user …`), but the extension never came back from the `chrome.runtime.reload()` that locking performs (`main.background.ts:1439-1447`): no new service worker within 60 seconds, pages `ERR_BLOCKED_BY_CLIENT`, with both `--load-extension` and CDP-loaded unpacked extensions. A direct reload recovers in about two seconds. Details in the evidence report.
-- **Why P1:** if this reproduces in real Chrome, locking would disable the extension until the browser restarts.
-- **Why it matters more after 2026-11-20:** the app plan's central boundary is a vault that locks on its own while chats stay open (§6, Phase C). Today one lock covers the whole account, and it is the one core flow this register could not verify.
-- **Disposition / gate:** Check lock, unlock and logout by hand in Chrome (unpacked and store build) before release / A. **Security approval:** Not reviewed.
+- **Evidence (2026-11-21):** LOCK-01 and LOGOUT-01 pass. Lock now locks the vault, the extension restarts, the vault page goes to the lock screen and shows no item, and the master password unlocks it. Log out leaves the extension on the login screen.
+- **Why it was blocked on 2026-11-16:** Chromium disables an unpacked extension that reloads itself unless Developer mode is on in the profile, and locking reloads the extension (`main.background.ts:1439-1447`). The test profile had Developer mode off. Chromium's own record showed the disable reason `DISABLE_UNSUPPORTED_DEVELOPER_EXTENSION`. It was a test-setup artifact, not a product defect, and it does not reach a store install. The earlier P1 is withdrawn.
+- **For the app plan:** its central boundary is a vault that locks on its own while chats stay open (§6, Phase C). Today one lock covers the whole account.
+- **Not run:** the automatic vault timeout, PIN and biometric unlock, branded Chrome, a store-installed build, Firefox.
+- **Disposition / gate:** Verify the timeout, PIN unlock and a store build / A. **Security approval:** Not reviewed.
 
 ### CORE-03 · Vault items and sync
 
 - **Evidence:** VLT-01 pass (item created and listed); SYNC-01 pass (a second fresh profile received the item from the server); the server's `/api/sync` lists the items.
-- **Observation:** saving the login item produced a request to `api.pwnedpasswords.com/range/<5-char SHA-1 prefix of the item password>` (DEP-11).
+- **Attachments (2026-11-21):** ATT-01 pass. A file uploaded from the item's attachments page, was listed on the item and downloaded back identical. The file the server stored did not contain the plaintext. Attachments check premium in the client (CORE-09).
+- **Observation:** viewing the login item produces a request to `api.pwnedpasswords.com/range/<5-char SHA-1 prefix of the item password>` (DEP-11).
 - **Disposition / gate:** Verify on the hosted backend / A. **Security approval:** Not reviewed.
 
 ### CORE-04 · Autofill — not run. Content scripts run on every http(s) and file page. Verify / A.
@@ -255,16 +259,27 @@ against the intended backend (pillar A).
 
 ### CORE-06 · Send
 
-- Not run, and not in the MVP scope table.
-- **Role after 2026-11-20:** the app plan (§2, §4) names Send as the base for controlled sharing from the vault into a chat. That settles the earlier keep-or-hide question.
+- **Role after 2026-11-20:** the app plan (§2, §4) names Send as the base for controlled sharing from the vault into a chat. That settles the earlier keep-or-hide question. It is not in the MVP scope table.
+- **Evidence (2026-11-21):** SEND-01 to SEND-05 pass, each checked from a recipient's side in a tab with no account.
+  - A text Send opens from its link.
+  - A one-view Send is refused the second time.
+  - A password Send stays closed without the right password.
+  - A file Send arrives intact, and the server stores it as ciphertext.
+  - Deleting a Send closes its link.
+- **Defect (P2): a Send names its sender.** The recipient page shows the sender's account email, and "Hide my email" is unticked by default. Sharing from the vault into a chat would reveal the vault account behind a mask.
+- **What the form can restrict:** a deletion date, a view limit, who can view (anyone with the link, specific people, or a password), hiding the sender's email, and a private note. There is no expiry separate from deletion and no way to disable a Send without deleting it. The app plan's wording assumes both.
+- **The recipient page comes from the server.** A link opens the web vault the server serves. The test server's bundled one says "Bitwarden member"; this repository's web vault says "Black Mask member". The hosted server must serve this repository's build.
 - File Sends check premium in the client (CORE-09).
-- **Disposition / gate:** Keep it, and verify expiry, deletion date, access limit, password and disable against the backend / G.
+- **Not run:** Sends for specific people (email verification), a deletion date passing, editing a Send.
+- **Disposition / gate:** Keep it. Decide the sender-email default before sharing is built on it / G.
 
 ### CORE-07 · Import and export
 
-- Not run. LastPass direct import contacts lastpass.com and identity providers on request.
+- **Export (2026-11-21):** EXPORT-01 and EXPORT-02 pass. The `.json` export asks for the master password and contains the vault's items. The account-restricted encrypted export holds no readable item name or password. The `.csv`, `.zip` and password-protected exports were not run.
+- **Import:** not run. LastPass direct import contacts lastpass.com and identity providers on request.
+- Export files are named `bitwarden_export_…` (DEP-07).
 - Standard import and export are in the free core under the 2026-11-20 payment rule.
-- **Disposition / gate:** Verify export (pillar G requires it) / G.
+- **Disposition / gate:** Verify import / G.
 
 ### CORE-08 · Self-hosted web vault — not run. `apps/web` builds in CI (`build-web.yml`); no Black Mask features. The local test server served Vaultwarden's own web vault, not this repo's. Verify / A.
 
@@ -318,7 +333,8 @@ against the intended backend (pillar A).
 - "Download Bitwarden apps" and "More from Bitwarden" are still in Settings.
 - Help links go to bitwarden.com/help.
 - The signup page links to bitwarden.com/terms, /privacy and /email-preferences (`libs/auth/src/angular/registration/registration-start/registration-start.component.html:35, 61, 70`).
-- Static evidence only.
+- Export files are named `bitwarden_export_<time>.json` and `bitwarden_encrypted_export_<time>.json` (seen in EXPORT-01 and EXPORT-02).
+- Static evidence only, apart from the export file names.
 - **Severity / effort:** P1 / M (misattribution; store-review and trademark risk). **Disposition:** Finish now: repoint or hide. **Gate:** G, H.
 
 ### DEP-08 · Brand palette
@@ -347,8 +363,12 @@ against the intended backend (pillar A).
 
 - After login the run saw two third-party hosts (ENV-04):
   - `assets.bitwarden.com`: the phishing feed (DEP-03).
-  - `api.pwnedpasswords.com`: the first five characters of an item password's SHA-1, Have I Been Pwned's k-anonymity range API. The only caller is the item form's Check password action (`libs/vault/src/cipher-form/components/login-details-section/login-details-section.component.ts:271-278`); the trigger in this run is unconfirmed.
-- **Severity / effort:** P2 / S. **Disposition:** Confirm the trigger; disclose both in the privacy policy. **Gate:** G.
+  - `api.pwnedpasswords.com`: the first five characters of an item password's SHA-1, Have I Been Pwned's k-anonymity range API.
+- **Trigger, confirmed 2026-11-21: viewing a login item.** No click is needed. `passwordIsAtRisk` in `libs/vault/src/cipher-view/cipher-view.component.ts` runs the check whenever the view opens on an editable personal login with a password, for an account with premium. Vaultwarden reports every account as premium, so there it runs for everyone. The NetLog shows one request per view of the item, initiated by the extension.
+- Read from the code and not tested: the "show at-risk password notifications" setting gates the link that follows the check, not the check itself.
+- The item form's Check password button makes the same request, but only when clicked.
+- **Why P1:** a privacy product sends something derived from a stored password to a third party during an ordinary action, and says so nowhere. The welcome page discloses the phishing list and not this.
+- **Severity / effort:** P1 / S. **Disposition:** Make the check opt-in, or disclose it at first use and in the privacy policy, before release. **Gate:** G.
 
 ## Documentation drift
 
@@ -366,10 +386,10 @@ Still open (code and docs disagree):
 
 ## Next steps for the register
 
-1. **Lock and unlock by hand** in Chrome, unpacked and store build (CORE-02, P1).
+1. **Decide two privacy defaults:** the breach check on item view (DEP-11, P1) and the sender's email on Sends (CORE-06, P2).
 2. **Firefox MV3:** containers (BM-06), blocking (BM-03), and a full pass of the logged-in items.
-3. **Remaining logged-in items:** persona custom fields and alias warning, the phishing warning flow, account-audit counts, autofill, export.
+3. **Remaining logged-in items:** persona custom fields and alias warning, the phishing warning flow, account-audit counts, autofill, import, the vault timeout and PIN unlock.
 4. **Bounded fixes:** BM-01 (score truthfulness) and DEP-07 (Bitwarden destinations).
 5. **Human gates:** DEP-01, DEP-05, DEP-09, and sign-off on the crypto-bigint ignore (DEP-10).
 6. **Payment rule:** decide, gate by gate, what is free core, hosted storage or a one-time enhancement (CORE-09).
-7. **App track:** Phase A of the app plan needs the owner's decisions on the mobile shell and where it lives, the vault and chat key boundaries, and identity linking. Records for the app start when its code exists.
+7. **App track:** Phase A of the app plan needs the owner's decisions on the mobile shell and where it lives, the vault and chat key boundaries, and identity linking. The [mobile shell brief](./mobile-shell-options.md) sets out the options and a recommendation. Records for the app start when its code exists.

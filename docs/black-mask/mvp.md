@@ -48,7 +48,7 @@ The product must provide immediate standalone value without Blackout, Coalition,
 
 The repository's feature reference describes these as implemented in browser-extension code: privacy dashboard and score; persona vault; tracker detection; fingerprint exposure test; data-exposure dashboard; Firefox persona containers; phishing protection surface; and an on-device AI-generated-media detector.
 
-**This is a code/documentation inventory, not a launch certification.** The browser-validation document records one automated Chromium pass (2026-11-16) and says that lock/unlock, the items not yet run and all of Firefox still need a person. Key qualifications:
+**This is a code/documentation inventory, not a launch certification.** The browser-validation document records the automated Chromium passes (latest 2026-11-21) and says that the items not yet run and all of Firefox still need a person. Key qualifications:
 
 - Tracker blocking currently uses a small curated 20-domain seed list, not comprehensive tracker protection.
 - Per-persona containers are Firefox-only; Chromium does not have equivalent implemented isolation.
@@ -62,7 +62,7 @@ The repository's feature reference describes these as implemented in browser-ext
 
 1. **Default server:** The repository says `vault.blackmask.app` was not live at the time of its launch-prerequisite audit. Verify present ownership, DNS, HTTPS, server operation, and a safe fallback before release. Do not ship a default login destination without controlling it.
 2. **Fresh-install redirect (resolved 2026-11-16):** A production install used to open a tab to `bitwarden.com/browser-start/`. It now opens a welcome page bundled with the extension, confirmed on a fresh production install in Chromium (ENV-02 and WEL-01 in the [2026-11-16 evidence](./evidence/2026-11-16-chromium-logged-in.md)). Firefox is still to be checked.
-3. **Real-browser testing:** Validate Chrome and Firefox MV3 behavior, network blocking, phishing warnings, personas, Firefox container separation, fingerprint probes, autofill, and sync. A first automated Chromium pass covered network blocking, personas, fingerprint probes and sync; the [feature audit register](./feature-audit-register.md) has the result per feature. Firefox, phishing warnings, autofill and lock/unlock are still to do.
+3. **Real-browser testing:** Validate Chrome and Firefox MV3 behavior, network blocking, phishing warnings, personas, Firefox container separation, fingerprint probes, autofill, and sync. Automated Chromium passes have covered network blocking, personas, fingerprint probes, sync, and lock and unlock; the [feature audit register](./feature-audit-register.md) has the result per feature. Firefox, phishing warnings and autofill are still to do.
 4. **Backend compatibility:** Test vault registration/login/sync and any exposure-lookup endpoint against the actual chosen backend; do not present unsupported backend capabilities as available.
 5. **Security/privacy review:** Review extension permissions, third-party network calls, telemetry, secrets, storage, error logs, update process, and the claims made in UI/store copy.
 6. **Distribution readiness:** Complete store disclosures, packaging, signing, accessibility and basic support documentation.

@@ -2,7 +2,7 @@
 
 > **Approved app direction (2026-11-20):** Start with [app-plan.md](app-plan.md) for the mobile messenger, private Spaces, separately locked Vault, feature catalogue, AI/cyber-defense requirements, and release sequence. It expands the earlier product scope while preserving the standalone browser/web release checks below. Planned app behavior is distinct from implemented or verified behavior.
 
-> **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-16 Chromium run](evidence/2026-11-16-chromium-logged-in.md): a production Chrome build passed 27 of 30 checks against a local Vaultwarden. Nothing is fully verified yet: Firefox, a store-installed build, the hosted backend and lock/unlock are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
+> **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-21 Chromium run](evidence/2026-11-21-chromium-vault-flows.md): a production Chrome build passed 37 of 39 checks against a local Vaultwarden, now including Send, attachments, export, and lock and unlock. Nothing is fully verified yet: Firefox, a store-installed build and the hosted backend are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
 
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
 the Bitwarden clients monorepo). Its mission: **give individuals the tools to understand, reduce, and
@@ -19,6 +19,7 @@ in _this codebase_.
 | Doc                                                                                    | What it is                                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`app-plan.md`](./app-plan.md)                                                         | **Canonical mobile app plan** — approved Chats / Spaces / Vault direction, source-backed feature catalogue, identity and security boundaries, onboarding, add-ons, and release acceptance criteria.                                   |
+| [`mobile-shell-options.md`](./mobile-shell-options.md)                                 | **Mobile shell decision brief** — options for the iOS and Android app, checked against this repository and Blackout's, with a recommendation and a proof of concept. Not decided.                                                     |
 | [`monetization-plan.md`](./monetization-plan.md)                                       | **Complete proposed revenue catalogue** — one-time enhancements, bundles, organization tools, marketplace sales, finite services, ecosystem commerce, sponsorships, donations and goods; hosted storage is the only recurring charge. |
 | [`problem-solution-map.md`](./problem-solution-map.md)                                 | **User problems and outcomes** — all 25 discussed problems, practical success criteria, privacy boundaries, and ecosystem roles.                                                                                                      |
 | [`user-earning-plan.md`](./user-earning-plan.md)                                       | **User income** — 16 earning paths, commissioning/publication/funded-task surfaces, connected commerce and delivery, settlement/privacy requirements, and the later storage-provider candidate.                                       |
@@ -48,13 +49,12 @@ states and an off-by-default flag would make every feature invisible in producti
 [`features.md`](./features.md) for what each feature does, where its code lives, and its
 limitations.
 
-Validation so far covers one environment. On 2026-11-16 a production Chrome build passed 27 of 30
+Validation so far covers one environment. On 2026-11-21 a production Chrome build passed 37 of 39
 automated checks in Chromium against a local Vaultwarden
-([evidence](./evidence/2026-11-16-chromium-logged-in.md)). That run leaves gaps, listed in the
-report: the phishing warning flow, the AI model download, real breach data, autofill and export
-among them. Firefox (containers included), a store-installed build, the hosted backend and
-lock/unlock have not been verified, so the [register](./feature-audit-register.md) marks no feature
-Verified. Work through [`browser-validation.md`](./browser-validation.md) before demoing or
+([evidence](./evidence/2026-11-21-chromium-vault-flows.md)). That run leaves gaps, listed in the
+report: the phishing warning flow, the AI model download, real breach data, autofill and import
+among them. Firefox (containers included), a store-installed build and the hosted backend have not
+been verified, so the [register](./feature-audit-register.md) marks no feature Verified. Work through [`browser-validation.md`](./browser-validation.md) before demoing or
 submitting to a store.
 
 Everything else in the feature → subsystem map (§3 of the execution plan) — the Android app,
