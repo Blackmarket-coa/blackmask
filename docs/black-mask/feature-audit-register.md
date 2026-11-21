@@ -88,17 +88,17 @@ The [app plan](./app-plan.md) reuses this repository's vault and privacy code in
 messenger. This table sets what the plan relies on against the records above. It holds no new test
 results.
 
-| What the plan relies on                             | Plan                 | Record           | Evidence today                                                                                                              |
-| --------------------------------------------------- | -------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| A vault that locks on its own while chats stay open | §6, Phase C          | CORE-02          | One lock covers the whole account. Lock and unlock pass in Chromium (LOCK-01, 2026-11-21)                                   |
-| Controlled sharing from the vault into a chat       | §4                   | CORE-06          | Send passes five checks in Chromium. It names the sender by default, and file Sends check premium                           |
-| Vault items, sync and recovery                      | §2, Phase C          | CORE-01, CORE-03 | Register, log in, create and sync pass on a local Vaultwarden; recovery and the hosted backend are unverified               |
-| Attachments as paid hosted storage                  | §10; monetization §6 | CORE-09          | Attachments work and are stored encrypted (ATT-01). They check premium; there is no allowance, quota or billing             |
-| The mask chooser under the profile button           | §7                   | BM-05            | Personas are vault records; nothing links one to a messaging identity                                                       |
-| The optional Inspect action for media               | §4, §8               | BM-10            | The page renders; the model has never been exercised                                                                        |
-| Destination checks for links in chats               | §8                   | BM-08            | The engine is browser-only, and its warning flow has not been exercised                                                     |
-| A server the project controls                       | Phases A and F       | DEP-01           | The default domain was unregistered as of 2026-09-25; not rechecked                                                         |
-| Chats, Spaces and the mobile shell                  | §3 to §5, Phases A–B | none             | No code in this repository. Messaging is to come from Blackout, which this register has not examined; the shell is new work |
+| What the plan relies on                             | Plan                 | Record           | Evidence today                                                                                                           |
+| --------------------------------------------------- | -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| A vault that locks on its own while chats stay open | §6, Phase C          | CORE-02          | One lock covers the whole account. Lock and unlock pass in Chromium (LOCK-01, 2026-11-21)                                |
+| Controlled sharing from the vault into a chat       | §4                   | CORE-06          | Send passes five checks in Chromium. It names the sender by default, and file Sends check premium                        |
+| Vault items, sync and recovery                      | §2, Phase C          | CORE-01, CORE-03 | Register, log in, create and sync pass on a local Vaultwarden; recovery and the hosted backend are unverified            |
+| Attachments as paid hosted storage                  | §10; monetization §6 | CORE-09          | Attachments work and are stored encrypted (ATT-01). They check premium; there is no allowance, quota or billing          |
+| The mask chooser under the profile button           | §7                   | BM-05            | Personas are vault records; nothing links one to a messaging identity                                                    |
+| The optional Inspect action for media               | §4, §8               | BM-10            | The page renders; the model has never been exercised                                                                     |
+| Destination checks for links in chats               | §8                   | BM-08            | The engine is browser-only, and its warning flow has not been exercised                                                  |
+| A server the project controls                       | Phases A and F       | DEP-01           | The default domain was unregistered as of 2026-09-25; not rechecked                                                      |
+| Chats, Spaces and the mobile shell                  | §3 to §5, Phases A–B | none             | No code in this repository. The [mobile shell brief](./mobile-shell-options.md) records what Blackout's repository holds |
 
 ## Black Mask features
 
@@ -392,4 +392,4 @@ Still open (code and docs disagree):
 4. **Bounded fixes:** BM-01 (score truthfulness) and DEP-07 (Bitwarden destinations).
 5. **Human gates:** DEP-01, DEP-05, DEP-09, and sign-off on the crypto-bigint ignore (DEP-10).
 6. **Payment rule:** decide, gate by gate, what is free core, hosted storage or a one-time enhancement (CORE-09).
-7. **App track:** Phase A of the app plan needs the owner's decisions on the mobile shell and where it lives, the vault and chat key boundaries, and identity linking. Records for the app start when its code exists.
+7. **App track:** Phase A of the app plan needs the owner's decisions on the mobile shell and where it lives, the vault and chat key boundaries, and identity linking. The [mobile shell brief](./mobile-shell-options.md) sets out the options and a recommendation. Records for the app start when its code exists.
