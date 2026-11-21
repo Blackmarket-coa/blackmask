@@ -53,6 +53,8 @@ The Discord-parity blueprint maps DMs/group DMs to private Matrix rooms, threads
 
 ## 3. Problems Blackmask must solve
 
+The [complete problem–solution map](problem-solution-map.md) expands this foundation into all 25 discussed user problems, including private collaboration, user earning, subscription burden, device loss, accessibility, and simple community coordination. Use it alongside the app plan; intended outcomes are separate from implementation evidence.
+
 Prioritize problems users can recognize immediately:
 
 - **Tracking and profiling:** identify and reduce third-party tracking and unnecessary data collection.
@@ -107,6 +109,8 @@ Avoid dark patterns, fear-based alerts, meaningless privacy scores, and engageme
 - **Accessible pricing:** core safety should not be artificially crippled to force an upgrade. Monetize useful infrastructure and optional advanced capabilities without selling personal data or message content.
 
 ## 7. Business and ecosystem model
+
+User income has a separate [earning plan](user-earning-plan.md): digital products, commissions, services, teaching, funded tasks, community labor, tips, referrals, collaborative sales, and sponsored deliverables. Earnings require real buyers/funding and verified settlement, not a large following or raw engagement. Use explicit offer/product/task surfaces and deliberate ecosystem linking.
 
 **Payment rule (2026-11-20):** One-time purchases for optional enhancements, bundles, organization tools, digital goods, and finite services; hosted storage is the only recurring Blackmask charge. The [monetization plan](monetization-plan.md) lists the complete proposed revenue catalogue, storage rules, marketplace/commerce options, services, sponsorships, grants, donations, goods, and unresolved pricing decisions. Core security, recovery, accessibility, and basic data portability remain independent of purchases and storage renewals.
 
@@ -240,6 +244,11 @@ The complete decisions, source inventory, screen flows, limits, and acceptance c
 - Keep browser-only protection honest and advanced calls, scheduled sending, location integration, and continuity tools subject to their own implementation gates.
 
 ## 11. Source documents to keep aligned
+
+- Complete user problem/outcome map: [problem-solution-map.md](problem-solution-map.md)
+- User earning surfaces, workflows, and payout requirements: [user-earning-plan.md](user-earning-plan.md)
+- Phone/hidden-device discovery research: [hidden-device-detection-oss-research.md](hidden-device-detection-oss-research.md)
+- Privacy, speech-preserving design, anti-scraping, AI, and cybersecurity research: [privacy-security-oss-research.md](privacy-security-oss-research.md)
 
 - Blackmask canonical mobile experience and app release plan: [app-plan.md](app-plan.md)
 - Blackmask complete revenue catalogue and storage-only recurring exception: [monetization-plan.md](monetization-plan.md)

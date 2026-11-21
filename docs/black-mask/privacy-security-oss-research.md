@@ -1,0 +1,158 @@
+# Privacy, Speech-Preserving Design, Anti-Scraping and Security OSS
+
+**Reviewed:** November 21, 2026  
+**Status:** Research and evaluation inventory. No imported dependencies, configuration changes, feature activation, security certification, or deployment.  
+**Companion:** [Phone/hidden-device detection inventory](hidden-device-detection-oss-research.md).
+
+## 1. Interpretation and product fit
+
+The founder requested First Amendment-friendly, anti-hacking, anti-AI, anti-scraping, and cybersecurity OSS near Blackmask/BMC's scope.
+
+Here, speech-preserving fit means private communication, explicit identity choices, user consent, self-hostability/interoperability, transparent technical rules, accessible controls, and community governance. This is an engineering/product preference, not a legal certification of a project or a promise that all communities permit all behavior.
+
+Security controls should address technical abuse and unauthorized access. Do not make political/topic classification, compulsory identification to speak, pervasive monitoring, cloud scanning of private conversations, or silent disclosure to AI providers a dependency for ordinary communication.
+
+Anti-AI covers distinct problems: automated scraping, impersonation/synthetic media, unauthorized likeness/style use, prompt injection, unsafe automated actions, and sensitive-data leakage. No one tool solves all of them.
+
+## 2. Existing foundations and reference inventory
+
+Blackmask already has a Bitwarden-derived vault; Blackout supplies Matrix communication. Reuse those foundations. New research is not authorization to introduce a parallel messenger, identity provider, map, or cryptographic protocol.
+
+The existing [third-party inventory](../../third_party/README.md) already references uBlock Origin, Privacy Badger, CanvasBlocker, Firefox containers, RethinkDNS, NetGuard, iOS privacy tools, SimpleLogin, Fawkes, metadata tools, desktop firewalls, Tor/Arti, and forensics projects. Its source snapshots were removed and were never build dependencies. A reference is not an implemented or validated integration.
+
+## 3. Anti-scraping and public-service protection
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [Anubis](https://github.com/TecharoHQ/anubis) | Server/reverse proxy | MIT | Challenge suspicious web clients to raise scraping cost. Allow legitimate clients deliberately; not a perfect AI classifier. Evaluate on public pages, not as a blanket Matrix/API gate. |
+| [CrowdSec](https://github.com/crowdsecurity/crowdsec) | Server | MIT engine | Log/request behavior and remediation components. Community intelligence/console may involve external services; configure data sharing and false-positive recovery. |
+| [ALTCHA](https://github.com/altcha-org/altcha) | Web client + server verifier | MIT widget | Self-hostable proof-of-work challenge. Verify server-side, replay protections, mobile cost and accessibility. Hosted/enterprise offerings are separate. |
+| [mCaptcha](https://github.com/mCaptcha/mCaptcha) | Web + server | AGPL-3.0 | Proof-of-work challenge/rate-limiting design. CPU cost and slow devices must be tested; no identity or speech screening is necessary. |
+| [BunkerWeb](https://github.com/bunkerity/bunkerweb) | Reverse proxy | AGPL-3.0 core | Packaged WAF/security gateway. Evaluate operational overhead and commercial component boundaries; choose a gateway architecture rather than stacking every WAF. |
+| [OWASP Coraza](https://github.com/corazawaf/coraza) | Go WAF/proxy integration | Apache-2.0 | WAF engine compatible with ModSecurity-style rules. Needs a supported connector, tuning and explicit application authorization behind it. |
+| [OWASP CRS](https://github.com/coreruleset/coreruleset) | Rules for compatible WAF | Apache-2.0 | Rules targeting common web attacks. False positives, exclusions and application-specific testing are required. |
+| [Fail2ban](https://github.com/fail2ban/fail2ban) | Server | GPL-2.0 family; component exceptions | Log-driven blocking for repeated technical abuse. Consider shared IP/Tor users, bounded bans and a recovery path. |
+
+Authentication/authorization, per-route quotas, rate limits, bounded enumeration, controlled exports, and privacy-aware logs remain necessary application work. Robots.txt is a preference signal, not an access-control mechanism. Do not promise that public material cannot be copied.
+
+Challenge/rule tuning must preserve legitimate browser access, accessibility, low-powered phones, supported clients, federation, and signed/server-to-server flows. Apply endpoint-specific rules, not a blanket challenge over Matrix synchronization or app APIs. Compare alternatives rather than running every gateway simultaneously.
+
+## 4. Browser, phone, and desktop privacy
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [uBlock Origin](https://github.com/gorhill/uBlock) | Browser extension | GPL-3.0 | Mature filtering engine/reference. Browser support and filter-list licenses are separate; do not assume current Chromium MV3 can run the full extension. |
+| [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) | MV3 extension | GPL-3.0 | Declarative browser filtering model relevant to the current starter rules. Evaluate actual capabilities and keep origin-specific controls clear. |
+| [Privacy Badger](https://github.com/EFForg/privacybadger) | Browser extension | GPL-3.0-or-later as a whole; portions dual-licensed | Anti-tracking reference from EFF. Already in Blackmask's historical reference inventory, not a live imported dependency. |
+| [CanvasBlocker](https://github.com/kkapsner/CanvasBlocker) | Firefox extension | MPL-2.0 | Fingerprinting countermeasures to study beyond current measurement. Incorrect combinations can change uniqueness; test instead of promising invisibility. |
+| [Firefox Multi-Account Containers](https://github.com/mozilla/multi-account-containers) | Firefox extension | MPL-2.0 | Cookie/context separation reference. Already related to Blackmask containers; not a guarantee of anonymous/separate messaging identities. |
+| [RethinkDNS app](https://github.com/celzero/rethink-app) | Android | Apache-2.0 | DNS/firewall/proxy/WireGuard-related capabilities. A separate optional native scope; account for Android's single active VPN interface. |
+| [TrackerControl](https://github.com/TrackerControl/tracker-control-android) | Android | GPL-3.0 | App tracking observation/control. Distribution variants differ. Sensitive connection metadata should remain local by default. |
+| [PCAPdroid](https://github.com/emanuele-f/PCAPdroid) | Android | GPL-3.0 | No-root connection monitoring/PCAP output. Diagnostic captures can be sensitive; no automatic upload or default TLS interception. |
+| [NetGuard](https://github.com/M66B/NetGuard) | Android | GPL-3.0 | Per-app no-root network controls. Not a general malware detector and not an iOS port. |
+| [AdGuard for iOS](https://github.com/AdguardTeam/AdguardForiOS) | iOS | GPL-3.0 code; services/dependencies review | Safari content-blocking and DNS-related reference. APIs, entitlements and distribution require separate native work. |
+| [Lockdown iOS](https://github.com/confirmedcode/Lockdown-iOS) | iOS | GPL-3.0 code; services separate | Privacy/firewall app reference. Review maintenance, native entitlements, provider calls and optional service boundaries. |
+| [LuLu](https://github.com/objective-see/LuLu) | macOS | GPL-3.0 | Outbound connection-control reference for a future desktop companion; not a phone feature. |
+| [Portmaster](https://github.com/safing/portmaster) | Windows/Linux | GPL-3.0 core | Connection control and privacy reference; optional commercial network service is separate. Avoid claiming a free local firewall buys anonymous routing. |
+
+Most are native apps/extensions, not features obtainable by embedding a website. Android VPN-based controls generally compete for one active VPN interface. See [Android VPN guide](https://developer.android.com/develop/connectivity/vpn). iOS capabilities/entitlements differ and require actual native testing. Avoid default packet capture, TLS interception, raw browsing-history logging, or automatic diagnostic uploads.
+
+## 5. Private communication, source protection, and infrastructure identity
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk) | SDK/native integration | Apache-2.0 | Evaluate compatible maintained Matrix components for the native app without replacing Blackout's protocol or inventing vault cryptography. |
+| [Briar](https://code.briarproject.org/briar/briar) | Android; specialist companion | GPL-3.0-or-later Android source | Peer-to-peer messaging over Bluetooth/Wi-Fi/Tor. Architecture/UX reference or explicitly separate companion, not drop-in Matrix interoperability. |
+| [SimpleX Chat](https://github.com/simplex-chat/simplex-chat) | iOS/Android/desktop | AGPL-3.0 | Design reference for reduced identifier exposure and private connections. Separate protocol; do not imply existing Blackout federation compatibility. |
+| [Cwtch](https://docs.cwtch.im/) | Android/desktop | Core MIT; UI/dependencies review | Metadata-resistant multiparty messaging over Tor onion services. Study consent/metadata design; do not collapse protocols or promise absolute anonymity. |
+| [OnionShare](https://github.com/onionshare/onionshare) | Desktop; separate Android source | GPL-3.0; component licenses | Tor-based file sharing, temporary sites and chat. Android source: https://github.com/onionshare/onionshare-android . Explicit recipient/link controls remain essential. |
+| [SecureDrop](https://github.com/freedomofpress/securedrop) | Specialist server/workstation system | AGPL-3.0 | Journalist/source submission workflow reference. Not a mobile chat widget; deployment, operational threat model and endpoint practices matter. |
+| [Orbot](https://github.com/guardianproject/orbot-android) | Android/Tor companion | BSD-3-Clause app; bundled component licenses | Optional Tor routing reference. Test DNS/leaks/transport and VPN conflicts; does not protect an already compromised endpoint. |
+| [SimpleLogin](https://github.com/simple-login/app) | Self-host email-alias service | AGPL-3.0 | Alias infrastructure already referenced and consumed through configured forwarders. Forwarding/recovery can still link personas. |
+| [addy.io](https://github.com/anonaddy/anonaddy) | Self-host email-alias service | AGPL-3.0 | Alternative alias provider reference; review actual account flow, hosted service terms and metadata. |
+| [OpenBao](https://github.com/openbao/openbao) | Server | MPL-2.0 | Manage backend secrets/credentials. Not a reason to move decrypted personal vault data into a new server. |
+| [Authelia](https://github.com/authelia/authelia) | Server/reverse proxy | Apache-2.0 | Optional admin-application authentication/MFA. Existing ecosystem identity decisions remain authoritative; no parallel silent user IdP. |
+
+Use alternative messengers primarily as architectural/UX references or explicit optional companions. Their protocols are not automatically compatible with Blackout/Matrix. Tor routing does not make a compromised endpoint safe or prevent a recipient from copying content.
+
+## 6. Safer rendering, documents, redaction, and provenance
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [DOMPurify](https://github.com/cure53/DOMPurify) | Web rendering/library | Apache-2.0 OR MPL-2.0 | Sanitize untrusted rich HTML/SVG where appropriate. Keep current versions and test renderer boundaries; not a substitute for contextual escaping/authorization. |
+| [Dangerzone](https://github.com/freedomofpress/dangerzone) | Desktop/isolated conversion | AGPL-3.0 | Convert dangerous documents into a safer PDF representation using isolation. Useful companion pattern; cannot promise every malicious file becomes harmless or silently upload encrypted attachments. |
+| [ExifCleaner](https://github.com/szTheory/exifcleaner) | Desktop/reference components | MIT; ExifTool terms separate | Batch remove metadata from supported formats. Native mobile port and actual format coverage require validation; preserve originals. |
+| [Presidio](https://github.com/data-privacy-stack/presidio) | Local/service pipeline | MIT | User-directed detection/redaction of selected text/images; no complete PII guarantee. Project moved from Microsoft to Data Privacy Stack; no default E2EE content scanning. |
+| [C2PA Rust SDK](https://github.com/contentauth/c2pa-rs) | SDK/companion | MIT OR Apache-2.0 | Read/validate supported signed provenance. Provenance is not truth; optional credentials can expose identity/history, and absence of a signature does not prove fake media. |
+
+Local processing and selected-content consent are essential. Never send decrypted vault data to backend APIs, AI tools, analytics, or conversion services. If a user deliberately chooses an external service for a separate document, disclose the recipient and changed trust boundary.
+
+Provenance reading and metadata stripping can conflict. Preview what a transform removes, preserve the original privately, and let the owner choose. Do not require a real-name provenance credential to post or equate unsigned media with deception.
+
+## 7. AI misuse and protection research
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [Fawkes](https://github.com/Shawn-Shan/fawkes) | Desktop/GPU research | BSD-3-Clause file; review stated purpose/dependencies | Photo perturbations against particular facial-recognition training threats. Already a historical Blackmask reference; not universal face-recognition prevention. |
+| [PhotoGuard](https://github.com/MadryLab/photoguard) | GPU/research | MIT code; model terms separate | Protective perturbations against specified AI image-editing pipelines. Evaluate contemporary attacks/transformations and preserve originals; no blanket protection. |
+| [Mist / Mist v2](https://github.com/psyker-team/mist-v2) | Desktop/GPU | v2 Apache-2.0; v1 GPL-3.0 | Artwork protection research. v1 source: https://github.com/psyker-team/mist . Do not confuse old mist-project redirects with current authors or promise cross-model resistance. |
+| [Anti-DreamBooth](https://github.com/VinAIResearch/Anti-DreamBooth) | GPU/research | AGPL-3.0 | Personalization/likeness protection against specified training methods. Not a current universal shield against cloning. |
+| [Nightshade research code](https://github.com/Shawn-Shan/nightshade-release) | GPU/research | GPL-3.0 research release | Research release differs from downloadable desktop app. Keep separate from ordinary upload pipeline; review data/model licenses, research limits and explicit owner consent. |
+| [garak](https://github.com/NVIDIA/garak) | Developer/CI | Apache-2.0 | Test owned AI features for prompt injection, leakage and other failures. Synthetic/user-authorized test data only; a test pass is not a security guarantee. |
+| [PyRIT](https://github.com/microsoft/PyRIT) | Developer/CI | MIT | Framework for testing owned AI systems and misuse paths. Not a consumer censorship requirement or a runtime permissions boundary. |
+| [LLM Guard](https://github.com/protectai/llm-guard) | Python/service | MIT; archived | Archive/reference only: project and models no longer maintained. Do not adopt as a fresh default. Content/topic filters should not become mandatory private-chat or political screening. |
+
+Protective image perturbations target particular models/threats and may be weakened by transformations, new models, or existing unprotected copies. Evaluate current attacks, phone/desktop cost, asset quality and model/dependency licenses. Preserve originals. Nothing here supports a universal anti-cloning, anti-training, facial-anonymity, or deepfake-proof claim.
+
+Prompt-injection classifiers and redaction are optional defense layers, not authorization boundaries. Keep tools sandboxed, allowlist capabilities, separate untrusted content from instructions, and require explicit consent for sensitive actions regardless of classifier output.
+
+The prompt-injection tests belong on owned/authorized AI features with synthetic or expressly permitted data. Do not point them at unrelated services or use private conversations as a default test corpus.
+
+## 8. Secure development, releases, and owned infrastructure
+
+| Source | Where it runs | License screening | Fit and limitations |
+| --- | --- | --- | --- |
+| [OSV-Scanner](https://github.com/google/osv-scanner) | Developer/CI | Apache-2.0 | Scan dependencies for known vulnerabilities. Useful launch work; no guarantee against unknown vulnerabilities. |
+| [Gitleaks](https://github.com/gitleaks/gitleaks) | Developer/CI | MIT | Find accidentally committed secrets. No uploading real user vault content to scan services. |
+| [Trivy](https://github.com/aquasecurity/trivy) | Developer/CI/server images | Apache-2.0 | Dependency/container/configuration scanning. Prioritize actionable findings and protect any sensitive inventory/log data. |
+| [Cosign](https://github.com/sigstore/cosign) | Build/release pipeline | Apache-2.0 | Sign/verify release artifacts and provenance. Must actually run in the release process; a workflow file does not prove shipped binaries are signed. |
+| [Wazuh](https://github.com/wazuh/wazuh) | Owned servers/endpoints | GPL-2.0 family; component terms | Host monitoring and security events on infrastructure the operator owns. Do not turn it into covert user-device monitoring or collect private message/vault content. |
+
+These are developer/operations controls, not more primary-navigation tabs. Verified releases, dependency handling, authorization, safe local storage, and actual backend readiness have higher launch priority than collecting impressive security features.
+
+## 9. Restricted or unresolved leads
+
+| Lead | Why it is not a cleared general OSS dependency |
+| --- | --- |
+| [Glaze](https://glaze.cs.uchicago.edu/what-is-glaze.html) | Authors explicitly state it is free to use but not open source. |
+| [Nightshade desktop application](https://nightshade.cs.uchicago.edu/downloads.html) | Distributed under its own app/dependency terms; do not conflate it with the separate GPL research release above. |
+| [MVT](https://github.com/mvt-project/mvt) and [androidqf](https://github.com/mvt-project/androidqf) | MVT License1.1 includes a consensual-use restriction. Useful civil-society/consensual forensic references, not unrestricted standard OSS. Assess exact terms instead of repeating an unsupported blanket ban on commercial use. They are specialist desktop-connected forensic tools, not universal live phone antivirus. |
+| [AntiFake](https://github.com/WUSTL-CSPL/AntiFake) | Relevant voice-protection research, but a reusable license was not established in the reviewed metadata/root LICENSE path. Clarify before adoption; do not imply guaranteed current cloning resistance. |
+| Hosted consoles, APIs, premium lists, model weights, fonts and datasets | An open-source client does not automatically make every service/component open or compatible. Evaluate separately. |
+
+The [hidden-device inventory](hidden-device-detection-oss-research.md) separately records Signal Scout's BSL restriction, Wavelens redistribution restriction, unresolved ultrasonic code licensing, and research hardware leads.
+
+## 10. Evaluation shortlist and sequence
+
+1. **Public edge and core app:** compare Anubis + an appropriate bot challenge, CrowdSec or a simpler log-defense setup, and one supported WAF/CRS stack. Review current rendering sanitization and authorization first.
+2. **Release integrity:** verify existing signing in real releases and evaluate OSV-Scanner, Gitleaks, and container/dependency scanning.
+3. **User-directed privacy:** improve the existing browser foundation, selected-file metadata review, explicit identity/alias flows, and guarded vault sharing.
+4. **Physical privacy:** evaluate AirGuard Android/iOS and BLE inventory before unvalidated magnetic/audio claims; use the separate hardware matrix.
+5. **Media and AI:** optional provenance reading, selected-content redaction, and testing owned AI integrations; experiment with protective media transforms only after a defined benchmark.
+6. **Resilient/source-protection companions:** study Briar, SimpleX, Cwtch, OnionShare, Orbot, and SecureDrop without replacing the app's selected infrastructure.
+
+The shortlist is a recommendation for evaluation, not a decision to ship every project. Keep core privacy/security/accessibility free. Optional workflows can follow the one-time enhancement model; hosted storage remains the only recurring Blackmask charge.
+
+## 11. Acceptance before adoption
+
+- [ ] Identify exact component versions, current maintenance, notices, source obligations, assets/models and service terms.
+- [ ] Verify an existing BMC implementation does not already solve the problem before adding a dependency.
+- [ ] Choose app, browser, optional companion, server, or development scope explicitly.
+- [ ] Define data recipients, metadata, permissions, retention and failure states; no silent E2EE downgrade.
+- [ ] Validate supported OS/device behavior, performance, accessibility, false positives and real deployment compatibility.
+- [ ] Preserve local/user-directed analysis and keep sensitive logs or diagnostics out of third-party services by default.
+- [ ] Test attacker-controlled content and permission boundaries; no automatic purchase/export/install from a message.
+- [ ] Keep technical-abuse controls transparent and recoverable; evaluate false positives affecting legitimate users.
+- [ ] Update threat model, feature reference and evidence after implementation; research does not satisfy a release gate.
+
+Related: [app plan](app-plan.md), [problem–solution map](problem-solution-map.md), [user earning](user-earning-plan.md), and [monetization](monetization-plan.md).

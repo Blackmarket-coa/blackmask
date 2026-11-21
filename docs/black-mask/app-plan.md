@@ -6,6 +6,8 @@
 **Primary navigation:** Chats · Spaces · Vault.  
 **Business rule:** One-time purchases for optional enhancements, bundles, organization tools, and finite services. Hosted storage is the only recurring Blackmask charge. Core encryption, essential safety, recovery, and accessibility remain available independently of purchases or rewards. See the [monetization plan](monetization-plan.md) for the full proposed revenue catalogue.
 
+**Companion planning documents:** [problem–solution map](problem-solution-map.md), [user earning opportunities and workflow](user-earning-plan.md), [monetization](monetization-plan.md), [hidden-device OSS research](hidden-device-detection-oss-research.md), and [privacy/security OSS research](privacy-security-oss-research.md).
+
 ## 1. Product direction and document precedence
 
 Blackmask should feel like a calm, familiar messenger while also providing an encrypted vault, private communities, identity control, and practical defenses against scams, impersonation, AI manipulation, and cyber attacks.
@@ -269,3 +271,19 @@ The approved discussion included an illustrative mobile concept with:
 - A sample local composer and explicit design-concept labeling.
 
 The concept demonstrated navigation and proposed interactions only. It did not send real messages, encrypt content, authenticate a vault, implement account isolation, or validate security behavior. Use these flows as design requirements, not screenshots or proof of a working app.
+
+## 14. User problems and practical outcomes
+
+The [problem–solution map](problem-solution-map.md) records all 25 discussed user problems and intended responses. Evaluate privacy comprehension, trusted conversation, separately protected records, simple group coordination, and income from useful contributions. These are product goals, not claims that every capability is implemented.
+
+## 15. User earning opportunities and connected delivery
+
+The [user earning plan](user-earning-plan.md) records 16 earning paths, optional publication/commissioning/funded-task surfaces, the commission workflow, fees/net proceeds, privacy boundaries, and open payment decisions. Prioritize digital packs/resources, commissions/community setup, workshops and funded tasks.
+
+Keep earning controls in relevant profiles, Spaces, optional Add-ons, and project conversations. Do not add another mandatory primary tab or inspect private content for sales prompts. Blackout supplies discovery, FBM applicable commerce, and Blackmask private collaboration/controlled delivery only after those contracts are verified. Storage-provider earnings remain a separate research candidate.
+
+## 16. OSS evaluation and physical privacy research
+
+The [hidden-device inventory](hidden-device-detection-oss-research.md) covers phone-only Bluetooth/network/optical tools and hardware-assisted research. The [broader privacy/security inventory](privacy-security-oss-research.md) covers speech-preserving communication design, anti-scraping, device/browser privacy, safer files, AI-misuse research, and security/release tooling.
+
+Both are research only. No dependency adoption, platform configuration, background monitoring, cloud scanning, new crypto, or release-scope expansion is implemented or authorized by their existence. Evaluate actual support, licenses, data flows, permissions, maintenance, and existing BMC overlap first. Possible Nearby devices tooling belongs under Protection & privacy; never promise a room is clear from a negative scan.

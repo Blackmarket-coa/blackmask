@@ -22,6 +22,10 @@ Black Mask's privacy layer on top of it, rather than reimplementing encrypted sy
 storage from scratch. **No new encryption logic is added here** — see
 [`.claude/CLAUDE.md`](.claude/CLAUDE.md) for that rule and other project conventions.
 
+## Planning and research
+
+The [app plan](docs/black-mask/app-plan.md) connects the [25-problem user map](docs/black-mask/problem-solution-map.md), [user earning plan](docs/black-mask/user-earning-plan.md), [phone/hidden-device OSS inventory](docs/black-mask/hidden-device-detection-oss-research.md), and [privacy/security OSS inventory](docs/black-mask/privacy-security-oss-research.md). Research candidates are distinct from implemented or verified features; no new dependencies are imported by these plans.
+
 ## Monetization direction
 
 Optional enhancements, bundles, organization tools, and finite services are one-time purchases. **Hosted storage is the only recurring charge.** The [monetization plan](docs/black-mask/monetization-plan.md) records all proposed revenue strategies and the free core; these are planning candidates, not implemented products or settled prices.

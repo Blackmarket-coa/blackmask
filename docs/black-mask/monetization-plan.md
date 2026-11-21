@@ -4,6 +4,8 @@
 **Status:** Proposed revenue catalogue for product planning. The founder's payment rule is confirmed: one-time purchases except storage. Individual products, prices, fees, and delivery dates are not approved or implemented by this document.  
 **Related:** [App plan](app-plan.md), [product strategy](product-strategy.md), and [onboarding/rewards](onboarding-habits-and-rewards.md).
 
+**User income:** See the [user earning plan](user-earning-plan.md) for 16 ways people can earn, optional offer/product/task surfaces, private commissions, digital-product delivery, settlement requirements, and the later storage-provider candidate. This catalogue describes platform revenue; user proceeds, funded rewards, and platform income must remain distinguishable.
+
 ## 1. Payment model and free core
 
 **Hosted storage is the only recurring Blackmask charge.** Software enhancements, bundles, licenses, services, and goods are one-time purchases. Marketplace commissions apply to individual completed transactions; they are not subscriptions. Donations, sponsorships, and grants are one-off awards or separately agreed finite purchases with no automatic renewal.
@@ -182,6 +184,12 @@ Avoid paid placement inside private conversations, tracking-based ads, data resa
 | Opportunistic | Grants, donations, sponsored deliverables, finite campaigns, merchandise | Diversifies funding without making communication depend on subscriptions |
 
 Do not enable every revenue stream at once. Measure purchases, restoration, refunds, storage margin, and usefulness with minimal transaction/aggregate data. Do not measure conversion by inspecting messages, vault records, or pseudonymous relationships.
+
+## User earning and security-tool boundaries
+
+User income requires an actual buyer or funder, verified payment/entitlement state, explicit terms, and working delivery/settlement. Do not substitute points for promised cash, introduce a fee to read ordinary encrypted messages, or expose private conversations/vault data to establish a sale or dispute. The user earning plan defines the required connected flow.
+
+The [privacy/security](privacy-security-oss-research.md) and [hidden-device](hidden-device-detection-oss-research.md) inventories are research, not paid products ready for sale. Keep essential anti-stalking/security and accessibility in the free core; optional convenience workflows remain one-time purchases. Do not sell guaranteed detection, anonymity, AI resistance, or passive storage income.
 
 ## 12. Decisions still needed
 
