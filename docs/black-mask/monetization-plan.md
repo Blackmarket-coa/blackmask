@@ -1,5 +1,7 @@
 # Blackmask Monetization Plan
 
+**Financial update:** November 21, 2026; see section 13 for conditional ecosystem projections and candidate price tests.
+
 **Recorded:** November 20, 2026  
 **Status:** Proposed revenue catalogue for product planning. The founder's payment rule is confirmed: one-time purchases except storage. Individual products, prices, fees, and delivery dates are not approved or implemented by this document.  
 **Related:** [App plan](app-plan.md), [product strategy](product-strategy.md), and [onboarding/rewards](onboarding-habits-and-rewards.md).
@@ -202,3 +204,26 @@ The [privacy/security](privacy-security-oss-research.md) and [hidden-device](hid
 - Security, accessibility, licensing, and end-to-end verification for each product before sale.
 
 These open decisions do not change the approved payment rule: **one-time purchases, with hosted storage as the only recurring charge.**
+
+## 13. Ecosystem revenue analysis and test prices — November 21, 2026
+
+See the [BMC financial analysis](https://github.com/Blackmarket-coa/free-black-market/blob/8b7f0b63f1d0e4856f5f5ea5afd17549e51ad60c/docs/BMC_ECOSYSTEM_FINANCIAL_ANALYSIS.md) for shared assumptions and the reproducible January–December 2027 model. These conditional ecosystem scenarios project $1,461 / $17,318 / $125,802 in downside/base/upside BMC revenue, with operating surplus before founder pay/tax of -$2,492 / $7,630 / $84,334. Do not add the same ecosystem totals once per app.
+
+Base Blackmask-specific components are approximately **$1,073 of founder-owned one-time enhancements** and **$1,547 of hosted-storage revenue**, before their allocated payment, storage, support and operating costs. First-party units are allocated from one shared ecosystem pool (25% Blackmask at a proposed $12 average price). Storage assumes 3% of unique ecosystem actives paying a proposed $4/month beginning in assumed April 2027. These are candidate price/demand tests; no actual quota, public price, availability or paid-storage permission is established by this forecast.
+
+Hosted storage remains the only recurring Blackmask charge. Current storage has no founder-reported charge, but free capacity does not establish free replication, backup, transfer, support or unlimited growth. The model provisions incremental storage costs and includes native channel/payment costs. Validate actual per-account usage, quotas, costs, restoration, cancellation and export before setting prices.
+
+Independent artists/developers can earn from supported original themes, masks, stickers, community templates and tools; users can also offer finite setup, design or training services. Their receipts remain theirs. The standalone Blackmask add-on commission is still unset. Transactions deliberately governed by FBM can use its single existing 3% commission; no extra message/encryption/checkout toll or duplicate Blackmask cut is forecast.
+
+Keep paid, earned and gifted copies distinct in sales reporting. Preserve the free communication/security core and privacy boundaries above. Do not infer purchase propensity from private conversations, contacts or vault contents. Current app and monetization plans remain proposed/unverified for implementation; financial scenario dates do not establish native release readiness.
+
+## 14. Monthly sales targets and delivery priorities
+
+The [monthly targets and launch analysis](https://github.com/Blackmarket-coa/free-black-market/blob/8b7f0b63f1d0e4856f5f5ea5afd17549e51ad60c/docs/BMC_REVENUE_TARGETS_AND_LAUNCH_PLAN.md) estimates that, under base candidate prices and costs, 94 BMC-owned $12 Blackmask product sales or 375 $4 monthly storage payers each produce roughly $1,000 in contribution before shared operating costs, founder pay and tax. These are alternatives rather than an additive forecast. One-time product sales require new buyers or distinct products; storage remains the only recurring Blackmask charge.
+
+Start with one original expression/community pack that can be delivered, restored and supported. Add storage only with actual capacity, cost, quota, cancellation/export and recovery evidence. Core encryption and essential security stay outside paid gates.
+
+New security or hidden-device-discovery OSS research adds zero revenue to this model until a supported capability, integration cost, license scope and appropriate product terms exist. Do not monetize essential security fixes or sell an unsupported native feature.
+
+
+
