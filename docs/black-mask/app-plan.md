@@ -32,28 +32,28 @@ The catalogue below records the source review used for this plan:
 
 ### Blackmask catalogue
 
-| Capability | Existing foundation and limitation | Intended app placement |
-| --- | --- | --- |
-| Encrypted vault, accounts, sync | Bitwarden-derived client-side vault encryption, authentication, and synchronization code; production configuration and recovery still require verification | Vault; devices and recovery under profile |
-| Credential and private-record types | Login, SecureNote, Card, Identity, and SshKey models; BankAccount, DriversLicense, and Passport types also exist. A type declaration does not prove its UI/backend availability | Vault categories after support checks |
-| Autofill | Inherited browser autofill; native mobile autofill needs a separate platform integration | Browser companion; later native capability |
-| Generators | Inherited password generation and configured email-alias forwarders | Vault and identity tools |
-| Vault attachments | Inherited attachment interfaces; not evidence of a complete general-purpose encrypted file drive | Vault item attachments |
-| Controlled text/file sharing | Inherited Send code and models include expiration, deletion date, access limits, password, disable, and recipient-related settings; verify actual client/backend behavior | Shared links and deliberate sharing flow |
-| Import/export | Inherited vault portability code; export flow remains to be verified | Vault management |
-| Personas | Create/edit Real, Business, Creator, and Anonymous identity records as Identity ciphers | Profile identity chooser after messaging identity contracts exist |
-| Email-alias guidance | Provider integrations and warnings for linkable plus/catchall addresses; a forwarding alias is not an anonymity guarantee | Identity setup |
-| Account-health audit | Local weak/reused-password checks and potential 2FA gaps against a starter domain list; missing TOTP is not proof a site account lacks every form of 2FA | Protection and privacy |
-| Tracker blocking/counting | Browser rules and per-tab counts with a 20-domain starter list; not comprehensive device-wide protection | Browser companion |
-| Phishing protection | Local feed-based engine, status, and toggle; feed comes from an upstream host and the full warning flow needs verification | Browser companion; future explicit chat-link integration |
-| Fingerprint exposure | On-device browser exposure estimate, not fingerprint prevention | Browser companion and exposure review |
-| Breach lookup | User-initiated backend-dependent email lookup; backend can report that it is not configured | Protection and privacy |
-| AI-media inspection | On-device image/video classifier; downloaded model weights, bounded video sampling, uncertain results, and incomplete runtime validation | Optional Inspect action |
-| Browsing separation | Firefox containers by persona layer; Chromium equivalent not implemented; separation is by layer rather than guaranteed isolation of every persona | Browser companion |
-| Privacy overview | Heuristic dashboard of account/browser signals; not an objective safety score and some actual-state checks need improvement | Secondary protection screen |
-| Welcome/onboarding | Bundled first-install welcome exists; milestone progress, points, reward catalogue, and broader onboarding remain planned | First run and optional setup |
-| Existing clients | Browser extension and web vault are current release surfaces; inherited desktop/CLI are deprioritized | Companion surfaces |
-| Native mobile shell | No native Android/iOS app in this repository at the reviewed commit | New implementation work |
+| Capability                          | Existing foundation and limitation                                                                                                                                              | Intended app placement                                            |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Encrypted vault, accounts, sync     | Bitwarden-derived client-side vault encryption, authentication, and synchronization code; production configuration and recovery still require verification                      | Vault; devices and recovery under profile                         |
+| Credential and private-record types | Login, SecureNote, Card, Identity, and SshKey models; BankAccount, DriversLicense, and Passport types also exist. A type declaration does not prove its UI/backend availability | Vault categories after support checks                             |
+| Autofill                            | Inherited browser autofill; native mobile autofill needs a separate platform integration                                                                                        | Browser companion; later native capability                        |
+| Generators                          | Inherited password generation and configured email-alias forwarders                                                                                                             | Vault and identity tools                                          |
+| Vault attachments                   | Inherited attachment interfaces; not evidence of a complete general-purpose encrypted file drive                                                                                | Vault item attachments                                            |
+| Controlled text/file sharing        | Inherited Send code and models include expiration, deletion date, access limits, password, disable, and recipient-related settings; verify actual client/backend behavior       | Shared links and deliberate sharing flow                          |
+| Import/export                       | Inherited vault portability code; export flow remains to be verified                                                                                                            | Vault management                                                  |
+| Personas                            | Create/edit Real, Business, Creator, and Anonymous identity records as Identity ciphers                                                                                         | Profile identity chooser after messaging identity contracts exist |
+| Email-alias guidance                | Provider integrations and warnings for linkable plus/catchall addresses; a forwarding alias is not an anonymity guarantee                                                       | Identity setup                                                    |
+| Account-health audit                | Local weak/reused-password checks and potential 2FA gaps against a starter domain list; missing TOTP is not proof a site account lacks every form of 2FA                        | Protection and privacy                                            |
+| Tracker blocking/counting           | Browser rules and per-tab counts with a 20-domain starter list; not comprehensive device-wide protection                                                                        | Browser companion                                                 |
+| Phishing protection                 | Local feed-based engine, status, and toggle; feed comes from an upstream host and the full warning flow needs verification                                                      | Browser companion; future explicit chat-link integration          |
+| Fingerprint exposure                | On-device browser exposure estimate, not fingerprint prevention                                                                                                                 | Browser companion and exposure review                             |
+| Breach lookup                       | User-initiated backend-dependent email lookup; backend can report that it is not configured                                                                                     | Protection and privacy                                            |
+| AI-media inspection                 | On-device image/video classifier; downloaded model weights, bounded video sampling, uncertain results, and incomplete runtime validation                                        | Optional Inspect action                                           |
+| Browsing separation                 | Firefox containers by persona layer; Chromium equivalent not implemented; separation is by layer rather than guaranteed isolation of every persona                              | Browser companion                                                 |
+| Privacy overview                    | Heuristic dashboard of account/browser signals; not an objective safety score and some actual-state checks need improvement                                                     | Secondary protection screen                                       |
+| Welcome/onboarding                  | Bundled first-install welcome exists; milestone progress, points, reward catalogue, and broader onboarding remain planned                                                       | First run and optional setup                                      |
+| Existing clients                    | Browser extension and web vault are current release surfaces; inherited desktop/CLI are deprioritized                                                                           | Companion surfaces                                                |
+| Native mobile shell                 | No native Android/iOS app in this repository at the reviewed commit                                                                                                             | New implementation work                                           |
 
 Source pointers: [feature reference](features.md), [audit register](feature-audit-register.md), [record types](../../libs/common/src/vault/enums/cipher-type.ts), [Send model](../../libs/common/src/tools/send/models/view/send.view.ts), and [persona service](../../apps/browser/src/privacy/popup/services/persona.service.ts).
 
@@ -61,34 +61,34 @@ Source pointers: [feature reference](features.md), [audit register](feature-audi
 
 These are Blackout capabilities or integration candidates, not automatically available Blackmask app features.
 
-| Area | Source-backed foundation | Current boundary |
-| --- | --- | --- |
-| Direct and group messaging | Matrix encrypted rooms and the broader client's timeline/composer | Encrypted-room behavior and device/history recovery require end-to-end verification |
-| Conversation tools | Replies, reactions, threads, mentions, edits/deletion, search, voice messages, attachments, and GIF integration in the broader client | Compact panel does not expose every full-client tool; external media services have their own exposure |
-| Communities | Canopies/spaces, dens/channels, roles, permissions, announcements, member controls, moderation, forums, topics, and documents | A room's message encryption does not encrypt all community metadata or room state |
-| Compact Blackmask panel | Dedicated /embed routes for joined DMs, joined communities, text/announcement channels, unread indicators, and community/channel creation | Built with partial/local test evidence; complete deployment/extension integration unverified |
-| Compact-panel gaps | Existing panel omits new-DM creation, invitation management, calls, threads panel, member lists, and room settings | Required mobile flows must be added or deliberately deferred |
-| Private creation defaults | Panel-created communities start invite-only; channels start private/restricted and encrypted by default | Defaults are client behavior; authorization and enforcement still need server and cross-client testing |
-| Voice/video | Broader call, LiveKit, screen-share, and stage code | Reviewed call path/runtime and media-encryption gaps prevent a Signal-like calling promise |
-| Scheduled messages | Server/bot scheduling implementation | Plaintext until sending; refused in encrypted rooms. Exclude from encrypted-chat launch scope |
-| Plugins | Sandboxed plugin framework, discovery, and capability manifests | App integration, isolation, and permissions need validation |
-| Burner identities | Broader identity tools | A Blackmask vault persona is not automatically a separate Matrix identity |
-| Steganography/Deaddrop | Code and design work in Blackout | Availability varies; reviewed threat model says no shipped app flow creates a dead drop |
-| Panic controls | Existing panic wipe removes selected local data | Does not erase all Matrix stores, message keys, server copies, or forensic traces |
-| Dead-man switch | Experimental records, check-in, and cancellation | New arming is disabled; firing does not notify or automatically deliver a message. Exclude from safety promises |
-| Transparency and privacy tools | Key/data transparency, metadata and deletion-related surfaces | Validate the exact behavior; existence does not prove anonymity or complete erasure |
-| Federation/self-hosting | Matrix infrastructure and administration tooling | Hosting, identity, reliability, and metadata boundaries remain deployment-dependent |
+| Area                           | Source-backed foundation                                                                                                                  | Current boundary                                                                                                |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Direct and group messaging     | Matrix encrypted rooms and the broader client's timeline/composer                                                                         | Encrypted-room behavior and device/history recovery require end-to-end verification                             |
+| Conversation tools             | Replies, reactions, threads, mentions, edits/deletion, search, voice messages, attachments, and GIF integration in the broader client     | Compact panel does not expose every full-client tool; external media services have their own exposure           |
+| Communities                    | Canopies/spaces, dens/channels, roles, permissions, announcements, member controls, moderation, forums, topics, and documents             | A room's message encryption does not encrypt all community metadata or room state                               |
+| Compact Blackmask panel        | Dedicated /embed routes for joined DMs, joined communities, text/announcement channels, unread indicators, and community/channel creation | Built with partial/local test evidence; complete deployment/extension integration unverified                    |
+| Compact-panel gaps             | Existing panel omits new-DM creation, invitation management, calls, threads panel, member lists, and room settings                        | Required mobile flows must be added or deliberately deferred                                                    |
+| Private creation defaults      | Panel-created communities start invite-only; channels start private/restricted and encrypted by default                                   | Defaults are client behavior; authorization and enforcement still need server and cross-client testing          |
+| Voice/video                    | Broader call, LiveKit, screen-share, and stage code                                                                                       | Reviewed call path/runtime and media-encryption gaps prevent a Signal-like calling promise                      |
+| Scheduled messages             | Server/bot scheduling implementation                                                                                                      | Plaintext until sending; refused in encrypted rooms. Exclude from encrypted-chat launch scope                   |
+| Plugins                        | Sandboxed plugin framework, discovery, and capability manifests                                                                           | App integration, isolation, and permissions need validation                                                     |
+| Burner identities              | Broader identity tools                                                                                                                    | A Blackmask vault persona is not automatically a separate Matrix identity                                       |
+| Steganography/Deaddrop         | Code and design work in Blackout                                                                                                          | Availability varies; reviewed threat model says no shipped app flow creates a dead drop                         |
+| Panic controls                 | Existing panic wipe removes selected local data                                                                                           | Does not erase all Matrix stores, message keys, server copies, or forensic traces                               |
+| Dead-man switch                | Experimental records, check-in, and cancellation                                                                                          | New arming is disabled; firing does not notify or automatically deliver a message. Exclude from safety promises |
+| Transparency and privacy tools | Key/data transparency, metadata and deletion-related surfaces                                                                             | Validate the exact behavior; existence does not prove anonymity or complete erasure                             |
+| Federation/self-hosting        | Matrix infrastructure and administration tooling                                                                                          | Hosting, identity, reliability, and metadata boundaries remain deployment-dependent                             |
 
 Sources: Blackout [overview](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/docs/features/OVERVIEW.md), [Blackmask panel plan](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/docs/black-mask-chat-panel-and-account-link.md), [panel scoping code](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/apps/blackout-client/src/app/features/black-mask-embed/embedScope.ts), [room component](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/apps/blackout-client/src/app/features/black-mask-embed/EmbedRoom.tsx), [limitations](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/KNOWN_LIMITATIONS.md), and [threat model](https://github.com/Blackmarket-coa/blackout/blob/3c2e72fc2b63d417a63ddfad26554282f0c3a66c/THREAT_MODEL.md).
 
 ## 3. Navigation and visual direction
 
-| Surface | First view | Controls revealed when needed |
-| --- | --- | --- |
-| Chats | Familiar conversation list, search, unread state, one compose action | Requests, attachments, conversation details, device verification |
-| Spaces | Joined communities; a community opens its channels | Invitations, channel creation, roles, moderation, administration |
-| Vault | Locked entry or recent items/search after deliberate unlock | Categories, attachments, sharing, import/export, generators |
-| Profile/mask button | Current presentation identity | Identity management, protection/privacy, devices/recovery, add-ons, settings |
+| Surface             | First view                                                           | Controls revealed when needed                                                |
+| ------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Chats               | Familiar conversation list, search, unread state, one compose action | Requests, attachments, conversation details, device verification             |
+| Spaces              | Joined communities; a community opens its channels                   | Invitations, channel creation, roles, moderation, administration             |
+| Vault               | Locked entry or recent items/search after deliberate unlock          | Categories, attachments, sharing, import/export, generators                  |
+| Profile/mask button | Current presentation identity                                        | Identity management, protection/privacy, devices/recovery, add-ons, settings |
 
 Use a quiet neutral palette, one accent color, restrained mask artwork, readable typography, familiar message bubbles, clear labels, and comfortable touch targets. Provide light/dark appearance and reduced motion. Pair meaningful icons with accessible labels. Never use color alone for trust or encryption state.
 
@@ -174,17 +174,17 @@ The profile button is the mask control. Users should be able to answer **Who am 
 
 ## 8. Practical defenses against AI manipulation and cyber attacks
 
-| Defense objective | Proposed user experience | Implementation boundary |
-| --- | --- | --- |
-| Resist impersonation | Verify contacts/devices, compare codes or QR codes through a trusted channel, explain changed identities/devices | Reuse validated protocol verification; never present an unimplemented verification badge |
-| Reduce scams/phishing | Separate Requests; inspect destinations; add context before suspicious credential/payment requests | Existing browser phishing checks are not yet a verified chat-link protection contract |
-| Inspect synthetic media | Long-press or attachment action opens on-device analysis with uncertainty and relevant evidence | Experimental detector output is not proof of authenticity, truth, or identity; voice impersonation is not established coverage |
-| Make automation visible | Identify bots, assistants, bridges, tools, and the content they can access | An assistant or bridge may become a recipient of decrypted content |
-| Keep AI use private | Default to no vault access; prefer local processing; require explicit content scope and consent for remote providers | Never send decrypted vault data to API services; don't silently upload messages or files for analysis |
-| Prevent unauthorized actions | Require explicit approval for sensitive exports, purchases, installations, permission changes, and account actions | Instructions in a chat, document, or attachment are untrusted data, not authorization |
-| Limit tool compromise | Review capability permissions, isolate tools, and let users revoke access | Validate sandbox/runtime enforcement; a manifest alone is insufficient |
-| Protect accounts/devices | Clear new-device review, session revocation, recovery, secure local storage, and safe attachment handling | Encryption cannot protect content on an already compromised unlocked endpoint |
-| Protect software delivery | Trusted signing/update process, dependency controls, and reviewed release artifacts | Do not advertise a signing or reproducibility guarantee before releases are actually verified |
+| Defense objective            | Proposed user experience                                                                                             | Implementation boundary                                                                                                        |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Resist impersonation         | Verify contacts/devices, compare codes or QR codes through a trusted channel, explain changed identities/devices     | Reuse validated protocol verification; never present an unimplemented verification badge                                       |
+| Reduce scams/phishing        | Separate Requests; inspect destinations; add context before suspicious credential/payment requests                   | Existing browser phishing checks are not yet a verified chat-link protection contract                                          |
+| Inspect synthetic media      | Long-press or attachment action opens on-device analysis with uncertainty and relevant evidence                      | Experimental detector output is not proof of authenticity, truth, or identity; voice impersonation is not established coverage |
+| Make automation visible      | Identify bots, assistants, bridges, tools, and the content they can access                                           | An assistant or bridge may become a recipient of decrypted content                                                             |
+| Keep AI use private          | Default to no vault access; prefer local processing; require explicit content scope and consent for remote providers | Never send decrypted vault data to API services; don't silently upload messages or files for analysis                          |
+| Prevent unauthorized actions | Require explicit approval for sensitive exports, purchases, installations, permission changes, and account actions   | Instructions in a chat, document, or attachment are untrusted data, not authorization                                          |
+| Limit tool compromise        | Review capability permissions, isolate tools, and let users revoke access                                            | Validate sandbox/runtime enforcement; a manifest alone is insufficient                                                         |
+| Protect accounts/devices     | Clear new-device review, session revocation, recovery, secure local storage, and safe attachment handling            | Encryption cannot protect content on an already compromised unlocked endpoint                                                  |
+| Protect software delivery    | Trusted signing/update process, dependency controls, and reviewed release artifacts                                  | Do not advertise a signing or reproducibility guarantee before releases are actually verified                                  |
 
 A broad AI-manipulation claim must not be reduced to a deepfake score. Coordinated persuasion, social engineering, account takeover, synthetic audio, and misinformation need distinct threat models and evidence. Avoid fear-based alerts and absolute protection claims.
 
@@ -223,15 +223,15 @@ Optional add-ons can include themes, mask packs, and selected community/convenie
 
 This sequence is a proposed implementation order. No item is marked complete by this document.
 
-| Phase | Deliverable | Exit evidence |
-| --- | --- | --- |
-| A. Contracts and foundations | Choose mobile shell; document vault/chat key and session boundaries, identity linking, supported servers, recovery, and permission contracts | Reviewed architecture and explicit threat models; no invented shared-login assumptions |
-| B. Core messenger | Chats, new DM, group conversation, invitations/Requests, private Spaces/channels, trustworthy delivery and failure states | Two-device tests against the intended backend, offline/reconnect, membership/authorization checks |
-| C. Private vault | Separate lock, supported items, safe storage, sync, recovery, import/export, explicit share flow | Chat remains usable with vault locked; keys/data remain inaccessible to chat/tools; successful cross-device and failure tests |
-| D. Identity and protection | Accurate presented identity, contact/device verification, session review/revocation, clear privacy controls | Verified behavior and understandable new-device, key-change, and account-linking flows |
-| E. Useful first run | Accessible three-tab navigation, permission timing, optional setup, error/empty/loading states | First-time user completes a useful action without developer help or unnecessary disclosure |
-| F. Distribution | Platform packaging, signing/update process, push privacy, backend operation, support and store disclosures | Real release-build/device testing and accurate feature claims |
-| G. Optional expansion | Media inspection, advanced community tools, add-ons, calls, privacy integrations | Per-feature authorization, encryption, performance, accessibility, and security evidence before enabling |
+| Phase                        | Deliverable                                                                                                                                  | Exit evidence                                                                                                                 |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| A. Contracts and foundations | Choose mobile shell; document vault/chat key and session boundaries, identity linking, supported servers, recovery, and permission contracts | Reviewed architecture and explicit threat models; no invented shared-login assumptions                                        |
+| B. Core messenger            | Chats, new DM, group conversation, invitations/Requests, private Spaces/channels, trustworthy delivery and failure states                    | Two-device tests against the intended backend, offline/reconnect, membership/authorization checks                             |
+| C. Private vault             | Separate lock, supported items, safe storage, sync, recovery, import/export, explicit share flow                                             | Chat remains usable with vault locked; keys/data remain inaccessible to chat/tools; successful cross-device and failure tests |
+| D. Identity and protection   | Accurate presented identity, contact/device verification, session review/revocation, clear privacy controls                                  | Verified behavior and understandable new-device, key-change, and account-linking flows                                        |
+| E. Useful first run          | Accessible three-tab navigation, permission timing, optional setup, error/empty/loading states                                               | First-time user completes a useful action without developer help or unnecessary disclosure                                    |
+| F. Distribution              | Platform packaging, signing/update process, push privacy, backend operation, support and store disclosures                                   | Real release-build/device testing and accurate feature claims                                                                 |
+| G. Optional expansion        | Media inspection, advanced community tools, add-ons, calls, privacy integrations                                                             | Per-feature authorization, encryption, performance, accessibility, and security evidence before enabling                      |
 
 First-release priorities are dependable encrypted conversations, private Spaces, a separately locked vault, device verification/recovery, and safe sharing. Hide unfinished optional paths with their effects disabled.
 

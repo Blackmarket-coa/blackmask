@@ -4,7 +4,16 @@ The register required by §2 of the [AI-first audit plan](./ai-first-audit-and-r
 record per user-visible feature, entry point or critical dependency, with code presence, unit tests,
 browser verification, backend verification and security approval kept as **separate** fields.
 
-**Last updated 2026-11-16.** Evidence:
+**Scope after the 2026-11-20 direction update.** The approved [app plan](./app-plan.md) adds a mobile
+messenger with Chats, Spaces and a separately locked Vault. It keeps this register, with the feature
+reference and the dated evidence, as the record of what is implemented and verified. Every record
+below is about the browser extension and the web vault, which that plan calls the standalone
+foundation release. This repository holds no mobile app and no messaging code, so the app track has
+no records yet.
+[What the app plan relies on here](#what-the-2026-11-20-app-plan-relies-on-here) maps the plan onto
+these records.
+
+**Last updated 2026-11-21** (direction update and CI; no new browser run). Evidence:
 
 - [Automated Chromium run with a local Vaultwarden](./evidence/2026-11-16-chromium-logged-in.md)
   (2026-11-16): logged-out and logged-in checks, production build.
@@ -47,7 +56,7 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | BM-07   | Fingerprint exposure test            | Implemented, unverified | 8 pass       | Pass (FP-01)                           | n/a                | —   | Keep                                         |
 | BM-08   | Phishing protection                  | Implemented, unverified | 12 pass      | Active (PH-01)                         | Pass               | P2  | **Decided**: free for everyone (done)        |
 | BM-09   | Data exposure (breach lookup)        | Implemented, unverified | 9 pass       | Pass (EXP-01)                          | No key configured  | P2  | Configure the key or hide                    |
-| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Keep as bonus or hide                        |
+| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Validate before the Inspect action           |
 | BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                         |
 | BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)             |
 | CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend                 |
@@ -55,10 +64,10 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01)                 | Pass               | —   | Verify on the hosted backend                 |
 | CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
 | CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                       |
-| CORE-06 | Send                                 | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Decide: keep or hide                         |
+| CORE-06 | Send                                 | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Keep; verify as the app's sharing base       |
 | CORE-07 | Import and export                    | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify export                                |
 | CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
-| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the one-time-purchase decision    |
+| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the 11-20 payment rule            |
 | DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                                |
 | DEP-02  | Welcome tab on install               | Fixed (see BM-12)       | —            | Pass (ENV-02)                          | n/a                | —   | Done                                         |
 | DEP-03  | Phishing feed hosted by Bitwarden    | Implemented, unverified | —            | Fetched after login (ENV-04)           | n/a                | P2  | Disclosed on welcome page; self-host later   |
@@ -68,8 +77,26 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 | DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                   |
 | DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                    |
 | DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                        |
-| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Merged 11-16; decide on a desktop build gate |
+| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Keep green; decide on the desktop build gate |
 | DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P2  | Disclose in the privacy policy               |
+
+## What the 2026-11-20 app plan relies on here
+
+The [app plan](./app-plan.md) reuses this repository's vault and privacy code inside a mobile
+messenger. This table sets what the plan relies on against the records above. It holds no new test
+results.
+
+| What the plan relies on                             | Plan                 | Record           | Evidence today                                                                                                              |
+| --------------------------------------------------- | -------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| A vault that locks on its own while chats stay open | §6, Phase C          | CORE-02          | One lock covers the whole account, and lock and unlock is the one core flow that could not be verified                      |
+| Controlled sharing from the vault into a chat       | §4                   | CORE-06          | Send has not been run; file Sends check premium                                                                             |
+| Vault items, sync and recovery                      | §2, Phase C          | CORE-01, CORE-03 | Register, log in, create and sync pass on a local Vaultwarden; recovery and the hosted backend are unverified               |
+| Attachments as paid hosted storage                  | §10; monetization §6 | CORE-09          | Attachments check premium; there is no allowance, quota or billing                                                          |
+| The mask chooser under the profile button           | §7                   | BM-05            | Personas are vault records; nothing links one to a messaging identity                                                       |
+| The optional Inspect action for media               | §4, §8               | BM-10            | The page renders; the model has never been exercised                                                                        |
+| Destination checks for links in chats               | §8                   | BM-08            | The engine is browser-only, and its warning flow has not been exercised                                                     |
+| A server the project controls                       | Phases A and F       | DEP-01           | The default domain was unregistered as of 2026-09-25; not rechecked                                                         |
+| Chats, Spaces and the mobile shell                  | §3 to §5, Phases A–B | none             | No code in this repository. Messaging is to come from Blackout, which this register has not examined; the shell is new work |
 
 ## Black Mask features
 
@@ -175,7 +202,9 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 - **Code:** `apps/browser/src/privacy/popup/services/ai-media-detector.service.ts` (model `onnx-community/Deep-Fake-Detector-v2-Model-ONNX`, ONNX runtime bundled under `ort/`); needs `wasm-unsafe-eval`.
 - **Unit tests:** `ai-media-detector.spec.ts` 9 and `ai-media-detector.service.spec.ts` 11 pass.
 - **Browser evidence:** AI-01 pass (page renders). The model download and classification were not exercised: the run blocks network.
-- **Severity / effort:** P3 / —. **Disposition / gate:** Keep as a bonus if it passes validation, otherwise hide / F. **Security approval:** Not reviewed.
+- **Role after 2026-11-20:** the app plan (§4, §8) makes this the optional Inspect action for media received in a chat. It is planned scope now, not a bonus.
+- **Dependency risk:** its library, `@huggingface/transformers` 3.8.1, brings `onnxruntime-node`, whose install script broke every install on 2026-11-21 (DEP-10).
+- **Severity / effort:** P3 / —. **Disposition / gate:** Validate it before anything builds on it: the model download, classification of real images and video, and how uncertainty is shown. Keep it if it passes, otherwise hide / F. **Security approval:** Not reviewed.
 
 ### BM-11 · Desktop integration permission
 
@@ -211,6 +240,7 @@ against the intended backend (pillar A).
 
 - **Evidence:** LOCK-01 **blocked**. The lock happens (background log `[LockService] Locked user …`), but the extension never came back from the `chrome.runtime.reload()` that locking performs (`main.background.ts:1439-1447`): no new service worker within 60 seconds, pages `ERR_BLOCKED_BY_CLIENT`, with both `--load-extension` and CDP-loaded unpacked extensions. A direct reload recovers in about two seconds. Details in the evidence report.
 - **Why P1:** if this reproduces in real Chrome, locking would disable the extension until the browser restarts.
+- **Why it matters more after 2026-11-20:** the app plan's central boundary is a vault that locks on its own while chats stay open (§6, Phase C). Today one lock covers the whole account, and it is the one core flow this register could not verify.
 - **Disposition / gate:** Check lock, unlock and logout by hand in Chrome (unpacked and store build) before release / A. **Security approval:** Not reviewed.
 
 ### CORE-03 · Vault items and sync
@@ -223,17 +253,36 @@ against the intended backend (pillar A).
 
 ### CORE-05 · Generator and email-alias forwarders — not run. Only the forwarder the user configures is contacted. Verify / D.
 
-### CORE-06 · Send — not run; not in the MVP scope table. Decide whether to keep it visible / H.
+### CORE-06 · Send
 
-### CORE-07 · Import and export — not run. LastPass direct import contacts lastpass.com and identity providers on request. Verify export (pillar G requires it) / G.
+- Not run, and not in the MVP scope table.
+- **Role after 2026-11-20:** the app plan (§2, §4) names Send as the base for controlled sharing from the vault into a chat. That settles the earlier keep-or-hide question.
+- File Sends check premium in the client (CORE-09).
+- **Disposition / gate:** Keep it, and verify expiry, deletion date, access limit, password and disable against the backend / G.
+
+### CORE-07 · Import and export
+
+- Not run. LastPass direct import contacts lastpass.com and identity providers on request.
+- Standard import and export are in the free core under the 2026-11-20 payment rule.
+- **Disposition / gate:** Verify export (pillar G requires it) / G.
 
 ### CORE-08 · Self-hosted web vault — not run. `apps/web` builds in CI (`build-web.yml`); no Black Mask features. The local test server served Vaultwarden's own web vault, not this repo's. Verify / A.
 
 ### CORE-09 · Premium and billing surfaces
 
 - **What:** the inherited Bitwarden Premium upsell, `/premium` page and premium-gated features.
-- **Decision context:** enhancements are one-time purchases with no subscription (2026-11-12), and only enhanced features are premium (2026-11-16). PR #15 removes the premium gate from phishing protection; the other inherited premium and subscription surfaces have not been reviewed against these decisions.
-- **Severity / effort:** P2 / M. **Disposition / gate:** Review every premium-gated feature and the upsell copy / G.
+- **Decision context:** three owner decisions, in order.
+  - 2026-11-12: enhancements are one-time purchases.
+  - 2026-11-16: only enhanced features are premium. PR #15 removed the premium gate from phishing protection.
+  - 2026-11-20: hosted storage is the only recurring charge, and the [monetization plan](./monetization-plan.md) §1 lists a free core that no purchase may gate.
+- **What the code does:** the inherited client still checks Bitwarden premium, a yearly subscription upstream, for attachments, one-time-code (TOTP) generation and autofill, file Sends and item archive. It also shows the Premium upsell.
+- **On a Vaultwarden backend** every account is reported as premium (2026-11-16 evidence). Those gates are open for everyone there, and nothing enforces a storage quota or a purchase.
+- **Gaps against the rule:**
+  1. Attachments are the natural home of the hosted-storage charge, but there is no included allowance, usage display, quota or billing.
+  2. File Send is the planned sharing base (CORE-06) and is gated.
+  3. The upsell copy sells a subscription.
+  4. No entitlement exists for a one-time purchase.
+- **Severity / effort:** P2 / M. **Disposition / gate:** Decide for each gate whether it is free core, hosted storage or a one-time enhancement. Then remove or re-point the gate and rewrite the upsell copy / G.
 
 ## Critical dependencies and launch infrastructure
 
@@ -249,7 +298,7 @@ against the intended backend (pillar A).
 ### DEP-03 · Phishing feed hosted by Bitwarden
 
 - The blocklist downloads from `assets.bitwarden.com`, with a checksum fallback on `raw.githubusercontent.com` (`apps/browser/src/dirt/phishing-detection/phishing-resources.ts:1-5`). ENV-04 shows the fetch after login, not before. The welcome page now discloses where the list comes from.
-- **Severity / effort:** P2 / M to self-host. **Disposition:** Keep disclosed for v1; host the list on a Black Mask origin later. **Gate:** C, G.
+- **Severity / effort:** P2 / M to self-host. **Disposition:** Keep disclosed for the foundation release; host the list on a Black Mask origin later. **Gate:** C, G.
 
 ### DEP-04 · AI model hosted by Hugging Face
 
@@ -290,7 +339,9 @@ against the intended backend (pillar A).
 - **Nx affected job:** on a pull request that touches shared code it ran about 100 build, lint and test tasks four at a time and starved the runner ("The hosted runner lost communication with the server" after 65 and 77 minutes). It now runs one task at a time with two Jest workers; the same run on a 4-core, 15 GB machine took 34 minutes for build and lint at a 12 GB peak. The job is experimental and non-gating, and still tolerates six failing tasks that are tooling configuration, not product defects: five library builds fail with TS5055 (output would overwrite input), and the desktop package's per-project lint cannot resolve the Tailwind config.
 - **Desktop build:** the desktop main process did not compile on `main` from PR #11 until PR #15 (TS7018 in `apps/desktop/src/main/native-messaging.main.ts`). Nothing gated on it: there is no desktop build workflow, Jest does not type-check, and the Nx job, the only one that builds desktop, ignores failures.
 - **Evidence on `main`:** the first push runs after the merges all passed on 2026-11-16, for both merge commits. At `a56695cf`, the head: [Testing](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072662), [Lint](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072603), [Build Browser](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072412) and [Build Web](https://github.com/Blackmarket-coa/blackmask/actions/runs/43894072392). The push before them (`68d184bd`, 2026-11-15) had failed Lint and had Testing cancelled.
-- **Severity:** P2 / S. **Disposition:** Fixes merged on 2026-11-16. Still to decide: whether a desktop build should gate while desktop is not a shipping surface.
+- **Broken again on 2026-11-21, by a download:** every workflow failed at `npm ci`, starting with the first push that day at 01:23 UTC. Those pushes only touched docs. `onnxruntime-node` 1.21.0, which comes with the detector's library (BM-10), downloads NVIDIA CUDA binaries from a GitHub release on Linux x64, and that file began returning 404. Nothing here uses those binaries, so `.npmrc` now sets `onnxruntime-node-install-cuda=skip`. The eight planning docs pushed that day were also unformatted and are formatted now. Both fixes are in PR #18. `main` had last passed on 2026-11-16, at #16's merge.
+- **What that showed:** the failure stood for about 20 hours, across three docs pushes and the merge of #17. A red `main` hides the next real failure.
+- **Severity:** P2 / S. **Disposition:** Keep `main` green, including for docs-only pushes. Still to decide: whether a desktop build should gate while desktop is not a shipping surface.
 
 ### DEP-11 · Third-party requests after login
 
@@ -320,3 +371,5 @@ Still open (code and docs disagree):
 3. **Remaining logged-in items:** persona custom fields and alias warning, the phishing warning flow, account-audit counts, autofill, export.
 4. **Bounded fixes:** BM-01 (score truthfulness) and DEP-07 (Bitwarden destinations).
 5. **Human gates:** DEP-01, DEP-05, DEP-09, and sign-off on the crypto-bigint ignore (DEP-10).
+6. **Payment rule:** decide, gate by gate, what is free core, hosted storage or a one-time enhancement (CORE-09).
+7. **App track:** Phase A of the app plan needs the owner's decisions on the mobile shell and where it lives, the vault and chat key boundaries, and identity linking. Records for the app start when its code exists.
