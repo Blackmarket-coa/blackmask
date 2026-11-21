@@ -8,11 +8,14 @@ demo.
 **Automated coverage so far.** `scripts/validate-black-mask-chromium.js` loads a built extension into
 a fresh Chromium profile and checks the default server, tabs opened on install, hosts contacted,
 tracker blocking and counting, the permission set and route guards; with `--server` it also creates
-an account and walks most logged-in checks. The
-[2026-11-16 run](./evidence/2026-11-16-chromium-logged-in.md) against a local Vaultwarden passed
-everything it attempted except **lock and unlock**, which it could not complete under automation.
-**Lock, the items marked not run, and all of Firefox still need a person** — status per feature is in
-the [feature audit register](./feature-audit-register.md).
+an account and walks most logged-in checks, including Send, attachments, export, lock and unlock,
+and log out. The [2026-11-21 run](./evidence/2026-11-21-chromium-vault-flows.md) against a local
+Vaultwarden passed everything it attempted. **The items marked not run and all of Firefox still need
+a person** — status per feature is in the [feature audit register](./feature-audit-register.md).
+
+Testing lock or log out in a scripted or fresh profile needs **Developer mode** turned on in
+`chrome://extensions`. Both reload the extension, and Chromium disables an unpacked extension that
+reloads itself with Developer mode off. Loading an unpacked build by hand already requires it.
 
 ## Builds to test
 
