@@ -24,7 +24,7 @@ Blackout is the messaging and community layer Blackmask should use. Integration 
 
 | Product       | Primary responsibility                                                                                                                      | User value                                                                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Blackmask** | Private messenger/Spaces/Vault app experience; vault, privacy, identity controls, browser protection, and exposure awareness | Communicate comfortably, manage private records, and control identity and exposure through a simple interface |
+| **Blackmask** | Private messenger/Spaces/Vault app experience; vault, privacy, identity controls, browser protection, and exposure awareness                | Communicate comfortably, manage private records, and control identity and exposure through a simple interface           |
 | **Blackout**  | Private communication and community: messaging, direct and group conversations, Canopies and Dens, voice/video, and community participation | Stay connected, organize, share, and build trusted communities                                                          |
 | **Together**  | A coherent privacy and communication experience across the BMC ecosystem                                                                    | Carry stronger privacy habits from browsing and identity management into everyday relationships and collective activity |
 

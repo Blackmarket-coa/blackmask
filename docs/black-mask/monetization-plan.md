@@ -28,47 +28,47 @@ Purchased tools and earned copies of the same enhancement provide equivalent cap
 
 ## 2. One-time personalization enhancements
 
-| Product candidate | What the purchase adds |
-| --- | --- |
-| Theme packs | Additional palettes, message styling, backgrounds, and optional animations; basic appearance and accessibility remain free |
-| Mask/avatar packs | Original static/animated masks, avatar frames, and expressive identity artwork |
-| Stickers and reactions | Artist-created sticker, emoji, reaction, and sound packs |
-| Layout customization | Extra layout presets, density controls beyond accessibility needs, and saved workspace arrangements |
-| Community branding kit | Custom Space visuals, invitation art, channel icons, banners, and welcome templates |
-| Event/occasion packs | Optional seasonal, celebration, gaming, or organizing visual collections |
-| Creator collaborations | Limited artist collaborations sold as digital products; no investment or artificial utility promise |
+| Product candidate      | What the purchase adds                                                                                                     |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Theme packs            | Additional palettes, message styling, backgrounds, and optional animations; basic appearance and accessibility remain free |
+| Mask/avatar packs      | Original static/animated masks, avatar frames, and expressive identity artwork                                             |
+| Stickers and reactions | Artist-created sticker, emoji, reaction, and sound packs                                                                   |
+| Layout customization   | Extra layout presets, density controls beyond accessibility needs, and saved workspace arrangements                        |
+| Community branding kit | Custom Space visuals, invitation art, channel icons, banners, and welcome templates                                        |
+| Event/occasion packs   | Optional seasonal, celebration, gaming, or organizing visual collections                                                   |
+| Creator collaborations | Limited artist collaborations sold as digital products; no investment or artificial utility promise                        |
 
 Sell individual packs and optional bundles. Respect motion/sound preferences; paid expression must never prevent a recipient from reading a message with the free client.
 
 ## 3. One-time personal productivity enhancements
 
-| Product candidate | What the purchase adds | Boundary |
-| --- | --- | --- |
-| Vault organizer | Bulk tagging, saved views, custom collections, and filing workflows | Basic vault organization/search/export stay usable without it |
-| Private-record templates | Configurable document, household, project, and inventory templates | A template is not a new supported encrypted record type until implemented |
-| Local document tools | On-device OCR and advanced indexing of chosen documents | Explicitly unlock/select files; no silent vault upload |
-| File preparation toolkit | Batch conversion, compression, watermarks, and manual-redaction convenience | Essential metadata safeguards and safe attachment handling remain core |
-| Persona workspace kit | Saved presentation/workspace templates and bulk setup conveniences | Identity separation, verification, and essential exposure warnings are not paid protections |
-| On-device assistant toolkit | Optional summaries, draft assistance, translation, and task extraction for user-selected content | Evaluate feasibility first; no cloud AI subscription or automatic access to vault secrets |
-| Advanced local automation | User-authored shortcuts, repeatable local workflows, and optional action templates | Messages/attachments are not authority to execute sensitive actions |
-| Audio expression toolkit | Optional soundboards, voice effects, and advanced local recording/editing tools | Basic communication and accessibility features remain core; calling readiness is a separate gate |
-| Advanced archive tools | Local indexing, selected-conversation archiving, annotations, and richer export formats | Standard export and essential data access stay free |
-| Assisted migration wizard | Guided mapping, bulk organization, and previews for supported imports | Standard supported import remains free; do not promise extraction of inaccessible encrypted history |
+| Product candidate           | What the purchase adds                                                                           | Boundary                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| Vault organizer             | Bulk tagging, saved views, custom collections, and filing workflows                              | Basic vault organization/search/export stay usable without it                                       |
+| Private-record templates    | Configurable document, household, project, and inventory templates                               | A template is not a new supported encrypted record type until implemented                           |
+| Local document tools        | On-device OCR and advanced indexing of chosen documents                                          | Explicitly unlock/select files; no silent vault upload                                              |
+| File preparation toolkit    | Batch conversion, compression, watermarks, and manual-redaction convenience                      | Essential metadata safeguards and safe attachment handling remain core                              |
+| Persona workspace kit       | Saved presentation/workspace templates and bulk setup conveniences                               | Identity separation, verification, and essential exposure warnings are not paid protections         |
+| On-device assistant toolkit | Optional summaries, draft assistance, translation, and task extraction for user-selected content | Evaluate feasibility first; no cloud AI subscription or automatic access to vault secrets           |
+| Advanced local automation   | User-authored shortcuts, repeatable local workflows, and optional action templates               | Messages/attachments are not authority to execute sensitive actions                                 |
+| Audio expression toolkit    | Optional soundboards, voice effects, and advanced local recording/editing tools                  | Basic communication and accessibility features remain core; calling readiness is a separate gate    |
+| Advanced archive tools      | Local indexing, selected-conversation archiving, annotations, and richer export formats          | Standard export and essential data access stay free                                                 |
+| Assisted migration wizard   | Guided mapping, bulk organization, and previews for supported imports                            | Standard supported import remains free; do not promise extraction of inaccessible encrypted history |
 
 These are proposed enhancements, not claims that current browser tools already work in a native app.
 
 ## 4. One-time community and organization enhancements
 
-| Product candidate | What the purchase adds |
-| --- | --- |
-| Community starter kits | Ready-made layouts and optional workflows for gaming groups, families, mutual aid, clubs, makers, creators, and organizers |
-| Workflow boards | Optional tasks, checklists, shared agendas, and operating templates inside a Space |
-| Advanced role/configuration tools | Bulk configuration, reusable presets, change previews, and administration convenience; basic authorization and moderation stay free |
-| Event toolkit | RSVP organization, event templates, attendance workflows, and planning conveniences |
-| Knowledge-base kit | Enhanced organization, templates, and presentation of supported community resources |
-| Aggregate administration reports | Opt-in operational summaries and user-requested exports without private-message profiling or exposure of pseudonymous relationships |
-| Organization license | One-time license for a defined set of convenience tools, with scope such as a Space or deployment disclosed before purchase |
-| Custom branding/white-label package | One-time configuration/design and permitted distribution work, subject to upstream licenses, trademarks, and security requirements |
+| Product candidate                   | What the purchase adds                                                                                                              |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Community starter kits              | Ready-made layouts and optional workflows for gaming groups, families, mutual aid, clubs, makers, creators, and organizers          |
+| Workflow boards                     | Optional tasks, checklists, shared agendas, and operating templates inside a Space                                                  |
+| Advanced role/configuration tools   | Bulk configuration, reusable presets, change previews, and administration convenience; basic authorization and moderation stay free |
+| Event toolkit                       | RSVP organization, event templates, attendance workflows, and planning conveniences                                                 |
+| Knowledge-base kit                  | Enhanced organization, templates, and presentation of supported community resources                                                 |
+| Aggregate administration reports    | Opt-in operational summaries and user-requested exports without private-message profiling or exposure of pseudonymous relationships |
+| Organization license                | One-time license for a defined set of convenience tools, with scope such as a Space or deployment disclosed before purchase         |
+| Custom branding/white-label package | One-time configuration/design and permitted distribution work, subject to upstream licenses, trademarks, and security requirements  |
 
 A Space should be able to buy a community tool once for its intended shared scope without requiring every member to purchase it. Do not monetize mandatory per-member encrypted-chat seats.
 
@@ -94,10 +94,10 @@ A bundle is a sales package, not an extra charge on top of the same products.
 
 Storage can be billed monthly or annually, with clear quota, billing period, renewal, cancellation, and restoration rules.
 
-| Storage offering | What the recurring charge pays for |
-| --- | --- |
-| Personal encrypted storage | Additional hosted vault attachments/documents and eligible stored files |
-| Shared Space storage | A pooled hosted file quota, paid by the Space/organization rather than every member |
+| Storage offering                 | What the recurring charge pays for                                                      |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Personal encrypted storage       | Additional hosted vault attachments/documents and eligible stored files                 |
+| Shared Space storage             | A pooled hosted file quota, paid by the Space/organization rather than every member     |
 | Encrypted backup/archive storage | Additional hosted backup capacity, retained versions, or longer eligible file retention |
 
 Prefer understandable pooled quotas where feasible. Do not accidentally charge the same bytes twice across categories. Version history and retention consume storage; they are not separate recurring feature unlocks.
@@ -141,18 +141,18 @@ External products have their own terms; do not present an independent provider's
 
 ## 9. One-time services and organizational sales
 
-| Service | Sale unit |
-| --- | --- |
-| Self-host deployment/configuration | A defined installation or deployment project |
-| Migration assistance | A defined supported import/migration project |
-| Organization onboarding | A finite setup and training package |
-| Workshops | A scheduled individual or group session |
-| Custom design/branding | A defined deliverable |
-| Custom integration development | A scoped integration project, with data/security boundaries reviewed |
-| Workflow configuration | A finite automation or template implementation |
-| Dedicated technical assistance | A clearly bounded support incident or block of work |
-| Deployment review/hardening | A specified configuration review and remediation project; no universal security guarantee |
-| Procurement/distribution package | A one-time organization rollout of permitted products and materials |
+| Service                            | Sale unit                                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| Self-host deployment/configuration | A defined installation or deployment project                                              |
+| Migration assistance               | A defined supported import/migration project                                              |
+| Organization onboarding            | A finite setup and training package                                                       |
+| Workshops                          | A scheduled individual or group session                                                   |
+| Custom design/branding             | A defined deliverable                                                                     |
+| Custom integration development     | A scoped integration project, with data/security boundaries reviewed                      |
+| Workflow configuration             | A finite automation or template implementation                                            |
+| Dedicated technical assistance     | A clearly bounded support incident or block of work                                       |
+| Deployment review/hardening        | A specified configuration review and remediation project; no universal security guarantee |
+| Procurement/distribution package   | A one-time organization rollout of permitted products and materials                       |
 
 Do not create monthly retainers, mandatory maintenance fees, premium recurring support, or server-seat subscriptions. Ongoing hosted operation beyond storage requires a sustainable design compatible with the payment rule; do not promise unlimited operation with a one-time setup fee.
 
@@ -177,13 +177,13 @@ Avoid paid placement inside private conversations, tracking-based ads, data resa
 
 ## 11. Suggested launch order
 
-| Priority | Revenue strategy | Reason |
-| --- | --- | --- |
-| First | Original themes/masks/stickers, community branding, and a small convenience bundle | Clear one-time value with little incremental hosting cost; confirm content rights and accessibility |
-| First, when operations are ready | Additional encrypted hosted storage | Directly funds an ongoing resource cost; requires working quota, billing, restore, and cancellation behavior |
-| Next | Vault organization/templates, community starter kits, assisted migration, and finite setup/training | Fits repeated user needs; sell only implemented/validated deliverables |
-| Later | Third-party marketplace, organization deployments, custom integrations, and on-device advanced tools | Requires permissions, license, compatibility, support, and security work |
-| Opportunistic | Grants, donations, sponsored deliverables, finite campaigns, merchandise | Diversifies funding without making communication depend on subscriptions |
+| Priority                         | Revenue strategy                                                                                     | Reason                                                                                                       |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| First                            | Original themes/masks/stickers, community branding, and a small convenience bundle                   | Clear one-time value with little incremental hosting cost; confirm content rights and accessibility          |
+| First, when operations are ready | Additional encrypted hosted storage                                                                  | Directly funds an ongoing resource cost; requires working quota, billing, restore, and cancellation behavior |
+| Next                             | Vault organization/templates, community starter kits, assisted migration, and finite setup/training  | Fits repeated user needs; sell only implemented/validated deliverables                                       |
+| Later                            | Third-party marketplace, organization deployments, custom integrations, and on-device advanced tools | Requires permissions, license, compatibility, support, and security work                                     |
+| Opportunistic                    | Grants, donations, sponsored deliverables, finite campaigns, merchandise                             | Diversifies funding without making communication depend on subscriptions                                     |
 
 Do not enable every revenue stream at once. Measure purchases, restoration, refunds, storage margin, and usefulness with minimal transaction/aggregate data. Do not measure conversion by inspecting messages, vault records, or pseudonymous relationships.
 
@@ -224,6 +224,3 @@ The [monthly targets and launch analysis](https://github.com/Blackmarket-coa/fre
 Start with one original expression/community pack that can be delivered, restored and supported. Add storage only with actual capacity, cost, quota, cancellation/export and recovery evidence. Core encryption and essential security stay outside paid gates.
 
 New security or hidden-device-discovery OSS research adds zero revenue to this model until a supported capability, integration cost, license scope and appropriate product terms exist. Do not monetize essential security fixes or sell an unsupported native feature.
-
-
-

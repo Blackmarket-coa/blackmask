@@ -13,24 +13,24 @@ Defined engagements and enhancements are one-time purchases. Hosted storage is t
 
 ## 2. User earning catalogue
 
-| ID | Opportunity | User deliverable | Who pays |
-| --- | --- | --- | --- |
-| E01 | Masks, themes, stickers, and sounds | Original avatar packs, artwork, reactions, layouts, and expression packs | Individuals/communities; per product |
-| E02 | Plugins and add-ons | Optional productivity tools, integrations, and community utilities | Users/organizations; one-time product |
-| E03 | Templates and starter kits | Vault/community templates, event kits, checklists, and organizing resources | Families, clubs, businesses, organizers; per kit |
-| E04 | Custom commissions | Personalized art, branding, tools, or configurations | Specific customer; agreed deliverable |
-| E05 | Community setup | Configure channels/permissions/resources and onboard members | Community owner; setup project |
-| E06 | Migration assistance | Move supported content and workflows | Individual/organization; defined migration |
-| E07 | Technical services | Self-host installation, integration, troubleshooting, or authorized security work | Organization/self-hoster; scoped project |
-| E08 | Teaching/workshops | A particular class, session, tutorial collection, or workshop | Attendees/sponsor; session or resource |
-| E09 | Professional consultations | Defined appointment or consultation supported by a private workspace | Client; appointment/project |
-| E10 | Community labor | Moderation, coordination, documentation, translation, accessibility, administration | Organization/funded community; defined work |
-| E11 | Funded tasks/bounties | Bug fixes, requested features, release testing, translation, design assets | Identified task funder; accepted deliverable |
-| E12 | Digital resources | Original guides, educational materials, project files, useful downloads | Purchaser; one-time product |
-| E13 | Collaborative products | Bundles made by artists, developers, educators, and organizers | Purchasers; agreed share of actual sales |
-| E14 | Tips/supporter purchases | Optional support for useful products or contributions | Supporter; one-time contribution |
-| E15 | Disclosed referrals | Intentional qualifying purchase through an approved offer | Seller/referral program; transaction |
-| E16 | Sponsored deliverables/grants | Free toolkit, workshop, learning resource, or community feature | Sponsor/grant funder; scoped award |
+| ID  | Opportunity                         | User deliverable                                                                    | Who pays                                         |
+| --- | ----------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------ |
+| E01 | Masks, themes, stickers, and sounds | Original avatar packs, artwork, reactions, layouts, and expression packs            | Individuals/communities; per product             |
+| E02 | Plugins and add-ons                 | Optional productivity tools, integrations, and community utilities                  | Users/organizations; one-time product            |
+| E03 | Templates and starter kits          | Vault/community templates, event kits, checklists, and organizing resources         | Families, clubs, businesses, organizers; per kit |
+| E04 | Custom commissions                  | Personalized art, branding, tools, or configurations                                | Specific customer; agreed deliverable            |
+| E05 | Community setup                     | Configure channels/permissions/resources and onboard members                        | Community owner; setup project                   |
+| E06 | Migration assistance                | Move supported content and workflows                                                | Individual/organization; defined migration       |
+| E07 | Technical services                  | Self-host installation, integration, troubleshooting, or authorized security work   | Organization/self-hoster; scoped project         |
+| E08 | Teaching/workshops                  | A particular class, session, tutorial collection, or workshop                       | Attendees/sponsor; session or resource           |
+| E09 | Professional consultations          | Defined appointment or consultation supported by a private workspace                | Client; appointment/project                      |
+| E10 | Community labor                     | Moderation, coordination, documentation, translation, accessibility, administration | Organization/funded community; defined work      |
+| E11 | Funded tasks/bounties               | Bug fixes, requested features, release testing, translation, design assets          | Identified task funder; accepted deliverable     |
+| E12 | Digital resources                   | Original guides, educational materials, project files, useful downloads             | Purchaser; one-time product                      |
+| E13 | Collaborative products              | Bundles made by artists, developers, educators, and organizers                      | Purchasers; agreed share of actual sales         |
+| E14 | Tips/supporter purchases            | Optional support for useful products or contributions                               | Supporter; one-time contribution                 |
+| E15 | Disclosed referrals                 | Intentional qualifying purchase through an approved offer                           | Seller/referral program; transaction             |
+| E16 | Sponsored deliverables/grants       | Free toolkit, workshop, learning resource, or community feature                     | Sponsor/grant funder; scoped award               |
 
 ## 3. Optional product surfaces
 
@@ -70,10 +70,10 @@ Feedback should describe completed work through an explicit process; it must not
 
 ## 6. Ecosystem wiring and privacy
 
-| Product | Intended responsibility |
-| --- | --- |
-| Blackout | Discovery, demonstrations, participation, contribution visibility, reaching customers |
-| FBM | Applicable listings, checkout, orders, commerce fees, payment/payout integration |
+| Product   | Intended responsibility                                                                       |
+| --------- | --------------------------------------------------------------------------------------------- |
+| Blackout  | Discovery, demonstrations, participation, contribution visibility, reaching customers         |
+| FBM       | Applicable listings, checkout, orders, commerce fees, payment/payout integration              |
 | Blackmask | Private inquiries, negotiations, identity/audience review, collaboration, controlled delivery |
 
 Verify contracts joining listings, quotes, orders, entitlements, delivery, and payouts with minimal authorized identifiers. Do not duplicate the commerce ledger in messages.
