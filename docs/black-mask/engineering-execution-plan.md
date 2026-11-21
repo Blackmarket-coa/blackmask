@@ -1,5 +1,7 @@
 # Black Mask — Engineering Execution Plan
 
+> **App roadmap update (2026-11-20):** [app-plan.md](app-plan.md) is the approved mobile messenger/Spaces/Vault experience and release plan. This document retains the original foundation architecture and dated scope changes. Mobile and messaging exclusions below refer to that standalone foundation release. Reuse existing vault and Blackout communication infrastructure; preserve separate lock/key boundaries and add no new encryption primitives.
+
 > How the Black Mask product spec maps onto _this_ Bitwarden clients codebase: what to reuse, what to
 > build, where it lives, and in what order. This is an architecture/planning document — it prescribes
 > approach and sequencing; it is not itself an implementation.
@@ -10,8 +12,10 @@
 
 Black Mask is the privacy and counter-surveillance layer of a larger ecosystem (alongside Blackout, a
 community platform, and FBM, an economic platform). It is a **standalone product**: a user can install
-it, never touch the coalition, and get real protection. Coalition/Blackout features are a later
-_upgrade tier_, never a launch prerequisite.
+it, never touch the coalition, and get real protection. Coalition/Blackout features are not a
+prerequisite for the standalone browser/web foundation release. The approved mobile messenger track
+uses Blackout communication infrastructure. Core encrypted chat is free; optional enhancements are
+one-time purchases, with no enhancement subscriptions.
 
 The architecture is **login-once, protected-everywhere** — the Bitwarden auth + vault + sync spine,
 reused as-is. One account drives protection across every surface tied to it.

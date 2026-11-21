@@ -1,5 +1,7 @@
 # Black Mask — Project Docs
 
+> **Approved app direction (2026-11-20):** Start with [app-plan.md](app-plan.md) for the mobile messenger, private Spaces, separately locked Vault, feature catalogue, AI/cyber-defense requirements, and release sequence. It expands the earlier product scope while preserving the standalone browser/web release checks below. Planned app behavior is distinct from implemented or verified behavior.
+
 > **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-16 Chromium run](evidence/2026-11-16-chromium-logged-in.md): a production Chrome build passed 27 of 30 checks against a local Vaultwarden. Nothing is fully verified yet: Firefox, a store-installed build, the hosted backend and lock/unlock are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
 
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
@@ -14,12 +16,13 @@ in _this codebase_.
 
 | Doc                                                                          | What it is                                                                                                                                                                                  |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`app-plan.md`](./app-plan.md) | **Canonical mobile app plan** — approved Chats / Spaces / Vault direction, source-backed feature catalogue, identity and security boundaries, onboarding, add-ons, and release acceptance criteria. |
 | [`location-privacy-mvp.md`](./location-privacy-mvp.md)                       | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates.                                              |
 | [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates.                                         |
 | [`feature-audit-register.md`](./feature-audit-register.md)                   | **Feature audit register** — one record per feature and launch dependency, with code, unit, browser, backend and security status kept separate, defects, severity and proposed disposition. |
 | [`evidence/`](./evidence/)                                                   | Dated evidence reports behind the register, starting with the [2026-11-15 automated Chromium run](./evidence/2026-11-15-chromium-automated.md).                                             |
-| [`mvp.md`](./mvp.md)                                                         | **Whole-product MVP** — first release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria.                                                     |
-| [`product-strategy.md`](./product-strategy.md)                               | **Product strategy** — painkiller positioning, user problems, identity and privacy principles, daily-use habits, and the Blackout messaging/community relationship.                         |
+| [`mvp.md`](./mvp.md)                                                         | **Standalone browser/web MVP** — foundation release scope, must-work capabilities, existing-code limitations, launch blockers, and go/no-go criteria.                                                     |
+| [`product-strategy.md`](./product-strategy.md)                               | **Product strategy** — approved mobile direction, painkiller positioning, identity/privacy principles, daily-use habits, and reuse of Blackout messaging/community infrastructure.                         |
 | [`onboarding-habits-and-rewards.md`](./onboarding-habits-and-rewards.md)     | **Planned onboarding and rewards** — visual prompts, short setup goals, motivators, fewer steps, milestone points, chosen native products, and a deferred implementation checklist.         |
 | [`features.md`](./features.md)                                               | **The full feature reference** — every implemented feature: routes, flags, code map, privacy posture, limitations, and tests.                                                               |
 | [`engineering-execution-plan.md`](./engineering-execution-plan.md)           | How the Black Mask product maps onto this Bitwarden codebase — feature-to-subsystem mapping, key reuse decisions, the v1 build sequence, and risks.                                         |
@@ -77,9 +80,9 @@ Before launch:
   `apps/browser/config/development.json` and switch to `https://localhost:8080`, so they never
   show the `vault.blackmask.app` default.
 
-## v1 scope
+## Standalone browser/web v1 scope
 
-v1 is the **browser extension** plus the **self-hosted web vault**. No local VPN. Everything runs
+The standalone foundation v1 is the **browser extension** plus the **self-hosted web vault**. No local VPN. Everything runs
 on the user's devices plus a self-hosted backend — no coalition/Blackout dependency. The coalition
 features are later integration work, not a launch prerequisite. Any paid enhancement is a one-time purchase, with no subscription.
 

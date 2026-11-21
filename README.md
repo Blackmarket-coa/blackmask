@@ -7,6 +7,8 @@
 
 # Black Mask
 
+> **App direction (2026-11-20):** The [Blackmask app plan](docs/black-mask/app-plan.md) defines the approved minimalist messenger, private Spaces, and separately locked Vault experience for iOS and Android. It reuses Blackout communication infrastructure and this repository's vault foundation. This is planned app scope, not a claim that a mobile app or complete integration exists here.
+
 > **Implementation review (2026-11-12):** [Source/CI status and launch gaps](docs/black-mask/implementation-status-2026-11-12.md) distinguishes browser/privacy code from real-browser and backend verification. Enhancement features are **one-time purchases; no subscription**. The current code does not establish a standalone social/chat replacement; communications integration requires separate verification.
 
 Black Mask is a privacy and counter-surveillance product that gives individuals the tools to
@@ -43,9 +45,9 @@ This repo houses the client applications — everything except the mobile apps:
   two of them on demand. The vendored source trees themselves were removed in commit `2ac39234`.
   Not part of the monorepo build.
 
-## Project scope (v1)
+## Standalone browser/web release scope (v1)
 
-v1 ships as the **browser extension** (`apps/browser`) plus the **self-hosted web vault**
+The standalone foundation v1 ships as the **browser extension** (`apps/browser`) plus the **self-hosted web vault**
 (`apps/web`) — **no local VPN**. Everything runs on the user's own devices plus a self-hosted
 backend; there's no dependency on a larger coalition network. The original plan paired the
 extension with an Android app; [`CONSOLIDATION.md`](CONSOLIDATION.md) re-scoped the shipping

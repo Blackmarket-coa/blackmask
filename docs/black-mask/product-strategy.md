@@ -1,8 +1,10 @@
 # Blackmask Product Strategy
 
 **Status:** Product strategy  
-**Scope:** Blackmask browser/privacy surfaces and its relationship to Blackout  
+**Scope:** Blackmask mobile app direction, browser/privacy companions, and its relationship to Blackout  
 **Principle:** Blackmask must be a painkiller, not a vitamin.
+
+> **Direction update (2026-11-20):** The founder approved the [app plan](app-plan.md): a minimalist mobile messenger with Chats, Spaces, and a separately locked Vault. Reuse Blackout messaging/community infrastructure and this repository's encrypted-vault foundation behind one interface. The app plan governs mobile experience and release sequencing; browser/web-only exclusions in older plans refer to the standalone foundation release. This update records requirements, not implemented mobile features.
 
 ## 1. Product thesis
 
@@ -16,13 +18,13 @@ Blackmask should be useful on its own. Blackout makes the promise more powerful 
 
 ## 2. The product relationship: Blackmask + Blackout
 
-Blackmask and Blackout are complementary products with distinct responsibilities. Do not build a second messaging platform inside Blackmask or imply that the Blackmask browser extension already contains Blackout's communication features.
+Blackmask and Blackout are complementary products with distinct infrastructure responsibilities. The Blackmask app should provide a unified private messenger, Spaces, and Vault interface by reusing Blackout's communication/community infrastructure. Do not build a duplicate messaging backend or imply that the current browser extension already contains the complete app.
 
 Blackout is the messaging and community layer Blackmask should use. Integration should make the products feel connected without collapsing their security boundaries or making Blackout a prerequisite for Blackmask's standalone v1.
 
 | Product       | Primary responsibility                                                                                                                      | User value                                                                                                              |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Blackmask** | Privacy, counter-surveillance, identity separation, browsing protection, exposure awareness, and personal-data control                      | Understand and reduce what websites, trackers, and other parties can learn or collect                                   |
+| **Blackmask** | Private messenger/Spaces/Vault app experience; vault, privacy, identity controls, browser protection, and exposure awareness | Communicate comfortably, manage private records, and control identity and exposure through a simple interface |
 | **Blackout**  | Private communication and community: messaging, direct and group conversations, Canopies and Dens, voice/video, and community participation | Stay connected, organize, share, and build trusted communities                                                          |
 | **Together**  | A coherent privacy and communication experience across the BMC ecosystem                                                                    | Carry stronger privacy habits from browsing and identity management into everyday relationships and collective activity |
 
@@ -42,9 +44,9 @@ The Discord-parity blueprint maps DMs/group DMs to private Matrix rooms, threads
 
 ### Integration rules
 
-1. **Reuse Blackout for messaging.** Blackmask should link users into Blackout's existing communication and community surfaces rather than duplicate chat, room, voice, or federation infrastructure.
-2. **Keep the product boundary explicit.** Blackmask owns privacy and identity controls; Blackout owns communication and community interactions. Cross-product navigation and shared onboarding can connect them without assuming shared authentication, account linking, or synchronized identity until those contracts exist.
-3. **Do not make Blackout a v1 dependency.** Blackmask's current v1 remains the browser extension and self-hosted web vault. Blackout integration is an ecosystem path and later product connection, not a reason to delay standalone privacy value.
+1. **Reuse Blackout for messaging.** Build the Blackmask app's communication experience on Blackout's existing chat, room, and federation infrastructure. Reuse and adapt the compact panel/client where appropriate; do not duplicate messaging services. Explicit links can open broader Blackout surfaces.
+2. **Keep infrastructure and security boundaries explicit.** Blackmask owns the private app experience and vault/privacy controls; Blackout supplies communication/community infrastructure. A unified interface must preserve separate vault lock/key access and must not assume shared authentication, account linking, or synchronized identity until those contracts exist.
+3. **Distinguish release tracks.** The standalone browser-extension/web-vault release remains useful without Blackout. The approved mobile messenger release depends on verified communication integration and follows the app plan's separate acceptance criteria.
 4. **Respect protection boundaries.** Explain which room is encrypted, what metadata remains visible, and which features or transports have different guarantees. Never imply that scheduled messages, calls, every room, or every Blackout feature inherits the same E2EE guarantees.
 5. **Keep privacy controls user-directed.** A user must be able to understand and manage what identity or persona is presented, what information is shared, and which connections or integrations are enabled. Cross-product linking must be explicit, revocable, and documented.
 6. **Avoid identity conflation.** A Blackmask persona is a context-specific identity choice, not permission to impersonate another person or silently merge identities. Do not assume that a browser persona automatically changes a Blackout account identity.
@@ -112,12 +114,14 @@ Potential value-based offerings, subject to implementation and security review:
 
 - Optional advanced privacy and identity-management capabilities.
 - Additional self-hosting, backup, or administration conveniences where they can be delivered safely.
-- Privacy-preserving infrastructure and service tiers.
+- Privacy-preserving infrastructure and optional conveniences with transparent actual hosting/third-party costs; optional enhancement ownership is a one-time purchase, not a subscription.
 - Ecosystem capabilities that connect Blackmask and Blackout without selling access to personal data or encrypted content.
 
-Billing, analytics, and entitlement systems must remain content-blind. Do not let subscription status or marketing analytics reveal message contents, private-room membership, browsing history, or persona details beyond what is strictly required to provide a user-requested service.
+Billing, analytics, and entitlement systems must remain content-blind. Do not let purchase entitlement status or marketing analytics reveal message contents, private-room membership, browsing history, or persona details beyond what is strictly required to provide a user-requested service.
 
 ## 8. Priorities and sequencing
+
+The following priorities cover foundational and ecosystem work. The [app plan's mobile delivery sequence](app-plan.md#11-first-mobile-release-and-sequencing) governs the approved app track; complete verified messaging, private Spaces, separate vault locking, recovery, and safe sharing before optional expansion.
 
 ### Priority 1 — Make standalone Blackmask trustworthy
 
@@ -140,7 +144,7 @@ Billing, analytics, and entitlement systems must remain content-blind. Do not le
 - Improve consistency of privacy explanations and user-facing threat models across products.
 - Prioritize independent review and validation of high-risk features before expanding claims or reach.
 
-Do not duplicate Blackout messaging features in the Blackmask repository. Do not pull future Blackout capabilities into Blackmask's shipping claims until they are implemented, enabled, and verified.
+Reuse Blackout communication features in the approved Blackmask interface without duplicating its backend infrastructure. Do not pull future or unverified capabilities into shipping claims until they are implemented, enabled, and verified.
 
 ## 9. Measures of success
 
@@ -221,7 +225,21 @@ The [onboarding, habits, and rewards plan](./onboarding-habits-and-rewards.md) r
 
 This section specifies future work. It does not assert that onboarding progress, points, a reward catalog, or Blackout integration are implemented.
 
+## 14. Approved app experience (2026-11-20)
+
+The complete decisions, source inventory, screen flows, limits, and acceptance checklist live in [app-plan.md](app-plan.md).
+
+- Three primary tabs: Chats, Spaces, and Vault; profile/mask controls hold identity, protection/privacy, devices/recovery, and add-ons.
+- Familiar conversation UI, Requests for unknown senders, explicit encryption/device details, and deliberate vault-to-chat sharing.
+- Spaces start simple and reveal channels, invitations, roles, and moderation as needed.
+- A separate vault lock must be enforced through key/storage boundaries, not just a hidden screen.
+- Practical AI/cyber defenses include impersonation resistance, destination checks, uncertain media inspection, visible automation, scoped tool permissions, and explicit authorization for sensitive actions.
+- Preserve local/private processing, identity boundaries, accessible onboarding, chosen milestone rewards, and one-time enhancement purchases.
+- Keep browser-only protection honest and advanced calls, scheduled sending, location integration, and continuity tools subject to their own implementation gates.
+
 ## 11. Source documents to keep aligned
+
+- Blackmask canonical mobile experience and app release plan: [app-plan.md](app-plan.md)
 
 - Blackout feature map: Blackmarket-coa/blackout/docs/features/OVERVIEW.md
 - Blackout messaging/Discord parity map: Blackmarket-coa/blackout/docs/features/discord_parity_blueprint.md

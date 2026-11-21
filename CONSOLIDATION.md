@@ -1,5 +1,7 @@
 # Consolidation Status — Black Mask
 
+> **App direction update (2026-11-20):** The approved [app plan](docs/black-mask/app-plan.md) adds a mobile messenger, private Spaces, and separately locked Vault experience by reusing Blackout communication infrastructure and Blackmask's vault foundation. The earlier consolidation verdict describes existing code and the standalone foundation release; it does not prohibit this app interface. Blackmask still does not become an identity provider or a duplicate messaging backend.
+
 > **2026-11-12 status:** [Implementation and release gaps](docs/black-mask/implementation-status-2026-11-12.md) records source/CI evidence separately from browser/backend validation. Enhancement features are one-time purchases with **no subscription**. Desired private social interaction remains a product goal; current browser/vault code is not evidence that a separate chat service is implemented.
 
 Part of the 2026-08-28 seven-repo BMC consolidation review. The canonical review — audit verdicts,

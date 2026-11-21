@@ -1,9 +1,11 @@
-# Blackmask — Whole-Product Minimum Viable Product (MVP)
+# Blackmask — Standalone Browser and Web Vault MVP
 
 **Status:** Proposed release definition, not a claim of launch readiness  
-**Scope:** The entirety of Blackmask's first usable product  
+**Scope:** Standalone browser-extension and self-hosted web-vault foundation release  
 **Current shipping surfaces:** Browser extension + self-hosted web vault  
 **Principle:** Solve concrete privacy problems with working, understandable controls before expanding into advanced counter-surveillance.
+
+> **Scope clarification (2026-11-20):** The approved [app plan](app-plan.md) defines a separate mobile messenger/Spaces/Vault release. This document preserves the standalone foundation's scope and acceptance tests. Its messaging/mobile exclusions apply to this foundation release only; they do not exclude those capabilities from Blackmask's product direction. Neither document certifies launch readiness.
 
 ## 1. One-sentence product definition
 
@@ -27,7 +29,7 @@ The product must provide immediate standalone value without Blackout, Coalition,
 
 **Return loop:** Protection runs with normal browsing; users revisit when they encounter a warning, create or switch personas, review account health, or investigate a specific exposure. Do not manufacture engagement with fear, streaks, or intrusive alerts.
 
-## 3. Locked MVP scope
+## 3. Standalone foundation MVP scope
 
 | Pillar                    | Required user-facing capability                                                                                                       | Definition of done                                                                                                                                                       |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -67,7 +69,7 @@ The repository's feature reference describes these as implemented in browser-ext
 
 These blockers should be rechecked against the current deployed environment rather than assumed unresolved indefinitely.
 
-## 5. Out of scope for the first release
+## 5. Out of scope for the standalone foundation release
 
 - Blackout messaging client, calls, Matrix room management, or social feeds.
 - Coalition maps, live location, operational tracking, and the proposed Location Privacy Control Center.
