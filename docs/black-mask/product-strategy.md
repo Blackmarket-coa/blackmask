@@ -108,13 +108,15 @@ Avoid dark patterns, fear-based alerts, meaningless privacy scores, and engageme
 
 ## 7. Business and ecosystem model
 
+**Payment rule (2026-11-20):** One-time purchases for optional enhancements, bundles, organization tools, digital goods, and finite services; hosted storage is the only recurring Blackmask charge. The [monetization plan](monetization-plan.md) lists the complete proposed revenue catalogue, storage rules, marketplace/commerce options, services, sponsorships, grants, donations, goods, and unresolved pricing decisions. Core security, recovery, accessibility, and basic data portability remain independent of purchases and storage renewals.
+
 Blackmask should not depend on monetizing surveillance data. Its business model should align revenue with useful privacy capabilities, dependable infrastructure, and user trust.
 
 Potential value-based offerings, subject to implementation and security review:
 
 - Optional advanced privacy and identity-management capabilities.
 - Additional self-hosting, backup, or administration conveniences where they can be delivered safely.
-- Privacy-preserving infrastructure and optional conveniences with transparent actual hosting/third-party costs; optional enhancement ownership is a one-time purchase, not a subscription.
+- Privacy-preserving storage with transparent quotas and recurring hosting charges; other optional conveniences are one-time purchases. Do not introduce non-storage enhancement, hosting, support, or per-seat subscriptions.
 - Ecosystem capabilities that connect Blackmask and Blackout without selling access to personal data or encrypted content.
 
 Billing, analytics, and entitlement systems must remain content-blind. Do not let purchase entitlement status or marketing analytics reveal message contents, private-room membership, browsing history, or persona details beyond what is strictly required to provide a user-requested service.
@@ -240,6 +242,7 @@ The complete decisions, source inventory, screen flows, limits, and acceptance c
 ## 11. Source documents to keep aligned
 
 - Blackmask canonical mobile experience and app release plan: [app-plan.md](app-plan.md)
+- Blackmask complete revenue catalogue and storage-only recurring exception: [monetization-plan.md](monetization-plan.md)
 
 - Blackout feature map: Blackmarket-coa/blackout/docs/features/OVERVIEW.md
 - Blackout messaging/Discord parity map: Blackmarket-coa/blackout/docs/features/discord_parity_blueprint.md

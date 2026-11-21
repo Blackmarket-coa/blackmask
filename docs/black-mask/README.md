@@ -14,9 +14,12 @@ in _this codebase_.
 
 ## Documents
 
+**Payment clarification (2026-11-20):** One-time purchases are the rule for enhancements and finite services. Hosted storage is the only recurring charge. The [monetization plan](monetization-plan.md) governs this exception; dated no-subscription statements elsewhere refer to enhancement features.
+
 | Doc                                                                          | What it is                                                                                                                                                                                  |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`app-plan.md`](./app-plan.md) | **Canonical mobile app plan** — approved Chats / Spaces / Vault direction, source-backed feature catalogue, identity and security boundaries, onboarding, add-ons, and release acceptance criteria. |
+| [`monetization-plan.md`](./monetization-plan.md) | **Complete proposed revenue catalogue** — one-time enhancements, bundles, organization tools, marketplace sales, finite services, ecosystem commerce, sponsorships, donations and goods; hosted storage is the only recurring charge. |
 | [`location-privacy-mvp.md`](./location-privacy-mvp.md)                       | **Proposed Location Privacy Control Center MVP** — user stories, boundaries, acceptance tests, PR-sized steps, and Blackout integration gates.                                              |
 | [`ai-first-audit-and-release-plan.md`](./ai-first-audit-and-release-plan.md) | **AI-first full-product audit** — verify every feature, repair what can be finished, safely hide the rest, and escalate only necessary human gates.                                         |
 | [`feature-audit-register.md`](./feature-audit-register.md)                   | **Feature audit register** — one record per feature and launch dependency, with code, unit, browser, backend and security status kept separate, defects, severity and proposed disposition. |

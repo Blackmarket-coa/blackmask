@@ -22,6 +22,10 @@ Black Mask's privacy layer on top of it, rather than reimplementing encrypted sy
 storage from scratch. **No new encryption logic is added here** — see
 [`.claude/CLAUDE.md`](.claude/CLAUDE.md) for that rule and other project conventions.
 
+## Monetization direction
+
+Optional enhancements, bundles, organization tools, and finite services are one-time purchases. **Hosted storage is the only recurring charge.** The [monetization plan](docs/black-mask/monetization-plan.md) records all proposed revenue strategies and the free core; these are planning candidates, not implemented products or settled prices.
+
 ## What's here
 
 This repo houses the client applications — everything except the mobile apps:

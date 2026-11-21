@@ -4,7 +4,7 @@
 **Status:** Product direction approved by the founder in conversation; implementation and release readiness remain unverified.  
 **Target:** Minimalist mobile experience for iOS and Android, with browser and web companions.  
 **Primary navigation:** Chats · Spaces · Vault.  
-**Business rule:** Optional enhancements are one-time purchases; no enhancement subscriptions. Core encryption, essential safety, recovery, and accessibility remain available independently of purchases or rewards.
+**Business rule:** One-time purchases for optional enhancements, bundles, organization tools, and finite services. Hosted storage is the only recurring Blackmask charge. Core encryption, essential safety, recovery, and accessibility remain available independently of purchases or rewards. See the [monetization plan](monetization-plan.md) for the full proposed revenue catalogue.
 
 ## 1. Product direction and document precedence
 
@@ -215,7 +215,7 @@ Starter journey: **choose an identity → complete one useful private action →
 - Keep core encryption, essential safety, recovery, and accessibility free of purchase/reward gates.
 - Avoid rewards tied to message volume, constant checking, recruitment, contact upload, or identity/location disclosure.
 
-Optional add-ons can include themes, mask packs, and selected community/convenience tools. Paid enhancements are one-time purchases. Explain permissions, data recipients, scope, and revocation before installation; keep tools in the appropriate conversation/Space/menu. Avoid an add-on dashboard as another mandatory navigation layer.
+Optional add-ons can include themes, mask packs, and selected community/convenience tools. Paid enhancements are one-time purchases. Only additional hosted storage may carry a recurring charge; storage quotas must not gate core encryption, basic messaging, recovery, or export. The [monetization plan](monetization-plan.md) covers product candidates, bundles, marketplace sales, finite services, ecosystem commerce, sponsorships, grants, donations, and goods. Explain permissions, data recipients, scope, and revocation before installation; keep tools in the appropriate conversation/Space/menu. Avoid an add-on dashboard as another mandatory navigation layer.
 
 ## 11. First mobile release and sequencing
 
@@ -249,7 +249,7 @@ Calls and media E2EE, scheduled sending compatible with the intended encryption 
 - [ ] AI inspection remains optional, local where implemented, and accurately uncertain.
 - [ ] External analysis and sensitive tool actions require explicit scoped authorization.
 - [ ] Core safety, recovery, accessibility, and earned products remain independent of purchases.
-- [ ] Optional enhancements use one-time purchases with clear ownership/restoration behavior.
+- [ ] Optional enhancements use one-time purchases with clear ownership/restoration behavior; hosted storage is the only recurring charge, with transparent quotas, cancellation, downgrade, and export rules.
 - [ ] First run works without contact upload, location access, purchases, or recruitment.
 - [ ] UI supports keyboard/screen-reader use where relevant, readable contrast, large text, touch targets, and reduced motion.
 - [ ] Release evidence distinguishes source presence, tests, device/browser checks, intended backend checks, and independent review.
