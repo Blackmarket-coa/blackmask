@@ -13,8 +13,10 @@ no records yet.
 [What the app plan relies on here](#what-the-2026-11-20-app-plan-relies-on-here) maps the plan onto
 these records.
 
-**Last updated 2026-11-21.** Evidence:
+**Last updated 2026-11-22.** Evidence:
 
+- [Privacy defaults](./evidence/2026-11-22-chromium-privacy-defaults.md) (2026-11-22): the breach check
+  on item view is opt-in and new Sends hide the sender's email; 39 of 41 checks pass.
 - [Vault flows the app plan reuses](./evidence/2026-11-21-chromium-vault-flows.md) (2026-11-21):
   Send, attachments, export, lock and unlock, log out; 37 of 39 checks pass.
 - [Automated Chromium run with a local Vaultwarden](./evidence/2026-11-16-chromium-logged-in.md)
@@ -47,40 +49,40 @@ that stand-in. Dispositions are **proposals** for review unless marked as decide
 
 ## Summary
 
-| ID      | Feature or dependency                | Status                  | Unit (11-16) | Browser (Chromium)                     | Backend (local VW) | Sev | Disposition                                  |
-| ------- | ------------------------------------ | ----------------------- | ------------ | -------------------------------------- | ------------------ | --- | -------------------------------------------- |
-| BM-01   | Privacy dashboard and score          | Implemented, unverified | 13 pass      | Pass (DASH-01, FP-01)                  | Pass               | P2  | Finish now (score truthfulness)              |
-| BM-02   | Account audit                        | Implemented, unverified | 13 pass      | Renders (DASH-01); counts not asserted | Pass               | —   | Keep, verify counts                          |
-| BM-03   | Tracker blocking (DNR)               | Implemented, unverified | 8 pass       | Pass (TRK-01, TRK-02)                  | n/a                | P2  | Keep; Firefox retest                         |
-| BM-04   | Tracker counting and trackers page   | Implemented, unverified | 5 pass       | Pass (TRK-03, TRK-04)                  | n/a                | P3  | Keep                                         |
-| BM-05   | Persona vault and alias warning      | Implemented, unverified | 18 pass      | Pass (PER-01, PER-02)                  | Pass (SYNC-01)     | —   | Keep; run remaining items                    |
-| BM-06   | Per-persona containers               | Implemented, unverified | 4 pass       | Notice shown (CTR-01, CTR-02)          | n/a                | P3  | Keep (Firefox-only)                          |
-| BM-07   | Fingerprint exposure test            | Implemented, unverified | 8 pass       | Pass (FP-01)                           | n/a                | —   | Keep                                         |
-| BM-08   | Phishing protection                  | Implemented, unverified | 12 pass      | Active (PH-01)                         | Pass               | P2  | **Decided**: free for everyone (done)        |
-| BM-09   | Data exposure (breach lookup)        | Implemented, unverified | 9 pass       | Pass (EXP-01)                          | No key configured  | P2  | Configure the key or hide                    |
-| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Validate before the Inspect action           |
-| BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                         |
-| BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)             |
-| CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend                 |
-| CORE-02 | Lock, unlock, vault timeout          | Implemented, unverified | Not run      | Pass (LOCK-01, LOGOUT-01)              | n/a                | —   | Verify timeout, PIN and a store build        |
-| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01, ATT-01)         | Pass               | —   | Verify on the hosted backend                 |
-| CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
-| CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                       |
-| CORE-06 | Send                                 | Implemented, unverified | Not run      | Pass (SEND-01 to SEND-05)              | Pass               | P2  | Keep; decide the sender-email default        |
-| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Export pass (EXPORT-01, EXPORT-02)     | n/a                | —   | Verify import                                |
-| CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                       |
-| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the 11-20 payment rule            |
-| DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                                |
-| DEP-02  | Welcome tab on install               | Fixed (see BM-12)       | —            | Pass (ENV-02)                          | n/a                | —   | Done                                         |
-| DEP-03  | Phishing feed hosted by Bitwarden    | Implemented, unverified | —            | Fetched after login (ENV-04)           | n/a                | P2  | Disclosed on welcome page; self-host later   |
-| DEP-04  | AI model hosted by Hugging Face      | Implemented, unverified | —            | Not run                                | n/a                | P3  | Self-host weights                            |
-| DEP-05  | Breach endpoint (`HIBP_API_KEY`)     | Blocked                 | —            | Honest "not set up" (EXP-01)           | No key             | P2  | Configure the key or hide BM-09              |
-| DEP-06  | Feature-flag delivery                | Implemented, unverified | —            | Defaults applied (TRK-01)              | Not run            | P3  | Keep                                         |
-| DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                   |
-| DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                    |
-| DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                        |
-| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Keep green; decide on the desktop build gate |
-| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Observed (ENV-04)                      | n/a                | P1  | Make it opt-in, or disclose before release   |
+| ID      | Feature or dependency                | Status                  | Unit (11-16) | Browser (Chromium)                     | Backend (local VW) | Sev | Disposition                                   |
+| ------- | ------------------------------------ | ----------------------- | ------------ | -------------------------------------- | ------------------ | --- | --------------------------------------------- |
+| BM-01   | Privacy dashboard and score          | Implemented, unverified | 13 pass      | Pass (DASH-01, FP-01)                  | Pass               | P2  | Finish now (score truthfulness)               |
+| BM-02   | Account audit                        | Implemented, unverified | 13 pass      | Renders (DASH-01); counts not asserted | Pass               | —   | Keep, verify counts                           |
+| BM-03   | Tracker blocking (DNR)               | Implemented, unverified | 8 pass       | Pass (TRK-01, TRK-02)                  | n/a                | P2  | Keep; Firefox retest                          |
+| BM-04   | Tracker counting and trackers page   | Implemented, unverified | 5 pass       | Pass (TRK-03, TRK-04)                  | n/a                | P3  | Keep                                          |
+| BM-05   | Persona vault and alias warning      | Implemented, unverified | 18 pass      | Pass (PER-01, PER-02)                  | Pass (SYNC-01)     | —   | Keep; run remaining items                     |
+| BM-06   | Per-persona containers               | Implemented, unverified | 4 pass       | Notice shown (CTR-01, CTR-02)          | n/a                | P3  | Keep (Firefox-only)                           |
+| BM-07   | Fingerprint exposure test            | Implemented, unverified | 8 pass       | Pass (FP-01)                           | n/a                | —   | Keep                                          |
+| BM-08   | Phishing protection                  | Implemented, unverified | 12 pass      | Active (PH-01)                         | Pass               | P2  | **Decided**: free for everyone (done)         |
+| BM-09   | Data exposure (breach lookup)        | Implemented, unverified | 9 pass       | Pass (EXP-01)                          | No key configured  | P2  | Configure the key or hide                     |
+| BM-10   | AI-generated media detector          | Implemented, unverified | 20 pass      | Page renders (AI-01)                   | n/a                | P3  | Validate before the Inspect action            |
+| BM-11   | Desktop integration permission       | Implemented, unverified | 31 + 24 pass | Pass (MAN-01, MAN-03, ACC-01)          | n/a                | —   | Keep                                          |
+| BM-12   | Welcome page (first install)         | Implemented, unverified | 3 + 10 pass  | Pass (WEL-01, ENV-02)                  | n/a                | —   | **Decided**: bundled page (done)              |
+| CORE-01 | Account: register, log in, 2FA       | Implemented, unverified | Not run      | Pass (SRV-01, REG-01, LOG-01)          | Pass               | —   | Verify on the hosted backend                  |
+| CORE-02 | Lock, unlock, vault timeout          | Implemented, unverified | Not run      | Pass (LOCK-01, LOGOUT-01)              | n/a                | —   | Verify timeout, PIN and a store build         |
+| CORE-03 | Vault items and sync                 | Implemented, unverified | Not run      | Pass (VLT-01, SYNC-01, ATT-01)         | Pass               | —   | Verify on the hosted backend                  |
+| CORE-04 | Autofill                             | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                        |
+| CORE-05 | Generator and email-alias forwarders | Implemented, unverified | Not run      | Not run                                | n/a                | —   | Verify                                        |
+| CORE-06 | Send                                 | Implemented, unverified | Not run      | Pass (SEND-01 to SEND-06)              | Pass               | —   | Keep; email hidden by default (done)          |
+| CORE-07 | Import and export                    | Implemented, unverified | Not run      | Export pass (EXPORT-01, EXPORT-02)     | n/a                | —   | Verify import                                 |
+| CORE-08 | Self-hosted web vault                | Implemented, unverified | Not run      | Not run                                | Not run            | —   | Verify                                        |
+| CORE-09 | Premium and billing surfaces         | Implemented, unverified | Not run      | Not run                                | Not run            | P2  | Align with the 11-20 payment rule             |
+| DEP-01  | Default server `vault.blackmask.app` | Blocked                 | 18 pass      | Default applied (ENV-01)               | Not live           | P0  | Block release                                 |
+| DEP-02  | Welcome tab on install               | Fixed (see BM-12)       | —            | Pass (ENV-02)                          | n/a                | —   | Done                                          |
+| DEP-03  | Phishing feed hosted by Bitwarden    | Implemented, unverified | —            | Fetched after login (ENV-04)           | n/a                | P2  | Disclosed on welcome page; self-host later    |
+| DEP-04  | AI model hosted by Hugging Face      | Implemented, unverified | —            | Not run                                | n/a                | P3  | Self-host weights                             |
+| DEP-05  | Breach endpoint (`HIBP_API_KEY`)     | Blocked                 | —            | Honest "not set up" (EXP-01)           | No key             | P2  | Configure the key or hide BM-09               |
+| DEP-06  | Feature-flag delivery                | Implemented, unverified | —            | Defaults applied (TRK-01)              | Not run            | P3  | Keep                                          |
+| DEP-07  | Bitwarden destinations left in UI    | Broken                  | —            | Not run                                | n/a                | P1  | Finish now                                    |
+| DEP-08  | Brand palette                        | Partial                 | —            | Partial (THEME-01)                     | n/a                | P3  | Finish with design review                     |
+| DEP-09  | Privacy policy and store listing     | Blocked                 | —            | n/a                                    | n/a                | P1  | Human: write and host                         |
+| DEP-10  | CI health                            | Partial                 | —            | n/a                                    | n/a                | P2  | Keep green; decide on the desktop build gate  |
+| DEP-11  | Third-party requests after login     | Implemented, unverified | —            | Pass (PRIV-01)                         | n/a                | P2  | **Decided**: opt-in (done); disclose the rest |
 
 ## What the 2026-11-20 app plan relies on here
 
@@ -266,12 +268,12 @@ against the intended backend (pillar A).
   - A password Send stays closed without the right password.
   - A file Send arrives intact, and the server stores it as ciphertext.
   - Deleting a Send closes its link.
-- **Defect (P2): a Send names its sender.** The recipient page shows the sender's account email, and "Hide my email" is unticked by default. Sharing from the vault into a chat would reveal the vault account behind a mask.
+- **Decision (2026-11-22): hide the sender's email by default. Done.** The 2026-11-21 run found that the recipient page showed the sender's account email, because "Hide my email" started unticked. A new Send now starts with it ticked; an organization policy that forbids hiding it still wins. SEND-06 passes: the recipient page no longer shows the email.
 - **What the form can restrict:** a deletion date, a view limit, who can view (anyone with the link, specific people, or a password), hiding the sender's email, and a private note. There is no expiry separate from deletion and no way to disable a Send without deleting it. The app plan's wording assumes both.
 - **The recipient page comes from the server.** A link opens the web vault the server serves. The test server's bundled one says "Bitwarden member"; this repository's web vault says "Black Mask member". The hosted server must serve this repository's build.
 - File Sends check premium in the client (CORE-09).
 - **Not run:** Sends for specific people (email verification), a deletion date passing, editing a Send.
-- **Disposition / gate:** Keep it. Decide the sender-email default before sharing is built on it / G.
+- **Disposition / gate:** Keep it / G.
 
 ### CORE-07 · Import and export
 
@@ -368,7 +370,9 @@ against the intended backend (pillar A).
 - Read from the code and not tested: the "show at-risk password notifications" setting gates the link that follows the check, not the check itself.
 - The item form's Check password button makes the same request, but only when clicked.
 - **Why P1:** a privacy product sends something derived from a stored password to a third party during an ordinary action, and says so nowhere. The welcome page discloses the phishing list and not this.
-- **Severity / effort:** P1 / S. **Disposition:** Make the check opt-in, or disclose it at first use and in the privacy policy, before release. **Gate:** G.
+- **Decision (2026-11-22): make it opt-in. Done.** A per-user setting, "Check passwords against known breaches when you open an item", is off by default and describes what is sent. With it off, opening an item still finds weak and reused passwords on the device; only the lookup is skipped. PRIV-01 passes: viewing the login item twice sent nothing to `api.pwnedpasswords.com`.
+- **Still sent:** the phishing list from `assets.bitwarden.com` (DEP-03), the item form's Check password button when clicked, and the sign-up breach check on the master password, a visible box that is ticked by default.
+- **Severity / effort:** P2 / S. **Disposition:** Disclose the remaining requests in the privacy policy, and decide whether the sign-up breach check should start unticked. **Gate:** G.
 
 ## Documentation drift
 
@@ -386,7 +390,7 @@ Still open (code and docs disagree):
 
 ## Next steps for the register
 
-1. **Decide two privacy defaults:** the breach check on item view (DEP-11, P1) and the sender's email on Sends (CORE-06, P2).
+1. **Sign-up breach check:** decide whether the master-password breach check should start unticked (DEP-11).
 2. **Firefox MV3:** containers (BM-06), blocking (BM-03), and a full pass of the logged-in items.
 3. **Remaining logged-in items:** persona custom fields and alias warning, the phishing warning flow, account-audit counts, autofill, import, the vault timeout and PIN unlock.
 4. **Bounded fixes:** BM-01 (score truthfulness) and DEP-07 (Bitwarden destinations).

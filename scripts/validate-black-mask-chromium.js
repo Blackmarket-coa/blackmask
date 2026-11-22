@@ -669,6 +669,7 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
   };
   let loginCipherId = null;
   let textSendLink = null;
+  let textSendView = null;
 
   await run("SRV-01", "A self-hosted server can be chosen on the login screen", async () => {
     await open("login");
@@ -958,6 +959,7 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
         const body = `Text for the recipient ${PLAINTEXT_MARKER}`;
         textSendLink = await createSend({ name: TEXT_SEND_NAME, body });
         const view = await viewAsRecipient(textSendLink);
+        textSendView = view;
         const readable = view.shown.includes(body);
         return {
           status: readable ? "PASS" : "FAIL",
@@ -969,6 +971,21 @@ async function loggedInChecks(context, args, results, extensionId, msg) {
             showsSenderEmail: view.shown.includes(args.email),
             serverResponses: view.serverResponses,
           },
+        };
+      },
+    ],
+    [
+      "SEND-06",
+      "A new Send hides the sender's email from the recipient by default",
+      async () => {
+        if (!textSendView) {
+          throw new Error("SEND-01 produced no recipient view to inspect");
+        }
+        // SEND-01 created its Send without touching "Hide my email", so this is the default.
+        const showsSenderEmail = textSendView.shown.includes(args.email);
+        return {
+          status: showsSenderEmail ? "FAIL" : "PASS",
+          evidence: { showsSenderEmail },
         };
       },
     ],
@@ -1354,6 +1371,17 @@ async function main() {
     extensionHosts,
     browserOwnHosts: [...baseline].sort(),
   });
+  // Viewing a login item may check its password against Have I Been Pwned only when the user
+  // has opted in. The run views its login item (VLT-01, ATT-01), never opts in, never clicks
+  // Check password, and unticks the breach check when choosing the master password (REG-01).
+  const breachLookups = results.hostsContacted.find((h) => h.host === "api.pwnedpasswords.com");
+  check(
+    results,
+    "PRIV-01",
+    "Viewing a login item sends nothing to the breach-check service unless the user opts in",
+    breachLookups ? "FAIL" : "PASS",
+    { requestsToApiPwnedpasswordsCom: breachLookups?.count ?? 0 },
+  );
   const tabHosts = new Set(run.installTabs.map((t) => new URL(t).host));
   const bitwardenHosts = results.hostsContacted
     .map((h) => h.host)
