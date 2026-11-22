@@ -279,19 +279,30 @@ export class CipherViewComponent {
   /**
    * Whether the login password for the cipher is considered at risk.
    * The password is only evaluated when the user is premium and has edit access to the cipher.
+   * Weak and reused passwords are found locally. The breach lookup, which sends the first five
+   * characters of the password's SHA-1 hash to Have I Been Pwned, runs only when the user has
+   * opted in with the "check passwords for breaches" setting.
    */
   readonly passwordIsAtRisk = toSignal(
-    combineLatest([this.activeUserId$, this.cipher$]).pipe(
-      switchMap(([userId, cipher]) => {
+    combineLatest([
+      this.activeUserId$,
+      this.cipher$,
+      this.vaultSettingsService.checkPasswordsForBreaches$,
+    ]).pipe(
+      switchMap(([userId, cipher, checkForBreaches]) => {
         if (!cipher.hasLoginPassword || !cipher.edit || cipher.organizationId || cipher.isDeleted) {
           return of(false);
         }
         return this.switchPremium$(
           userId,
           () =>
-            from(this.checkIfPasswordIsAtRisk(cipher.id as CipherId, userId as UserId)).pipe(
-              startWith(false),
-            ),
+            from(
+              this.checkIfPasswordIsAtRisk(
+                cipher.id as CipherId,
+                userId as UserId,
+                checkForBreaches,
+              ),
+            ).pipe(startWith(false)),
           () => of(false),
         );
       }),
@@ -365,9 +376,17 @@ export class CipherViewComponent {
       .pipe(switchMap((isPremium) => (isPremium ? ifPremium$() : ifNonPremium$())));
   }
 
-  private async checkIfPasswordIsAtRisk(cipherId: CipherId, userId: UserId): Promise<boolean> {
+  private async checkIfPasswordIsAtRisk(
+    cipherId: CipherId,
+    userId: UserId,
+    checkForBreaches: boolean,
+  ): Promise<boolean> {
     try {
-      const risk = await this.cipherRiskService.computeCipherRiskForUser(cipherId, userId, true);
+      const risk = await this.cipherRiskService.computeCipherRiskForUser(
+        cipherId,
+        userId,
+        checkForBreaches,
+      );
       return isPasswordAtRisk(risk);
     } catch (error: unknown) {
       this.logService.error("Failed to check if password is at risk", error);

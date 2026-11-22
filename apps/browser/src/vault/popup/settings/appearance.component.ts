@@ -87,6 +87,7 @@ export class AppearanceComponent implements OnInit {
     width: "default" as PopupWidthOption,
     clickItemsToAutofillVaultView: false,
     showAtRiskNotifications: true,
+    checkPasswordsForBreaches: false,
   });
 
   /** To avoid flashes of inaccurate values, only show the form after the entire form is populated. */
@@ -138,6 +139,9 @@ export class AppearanceComponent implements OnInit {
     const showAtRiskNotifications = await firstValueFrom(
       this.vaultSettingsService.showAtRiskPasswordNotifications$,
     );
+    const checkPasswordsForBreaches = await firstValueFrom(
+      this.vaultSettingsService.checkPasswordsForBreaches$,
+    );
 
     // Set initial values for the form
     this.appearanceForm.setValue({
@@ -150,6 +154,7 @@ export class AppearanceComponent implements OnInit {
       width,
       clickItemsToAutofillVaultView,
       showAtRiskNotifications,
+      checkPasswordsForBreaches,
     });
 
     this.formLoading = false;
@@ -207,6 +212,12 @@ export class AppearanceComponent implements OnInit {
       .subscribe((showAtRiskNotifications) => {
         void this.updateShowAtRiskNotifications(showAtRiskNotifications);
       });
+
+    this.appearanceForm.controls.checkPasswordsForBreaches.valueChanges
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((checkPasswordsForBreaches) => {
+        void this.updateCheckPasswordsForBreaches(checkPasswordsForBreaches);
+      });
   }
 
   async updateClickItemsToAutofillVaultView(clickItemsToAutofillVaultView: boolean) {
@@ -215,6 +226,10 @@ export class AppearanceComponent implements OnInit {
 
   async updateShowAtRiskNotifications(showAtRiskNotifications: boolean) {
     await this.vaultSettingsService.setShowAtRiskPasswordNotifications(showAtRiskNotifications);
+  }
+
+  async updateCheckPasswordsForBreaches(checkPasswordsForBreaches: boolean) {
+    await this.vaultSettingsService.setCheckPasswordsForBreaches(checkPasswordsForBreaches);
   }
 
   async updateFavicon(enableFavicon: boolean) {

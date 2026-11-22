@@ -30,6 +30,13 @@ export abstract class VaultSettingsService {
    * to users.
    */
   abstract showAtRiskPasswordNotifications$: Observable<boolean>;
+  /**
+   * Whether opening a login item may check its password against Have I Been Pwned. The check
+   * sends the first five characters of the password's SHA-1 hash to a third party, so it is
+   * opt-in and off until the user turns it on. Checks the user starts themselves, such as the
+   * item form's Check password button, are not governed by this setting.
+   */
+  abstract checkPasswordsForBreaches$: Observable<boolean>;
 
   /**
    * Saves the enable passkeys setting to disk.
@@ -57,4 +64,9 @@ export abstract class VaultSettingsService {
    * @param value The new value for the visibility of at-risk password notifications.
    */
   abstract setShowAtRiskPasswordNotifications(value: boolean): Promise<void>;
+  /**
+   * Saves whether opening a login item may check its password against Have I Been Pwned.
+   * @param value The new value for the setting.
+   */
+  abstract setCheckPasswordsForBreaches(value: boolean): Promise<void>;
 }

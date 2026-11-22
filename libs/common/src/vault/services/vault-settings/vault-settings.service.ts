@@ -9,6 +9,7 @@ import {
   USER_ENABLE_PASSKEYS,
   CLICK_ITEMS_AUTOFILL_VAULT_VIEW,
   SHOW_AT_RISK_PASSWORD_NOTIFICATIONS,
+  CHECK_PASSWORDS_FOR_BREACHES,
 } from "../key-state/vault-settings.state";
 import { RestrictedItemTypesService } from "../restricted-item-types.service";
 
@@ -69,6 +70,15 @@ export class VaultSettingsService implements VaultSettingsServiceAbstraction {
   readonly showAtRiskPasswordNotifications$: Observable<boolean> =
     this.showAtRiskPasswordNotificationsState.state$.pipe(map((x) => x ?? true));
 
+  private checkPasswordsForBreachesState: ActiveUserState<boolean> = this.stateProvider.getActive(
+    CHECK_PASSWORDS_FOR_BREACHES,
+  );
+  /**
+   * {@link VaultSettingsServiceAbstraction.checkPasswordsForBreaches$}
+   */
+  readonly checkPasswordsForBreaches$: Observable<boolean> =
+    this.checkPasswordsForBreachesState.state$.pipe(map((x) => x ?? false));
+
   constructor(
     private stateProvider: StateProvider,
     private restrictedItemTypesService: RestrictedItemTypesService,
@@ -107,5 +117,12 @@ export class VaultSettingsService implements VaultSettingsServiceAbstraction {
    */
   async setShowAtRiskPasswordNotifications(value: boolean): Promise<void> {
     await this.showAtRiskPasswordNotificationsState.update(() => value);
+  }
+
+  /**
+   * {@link VaultSettingsServiceAbstraction.setCheckPasswordsForBreaches}
+   */
+  async setCheckPasswordsForBreaches(value: boolean): Promise<void> {
+    await this.checkPasswordsForBreachesState.update(() => value);
   }
 }

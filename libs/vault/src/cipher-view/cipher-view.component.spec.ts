@@ -45,6 +45,7 @@ describe("CipherViewComponent", () => {
   let mockBillingAccountProfileStateService: BillingAccountProfileStateService;
   let mockVaultSettingsService: VaultSettingsService;
   let showAtRiskPasswordNotifications$: BehaviorSubject<boolean>;
+  let checkPasswordsForBreaches$: BehaviorSubject<boolean>;
   let mockConfigService: ConfigService;
   let removeAtRiskCallout$: BehaviorSubject<boolean>;
 
@@ -88,6 +89,8 @@ describe("CipherViewComponent", () => {
     showAtRiskPasswordNotifications$ = new BehaviorSubject(true);
     mockVaultSettingsService = mock<VaultSettingsService>();
     mockVaultSettingsService.showAtRiskPasswordNotifications$ = showAtRiskPasswordNotifications$;
+    checkPasswordsForBreaches$ = new BehaviorSubject(false);
+    mockVaultSettingsService.checkPasswordsForBreaches$ = checkPasswordsForBreaches$;
 
     removeAtRiskCallout$ = new BehaviorSubject(false);
     mockConfigService = mock<ConfigService>();
@@ -277,6 +280,33 @@ describe("CipherViewComponent", () => {
       // Should remain false for safe password
       expect(mockCipherRiskService.computeCipherRiskForUser).toHaveBeenCalled();
       expect(component.passwordIsAtRisk()).toBe(false);
+    }));
+
+    it("does not check for breaches unless the user has opted in", fakeAsync(() => {
+      fixture.componentRef.setInput("cipher", createLoginCipherView());
+      fixture.detectChanges();
+      tick();
+
+      // Weak and reused passwords are still found locally; only the breach lookup is skipped.
+      expect(mockCipherRiskService.computeCipherRiskForUser).toHaveBeenCalledWith(
+        "cipher-id",
+        expect.anything(),
+        false,
+      );
+    }));
+
+    it("checks for breaches when the user has opted in", fakeAsync(() => {
+      checkPasswordsForBreaches$.next(true);
+
+      fixture.componentRef.setInput("cipher", createLoginCipherView());
+      fixture.detectChanges();
+      tick();
+
+      expect(mockCipherRiskService.computeCipherRiskForUser).toHaveBeenCalledWith(
+        "cipher-id",
+        expect.anything(),
+        true,
+      );
     }));
   });
 

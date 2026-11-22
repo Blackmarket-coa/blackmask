@@ -73,6 +73,7 @@ describe("AppearanceComponent", () => {
   const setShowQuickCopyActions = jest.fn().mockResolvedValue(undefined);
   const setClickItemsToAutofillVaultView = jest.fn().mockResolvedValue(undefined);
   const setShowAtRiskPasswordNotifications = jest.fn().mockResolvedValue(undefined);
+  const setCheckPasswordsForBreaches = jest.fn().mockResolvedValue(undefined);
 
   const mockWidthService: Partial<PopupSizeService> = {
     width$: new BehaviorSubject("default"),
@@ -86,6 +87,7 @@ describe("AppearanceComponent", () => {
     setEnableRoutingAnimation.mockClear();
     setClickItemsToAutofillVaultView.mockClear();
     setShowAtRiskPasswordNotifications.mockClear();
+    setCheckPasswordsForBreaches.mockClear();
 
     const configService = mock<ConfigService>();
     configService.getFeatureFlag$.mockImplementation(
@@ -134,8 +136,10 @@ describe("AppearanceComponent", () => {
           useValue: {
             clickItemsToAutofillVaultView$: of(false),
             showAtRiskPasswordNotifications$: of(true),
+            checkPasswordsForBreaches$: of(false),
             setClickItemsToAutofillVaultView,
             setShowAtRiskPasswordNotifications,
+            setCheckPasswordsForBreaches,
           },
         },
         {
@@ -183,6 +187,7 @@ describe("AppearanceComponent", () => {
       width: "default",
       clickItemsToAutofillVaultView: false,
       showAtRiskNotifications: true,
+      checkPasswordsForBreaches: false,
     });
   });
 
@@ -296,6 +301,34 @@ describe("AppearanceComponent", () => {
         By.css('input[formControlName="showAtRiskNotifications"]'),
       );
       expect(checkbox).toBeNull();
+    });
+  });
+
+  describe("checkPasswordsForBreaches", () => {
+    it("starts off", async () => {
+      await fixture.whenStable();
+
+      expect(component.appearanceForm.controls.checkPasswordsForBreaches.value).toBe(false);
+    });
+
+    it("saves the setting when the user opts in", async () => {
+      await fixture.whenStable();
+
+      component.appearanceForm.controls.checkPasswordsForBreaches.setValue(true);
+
+      expect(setCheckPasswordsForBreaches).toHaveBeenCalledWith(true);
+    });
+
+    it("shows the checkbox to premium users, the only users the check can run for", async () => {
+      hasPremiumFromAnySource$.next(true);
+      fixture.detectChanges();
+      await fixture.whenStable();
+      fixture.detectChanges();
+
+      const checkbox = fixture.debugElement.query(
+        By.css("#appearance_checkbox_checkPasswordsForBreaches"),
+      );
+      expect(checkbox).not.toBeNull();
     });
   });
 });

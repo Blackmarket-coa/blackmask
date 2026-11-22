@@ -7137,6 +7137,12 @@
   "blackMaskWelcomeDoesTrackers": {
     "message": "Blocks requests to a starter list of 20 known tracker domains on every site."
   },
+  "blackMaskCheckPasswordsForBreaches": {
+    "message": "Check passwords against known breaches when you open an item"
+  },
+  "blackMaskCheckPasswordsForBreachesDesc": {
+    "message": "Sends the first 5 characters of a hash of the item's password to Have I Been Pwned (api.pwnedpasswords.com). The password itself never leaves your device. Off by default."
+  },
   "blackMaskWelcomeDoesPhishing": {
     "message": "Once you're logged in, warns you before you open a known phishing site. The list comes from Bitwarden's public phishing feed; the sites you visit are checked against it on this device."
   },
