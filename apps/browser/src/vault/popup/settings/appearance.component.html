@@ -62,11 +62,23 @@
       }
 
       @if (isPremium) {
-        <bit-form-control disableMargin>
+        <bit-form-control>
           <input bitCheckbox formControlName="showAtRiskNotifications" type="checkbox" />
           <bit-label>
             {{ "showAtRiskPasswordNotifications" | i18n }}
           </bit-label>
+        </bit-form-control>
+        <bit-form-control disableMargin>
+          <input
+            bitCheckbox
+            id="appearance_checkbox_checkPasswordsForBreaches"
+            formControlName="checkPasswordsForBreaches"
+            type="checkbox"
+          />
+          <bit-label>
+            {{ "blackMaskCheckPasswordsForBreaches" | i18n }}
+          </bit-label>
+          <bit-hint>{{ "blackMaskCheckPasswordsForBreachesDesc" | i18n }}</bit-hint>
         </bit-form-control>
       }
     </bit-card>

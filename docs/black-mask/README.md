@@ -2,7 +2,7 @@
 
 > **Approved app direction (2026-11-20):** Start with [app-plan.md](app-plan.md) for the mobile messenger, private Spaces, separately locked Vault, feature catalogue, AI/cyber-defense requirements, and release sequence. It expands the earlier product scope while preserving the standalone browser/web release checks below. Planned app behavior is distinct from implemented or verified behavior.
 
-> **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-21 Chromium run](evidence/2026-11-21-chromium-vault-flows.md): a production Chrome build passed 37 of 39 checks against a local Vaultwarden, now including Send, attachments, export, and lock and unlock. Nothing is fully verified yet: Firefox, a store-installed build and the hosted backend are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
+> **Status:** the [feature audit register](feature-audit-register.md) records what is verified, feature by feature. Its latest evidence is the [2026-11-22 Chromium run](evidence/2026-11-22-chromium-privacy-defaults.md): a production Chrome build passed 39 of 41 checks against a local Vaultwarden, including Send, attachments, export, lock and unlock, and the two privacy defaults decided that day. Nothing is fully verified yet: Firefox, a store-installed build and the hosted backend are outstanding. The [2026-11-12 source/CI review](implementation-status-2026-11-12.md) is the earlier scoped summary. Enhancement features are **one-time purchases; no subscription**.
 
 Black Mask is a privacy / counter-surveillance product built on top of this repository (a fork of
 the Bitwarden clients monorepo). Its mission: **give individuals the tools to understand, reduce, and
@@ -49,9 +49,9 @@ states and an off-by-default flag would make every feature invisible in producti
 [`features.md`](./features.md) for what each feature does, where its code lives, and its
 limitations.
 
-Validation so far covers one environment. On 2026-11-21 a production Chrome build passed 37 of 39
+Validation so far covers one environment. On 2026-11-22 a production Chrome build passed 39 of 41
 automated checks in Chromium against a local Vaultwarden
-([evidence](./evidence/2026-11-21-chromium-vault-flows.md)). That run leaves gaps, listed in the
+([evidence](./evidence/2026-11-22-chromium-privacy-defaults.md)). That run leaves gaps, listed in the
 report: the phishing warning flow, the AI model download, real breach data, autofill and import
 among them. Firefox (containers included), a store-installed build and the hosted backend have not
 been verified, so the [register](./feature-audit-register.md) marks no feature Verified. Work through [`browser-validation.md`](./browser-validation.md) before demoing or

@@ -43,3 +43,12 @@ export const SHOW_AT_RISK_PASSWORD_NOTIFICATIONS = new UserKeyDefinition<boolean
     clearOn: [], // do not clear user settings
   },
 );
+
+export const CHECK_PASSWORDS_FOR_BREACHES = new UserKeyDefinition<boolean>(
+  VAULT_SETTINGS_DISK,
+  "checkPasswordsForBreaches",
+  {
+    deserializer: (obj) => obj,
+    clearOn: [], // do not clear user settings
+  },
+);

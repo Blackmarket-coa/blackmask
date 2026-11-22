@@ -87,6 +87,11 @@ export class DefaultSendFormService implements SendFormService {
       } else if (whoCanAccess === WhoCanAccessType.SpecificPeople) {
         updatedSendView.authType = AuthType.Email;
       }
+      // A Send's recipient page names the sender's account email unless it is hidden. Hide it by
+      // default, so sharing from the vault does not reveal the account behind a mask. An
+      // organization policy that forbids hiding the email still wins.
+      const hideEmailDisabled = await firstValueFrom(this.sendPolicyService.disableHideEmail$);
+      updatedSendView.hideEmail = !hideEmailDisabled;
       updatedSendView = Object.assign(updatedSendView, this.sendFormConfig.presetSendFields ?? {});
     } else {
       if (!this.sendFormConfig.originalSend) {

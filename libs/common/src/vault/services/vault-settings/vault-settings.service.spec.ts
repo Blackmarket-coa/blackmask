@@ -45,4 +45,24 @@ describe("VaultSettingsService", () => {
       expect(result).toBe(true);
     });
   });
+
+  describe("checkPasswordsForBreaches$", () => {
+    it("defaults to false when no value is stored", async () => {
+      const result = await firstValueFrom(service.checkPasswordsForBreaches$);
+      expect(result).toBe(false);
+    });
+
+    it("emits true after setCheckPasswordsForBreaches(true)", async () => {
+      await service.setCheckPasswordsForBreaches(true);
+      const result = await firstValueFrom(service.checkPasswordsForBreaches$);
+      expect(result).toBe(true);
+    });
+
+    it("emits false after setCheckPasswordsForBreaches(false)", async () => {
+      await service.setCheckPasswordsForBreaches(true);
+      await service.setCheckPasswordsForBreaches(false);
+      const result = await firstValueFrom(service.checkPasswordsForBreaches$);
+      expect(result).toBe(false);
+    });
+  });
 });
