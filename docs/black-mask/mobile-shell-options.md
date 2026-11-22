@@ -1,8 +1,10 @@
 # Blackmask Mobile Shell — Options for Decision
 
 **Written:** 2026-11-21  
-**Status:** A decision brief for the owner. Nothing here is built, and nothing is decided until the
-owner decides it.  
+**Status:** The owner accepted option A, the recommendation below, on 2026-11-22. The Android proof of
+concept in section 6 then passed its isolation, unlock and lock checks on local pages
+([evidence](evidence/2026-11-22-android-shell-poc.md)). Where the code lives (section 7) is not
+decided.  
 **Decision needed:** which mobile shell the Blackmask app uses, and where its code lives. This is the
 first acceptance item of the [app plan](app-plan.md) (§12) and the start of its Phase A (§11).
 
@@ -127,14 +129,23 @@ One Android debug build, with test servers. It passes if all of these hold:
 
 - [ ] The chat view logs in to a test Matrix server and sends a message.
 - [ ] The vault view logs in to a test Vaultwarden and shows an item.
-- [ ] With the vault locked or its view closed, chat still sends and receives.
-- [ ] Script run in the chat view cannot read the vault's storage, and the two views do not share
+- [x] With the vault locked or its view closed, chat keeps running and keeps its data. Checked with a
+      local page; sending and receiving need the real chat client.
+- [x] Script run in the chat view cannot read the vault's storage, and the two views do not share
       cookies or local data.
-- [ ] The vault view cannot be opened without the device unlock.
-- [ ] Sending the app to the background and returning leaves the vault locked according to its
+- [x] The vault view cannot be opened without the device unlock.
+- [x] Sending the app to the background and returning leaves the vault locked according to its
       timeout.
 - [ ] The same three isolation checks pass on iOS. This needs a Mac; it cannot be built in the cloud
       environment these documents were written in.
+
+**Android result, 2026-11-22.** The four ticked items pass on an Android 14 emulator, with both web
+views loading local pages ([evidence](evidence/2026-11-22-android-shell-poc.md)). The build is
+[`apps/mobile-poc`](../../apps/mobile-poc/README.md): plain Android rather than Capacitor, in this
+repository rather than Blackout's, with the app id `app.blackmask.poc`. Its README gives the
+reasons. The vault runs in its own process with its own WebView data directory. Its web view is
+created only after the system screen-lock prompt succeeds, and locking ends the process. The two
+login items need the real clients, and the iOS item needs a Mac.
 
 If the second web view cannot be isolated on one of the platforms, option A fails there and the
 choice reopens between C and D.
@@ -172,7 +183,8 @@ text, not a Blackout licence.
 
 ## 9. Limits of this brief
 
-- Nothing was built or run for it. No Capacitor build, no device, no simulator.
+- Nothing was built or run for the brief itself. The Android proof of concept came after it; see
+  section 6.
 - The statements about iOS and Android web views and about store review come from general platform
   knowledge, not from a test. The proof of concept in section 6 exists to check them.
 - Blackout was read at one commit on one day. Its limitations documents change often.
