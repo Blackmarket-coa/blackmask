@@ -11,14 +11,14 @@ small local pages, not the real clients.
 
 ## How it works
 
-| Piece             | What it does                                                                                                                                                                        |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ChatActivity`    | Chats and Spaces. Runs in the app's main process. In the app this view would run Blackout's web client                                                                              |
-| `VaultActivity`   | The vault. Runs in a **separate process** (`:vault`, set in the manifest)                                                                                                           |
-| `PocApplication`  | Gives the vault process **its own WebView data directory** (`WebView.setDataDirectorySuffix`), so cookies, local storage, IndexedDB and caches are not shared with the chat view    |
-| Unlock gate       | The vault's web view is created only after Android's `BiometricPrompt` confirms the device screen lock (fingerprint, face or PIN). With no screen lock set, the vault does not open |
-| Lock              | Locking, closing the vault with Back, or leaving it in the background past a timeout (30 s here) ends the vault process, which clears everything it held in memory                  |
-| Other protections | The vault window blocks screenshots and the recent-apps preview (`FLAG_SECURE`). App data is excluded from cloud backup and device-to-device transfer                               |
+| Piece             | What it does                                                                                                                                                                                                                                                         |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ChatActivity`    | Chats and Spaces. Runs in the app's main process. In the app this view would run Blackout's web client                                                                                                                                                               |
+| `VaultActivity`   | The vault. Runs in a **separate process** (`:vault`, set in the manifest)                                                                                                                                                                                            |
+| `PocApplication`  | Gives the vault process **its own WebView data directory** (`WebView.setDataDirectorySuffix`), so cookies, local storage, IndexedDB and caches are not shared with the chat view                                                                                     |
+| Unlock gate       | The vault's web view is created only after Android's `BiometricPrompt` confirms the device screen lock (fingerprint, face or PIN). With no screen lock set, the vault does not open                                                                                  |
+| Lock              | Locking, closing the vault with Back, or leaving it in the background past a timeout (30 s here) ends the vault process, which clears everything it held in memory. If Android ends the process first and later recreates the vault screen, the screen starts locked |
+| Other protections | The vault window blocks screenshots and the recent-apps preview (`FLAG_SECURE`). App data is excluded from cloud backup and device-to-device transfer                                                                                                                |
 
 No new encryption is involved: each web client would keep its own existing encryption.
 
@@ -30,15 +30,15 @@ contain a storage probe page that the tests use.
 
 Mapped to the proof-of-concept conditions in the brief's section 6:
 
-| Condition                                                      | Test                                                                                                                                                           |
-| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Script in the chat view cannot read the vault's storage        | `IsolationTest`: both views load **the same origin**; what one writes to local storage, cookies, IndexedDB and Cache Storage, the other cannot read, both ways |
-| The two views do not share cookies or local data               | `IsolationTest`, as above                                                                                                                                      |
-| The vault cannot be opened without the device unlock           | `GateTest`: no page loads until the PIN is entered, and cancelling the prompt keeps it closed. `NoScreenLockTest`: with no screen lock, it never opens         |
-| With the vault locked or closed, chat keeps working            | `LockTest`: Lock ends the vault process while the chat view keeps running and keeps its own data                                                               |
-| Returning from the background leaves the vault locked          | `LockTest`: after the timeout in the background the vault process is gone, and a reopened vault asks for the screen lock again                                 |
-| The chat view logs in to Matrix; the vault logs in to a server | Not covered: the views load local pages. See [Pointing it at real clients](#pointing-it-at-real-clients)                                                       |
-| The same checks on iOS                                         | Not covered: needs a Mac                                                                                                                                       |
+| Condition                                                      | Test                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Script in the chat view cannot read the vault's storage        | `IsolationTest`: both views load **the same origin**; what one writes to local storage, cookies, IndexedDB and Cache Storage, the other cannot read, both ways                                                                                |
+| The two views do not share cookies or local data               | `IsolationTest`, as above                                                                                                                                                                                                                     |
+| The vault cannot be opened without the device unlock           | `GateTest`: no page loads until the PIN is entered, and cancelling the prompt keeps it closed. `NoScreenLockTest`: with no screen lock, it never opens                                                                                        |
+| With the vault locked or closed, chat keeps working            | `LockTest`: Lock ends the vault process while the chat view keeps running and keeps its own data                                                                                                                                              |
+| Returning from the background leaves the vault locked          | `LockTest`: after the timeout in the background the vault process is gone, and a reopened vault asks for the screen lock again. When Android ends the vault process in the background and recreates the screen on return, the vault is locked |
+| The chat view logs in to Matrix; the vault logs in to a server | Not covered: the views load local pages. See [Pointing it at real clients](#pointing-it-at-real-clients)                                                                                                                                      |
+| The same checks on iOS                                         | Not covered: needs a Mac                                                                                                                                                                                                                      |
 
 Using the same origin in both views is deliberate. Different origins would be kept apart by the
 browser anyway; the same origin shows that the separate data directory does it.

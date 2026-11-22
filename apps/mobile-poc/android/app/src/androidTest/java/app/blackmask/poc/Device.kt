@@ -29,6 +29,7 @@ internal object Device {
 
     val context: Context get() = InstrumentationRegistry.getInstrumentation().targetContext
     val ui: UiDevice get() = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+    private val activityManager: ActivityManager get() = context.getSystemService(ActivityManager::class.java)
 
     /** The device PIN the CI job sets; override with -Pandroid.testInstrumentationRunnerArguments.pocPin=… */
     private val pin: String
@@ -43,13 +44,33 @@ internal object Device {
     fun requireScreenLock() =
         assertTrue("These tests need a device PIN: adb shell locksettings set-pin $pin", hasScreenLock())
 
-    /** Closes the vault, waits for its process to end, and removes old probe results. */
+    /**
+     * Removes the app's tasks, ends the vault process and deletes old probe results, so that each
+     * test starts from nothing.
+     *
+     * Removing the tasks matters. Android keeps the identity of the activity that started a task,
+     * even after the task is cleared for another activity, and it treats a new start of that
+     * activity as a request to bring the task back. A vault task left over from an earlier test
+     * would take the next test's vault start: either nothing new opens, or the old vault screen
+     * comes back with the old test's extras.
+     */
     fun reset() {
         ui.pressHome()
+        activityManager.appTasks.forEach { task -> runCatching { task.finishAndRemoveTask() } }
         vaultPid()?.let { Process.killProcess(it) }
         awaitVaultGone()
+        clearProbes()
+    }
+
+    fun clearProbes() {
         probeDir.deleteRecursively()
     }
+
+    /** The activity at the top of the app's task, as Android has it recorded. */
+    fun topActivityOfAppTask(): String? = activityManager.appTasks.firstOrNull()?.taskInfo?.topActivity?.className
+
+    /** Brings the app's task back to the front, as returning to the app from Recents does. */
+    fun returnToApp() = activityManager.appTasks.first().moveToFront()
 
     fun probeExtras(id: String, op: String, token: String, host: String, lockTimeoutMs: Long? = null) =
         buildMap {
@@ -74,6 +95,8 @@ internal object Device {
     }
 
     fun awaitView(id: String): UiObject2? = ui.wait(Until.findObject(By.res(PACKAGE, id)), TIMEOUT_MS)
+
+    fun awaitViewGone(id: String): Boolean = ui.wait(Until.gone(By.res(PACKAGE, id)), TIMEOUT_MS)
 
     /** The PIN field of the system's screen-lock prompt, once it is showing. */
     fun awaitScreenLockPrompt(): UiObject2? =
@@ -108,8 +131,7 @@ internal object Device {
     }
 
     fun vaultPid(): Int? =
-        context.getSystemService(ActivityManager::class.java).runningAppProcesses
-            ?.firstOrNull { it.processName == VAULT_PROCESS }?.pid
+        activityManager.runningAppProcesses?.firstOrNull { it.processName == VAULT_PROCESS }?.pid
 
     fun awaitVaultGone(timeoutMs: Long = TIMEOUT_MS): Boolean {
         val deadline = SystemClock.uptimeMillis() + timeoutMs
