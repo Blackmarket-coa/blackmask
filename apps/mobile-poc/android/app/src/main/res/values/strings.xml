@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blackmask PoC</string>
+    <string name="chat_title">Chats (proof of concept)</string>
+    <string name="chat_open_vault">Vault</string>
+    <string name="vault_title">Vault</string>
+    <string name="vault_locked">Your vault is locked</string>
+    <string name="vault_unlock">Unlock</string>
+    <string name="vault_lock">Lock</string>
+    <string name="vault_unlock_title">Unlock your vault</string>
+    <string name="vault_unlock_subtitle">Use your screen lock to open the vault</string>
+    <string name="vault_needs_screen_lock">Set a screen lock on this device to use the vault.</string>
+</resources>

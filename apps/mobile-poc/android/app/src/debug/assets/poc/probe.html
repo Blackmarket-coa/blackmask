@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Storage probe</title>
+  <body>
+    <p>Proof-of-concept storage probe. Debug builds only.</p>
+    <script>
+      // Writes a token to every kind of web storage this origin has (op=write), then reads all of
+      // them back (op=write or op=read). The native side collects window.__pocResult.
+      (async () => {
+        const params = new URLSearchParams(location.search);
+        const op = params.get("op");
+        const token = params.get("token") || "";
+        const result = { origin: location.origin, op };
+
+        const openDb = () =>
+          new Promise((resolve, reject) => {
+            const request = indexedDB.open("poc", 1);
+            request.onupgradeneeded = () => request.result.createObjectStore("kv");
+            request.onsuccess = () => resolve(request.result);
+            request.onerror = () => reject(request.error);
+          });
+        const dbPut = async (value) => {
+          const db = await openDb();
+          await new Promise((resolve, reject) => {
+            const tx = db.transaction("kv", "readwrite");
+            tx.objectStore("kv").put(value, "secret");
+            tx.oncomplete = resolve;
+            tx.onerror = () => reject(tx.error);
+          });
+          db.close();
+        };
+        const dbGet = async () => {
+          const db = await openDb();
+          const value = await new Promise((resolve, reject) => {
+            const request = db.transaction("kv").objectStore("kv").get("secret");
+            request.onsuccess = () => resolve(request.result ?? null);
+            request.onerror = () => reject(request.error);
+          });
+          db.close();
+          return value;
+        };
+
+        try {
+          if (op === "write") {
+            localStorage.setItem("poc-secret", token);
+            document.cookie = `poc-secret=${token}; Secure; SameSite=Strict; Max-Age=3600; Path=/`;
+            await dbPut(token);
+            const cache = await caches.open("poc");
+            await cache.put("/poc/secret", new Response(token));
+          }
+          result.localStorage = localStorage.getItem("poc-secret");
+          result.cookie = (document.cookie.match(/(?:^|; )poc-secret=([^;]*)/) || [])[1] || null;
+          result.indexedDB = await dbGet();
+          const cached = await (await caches.open("poc")).match("/poc/secret");
+          result.cacheStorage = cached ? await cached.text() : null;
+        } catch (error) {
+          result.error = String(error);
+        }
+        window.__pocResult = result;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Only needed when the web views are pointed at real clients; the placeholders are local. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- No backup or device transfer: the vault's local data must not leave the device that way. -->
+    <application
+        android:name=".PocApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BlackmaskPoc"
+        android:usesCleartextTraffic="false">
+
+        <!-- Chats and Spaces: the app's main process. -->
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            The vault runs in its own process, with its own WebView data directory (see
+            PocApplication). Locking ends that process. Configuration changes are handled in place
+            so that rotating the screen does not lock the vault.
+        -->
+        <activity
+            android:name=".VaultActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboard|keyboardHidden|navigation|uiMode|density"
+            android:exported="false"
+            android:process=":vault" />
+    </application>
+
+</manifest>
