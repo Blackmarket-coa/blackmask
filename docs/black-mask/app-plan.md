@@ -190,17 +190,21 @@ A broad AI-manipulation claim must not be reduced to a deepfake score. Coordinat
 
 ## 9. Protection, privacy, and ecosystem tools
 
-Put protection/privacy under the profile button. Show actionable issues rather than a persistent threat meter.
+Put **Protection & privacy** under the existing profile/mask button. Keep Chats / Spaces / Vault as primary navigation. The [consolidated privacy controls plan](privacy-controls-plan.md) inventories current Blackmask capabilities, maps reusable Blackout controls, and owns the platform boundaries, delivery sequence and acceptance criteria.
 
-- Review devices and recovery.
-- Review sharing recipients, connected tools, and permissions.
-- Run supported account-health and exposure checks.
-- Access optional media inspection.
-- Show browser-companion status and explain that tracker blocking, fingerprint probes, and Firefox containers are browser-specific.
-- Keep unsupported capabilities absent or truthfully unavailable; never imply the phone app blocks tracking in every other app.
-- Keep Coalition location review as later optional work under [location privacy MVP](location-privacy-mvp.md). Do not create a parallel map or collect location to populate a dashboard.
-- No live GPS or contact-upload requirement for onboarding.
-- Push notifications should carry no message text by default; explain OS push-provider timing/metadata exposure. Design content previews as a deliberate user choice.
+Use six expandable sections aligned with Blackout's current Privacy tab: **Screen & notifications**, **People & activity**, **Sharing & metadata**, **Location & identity**, **Devices & connected tools**, and **My data & cleanup**. Existing contextual/browser routes link to the same editors and retain platform labels, feature gates and honest runtime status. Show useful actions rather than a persistent threat meter or another privacy score.
+
+- Add optional Privacy View: hold-to-reveal selected fields/messages, concealed names/avatars/locations, private notification previews, app-switcher cover and an immediate reversible Cover screen action. Cover both chat and vault WebViews, including transitions. Covering, vault locking, stopping live publishing and deleting data are distinct actions.
+- Evaluate native Android FLAG_SECURE and supported iOS recording/mirroring detection with redaction. iOS screenshot notification arrives after capture; browsers cannot guarantee capture prevention. Outside cameras, continuous recording, compromised devices and recipient copies remain limitations.
+- Evaluate anti-OCR text rendering separately as optional research, off by default. Do not replace accessible text globally or advertise readable content as unusable to surveillance.
+- Review verification, devices, sessions, recovery, recipients, connected bots/bridges/tools and permissions through their authoritative editors. Keep vault and Matrix keys, locks, recovery and storage boundaries separate.
+- Reuse supported metadata/link cleanup, receipt/typing suppression, private interests and audience review only after protocol and integration verification. Remote content from unknown senders should require deliberate fetching; expose destinations and data recipients accurately.
+- Keep browser tracker controls, fingerprint measurement, configured aliasing/Firefox containers, breach checks and optional on-device media inspection labeled with actual platform, evidence and limitations. Neither a score nor a clean scan proves absence of surveillance.
+- Keep optional Coalition location review under the [location privacy MVP](location-privacy-mvp.md). Blackout owns the map/transport; no GPS or contact upload is required for onboarding or Privacy View. Nearby-device tooling remains optional research and cannot certify a room is clear.
+- Push notifications should carry no message text by default; explain push-provider timing/metadata exposure. Design content previews as a deliberate user choice.
+- Add scoped clipboard/export/cache controls and truthful cleanup consequences. Screen covering never silently wipes data or release keys. No claim of forensic erasure or revocation of copies already obtained.
+
+Core encryption, covering, basic native capture controls, notification privacy, recovery and accessibility stay independent of purchases or rewards. No private-content analysis or remote AI upload without explicit scope; decrypted vault data stays inaccessible to chat, plugins, analytics, the shell and external AI.
 
 ## 10. Onboarding, habits, rewards, and add-ons
 
