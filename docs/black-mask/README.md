@@ -38,6 +38,10 @@ in _this codebase_.
 | [`store-submission.md`](./store-submission.md)                                         | What the Chrome and Firefox stores need beyond a zip: per-permission justifications, and the review-risk items to answer before submitting.                                                                                                            |
 | [`browser-validation.md`](./browser-validation.md)                                     | The manual checklist for behaviour jest cannot exercise — DNR blocking, containers, fingerprint probes, the ONNX detector.                                                                                                                             |
 
+## Privacy consolidation update (2026-11-27)
+
+The [privacy controls plan](privacy-controls-plan.md) consolidates Protection & privacy under the existing profile/mask menu and maps shared Blackout protections to chats, private Spaces and the independently locked Vault. It covers Privacy View, selective reveal, notification/capture protections, metadata and identity controls, devices/tools, data cleanup and experimental anti-OCR evaluation. Current capabilities and proposed work are distinguished; no UI or runtime behavior is changed by this documentation update.
+
 ## Current status
 
 The v1 milestones (M0–M4) have **implemented code, with real-browser behavior not yet fully verified** in the browser
