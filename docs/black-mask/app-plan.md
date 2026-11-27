@@ -291,3 +291,14 @@ Keep earning controls in relevant profiles, Spaces, optional Add-ons, and projec
 The [hidden-device inventory](hidden-device-detection-oss-research.md) covers phone-only Bluetooth/network/optical tools and hardware-assisted research. The [broader privacy/security inventory](privacy-security-oss-research.md) covers speech-preserving communication design, anti-scraping, device/browser privacy, safer files, AI-misuse research, and security/release tooling.
 
 Both are research only. No dependency adoption, platform configuration, background monitoring, cloud scanning, new crypto, or release-scope expansion is implemented or authorized by their existence. Evaluate actual support, licenses, data flows, permissions, maintenance, and existing BMC overlap first. Possible Nearby devices tooling belongs under Protection & privacy; never promise a room is clear from a negative scan.
+
+
+## 17. Privacy and security for individuals, groups and organizations (2026-11-27)
+
+The [consolidated audience and organization plan](individual-and-organization-security-plan.md) records 36 proposed workflows for individuals/families, businesses, startups, nonprofits/cooperatives, informal groups and creators. It covers shared vaults, temporary guest access, onboarding/offboarding, access reviews, sensitive-action approvals, scoped activity records, secure document requests, client/project rooms, confidential intake, verified requests, incident response, recovery/succession and encrypted backups alongside the existing personal protections.
+
+Blackmask is the everyday privacy/security home: Chats / Spaces / Vault stay primary, with Personal or authorized Space/organization context and the six existing Protection & privacy sections. Organization administration does not grant access to personal vaults or unrelated conversations. Show precise encryption, ownership, audience, collection, retention and revocation limits; do not imply view-only/expiry controls prevent copying or that SSO reset restores E2EE keys.
+
+Keep ordinary membership, sharing, policy selection, access reviews and incident decisions in Blackmask. Forge handles advanced preset/integration authoring, deployment, domains/TLS, host defenses, backup jobs and technical diagnostics through scoped APIs. Forge never receives decrypted Vault content or user keys as a side effect. Existing domain services remain authoritative; no duplicate messenger, map, identity or vault backend.
+
+This catalogue does not expand the current mobile release into a simultaneous promise of all 36 workflows. Choose complete slices and verify personal/organization isolation, guest/leave flows, failed/partial revocation, supported file sharing, key governance and real recovery. Core safety remains free; optional convenience enhancements are one-time purchases and hosted storage is the only recurring charge.
