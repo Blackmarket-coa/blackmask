@@ -103,3 +103,10 @@ Core encryption, covering, basic capture controls, notification privacy, essenti
 - [Apple capture-state protection](https://developer.apple.com/documentation/swiftui/protecting-sensitive-content-when-screen-sharing)
 - [Apple screenshot notification](https://developer.apple.com/documentation/uikit/uiapplication/userdidtakescreenshotnotification)
 - [ProTegO](https://github.com/Ruby-He/ProTegO) and [visual-defense research](https://openrepository.aut.ac.nz/items/88371f0d-0b46-492f-86e9-c297836e1135)
+
+
+## 9. Broader OSS shortlist and evidence (2026-11-27)
+
+The [expanded research inventory](privacy-security-oss-research.md#12-expanded-ecosystem-catalogue--november-27-2026) links the shared 136-repository catalogue, 84 additions beyond the prior inventories, primary sources, app/companion/server/CI placement, maintenance/license screening and staged evaluation. Apply these candidates through the six existing Protection & privacy sections; no new primary navigation, parallel vault or messenger.
+
+Local redaction/OCR, safer attachments, alias workflows, native companion privacy, verified releases and self-hosted defenses are concrete evaluation candidates. Reuse existing foundations first. Archived LLM Guard/KES/old Tink and the restricted Bitwarden sdk-sm lead are held, not promoted to shipping dependencies. Core encryption/recovery/capture controls/accessibility stay free; private-content analysis is deliberate and scoped, and vault secrets never become input for external tools or AI. No runtime behavior changes through this research.

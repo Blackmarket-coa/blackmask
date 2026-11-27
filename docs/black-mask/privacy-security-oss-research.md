@@ -1,6 +1,6 @@
 # Privacy, Speech-Preserving Design, Anti-Scraping and Security OSS
 
-**Reviewed:** November 21, 2026  
+**Reviewed:** November 27, 2026 — broad catalogue expansion and maintenance/license corrections  
 **Status:** Research and evaluation inventory. No imported dependencies, configuration changes, feature activation, security certification, or deployment.  
 **Companion:** [Phone/hidden-device detection inventory](hidden-device-detection-oss-research.md).
 
@@ -100,7 +100,7 @@ Provenance reading and metadata stripping can conflict. Preview what a transform
 | [Nightshade research code](https://github.com/Shawn-Shan/nightshade-release) | GPU/research         | GPL-3.0 research release                              | Research release differs from downloadable desktop app. Keep separate from ordinary upload pipeline; review data/model licenses, research limits and explicit owner consent.             |
 | [garak](https://github.com/NVIDIA/garak)                                     | Developer/CI         | Apache-2.0                                            | Test owned AI features for prompt injection, leakage and other failures. Synthetic/user-authorized test data only; a test pass is not a security guarantee.                              |
 | [PyRIT](https://github.com/microsoft/PyRIT)                                  | Developer/CI         | MIT                                                   | Framework for testing owned AI systems and misuse paths. Not a consumer censorship requirement or a runtime permissions boundary.                                                        |
-| [LLM Guard](https://github.com/protectai/llm-guard)                          | Python/service       | MIT; archived                                         | Archive/reference only: project and models no longer maintained. Do not adopt as a fresh default. Content/topic filters should not become mandatory private-chat or political screening. |
+| [LLM Guard](https://github.com/protectai/llm-guard) | Historical reference; archived | MIT code; model terms separate | README now states project and associated models are not maintained. Do not select as a preferred new runtime dependency. |
 
 Protective image perturbations target particular models/threats and may be weakened by transformations, new models, or existing unprotected copies. Evaluate current attacks, phone/desktop cost, asset quality and model/dependency licenses. Preserve originals. Nothing here supports a universal anti-cloning, anti-training, facial-anonymity, or deepfake-proof claim.
 
@@ -156,3 +156,15 @@ The shortlist is a recommendation for evaluation, not a decision to ship every p
 - [ ] Update threat model, feature reference and evidence after implementation; research does not satisfy a release gate.
 
 Related: [app plan](app-plan.md), [problem–solution map](problem-solution-map.md), [user earning](user-earning-plan.md), and [monetization](monetization-plan.md).
+
+## 12. Expanded ecosystem catalogue — November 27, 2026
+
+The [shared Blackout/Blackmask OSS catalogue](https://github.com/Blackmarket-coa/blackout/blob/develop/docs/product/BLACKOUT_PRIVACY_SECURITY_OSS_CATALOG.md) screens **136 candidate GitHub repositories across 13 categories**, including **84 additions beyond this inventory and the current hidden-device inventory**, plus four separately described non-GitHub project families. It supplies proposed fit, app/companion/server/CI placement, primary links, license signals, archive/last-push metadata, constraints and a ranked evaluation order. [Machine-readable screening evidence](https://github.com/Blackmarket-coa/blackout/blob/develop/docs/product/PRIVACY_SECURITY_OSS_SCREENING_2026-11-27.json) preserves the canonical paths and overlap.
+
+This is a broad screen, not 136 approved dependencies or a complete internet census. The three archived repositories and the restricted SDK lead are explicitly held. Open engineering documents, operator tools, companion apps and experimental work have distinct dispositions. The older physical-privacy matrix retains its 31-entry detail and restrictions; this pass does not freshly verify every entry in it or add overlapping counts together.
+
+**Best evaluation fits:** reuse existing Matrix/vault and native shell protections; review DOMPurify and the actual rendering boundary; finish existing SimpleWebAuthn client/server work; prototype local Tesseract.js with user-reviewed redaction; expand supported-format metadata cleanup with mat2/ExifTool references; offer optional Dangerzone; verify Gitleaks/OSV/Trivy, Syft/Cosign and backup/restore behavior. Compare selective Anubis/ALTCHA and CrowdSec/Fail2ban on the current public edge without breaking Matrix. AirGuard and RethinkDNS/TrackerControl remain optional native companions; ProTegO remains off-by-default research.
+
+**Corrections:** LLM Guard is archived and its README says its models are also no longer maintained. MinIO KES is deprecated/archived. The old Tink monorepo is archived after a language-specific split. Bitwarden sdk-sm has a custom restrictive agreement, so do not treat it as general reusable OSS or infer that this application uses it. Multi-license boundaries matter for Bitwarden client subtrees, NetBird, C2PA and ExifTool. Canonical repository moves for Presidio, ProofMode, llamafile, Casbin, Podman, gVisor and MASTG are recorded in the catalogue.
+
+**Product placement:** use the six sections in [privacy-controls-plan.md](privacy-controls-plan.md). Browser/native/desktop limits stay visible; server and CI controls belong to engineering, without another mandatory app tab. Sharing inspection remains user-directed and local where supported. Blackout owns Matrix/Coalition, Blackmask owns its separately locked Bitwarden-derived vault, and no source list grants plugins, the shell or remote AI access to vault secrets. No implementation or deployment is performed by this research.
