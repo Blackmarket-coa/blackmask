@@ -1,5 +1,7 @@
 # Black Mask — Engineering Execution Plan
 
+> **Software-map update (2026-11-27):** [software-map.md](software-map.md) maps the consolidated personal/organization privacy surface, all 36 BM-P workflows, authoritative services, OSS dispositions and Forge handoffs. The foundation source mappings below remain historical/current only to the extent supported by the audit register; the new target map does not activate those workflows.
+
 > **App roadmap update (2026-11-20):** [app-plan.md](app-plan.md) is the approved mobile messenger/Spaces/Vault experience and release plan. This document retains the original foundation architecture and dated scope changes. Mobile and messaging exclusions below refer to that standalone foundation release. Reuse existing vault and Blackout communication infrastructure; preserve separate lock/key boundaries and add no new encryption primitives.
 
 > How the Black Mask product spec maps onto _this_ Bitwarden clients codebase: what to reuse, what to
@@ -320,3 +322,18 @@ reversible.
   upstream; the client must remain redistributable under GPLv3.
 - **iOS parity (Phase 5)** — Network Extension works technically; App Store review is the gate. Not a
   v1 concern.
+
+
+## 10. Consolidated privacy/security subsystem map (2026-11-27)
+
+| Target capability | Everyday owner / surface | Authoritative technical boundary | Planning reference |
+| --- | --- | --- | --- |
+| Visual privacy, notifications and selected reveal | Blackmask Screen & notifications; Blackout's existing Privacy surface | Native host lifecycle and both chat/vault WebViews; truthful browser/iOS/Android support | Privacy controls and software map |
+| Shared collections and guarded record sharing | Blackmask Vault | Existing Bitwarden-derived foundation with separately reviewed organization grants/key custody; no shared ecosystem decryption store | BM-P07–BM-P08, BM-P14–BM-P17 |
+| Guests, join/leave and access reviews | Blackmask Spaces / People & activity | Blackout Matrix for Matrix membership; vault/file/linked services independently enforce current permissions | BM-P09–BM-P11, BM-P19–BM-P20 |
+| Verification, tool permissions and incident response | Blackmask device/conversation controls | Scope-bound service actions, actual outcomes and minimized records; no blanket administrator privilege | BM-P04–BM-P06, BM-P21–BM-P26 |
+| Recovery, succession, backups and retention | Blackmask recovery / My data & cleanup | Distinct vault/Matrix/release-key contracts; advanced emergency access requires reviewed key design | BM-P13, BM-P27–BM-P30 |
+| Preset/template/integration authoring and hosting | Persistent Forge entry plus context-specific links | Forge authors/configures through delegated APIs; service owner enforces state; no decrypted vault data in Forge | BM-P31; Forge software map |
+| Local file review, provenance and physical privacy | Blackmask selected sharing/companion surfaces | Local/user-directed processing with exact platform/model/license support; specialist tools are not universal detection | BM-P14, BM-P22–BM-P25, BM-P33–BM-P36 |
+
+All 36 stable workflow IDs and their six-section placement are in [software-map.md](software-map.md); the [individual and organization plan](individual-and-organization-security-plan.md) defines behavior. The [OSS inventory](privacy-security-oss-research.md) links the 136-repository screen; candidate/research/archived/restricted status is separate from adoption. Preserve the existing feature audit and release gates; this addition defines no new runtime endpoints or shipped route IDs.

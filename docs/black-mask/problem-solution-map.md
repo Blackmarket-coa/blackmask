@@ -1,6 +1,7 @@
 # Blackmask Problem–Solution Map
 
 **Recorded:** November 21, 2026  
+**Updated:** November 27, 2026 — consolidated privacy/security, organization workflows and Forge ownership.  
 **Status:** Product goals and proposed behavior, not a claim that every solution is implemented.
 
 ## 1. Purpose
@@ -51,7 +52,9 @@ The five everyday needs are:
 | --------- | ------------------------------------------------------------------------------------------------------------------- |
 | Blackout  | Discovery, expression, participation, demonstrations, and contribution visibility                                   |
 | FBM       | Exchange, listings, checkout, orders, and applicable commerce operations                                            |
-| Blackmask | Private communication, identity presentation, information control, collaboration, and supported controlled delivery |
+| Blackmask | Private conversations, Spaces, separately locked Vault, identities, personal/organization privacy and everyday access/recovery decisions |
+| Forge | Advanced authoring/customization, integration setup, deployment, hosting, backups and technical diagnostics; no blanket vault access |
+| Blackstar | Eligible transport operations; no automatic access to private collaboration or vault records |
 
 These roles do not prove the integrations are wired. Account linking must be explicit, revocable, and aware of identity consequences. Reuse existing infrastructure rather than duplicating messaging, maps, commerce ledgers, or identity providers.
 
@@ -78,3 +81,19 @@ Encryption, identity separation, recovery, AI inspection, location controls, and
 Phone-based physical-device detection is a new research candidate in the [OSS research inventory](hidden-device-detection-oss-research.md), not a validated addition to existing protection.
 
 Related: [app plan](app-plan.md), [user earning plan](user-earning-plan.md), [monetization plan](monetization-plan.md), and [feature audit register](feature-audit-register.md).
+
+
+## 6. Updated audience/workflow coverage (2026-11-27)
+
+The original P01–P25 problem IDs remain stable. The new [36-workflow catalogue](individual-and-organization-security-plan.md) uses BM-P01–BM-P36, and [software-map.md](software-map.md) assigns every workflow to one of six Protection & privacy sections. Do not add the two numbering systems as if they were 61 distinct problems or mark proposed workflows implemented.
+
+| Existing problems | Added practical coverage | Everyday home |
+| --- | --- | --- |
+| P01–P03, P10–P14 | Verification, private directories, confidential intake, tool/AI permissions, safer requests and short security teaching | Chats/Spaces; People & activity and Devices & connected tools |
+| P04–P05, P15–P16, P19–P20 | Shared organization collections, guest access, secure document requests, private project rooms and selected local redaction | Vault/Spaces; Sharing & metadata and My data & cleanup |
+| P06–P07, P23 | Credential ownership, loss/incident response, tested backups, distinct recovery/succession and real service revocation | Devices & connected tools and My data & cleanup |
+| P08–P09, P17–P18 | Personal/work context, aliases, deliberate discovery/location and platform-specific companion review | Location & identity; private profile controls |
+| P19, P24–P25 | Role-aware onboarding/offboarding, access reviews, scoped approvals/activity records and accessible presets | Authorized organization context within the same app |
+| P03, P13, P22–P23 | Contextual Forge hub/links for advanced work; core protection stays usable without Forge or purchases | Persistent Forge entry near Settings/Privacy, with return to the originating context |
+
+An organization administrator does not gain personal vaults, unrelated private messages, contacts or browsing history. Normal team access decisions stay in Blackmask; complex authoring/deployment/host security belongs in Forge through explicit service authority. Confidentiality, anonymity, view-only access, expiration, SSO recovery and key custody must retain their separate limits. Source/CI/browser/backend/device/independent-review evidence remains distinct.
